@@ -1,0 +1,26 @@
+year,division,sport,gender,participation,sponsorship,avg_team_size,notes,source
+1992,D1,Soccer,Men,4231,162,25.4,Earliest visible year in Tableau viz,NCAA Tableau viz screenshot 2026-06-04
+2017,D1,Soccer,Men,5097,202,25.2,,NCAA Tableau viz screenshot 2026-06-04
+2018,D1,Soccer,Men,5411,205,25.3,,NCAA Tableau viz screenshot 2026-06-04
+2019,D1,Soccer,Men,5414,209,25.3,,NCAA Tableau viz screenshot 2026-06-04
+2020,D1,Soccer,Men,3448,205,16.8,COVID-19 reduced season,NCAA Tableau viz screenshot 2026-06-04
+2021,D1,Soccer,Men,5401,202,26.3,Post-COVID recovery,NCAA Tableau viz screenshot 2026-06-04
+2022,D1,Soccer,Men,5345,202,25.5,,NCAA Tableau viz screenshot 2026-06-04
+2023,D1,Soccer,Men,5257,202,27.2,,NCAA Tableau viz screenshot 2026-06-04
+2024,D1,Soccer,Men,5874,202,29.1,Roster cap transition period,NCAA Tableau viz screenshot 2026-06-04
+2025,D1,Soccer,Men,5841,208,28.1,New 28-player cap in effect,NCAA Tableau viz screenshot 2026-06-04
+1992,D2,Soccer,Men,4749,199,23.9,,NCAA Tableau viz screenshot 2026-06-04
+2019,D2,Soccer,Men,7169,215,31.3,,NCAA Tableau viz screenshot 2026-06-04
+2020,D2,Soccer,Men,4532,216,18.3,COVID reduced,NCAA Tableau viz screenshot 2026-06-04
+2021,D2,Soccer,Men,7124,215,32.2,,NCAA Tableau viz screenshot 2026-06-04
+2022,D2,Soccer,Men,7386,215,32.2,,NCAA Tableau viz screenshot 2026-06-04
+2023,D2,Soccer,Men,7386,215,34.0,,NCAA Tableau viz screenshot 2026-06-04
+2024,D2,Soccer,Men,7756,210,38.9,Pre-cap roster inflation,NCAA Tableau viz screenshot 2026-06-04
+2025,D2,Soccer,Men,4237,211,20.1,Probable cap effect,NCAA Tableau viz screenshot 2026-06-04
+1992,D3,Soccer,Men,12300,413,29.7,,NCAA Tableau viz screenshot 2026-06-04
+2019,D3,Soccer,Men,12905,413,31.2,,NCAA Tableau viz screenshot 2026-06-04
+2021,D3,Soccer,Men,11754,413,28.5,COVID recovery,NCAA Tableau viz screenshot 2026-06-04
+2022,D3,Soccer,Men,12300,417,29.5,,NCAA Tableau viz screenshot 2026-06-04
+2023,D3,Soccer,Men,13375,413,31.7,,NCAA Tableau viz screenshot 2026-06-04
+2024,D3,Soccer,Men,13568,412,33.2,,NCAA Tableau viz screenshot 2026-06-04
+2025,D3,Soccer,Men,13668,412,33.2,,NCAA Tableau viz screenshot 2026-06-04
