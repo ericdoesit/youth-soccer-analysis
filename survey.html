@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Youth Soccer Survey</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      padding-top: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .header p {
+      font-size: 1.1em;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .form-info {
+      background: #f8f9fa;
+      padding: 30px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .form-info h2 {
+      color: #2c3e50;
+      font-size: 1.3em;
+      margin-bottom: 12px;
+    }
+
+    .form-info ul {
+      list-style: none;
+      color: #555;
+      line-height: 1.8;
+      font-size: 0.95em;
+    }
+
+    .form-info li {
+      padding: 6px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .form-info li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    #typeform-container {
+      min-height: 800px;
+    }
+
+    .progress-wrapper {
+      background: white;
+      padding: 20px 30px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .progress-label {
+      font-size: 0.85em;
+      color: #666;
+      margin-bottom: 8px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 8px;
+      background: #e9ecef;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+      width: 0%;
+    }
+
+    .footer {
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      color: #999;
+      font-size: 0.85em;
+      border-top: 1px solid #e9ecef;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 1.8em;
+      }
+
+      .form-info {
+        padding: 20px;
+      }
+
+      .progress-wrapper {
+        padding: 15px 20px;
+      }
+
+      #typeform-container {
+        min-height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>⚽ Youth Soccer Survey</h1>
+    <p>Help us understand the real costs and equity gaps in US youth soccer pathways</p>
+  </div>
+
+  <div class="container">
+    <div class="form-info">
+      <h2>About This Survey</h2>
+      <ul>
+        <li><strong>15 questions</strong> — takes 5-10 minutes</li>
+        <li><strong>Confidential</strong> — anonymous responses only</li>
+        <li><strong>Data-driven</strong> — your responses build real cost analysis</li>
+        <li><strong>All levels welcome</strong> — rec, travel, elite, academy</li>
+      </ul>
+    </div>
+
+    <div class="progress-wrapper">
+      <div class="progress-label">
+        <span>Progress</span>
+        <span id="progress-text">0%</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div id="typeform-container"></div>
+
+    <div class="footer">
+      <p>Your data helps parents make informed decisions about youth soccer investments.</p>
+    </div>
+  </div>
+
+  <script src="https://embed.typeform.com/embed.js"></script>
+  <script>
+    window.typeformEmbed.make({
+      id: "f1FkXdTE",
+      container: document.getElementById("typeform-container"),
+      hideHeaders: false,
+      hideFooter: false,
+      opacity: 100,
+      onSubmit: function() {
+        // Form submitted - set progress to 100%
+        updateProgress(100);
+      }
+    });
+
+    // Progress bar tracking
+    function updateProgress(percentage) {
+      document.getElementById("progress-bar").style.width = percentage + "%";
+      document.getElementById("progress-text").textContent = percentage + "%";
+    }
+
+    // Track scroll progress within the form container
+    const container = document.getElementById("typeform-container");
+
+    // Update progress based on scroll position
+    function handleScroll() {
+      const rect = container.getBoundingClientRect();
+      const containerTop = rect.top;
+      const containerHeight = rect.height;
+      const windowHeight = window.innerHeight;
+
+      // Calculate how much of the form is visible/scrolled
+      if (containerTop < windowHeight && containerTop + containerHeight > 0) {
+        // Form is visible
+        const scrolledAmount = windowHeight - containerTop;
+        const totalHeight = containerHeight + windowHeight;
+        let progress = Math.min(100, Math.max(0, (scrolledAmount / totalHeight) * 100));
+
+        // Don't let it go past 95% until actually submitted
+        progress = Math.min(progress, 95);
+        updateProgress(Math.round(progress));
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Also check periodically for form height changes
+    const observer = new MutationObserver(() => {
+      handleScroll();
+    });
+
+    observer.observe(container, {
+      childList: true,
+      subtree: true,
+      attributes: true
+    });
+
+    // Initial check
+    setTimeout(handleScroll, 500);
+  </script>
+</body>
+</html>
