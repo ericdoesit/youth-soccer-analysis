@@ -1,5 +1,5 @@
 player_id,year,league,team,salary_usd_low,salary_usd_mid,salary_usd_high,position,nationality,college_path,academy_path,draft_round,age_at_pro_debut,us_homegrown,transferred_abroad,transfer_fee_usd,notes,source
-PR001,2024,MLS,Various,65000,115000,250000,All,US,mixed,mixed,mixed,22,mixed,No,,MLS roster aggregate; entry/median/max bands,MLSPA 2024 salary disclosure
+PR001,2026,MLS,Various,88025,325000,25000000,All,Mixed,mixed,mixed,mixed,22,mixed,No,,"REAL DATA 4/14/2026: n=916 players 31 clubs; min=$88025 p25=$113400 median=$325000 mean=$604606 p75=$656750 p90=$1200000 p95=$2190625 max=$25000000 (Messi); 17% at minimum; 13% earn $1M+; 3% earn $3M+; total league payroll=$553818662",MLSPA Spring 2026 Salary Guide s3.amazonaws.com/mlspa/Spring-2026-MLSPA-Salary-Guide.csv
 PR002,2024,MLS,Various,65000,350000,3500000,All,US,Yes,No,1-3,23,No,No,,MLS SuperDraft picks,MLSPA 2024
 PR003,2024,MLS,Various,65000,180000,750000,All,US,No,Yes,0,19,Yes,No,,MLS Homegrown players (signed from academy),MLSPA 2024
 PR004,2024,NWSL,Various,35000,75000,200000,All,US,Yes,No,1-3,23,No,No,,NWSL aggregate salary,NWSL CBA 2024
