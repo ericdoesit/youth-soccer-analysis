@@ -1,0 +1,28 @@
+program_id,name,governing_body,tier,gender,min_age,max_age,geographic_scope,founded_year,num_clubs,num_players_estimate,website,notes
+P001,AYSO Recreational,AYSO,1,Both,4,18,national,1964,800,400000,ayso.org,"Recreational; volunteer coaches; Everyone Plays philosophy; age drop-off: 4U-8U=55% of pool, 10U-12U=28%, 14U=10%, 16U-19U=5%; 30 teams at 8U might drop to 2-4 at 14U"
+P002,US Youth Soccer Recreational,US Youth Soccer,1,Both,4,19,national,1974,9500,3000000,usyouthsoccer.org,Largest youth soccer org in US
+P003,US Club Soccer,US Club Soccer,2,Both,8,19,national,2001,1400,400000,usclubsoccer.org,Competitive travel; parent org for ECNL
+P004,ECNL Girls,US Club Soccer,3,Girls,13,19,national,2009,120,20000,eliteclubsnationalleague.com,Premier girls college-prep league
+P005,ECNL Boys,US Club Soccer,3,Boys,13,19,national,2017,70,12000,ecnlboys.com,Boys counterpart; launched 2017
+P006,MLS NEXT,Major League Soccer,4,Boys,13,19,national,2020,150,15000,mlsnext.com,Top boys tier; replaced USSDA in 2020
+P007,MLS NEXT Pro Academies,Major League Soccer,4,Boys,13,22,national,2022,29,5000,mlsnextpro.com,Fully funded by MLS clubs; Homegrown pipeline
+P008,Girls Academy (GA),USSSA Soccer,3,Girls,13,18,national,2020,95,8000,thegirlsacademy.com,Alternative to ECNL for girls
+P009,USL Academy,USL,4,Both,14,20,national,2020,80,3000,uslsoccer.com,"Pre-pro tier; U20 roster model (not age-separated teams); 14yr olds compete vs 16-19yr olds; minimum 6 underage players required per roster; tied to USL Championship/League Two pro franchises; KEY ADVANTAGE: USL Academy Contract allows 14-17yr olds to train/play with pro first team while MAINTAINING NCAA eligibility (unlike MLS Homegrown which forfeits eligibility)"
+P010,USYS National League,US Youth Soccer,2,Both,10,19,national,2011,300,50000,usyouthsoccer.org/national-league,Earned entry; regional conferences
+P011,NPL (National Premier Leagues),US Club Soccer,2,Both,10,19,national,2011,1200,200000,usclubsoccer.org/npl,Regional pathway; feeds to ECNL
+P012,ODP (Olympic Development Program),US Youth Soccer,3,Both,11,18,national,1977,54,20000,usyouthsoccer.org/odp,State-run ID program for national teams
+P013,Barca Residency Academy,FC Barcelona / Relevent Sports,4,Both,12,18,regional,2014,1,200,barcaacademy.com,Full residential; Casa Grande AZ; $70k+/yr
+P014,IMG Academy,IMG,4,Both,12,18,national,1978,1,300,imgacademy.com,Bradenton FL residential; multi-sport
+P015,LA Galaxy Academy,LA Galaxy / AEG,4,Boys,10,18,local,2000,1,400,lagalaxy.com/academy,SoCal; MLS Homegrown pipeline; free
+P016,LAFC Academy,LAFC,4,Boys,10,18,local,2017,1,350,lafc.com/academy,SoCal; 7 Homegrown signings 2026; free
+P017,San Diego FC Academy,San Diego FC / Right to Dream,4,Boys,10,18,local,2024,1,250,sandiegofc.com/academy,Newest MLS academy; Right to Dream model; free
+P018,San Diego Surf,San Diego Surf SC,3,Both,10,19,regional,1975,1,1200,sandiegosurf.com,Top ECNL club nationally for college placement
+P019,Strikers FC,Strikers FC,3,Boys,10,19,regional,1977,1,1500,strikersfc.org,Irvine CA; elite ECNL/MLS NEXT; major pro feeder
+P020,Legends FC,Legends FC,3,Both,10,19,regional,1985,1,1000,legendsfc.com,Chino CA; strong D1 placement
+P021,Pateadores,Pateadores,3,Boys,10,19,regional,1984,1,1200,pateadores.com,Costa Mesa CA; MLS NEXT; several pro alumni
+P022,Philadelphia Union Academy,Philadelphia Union,4,Boys,10,18,local,2010,1,350,philadelphiaunion.com/academy,Top ranked US academy 2023-2026; free; Cavan Sullivan pathway
+P023,FC Dallas Academy,FC Dallas,4,Boys,10,18,local,2000,1,400,fcdallas.com/academy,Top historical US pro producer; McKennie/Pepi alumni; free
+P024,NY Red Bulls Academy,New York Red Bulls,4,Boys,10,18,local,2008,1,400,newyorkredbulls.com/academy,Global Red Bull development style; free
+P025,Total Futbol Academy (TFA),TFA,3,Boys,10,19,local,2010,1,500,totalfutbolacademy.com,LA area scouting hub; MLS pipeline
+P026,AYSO EXTRA,AYSO,2,Both,8,19,regional,2005,800,60000,ayso.org/extra,"Tryout-based selective tier; top 15-20% of local AYSO players; travel across SoCal vs other EXTRA regions; Southern California Extra Development Soccer League (SCEDSL); Everyone Plays rule enforced (50% minimum play time guaranteed); advanced certified volunteer coaches; NO college scout or pro academy presence at matches; ideal springboard to club but not a scholarship/pro pathway"
+P027,USL Youth (Super Y League),USL,2,Both,9,19,national,1996,400,25000,uslyouth.com,"Summer league May-Aug; does NOT conflict with Fall/Spring club team; regional divisions → USL Youth National Finals in Tampa FL (December); SoCal division includes West Coast FC Capo FC Oceanside Breakers; cost ~$575-600 registration + $150 uniform; good national tournament exposure during traditional off-season; complementary to ECNL/MLS NEXT not a replacement"

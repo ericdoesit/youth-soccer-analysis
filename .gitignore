@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Analysis outputs (generated; not source)
+data/analysis/*.png
+data/analysis/*.csv

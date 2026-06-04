@@ -1,0 +1,15 @@
+outcome_id,year,division,gender,sport,num_programs,roster_spots_total,scholarship_equivalencies,avg_scholarship_value_usd,full_scholarship_pct,partial_scholarship_pct,no_scholarship_pct,total_scholarship_pool_usd,notes,source
+S001,2024,D1,Men,M Soccer,204,9996,9.9,32000,15,55,30,64713600,D1 men soccer is equivalency sport; max 9.9 scholarships per team split among ~27 players,NCAA 2024 scholarship report
+S002,2024,D1,Women,W Soccer,332,9960,14,38000,35,50,15,132720000,D1 women soccer is equivalency sport; max 14 scholarships per team split among ~28 players,NCAA 2024 scholarship report
+S003,2024,D2,Men,M Soccer,210,7770,9,18000,10,50,40,46170000,D2 men soccer; lower dollar value than D1,NCAA 2024
+S004,2024,D2,Women,W Soccer,273,9555,9.9,20000,12,55,33,63036000,D2 women soccer,NCAA 2024
+S005,2024,D3,Men,M Soccer,411,15618,0,0,0,0,100,0,D3 no athletic scholarships; academic merit aid only,NCAA 2024
+S006,2024,D3,Women,W Soccer,435,16530,0,0,0,0,100,0,D3 no athletic scholarships; academic merit aid only,NCAA 2024
+S007,2024,NAIA,Men,M Soccer,170,5950,12,14000,8,45,47,22890000,NAIA men soccer; max 12 scholarships,NAIA 2024
+S008,2024,NAIA,Women,W Soccer,182,6370,12,14000,10,48,42,25480000,NAIA women soccer,NAIA 2024
+S009,2024,NJCAA D1,Men,M Soccer,190,4750,18,10000,15,50,35,21375000,NJCAA D1 men; full tuition/room/board for D1,NJCAA 2024
+S010,2024,NJCAA D1,Women,W Soccer,160,4000,18,10000,18,52,30,18400000,NJCAA D1 women,NJCAA 2024
+S011,2022,D1,Men,M Soccer,202,9898,9.9,28500,14,53,33,55939350,Historical baseline 2022,NCAA 2022
+S012,2022,D1,Women,W Soccer,328,9840,14,34000,33,50,17,111326400,Historical baseline 2022,NCAA 2022
+S013,2020,D1,Men,M Soccer,200,9800,9.9,24000,13,52,35,48412800,Historical baseline 2020,NCAA 2020
+S014,2020,D1,Women,W Soccer,318,9540,14,29000,30,48,22,89474400,Historical baseline 2020,NCAA 2020

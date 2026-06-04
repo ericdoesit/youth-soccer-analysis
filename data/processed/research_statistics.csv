@@ -1,0 +1,52 @@
+stat_id,category,subcategory,metric,value,unit,sample_size,sample_description,year_of_data,ref_id,notes
+ST001,Cost,Club Sports,Median annual club sport expenditure,1500,USD/year,949,Parents of club sport youth athletes in Wisconsin,2018,R002,IQR $500-$3000
+ST002,Cost,Club Sports,25th percentile annual expenditure,500,USD/year,949,Parents of club sport youth athletes in Wisconsin,2018,R002,
+ST003,Cost,Club Sports,75th percentile annual expenditure,3000,USD/year,949,Parents of club sport youth athletes in Wisconsin,2018,R002,
+ST004,Cost,School Sports,Median annual school sport expenditure,200,USD/year,949,Same Wisconsin survey,2018,R002,Contrast with club sport median of $1500
+ST005,Cost,Club Sports,Annual cost range low end,1000,USD/year,,Competitive club/travel soccer nationally,2016,R001,
+ST006,Cost,Club Sports,Annual cost range high end,10000,USD/year,,Competitive club/travel soccer nationally,2016,R001,
+ST007,Cost,Camps,Elite summer soccer camp cost per week,500,USD/week,,Per week minimum,2016,R001,
+ST008,Cost,Industry,Total US youth sports industry size,17000000000,USD,,National estimate,2019,R003,$17 billion total industry
+ST009,Demographics,Income,Parents earning >$100k household income,60,percent,949,Club sport parents Wisconsin,2018,R002,
+ST010,Demographics,Income,Parents earning <$50k household income,8,percent,949,Club sport parents Wisconsin,2018,R002,
+ST011,Demographics,Education,Parents with bachelor's degree or higher,70,percent,949,Club sport parents Wisconsin,2018,R002,Minimum estimate (>70%)
+ST012,Demographics,Income,Youth soccer participants from families >$75k/yr,33,percent,,National youth soccer,2016,R001,Approximately 1 in 3
+ST013,Demographics,Income,Youth soccer participants from families <$25k/yr,11,percent,,National youth soccer,2016,R001,
+ST014,Professional,Attainment,Academy players who reach professional first team,4.7,percent,1071,Academy players at professional club,2019,R005,40 out of 1071 players
+ST015,Professional,Attainment,Males aged 15-39 who reach professional athlete status (any sport),0.02,percent,,US national estimate,2010,R006,Approximately 1 in 5000
+ST016,Professional,Career Length,Initial MLS career expectancy,2.4,years,~1100,MLS players 1996-2007,2010,R006,At time of first appearance
+ST017,Professional,Career Length,Players who exit MLS after 1 season ("one-and-done"),30,percent,~1100,MLS players 1996-2007,2010,R006,Nearly 30%
+ST018,Professional,Career Length,Minimum annual exit rate from MLS,12,percent,~1100,MLS players 1996-2007,2010,R006,Never falls below 12% even for veterans
+ST019,Professional,Career Length,Exit odds multiplier for foreign-born vs US-born MLS players,2.2,odds ratio,~1100,MLS players 1996-2007,2010,R006,Foreign-born 2.2x more likely to exit
+ST020,Professional,Career Length,Expected remaining career at year 4 of MLS career,2.6,years,~1100,MLS players 1996-2007,2010,R006,Total expected career ~6.6 years by year 4
+ST021,Professional,Relative Age,Odds multiplier for Q4 players (Oct-Dec) vs others once in academy,3.0,odds ratio,1071,Academy players at professional club,2019,R005,Late-born players who persist have 3x better pro odds
+ST022,College,Players,Total mens college soccer players in US,38000,players,,All divisions,2016,R008,
+ST023,College,Pro Spots,Professional roster spots across all US professional tiers,1800,spots,,MLS USL NWSL etc,2016,R008,Vast majority of college players will not go pro
+ST024,College,International,International players in mens US college soccer,7600,players,170 countries,All divisions,2016,R008,120% increase since 2000
+ST025,College,International,International player share of mens college soccer,20,percent,,All divisions,2016,R008,
+ST026,College,International,UK share of all international hometowns,21,percent,,Mens college soccer,2016,R008,Top source country
+ST027,College,International,NCAA D1 international player share,24,percent,,NCAA D1 mens soccer,2016,R008,Up from 10% in 2005
+ST028,College,International,NAIA international player share,35,percent,,NAIA mens soccer,2016,R008,Highest share of any division
+ST029,College,International,NCAA D2 international player share,31,percent,,NCAA D2 mens soccer,2016,R008,
+ST030,College,International,NCAA D3 international player share,8,percent,,NCAA D3 mens soccer,2016,R008,No athletic scholarships; less incentive to recruit internationally
+ST031,College,Geography,NY share of all international college soccer players,11,percent,,Destination state,2016,R008,Top destination state by volume
+ST032,College,Geography,FL share of all international college soccer players,5.6,percent,,Destination state,2016,R008,
+ST033,College,Geography,CA international player share despite 147 teams,4,percent,,CA mens college soccer,2016,R008,Large domestic talent pool reduces need
+ST034,College,Geography,FL international player share of roster spots,42,percent,,FL college soccer rosters,2016,R008,Highest % by roster proportion
+ST035,College,Geography,WV international player share of roster spots,41,percent,,WV college soccer rosters,2016,R008,
+ST036,College,Womens,Womens programs in 1982 (pre-enforcement),103,programs,,All US womens college soccer,1982,R008,Title IX passed 1972; enforcement accelerated growth
+ST037,College,Womens,Womens programs by early 2000s,1000,programs,,All US womens college soccer,~2003,R008,Nearly 10x growth driven by Title IX
+ST038,College,Recruiting,Identified for-profit recruiting agencies for international players,68,companies,,US market,2016,R008,85% founded since 2000
+ST039,College,Recruiting,Cost range for recruiting agency services,500,USD low end,,Per player per agency,2016,R008,
+ST040,College,Recruiting,Cost range for recruiting agency services,3500,USD high end,,Per player per agency,2016,R008,
+ST041,Coach Perception,International vs Domestic,Coaches who say international players have stronger technical skills,75,percent,,College soccer coaches,2016,R008,
+ST042,Coach Perception,International vs Domestic,Coaches who say international players have more professional attitudes,70,percent,,College soccer coaches,2016,R008,
+ST043,Coach Perception,International vs Domestic,Coaches who say international players have better tactical understanding,66,percent,,College soccer coaches,2016,R008,
+ST044,Coach Perception,International vs Domestic,Coaches who say domestic players are more athletic,52,percent,,College soccer coaches,2016,R008,Slight majority
+ST045,Transfer Portal,Roster Management,Roster spots and budget reserved for portal transfers by D1 coaches,27.5,percent,,Estimate midpoint (25-30% range),2025,GEMINI2026,Coaches increasingly use aid on proven transfers over HS recruits; range 25-30%
+ST046,Transfer Portal,Roster Management,D1 men roster cap (hard limit),28,players,,NCAA D1 men and women soccer,2024,NCAA2024,Was 35-42 historically; cap causes cascade into portal across all divisions
+ST047,Transfer Portal,Risk,Athletes entering portal who do not find a new program,50,percent,,All NCAA sports portal entrants,2024,GEMINI2026,Portal is high-risk; scholarship not guaranteed once name is entered; "portal purgatory"
+ST048,Transfer Portal,Scholarship Strategy,Coaches who shift to smaller partial scholarships vs full rides for freshmen,,,,,2025,GEMINI2026,Coaches prefer spreading partial packages (25% each to 4 players) over 70-100% to 1 freshman; holds budget for winter portal window
+ST049,College,Recruiting,Estimated domestic US HS players recruited per class at top D1 programs,4.5,players/class,,Elite D1 programs; estimate midpoint (4-5 range),2025,GEMINI2026,28 roster cap - 33% intl = ~18 domestic spots / 4 classes = ~4-5 per class
+ST050,College,International,International % of D1 men rosters at elite conference programs (ACC Big Ten),67.5,percent,,Elite D1 programs; midpoint of 60-75% range,2025,GEMINI2026,Highly skewed vs overall 33% average; many are 20-21yr old ex-professional academy players
+ST051,College,International,Primary international pipeline countries for D1 men soccer,,,UK/Ghana/Germany/Spain/Canada,,Top source countries,2025,GEMINI2026,Many are 20-21yr old ex-professional youth academy players entering as college freshmen

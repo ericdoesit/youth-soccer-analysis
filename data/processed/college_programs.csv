@@ -1,0 +1,11 @@
+prog_id,division,governing_body,gender,num_programs,roster_cap_current,roster_cap_historical,domestic_spots_est,intl_pct_overall,intl_pct_elite_programs,domestic_recruits_per_class_est,scholarship_equivalencies,scholarship_type,notes,source
+CP001,D1,NCAA,Men,210,28,38,18,33,65,4,9.9,Equivalency partial,"NCAA NEW 2024 roster cap 28; was 35-42; elite ACC/Big Ten programs 60-75% intl starters; only 4-5 US HS players recruited per class at top programs",NCAA 2024 / Gemini research 2026
+CP002,D1,NCAA,Women,340,28,38,26,7,15,6,14,Equivalency partial,"Women much lower intl % (6-8%); more domestic spots; Title IX equity requirement",NCAA 2024 / Gemini research 2026
+CP003,D2,NCAA,Men,215,26,35,18,31,40,4,9,Equivalency partial,"High intl presence; still significant competition for domestic spots",NCAA 2024 / Dure et al. 2018
+CP004,D2,NCAA,Women,265,26,35,24,12,20,5,9.9,Equivalency partial,,NCAA 2024
+CP005,D3,NCAA,Men,415,30,40,28,8,12,6,0,None (no athletic scholarships),"No athletic scholarships; lower intl incentive; academic merit/need aid only; good player development without pressure",NCAA 2024 / Dure et al. 2018
+CP006,D3,NCAA,Women,440,30,40,28,4,6,6,0,None (no athletic scholarships),,"NCAA 2024"
+CP007,NAIA,NAIA,Men,185,24,32,14,35,50,4,12,Full equivalency,"Highest intl % of any division; many international 20-21yr old ex-academy players choose NAIA for full ride; generous scholarship limits",NAIA 2024 / Dure et al. 2018
+CP008,NAIA,NAIA,Women,195,24,32,20,18,25,5,12,Full equivalency,,NAIA 2024
+CP009,NJCAA D1,NJCAA,Men,220,24,30,20,15,25,5,18,Full (tuition+room+board),"JUCO pathway; 2-year; players can transfer to 4-year after; full scholarship value despite lower profile",NJCAA 2024
+CP010,NJCAA D1,NJCAA,Women,180,24,30,22,10,15,5,18,Full (tuition+room+board),,"NJCAA 2024"
