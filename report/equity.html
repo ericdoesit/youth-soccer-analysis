@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Loses Most: The Equity Problem in Youth Soccer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           color: #1a202c; background: #f7f8fa; line-height: 1.6; }
+    .nav { background: #1a202c; padding: 0.75rem 2rem; display: flex; gap: 1.5rem; align-items: center; }
+    .nav a { color: #cbd5e0; text-decoration: none; font-size: 0.875rem; }
+    .nav a:hover { color: white; }
+    .nav .brand { color: white; font-weight: 700; font-size: 1rem; margin-right: auto; }
+    .nav a.active { color: white; border-bottom: 2px solid #f6c90e; padding-bottom: 2px; }
+    header { background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+             color: white; padding: 3rem 2rem; text-align: center; }
+    header h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; }
+    header p { color: #e2e8f0; font-size: 1.1rem; max-width: 640px; margin: 0 auto; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+    section { background: white; border-radius: 10px; padding: 1.75rem 2rem;
+              margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #4a5568; margin: 1.25rem 0 0.5rem; }
+    p  { color: #4a5568; margin-bottom: 0.85rem; }
+    .callout { background: #fffbeb; border-left: 4px solid #d69e2e; padding: 1rem 1.25rem;
+               border-radius: 0 6px 6px 0; margin: 1.25rem 0; }
+    .callout.red { background: #fff5f5; border-color: #c53030; }
+    .callout.green { background: #f0fff4; border-color: #38a169; }
+    .callout strong { color: #92400e; }
+    .callout.red strong { color: #c53030; }
+    .callout.green strong { color: #276749; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin: 1rem 0; }
+    thead th { background: #2d3748; color: white; padding: 0.7rem 1rem; text-align: left; }
+    tbody tr:nth-child(even) { background: #f7f8fa; }
+    tbody td { padding: 0.65rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+    .loser-rank { display: inline-block; width: 1.6rem; height: 1.6rem; border-radius: 50%;
+                  background: #c53030; color: white; font-weight: 800; font-size: 0.8rem;
+                  text-align: center; line-height: 1.6rem; margin-right: 0.4rem; }
+    .loser-rank.green { background: #38a169; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+                 gap: 1rem; margin: 1.25rem 0; }
+    .stat-card { background: #f7f8fa; border-radius: 8px; padding: 1.25rem;
+                 text-align: center; border: 1px solid #e2e8f0; }
+    .stat-card .num { font-size: 2.2rem; font-weight: 800; }
+    .stat-card .num.bad { color: #c53030; }
+    .stat-card .num.ok  { color: #d69e2e; }
+    .stat-card .num.good { color: #276749; }
+    .stat-card p { font-size: 0.82rem; color: #4a5568; margin-top: 0.25rem; margin-bottom: 0; }
+    .ratio-bad  { color: #c53030; font-weight: 700; }
+    .ratio-ok   { color: #d69e2e; font-weight: 700; }
+    .ratio-good { color: #276749; font-weight: 700; }
+    .sources { font-size: 0.78rem; color: #718096; background: #f7f8fa;
+               border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; }
+    footer { text-align: center; padding: 2rem; color: #a0aec0; font-size: 0.8rem; }
+    .income-bar { height: 1.6rem; border-radius: 4px; display: flex; align-items: center;
+                  justify-content: flex-end; padding-right: 0.5rem; color: white;
+                  font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+      table { font-size: 0.78rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="brand">Fool's Gold: Youth Soccer</span>
+  <a href="../index.html">Home</a>
+  <a href="costs.html">Costs</a>
+  <a href="fools_gold.html">ROI</a>
+  <a href="equity.html" class="active">Equity</a>
+  <a href="methodology.html">Methods</a>
+</nav>
+
+<header>
+  <h1>Who Loses Most</h1>
+  <p>Elite youth soccer systematically extracts money from middle-class families while
+     excluding working-class players. These are the groups that pay the highest price.</p>
+</header>
+
+<div class="container">
+
+  <!-- Income Stratification -->
+  <section>
+    <h2>Who Plays Elite Soccer?</h2>
+    <p>Youth soccer at the competitive and elite levels has become a sport of affluent families.
+       The income stratification of club sport participants is stark:</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num bad">60%</div>
+        <p>Club sport families earning <strong>&gt;$100K</strong> household income</p>
+      </div>
+      <div class="stat-card">
+        <div class="num bad">8%</div>
+        <p>Club sport families earning <strong>&lt;$50K</strong> household income</p>
+      </div>
+      <div class="stat-card">
+        <div class="num bad">33%</div>
+        <p>Youth soccer players from families earning <strong>&gt;$75K/yr</strong></p>
+      </div>
+      <div class="stat-card">
+        <div class="num bad">11%</div>
+        <p>Youth soccer players from families earning <strong>&lt;$25K/yr</strong></p>
+      </div>
+    </div>
+
+    <h3>Income distribution in youth soccer vs. general population</h3>
+    <p style="margin-bottom: 0.4rem;">Club sport parents earning &gt;$100K:</p>
+    <div class="income-bar" style="background:#c53030; width:60%">60%</div>
+    <p style="margin-bottom: 0.4rem; margin-top: 0.75rem;">US general population earning &gt;$100K:</p>
+    <div class="income-bar" style="background:#718096; width:26%">26%</div>
+
+    <p style="margin-top: 1rem;">Families below $50K — roughly 40% of US households — represent
+       under 8% of competitive club sport parents. Pay-to-play soccer has effectively
+       become a sport that screens out economic diversity before the first ball is kicked.</p>
+
+    <p class="sources">Sources: Agans et al. (2018) Wisconsin club sport survey (n=949);
+       ASLA national youth soccer participation report (2016, R001).</p>
+  </section>
+
+  <!-- Who Loses the Most table -->
+  <section>
+    <h2>The Cost-Benefit Losers: Ranked</h2>
+    <p>Not all participants in the pay-to-play system are treated equally. Some groups
+       pay the same high price for a dramatically worse expected outcome.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Group</th>
+          <th>Total Investment</th>
+          <th>Expected Return</th>
+          <th>Ratio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="loser-rank">1</span></td>
+          <td><strong>Lower-income families (excluded)</strong><br>
+              <small>Can't afford entry; excluded before evaluation</small></td>
+          <td>$0 (can't afford)</td>
+          <td>$0 (no exposure)</td>
+          <td class="ratio-bad">∞ : 1 loss</td>
+        </tr>
+        <tr>
+          <td><span class="loser-rank">2</span></td>
+          <td><strong>Regional market elite players</strong><br>
+              <small>Best in Kansas City or Austin — invisible nationally</small></td>
+          <td>~$56,000</td>
+          <td>~$1,000</td>
+          <td class="ratio-bad">56 : 1 loss</td>
+        </tr>
+        <tr>
+          <td><span class="loser-rank">3</span></td>
+          <td><strong>Flight 2/3 players at large clubs</strong><br>
+              <small>Pay Tier 3 fees, ride bench, subsidize Flight 1</small></td>
+          <td>~$56,000</td>
+          <td>~$2,000</td>
+          <td class="ratio-bad">28 : 1 loss</td>
+        </tr>
+        <tr>
+          <td><span class="loser-rank">4</span></td>
+          <td><strong>Average elite Tier 3 player</strong><br>
+              <small>Visible at clubs, 0.4% MLS odds, mostly no return</small></td>
+          <td>~$56,000</td>
+          <td>~$2,500</td>
+          <td class="ratio-bad">22 : 1 loss</td>
+        </tr>
+        <tr>
+          <td><span class="loser-rank" style="background:#d69e2e">5</span></td>
+          <td><strong>Female elite (ECNL) players</strong><br>
+              <small>Same cost as boys, fewer pro spots but more college opportunities</small></td>
+          <td>~$52,500</td>
+          <td>~$8,000</td>
+          <td class="ratio-ok">6.5 : 1 loss</td>
+        </tr>
+        <tr>
+          <td><span class="loser-rank green">W</span></td>
+          <td><strong>Competitive travel player (D2/D3 path)</strong><br>
+              <small>Lower cost, realistic college target, positive ROI</small></td>
+          <td>~$18,600</td>
+          <td>~$45,000</td>
+          <td class="ratio-good">0.4 : 1 gain</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Flight 2/3 Subsidy -->
+  <section>
+    <h2>The Hidden Subsidy: Flight 2 &amp; 3 Players</h2>
+    <p>Large elite clubs (Surf, Albion, Legends, SDSC, etc.) typically operate
+       multiple "flights" — Flight 1 is the top team, Flights 2 and 3 are lower-level
+       teams within the same age group. All flights often charge the same annual fee
+       ($6,000–$10,000/year).</p>
+
+    <div class="callout red">
+      <strong>The subsidy structure:</strong> Flight 2 and 3 players pay the same fee
+      as Flight 1 but receive lower-tier coaching, worse practice times, less college
+      recruiting exposure, and frequently see their roster filled by "guest players"
+      pulled down from Flight 1. Their fees cross-subsidize the top team's infrastructure.
+    </div>
+
+    <h3>What Flight 2/3 players actually receive for their $8,000/year</h3>
+    <table>
+      <thead>
+        <tr><th>Resource</th><th>Flight 1</th><th>Flight 2/3</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Head coach quality</td><td>Top club coaches</td><td>Secondary coaching staff</td></tr>
+        <tr><td>Practice field priority</td><td>Best fields, prime times</td><td>Early morning, secondary fields</td></tr>
+        <tr><td>College recruiting visits</td><td>Scouts attend most games</td><td>Scouts rarely attend</td></tr>
+        <tr><td>Roster stability</td><td>Stable 18-player roster</td><td>Guest players fill gaps from F1</td></tr>
+        <tr><td>Game time per player</td><td>Full minutes</td><td>Reduced (when F1 guest players in)</td></tr>
+        <tr><td>Tournament tier</td><td>Gold/Top bracket</td><td>Silver/Consolation bracket</td></tr>
+      </tbody>
+    </table>
+
+    <p>Approximately 25–30% of elite club members play on Flight 2 or lower teams.
+       They pay a premium price for a secondary product — a cross-subsidy from
+       aspirational families to the club's top teams.</p>
+  </section>
+
+  <!-- Regional Geography Problem -->
+  <section>
+    <h2>The Geography Problem</h2>
+    <p>MLS academies, ECNL scouts, and top college recruiting activity is concentrated
+       in a handful of markets: the coasts, Texas, and a few Midwest cities.
+       A player who is elite in their local market but geographically isolated
+       faces structural invisibility regardless of talent.</p>
+
+    <div class="callout">
+      <strong>The regional trap:</strong> MLS academy rankings put 5 of the top 10
+      development programs in the Northeast Corridor and California. A top player in
+      Kansas City, Oklahoma City, or rural markets — paying $8,000/year at the
+      "best" local club — has dramatically less exposure to scouts and college coaches
+      than an equally talented player in Los Angeles or New Jersey, despite identical
+      financial investment.
+    </div>
+
+    <h3>Scout concentration: where national exposure happens</h3>
+    <p>National ID events and major tournaments (ECNL Finals, MLS NEXT Cup,
+       Jefferson Cup, Dallas Cup) attract the scouts that lead to D1 offers and
+       professional contracts. Attending these events costs families additional
+       thousands per year on top of club fees — and they're concentrated in
+       specific geographic markets.</p>
+  </section>
+
+  <!-- Female Players -->
+  <section>
+    <h2>Gender Inequity in the Return on Investment</h2>
+    <p>Female players in ECNL and Girls Academy pay comparable annual fees to male
+       players ($7,000–$9,000/year). The outcomes, however, are materially different:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Male Players</th>
+          <th>Female Players</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Annual club fee (ECNL tier)</td><td>$7,500–$9,000</td><td>$7,000–$9,000</td></tr>
+        <tr><td>Total career investment</td><td>~$56,000</td><td>~$52,500</td></tr>
+        <tr><td>D1 college roster spots</td><td>~5,880</td><td>~9,660</td></tr>
+        <tr><td>D1 scholarship equivalencies/team</td><td>9.9 (partial split)</td><td>14.0 (near full)</td></tr>
+        <tr><td>Professional league spots (US)</td><td>~850 (MLS)</td><td>~600 (NWSL)</td></tr>
+        <tr><td>Pro league median salary</td><td>$325,000 (MLS)</td><td>$75,000 (NWSL)</td></tr>
+        <tr><td>Expected ROI (college path)</td><td>-$48,000 avg</td><td>-$44,000 avg</td></tr>
+      </tbody>
+    </table>
+
+    <p>The college scholarship outlook is slightly better for women (more D1 spots,
+       higher equivalencies per team), but the professional career value is dramatically
+       lower. NWSL median salary is $75,000 — less than 1/4 of MLS median — and
+       NWSL careers are similarly short. Female players invest the same money for
+       a fundamentally worse professional market.</p>
+
+    <div class="callout green">
+      <strong>Silver lining for women:</strong> Women's college soccer provides more
+      scholarship per team than men's (14.0 full equivalencies vs. 9.9), and women's
+      D1 programs outnumber men's (341 vs. 206). For families prioritizing college
+      funding over professional dreams, the women's college soccer path offers
+      modestly better expected value than men's at the same tier.
+    </div>
+  </section>
+
+  <!-- LA City United as solution model -->
+  <section>
+    <h2>The Alternative Model: Public Elite Soccer</h2>
+    <p>LA City United demonstrates that elite youth soccer development does not
+       require high fees. The program charges $10/month ($120/year) and competes
+       directly against clubs charging $7,000–$22,000/year in the same competitive
+       tiers.</p>
+
+    <table>
+      <thead>
+        <tr><th>Program</th><th>Annual Cost</th><th>Competitive Tier</th>
+            <th>Player Demographics</th><th>College Outcomes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>LA City United</strong></td>
+          <td>$120/yr ($10/month)</td>
+          <td>Tier 3–4</td>
+          <td>~80% Latino/Black; diverse income levels</td>
+          <td>College placements, USYNT players</td>
+        </tr>
+        <tr>
+          <td>Typical ECNL/MLS Next club</td>
+          <td>$7,000–$22,000/yr</td>
+          <td>Tier 3–4</td>
+          <td>~80%+ white; upper-middle income</td>
+          <td>Similar D1/D2 placement rates</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>LA City United is not an outlier — it is proof of concept. Elite player
+       development at competitive costs is achievable through public funding, but
+       the current pay-to-play model creates no incentive for private clubs to
+       replicate it. Public investment in youth soccer infrastructure would fundamentally
+       change who gets identified, developed, and reaches college and professional levels.</p>
+
+    <p class="sources">
+      Sources: Agans et al. (2018) Wisconsin study (R002); ASLA 2016 national report (R001);
+      LA City United program data; equity analysis from notebooks/09_equity_analysis.ipynb.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>Fool's Gold: Youth Soccer Equity Analysis &bull; Data collected 2024–2026
+     &bull; <a href="methodology.html" style="color:#a0aec0">Methodology</a></p>
+</footer>
+
+</body>
+</html>

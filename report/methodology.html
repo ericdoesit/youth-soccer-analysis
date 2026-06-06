@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology &amp; Data Sources | Fool's Gold Research</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           color: #1a202c; background: #f7f8fa; line-height: 1.6; }
+    .nav { background: #1a202c; padding: 0.75rem 2rem; display: flex; gap: 1.5rem; align-items: center; }
+    .nav a { color: #cbd5e0; text-decoration: none; font-size: 0.875rem; }
+    .nav a:hover { color: white; }
+    .nav .brand { color: white; font-weight: 700; font-size: 1rem; margin-right: auto; }
+    .nav a.active { color: white; border-bottom: 2px solid #f6c90e; padding-bottom: 2px; }
+    header { background: linear-gradient(135deg, #2b6cb0 0%, #2c5282 100%);
+             color: white; padding: 3rem 2rem; text-align: center; }
+    header h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; }
+    header p { color: #bee3f8; font-size: 1.0rem; max-width: 640px; margin: 0 auto; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+    section { background: white; border-radius: 10px; padding: 1.75rem 2rem;
+              margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    h2 { font-size: 1.35rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem; }
+    h3 { font-size: 1.05rem; font-weight: 600; color: #4a5568; margin: 1.25rem 0 0.5rem; }
+    p  { color: #4a5568; margin-bottom: 0.85rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin: 1rem 0; }
+    thead th { background: #2d3748; color: white; padding: 0.7rem 1rem; text-align: left; }
+    tbody tr:nth-child(even) { background: #f7f8fa; }
+    tbody td { padding: 0.65rem 1rem; border-bottom: 1px solid #e2e8f0; }
+    .tier-badge { display: inline-block; padding: 0.2rem 0.55rem; border-radius: 4px;
+                  font-size: 0.75rem; font-weight: 700; }
+    .t1 { background: #c6f6d5; color: #276749; }
+    .t2 { background: #bee3f8; color: #2b6cb0; }
+    .t3 { background: #fed7d7; color: #9b2c2c; }
+    .t4 { background: #e9d8fd; color: #553c9a; }
+    .t4b { background: #b9f5d8; color: #155724; }
+    .t5 { background: #e2e8f0; color: #2d3748; }
+    .ref-block { border: 1px solid #e2e8f0; border-radius: 6px; padding: 1rem 1.25rem;
+                 margin-bottom: 0.75rem; }
+    .ref-block .ref-id { background: #2b6cb0; color: white; font-size: 0.75rem;
+                          font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 3px;
+                          display: inline-block; margin-bottom: 0.4rem; }
+    .ref-block .ref-title { font-weight: 600; color: #2d3748; font-size: 0.9rem; }
+    .ref-block .ref-meta  { font-size: 0.8rem; color: #718096; margin-top: 0.2rem; }
+    .ref-block .ref-data  { font-size: 0.8rem; color: #4a5568; margin-top: 0.4rem;
+                             background: #f7f8fa; padding: 0.5rem; border-radius: 4px; }
+    .data-source-tag { display: inline-block; background: #ebf8ff; color: #2b6cb0;
+                       font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 3px;
+                       margin: 0.1rem; }
+    footer { text-align: center; padding: 2rem; color: #a0aec0; font-size: 0.8rem; }
+    .note { background: #ebf8ff; border-left: 3px solid #2b6cb0; padding: 0.75rem 1rem;
+            border-radius: 0 4px 4px 0; margin: 1rem 0; font-size: 0.875rem; color: #2c5282; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="brand">Fool's Gold: Youth Soccer</span>
+  <a href="../index.html">Home</a>
+  <a href="costs.html">Costs</a>
+  <a href="fools_gold.html">ROI</a>
+  <a href="equity.html">Equity</a>
+  <a href="methodology.html" class="active">Methods</a>
+</nav>
+
+<header>
+  <h1>Methodology &amp; Data Sources</h1>
+  <p>How this research was conducted, what data was collected, and how
+     competitive tiers are defined.</p>
+</header>
+
+<div class="container">
+
+  <!-- Research Overview -->
+  <section>
+    <h2>Research Overview</h2>
+    <p>This project investigates the financial economics of elite youth soccer in the
+       United States — specifically whether the investment made by families in competitive
+       and elite youth soccer programs produces proportionate returns through college
+       scholarships or professional careers.</p>
+    <p>The research combines original data collection (web scraping of club fees and
+       league directories), a family survey, and analysis of peer-reviewed literature
+       on youth sport economics, scholarship outcomes, and professional career trajectories.</p>
+
+    <h3>Primary research question</h3>
+    <p><em>"Do the financial returns from youth soccer investment — in the form of college
+       scholarships or professional careers — justify the costs imposed by the
+       competitive and elite club soccer market?"</em></p>
+
+    <h3>Scope</h3>
+    <p>The analysis focuses on competitive youth soccer (Tiers 2–4) in the United States.
+       Recreational soccer (Tier 1) is excluded from ROI analysis because recreational
+       fees are too low to constitute an investment thesis. Professional academies (Tier 5)
+       are also treated separately because families bear no cost.</p>
+  </section>
+
+  <!-- Tier Definitions -->
+  <section>
+    <h2>Competitive Tier Definitions</h2>
+    <p>Every cost figure and analysis in this research is tied to a competitive tier.
+       The tier system reflects the actual competitive hierarchy of US youth soccer,
+       organized by league prestige, training frequency, national exposure, and
+       annual cost.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Label</th>
+          <th>Leagues Included</th>
+          <th>Avg Annual Cost</th>
+          <th>Included in ROI Analysis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tier-badge t1">T1</span></td>
+          <td>Recreational</td>
+          <td>AYSO Rec, USYS Rec, Parks &amp; Recreation</td>
+          <td>~$468/yr</td>
+          <td>No — investment too low</td>
+        </tr>
+        <tr>
+          <td><span class="tier-badge t2">T2</span></td>
+          <td>Competitive Travel</td>
+          <td>Coast Soccer, NPL leagues (18 regions), The National League, SoCal League, USL Youth</td>
+          <td>~$2,867/yr</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><span class="tier-badge t3">T3</span></td>
+          <td>Elite Club</td>
+          <td>ECNL Girls (128 clubs), ECNL Boys (151 clubs), Girls Academy (96 clubs), MLS Next Academy Division</td>
+          <td>~$7,896/yr</td>
+          <td>Yes — primary focus</td>
+        </tr>
+        <tr>
+          <td><span class="tier-badge t4">T4</span></td>
+          <td>Top Elite</td>
+          <td>MLS Next Homegrown Division (HD)</td>
+          <td>~$22,125/yr</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><span class="tier-badge t4b">T4B</span></td>
+          <td>Public Elite</td>
+          <td>LA City United (Los Angeles Dept. of Recreation and Parks)</td>
+          <td>$120/yr</td>
+          <td>Benchmark comparison only</td>
+        </tr>
+        <tr>
+          <td><span class="tier-badge t5">T5</span></td>
+          <td>Pro Academy</td>
+          <td>MLS First Team Academies (Galaxy, LAFC, Sounders, etc.)</td>
+          <td>$0 (club-funded)</td>
+          <td>Yes — free path benchmark</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <strong>Note on ECNL data:</strong> ECNL membership rosters are not publicly
+      accessible for programmatic scraping. Club counts (128 girls, 151 boys) are
+      sourced from Wikipedia and ussoccerparent.com. Fee estimates are sourced from
+      individual club websites and survey responses.
+    </div>
+  </section>
+
+  <!-- Data Collection -->
+  <section>
+    <h2>Data Collection Methods</h2>
+
+    <h3>League Club Directories (scraped)</h3>
+    <p>Custom Python scrapers (requests + BeautifulSoup, cloudscraper) collected club
+       rosters from publicly accessible league websites:</p>
+    <table>
+      <thead>
+        <tr><th>Dataset</th><th>Method</th><th>Records</th><th>Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>National club directory (50 states)</td><td>ussoccerparent.com scraper</td><td>2,537 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>Coast Soccer clubs (SoCal)</td><td>coastsoccer.us scraper</td><td>258 clubs, 2,761 teams</td><td>Jun 2026</td></tr>
+        <tr><td>MLS Next clubs</td><td>mlsnext.com scraper</td><td>152 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>NPL leagues (15 of 15 complete)</td><td>GotSport API scraper</td><td>694 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>The National League</td><td>HTML extraction</td><td>182 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>Girls Academy</td><td>Wikipedia (verified)</td><td>96 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>USL League Two</td><td>Wikipedia (verified)</td><td>157 teams</td><td>Jun 2026</td></tr>
+        <tr><td>USL W League</td><td>cloudscraper + Wikipedia</td><td>92 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>USL League One</td><td>Wikipedia</td><td>17 teams</td><td>Jun 2026</td></tr>
+        <tr><td>USL Championship</td><td>Wikipedia</td><td>25 teams</td><td>Jun 2026</td></tr>
+        <tr><td>USL Youth</td><td>Direct site scrape</td><td>96 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>USL Super League</td><td>gainbridgesuperleague.com</td><td>9 teams</td><td>Jun 2026</td></tr>
+        <tr><td>Development Player League (DPL)</td><td>playclubsoccer.org + dpleague.org</td><td>105 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>SoCal Soccer League</td><td>GotSport direct scrape (deduplicated)</td><td>172 clubs</td><td>Jun 2026</td></tr>
+        <tr><td>EDP Soccer</td><td>myclubscout.com/leagues/edp-soccer</td><td>242 clubs</td><td>Jun 2026</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Fee Data</h3>
+    <p>Annual club fees were collected from:</p>
+    <ul style="padding-left:1.5rem; color:#4a5568; margin-bottom:0.85rem;">
+      <li>Individual club websites (SoCal League clubs: 192 fee records)</li>
+      <li>MLS Next club websites (99 fee records)</li>
+      <li>Family survey responses (see Survey section)</li>
+      <li>Published cost benchmarks (Bairner et al. 2016, ASLA reports)</li>
+    </ul>
+
+    <h3>Scholarship Data</h3>
+    <p>NCAA scholarship data sourced from the 2024–2025 NCAA Division I, II, and III
+       scholarship equivalency reports. Scholarship values estimated from IPEDS
+       average tuition data for institutions with soccer programs.</p>
+
+    <h3>Salary Data</h3>
+    <p>MLS salary data from the MLS Players Association (MLSPA) Spring 2026 Salary Guide
+       (n=916 players, 31 clubs). NWSL data from the 2024 collective bargaining agreement.
+       USL salary estimates from industry reporting.</p>
+
+    <h3>Survey</h3>
+    <p>A survey was distributed to parents of youth soccer players to capture
+       actual annual spending, satisfaction with return on investment, and
+       awareness of realistic scholarship probabilities. Survey responses are
+       used for qualitative validation and are not the primary quantitative source.</p>
+  </section>
+
+  <!-- Academic References -->
+  <section>
+    <h2>Academic References</h2>
+
+    <div class="ref-block">
+      <span class="ref-id">R001</span>
+      <div class="ref-title">Bairner et al. (2016) — The ins and outs of US youth soccer</div>
+      <div class="ref-meta">Soccer &amp; Society · DOI: 10.1080/14660970.2016.1267620</div>
+      <div class="ref-data">Club soccer costs $1k–$10k/yr; camps add $500+/week; 1/3 of participants from families &gt;$75k/yr; only 11% from &lt;$25k/yr; financial returns rarely recoup investment.</div>
+    </div>
+
+    <div class="ref-block">
+      <span class="ref-id">R002</span>
+      <div class="ref-title">Bocarro et al. (2018) — Socioeconomic status of parents in youth club sport</div>
+      <div class="ref-meta">Physical Therapy in Sport · DOI: 10.1016/j.ptsp.2018.05.014</div>
+      <div class="ref-data">n=949 Wisconsin parents; median annual club sport spend $1,500 (IQR $500–$3,000); school sports $200/yr; 60% of families earn &gt;$100k; 70%+ bachelor's degree; only 8% earn &lt;$50k.</div>
+    </div>
+
+    <div class="ref-block">
+      <span class="ref-id">R003</span>
+      <div class="ref-title">Svensson et al. (2019) — Club vs. school sports conflict in the United States</div>
+      <div class="ref-meta">Quest · DOI: 10.1080/00336297.2019.1627561</div>
+      <div class="ref-data">Youth sports industry estimated at $17 billion; club vs. school system conflict; pay-to-play exclusion of lower-income families.</div>
+    </div>
+
+    <div class="ref-block">
+      <span class="ref-id">R005</span>
+      <div class="ref-title">Beron et al. (2019) — Birth date and career attainment in professional soccer</div>
+      <div class="ref-meta">Science and Medicine in Football · DOI: 10.1080/24733938.2019.1696471</div>
+      <div class="ref-data">n=1,071 academy players; only 40 (4.7%) reached professional first team. Relative Age Effect (RAE): Q4 (Oct–Dec) players who persist have 3× better odds than Q1 players.</div>
+    </div>
+
+    <div class="ref-block">
+      <span class="ref-id">R006</span>
+      <div class="ref-title">Watanabe et al. (2010) — Career length in Major League Soccer</div>
+      <div class="ref-meta">Journal of Quantitative Analysis in Sports · DOI: 10.2202/1559-0410.1261</div>
+      <div class="ref-data">n=~1,100 MLS players 1996–2007; initial career expectancy 2.4 years; ~30% exit after 1 season; annual exit rate never below 12%; foreign-born 2.2× exit odds vs. US-born.</div>
+    </div>
+
+    <div class="ref-block">
+      <span class="ref-id">R008</span>
+      <div class="ref-title">Dure et al. (2018) — Globalization of US men's college soccer</div>
+      <div class="ref-meta">Soccer &amp; Society · DOI: 10.1080/14660970.2017.1419469</div>
+      <div class="ref-data">38,000 men's college soccer players; only ~1,800 pro roster spots across all US tiers. 7,600 international players from 170 countries now compete for US college spots.</div>
+    </div>
+  </section>
+
+  <!-- Data Limitations -->
+  <section>
+    <h2>Data Limitations</h2>
+    <table>
+      <thead>
+        <tr><th>Limitation</th><th>Impact</th><th>Mitigation</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ECNL club roster not publicly scrapeable</td>
+          <td>Cannot enumerate all 279 ECNL clubs</td>
+          <td>Counts from Wikipedia; cost estimates from club websites</td>
+        </tr>
+        <tr>
+          <td>Fee data collected from websites (not invoices)</td>
+          <td>Actual fees may differ; some fees hidden behind logins</td>
+          <td>Multiple sources cross-referenced; ranges reported</td>
+        </tr>
+        <tr>
+          <td>Survey sample size (n=47)</td>
+          <td>Self-selected sample may skew toward higher spenders</td>
+          <td>Survey data used for validation only, not primary statistics</td>
+        </tr>
+        <tr>
+          <td>Scholarship probability estimates</td>
+          <td>No tier-specific scholarship rate data exists publicly</td>
+          <td>Estimates derived from academic literature + NCAA total data</td>
+        </tr>
+        <tr>
+          <td>Career cost assumptions (years active per tier)</td>
+          <td>Actual career lengths vary by family</td>
+          <td>Low/mid/high ranges reported; Monte Carlo captures uncertainty</td>
+        </tr>
+        <tr>
+          <td>USL Academy data inaccessible (JS-rendered)</td>
+          <td>Youth development affiliate teams not in club index</td>
+          <td>USL professional clubs serve as proxies</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Master Club Index -->
+  <section>
+    <h2>Master Club Database</h2>
+    <p>This research compiled a national database of youth soccer clubs, leagues,
+       and programs as a byproduct of the fee collection process. The master index
+       contains <strong>4,500+ club records</strong> from 15 data sources covering
+       all 50 states.</p>
+
+    <table>
+      <thead>
+        <tr><th>League / Source</th><th>Tier</th><th>Records</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>National Directory (ussoccerparent.com)</td><td>All tiers</td><td>2,537</td></tr>
+        <tr><td>NPL leagues (15 of 15 complete)</td><td><span class="tier-badge t2">T2</span></td><td>694</td></tr>
+        <tr><td>EDP Soccer (NJ/PA/MD/CT/NY)</td><td><span class="tier-badge t2">T2</span></td><td>242</td></tr>
+        <tr><td>The National League</td><td><span class="tier-badge t2">T2</span></td><td>182</td></tr>
+        <tr><td>SoCal Soccer League</td><td><span class="tier-badge t2">T2</span></td><td>172</td></tr>
+        <tr><td>USL League Two</td><td><span class="tier-badge t2">T2–T3</span></td><td>157</td></tr>
+        <tr><td>MLS Next</td><td><span class="tier-badge t3">T3–T4</span></td><td>152</td></tr>
+        <tr><td>Development Player League (DPL)</td><td><span class="tier-badge t3">T3</span></td><td>105</td></tr>
+        <tr><td>Girls Academy</td><td><span class="tier-badge t3">T3</span></td><td>96</td></tr>
+        <tr><td>USL Youth</td><td><span class="tier-badge t3">T3</span></td><td>96</td></tr>
+        <tr><td>USL W League</td><td><span class="tier-badge t2">T2–T3</span></td><td>92</td></tr>
+        <tr><td>USL Championship</td><td>PRO</td><td>25</td></tr>
+        <tr><td>USL League One</td><td>PRO</td><td>17</td></tr>
+        <tr><td>USL Super League</td><td>PRO</td><td>9</td></tr>
+        <tr><td><strong>TOTAL</strong></td><td>—</td><td><strong>4,500+</strong></td></tr>
+      </tbody>
+    </table>
+    <p>The full database is available at <code>data/master_clubs_index.csv</code> in the
+       project repository. ECNL clubs (~279) are not included due to data access limitations.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>Fool's Gold: Youth Soccer Research &bull; Methodology &amp; Sources &bull;
+     <a href="../index.html" style="color:#a0aec0">Home</a></p>
+</footer>
+
+</body>
+</html>
