@@ -1,0 +1,491 @@
+year,overall,round,player,nationality,college,team_drafted,active_2026,squad_2026,salary_2026
+2025,1,R1,Manu Duah,Ghana,UC Santa Barbara,San Diego FC,True,San Diego FC,"$1,693"
+2025,2,R1,Max Floriani,USA,Saint Louis,San Jose Earthquakes,True,SJ Earthquakes,"$1,693"
+2025,3,R1,Dean Boltz,USA,Wisconsin,Chicago Fire FC,True,Chicago Fire,"$1,693"
+2025,4,R1,Alex Harris,USA,Cornell,Colorado Rapids,True,Colorado Rapids,"$1,693"
+2025,5,R1,Reid Roberts,USA,San Francisco,San Jose Earthquakes,True,SJ Earthquakes,"$1,693"
+2025,6,R1,Matthew Senanou,USA,Xavier,Colorado Rapids,False,,
+2025,7,R1,Emil Jääskeläinen,Finland,Akron,St. Louis City SC,False,,
+2025,8,R1,Jansen Miller,USA,Indiana,Sporting Kansas City,True,Sporting KC,"$1,693"
+2025,9,R1,Mikah Thomas,USA,UConn,Charlotte FC,False,,
+2025,10,R1,Hakim Karamoko,USA,NC State,D.C. United,True,D.C. United,"$1,693"
+2025,11,R1,Enzo Newman,USA,Oregon State,FC Dallas,True,FC Dallas,"$1,693"
+2025,12,R1,Efetobo Aror,USA,Portland,Colorado Rapids,False,,
+2025,13,R1,Michael Adedokun,Nigeria,Ohio State,CF Montréal,False,,
+2025,14,R1,Ian Smith,USA,Denver,Portland Timbers,True,Portland Timbers,"$1,693"
+2025,15,R1,Tate Johnson,USA,North Carolina,Vancouver Whitecaps FC,True,Vancouver W'caps,"$1,693"
+2025,16,R1,Sydney Wathuta,Canada,Vermont,Colorado Rapids,True,Colorado Rapids,"$1,693"
+2025,17,R1,Max Murray,USA,Vermont,New York City FC,True,NYCFC,"$1,693"
+2025,18,R1,Donovan Parisian,USA,San Diego,New England Revolution,True,NE Revolution,"$1,693"
+2025,19,R1,Jesús Barea,Spain,Missouri State,Real Salt Lake,True,Real Salt Lake,"$1,693"
+2025,20,R1,Jason Bucknor,USA,Michigan,LA Galaxy,False,,
+2025,21,R1,Max Kerkvliet,USA,UConn,Real Salt Lake,True,Real Salt Lake,"$1,693"
+2025,22,R1,Alec Hughes,USA,UMass,Los Angeles FC,False,,
+2025,23,R1,Reid Fisher,USA,San Diego State,Toronto FC,False,,
+2025,24,R1,Ian Pilcher,USA,Charlotte,San Diego FC,True,San Diego FC,"$1,693"
+2025,25,R1,Roman Torres,USA,Creighton,Minnesota United FC,False,,
+2025,26,R1,Josh Copeland,USA,Detroit Mercy,Colorado Rapids,False,,
+2025,27,R1,Joran Gerbet,France,Clemson,Orlando City SC,True,Orlando City,"$2,181"
+2025,28,R1,Ryan Baer,USA,West Virginia,Seattle Sounders FC,False,,
+2025,29,R1,Lineker Rodrigues dos Santos,Brazil,Marshall,Real Salt Lake,False,,
+2025,30,R1,Sergi Solans,Spain,Oregon State,Real Salt Lake,True,Real Salt Lake,"$1,693"
+2025,31,R2,Harrison Bertos,USA,Washington,San Diego FC,False,,
+2025,32,R2,Nick Fernandez,USA,Portland,San Jose Earthquakes,False,,
+2025,33,R2,Travis Smith Jr.,USA,Wake Forest,Chicago Fire FC,False,,
+2025,34,R2,Anthony Samways,USA,Ohio State,Sporting Kansas City,False,,
+2025,35,R2,Eric Howard,USA,Georgetown,New England Revolution,False,,
+2025,36,R2,Alioune Ka,USA,Cornell,Nashville SC,False,,
+2025,37,R2,Joey Zalinsky,USA,Rutgers,St. Louis City SC,False,,
+2025,38,R2,Charlie Harper,Australia,North Carolina,Colorado Rapids,True,RB New York,"$7,500"
+2025,39,R2,Michael Sullivan,USA,Pittsburgh,Toronto FC,False,,
+2025,40,R2,Daniel Ittycheria,USA,Princeton,D.C. United,False,,
+2025,41,R2,Sam Sarver,USA,Indiana,FC Dallas,True,FC Dallas,"$2,181"
+2025,42,R2,Riley Thomas,USA,North Carolina,Austin FC,False,,
+2025,43,R2,Kieran Chandler,USA,UConn,Minnesota United FC,True,Minnesota Utd,"$1,693"
+2025,44,R2,Arik Duncan,USA,California,CF Montréal,False,,
+2025,45,R2,Nikola Djordjevic,USA,SMU,Vancouver Whitecaps FC,True,Vancouver W'caps,"$1,693"
+2025,46,R2,Titus Sandy Jr,USA,Clemson,Orlando City SC,False,,
+2025,47,R2,Andrew Johnson,USA,Cornell,Charlotte FC,True,Charlotte,"$1,693"
+2025,48,R2,Bo Cummins,USA,Wake Forest,Houston Dynamo FC,False,,
+2025,49,R2,Nick Dang,USA,Virginia,Real Salt Lake,False,,
+2025,50,R2,Caden Grabfelder,USA,Penn State,CF Montréal,False,,
+2025,51,R2,Cesar Ruvalcaba,USA,SMU,Columbus Crew,True,Columbus Crew,"$2,181"
+2025,52,R2,Bailey Sparks,USA,SMU,Inter Miami CF,False,,
+2025,53,R2,Ronan Wynne,New Zealand,Denver,Atlanta United FC,False,,
+2025,54,R2,Collin McCamy,USA,Northwestern,New York City FC,False,,
+2025,55,R2,Logan Dorsey,USA,Kentucky,Minnesota United FC,False,,
+2025,56,R2,Samy Kanaan,USA,San Diego,San Diego FC,False,,
+2025,57,R2,Collins Oduro,Ghana,Indiana,Orlando City SC,False,,
+2025,58,R2,Demian Alvarez,USA,Seattle,Seattle Sounders FC,False,,
+2025,59,R2,Trace Alphin,USA,Wake Forest,Real Salt Lake,False,,
+2025,60,R2,Jacob Woznicki,USA,Hofstra,LA Galaxy,False,,
+2025,61,R3,Donovan Sessoms,USA,Sacramento State,San Diego FC,False,,
+2025,62,R3,Donavan Phillip,Saint Lucia,NC State,Colorado Rapids,False,,
+2025,63,R3,Geni Kanyane,South Africa,Dayton,Chicago Fire FC,False,,
+2025,64,R3,Leon Koehl,Germany,Maryland,Sporting Kansas City,False,,
+2025,65,R3,C. J. Williams,USA,Boston College,New England Revolution,False,,
+2025,66,R3,Ethan Ballek,USA,South Carolina,Nashville SC,False,,
+2025,67,R3,Colin Welsh,USA,Western Michigan,St. Louis City SC,False,,
+2025,68,R3,Shawn Smart,USA,Clemson,Colorado Rapids,False,,
+2025,69,R3,Joseph Melto Quiah,Liberia,Dayton,Toronto FC,False,,
+2025,70,R3,Jonah Biggar,USA,South Carolina,D.C. United,False,,
+2025,71,R3,Mohamed Cisset,Mali,Penn State,FC Dallas,False,,
+2025,72,R3,Patrick Gryczewski,USA,Rhode Island,Austin FC,False,,
+2025,73,R3,Arthur Duquenne,France,Clemson,CF Montréal,False,,
+2025,74,R3,Lukas Burns,USA,Providence,Portland Timbers,False,,
+2025,75,R3,Matthew Van Horn,USA,Georgetown,Colorado Rapids,False,,
+2025,76,R3,Trace Terry,USA,Bowling Green,Seattle Sounders FC,False,,
+2025,77,R3,Barzee Blama,USA,Mercer,Charlotte FC,False,,
+2025,78,R3,A. J. Smith,Denmark,Virginia,New York City FC,False,,
+2025,79,R3,Liam O'Gara,USA,Wake Forest,Real Salt Lake,False,,
+2025,80,R3,Ben Augee,USA,Gonzaga,FC Cincinnati,False,,
+2025,81,R3,Drew Kerr,USA,Duke,Columbus Crew,True,Toronto FC,"$3,077"
+2025,82,R3,Michael Appiah,Ghana,FIU,Inter Miami CF,False,,
+2025,83,R3,William Kulvik,Norway,Maryland,Atlanta United FC,False,,
+2025,84,R3,Arnau Farnós,Spain,Oregon State,New York City FC,False,,
+2025,85,R3,Nick Collins,USA,Rutgers,Minnesota United FC,False,,
+2025,86,R3,Grant Bailey,USA,Loyola Chicago,D.C. United,False,,
+2025,87,R3,Takahiro Fujita,Japan,Marshall,Orlando City SC,False,,
+2025,88,R3,Nico Cavallo,USA,UCLA,New York City FC,True,NYCFC,"$2,181"
+2025,89,R3,Aleksandar Vuković,Serbia,Marshall,Real Salt Lake,False,,
+2025,90,R3,Nicklaus Sullivan,USA,CSUSB,LA Galaxy,False,,
+2024,1,R1,Tyrese Spicer,Trinidad & Tobago,Lipscomb,Toronto FC,True,Orlando City,"$5,288"
+2024,2,R1,Wayne Frederick,Trinidad & Tobago,Duke,Colorado Rapids,True,Colorado Rapids,"$2,181"
+2024,3,R1,Logan Farrington,USA,Oregon State,FC Dallas,True,FC Dallas,"$6,731"
+2024,4,R1,Kimani Stewart-Baynes,Canada,Maryland,Colorado Rapids,True,Columbus Crew,"$1,923"
+2024,5,R1,Nate Jones,USA,Washington,Austin FC,False,,
+2024,6,R1,Bryan Dowd,USA,Notre Dame,Chicago Fire FC,False,,
+2024,7,R1,Jacob Murrell,USA,Georgetown,D.C. United,True,D.C. United,"$2,181"
+2024,8,R1,Malachi Jones,Sierra Leone,Lipscomb,New York City FC,True,NYCFC,"$2,181"
+2024,9,R1,Hugo Bacharach,Spain,Indiana,Minnesota United FC,False,,
+2024,10,R1,Grayson Doody,USA,UCLA,CF Montréal,False,,
+2024,11,R1,Wyatt Meyer,USA,California,Nashville SC,True,Sporting KC,"$2,181"
+2024,12,R1,Aidan O'Connor,USA,Virginia,New York Red Bulls,False,,
+2024,13,R1,Jamar Ricketts,USA,Cal State Northridge,San Jose Earthquakes,True,SJ Earthquakes,"$2,181"
+2024,14,R1,Tyger Smalls,England,Loyola Marymount,Charlotte FC,True,Charlotte,"$2,181"
+2024,15,R1,Yannick Bright,Italy,New Hampshire,Inter Miami CF,False,,
+2024,16,R1,Matthew Bell,Jamaica,Marshall,Real Salt Lake,False,,
+2024,17,R1,Hosei Kijima,Japan,Wake Forest,St. Louis City SC,True,D.C. United,"$2,181"
+2024,18,R1,Kevin Bonilla,USA,Portland,Real Salt Lake,False,,
+2024,19,R1,Jayden Hibbert,Jamaica,UConn,Atlanta United FC,True,Atlanta Utd,"$2,181"
+2024,20,R1,Marcus Caldeira,Canada,West Virginia,Minnesota United FC,True,Minnesota Utd,"$1,693"
+2024,21,R1,Jeorgio Kocevski,USA,Syracuse,Orlando City SC,False,,
+2024,22,R1,Ryan Schewe,USA,Georgetown,Sporting Kansas City,True,Sporting KC,"$1,693"
+2024,23,R1,Kalani Kossa-Rienzi,USA,Washington,Seattle Sounders FC,True,Seattle Sounders,"$2,181"
+2024,24,R1,Ryan Carmichael,Northern Ireland,Hofstra,Inter Miami CF,False,,
+2024,25,R1,Yutaro Tsukada,Japan,West Virginia,Orlando City SC,True,Orlando City,"$2,181"
+2024,26,R1,Stephen Annor Gyamfi,Ghana,Virginia,Houston Dynamo FC,False,,
+2024,27,R1,Brian Schaefer,USA,South Florida,FC Cincinnati,False,,
+2024,28,R1,Jackson Lee,Australia,West Virginia,Los Angeles FC,False,,
+2024,29,R1,Jayden Da,USA,Duquesne,Columbus Crew,False,,
+2024,30,R2,Joey Maher,USA,Indiana,Toronto FC,True,Nashville SC,"$17,308"
+2024,31,R2,Bryant Farkarlun,Liberia,UT Rio Grande Valley,Austin FC,False,,
+2024,32,R2,Leo Afonso,Brazil,Virginia,Inter Miami CF,False,,
+2024,33,R2,Olu Oyegunle,Canada,Syracuse,Chicago Fire FC,False,,
+2024,34,R2,Palmer Ault,USA,Butler,Colorado Rapids,False,,
+2024,35,R2,Jason Shokalook,USA,Akron,Chicago Fire FC,True,Chicago Fire,"$1,693"
+2024,36,R2,Brandon Parrish,USA,Clemson,D.C. United,False,,
+2024,37,R2,Damien Barker John,USA,Louisville,Real Salt Lake,False,,
+2024,38,R2,Jahlane Forbes,USA,Wake Forest,Charlotte FC,False,,
+2024,39,R2,Malik Henry,Canada,Akron,CF Montréal,True,Toronto FC,"$1,693"
+2024,40,R2,Kyle Linhares,USA,Georgetown,Portland Timbers,False,,
+2024,41,R2,Jacob Babalai,USA,Portland,Charlotte FC,False,,
+2024,42,R2,Beau Leroux,USA,San Jose State,San Jose Earthquakes,True,SJ Earthquakes,"$4,808"
+2024,43,R2,Anderson Rosa,Brazil,UCF,Colorado Rapids,False,,
+2024,44,R2,Turner Humphrey,USA,Oregon State,FC Dallas,False,,
+2024,45,R2,Eliot Goldthorp,England,Hofstra,Vancouver Whitecaps FC,False,,
+2024,46,R2,Ethan Brandt,USA,Western Michigan,LA Galaxy,False,,
+2024,47,R2,Josh Jones,USA,Louisville,Real Salt Lake,False,,
+2024,48,R2,Javier Armas,Spain,Oregon State,Atlanta United FC,False,,
+2024,49,R2,Aldair Sanchez,USA,North Carolina,D.C. United,False,,
+2024,50,R2,Kevin Carmichael,USA,California,Nashville SC,False,,
+2024,51,R2,Dyson Clapier,USA,Akron,Sporting Kansas City,False,,
+2024,52,R2,Antino Lopez,USA,Duke,Seattle Sounders FC,True,Seattle Sounders,"$1,693"
+2024,53,R2,Stas Korzeniowski,USA,Penn,Philadelphia Union,True,Philadelphia Union,"$1,693"
+2024,54,R2,Filip Mirkovic,USA,Pittsburgh,Orlando City SC,False,,
+2024,55,R2,Ousmane Sylla,Senegal,Clemson,Houston Dynamo FC,False,,
+2024,56,R2,Kenji Mboma Dem,France,Dayton,FC Cincinnati,True,FC Cincinnati,"$1,693"
+2024,57,R2,Kenny Nielsen,USA,Georgetown,Los Angeles FC,True,LAFC,"$1,693"
+2024,58,R2,Zach Zengue,USA,Georgetown,Columbus Crew,True,Columbus Crew,"$1,693"
+2024,59,R3,Patrick McDonald,USA,Indiana,Toronto FC,False,,
+2024,60,R3,Gunnar Studenhofft,Cayman Islands,Manhattan,Colorado Rapids,False,,
+2024,61,R3,Pep Casas,Spain,UNC-Wilmington,Inter Miami CF,False,,
+2024,62,R3,Tucker Lepley,USA,UCLA,LA Galaxy,True,LA Galaxy,"$2,181"
+2024,63,R3,Zachary Bohane,USA,Stanford,Philadelphia Union,False,,
+2024,64,R3,Laurence Wootton,England,Ohio State,Chicago Fire FC,False,,
+2024,65,R3,Nathan Crockford,USA,Wisconsin,D.C. United,True,SJ Earthquakes,"$1,693"
+2024,66,R3,Taylor Calheira,USA,UMBC,New York City FC,True,Sporting KC,"$1,693"
+2024,67,R3,Morris Duggan,Germany,Marshall,Minnesota United FC,True,Minnesota Utd,"$2,181"
+2024,68,R3,Eli Conway,USA,UConn,CF Montréal,False,,
+2024,69,R3,Gage Guerra,USA,Louisville,Portland Timbers,True,Portland Timbers,"$1,693"
+2024,70,R3,Nathan Richmond,USA,Clemson,Charlotte FC,False,,
+2024,71,R3,Riley Lynch,USA,Saint Mary's,San Jose Earthquakes,False,,
+2024,72,R3,Shane de Flores,USA,Stanford,Chicago Fire FC,False,,
+2024,73,R3,Mads Westergren,Denmark,SMU,FC Dallas,False,,
+2024,74,R3,Nicolas Fleuriau Chateau,Canada,St. John's,Vancouver Whitecaps FC,False,,
+2024,75,R3,Bryce Boneau,USA,Notre Dame,Nashville SC,False,,
+2024,76,R3,Maximus Jennings,USA,Georgetown,Real Salt Lake,False,,
+2024,77,R3,Casper Mols,Denmark,Kentucky,Atlanta United FC,False,,
+2024,78,R3,Babacar Niang,Senegal,Wake Forest,Minnesota United FC,False,,
+2024,79,R3,Brendan McSorley,USA,Providence,St. Louis City SC,True,St. Louis City,"$1,693"
+2024,80,R3,Jonathan Robinson,USA,Western Michigan,Sporting Kansas City,False,,
+2024,81,R3,Buba Fofanah,Sierra Leone,Portland,Seattle Sounders FC,False,,
+2024,82,R3,Francesco Montali,USA,Boston,Philadelphia Union,True,SJ Earthquakes,"$2,181"
+2024,83,R3,Riyon Tori,Japan,Charlotte,Orlando City SC,False,,
+2024,84,R3,Ruben Mesalles,USA,Duke,Real Salt Lake,False,,
+2024,85,R3,Fletcher Bank,USA,Stanford,Toronto FC,False,,
+2024,86,R3,Carson Hodgson,USA,Western Michigan,CF Montréal,False,,
+2024,87,R3,Luke Pruter,USA,UC Irvine,Columbus Crew,True,Columbus Crew,"$2,181"
+2023,1,R1,Hamady Diop,Senegal,Clemson,Charlotte FC,False,,
+2023,2,R1,Shak Mohammed,Ghana,Duke,Orlando City SC,True,Nashville SC,"$1,693"
+2023,3,R1,Moïse Bombito,Canada,New Hampshire,Colorado Rapids,False,,
+2023,4,R1,Joshua Bolma,Ghana,Maryland,New England Revolution,False,,
+2023,5,R1,J.C. Ngando,Cameroon,UNC Greensboro,Vancouver Whitecaps FC,True,Vancouver W'caps,"$3,846"
+2023,6,R1,Duncan McGuire,USA,Creighton,Orlando City SC,True,Orlando City,"$11,538"
+2023,7,R1,Ilijah Paul,USA,Washington,Real Salt Lake,False,,
+2023,8,R1,Stephen Afrifa,Canada,FIU,Sporting Kansas City,True,Sporting KC,"$2,181"
+2023,9,R1,Owen O'Malley,USA,Creighton,St. Louis City SC,False,,
+2023,10,R1,Daniel Munie,USA,Indiana,San Jose Earthquakes,True,SJ Earthquakes,"$9,615"
+2023,11,R1,Joey Skinner,USA,Clemson,Nashville SC,False,,
+2023,12,R1,Patrick Agyemang,USA,Rhode Island,Charlotte FC,False,,
+2023,13,R1,CJ Fodrey,USA,San Diego State,Austin FC,True,Austin FC,"$2,308"
+2023,14,R1,Maximilian Arfsten,USA,UC Davis,Columbus Crew,True,Columbus Crew,"$15,385"
+2023,15,R1,Noel Caliskan,Germany,Loyola Marymount,Portland Timbers,True,Real Salt Lake,"$2,181"
+2023,16,R1,Bertin Jacquesson,France,Pittsburgh,Real Salt Lake,False,,
+2023,17,R1,Abdi Salim,Somalia,Syracuse,Orlando City SC,False,,
+2023,18,R1,Cole Jensen,USA,Xavier,Inter Miami CF,False,,
+2023,19,R1,Ryen Jiba,South Sudan,SLCC,Minnesota United FC,False,,
+2023,20,R1,Valentin Noël,France,Pittsburgh,Austin FC,False,,
+2023,21,R1,Elian Haddock,USA,Yale,New York Red Bulls,False,,
+2023,22,R1,Joey Akpunonu,USA,Bowling Green,FC Cincinnati,False,,
+2023,23,R1,Gino Vivi,Costa Rica,Central Florida,LA Galaxy,False,,
+2023,24,R1,Herbert Endeley,USA,Indiana,FC Dallas,False,,
+2023,25,R1,Emeka Eneli,USA,Cornell,Real Salt Lake,True,Real Salt Lake,"$7,692"
+2023,26,R1,Malcolm Johnston,Canada,Maryland,New York City FC,False,,
+2023,27,R1,Xavier Zengue,USA,Dayton,Columbus Crew,False,,
+2023,28,R1,Holden Trent,USA,High Point,Philadelphia Union,False,,
+2023,29,R1,Levonte Johnson,Canada,Syracuse,Vancouver Whitecaps FC,False,,
+2023,30,R2,John Klein,USA,Saint Louis,St. Louis City SC,False,,
+2023,31,R2,Ben Stitz,USA,Penn,D.C. United,False,,
+2023,32,R2,Jalen Watson,Canada,Penn State,Toronto FC,False,,
+2023,33,R2,Liam Butts,Guyana,Penn State,San Jose Earthquakes,False,,
+2023,34,R2,Isaiah Reid,USA,Clemson,Houston Dynamo FC,False,,
+2023,35,R2,Sean Suber,USA,Charlotte,Nashville SC,False,,
+2023,36,R2,Tyler Young,USA,Campbell,Atlanta United FC,False,,
+2023,37,R2,Chris Rindov,USA,Maryland,Sporting Kansas City,True,LA Galaxy,"$2,181"
+2023,38,R2,Eythor Björgolfsson,Norway,Kentucky,Seattle Sounders FC,False,,
+2023,39,R2,Victor Souza,USA,Boston College,New England Revolution,False,,
+2023,40,R2,Nick Scardina,USA,Washington,Charlotte FC,False,,
+2023,41,R2,Oliver Semmle,Germany,Marshall,Colorado Rapids,False,,
+2023,42,R2,Daniel Nimick,Canada,Western Michigan,Vancouver Whitecaps FC,False,,
+2023,43,R2,Clay Holstad,USA,Kentucky,Columbus Crew,False,,
+2023,44,R2,Ryan Bilichuk,USA,Elon,Portland Timbers,False,,
+2023,45,R2,Amferny Sinclair,Costa Rica,Syracuse,Real Salt Lake,False,,
+2023,46,R2,Luis Grassow,Germany,Kentucky,Orlando City SC,False,,
+2023,47,R2,Bachir Ndiaye,Senegal,UNC Wilmington,Inter Miami CF,False,,
+2023,48,R2,Emmanuel Iwe,Nigeria,St. Cloud State,Minnesota United FC,False,,
+2023,49,R2,Alex Meinhard,Estonia,Tulsa,Nashville SC,False,,
+2023,50,R2,Ethan Conley,USA,UNC Greensboro,New York Red Bulls,False,,
+2023,51,R2,Hunter Morse,USA,Western Michigan,FC Cincinnati,False,,
+2023,52,R2,Russell Shealy,USA,Syracuse,LA Galaxy,False,,
+2023,53,R2,Ryan Wittenbrink,USA,Indiana,FC Dallas,False,,
+2023,54,R2,Milo Garvanian,USA,North Carolina,CF Montréal,False,,
+2023,55,R2,Braudílio Rodrigues,Portugal,Franklin Pierce,New York City FC,False,,
+2023,56,R2,Jackson Wälti,USA,Pittsburgh,Austin FC,False,,
+2023,57,R2,Stefan Stojanovic,USA,Georgetown,Philadelphia Union,False,,
+2023,58,R2,Jassem Koleilat,Czech Republic,New Hampshire,Los Angeles FC,False,,
+2023,59,R3,Blake Bowen,USA,San Diego State,Seattle Sounders FC,False,,
+2023,60,R3,Aidan Rocha,USA,Georgetown,D.C. United,False,,
+2023,61,R3,Charlie Sharp,USA,Western Michigan,Toronto FC,False,,
+2023,62,R3,Hunter George,USA,Maryland,San Jose Earthquakes,False,,
+2023,63,R3,Frantz Pierrot,Haiti,Connecticut,Houston Dynamo FC,False,,
+2023,64,R3,Noah Egan,USA,Vermont,Chicago Fire FC,False,,
+2023,65,R3,Makel Rasheed,USA,Xavier,Nashville SC,False,,
+2023,66,R3,MD Myers,USA,Rutgers,New York City FC,False,,
+2023,67,R3,Billy Hency,USA,Loyola-Chicago,Chicago Fire FC,False,,
+2023,68,R3,Andreas Ueland,Norway,Virginia,New England Revolution,False,,
+2023,69,R3,Andrew Privett,USA,Penn State,Charlotte FC,True,Charlotte,"$4,808"
+2023,71,R3,Buster Sjöberg,Sweden,Syracuse,Vancouver Whitecaps FC,False,,
+2023,72,R3,Salvatore Mazzaferro,Canada,South Florida,Austin FC,False,,
+2023,73,R3,Jaden Jones-Riley,USA,Dayton,Portland Timbers,False,,
+2023,74,R3,Moses Mensah,Ghana,Campbell,Real Salt Lake,False,,
+2023,75,R3,Ousman Jabang,USA,Mercer,CF Montréal,False,,
+2023,76,R3,Wilmer Cabrera Jr.,Colombia,Butler,Chicago Fire FC,False,,
+2023,78,R3,Rory O'Driscoll,USA,New Hampshire,Nashville SC,False,,
+2023,79,R3,Amos Shapiro-Thompson,USA,Boston College,New York Red Bulls,False,,
+2023,80,R3,London Aghedo,USA,Air Force,FC Cincinnati,False,,
+2023,82,R3,Kameron Lacey,Jamaica,Charlotte,FC Dallas,False,,
+2023,83,R3,Nick Christoffersen,Canada,Penn,CF Montréal,False,,
+2023,84,R3,Lyam MacKinnon,Switzerland,Villanova,Nashville SC,False,,
+2023,85,R3,Tyler Clegg,USA,James Madison,Portland Timbers,False,,
+2023,87,R3,Noah Dollenmayer,USA,Cal State San Bernardino,Los Angeles FC,False,,
+2022,1,R1,Ben Bender,USA,Maryland,Charlotte FC,True,Philadelphia Union,"$2,692"
+2022,2,R1,Roman Celentano,USA,Indiana,FC Cincinnati,True,FC Cincinnati,"$10,096"
+2022,3,R1,Isaiah Parker,USA,Saint Louis,FC Dallas,False,,
+2022,4,R1,Thorleifur Úlfarsson,Iceland,Duke,Houston Dynamo,False,,
+2022,5,R1,Kipp Keller,USA,Saint Louis,Austin FC,False,,
+2022,6,R1,Lucas Bartlett,USA,St. John's,FC Dallas,True,D.C. United,"$10,096"
+2022,7,R1,Matt Nocita,USA,Naval Academy,NY Red Bulls,False,,
+2022,8,R1,Ousseni Bouda,Burkina Faso,Stanford,San Jose Earthquakes,True,SJ Earthquakes,"$6,731"
+2022,9,R1,Ryan Sailor,USA,Washington,Inter Miami CF,False,,
+2022,10,R1,Ahmed Longmire,USA,UCLA,Nashville SC,False,,
+2022,11,R1,Kendall Burks,USA,Washington,Chicago Fire FC,False,,
+2022,12,R1,Patrick Schulte,USA,Saint Louis,Columbus Crew,True,Columbus Crew,"$17,308"
+2022,13,R1,Oskar Ågren,Sweden,Clemson,San Jose Earthquakes,False,,
+2022,14,R1,Ian Murphy,USA,Duke,FC Cincinnati,True,Colorado Rapids,"$7,692"
+2022,15,R1,Jojea Kwizera,DR Congo,Utah Valley,CF Montréal,False,,
+2022,16,R1,Simon Becher,USA,Saint Louis,Vancouver Whitecaps FC,True,St. Louis City,"$7,692"
+2022,17,R1,Tani Oluwaseyi,Canada,St. John's,Minnesota United FC,False,,
+2022,18,R1,Jack Lynn,USA,Notre Dame,Orlando City SC,False,,
+2022,19,R1,Erik Centeno,USA,Pacific,Atlanta United FC,False,,
+2022,20,R1,O'Vonte Mullings,Canada,Florida Gulf Coast,NY Red Bulls,False,,
+2022,21,R1,Farai Mutatu,Zimbabwe,Michigan State,LA Galaxy,False,,
+2022,22,R1,Esai Easley,USA,Grand Canyon,Sporting Kansas City,False,,
+2022,23,R1,Mohamed Omar,Somalia,Notre Dame,Colorado Rapids,False,,
+2022,24,R1,Jacob Jackson,USA,Loyola Marymount,New England Revolution,False,,
+2022,25,R1,Philip Quinton,USA,Notre Dame,Columbus Crew,True,Real Salt Lake,"$3,365"
+2022,26,R1,Anthony Markanich,USA,Northern Illinois,Colorado Rapids,True,Minnesota Utd,"$6,731"
+2022,27,R1,Justin Rasmussen,USA,Grand Canyon,Portland Timbers,False,,
+2022,28,R1,Tsiki Ntsabeleng,South Africa,Oregon State,FC Dallas,False,,
+2022,29,R2,Kyle Holcomb,USA,Wake Forest,Charlotte FC,False,,
+2022,30,R2,Nick Markanich,USA,Northern Illinois,FC Cincinnati,True,Houston Dynamo,"$3,557"
+2022,31,R2,Luka Gavran,Canada,St. John's,Toronto FC,True,Toronto FC,"$4,327"
+2022,32,R2,Paulo Lima,Portugal,Providence,Houston Dynamo,False,,
+2022,33,R2,Charlie Ostrem,USA,Washington,Chicago Fire FC,False,,
+2022,34,R2,Kevin O'Toole,Ireland,Princeton,New York City FC,True,NYCFC,"$5,769"
+2022,35,R2,Charlie Asensio,USA,Clemson,Austin FC,False,,
+2022,36,R2,Sofiane Djeffal,France,Oregon State,D.C. United,False,,
+2022,37,R2,Lucas Meek,USA,Washington,Inter Miami CF,False,,
+2022,38,R2,Will Meyer,USA,Akron,Nashville SC,True,Sporting KC,"$2,181"
+2022,39,R2,Arturo Ordoñez,Spain,Pittsburgh,Houston Dynamo,False,,
+2022,40,R2,Jacob Erlandson,USA,Bowling Green,Columbus Crew,False,,
+2022,41,R2,Alex Nagy,USA,Vermont,D.C. United,False,,
+2022,42,R2,Callum Johnson,USA,Clemson,LA Galaxy,False,,
+2022,43,R2,Achille Robin,France,Washington,Seattle Sounders FC,False,,
+2022,44,R2,Luis Felipe Fernandez-Salvador,Ecuador,Clemson,Vancouver Whitecaps FC,False,,
+2022,45,R2,Roberto Molina,El Salvador,UC Irvine,Colorado Rapids,False,,
+2022,46,R2,Nathan Dossantos,Canada,Marshall,Orlando City SC,False,,
+2022,47,R2,Tristan Trager,USA,Air Force,Atlanta United FC,False,,
+2022,48,R2,Justin Ingram,USA,Loyola (MD),Inter Miami CF,False,,
+2022,49,R2,Giovanni Aguilar,USA,Cal State Northridge,Vancouver Whitecaps FC,False,,
+2022,50,R2,Brett St. Martin,USA,Maryland,Sporting Kansas City,False,,
+2022,52,R2,Ben Reveno,USA,UCLA,New England Revolution,False,,
+2022,53,R2,Pedro Fonseca,Brazil,Louisville,Real Salt Lake,False,,
+2022,54,R2,Tyler Bagley,USA,Cornell,Inter Miami CF,False,,
+2022,55,R2,Julian Bravo,USA,Santa Clara,Portland Timbers,False,,
+2022,56,R2,Kingsford Adjei,Ghana,Dayton,New York City FC,False,,
+2022,57,R3,George Marks,USA,Clemson,Charlotte FC,True,Philadelphia Union,"$2,404"
+2022,59,R3,Reshaun Walkes,Canada,UT Rio Grande Valley,Toronto FC,False,,
+2022,60,R3,Chandler Vaughn,USA,Saint Louis,LA Galaxy,False,,
+2022,61,R3,Michael Knapp,USA,Montclair State,Austin FC,False,,
+2022,62,R3,Alec Smir,USA,North Carolina,FC Dallas,True,Minnesota Utd,"$2,181"
+2022,63,R3,Carlo Ritaccio,USA,Akron,Chicago Fire FC,False,,
+2022,64,R3,John Martin,USA,Clemson,San Jose Earthquakes,False,,
+2022,66,R3,Chase Niece,USA,Saint Louis,FC Dallas,False,,
+2022,67,R3,Ivy Brisma,Haiti,NC State,CF Montréal,False,,
+2022,68,R3,Chris Donovan,USA,Drexel,Columbus Crew,False,,
+2022,69,R3,Skage Simonsen,Norway,SMU,D.C. United,False,,
+2022,71,R3,Giannis Nikopolidis,Greece,Georgetown,NY Red Bulls,False,,
+2022,72,R3,Théo Collomb,France,UNC Greensboro,Vancouver Whitecaps FC,False,,
+2022,73,R3,Seth Kuhn,USA,Penn State,NY Red Bulls,False,,
+2022,74,R3,Nick Taylor,Cambodia,UCF,Orlando City SC,False,,
+2022,75,R3,Daniel Bloyou,Ghana,Penn State,Atlanta United FC,False,,
+2022,76,R3,Hal Uderitz,USA,Seattle,Seattle Sounders FC,False,,
+2022,81,R3,Jasper Löffelsend,Germany,Pittsburgh,Real Salt Lake,False,,
+2022,83,R3,Sivert Haugli,Norway,Virginia Tech,Portland Timbers,False,,
+2022,84,R3,El Mahdi Youssoufi,Morocco,St. Francis Brooklyn,New York City FC,False,,
+2022,85,Comp,Yanis Leerman,France,UCF,Chicago Fire FC,False,,
+2022,86,Comp,Vitor Dias,Brazil,Marshall,Vancouver Whitecaps FC,False,,
+2022,87,Comp,Holland Rula,USA,Wake Forest,FC Dallas,False,,
+2022,88,Comp,Tola Showunmi,England,New Hampshire,Atlanta United FC,False,,
+2021,1,R1,Daniel Pereira,Venezuela,Virginia Tech,Austin FC,True,Austin FC,"$14,423"
+2021,2,R1,Calvin Harris,England,Wake Forest,FC Cincinnati,True,Sporting KC,"$7,212"
+2021,3,R1,Philip Mayaka,Kenya,Clemson,Colorado Rapids,False,,
+2021,4,R1,Kimarni Smith,England,Clemson,D.C. United,True,FC Cincinnati,"$2,181"
+2021,5,R1,Michael DeShields,USA,Wake Forest,D.C. United,False,,
+2021,6,R1,Ethan Bartlow,USA,Washington,Houston Dynamo,True,Sporting KC,"$1,693"
+2021,7,R1,Bret Halsey,USA,Virginia,Real Salt Lake,False,,
+2021,8,R1,Derek Dodson,USA,Georgetown,Orlando City SC,False,,
+2021,9,R1,David Egbo,Nigeria,Akron,Vancouver Whitecaps,False,,
+2021,10,R1,Josh Penn,USA,Indiana,Inter Miami CF,False,,
+2021,11,R1,Freddy Kleemann,USA,Washington,Austin FC,False,,
+2021,12,R1,Thomas Williamson,USA,California,San Jose Earthquakes,False,,
+2021,13,R1,Luther Archimède,Guadeloupe,Syracuse,NY Red Bulls,False,,
+2021,14,R1,Danny Trejo,Mexico,CSUN,Los Angeles FC,False,,
+2021,15,R1,Nicky Hernandez,USA,SMU,FC Dallas,False,,
+2021,16,R1,Josh Drack,USA,Denver,LA Galaxy,False,,
+2021,17,R1,Justin McMaster,Jamaica,Wake Forest,Minnesota United,False,,
+2021,18,R1,Nabilai Kibunguchy,USA,UC Davis,Minnesota United,False,,
+2021,19,R1,Rio Hope-Gund,USA,Georgetown,Orlando City SC,False,,
+2021,20,R1,Irakoze Donasiyano,Burundi,Virginia,Nashville SC,False,,
+2021,21,R1,Aedan Stanley,USA,Duke,Austin FC,False,,
+2021,22,R1,Brandon Hackenberg,USA,Penn State,Orlando City SC,False,,
+2021,23,R1,Javain Brown,Jamaica,South Florida,Vancouver Whitecaps,False,,
+2021,24,R1,Edward Kizza,Uganda,Pittsburgh,New England Revolution,False,,
+2021,25,R1,Matt Di Rosa,USA,Maryland,Toronto FC,False,,
+2021,26,R1,Aimé Mabika,Zambia,Kentucky,Inter Miami CF,False,,
+2021,27,R1,Justin Malou,Senegal,Clemson,Columbus Crew,False,,
+2021,28,R2,Daniel Steedman,Scotland,Virginia,Austin FC,False,,
+2021,29,R2,Avionne Flanagan,USA,South Florida,FC Cincinnati,False,,
+2021,30,R2,Kristo Strickler,USA,Virginia Tech,Houston Dynamo,False,,
+2021,31,R2,Josh Bauer,USA,New Hampshire,Atlanta United,True,Nashville SC,"$4,423"
+2021,32,R2,Logan Panchot,USA,Stanford,D.C. United,False,,
+2021,33,R2,Jackson Ragen,USA,Michigan,Chicago Fire,True,Seattle Sounders,"$12,019"
+2021,34,R2,Elijah Amo,USA,Louisville,Real Salt Lake,False,,
+2021,35,R2,Preston Judd,USA,Denver,LA Galaxy,True,SJ Earthquakes,"$4,808"
+2021,36,R2,Tom Judge,USA,James Madison,Nashville SC,False,,
+2021,37,R2,Joe Hafferty,USA,Oregon State,Inter Miami CF,False,,
+2021,38,R2,Sean O'Hearn,USA,Georgetown,Minnesota United,False,,
+2021,39,R2,George Asomani,Ghana,NC State,San Jose Earthquakes,False,,
+2021,40,R2,Lamine Conte,Guinea,Louisville,NY Red Bulls,False,,
+2021,41,R2,CC Uche,USA,Ohio State,Los Angeles FC,False,,
+2021,43,R2,Dawson McCartney,USA,Dartmouth,Portland Timbers,False,,
+2021,44,R2,Ben Di Rosa,USA,Maryland,New York City FC,False,,
+2021,45,R2,Nathaniel Crofts,England,Virginia,Toronto FC,False,,
+2021,46,R2,Eric Iloski,USA,UCLA,Vancouver Whitecaps,False,,
+2021,47,R2,Christian Pinzón,USA,Cal State Fullerton,Chicago Fire,False,,
+2021,48,R2,Colin Shutler,USA,Virginia,FC Dallas,False,,
+2021,49,R2,Andrew Pannenberg,USA,Wake Forest,Orlando City SC,False,,
+2021,50,R2,Matt Constant,Canada,North Carolina,Sporting Kansas City,False,,
+2021,51,R2,Francois Dulysse,Haiti,Manhattan College,New England Revolution,False,,
+2021,52,R2,Joshua Jackson-Ketchup,USA,Ohio State,Columbus Crew,False,,
+2021,53,R2,Joel Harrison,Canada,Michigan,Vancouver Whitecaps,False,,
+2021,54,R2,Jonas Fjeldberg,Norway,Dayton,FC Cincinnati,False,,
+2021,55,R3,Noah Lawrence,USA,Ohio State,Austin FC,False,,
+2021,56,R3,Matthew Vowinkel,USA,Hofstra,FC Cincinnati,False,,
+2021,57,R3,Brandon Terwege,USA,SMU,Houston Dynamo,False,,
+2021,59,R3,Aiden McFadden,USA,Notre Dame,Atlanta United,False,,
+2021,60,R3,Mitch Guitar,USA,Wisconsin,Chicago Fire,False,,
+2021,61,R3,Aris Briggs,USA,Georgia State,Real Salt Lake,False,,
+2021,63,R3,Giuseppe Barone,USA,Michigan State,CF Montréal,False,,
+2021,64,R3,Paul Rothrock,USA,Georgetown,Toronto FC,True,Seattle Sounders,"$10,096"
+2021,67,R3,AJ Marcucci,USA,Connecticut College,NY Red Bulls,True,RB New York,"$3,942"
+2021,68,R3,Alvaro Quezada,USA,UC Irvine,Los Angeles FC,False,,
+2021,70,R3,Diego Gutierrez,USA,Creighton,Portland Timbers,False,,
+2021,71,R3,Vuk Latinovich,Serbia,Milwaukee,New York City FC,False,,
+2021,72,R3,Talen Maples,Canada,SMU,Toronto FC,False,,
+2021,73,R3,Sondre Norheim,Norway,Syracuse,Nashville SC,False,,
+2021,74,R3,Tor Saunders,USA,Coastal Carolina,Nashville SC,False,,
+2021,75,R3,Thibaut Jacquel,France,Campbell,FC Dallas,False,,
+2021,76,R3,Mark Salas,USA,North Carolina,FC Dallas,False,,
+2021,77,R3,Jamil Roberts,England,Marshall,Sporting Kansas City,False,,
+2021,80,R3,TJ Bush,USA,James Madison,Seattle Sounders,False,,
+2021,84,Comp,Rene White,USA,NJIT,Real Salt Lake,False,,
+2021,86,Comp,Leroy Enzugusi,Kenya,Drake,Nashville SC,False,,
+2020,1,R1,Robbie Robinson,USA,Clemson,Inter Miami CF,False,,
+2020,2,R1,Jack Maher,USA,Indiana,Nashville SC,True,Nashville SC,"$17,308"
+2020,3,R1,Dylan Nealis,USA,Georgetown,Inter Miami CF,True,RB New York,"$7,933"
+2020,4,R1,Ryan Raposo,Canada,Syracuse,Vancouver WFC,True,LAFC,"$4,231"
+2020,5,R1,Daryl Dike,USA,Virginia,Orlando City SC,False,,
+2020,6,R1,Henry Kessler,USA,Virginia,New England Revolution,True,Charlotte,"$16,346"
+2020,7,R1,Miguel Berry,Spain,San Diego,Columbus Crew,False,,
+2020,8,R1,Garrett McLaughlin,USA,SMU,Houston Dynamo,False,,
+2020,9,R1,Jeremy Kelly,USA,North Carolina,Montreal Impact,False,,
+2020,10,R1,Patrick Seagrist,USA,Marquette,NY Red Bulls,False,,
+2020,11,R1,Alistair Johnston,Canada,Wake Forest,Nashville SC,False,,
+2020,12,R1,Tanner Beason,USA,Stanford,San Jose Earthquakes,True,NE Revolution,"$6,250"
+2020,13,R1,Elliot Panicco,USA,Charlotte,Nashville SC,False,,
+2020,14,R1,Nkosi Tafari,USA,Seattle,FC Dallas,True,LAFC,"$9,260"
+2020,15,R1,Cherif Dieye,Senegal,Louisville,NY Red Bulls,False,,
+2020,16,R1,Aaron Molloy,Ireland,Penn State,Portland Timbers,False,,
+2020,17,R1,Cal Jennings,USA,UCF,FC Dallas,False,,
+2020,18,R1,Noah Billingsley,New Zealand,UC Santa Barbara,Minnesota United FC,False,,
+2020,19,R1,Nyal Higgins,Canada,Syracuse,Toronto FC,False,,
+2020,20,R1,Dayonn Harris,Canada,UConn,Real Salt Lake,False,,
+2020,21,R1,Simon Lefebvre,France,Temple,D.C. United,False,,
+2020,22,R1,Jesus Perez,USA,UIC,New York City FC,False,,
+2020,23,R1,Patrick Nielsen,Denmark,Michigan State,Atlanta United FC,False,,
+2020,24,R1,Paulo Pita,Brazil,Marshall,Los Angeles FC,False,,
+2020,25,R1,Ifunanyachi Achara,Nigeria,Georgetown,Toronto FC,False,,
+2020,26,R1,Jonathan Jimenez,Trinidad & Tobago,Pacific,Chicago Fire FC,False,,
+2020,27,R2,Jack Skahan,USA,North Carolina,San Jose Earthquakes,True,SJ Earthquakes,"$4,327"
+2020,28,R2,Tanner Dieterich,USA,Clemson,Nashville SC,False,,
+2020,29,R2,Rey Ortiz,USA,Portland,FC Cincinnati,False,,
+2020,30,R2,Simon Lekressner,USA,California,New England Revolution,False,,
+2020,31,R2,Joey DeZart,Jamaica,Wake Forest,Orlando City SC,False,,
+2020,32,R2,Daniel Gagliardi,USA,FIU,Vancouver WFC,False,,
+2020,33,R2,Malick Mbaye,Senegal,Clemson,Toronto FC,False,,
+2020,34,R2,Luka Prpa,USA,Marquette,Houston Dynamo,False,,
+2020,35,R2,Danny Reynolds,England,UNC Wilmington,Seattle Sounders FC,False,,
+2020,36,R2,Wallis Lapsley,USA,UC Davis,NY Red Bulls,False,,
+2020,37,R2,Robin Afamefuna,Germany,Virginia,Colorado Rapids,False,,
+2020,38,R2,Jon Bell,USA,UMBC,San Jose Earthquakes,True,Austin FC,"$4,327"
+2020,39,R2,Jonathan Dean,USA,UCF,Orlando City SC,True,Chicago Fire,"$3,365"
+2020,40,R2,Manuel Ferriol,Spain,James Madison,FC Dallas,False,,
+2020,41,R2,Deri Corfe,England,Wright State,NY Red Bulls,False,,
+2020,42,R2,Josh Fawole,USA,Loyola (MD),D.C. United,False,,
+2020,43,R2,Keegan Meyer,USA,High Point,New England Revolution,False,,
+2020,44,R2,Austin Aviza,USA,Providence,Orlando City SC,False,,
+2020,45,R2,Tom Smart,Northern Ireland,Akron,LA Galaxy,False,,
+2020,46,R2,Michael Wetungu,USA,Michigan State,Real Salt Lake,False,,
+2020,47,R2,Remi Prieur,USA,Saint Mary's,Columbus Crew,False,,
+2020,48,R2,Félicien Dumas,France,Notre Dame,New York City FC,False,,
+2020,49,R2,Danny Griffin,USA,Providence,Columbus Crew,False,,
+2020,50,R2,Jack Hallahan,Ireland,Michigan,Los Angeles FC,False,,
+2020,51,R2,Simon Wæver,Denmark,Indiana,Toronto FC,False,,
+2020,52,R2,Timo Mehlich,Germany,UNLV,Seattle Sounders FC,False,,
+2020,53,R3,Joris Ahlinvi,Benin,Indiana,FC Cincinnati,False,,
+2020,54,R3,Shak Adams,St. Vincent & Grenadines,Florida Gulf Coast,Nashville SC,False,,
+2020,57,R3,Nick O'Callaghan,USA,FIU,Orlando City SC,False,,
+2020,58,R3,Jaret Townsend,USA,Washington,Sporting Kansas City,False,,
+2020,59,R3,Ryo Shimazaki,Japan,VCU,Columbus Crew,False,,
+2020,62,R3,Stavros Zarokostas,Greece,Rhode Island,NY Red Bulls,False,,
+2020,65,R3,Andrew Verdi,USA,Michigan,D.C. United,False,,
+2020,66,R3,Derek Waldeck,USA,Stanford,FC Dallas,False,,
+2020,67,R3,Barry Sharifi,USA,Loyola (MD),NY Red Bulls,False,,
+2020,68,R3,Zac McGraw,Canada,West Point,Portland Timbers,True,Portland Timbers,"$5,673"
+2020,70,R3,Duncan Turnbull,USA,Notre Dame,Houston Dynamo,False,,
+2020,74,R3,Parker Siegfried,USA,Ohio State,New York City FC,False,,
+2020,75,R3,Phillip Goodrum,USA,UNC Wilmington,Atlanta United FC,False,,
+2020,76,R3,Jorge González,Spain,SIUE,Los Angeles FC,True,SJ Earthquakes,"$4,808"
+2020,78,R3,Julian Avila-Good,Canada,Seattle,Seattle Sounders FC,False,,
+2020,79,R4,Anders Engebretsen,Norway,Saint Mary's,FC Dallas,False,,
+2020,80,R4,Luke Haakenson,USA,Creighton,Nashville SC,False,,
+2020,84,R4,James Kasak,USA,Virginia Tech,Sporting Kansas City,False,,
+2020,86,R4,Kyle Edwards,St. Vincent & Grenadines,UTRGV,Houston Dynamo,False,,
+2020,88,R4,Matt Bentley,England,Missouri State,Minnesota United FC,False,,
+2020,92,R4,Aidan Megally,USA,Loyola Chicago,FC Dallas,False,,
+2020,93,R4,Niko Petridis,USA,St. John's,NY Red Bulls,False,,
+2020,94,R4,Joergen Oland,Norway,Fordham,Portland Timbers,False,,
+2020,96,R4,Andrew Booth,Jamaica,FIU,Minnesota United FC,False,,
+2020,102,R4,Younes Boudadi,Morocco,Creighton,Los Angeles FC,False,,

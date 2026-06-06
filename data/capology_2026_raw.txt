@@ -1,0 +1,825 @@
+Rk	Player	Nation	Pos	Squad	Age	Weekly Wages	Annual Wages	Notes
+1	Lionel Messi	ar ARG	FW,MF	Inter Miami	38	$480,769	$25,000,000
+2	Son Heung-min	kr KOR	FW,MF	LAFC	33	$199,399	$10,368,750
+3	Rodrigo De Paul	ar ARG	MF	Inter Miami	31	$145,558	$7,569,000
+4	Miguel Almirón	py PAR	FW,MF	Atlanta Utd	31	$116,462	$6,056,000
+5	Hirving Lozano	mx MEX	LW	San Diego FC	30	$115,385	$6,000,000
+6	Emil Forsberg	se SWE	MF	RB New York	34	$103,942	$5,405,000
+7	Sam Surridge	eng ENG	FW	Nashville SC	27	$101,538	$5,280,000
+8	Riqui Puig	es ESP	CM	LA Galaxy	26	$98,558	$5,125,000
+9	Lukas Podolski	de GER	MF	Vancouver W'caps	36	$96,154	$5,000,004
+10	Jonathan Bamba	ci CIV	MF,FW	Chicago Fire	29	$96,154	$5,000,000
+11	Carles Gil	es ESP	MF	NE Revolution	33	$86,538	$4,500,000
+12	Hany Mukhtar	de GER	FW,MF	Nashville SC	30	$76,923	$4,000,000
+13	Denis Bouanga	ga GAB	FW,MF	LAFC	31	$76,923	$4,000,000
+14	Aleksei Miranchuk	ru RUS	FW,MF	Atlanta Utd	30	$73,077	$3,800,000
+15	Kévin Denkey	tg TOG	FW	FC Cincinnati	25	$73,077	$3,800,000
+16	Timo Werner	de GER	MF	SJ Earthquakes	29	$71,901	$3,738,872
+17	Nicolás Fernández Mercau		AM	NYCFC	26	$70,192	$3,650,000
+18	Memo Rodríguez	mx MEX	MF	Vancouver W'caps	30	$67,308	$3,500,000
+19	Miles Robinson	us USA	DF	FC Cincinnati	28	$67,308	$3,500,000
+20	Joseph Paintsil	gh GHA	FW,MF	LA Galaxy	27	$66,462	$3,456,000
+21	Facundo Torres	uy URU	MF,FW	Austin FC	25	$64,615	$3,360,000
+22	Brandon Vazquez	us USA	FW	Austin FC	27	$64,423	$3,350,000
+23	Emmanuel Latte Lath	ci CIV	FW	Atlanta Utd	27	$62,308	$3,240,000
+24	Hugo Cuypers	be BEL	FW	Chicago Fire	28	$62,269	$3,238,000
+25	Josh Sargent	us USA	FW	Toronto FC	25	$61,731	$3,210,000
+26	Eric Maxim Choupo-Moting	cm CMR	FW	RB New York	36	$61,538	$3,200,000
+27	Cucho Hernández	co COL	FW	Columbus Crew	26	$61,538	$3,200,000
+28	Dejan Joveljić	rs SRB	FW	Sporting KC	26	$57,692	$3,000,000
+29	Anders Dreyer	dk DEN	FW,MF	San Diego FC	27	$57,292	$2,979,168
+30	Germán Berterame	mx MEX	FW	Inter Miami	27	$53,846	$2,800,000
+31	Diego Rossi	uy URU	FW,MF	Columbus Crew	27	$53,365	$2,775,000
+32	Wessam Abou Ali	ps PLE	FW	Columbus Crew	27	$53,365	$2,775,000
+33	Pep Biel	es ESP	MF	Charlotte	29	$53,365	$2,775,000
+34	Ezequiel Ponce	ar ARG	FW	Houston Dynamo	28	$52,654	$2,738,012
+35	David Costa	pt POR	MF	Portland Timbers	25	$52,404	$2,725,000
+36	Cucho Hernández dup		FW,MF	Houston Dynamo		$51,774	$2,692,248
+37	Wilfried Zaha	ci CIV	MF,FW	Charlotte	33	$51,282	$2,666,667
+38	Roman Bürki	ch SUI	GK	St. Louis City	35	$48,077	$2,500,000
+39	Liel Abada	il ISR	MF,FW	Charlotte	24	$48,077	$2,500,000
+40	Petar Musa	hr CRO	FW	FC Dallas	27	$47,115	$2,450,000
+41	Jordan Morris	us USA	MF,FW	Seattle Sounders	31	$45,433	$2,362,500
+42	Mateusz Bogusz	pl POL	MF,FW	Houston Dynamo	24	$45,192	$2,349,996
+43	Kristoffer Velde	no NOR	MF,FW	Portland Timbers	26	$43,846	$2,280,000
+44	Djordje Mihailovic	us USA	MF,FW	Toronto FC	27	$43,830	$2,279,170
+45	Hector Herrera dup		MF	Minnesota Utd		$42,308	$2,200,000
+46	Morgan Guilavogui	gn GUI	MF,FW	Real Salt Lake	27	$42,308	$2,200,000
+47	Klauss	br BRA	FW	LA Galaxy	28	$42,067	$2,187,500
+48	Tai Baribo	il ISR	FW	D.C. United	28	$40,385	$2,100,000
+49	Dániel Gazdag	hu HUN	FW	Columbus Crew	29	$39,423	$2,049,996
+50	Marcel Hartel	de GER	MF,FW	St. Louis City	30	$38,890	$2,022,300
+51	Paxten Aaronson	us USA	MF	Colorado Rapids	22	$38,462	$2,000,000
+52	Cristian Espinoza	ar ARG	MF,FW	Nashville SC	30	$37,660	$1,958,333
+53	Thiago Martins	br BRA	DF	NYCFC	30	$34,615	$1,800,000
+54	Stephen Eustáquio	ca CAN	MF	Toronto FC		$34,615	$1,800,000
+55	Marcus Ingvartsen	dk DEN	FW	San Diego FC	30	$34,615	$1,800,000
+56	Matt Turner	us USA	GK	NE Revolution	31	$34,156	$1,776,136
+57	Sergio Reguilón	es ESP	DF	Inter Miami	29	$32,692	$1,700,000
+58	Gabriel Pec		RW	LA Galaxy	25	$32,308	$1,680,000
+59	Cristian Roldan	us USA	MF	Seattle Sounders	30	$31,635	$1,645,000
+60	Jesús Ferreira	us USA	MF	Seattle Sounders	25	$31,523	$1,639,204
+61	Lewis Morgan	sct SCO	FW	San Diego FC	29	$31,522	$1,639,150
+62	Matt Miazga	us USA	DF	FC Cincinnati	30	$31,519	$1,639,000
+63	Ercan Kara		FW	Orlando City	25	$30,769	$1,600,000
+64	Martín Ojeda	ar ARG	FW,MF	Orlando City	27	$30,769	$1,600,000
+65	Myrto Uzuni	al ALB	FW	Austin FC	30	$30,769	$1,600,000
+66	Guilherme		LW	Houston Dynamo	30	$29,396	$1,528,572
+67	Obinna Nwobodo	ng NGA	MF	FC Cincinnati	29	$28,846	$1,500,000
+68	Leonardo Campana	ec ECU	FW	NE Revolution	25	$28,750	$1,494,992
+69	Luca de la Torre	us USA	MF	Charlotte	27	$28,027	$1,457,386
+70	Philip Zinckernagel	dk DEN	MF	Chicago Fire	31	$27,983	$1,455,125
+71	Tyler Boyd	us USA	MF,FW	LAFC	31	$27,500	$1,430,000
+72	Júnior Moreno	ve VEN	MF,FW	LAFC		$27,397	$1,424,667
+73	Hannes Wolf	at AUT	MF,FW	NYCFC	26	$26,923	$1,400,000
+74	Cedric Teuchert	de GER	FW,MF	St. Louis City	29	$26,923	$1,400,000
+75	Rafael Navarro	br BRA	FW	Colorado Rapids	25	$26,769	$1,392,000
+76	José Cifuentes	ec ECU	MF	Toronto FC	26	$26,442	$1,375,000
+77	Kelvin Yeboah	it ITA	FW	Minnesota Utd	25	$26,154	$1,360,000
+78	Dániel Sallói	hu HUN	MF,FW	Toronto FC	29	$25,000	$1,300,000
+79	Sam Adekugbe	ca CAN	LB	Vancouver W'caps	31	$25,000	$1,300,000
+80	Eduard Löwen	de GER	MF,FW	St. Louis City	29	$25,000	$1,300,000
+81	Lucas Halter	br BRA	DF	Houston Dynamo	25	$24,327	$1,265,004
+82	Talles Magno	br BRA	FW,MF	NYCFC	23	$24,038	$1,250,000
+83	Enea Mihaj	al ALB	DF	Atlanta Utd	27	$23,365	$1,215,000
+84	Julian Gressel	us USA	DF,MF	Minnesota Utd	32	$23,154	$1,204,005
+85	Rob Holding	eng ENG	DF	Colorado Rapids	30	$23,077	$1,200,000
+86	Gustav Berggren	se SWE	MF,DF	RB New York	28	$23,077	$1,200,000
+87	Sergio Córdova	ve VEN	FW,MF	St. Louis City	28	$23,077	$1,200,000
+88	Felipe Mora	cl CHI	MF,FW	Portland Timbers	32	$23,077	$1,200,000
+89	André Franco	pt POR	AM	Chicago Fire	27	$23,077	$1,200,000
+90	Takefusa Kubo		MF,FW	SJ Earthquakes		$23,077	$1,200,000
+91	Tomás Chancalay	ar ARG	FW,MF	Minnesota Utd	27	$22,115	$1,150,000
+92	Justen Glad	us USA	DF	Real Salt Lake	28	$22,115	$1,150,000
+93	Jackson Yueill	us USA	MF	NE Revolution	28	$21,944	$1,141,087
+94	Walker Zimmerman	us USA	DF	Toronto FC	32	$21,923	$1,140,000
+95	Cheikh Tidiane Sabaly	sn SEN	MF	Vancouver W'caps	26	$21,329	$1,109,091
+96	Zack Steffen	us USA	GK	Colorado Rapids	30	$21,154	$1,100,000
+97	Lasse Berg Johnsen		CM	Sporting KC	26	$21,154	$1,100,000
+98	Emmanuel Sabbi	us USA	MF	Vancouver W'caps	28	$20,769	$1,080,000
+99	Teenage Hadebe	zw ZIM	DF	FC Cincinnati	30	$20,769	$1,080,000
+100	Deiber Caicedo	ec ECU	MF	Vancouver W'caps	29	$20,481	$1,065,000
+101	Steven Alzate	co COL	MF	Atlanta Utd	27	$20,427	$1,062,186
+102	Marky Delgado	us USA	MF	LAFC	30	$20,288	$1,055,000
+103	Mathías Laborda	uy URU	DF	Vancouver W'caps	26	$20,192	$1,050,000
+104	Andre Blake	jm JAM	GK	Philadelphia Union	35	$19,231	$1,000,000
+105	Paul Arriola	us USA	MF	Seattle Sounders	30	$19,231	$1,000,000
+106	Pedro De la Vega	ar ARG	RW	Seattle Sounders	25	$19,231	$1,000,000
+107	Keaton Parks	us USA	MF	NYCFC	28	$19,231	$1,000,000
+108	Jeppe Tverskov	dk DEN	MF	San Diego FC	32	$19,231	$1,000,000
+109	Bongokuhle Hlongwane	za RSA	FW	Minnesota Utd		$19,231	$1,000,000
+110	Andrés Cubas	py PAR	MF	Vancouver W'caps	29	$19,231	$1,000,000
+111	José Caicedo		DM	Portland Timbers	23	$19,231	$1,000,000
+112	Tim Ream	us USA	DF	Charlotte	38	$19,231	$1,000,000
+113	Tristan Blackmon	us USA	DF	Vancouver W'caps	29	$18,750	$975,000
+114	Jack Elliott	eng ENG	DF	Chicago Fire	30	$18,471	$960,511
+115	Magomed-Shapi Suleymanov	ru RUS	MF,FW	Sporting KC	26	$18,269	$950,000
+116	Sam Vines	us USA	DF	Houston Dynamo	26	$17,308	$900,000
+117	Saba Lobjanidze		LW	Atlanta Utd	31	$17,308	$900,000
+118	Jack Maher	us USA	DF	Nashville SC	26	$17,308	$900,000
+119	Onyeka Nwobosi	ng NGA	MF	NE Revolution	25	$17,308	$900,000
+120	Patrick Schulte	us USA	GK	Columbus Crew	24	$17,308	$900,000
+121	Yeimar Gómez Andrade	co COL	DF	Seattle Sounders	33	$17,308	$900,000
+122	Cade Cowell	us USA	FW,MF	RB New York	22	$17,308	$900,000
+123	Joaquín Pereyra	ar ARG	FW,MF	Minnesota Utd	27	$17,308	$900,000
+124	Harry Toffolo	eng ENG	DF	Charlotte	30	$17,308	$900,000
+125	DeJuan Jones	us USA	DF	SJ Earthquakes	28	$17,154	$891,996
+126	Dominik Fitz	at AUT	FW,MF	Minnesota Utd	26	$17,115	$890,000
+127	Sean Johnson	us USA	GK	D.C. United	36	$16,990	$883,500
+128	David Romney	us USA	DF	SJ Earthquakes	32	$16,978	$882,875
+129	Artur	br BRA	MF	Houston Dynamo	29	$16,827	$875,004
+130	Richie Laryea	ca CAN	DF,MF	Toronto FC	31	$16,827	$875,000
+131	André Gomes	pt POR	MF	Columbus Crew	32	$16,827	$875,000
+132	Alexander Aravena		LW	Portland Timbers	23	$16,484	$857,143
+133	Erik Sviatchenko	dk DEN	DF	Houston Dynamo	34	$16,346	$850,000
+134	Stian Rode Gregersen	no NOR	DF	Atlanta Utd	30	$16,346	$850,000
+135	Aaron Herrera	gt GUA	MF	D.C. United	28	$16,346	$850,000
+136	Facundo Mura	ar ARG	DF,MF	Inter Miami	26	$16,346	$850,000
+137	Julian Gressel dup	us USA	DF,MF	Minnesota Utd		$16,346	$850,000
+138	Miki Yamane	jp JPN	DF,MF	LA Galaxy	32	$16,346	$850,000
+139	Henry Kessler	us USA	DF	Charlotte	27	$16,346	$850,000
+140	Ondřej Lingr	cz CZE	FW,MF	Houston Dynamo	27	$16,346	$849,996
+141	Steven Moreira	cv CPV	DF	Columbus Crew	31	$16,154	$840,000
+142	Hassani Dotson	us USA	MF	Seattle Sounders	28	$15,925	$828,125
+143	Jakob Glesnes	no NOR	DF	LA Galaxy	31	$15,886	$826,087
+144	Timothy Tillman	us USA	MF	LAFC	27	$15,865	$825,000
+145	Pablo Ruíz	ar ARG	MF	Real Salt Lake	27	$15,865	$825,000
+146	Andrés Reyes	co COL	CB	San Diego FC	26	$15,462	$804,000
+147	Hernán López Muñoz	co COL	FW,MF	FC Dallas	25	$15,445	$803,125
+148	Luis Suárez	uy URU	FW	Inter Miami	39	$15,445	$803,125
+149	Jonathan Osorio	ca CAN	MF	Toronto FC	33	$15,385	$800,000
+150	Shaq Moore	us USA	DF,MF	FC Dallas	29	$15,385	$800,000
+151	Dor Turgeman	il ISR	FW	NE Revolution	22	$15,385	$800,000
+152	Mamadou Fofana	ml MLI	DF	NE Revolution	28	$15,385	$800,000
+153	Hamzat Ojediran	ng NGA	MF	Colorado Rapids	22	$15,385	$800,000
+154	Gabriel Pirani	br BRA	FW,MF	D.C. United	23	$15,385	$800,000
+155	Matti Peltola	fi FIN	MF	D.C. United	23	$15,385	$800,000
+156	Max Arfsten	us USA	MF	Columbus Crew		$15,385	$800,000
+157	Sean Zawadzki	us USA	DF,MF	Columbus Crew	25	$15,385	$800,000
+158	Nouhou Tolo	cm CMR	DF	Seattle Sounders	28	$15,385	$800,000
+159	Hugo Lloris	fr FRA	GK	LAFC	39	$15,385	$800,000
+160	Michael Boxall	nz NZL	DF	Minnesota Utd	37	$15,385	$800,000
+161	Ronaldo Vieira	gw GNB	MF	SJ Earthquakes	27	$15,385	$800,000
+162	Ashley Westwood	eng ENG	MF	Charlotte	35	$15,385	$800,000
+163	Robin Lod	fi FIN	MF,FW	Chicago Fire	32	$15,385	$800,000
+164	Kamal Miller	ca CAN	DF	Portland Timbers	28	$15,336	$797,496
+165	Darren Yapi	us USA	FW,MF	Colorado Rapids	21	$15,288	$795,000
+166	Nkosi Tafari dup	us USA	DF	LAFC	22	$14,923	$776,000
+167	Brayan Ceballos	co COL	DF	NE Revolution	24	$14,904	$775,000
+168	Kristijan Kahlina	hr CRO	GK	Charlotte	33	$14,904	$775,000
+169	Yohei Takaoka	jp JPN	GK	Vancouver W'caps	29	$14,860	$772,727
+170	Justin Haak	us USA	DF,MF	LA Galaxy	24	$14,478	$752,841
+171	Antonio Carlos	br BRA	DF	Houston Dynamo	32	$14,423	$750,000
+172	Jonathan Bond	eng ENG	GK	Houston Dynamo	32	$14,423	$750,000
+173	Anderson Julio	ec ECU	FW,MF	FC Dallas	29	$14,423	$750,000
+174	Reggie Cannon	us USA	DF	Colorado Rapids	27	$14,423	$750,000
+175	Alonso Martínez	cr CRC	CF	NYCFC	25	$14,423	$750,000
+176	Daniel Pereira	ve VEN	MF	Austin FC	25	$14,423	$750,000
+177	Owen Wolff	us USA	MF	Austin FC	21	$14,423	$750,000
+178	Daniel	br BRA	GK	SJ Earthquakes	31	$14,423	$750,000
+179	Micael	br BRA	DF	Inter Miami	25	$14,423	$750,000
+180	Lukas Engel	dk DEN	DF	Real Salt Lake	27	$14,423	$750,000
+181	Stijn Spierings	nl NED	MF	Real Salt Lake	29	$14,423	$750,000
+182	Dayne St. Clair	ca CAN	GK	Inter Miami	28	$14,333	$745,313
+183	Sebastien Ibeagha	us USA	DF	FC Dallas	34	$14,038	$730,000
+184	Henry Wingo	us USA	DF,MF	Toronto FC	30	$13,942	$725,000
+185	Gastón Ojeda	py PAR	MF	Orlando City	25	$13,942	$725,000
+186	Hugo Picard	fr FRA	MF,FW	Columbus Crew	22	$13,942	$725,000
+187	Mathieu Choinière	ca CAN	MF	LAFC	26	$13,942	$725,000
+188	Ryan Porteous	sct SCO	DF	LAFC	26	$13,942	$725,000
+189	Sergi Palencia	es ESP	DF	LAFC	29	$13,942	$725,000
+190	Eddie Segura	co COL	DF	LAFC	28	$13,894	$722,500
+191	Jeremy Ebobisse	us USA	FW	LAFC	28	$13,894	$722,500
+192	Matías Galarza	py PAR	MF,FW	Atlanta Utd	23	$13,846	$720,000
+193	Edvard Tagseth		CM	Nashville SC	25	$13,846	$720,000
+194	Bruno Damiani	uy URU	FW	Philadelphia Union	23	$13,846	$720,000
+195	Raul Gustavo	br BRA	DF	NYCFC	26	$13,846	$720,000
+196	Jorge Ruvalcaba	mx MEX	FW,MF	RB New York	24	$13,846	$720,000
+197	Sebastian Schonlau	de GER	DF,MF	Vancouver W'caps	31	$13,846	$720,000
+198	Dominik Marczuk	pl POL	MF	Real Salt Lake	22	$13,846	$720,000
+199	Luca Langoni	ar ARG	MF,FW	NE Revolution	23	$13,750	$715,000
+200	Ranko Veselinović	rs SRB	DF	Vancouver W'caps	26	$13,750	$715,000
+201	Diadie Samassékou	ml MLI	MF	Houston Dynamo	30	$13,750	$714,996
+202	Onni Valakari	fi FIN	MF	San Diego FC	26	$13,558	$705,000
+203	Jeisson Palacios		CB	Nashville SC	32	$13,462	$700,000
+204	Rónald Matarrita	cr CRC	DF	NYCFC	26	$13,462	$700,000
+205	Tomáš Ostrák	cz CZE	AM	St. Louis City	26	$13,462	$700,000
+206	Idan Toklomati		CF	Charlotte	21	$13,462	$700,000
+207	Anton Salétros		CM	Chicago Fire	29	$13,462	$700,000
+208	Andrés Perea	us USA	MF	NYCFC	25	$13,365	$695,000
+209	Eduard Atuesta	co COL	MF	Orlando City	28	$13,221	$687,500
+210	Niko Tsakiris	us USA	MF	SJ Earthquakes	20	$13,187	$685,714
+211	Sang-bin Jeong		CF	St. Louis City	23	$13,175	$685,125
+212	James Rodríguez	co COL	MF,FW	Minnesota Utd	34	$13,154	$684,000
+213	Griffin Yow	us USA	MF,FW	NE Revolution	23	$12,981	$675,000
+214	Carles Gil dup	us USA	MF	NE Revolution	32	$12,981	$675,000
+215	Malte Amundsen	dk DEN	DF	Columbus Crew	27	$12,981	$675,000
+216	Matt Freese	us USA	GK	NYCFC	27	$12,981	$675,000
+217	Nectarios Triantis	gr GRE	MF	Minnesota Utd	22	$12,885	$670,000
+218	Kevin Kelsy	ve VEN	FW	Portland Timbers	21	$12,731	$662,000
+219	Alex Muyl	us USA	MF	Nashville SC	30	$12,596	$655,000
+220	Alexis Manyoma		LW	Colorado Rapids	23	$12,577	$654,000
+221	Benjamín Kuscevic	cl CHI	DF	Toronto FC	29	$12,500	$650,004
+222	Ahmed Qasem	iq IRQ	MF,FW	Nashville SC	22	$12,500	$650,000
+223	Maxwell Woledzi	gh GHA	DF	Nashville SC	24	$12,500	$650,000
+224	Sean Nealis	us USA	DF	D.C. United	29	$12,500	$650,000
+225	Danley Jean Jacques		DM	Philadelphia Union	25	$12,500	$650,000
+226	Marcelo Herrera	ar ARG	DF,MF	Columbus Crew	27	$12,500	$650,000
+227	Daniel Musovski	mk MKD	FW	Seattle Sounders	30	$12,500	$650,000
+228	Amin Boudri		AM	LAFC	21	$12,500	$650,000
+229	Besard Sabovic	se SWE	MF	Austin FC	28	$12,500	$650,000
+230	David Ayala	ar ARG	MF	Inter Miami	23	$12,500	$650,000
+231	Edwin Cerrillo	us USA	MF	LA Galaxy	25	$12,500	$650,000
+232	Matheus Nascimento	br BRA	FW	LA Galaxy	21	$12,500	$650,000
+233	David Schnegg	at AUT	DF	Charlotte		$12,500	$650,000
+234	Kerwin Vargas	co COL	MF,FW	Charlotte	24	$12,500	$650,000
+235	DeAndre Yedlin	us USA	DF	Real Salt Lake	32	$12,500	$650,000
+236	Fallou Fall	sn SEN	DF	St. Louis City	21	$12,413	$645,500
+237	Lucas Sanabria	uy URU	MF	LA Galaxy	22	$12,308	$640,000
+238	Maya Yoshida	jp JPN	DF	LA Galaxy	37	$12,308	$640,000
+239	Gonzalo Luján	ar ARG	DF	Inter Miami	24	$12,115	$630,000
+240	Alex Roldan	sv SLV	DF	Seattle Sounders	29	$12,019	$625,000
+241	Jackson Ragen	us USA	DF	Seattle Sounders	27	$12,019	$625,000
+242	Igor Jesus		DM	LAFC	23	$12,019	$625,000
+243	Tadeo Allende	ar ARG	MF,FW	Inter Miami	26	$12,019	$625,000
+244	Omir Fernandez	us USA	RW	Portland Timbers	27	$12,019	$625,000
+245	Andrew Gutman	us USA	DF	Chicago Fire	29	$12,019	$625,000
+246	Agustín Bouzat	ar ARG	MF	Houston Dynamo	31	$12,019	$624,996
+247	Yevhen Cheberko	ua UKR	DF,MF	Columbus Crew	28	$11,731	$610,000
+248	Marco Reus	de GER	MF,FW	LA Galaxy	36	$11,622	$604,364
+249	Herman Johansson		RM	FC Dallas	28	$11,538	$600,000
+250	Tristan Muyumba	fr FRA	MF	Atlanta Utd	28	$11,538	$600,000
+251	Indiana Vassilev	us USA	MF	Philadelphia Union	24	$11,538	$600,000
+252	Japhet Kipkemoi		FW	FC Cincinnati		$11,538	$600,000
+253	David Brekalo	si SVN	DF	Orlando City	27	$11,538	$600,000
+254	Duncan McGuire	us USA	FW	Orlando City	24	$11,538	$600,000
+255	Maxime Crépeau	ca CAN	GK	Orlando City	31	$11,538	$600,000
+256	Capita	ao ANG	MF,FW	Sporting KC	24	$11,538	$600,000
+257	Dylan Chambost	fr FRA	MF	Columbus Crew	28	$11,538	$600,000
+258	Aiden O'Neill	au AUS	MF	NYCFC	27	$11,538	$600,000
+259	Amahl Pellegrino	no NOR	FW,MF	San Diego FC	35	$11,538	$600,000
+260	Brad Stuver	us USA	GK	Austin FC	34	$11,538	$600,000
+261	Chris Durkin	us USA	MF	St. Louis City	25	$11,538	$600,000
+262	Kyle Duncan dup	us USA	DF	Minnesota Utd		$11,538	$600,000
+263	Daniel Edelman	us USA	MF	St. Louis City	22	$11,538	$600,000
+264	Timo Baumgartl	de GER	DF	St. Louis City	29	$11,538	$600,000
+265	Maximiliano Falcón	uy URU	DF	Inter Miami	28	$11,538	$600,000
+266	Erik Thommy	de GER	MF	LA Galaxy	31	$11,538	$600,000
+267	Samuel Gidi	sk SVK	MF,DF	FC Cincinnati	21	$11,538	$600,000
+268	Victor Olatunji	ng NGA	FW	Real Salt Lake	26	$11,538	$600,000
+269	Mbekezeli Mbokazi		CB	Chicago Fire	20	$11,404	$593,000
+270	Osaze Urhoghide	nl NED	DF	FC Dallas	25	$11,154	$580,000
+271	Ramiro Benetti	br BRA	MF	FC Dallas	32	$11,058	$575,000
+272	Brandon Bye dup	us USA	DF	NE Revolution	21	$11,058	$575,000
+273	Milan Iloski	us USA	FW,MF	Philadelphia Union	26	$11,058	$575,000
+274	Robert Voloder	ba BIH	DF	RB New York	24	$11,058	$575,000
+275	Oleksandr Svatok	ua UKR	DF	Austin FC	31	$11,058	$575,000
+276	Robert Taylor	fi FIN	FW,MF	Austin FC	31	$11,058	$575,000
+277	Djé D'Avilla		DM	Chicago Fire	22	$11,019	$573,000
+278	Antony	br BRA	MF,FW	Portland Timbers	24	$10,769	$560,000
+279	Duane Holmes	us USA	MF,DF	Houston Dynamo	31	$10,577	$550,000
+280	Andy Najar	hn HON	DF	Nashville SC	32	$10,577	$550,000
+281	Keisuke Kurokawa		LB	D.C. United	28	$10,577	$550,000
+282	Jake Rowles	au AUS	DF	D.C. United	27	$10,577	$550,000
+283	Nariman Akhundzada		CF	Columbus Crew	21	$10,577	$550,000
+284	Tayvon Gray	jm JAM	DF	NYCFC	23	$10,577	$550,000
+285	Artem Smolyakov		LB	LAFC	22	$10,577	$550,000
+286	David Martínez	ve VEN	FW,MF	LAFC	19	$10,577	$550,000
+287	Ryan Hollingshead	us USA	MF,DF	LAFC	34	$10,577	$550,000
+288	Wil Trapp	us USA	MF	Minnesota Utd	33	$10,577	$550,000
+289	Mikkel Desler	dk DEN	DF	Austin FC	30	$10,577	$550,000
+290	Mateo Silvetti	ar ARG	MF,FW	Inter Miami	20	$10,577	$550,000
+291	Joao Ortiz		DM	Portland Timbers	29	$10,577	$550,000
+292	Gastón Ojeda dup	py PAR	MF,FW	Orlando City	26	$10,577	$549,996
+293	Agustin Ojeda	ar ARG	MF,FW	NYCFC	21	$10,385	$540,000
+294	Héctor Herrera	mx MEX	MF	Houston Dynamo	35	$10,096	$525,000
+295	Ibrahim Aliyu		CF	Houston Dynamo	24	$10,096	$525,000
+296	Tomás Jacob	ar ARG	DF,MF	Atlanta Utd	21	$10,096	$525,000
+297	Lucas Bartlett	us USA	DF	D.C. United	28	$10,096	$525,000
+298	Adrián Marín	es ESP	DF	Orlando City	29	$10,096	$525,000
+299	Paul Rothrock	us USA	MF	Seattle Sounders	27	$10,096	$525,000
+300	John McCarthy	us USA	GK	RB New York	33	$10,096	$525,000
+301	Nathan Harriel dup	us USA	DF	Philadelphia Union		$10,096	$525,000
+302	Christian Ramirez	us USA	FW	Austin FC	34	$10,096	$525,000
+303	Roman Celentano	us USA	GK	FC Cincinnati	25	$10,096	$525,000
+304	Joel Waterman	ca CAN	DF,MF	Chicago Fire	30	$9,942	$517,000
+305	Connor Ronan	ie IRL	MF	Colorado Rapids	27	$9,808	$510,000
+306	Lawrence Ennali	de GER	MF,DF	Houston Dynamo	23	$9,615	$500,000
+307	Patrick Yazbek	au AUS	MF	Nashville SC	23	$9,615	$500,000
+308	Theodore Ku-Dipietro	us USA	FW,MF	Colorado Rapids	24	$9,615	$500,000
+309	Agustín Anello		LW	Philadelphia Union	23	$9,615	$500,000
+310	Quinn Sullivan	us USA	CM	Philadelphia Union	22	$9,615	$500,000
+311	Iago Teodoro		CB	Orlando City	20	$9,615	$500,000
+312	Luis Otávio		DM	Orlando City	18	$9,615	$500,000
+313	Robin Jansson	se SWE	DF	Orlando City	34	$9,615	$500,000
+314	Tiago		LW	Orlando City	20	$9,615	$500,000
+315	Jamal Thiaré	sn SEN	FW	Columbus Crew	32	$9,615	$500,000
+316	Mohamed Farsi	dz ALG	MF,DF	Columbus Crew	26	$9,615	$500,000
+317	Nathan Ordaz	sv SLV	FW,MF	LAFC	22	$9,615	$500,000
+318	Jayden Nelson	ca CAN	MF	Austin FC	23	$9,615	$500,000
+319	Joseph Rosales	hn HON	MF	Austin FC	25	$9,615	$500,000
+320	Daniel Munie	us USA	DF	SJ Earthquakes	25	$9,615	$500,000
+321	Kristoffer Velde dup	no NOR	MF	Charlotte	30	$9,615	$500,000
+322	Juan Jose Arias		CB	Real Salt Lake	22	$9,615	$500,000
+323	Juan Manuel Sanabria	uy URU	MF,DF	Real Salt Lake	25	$9,615	$500,000
+324	Pavel Bucha	cz CZE	MF	FC Cincinnati	27	$9,615	$499,992
+325	Miguel Navarro	ve VEN	DF	Colorado Rapids	26	$9,577	$498,000
+326	Nkosi Tafari	us USA	DF	LAFC	28	$9,260	$481,500
+327	Wilder Cartagena	pe PER	MF	Orlando City	31	$9,231	$480,000
+328	Maximiliano Moralez	ar ARG	MF	NYCFC	38	$9,231	$480,000
+329	Sebastian Berhalter	us USA	MF	Vancouver W'caps	24	$9,231	$480,000
+330	Carlos Garcés	co COL	DF	LA Galaxy	24	$9,231	$480,000
+331	Matheus Pereira	br BRA	MF	Toronto FC	25	$9,173	$477,000
+332	Jacob Shaffelburg	ca CAN	MF	LAFC	26	$9,135	$475,000
+333	Juan David Mosquera	co COL	DF	Portland Timbers	23	$9,135	$475,000
+334	Nathan Byrne	eng ENG	DF	Charlotte	33	$9,135	$475,000
+335	Nikola Petković	rs SRB	MF	Seattle Sounders	22	$9,038	$470,000
+336	Rafael Cabral	br BRA	GK	Real Salt Lake	35	$9,038	$470,000
+337	Joshua Atencio	us USA	MF	Colorado Rapids	24	$8,894	$462,500
+338	Lalas Abubakar	gh GHA	DF	FC Dallas	31	$8,846	$460,000
+339	Olivier Mbaizo	cm CMR	DF	Philadelphia Union	28	$8,846	$460,000
+340	Nicolás Romero	ar ARG	DF	FC Dallas		$8,750	$455,000
+341	Theo Corbeanu	ca CAN	FW,MF	Toronto FC	23	$8,654	$450,000
+342	Cavan Sullivan	us USA	MF	Philadelphia Union	16	$8,654	$450,000
+343	Ezekiel Alladoh		CF	Philadelphia Union	20	$8,654	$450,000
+344	Zorhan Bassong	ca CAN	MF	Sporting KC	26	$8,654	$450,000
+345	Sekou Bangoura		CM	Columbus Crew	23	$8,654	$450,000
+346	Drake Callender	us USA	GK	Minnesota Utd	28	$8,654	$450,000
+347	Oliver Larraz	us USA	MF	Vancouver W'caps	24	$8,654	$450,000
+348	Ian Harkes	us USA	MF	SJ Earthquakes	30	$8,654	$450,000
+349	Jimer Fory	co COL	DF	Portland Timbers	23	$8,654	$450,000
+350	Yueill dup	us USA	MF	NE Revolution		$8,654	$450,000
+351	Diego Luna	us USA	MF,FW	Real Salt Lake	22	$8,654	$450,000
+352	Sam Junqua	us USA	DF	Real Salt Lake	29	$8,654	$450,000
+353	Aaron Long	us USA	DF	LAFC	33	$8,558	$445,000
+354	Maren Haile-Selassie	ch SUI	MF,FW	Chicago Fire	26	$8,538	$444,000
+355	Benjamin Kikanovic	us USA	DF	SJ Earthquakes	26	$8,500	$442,000
+356	Justin Che	us USA	DF	RB New York	22	$8,462	$440,000
+357	Jefferson Díaz	co COL	DF	Minnesota Utd	25	$8,365	$435,000
+358	Mamadou Fall	sn SEN	DF	St. Louis City	23	$8,365	$435,000
+359	Bryan Ramírez		RW	FC Cincinnati	25	$8,365	$435,000
+360	Jozy Altidore dup	us USA	FW	Portland Timbers	29	$8,173	$425,000
+361	Jake Davis	us USA	DF,MF	Sporting KC	24	$8,173	$425,000
+362	Jahkeele Marshall-Rutty	ca CAN	DF	RB New York	21	$8,173	$425,000
+363	Vitor Costa	br BRA	DF,MF	SJ Earthquakes	31	$8,173	$425,000
+364	Ethan Horvath	us USA	GK	RB New York	30	$8,173	$424,992
+365	Owen Géne	fr FRA	MF	Minnesota Utd	22	$8,077	$420,000
+366	Ayoub Jabbari	ma MAR	FW	FC Cincinnati	26	$8,077	$420,000
+367	Dylan Nealis	us USA	DF	RB New York	27	$7,933	$412,500
+368	Daniel Lovitz	us USA	DF	Nashville SC	34	$7,885	$410,000
+369	Geovane Santos	br BRA	FW	FC Dallas		$7,692	$400,000
+370	Joaquín Valiente		AM	FC Dallas	24	$7,692	$400,000
+371	Louicius Deedson	ht HAI	MF	FC Dallas	24	$7,692	$400,000
+372	Brooklyn Raines	us USA	MF	NE Revolution	20	$7,692	$400,000
+373	Ian Murphy	us USA	DF	Colorado Rapids	26	$7,692	$400,000
+374	Caden Clark	us USA	MF	D.C. United	22	$7,692	$400,000
+375	John Pulskamp	us USA	GK	Sporting KC	24	$7,692	$400,000
+376	Kyle Duncan	us USA	MF,DF	Minnesota Utd	28	$7,692	$400,000
+377	Édier Ocampo	co COL	DF	Vancouver W'caps	22	$7,692	$400,000
+378	Kenji Cabrera	pe PER	MF	Vancouver W'caps	23	$7,692	$400,000
+379	Jozy Altidore	us USA	FW	Portland Timbers		$7,692	$400,000
+380	Dante Polvara	us USA	DF	St. Louis City	25	$7,692	$400,000
+381	Simon Becher	us USA	FW	St. Louis City	26	$7,692	$400,000
+382	Brandon Bye	us USA	DF	Portland Timbers	30	$7,692	$400,000
+383	Emeka Eneli	us USA	DM	Real Salt Lake	26	$7,692	$400,000
+384	Jovan Lukić	rs SRB	MF	Philadelphia Union	24	$7,596	$395,000
+385	Cameron Harper	us USA	DF,MF	RB New York	24	$7,500	$390,000
+386	Bruno Caicedo		LW	Vancouver W'caps	21	$7,500	$390,000
+387	Gilberto Flores	py PAR	DF	FC Cincinnati	22	$7,500	$390,000
+388	Diego Chará	co COL	MF	Portland Timbers	39	$7,462	$388,044
+389	Jhegson Mendez dup	ec ECU	MF	Houston Dynamo		$7,404	$385,000
+390	Dennis Gjengaar	no NOR	RW	RB New York	22	$7,308	$380,000
+391	Derrick Etienne	ht HAI	MF,FW	Toronto FC	29	$7,212	$375,000
+392	Raheem Edwards	ca CAN	DF,MF	Toronto FC	30	$7,212	$375,000
+393	Peglow	br BRA	MF	D.C. United	24	$7,212	$375,000
+394	Calvin Harris	eng ENG	FW,MF	Sporting KC	25	$7,212	$375,000
+395	Brendan Hines-Ike	us USA	DF	Austin FC	31	$7,212	$375,000
+396	Žan Kolmanič	si SVN	DF	Austin FC	25	$7,212	$375,000
+397	Ian Fray	jm JAM	DF	Inter Miami	23	$7,212	$375,000
+398	Noah Allen	gr GRE	DF,MF	Inter Miami	21	$7,212	$375,000
+399	Brandon Servania dup	us USA	MF	LAFC		$7,212	$375,000
+400	Silvan Hefti	ch SUI	DF	D.C. United	28	$7,115	$370,000
+401	Stefan Frei	ch SUI	GK	Seattle Sounders	39	$7,019	$365,000
+402	Ender Echenique	ve VEN	MF	FC Cincinnati	21	$6,854	$356,400
+403	Christian Cappis	us USA	MF	FC Dallas	26	$6,769	$352,000
+404	Logan Farrington	us USA	FW,MF	FC Dallas	24	$6,731	$350,000
+405	Warren Madrigal		LW	Nashville SC	21	$6,731	$350,000
+406	Tanner Beason	us USA	DF	NE Revolution	28	$6,731	$350,000
+407	Rudy Camacho	fr FRA	DF	Columbus Crew	34	$6,731	$350,000
+408	Tim Parker	us USA	DF	RB New York	32	$6,731	$350,000
+409	Zorhan Bassong dup	ca CAN	MF	Sporting KC	25	$6,731	$350,000
+410	Anthony Markanich	ph PHI	MF,DF	Minnesota Utd	26	$6,731	$350,000
+411	Tomas Totland		RB	St. Louis City	26	$6,731	$350,000
+412	Ousseni Bouda	bf BFA	MF	SJ Earthquakes	25	$6,731	$350,000
+413	Paul Marie	fr FRA	MF	SJ Earthquakes	30	$6,731	$350,000
+414	John Nelson	us USA	DF,MF	LA Galaxy	27	$6,731	$350,000
+415	Djibril Diani	fr FRA	MF	Charlotte	27	$6,731	$350,000
+416	Leonardo Barroso	pt POR	DF,MF	Chicago Fire	20	$6,731	$350,000
+417	Sergio Oregel	us USA	MF	Chicago Fire	20	$6,731	$350,000
+418	Viktor Radojevic	rs SRB	DF	Chicago Fire	21	$6,731	$350,000
+419	Tanner Beason dup	us USA	DF	NE Revolution	25	$6,250	$325,000
+420	Jesús Daniel Bueno	ve VEN	MF	Philadelphia Union	26	$6,250	$325,000
+421	Nathan Harriel	us USA	DF	Philadelphia Union	24	$6,250	$325,000
+422	Alex Mighten	eng ENG	FW,MF	San Diego FC	23	$6,250	$325,000
+423	Aníbal Godoy	pa PAN	MF	San Diego FC	35	$6,250	$325,000
+424	Guilherme Biro	br BRA	DF	Austin FC	25	$6,250	$325,000
+425	Mateja Djordjević		CB	Austin FC	23	$6,250	$325,000
+426	Nicolás Dubersarsky	ar ARG	MF	Austin FC	21	$6,250	$325,000
+427	Telasco Segovia	ve VEN	MF	Inter Miami	22	$6,250	$325,000
+428	Chicho Arango dup	co COL	FW	NYCFC	31	$6,250	$325,000
+429	Elijah Wynder	us USA	MF	LA Galaxy	22	$6,250	$325,000
+430	Archie Goodwin	au AUS	FW	Charlotte	21	$6,250	$325,000
+431	Emilio Aristizábal		CF	Toronto FC	20	$6,250	$324,996
+432	Lucas Hoyos	ar ARG	GK	Atlanta Utd	36	$6,058	$315,000
+433	J.T. Marcinkowski	us USA	GK	LA Galaxy	28	$5,808	$302,000
+434	Alonso Coello	es ESP	MF	Toronto FC	26	$5,769	$300,000
+435	Diego Fagúndez	uy URU	MF	NE Revolution	30	$5,769	$300,000
+436	Keegan Rosenberry	us USA	DF	Colorado Rapids	32	$5,769	$300,000
+437	Olwethu Makhanya	za RSA	DF	Philadelphia Union	21	$5,769	$300,000
+438	Noel Buck dup	eng ENG	MF	Philadelphia Union	20	$5,769	$300,000
+439	Diego Borges		CB	Sporting KC	21	$5,769	$300,000
+440	Kevin O'Toole	ie IRL	DF	NYCFC	27	$5,769	$300,000
+441	Strahinja Tanasijević	rs SRB	DF	NYCFC	28	$5,769	$300,000
+442	Bryce Duke	us USA	DF	San Diego FC	24	$5,769	$300,000
+443	James Pantemis	ca CAN	GK	Portland Timbers	28	$5,769	$300,000
+444	Baye Coulibaly		CM	Charlotte	20	$5,769	$300,000
+445	Zac McGraw	ca CAN	CB	Portland Timbers	28	$5,673	$295,000
+446	Ariath Piol	au AUS	FW	Real Salt Lake	21	$5,654	$294,000
+447	Carlos Harvey	pa PAN	DF	Minnesota Utd	25	$5,481	$285,000
+448	Pat Noonan dup	us USA	DF	FC Cincinnati	31	$5,481	$285,000
+449	Ethan Kohler		CB	NE Revolution	20	$5,385	$280,000
+450	Nelson Quiñones	co COL	LW	Houston Dynamo	23	$5,327	$276,996
+451	Ran Binyamin		CM	FC Dallas	22	$5,288	$275,000
+452	Reed Baker-Whiting	us USA	DF	Nashville SC	20	$5,288	$275,000
+453	Brandon Servania	us USA	MF	D.C. United	26	$5,288	$275,000
+454	Tyrese Spicer	tt TRI	MF,FW	Orlando City	25	$5,288	$275,000
+455	Kai Trewin		DM	NYCFC	24	$5,288	$275,000
+456	Pedro Soma	us USA	MF	San Diego FC	19	$5,288	$275,000
+457	Finn Surman	nz NZL	DF	Portland Timbers	22	$5,288	$275,000
+458	Dominik Marczuk dup	pl POL	MF	Real Salt Lake		$5,288	$274,992
+459	Célio Pompeu	br BRA	MF	St. Louis City	26	$5,245	$272,750
+460	Elías Báez		LB	Atlanta Utd	21	$5,091	$264,706
+461	Patrickson Delgado	ec ECU	MF,FW	FC Dallas	22	$5,000	$260,000
+462	Kyle Hiebert	ca CAN	DF	St. Louis City	28	$5,000	$260,000
+463	Pedro Amador	pt POR	DF	Atlanta Utd	27	$4,942	$256,992
+464	Andrew Thomas	ru RUS	GK	Seattle Sounders	27	$4,856	$252,500
+465	Bernard Kamungo	us USA	MF,DF	FC Dallas	24	$4,808	$250,000
+466	Jonathan Sirois	ca CAN	GK	FC Dallas	24	$4,808	$250,000
+467	Alex Bono	us USA	GK	D.C. United	31	$4,808	$250,000
+468	Jhegson Mendez	ec ECU	MF	Houston Dynamo		$4,808	$250,000
+469	Jonathan González	mx MEX	MF	SJ Earthquakes	26	$4,808	$250,000
+470	Preston Judd	us USA	FW	SJ Earthquakes	26	$4,808	$250,000
+471	Mauricio Cuevas	us USA	DF,MF	LA Galaxy	22	$4,808	$250,000
+472	Brian Anunga	cm CMR	MF	FC Cincinnati	29	$4,808	$250,000
+473	Andrew Privett	us USA	DF	Charlotte	25	$4,808	$250,000
+474	Chris Brady	us USA	GK	Chicago Fire	21	$4,808	$250,000
+475	Puso Dithejane		RW	Chicago Fire	21	$4,808	$250,000
+476	Beau Leroux	us USA	MF	SJ Earthquakes	22	$4,808	$249,996
+477	Mauricio González		LW	Minnesota Utd	21	$4,615	$240,000
+478	Ranko Veselinovic dup	rs SRB	DF	Vancouver W'caps	24	$4,615	$240,000
+479	Alex Bonetig		CB	Portland Timbers	23	$4,615	$240,000
+480	Morrison Agyemang		CB	Charlotte	21	$4,615	$240,000
+481	Evan Louro	us USA	GK	FC Cincinnati	30	$4,567	$237,500
+482	Osvald Søe		CB	San Diego FC	20	$4,519	$234,996
+483	Josh Bauer	us USA	DF	Nashville SC	27	$4,423	$230,000
+484	Tyler Miller	us USA	GK	Charlotte	32	$4,362	$226,800
+485	Felipe Andrade		CB	Houston Dynamo	23	$4,327	$225,000
+486	Jimmy Maurer	us USA	GK	Houston Dynamo	37	$4,327	$225,000
+487	Luka Gavran	ca CAN	GK	Toronto FC		$4,327	$225,000
+488	Ilie Sánchez	es ESP	MF	Austin FC	35	$4,327	$225,000
+489	Jon Bell	jm JAM	DF	Austin FC	28	$4,327	$225,000
+490	Benjamin Lundt	de GER	GK	St. Louis City	30	$4,327	$225,000
+491	Jack Skahan	us USA	MF,FW	SJ Earthquakes	27	$4,327	$225,000
+492	Ryan Raposo	ca CAN	DF,MF	LAFC	26	$4,231	$220,000
+493	Rodolfo Aloko		RW	Charlotte	19	$4,231	$220,000
+494	Stefan Cleveland	us USA	GK	Sporting KC	31	$4,135	$215,000
+495	Pablo Sisniega	mx MEX	GK	San Diego FC	30	$4,135	$215,000
+496	Joyeux Masanka Bungi		LM	RB New York	19	$4,038	$210,000
+497	D.J. Taylor	us USA	DF	Minnesota Utd	28	$4,038	$210,000
+498	Karl Edwards Jr.	us USA	GK	SJ Earthquakes	34	$4,038	$210,000
+499	Joshua Yaro	gh GHA	DF	St. Louis City	31	$3,962	$206,000
+500	AJ Marcucci	us USA	GK	RB New York	26	$3,942	$205,000
+501	Belal Halbouni	sy SYR	CB	Vancouver W'caps	26	$3,923	$204,000
+502	Lucas Herrington		CB	Colorado Rapids	18	$3,846	$200,004
+503	Kaick	br BRA	MF	FC Dallas	20	$3,846	$200,000
+504	Nolan Norris	us USA	DF	FC Dallas	20	$3,846	$200,000
+505	Joe Willis	us USA	GK	Nashville SC	37	$3,846	$200,000
+506	Geiner Martínez		CB	Philadelphia Union	23	$3,846	$200,000
+507	Amar Sejdic	us USA	MF	Columbus Crew	29	$3,846	$200,000
+508	Tomas Hasal	ca CAN	GK	LAFC	26	$3,846	$200,000
+509	JC Ngando		DM	Vancouver W'caps	26	$3,846	$200,000
+510	Lukas MacNaughton	ca CAN	DF	St. Louis City	30	$3,846	$200,000
+511	Rafael Santos	br BRA	MF,DF	St. Louis City	27	$3,846	$200,000
+512	David Ruíz	hn HON	MF	Inter Miami	21	$3,846	$200,000
+513	Rocco Ríos Novo	ar ARG	GK	Inter Miami	23	$3,846	$200,000
+514	Novak Mićović	rs SRB	GK	LA Galaxy	24	$3,846	$200,000
+515	Mason Stajduhar	us USA	GK	Real Salt Lake	28	$3,846	$200,000
+516	Zach Booth		LW	Real Salt Lake	22	$3,846	$200,000
+517	Mauricio Pineda	us USA	MF	Chicago Fire	28	$3,846	$200,000
+518	Eric Rogers	us USA	DF	Chicago Fire	26	$3,846	$200,000
+519	Emmanuel Boateng	gh GHA	FW,MF	San Diego FC	32	$3,558	$185,004
+520	Bryan Acosta	hn HON	MF	Nashville SC	32	$3,558	$185,000
+521	Andy Rojas	cr CRC	FW	RB New York	20	$3,558	$185,000
+522	Peter Stroud	us USA	MF	Minnesota Utd	23	$3,558	$185,000
+523	Nick Markanich	us USA	FW	Houston Dynamo	26	$3,557	$184,962
+524	Juan Mina	co COL	DF	RB New York	21	$3,365	$175,000
+525	Julian Hall	us USA	FW	RB New York	17	$3,365	$175,000
+526	Oscar Verhoeven	us USA	DF,MF	San Diego FC	19	$3,365	$175,000
+527	Ralph Priso-Mbongue	ca CAN	DF	Vancouver W'caps	23	$3,365	$175,000
+528	Damian Las	us USA	GK	Austin FC	23	$3,365	$175,000
+529	Brian Romero		RW	Charlotte	19	$3,365	$175,000
+530	Philip Quinton	us USA	DF	Real Salt Lake	26	$3,365	$175,000
+531	Jonathan Dean	us USA	DF	Chicago Fire	28	$3,365	$175,000
+532	Jeremy Rafanello	us USA	MF	Philadelphia Union	25	$3,173	$165,000
+533	Nicholas Hagen	gt GUA	GK	Columbus Crew	29	$3,173	$165,000
+534	Isaac Boehmer	us USA	GK	Vancouver W'caps	24	$3,173	$165,000
+535	Josh Cohen	us USA	GK	Chicago Fire	33	$3,173	$165,000
+536	Deandre Kerr	ca CAN	MF,FW	Toronto FC	23	$3,077	$160,000
+537	Nicolas Hansen		GK	Colorado Rapids		$3,077	$160,000
+538	Javier Otero	ve VEN	GK	Orlando City	23	$3,077	$160,000
+539	Nehuén Benedetti		CM	RB New York	21	$3,077	$160,000
+540	Devin Padelford	us USA	MF,DF	Minnesota Utd	23	$3,077	$160,000
+541	Luis Rivera	us USA	LB	Real Salt Lake	18	$3,077	$160,000
+542	Tyler Wolff	us USA	MF	Real Salt Lake	22	$3,077	$160,000
+543	Jackson Hopkins	us USA	FW,MF	D.C. United	21	$3,029	$157,500
+544	Jules-Anthony Vilsaint	ca CAN	FW	Toronto FC	23	$2,885	$150,000
+545	Kobe Franklin	ca CAN	DF,MF	Toronto FC	22	$2,885	$150,000
+546	Brian Schwake	us USA	GK	Nashville SC	24	$2,885	$150,000
+547	Tobias Williams	us USA	DF	Nashville SC	21	$2,885	$150,000
+548	Dante Sealy	tt TRI	MF,FW	Colorado Rapids	22	$2,885	$150,000
+549	Maxi Carrizo	us USA	MF	NYCFC	17	$2,885	$150,000
+550	Mohammed Sofo		LW	RB New York	21	$2,885	$150,000
+551	Ronald Donkor	gh GHA	MF	RB New York	21	$2,885	$150,000
+552	Luca Bombino	us USA	DF	San Diego FC	19	$2,885	$150,000
+553	Caden Glover	us USA	CF	St. Louis City	19	$2,885	$150,000
+554	Noel Buck	eng ENG	MF	SJ Earthquakes	20	$2,885	$150,000
+555	Nimfasha Berchimas	us USA	LW	Charlotte	18	$2,885	$150,000
+556	Chris Mueller	us USA	FW	Chicago Fire	29	$2,885	$150,000
+557	Rocco Rios Novo dup	ar ARG	GK	Chicago Fire	32	$2,885	$150,000
+558	Ronald Hernández	ve VEN	DF	Atlanta Utd	28	$2,788	$145,000
+559	Kosi Thompson	ca CAN	DF	Colorado Rapids	23	$2,692	$140,000
+560	Ben Bender	us USA	DF,MF	Philadelphia Union	24	$2,692	$140,000
+561	Taha Habroune	us USA	MF,FW	Columbus Crew	19	$2,692	$140,000
+562	David Vazquez	us USA	MF,FW	San Diego FC	19	$2,692	$140,000
+563	Jack Neeley	us USA	DF	Charlotte	20	$2,692	$140,000
+564	William Yarbrough	us USA	GK	Toronto FC	36	$2,596	$135,000
+565	Hunter Sulte	us USA	GK	Portland Timbers	23	$2,596	$135,000
+566	Noah Cobb	us USA	DF	Colorado Rapids		$2,596	$135,000
+567	Omar Valencia	pa PAN	DF	RB New York	21	$2,500	$130,000
+568	Tyson Pearce	us USA	RB	St. Louis City	18	$2,500	$130,000
+569	Santiago Morales		CM	Inter Miami	19	$2,500	$130,000
+570	Zane Monlouis	eng ENG	DF	Toronto FC	22	$2,404	$125,000
+571	Luke Brennan	us USA	MF	Atlanta Utd	20	$2,404	$125,000
+572	Allan Oyirwoth	ug UGA	AM	NE Revolution	19	$2,404	$125,000
+573	Jackson Travis	us USA	DF	Colorado Rapids	21	$2,404	$125,000
+574	George Marks	us USA	GK	Philadelphia Union	26	$2,404	$125,000
+575	Tahir Reid-Brown	us USA	DF	Orlando City	19	$2,404	$125,000
+576	Roald Mitchell	tt TRI	MF	RB New York		$2,404	$125,000
+577	Micah Burton	us USA	FW	Austin FC	19	$2,404	$125,000
+578	Gerardo Valenzuela	us USA	MF,FW	FC Cincinnati	21	$2,404	$125,000
+579	Robert Turdean	us USA	AM	Chicago Fire	16	$2,404	$125,000
+580	Justin Reynolds	us USA	DF,MF	Sporting KC	21	$2,373	$123,400
+581	Adyn Torres	pr PUR	DM	Atlanta Utd	18	$2,308	$120,000
+582	Ajani Fortune	tt TRI	MF	Atlanta Utd	23	$2,308	$120,000
+583	Conner Antley	us USA	DF,MF	D.C. United	30	$2,308	$120,000
+584	CJ Fodrey	us USA	FW	Austin FC	21	$2,308	$120,000
+585	Edwyn Mendoza	us USA	DM	SJ Earthquakes	19	$2,308	$120,000
+586	Kimani Stewart-Baynes	ca CAN	FW	Columbus Crew		$1,923	$100,000
+587	Franco Negri	ar ARG	DF	Houston Dynamo	30	$2,181	$113,400
+588	Lazar Stefanovic	ca CAN	DF	Toronto FC	19	$2,181	$113,400
+589	Nicksoen Gomis	fr FRA	DF	Toronto FC	23	$2,181	$113,400
+590	Álvaro Augusto		CB	FC Dallas	20	$2,181	$113,400
+591	Brooks Thompson	us USA	GK	FC Dallas	23	$2,181	$113,400
+592	Michael Collodi	us USA	GK	FC Dallas	24	$2,181	$113,400
+593	Sam Sarver		RW	FC Dallas	23	$2,181	$113,400
+594	Cayman Togashi	jp JPN	FW	Atlanta Utd	32	$2,181	$113,400
+595	Fafà Picault	ht HAI	FW	Atlanta Utd	34	$2,181	$113,400
+596	Jayden Hibbert	ca CAN	GK	Atlanta Utd	21	$2,181	$113,400
+597	Malichi Edwards	us USA	DF	Atlanta Utd	22	$2,181	$113,400
+598	Sergio Santos Gomes	br BRA	FW	Atlanta Utd	31	$2,181	$113,400
+599	Matthew Corcoran		DM	Nashville SC	20	$2,181	$113,400
+600	Woobens Pacius	ht HAI	FW	Nashville SC	24	$2,181	$113,400
+601	Andrew Farrell	us USA	DF	NE Revolution	33	$2,181	$113,400
+602	Damario McIntosh	jm JAM	DF	NE Revolution	18	$2,181	$113,400
+603	JD Gunn		GK	NE Revolution	26	$2,181	$113,400
+604	Keegan Hughes	us USA	DF	NE Revolution	25	$2,181	$113,400
+605	Malcolm Fry	us USA	FW	NE Revolution	20	$2,181	$113,400
+606	Marcos Zambrano		MF	NE Revolution		$2,181	$113,400
+607	Peyton Miller		LB	NE Revolution	18	$2,181	$113,400
+608	Ali Fadal	gh GHA	MF	Colorado Rapids	22	$2,181	$113,400
+609	Bryce Jamison		RW	Colorado Rapids	20	$2,181	$113,400
+610	Georgi Minoungou	bf BFA	MF,FW	Colorado Rapids	23	$2,181	$113,400
+611	Wayne Frederick	tt TRI	MF,DF	Colorado Rapids	21	$2,181	$113,400
+612	Gabriel Segal		CF	D.C. United	24	$2,181	$113,400
+613	Garrison Tubbs	us USA	CB	D.C. United	24	$2,181	$113,400
+614	Hosei Kijima	jp JPN	MF	D.C. United	23	$2,181	$113,400
+615	Jacob Murrell	us USA	FW	D.C. United	21	$2,181	$113,400
+616	Jordan Farr	us USA	DF	D.C. United		$2,181	$113,400
+617	Alejandro Bedoya	us USA	MF	Philadelphia Union	38	$2,181	$113,400
+618	Andrew Rick	us USA	GK	Philadelphia Union	20	$2,181	$113,400
+619	Eddy Davis III		CF	Philadelphia Union	19	$2,181	$113,400
+620	Frankie Westfield		RB	Philadelphia Union	20	$2,181	$113,400
+621	Sal Olivas		CF	Philadelphia Union	19	$2,181	$113,400
+622	Joran Gerbet	fr FRA	DM	Orlando City	24	$2,181	$113,400
+623	Yutaro Tsukada	jp JPN	FW	Orlando City	24	$2,181	$113,400
+624	Ethan Bartlow	us USA	DF	Sporting KC	25	$2,181	$113,400
+625	Ian James	us USA	DF	Sporting KC	17	$2,181	$113,400
+626	Jayden Reid	us USA	DF	Sporting KC		$2,181	$113,400
+627	Stephen Afrifa	ca CAN	FW	Sporting KC	24	$2,181	$113,400
+628	Wyatt Meyer	us USA	DF	Sporting KC	25	$2,181	$113,400
+629	Cesar Ruvalcaba	us USA	DF	Columbus Crew	24	$2,181	$113,400
+630	Cole Mrowka	ph PHI	CM	Columbus Crew	19	$2,181	$113,400
+631	Evan Bush	us USA	GK	Columbus Crew	39	$2,181	$113,400
+632	Luke Pruter		GK	Columbus Crew	24	$2,181	$113,400
+633	Cody Baker		RB	Seattle Sounders	22	$2,181	$113,400
+634	Kalani Kossa-Rienzi		RB	Seattle Sounders	23	$2,181	$113,400
+635	Kee-hee Kim		CB	Seattle Sounders	36	$2,181	$113,400
+636	Max Anchor	ca CAN	GK	Seattle Sounders	21	$2,181	$113,400
+637	Josh Ataylor	us USA	CB	Seattle Sounders	27	$2,181	$113,400
+638	Stuart Hawkins	us USA	DF	Seattle Sounders	19	$2,181	$113,400
+639	Yu Tsukanome		CF	Seattle Sounders	25	$2,181	$113,400
+640	Drew Baiera	us USA	DF	NYCFC	18	$2,181	$113,400
+641	Greg Ranjitsingh	tt TRI	GK	NYCFC	32	$2,181	$113,400
+642	Jacob Arroyave	us USA	CM	NYCFC	18	$2,181	$113,400
+643	Jonathan Shore	us USA	MF	NYCFC	18	$2,181	$113,400
+644	Malachi Jones	sl SLE	MF	NYCFC	22	$2,181	$113,400
+645	Nico Cavallo	us USA	DF,MF	NYCFC	24	$2,181	$113,400
+646	Tomas Romero	sv SLV	GK	NYCFC	25	$2,181	$113,400
+647	Zach Brady		CM	NYCFC		$2,181	$113,400
+648	Adri Mehmeti	us USA	MF	RB New York	16	$2,181	$113,400
+649	Aidan Stokes	us USA	GK	RB New York	18	$2,181	$113,400
+650	Adrian Wibowo	id IDN	RW	LAFC	20	$2,181	$113,400
+651	Jude Terry	us USA	MF	LAFC	17	$2,181	$113,400
+652	Lorenzo Dellavalle	it ITA	CB	LAFC	21	$2,181	$113,400
+653	Duran Ferree	us USA	GK	San Diego FC	19	$2,181	$113,400
+654	Kieran Sargeant		LB	San Diego FC	22	$2,181	$113,400
+655	Willy Kumado	gh GHA	MF	San Diego FC	23	$2,181	$113,400
+656	Alec Smir	us USA	GK	Minnesota Utd	26	$2,181	$113,400
+657	Jordan Adebayo-Smith		CF	Minnesota Utd	25	$2,181	$113,400
+658	Kieran Chandler dup		LW	Minnesota Utd	21	$2,181	$113,400
+659	Morris Duggan	de GER	DF	Minnesota Utd	25	$2,181	$113,400
+660	Adrian Zendejas	mx MEX	GK	Vancouver W'caps	30	$2,181	$113,400
+661	Jeevan Badwal	ca CAN	MF	Vancouver W'caps	19	$2,181	$113,400
+662	Miguel Perez	us USA	MF	St. Louis City	20	$2,181	$113,400
+663	Mykhi Joyner	us USA	FW	St. Louis City	19	$2,181	$113,400
+664	Francesco Montali	us USA	MF	SJ Earthquakes	25	$2,181	$113,400
+665	Jamar Ricketts	us USA	MF,DF	SJ Earthquakes	24	$2,181	$113,400
+666	Kaedren Spivey	us USA	CM	SJ Earthquakes	16	$2,181	$113,400
+667	Marcus Epps	us USA	DF	SJ Earthquakes	24	$2,181	$113,400
+668	Nonso Adimabua		CF	SJ Earthquakes	25	$2,181	$113,400
+669	Israel Boatwright	do DOM	RB	Inter Miami	20	$2,181	$113,400
+670	Luis Barraza	us USA	GK	Inter Miami	29	$2,181	$113,400
+671	Tyler Hall	us USA	CB	Inter Miami	20	$2,181	$113,400
+672	Eric Miller	us USA	DF	Portland Timbers	33	$2,181	$113,400
+673	Trey Muse	us USA	GK	Portland Timbers	26	$2,181	$113,400
+674	Brady Scott	us USA	GK	LA Galaxy	26	$2,181	$113,400
+675	Chris Rindov	us USA	DF	LA Galaxy	24	$2,181	$113,400
+676	Isaiah Parente	us USA	MF	LA Galaxy	25	$2,181	$113,400
+677	Rubi Duenas	us USA	DF	LA Galaxy		$2,181	$113,400
+678	Tucker Lepley	us USA	MF	LA Galaxy	24	$2,181	$113,400
+679	Fabian Mrozek		GK	FC Cincinnati	22	$2,181	$113,400
+680	Kristian Fletcher	us USA	CF	FC Cincinnati	20	$2,181	$113,400
+681	Kyle Smith	us USA	DF,MF	FC Cincinnati	34	$2,181	$113,400
+682	Nick Hagglund	us USA	DF	FC Cincinnati	33	$2,181	$113,400
+683	Ștefan Chirilă	ro ROU	FW	FC Cincinnati	19	$2,181	$113,400
+684	Stiven Jimenez	us USA	MF	FC Cincinnati	18	$2,181	$113,400
+685	Tom Barlow	us USA	FW,MF	FC Cincinnati	30	$2,181	$113,400
+686	Isaac Walker	us USA	GK	Charlotte	25	$2,181	$113,400
+687	Tyger Smalls		FW	Charlotte		$2,181	$113,400
+688	Kobi Henry	tt TRI	DF	Real Salt Lake	21	$2,181	$113,400
+689	Luca Moisa	us USA	MF	Real Salt Lake	17	$2,181	$113,400
+690	Noel Caliskan	de GER	MF	Real Salt Lake	25	$2,181	$113,400
+691	Zavier Gozo	us USA	MF,FW	Real Salt Lake	18	$2,181	$113,400
+692	Christopher Cupps	us USA	DF	Chicago Fire	17	$2,181	$113,400
+693	Dylan Borso	us USA	MF	Chicago Fire	19	$2,181	$113,400
+694	Agustin Resch		CB	Houston Dynamo	24	$1,693	$88,025
+695	Blake Gillingham	us USA	GK	Houston Dynamo	23	$1,693	$88,025
+696	Logan Erb		GK	Houston Dynamo	22	$1,693	$88,025
+697	Matthew Arana		CM	Houston Dynamo	15	$1,693	$88,025
+698	Romaric Batcheba		LB	Houston Dynamo	22	$1,693	$88,025
+699	Adisa De Rosario	ca CAN	GK	Toronto FC	21	$1,693	$88,025
+700	Malik Henry	ca CAN	MF	Toronto FC	23	$1,693	$88,025
+701	Markus Cimermancic	ca CAN	MF	Toronto FC	21	$1,693	$88,025
+702	Stefan Kapor		CB	Toronto FC	16	$1,693	$88,025
+703	Caleb Swann		CM	FC Dallas	19	$1,693	$88,025
+704	Daniel Baran	us USA	RW	FC Dallas	19	$1,693	$88,025
+705	Diego García	us USA	CM	FC Dallas	19	$1,693	$88,025
+706	Enzo Newman	us USA	RB	FC Dallas	20	$1,693	$88,025
+707	Jaidyn Contreras		LW	FC Dallas	18	$1,693	$88,025
+708	Joshua Torquato	us USA	MF	FC Dallas		$1,693	$88,025
+709	Kaka Scabin		CB	FC Dallas	19	$1,693	$88,025
+710	Nicholas Simmonds		CF	FC Dallas	19	$1,693	$88,025
+711	Ricky Louis		CF	FC Dallas	21	$1,693	$88,025
+712	Slade Starnes		CB	FC Dallas	22	$1,693	$88,025
+713	Adrian Gill		CM	Atlanta Utd	20	$1,693	$88,025
+714	Cooper Sanchez	us USA	MF	Atlanta Utd	17	$1,693	$88,025
+715	Dominik Chong Qui	us USA	LB	Atlanta Utd	18	$1,693	$88,025
+716	Santiago Pita		AM	Atlanta Utd	18	$1,693	$88,025
+717	Will Reilly		CM	Atlanta Utd	23	$1,693	$88,025
+718	Charles-Emile Brunet		CM	Nashville SC	22	$1,693	$88,025
+719	Henry Pouessel		CM	Nashville SC		$1,693	$88,025
+720	Isaiah LeFlore	us USA	LB	Nashville SC	23	$1,693	$88,025
+721	Jordan Knight		LB	Nashville SC	23	$1,693	$88,025
+722	Malachi Molina	jm JAM	RB	Nashville SC	19	$1,693	$88,025
+723	Shak Mohammed		RW	Nashville SC	22	$1,693	$88,025
+724	Xavier Valdez		GK	Nashville SC	22	$1,693	$88,025
+725	Cristiano Oliveira		AM	NE Revolution	17	$1,693	$88,025
+726	Donovan Parisian	us USA	GK	NE Revolution	21	$1,693	$88,025
+727	Eric Klein	us USA	MF	NE Revolution	19	$1,693	$88,025
+728	Alex Harris	us USA	FW	Colorado Rapids	20	$1,693	$88,025
+729	Danny Musovski dup	mk MKD	FW	Colorado Rapids	21	$1,693	$88,025
+730	Mamadou Billo Diop		CF	Colorado Rapids	19	$1,693	$88,025
+731	Sydney Wathuta		CF	Colorado Rapids	21	$1,693	$88,025
+732	Gavin Turner		AM	D.C. United	19	$1,693	$88,025
+733	Grant Leveille		GK	D.C. United	17	$1,693	$88,025
+734	Hakim Karamoko		RW	D.C. United	20	$1,693	$88,025
+735	Nikola Marković		CB	D.C. United	21	$1,693	$88,025
+736	Oscar Avilez		LW	D.C. United	16	$1,693	$88,025
+737	Finn Sundstrom		CB	Philadelphia Union	19	$1,693	$88,025
+738	Kaiden Moore		CB	Philadelphia Union	18	$1,693	$88,025
+739	Stas Korzeniowski		CF	Philadelphia Union		$1,693	$88,025
+740	Colin Guske	us USA	MF	Orlando City	19	$1,693	$88,025
+741	Gustavo Caraballo	ve VEN	FW	Orlando City	17	$1,693	$88,025
+742	Harvey Sarajian		CF	Orlando City	21	$1,693	$88,025
+743	Justin Ellis		CF	Orlando City	18	$1,693	$88,025
+744	Nolan Miller		CB	Orlando City	21	$1,693	$88,025
+745	Zakaria Taifi	us USA	DF,MF	Orlando City	20	$1,693	$88,025
+746	Cielo Tschantret		DM	Sporting KC	20	$1,693	$88,025
+747	Jack Kortkamp	us USA	GK	Sporting KC	18	$1,693	$88,025
+748	Jacob Bartlett	us USA	MF	Sporting KC	20	$1,693	$88,025
+749	Jansen Miller	us USA	DF	Sporting KC	23	$1,693	$88,025
+750	Ethan Bartlow dup	us USA	DF	Sporting KC	19	$1,693	$88,025
+751	Ryan Schewe	us USA	GK	Sporting KC	23	$1,693	$88,025
+752	Taylor Calheira		CF	Sporting KC	23	$1,693	$88,025
+753	Chase Adams		CF	Columbus Crew	17	$1,693	$88,025
+754	Owen Presthus		RB	Columbus Crew	20	$1,693	$88,025
+755	Quinton Elliot		AM	Columbus Crew	22	$1,693	$88,025
+756	Tristan Brown	us USA	DF	Columbus Crew	18	$1,693	$88,025
+757	Zach Zengue		CM	Columbus Crew	22	$1,693	$88,025
+758	Antino Lopez		CB	Seattle Sounders	23	$1,693	$88,025
+759	Sebastian Gomez		AM	Seattle Sounders	19	$1,693	$88,025
+760	Snyder Brunell		DM	Seattle Sounders		$1,693	$88,025
+761	Cooper Flax		CM	NYCFC	22	$1,693	$88,025
+762	Kamran Acito		CB	NYCFC	22	$1,693	$88,025
+763	Kevin Pierre Jr		CM	NYCFC	22	$1,693	$88,025
+764	Mac Learned		GK	NYCFC	23	$1,693	$88,025
+765	Max Murray	us USA	CB	NYCFC	23	$1,693	$88,025
+766	Seymour Reid	jm JAM	FW	NYCFC	17	$1,693	$88,025
+767	Aiden Jarvis		DM	RB New York	19	$1,693	$88,025
+768	Matthew Dos Santos		LB	RB New York	17	$1,693	$88,025
+769	Rafael Mosquera	pa PAN	FW	RB New York	20	$1,693	$88,025
+770	Tanner Rosborough	us USA	FW	RB New York	17	$1,693	$88,025
+771	Tobias Szewczyk		GK	RB New York		$1,693	$88,025
+772	Cabral Carter		GK	LAFC	21	$1,693	$88,025
+773	Christian Díaz		CB	LAFC	19	$1,693	$88,025
+774	Kenny Nielsen		CB	LAFC	24	$1,693	$88,025
+775	Matt Evans		AM	LAFC	19	$1,693	$88,025
+776	Alejandro Alvarado		CM	San Diego FC	22	$1,693	$88,025
+777	Anisse Saidi	tn TUN	FW	San Diego FC	17	$1,693	$88,025
+778	Bryan Zamblé		LW	San Diego FC	18	$1,693	$88,025
+779	Ian Pilcher	us USA	DF	San Diego FC	22	$1,693	$88,025
+780	Manu Duah	gh GHA	DF	San Diego FC	20	$1,693	$88,025
+781	Wilson Eisner	us USA	DF	San Diego FC	23	$1,693	$88,025
+782	Kieran Chandler dup2		LB	Minnesota Utd	18	$1,693	$88,025
+783	Kieran Chandler		LB	Minnesota Utd	20	$1,693	$88,025
+784	Mamadou Dieng	sn SEN	FW	Minnesota Utd	21	$1,693	$88,025
+785	Marcus Caldeira		CF	Minnesota Utd	21	$1,693	$88,025
+786	Liam MacKenzie	ca CAN	MF	Vancouver W'caps	18	$1,693	$88,025
+787	Mihail Gherasimencov		LB	Vancouver W'caps	21	$1,693	$88,025
+788	Nikola Djordjevic		RB	Vancouver W'caps	23	$1,693	$88,025
+789	Rayan Elloumi		CF	Vancouver W'caps	18	$1,693	$88,025
+790	Tate Johnson	us USA	DF	Vancouver W'caps	20	$1,693	$88,025
+791	Ervin Torres		CM	Austin FC	18	$1,693	$88,025
+792	Jared Abner	us USA	DF	Austin FC		$1,693	$88,025
+793	Brendan McSorley		CF	St. Louis City	24	$1,693	$88,025
+794	Jaziel Orozco	us USA	DF,MF	St. Louis City	21	$1,693	$88,025
+795	Jack Jasinski		RB	SJ Earthquakes	22	$1,693	$88,025
+796	Max Floriani	us USA	DF	SJ Earthquakes	22	$1,693	$88,025
+797	Nate Crockford		GK	SJ Earthquakes	23	$1,693	$88,025
+798	Reid Roberts	us USA	DF	SJ Earthquakes	22	$1,693	$88,025
+799	Rohan Rajagopal		DM	SJ Earthquakes	18	$1,693	$88,025
+800	Alexander Shaw		CM	Inter Miami	17	$1,693	$88,025
+801	Dániel Pintér		LW	Inter Miami	18	$1,693	$88,025
+802	Gage Guerra	us USA	FW	Portland Timbers		$1,693	$88,025
+803	Ian Smith		LB	Portland Timbers	23	$1,693	$88,025
+804	Sawyer Jura		RB	Portland Timbers	20	$1,693	$88,025
+805	Harbor Miller	us USA	MF,FW	LA Galaxy	18	$1,693	$88,025
+806	Riley Dalgado		LB	LA Galaxy	19	$1,693	$88,025
+807	Ademar Chávez		AM	FC Cincinnati	17	$1,693	$88,025
+808	Kenji Mboma Dem	fr FRA	FW,MF	FC Cincinnati	24	$1,693	$88,025
+809	Andrew Johnson		CB	Charlotte	22	$1,693	$88,025
+810	Will Cleary		CB	Charlotte	23	$1,693	$88,025
+811	Aiden Hezarkhani	us USA	MF,FW	Real Salt Lake	18	$1,693	$88,025
+812	Antonio Riquelme		AM	Real Salt Lake	17	$1,693	$88,025
+813	Eduardo Sosa		DF	Real Salt Lake		$1,693	$88,025
+814	Gio Villa		RB	Real Salt Lake	18	$1,693	$88,025
+815	Griffin Dillon		CM	Real Salt Lake	22	$1,693	$88,025
+816	Jesús Barea	es ESP	FW	Real Salt Lake	23	$1,693	$88,025
+817	Max Kerkvliet		GK	Real Salt Lake	20	$1,693	$88,025
+818	Omar Marquez	us USA	RW	Real Salt Lake	18	$1,693	$88,025
+819	Owen Anderson	us USA	AM	Real Salt Lake	18	$1,693	$88,025
+820	Sergi Solans		CF	Real Salt Lake	23	$1,693	$88,025
+821	Van Parker		RW	Real Salt Lake	17	$1,693	$88,025
+822	David Poręba	us USA	MF	Chicago Fire	23	$1,693	$88,025
+823	Dean Boltz	us USA	CF	Chicago Fire		$1,693	$88,025
+824	Jason Shokalook		CF	Chicago Fire	23	$1,693	$88,025
