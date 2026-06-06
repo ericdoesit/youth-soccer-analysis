@@ -1,0 +1,42 @@
+club,gender,age_group,tier,tier_rank,team_count,team_names,league_pathway,notes
+SoCal Reds FC,Boys,U7,PCA,4,1,BU7 PCA Premier,Pre-competitive,Bridge from recreational to SoCal League; $699/10-week session
+SoCal Reds FC,Boys,U8,PCA,4,1,BU8 PCA Premier,Pre-competitive,Bridge from recreational to SoCal League; $699/10-week session
+SoCal Reds FC,Boys,U8,Red,2,1,BU8 Red,SoCal League,Entry competitive travel
+SoCal Reds FC,Boys,U8,White,3,3,"BU8 White, BU8 White II, BU8 White III",SoCal League,Development competitive
+SoCal Reds FC,Boys,U9,Premier,1,1,BU9 Premier,SoCal League (top flight),MLS NEXT / ECNL pathway
+SoCal Reds FC,Boys,U9,Red,2,2,"BU9 Red, BU9 Red II",SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U9,White,3,2,"BU9 White, BU9 White III",SoCal League,Development competitive
+SoCal Reds FC,Boys,U10,Premier,1,2,"BU10 Premier, BU10 Premier II",SoCal League (top flight),MLS NEXT / ECNL pathway
+SoCal Reds FC,Boys,U10,Red,2,2,"BU10 Red, BU10 Red II",SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U10,White,3,4,"BU10 White, BU10 White II, BU10 White III, BU10 White IV",SoCal League,Development competitive
+SoCal Reds FC,Boys,U11,Premier,1,2,"BU11 Premier, BU11 Premier II",SoCal League (top flight),MLS NEXT / ECNL pathway
+SoCal Reds FC,Boys,U11,Red,2,1,BU11 Red,SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U11,White,3,4,"BU11 White, BU11 White II, BU11 White III, BU11 White IV",SoCal League,Development competitive
+SoCal Reds FC,Boys,U12,Premier,1,1,BU12 Premier,SoCal League (top flight),MLS NEXT / ECNL pathway
+SoCal Reds FC,Boys,U12,Red,2,3,"BU12 Red, BU12 Red II, BU12 Red III",SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U12,White,3,4,"BU12 White, BU12 White II, BU12 White III, BU12 White IV",SoCal League,Development competitive
+SoCal Reds FC,Boys,U13,Premier,1,2,"BU13 Premier, BU13 Premier II",MLS NEXT (likely) / SoCal League,Top boys pathway; scouts attend
+SoCal Reds FC,Boys,U13,Red,2,2,"BU13 Red, BU13 Red II",SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U13,White,3,1,BU13 White,SoCal League,Development competitive
+SoCal Reds FC,Boys,U14,Premier,1,2,"BU14 Premier, BU14 Premier II",MLS NEXT (likely) / SoCal League,Top boys pathway; scouts attend
+SoCal Reds FC,Boys,U14,Red,2,2,"BU14 Red, BU14 Red II",SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U14,White,3,1,BU14 White,SoCal League,Development competitive
+SoCal Reds FC,Boys,U15,Premier,1,1,BU15 Premier,MLS NEXT (likely),Top boys pathway
+SoCal Reds FC,Boys,U15,Red,2,2,"BU15 Red, BU15 Red II",SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Boys,U16,Premier,1,1,BU16 Premier,MLS NEXT (likely),Top boys pathway
+SoCal Reds FC,Boys,U16,Red,2,1,BU16 Red,SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Girls,U7,PCA,4,1,GU7 PCA,Pre-competitive,Bridge from recreational to SoCal League; $699/10-week session
+SoCal Reds FC,Girls,U8,White,3,2,"GU8 White, GU8 White II",SoCal League,Entry competitive; no Premier/Red at U8 girls
+SoCal Reds FC,Girls,U9,Premier,1,1,GU9 Premier,SoCal League (top flight),Girls Academy pathway
+SoCal Reds FC,Girls,U9,Red,2,1,GU9 Red,SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Girls,U9,White,3,2,"GU9 White, GU9 White II",SoCal League,Development competitive
+SoCal Reds FC,Girls,U10,White,3,1,GU10 White,SoCal League,Development competitive; no Premier/Red at U10 girls
+SoCal Reds FC,Girls,U11,Red,2,1,GU11 Red,SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Girls,U11,White,3,2,"GU11 White, GU11 White II",SoCal League,Development competitive
+SoCal Reds FC,Girls,U12,Premier,1,2,"GU12 Premier, GU12 Premier II",SoCal League (top flight),DPL / GA Aspire pathway
+SoCal Reds FC,Girls,U12,Red,2,1,GU12 Red,SoCal League,Mid-tier competitive travel
+SoCal Reds FC,Girls,U12,White,3,2,"GU12 White, GU12 White II",SoCal League,Development competitive
+SoCal Reds FC,Girls,U13,Red,2,1,GU13 Red,SoCal League / DPL,Feeds into DPL / GA Aspire at older ages
+SoCal Reds FC,Girls,U14,Red,2,1,GU14 Red,SoCal League / DPL,Feeds into DPL / GA Aspire
+SoCal Reds FC,Girls,U15,Red,2,1,GU15 Red,Girls Academy (GA),Girls Academy league member (Southwest conference)
+SoCal Reds FC,Girls,U16,Red,2,1,GU16 Red,Girls Academy (GA),Girls Academy league member (Southwest conference)
