@@ -4,34 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Fool's Gold Problem: ROI of Elite Youth Soccer</title>
+  <link rel="stylesheet" href="site.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-           color: #1a202c; background: #f7f8fa; line-height: 1.6; }
-    .nav { background: #1a202c; padding: 0.75rem 2rem; display: flex; gap: 1.5rem; align-items: center; }
-    .nav a { color: #cbd5e0; text-decoration: none; font-size: 0.875rem; }
-    .nav a:hover { color: white; }
-    .nav .brand { color: white; font-weight: 700; font-size: 1rem; margin-right: auto; }
-    .nav a.active { color: white; border-bottom: 2px solid #f6c90e; padding-bottom: 2px; }
-    header { background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
-             color: white; padding: 3rem 2rem; text-align: center; }
-    header h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; }
-    header p { color: #fed7d7; font-size: 1.1rem; max-width: 640px; margin: 0 auto; }
-    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+    /* page-specific overrides */
     section { background: white; border-radius: 10px; padding: 1.75rem 2rem;
               margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
     h2 { font-size: 1.35rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem; }
     h3 { font-size: 1.05rem; font-weight: 600; color: #4a5568; margin: 1.25rem 0 0.5rem; }
     p  { color: #4a5568; margin-bottom: 0.85rem; }
-    .callout { background: #fff5f5; border-left: 4px solid #c53030; padding: 1rem 1.25rem;
-               border-radius: 0 6px 6px 0; margin: 1.25rem 0; }
-    .callout.green { background: #f0fff4; border-color: #38a169; }
-    .callout strong { color: #c53030; }
-    .callout.green strong { color: #276749; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 1rem 0; }
-    thead th { background: #2d3748; color: white; padding: 0.7rem 1rem; text-align: left; }
-    tbody tr:nth-child(even) { background: #f7f8fa; }
-    tbody td { padding: 0.65rem 1rem; border-bottom: 1px solid #e2e8f0; }
     .big-stat { text-align: center; padding: 1.5rem; }
     .big-stat .number { font-size: 3.5rem; font-weight: 900; line-height: 1; }
     .big-stat .label  { font-size: 0.9rem; color: #718096; margin-top: 0.35rem; }
@@ -42,38 +22,50 @@
     .stat-card .num { font-size: 2.2rem; font-weight: 800; color: #c53030; }
     .stat-card .num.good { color: #276749; }
     .stat-card p { font-size: 0.82rem; color: #4a5568; margin-top: 0.25rem; margin-bottom: 0; }
-    .chart-img { width: 100%; max-width: 720px; display: block; margin: 1.25rem auto;
-                 border-radius: 8px; border: 1px solid #e2e8f0; }
-    .tier-badge { display: inline-block; padding: 0.2rem 0.55rem; border-radius: 4px;
-                  font-size: 0.75rem; font-weight: 700; }
-    .t2 { background: #bee3f8; color: #2b6cb0; }
-    .t3 { background: #fed7d7; color: #9b2c2c; }
-    .t4 { background: #e9d8fd; color: #553c9a; }
-    .sources { font-size: 0.78rem; color: #718096; background: #f7f8fa;
-               border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; }
-    footer { text-align: center; padding: 2rem; color: #a0aec0; font-size: 0.8rem; }
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.6rem; }
-      .stat-grid { grid-template-columns: 1fr 1fr; }
+    .chart-canvas-wrap {
+      background: #f7f8fa;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1.25rem 0;
     }
+    .chart-canvas-wrap .chart-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #718096;
+      margin-bottom: 0.75rem;
+    }
+    .ev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.25rem 0; }
+    @media (max-width: 700px) { .ev-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
 
-<nav class="nav">
-  <span class="brand">Fool's Gold: Youth Soccer</span>
-  <a href="../index.html">Home</a>
-  <a href="costs.html">Costs</a>
-  <a href="fools_gold.html" class="active">ROI</a>
-  <a href="equity.html">Equity</a>
-  <a href="methodology.html">Methods</a>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"
+            onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="costs.html">Costs</a>
+      <a href="fools_gold.html" class="active">ROI</a>
+      <a href="equity.html">Equity</a>
+      <a href="methodology.html">Methods</a>
+      <a href="../survey.html">Survey</a>
+    </div>
+  </div>
 </nav>
 
-<header>
+<div class="page-header">
   <h1>The Fool's Gold Problem</h1>
   <p>What is the expected financial return on a $55,000–$155,000 investment in elite
      youth soccer? The math is worse than most families realize.</p>
-</header>
+</div>
 
 <div class="container">
 
@@ -182,8 +174,10 @@
        but only 15% of D1 recipients get a full scholarship. Most partial awards ($10,000–
        $20,000/year) don't offset the investment.</p>
 
-    <img src="../data/analysis/avg_scholarship_by_div.png"
-         alt="Average scholarship by division" class="chart-img">
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Average scholarship value by division and gender</div>
+      <canvas id="scholarshipChart" height="160"></canvas>
+    </div>
   </section>
 
   <!-- Transfer Portal -->
@@ -246,8 +240,10 @@
   <!-- Pro Pathway -->
   <section>
     <h2>The Professional Pathway</h2>
-    <img src="../data/analysis/salary_by_league.png"
-         alt="Salary by league chart" class="chart-img">
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Median salary by professional league</div>
+      <canvas id="salaryLeagueChart" height="140"></canvas>
+    </div>
 
     <table>
       <thead>
@@ -556,6 +552,127 @@
   </section>
 
   <!-- Monte Carlo -->
+  <!-- Expected Value Analysis -->
+  <section>
+    <h2>Is There a "Likelihood-Appropriate" Cost?</h2>
+    <p>The natural question: if youth soccer has real costs and families are choosing
+       how much to spend, is there a level that makes sense given the odds? To answer
+       this, we model the expected financial return at each tier against actual cost —
+       and separately model the non-financial benefit curve.</p>
+
+    <h3>Cost vs. expected financial return (10-year career)</h3>
+    <div class="ev-grid">
+      <div class="chart-canvas-wrap">
+        <div class="chart-label">10-yr cost vs. expected financial return</div>
+        <canvas id="evCostChart" height="240"></canvas>
+      </div>
+      <div class="chart-canvas-wrap">
+        <div class="chart-label">Break-even scholarship rate needed vs. actual</div>
+        <canvas id="evBreakevenChart" height="240"></canvas>
+      </div>
+    </div>
+
+    <p>The left panel shows that expected financial return (green bars) is essentially
+       invisible against the cost bars at every tier. The right panel shows the D1
+       scholarship probability each tier's family would need to break even — and what
+       the actual rate is (green dots).</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tier</th><th>10-yr cost</th><th>Expected financial return</th>
+          <th>Net</th><th>Break-even scholarship rate needed</th><th>Actual rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>T1 AYSO ($550/yr)</td><td>$5,500</td><td>$301</td>
+          <td style="color:#e74c3c;">−$5,199</td><td>10%</td><td>~0.5%</td>
+        </tr>
+        <tr>
+          <td>T2 Travel ($3,100/yr)</td><td>$31,000</td><td>$1,704</td>
+          <td style="color:#e74c3c;">−$29,296</td><td>58%</td><td>~3%</td>
+        </tr>
+        <tr>
+          <td>T3 ECNL ($7,000/yr)</td><td>$70,000</td><td>$3,675</td>
+          <td style="color:#e74c3c;">−$66,325</td>
+          <td style="color:#e74c3c;font-weight:bold;">131% — impossible</td><td>~6.5%</td>
+        </tr>
+        <tr>
+          <td>T4 Elite ($12,000/yr)</td><td>$120,000</td><td>$5,379</td>
+          <td style="color:#e74c3c;">−$114,621</td>
+          <td style="color:#e74c3c;font-weight:bold;">225% — impossible</td><td>~9.5%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>The conclusion is uncomfortable:</strong> there is no tier at which youth
+      soccer investment breaks even financially for a typical player. Even AYSO at $550/year
+      would require 10× the actual scholarship rate to return the investment. This is not
+      an argument against youth sports — it is an argument against framing them as investments.
+    </div>
+
+    <h3>The non-financial benefit curve</h3>
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Is there a "likelihood-appropriate" cost? Financial return, non-financial benefit, and cost by annual spending</div>
+      <canvas id="frontierChart" height="180"></canvas>
+    </div>
+
+    <p>This chart adds a third dimension: the estimated non-financial benefit index
+       (development, competition experience, social value, enjoyment). That curve rises
+       quickly from $0 to roughly $3,000–$4,000/year, then flattens sharply. The cost
+       line (dashed red) eventually overtakes it.</p>
+
+    <p>The implication: if you're spending for non-financial reasons — your child loves
+       the game, values the competition, is developing as a person — the evidence
+       suggests most of that value is captured by Tier 2 travel soccer (~$3,100/year).
+       Every dollar above ~$4,000/year buys marginally less return than the dollar
+       before it.</p>
+
+    <h3>Who is making a "benefit-appropriate" decision?</h3>
+    <p>Two families can look at the same data and make different rational choices:</p>
+    <table>
+      <thead><tr><th>Family profile</th><th>Spending level</th><th>Rationality</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Child loves soccer; family can afford T2 comfortably; no scholarship expectation</td>
+          <td>$3,100/yr</td>
+          <td style="color:#2ecc71;">Benefit-appropriate — paying for the experience</td>
+        </tr>
+        <tr>
+          <td>Child is genuinely exceptional; family has confirmed interest from college coaches</td>
+          <td>$7,000/yr (2–3 yrs)</td>
+          <td style="color:#f39c12;">Conditionally rational — if evidence supports it</td>
+        </tr>
+        <tr>
+          <td>Stretching financially; belief that T3 will "open doors"; no specific signal of exceptional ability</td>
+          <td>$7,000–$22,000/yr</td>
+          <td style="color:#e74c3c;">Poor expected value — cost far exceeds realistic return</td>
+        </tr>
+        <tr>
+          <td>Any family; banking on T4 to produce a professional career</td>
+          <td>$12,000+/yr</td>
+          <td style="color:#e74c3c;">No tier produces positive financial EV for a typical player</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>The reason AYSO is cheap</strong> is not that soccer costs less to deliver
+      at Tier 1 — it is that AYSO uses volunteer coaches. The moment you pay coaches
+      $23–$31/hour (as LA City United does), even a basic program costs $1,600+/player/year
+      to operate. AYSO's low price is a volunteer subsidy, not evidence that soccer is cheap.
+      The same real costs exist at every tier; the question is who absorbs them.
+    </div>
+
+    <p class="sources">Sources: D1 scholarship probability estimates derived from NCAA
+       data and ECNL participation analysis; pro career EV from MLS draft survival
+       analysis (ST252–ST265); break-even rates computed from average scholarship value
+       ($53,400) × tier-specific D1 probability; research_statistics.csv (ST001–ST265).</p>
+  </section>
+
+  <!-- Monte Carlo -->
   <section>
     <h2>Monte Carlo Simulation: 100,000 Tier 3 Players</h2>
     <p>Assuming realistic probabilities for each outcome — professional career (0.5%),
@@ -664,8 +781,235 @@
 
 <footer>
   <p>Fool's Gold: Youth Soccer ROI Analysis &bull; Data collected 2024–2026
-     &bull; <a href="methodology.html" style="color:#a0aec0">Methodology</a></p>
+     &bull; <a href="methodology.html">Methodology</a> &bull;
+     <a href="../index.html">Home</a></p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+const gridLine = 'rgba(0,0,0,0.06)';
+const textColor = '#4a5568';
+Chart.defaults.color = textColor;
+Chart.defaults.font = { family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", size: 11 };
+
+// ── Scholarship by division ────────────────────────────────
+new Chart(document.getElementById('scholarshipChart'), {
+  type: 'bar',
+  data: {
+    labels: ['D1 Men', 'D1 Women', 'D2 Men', 'D2 Women', 'D3 Men', 'D3 Women'],
+    datasets: [{
+      label: 'Avg annual scholarship value',
+      data: [34000, 40000, 19000, 21000, 0, 0],
+      backgroundColor: ['#2b6cb0cc','#276749cc','#553c9acc','#d69e2ecc','#71809688','#71809688'],
+      borderColor:     ['#2b6cb0',  '#276749',  '#553c9a',  '#d69e2e',  '#718096',  '#718096'],
+      borderWidth: 1.5,
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ` $${ctx.raw.toLocaleString()}/yr avg` } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: {
+        grid: { color: gridLine },
+        ticks: { callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
+      }
+    }
+  }
+});
+
+// ── Pro salary by league ───────────────────────────────────
+new Chart(document.getElementById('salaryLeagueChart'), {
+  type: 'bar',
+  data: {
+    labels: ['MLS (2026)', 'MLS Homegrown', 'NWSL', 'USL Championship', 'USL League One'],
+    datasets: [
+      {
+        label: 'Minimum',
+        data: [88025, 65000, 35000, 25000, 18000],
+        backgroundColor: '#718096bb',
+        borderRadius: 3,
+      },
+      {
+        label: 'Median',
+        data: [352000, 180000, 75000, 50000, 30000],
+        backgroundColor: '#2b6cb0cc',
+        borderRadius: 3,
+      }
+    ]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 12 } },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
+    },
+    scales: {
+      x: {
+        grid: { color: gridLine },
+        ticks: { callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
+      },
+      y: { grid: { display: false } }
+    }
+  }
+});
+
+// ── EV cost chart ──────────────────────────────────────────
+new Chart(document.getElementById('evCostChart'), {
+  type: 'bar',
+  data: {
+    labels: ['T1 AYSO\n$550/yr', 'T2 Travel\n$3,100/yr', 'T3 ECNL\n$7,000/yr', 'T4 Elite\n$12,000/yr'],
+    datasets: [
+      {
+        label: '10-yr family cost',
+        data: [5500, 31000, 70000, 120000],
+        backgroundColor: ['#3b82f6cc','#f59e0bcc','#ef4444cc','#9b2335cc'],
+        borderColor:     ['#3b82f6',  '#f59e0b',  '#ef4444',  '#9b2335'],
+        borderWidth: 1.5, borderRadius: 4,
+      },
+      {
+        label: 'Expected financial return',
+        data: [301, 1704, 3675, 5379],
+        backgroundColor: '#22c55e99',
+        borderColor: '#22c55e',
+        borderWidth: 1.5, borderRadius: 4,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+      y: { grid: { color: gridLine }, ticks: { callback: v => '$' + (v >= 1000 ? v/1000+'K' : v) } }
+    }
+  }
+});
+
+// ── Break-even chart ───────────────────────────────────────
+new Chart(document.getElementById('evBreakevenChart'), {
+  type: 'bar',
+  data: {
+    labels: ['T1 AYSO', 'T2 Travel', 'T3 ECNL', 'T4 Elite'],
+    datasets: [
+      {
+        label: '% needed to break even',
+        data: [10.3, 58.1, 131.1, 224.7],
+        backgroundColor: ['#3b82f644','#f59e0b44','#ef444444','#9b233544'],
+        borderColor:     ['#3b82f6',  '#f59e0b',  '#ef4444',  '#9b2335'],
+        borderWidth: 1.5, borderRadius: 4,
+      },
+      {
+        label: 'Actual scholarship rate',
+        data: [0.5, 3.0, 6.5, 9.5],
+        type: 'line',
+        borderColor: '#22c55e', backgroundColor: '#22c55e33',
+        pointBackgroundColor: '#22c55e', pointRadius: 6,
+        borderWidth: 2, fill: false, tension: 0.1,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toFixed(1)}%` } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: gridLine }, ticks: { callback: v => v + '%' } }
+    }
+  }
+});
+
+// ── Spending frontier chart ────────────────────────────────
+(function() {
+  const spend = [];
+  for (let s = 0; s <= 13000; s += 100) spend.push(s);
+
+  function benefitAt(s) {
+    const pts = [[0,0],[550,40],[3100,70],[7000,85],[12000,90]];
+    for (let i = 1; i < pts.length; i++) {
+      if (s <= pts[i][0]) {
+        const t = (s - pts[i-1][0]) / (pts[i][0] - pts[i-1][0]);
+        return pts[i-1][1] + t * (pts[i][1] - pts[i-1][1]);
+      }
+    }
+    return 90;
+  }
+
+  const evPerYear  = [30.1, 170.4, 367.5, 537.9]; // annual EV at tier points
+  const tierSpend  = [550, 3100, 7000, 12000];
+  function evAt(s) {
+    if (s <= 550)  return (s/550) * evPerYear[0];
+    if (s <= 3100) return evPerYear[0] + (s-550)/(3100-550) * (evPerYear[1]-evPerYear[0]);
+    if (s <= 7000) return evPerYear[1] + (s-3100)/(7000-3100) * (evPerYear[2]-evPerYear[1]);
+    return evPerYear[2] + (s-7000)/(12000-7000) * (evPerYear[3]-evPerYear[2]);
+  }
+
+  new Chart(document.getElementById('frontierChart'), {
+    type: 'line',
+    data: {
+      labels: spend,
+      datasets: [
+        {
+          label: 'Non-financial benefit index (estimated)',
+          data: spend.map(benefitAt),
+          borderColor: '#3b82f6', backgroundColor: '#3b82f611',
+          borderWidth: 2.5, fill: true, tension: 0.35, pointRadius: 0,
+        },
+        {
+          label: 'Financial EV (annualized, per $100)',
+          data: spend.map(s => evAt(s) / 100),
+          borderColor: '#22c55e', backgroundColor: '#22c55e11',
+          borderWidth: 2, fill: true, tension: 0.35, pointRadius: 0,
+        },
+        {
+          label: 'Annual cost (scaled: $13K = 100)',
+          data: spend.map(s => s / 130),
+          borderColor: '#ef4444', borderDash: [6, 4],
+          borderWidth: 2, fill: false, tension: 0, pointRadius: 0,
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+        tooltip: {
+          callbacks: {
+            title: items => '$' + items[0].label.toLocaleString() + '/yr',
+            label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toFixed(1)}`
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'linear', min: 0, max: 13000,
+          grid: { color: gridLine },
+          ticks: { callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v), maxTicksLimit: 8 }
+        },
+        y: {
+          min: 0, max: 100,
+          grid: { color: gridLine },
+          ticks: { callback: v => v }
+        }
+      }
+    }
+  });
+
+  // Tier labels via annotation plugin isn't loaded — add as CSS overlay instead
+})();
+</script>
 
 </body>
 </html>

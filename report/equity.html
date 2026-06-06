@@ -4,20 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Who Loses Most: The Equity Problem in Youth Soccer</title>
+  <link rel="stylesheet" href="site.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-           color: #1a202c; background: #f7f8fa; line-height: 1.6; }
-    .nav { background: #1a202c; padding: 0.75rem 2rem; display: flex; gap: 1.5rem; align-items: center; }
-    .nav a { color: #cbd5e0; text-decoration: none; font-size: 0.875rem; }
-    .nav a:hover { color: white; }
-    .nav .brand { color: white; font-weight: 700; font-size: 1rem; margin-right: auto; }
-    .nav a.active { color: white; border-bottom: 2px solid #f6c90e; padding-bottom: 2px; }
-    header { background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-             color: white; padding: 3rem 2rem; text-align: center; }
-    header h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; }
-    header p { color: #e2e8f0; font-size: 1.1rem; max-width: 640px; margin: 0 auto; }
-    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
     section { background: white; border-radius: 10px; padding: 1.75rem 2rem;
               margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
     h2 { font-size: 1.35rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem; }
@@ -30,10 +18,6 @@
     .callout strong { color: #92400e; }
     .callout.red strong { color: #c53030; }
     .callout.green strong { color: #276749; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin: 1rem 0; }
-    thead th { background: #2d3748; color: white; padding: 0.7rem 1rem; text-align: left; }
-    tbody tr:nth-child(even) { background: #f7f8fa; }
-    tbody td { padding: 0.65rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
     .loser-rank { display: inline-block; width: 1.6rem; height: 1.6rem; border-radius: 50%;
                   background: #c53030; color: white; font-weight: 800; font-size: 0.8rem;
                   text-align: center; line-height: 1.6rem; margin-right: 0.4rem; }
@@ -50,14 +34,14 @@
     .ratio-bad  { color: #c53030; font-weight: 700; }
     .ratio-ok   { color: #d69e2e; font-weight: 700; }
     .ratio-good { color: #276749; font-weight: 700; }
-    .sources { font-size: 0.78rem; color: #718096; background: #f7f8fa;
-               border-radius: 6px; padding: 0.75rem 1rem; margin-top: 1rem; }
-    footer { text-align: center; padding: 2rem; color: #a0aec0; font-size: 0.8rem; }
     .income-bar { height: 1.6rem; border-radius: 4px; display: flex; align-items: center;
                   justify-content: flex-end; padding-right: 0.5rem; color: white;
                   font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .chart-canvas-wrap { background: #f7f8fa; border: 1px solid #e2e8f0; border-radius: 8px;
+                         padding: 1rem; margin: 1.25rem 0; }
+    .chart-canvas-wrap .chart-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+                                      letter-spacing: 0.06em; color: #718096; margin-bottom: 0.75rem; }
     @media (max-width: 600px) {
-      header h1 { font-size: 1.6rem; }
       .stat-grid { grid-template-columns: 1fr 1fr; }
       table { font-size: 0.78rem; }
     }
@@ -65,16 +49,25 @@
 </head>
 <body>
 
-<nav class="nav">
-  <span class="brand">Fool's Gold: Youth Soccer</span>
-  <a href="../index.html">Home</a>
-  <a href="costs.html">Costs</a>
-  <a href="fools_gold.html">ROI</a>
-  <a href="equity.html" class="active">Equity</a>
-  <a href="methodology.html">Methods</a>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"
+            onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="costs.html">Costs</a>
+      <a href="fools_gold.html">ROI</a>
+      <a href="equity.html" class="active">Equity</a>
+      <a href="methodology.html">Methods</a>
+      <a href="../survey.html">Survey</a>
+    </div>
+  </div>
 </nav>
 
-<header>
+<div class="page-header">
   <h1>Who Loses Most</h1>
   <p>Elite youth soccer systematically extracts money from middle-class families while
      excluding working-class players. These are the groups that pay the highest price.</p>
@@ -108,10 +101,10 @@
     </div>
 
     <h3>Income distribution in youth soccer vs. general population</h3>
-    <p style="margin-bottom: 0.4rem;">Club sport parents earning &gt;$100K:</p>
-    <div class="income-bar" style="background:#c53030; width:60%">60%</div>
-    <p style="margin-bottom: 0.4rem; margin-top: 0.75rem;">US general population earning &gt;$100K:</p>
-    <div class="income-bar" style="background:#718096; width:26%">26%</div>
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Income distribution: club soccer families vs. US general population</div>
+      <canvas id="incomeChart" height="160"></canvas>
+    </div>
 
     <p style="margin-top: 1rem;">Families below $50K — roughly 40% of US households — represent
        under 8% of competitive club sport parents. Pay-to-play soccer has effectively
@@ -382,8 +375,56 @@
 
 <footer>
   <p>Fool's Gold: Youth Soccer Equity Analysis &bull; Data collected 2024–2026
-     &bull; <a href="methodology.html" style="color:#a0aec0">Methodology</a></p>
+     &bull; <a href="methodology.html">Methodology</a> &bull;
+     <a href="../index.html">Home</a></p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+Chart.defaults.color = '#4a5568';
+Chart.defaults.font = { family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", size: 11 };
+const gridLine = 'rgba(0,0,0,0.06)';
+
+new Chart(document.getElementById('incomeChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Under $50K', '$50K–$75K', '$75K–$100K', 'Over $100K'],
+    datasets: [
+      {
+        label: 'Club soccer families',
+        data: [8, 13, 19, 60],
+        backgroundColor: '#c53030cc',
+        borderColor: '#c53030',
+        borderWidth: 1.5,
+        borderRadius: 4,
+      },
+      {
+        label: 'US general population',
+        data: [40, 18, 16, 26],
+        backgroundColor: '#71809699',
+        borderColor: '#718096',
+        borderWidth: 1.5,
+        borderRadius: 4,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14 } },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw}% of households` } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: {
+        grid: { color: gridLine },
+        max: 70,
+        ticks: { callback: v => v + '%' }
+      }
+    }
+  }
+});
+</script>
 
 </body>
 </html>
