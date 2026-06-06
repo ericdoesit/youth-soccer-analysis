@@ -1,148 +1,113 @@
-# LA City United: The Model That Works
+# LA City United: The Public Subsidy Model
+
+## What Families Pay
+- **$10/month ($120/year)** per player
+- Includes: player kit, tournament fees, coaching
+
+## What It Actually Costs to Run
+
+LA City United publishes its coaching pay rates via public job postings
+(docs.google.com/forms, rap-lacityunited@lacity.org):
+
+| Role | Pay Rate |
+|---|---|
+| Age Group Head Coach | $31.00/hr |
+| Team B/C Coach | $27.24/hr |
+| Assistant Coach | $23.49/hr |
+| Technical Skills Coach | $23.49–$30.99/hr |
+| Goalkeeper Coach | $26.19/hr |
+| Rec & Dev Coach | $23.49/hr |
+
+### Estimated Cost Per Team Per Year
+
+Assumptions: 8 hrs/week coaching contact (2 practices + 1 game day),
+~40-week season, 18 players per team.
+
+| Cost Item | Estimate |
+|---|---|
+| Head coach (8 hrs/wk × 40 wks × $31) | ~$9,920 |
+| Assistant coach (8 hrs × 40 × $23.49) | ~$7,517 |
+| GK coach (2 hrs/wk × 40 × $26.19, shared) | ~$2,095 |
+| Referees ($50/game IC × ~15 league games × 3 officials) | ~$2,250 |
+| Equipment (balls, cones, pinnies, goals) | ~$2,500 |
+| Tournament entry fees | ~$3,500 |
+| Uniforms/kit | ~$2,000 |
+| Admin/insurance overhead | ~$2,000 |
+| **Estimated total per team** | **~$31,800/yr** |
+| Family fees (18 players × $120) | $2,160 |
+| **Public subsidy required** | **~$29,640/team/yr** |
+| **Public subsidy per player** | **~$1,647/player/yr** |
+
+**Referee pay rates** (from LA City United interest form):
+- Independent Contractor: $50/game (U13+)
+- Part-time employee (non-certified): $20.79/hr (2-hr minimum = $41.58/game)
+- Part-time employee (USSF certified): $25.18/hr (2-hr minimum = $50.36/game)
+
+As of the job posting, LA City United operates **8 teams across 4 age groups
+(U11–U14)** with plans to expand. Estimated total public investment: ~$235,000/yr
+for all 8 teams. Funded by: LA Department of Recreation and Parks / LA28 Olympics.
+
+---
+
+## The Corrected Comparison
+
+The old framing ("67x markup for the same thing") is misleading. Real costs exist.
+The accurate comparison:
+
+| | Family Cost | Estimated True Cost/Player | Public Subsidy |
+|---|---|---|---|
+| **LA City United** | $120/yr | ~$1,640/yr | ~$1,520/yr |
+| **Private ECNL club** | $7,000–$22,000/yr | $2,500–$5,000/yr* | $0 |
+
+*Private club operating costs also include: facility rent, executive salaries,
+branding/marketing, profit distribution. The remainder above operating cost is margin.
+
+### What This Actually Shows
+
+1. **Running elite youth soccer costs real money** — coaches, fields, insurance, equipment.
+   LA City United's coaches earn $23–$31/hr. That's legitimate labor cost.
+
+2. **The floor cost is ~$1,500–$2,000/player/year** when delivered efficiently at city scale
+   using public infrastructure (parks, fields already owned by city).
+
+3. **Private clubs charge $7,000–$22,000/year** — 4–13× the actual floor cost.
+   The gap is: facility markup, marketing, staffing overhead, and profit margin.
+
+4. **The policy question** is not "why does soccer cost $8,000" — it's:
+   "Why aren't cities investing ~$1,500/player/year to make this accessible?"
+   LA28 is doing it. The question is why it stops when the Olympics end.
+
+---
 
 ## Program Details
-- **Name:** LA City United
-- **Type:** ELITE competitive soccer club (not recreational)
-- **Cost:** $10/month ($120/year)
-- **What's included:** Player kit, tournament fees, coaching
-- **Practice frequency:** 2x per week minimum, year-round
-- **Competition:** SoCal Soccer Leagues + Regional Tournaments
-- **Age group:** U11-U16 (boys)
 - **Operator:** LA Department of Recreation and Parks (PlayLA program)
 - **Funding:** LA28 Olympic & Paralympic Games
-- **Mission:** "Ensures all young athletes, regardless of financial circumstances, have the opportunity to participate in competitive soccer"
-- **Locations:** 
+- **Locations:**
   - Michelle and Barack Obama Sports Complex (5001 Obama Blvd)
   - Wilmington Sports Complex (1700 S Figueroa St)
   - Whitsett Soccer Fields (6952 Whitsett Ave, North Hollywood)
+- **Age groups:** U11–U16 (boys), expanding
 - **Geographic requirement:** 80% of team must live in City of Los Angeles
+- **Competition:** SoCal Soccer Leagues + Regional Tournaments
 - **Website:** https://recreation.parks.lacity.gov/lacityunited
-
-## The Comparison
-
-### LA City United (Public Recreation)
-```
-Monthly cost:           $10
-Annual cost:            $120
-Practices per week:     2
-Practices per year:     ~100
-Cost per practice:      $1.20
-```
-
-### Elite Club (Private/For-Profit)
-```
-Monthly cost:           $667 ($8,000/year)
-Annual cost:            $8,000
-Practices per week:     2-3
-Practices per year:     ~120
-Cost per practice:      $56-67
-```
-
-### Cost Multiplier
-Elite club is **67-56x more expensive** than LA City United for similar practice frequency.
+- **Apply/job rates:** https://docs.google.com/forms/d/e/1FAIpQLScP4bhFdKIy5wvPFbYDaCTqPPBejIO5aBHjmAeybOsFKPcwwQ/viewform
 
 ---
 
-## What This Proves
+## Why This Still Matters for the Thesis
 
-### 1. ELITE Competitive Soccer Can Be Affordable
-LA City United is not recreational—it's **elite competitive soccer** that:
-- Participates in SoCal Soccer Leagues (highest tier youth competition)
-- Plays regional tournaments monthly
-- Develops players for U.S. Club Soccer
-- Provides the exact same competitive experience as $8,000/year clubs
+The $120/year family cost is not fiction — it is real and it works. But it works
+**because public money covers ~93% of the actual cost**. This is the honest version
+of the argument:
 
-**All at $10/month.**
+- Youth soccer has unavoidable real costs (coaches earn $23–$31/hr; that's right)
+- Private clubs pass 100% of those costs + profit margins to families
+- Public investment can absorb ~$1,500/player/year, dropping family cost to $120
+- The barrier is **political will and funding**, not the inherent cost of the sport
+- LA28 is funding it temporarily; the equity question is what happens in 2029
 
-### 2. The Pay-to-Play Model is a Policy Choice, Not Inevitable
-If LA City United can deliver elite competitive soccer at $120/year, the $8,000/year model is **predatory, not necessary.**
-
-**Why the price difference?**
-- LA City United: Public funding (LA28 Olympics)
-- Elite clubs: Private equity profit model
-- The difference is **funding source, not quality**
-
-### 3. Equity is Achievable at Scale
-LA City United proves:
-- Zip code doesn't determine talent
-- Budget cuts created the crisis (not necessity)
-- Public investment works
-- Elite soccer doesn't require pay-to-play
-
-**The barrier is political will, not technical feasibility.**
-
----
-
-## Why This Matters for Your Thesis
-
-### The Predatory Model Requires Scarcity
-- Elite clubs thrive because public rec programs were defunded
-- LACKY created a vacuum
-- Private equity filled it with premium pricing
-- Parents believe they have no choice
-
-### LA City United Proves Otherwise
-- Quality soccer is possible at $10/month
-- The "bullet train" is a fiction
-- The $20,000/year spend is optional, not required
-
-### Your Survey Finding
-When you interview SoCal families:
-- How many know about LA City United?
-- How many have considered it?
-- Why did they choose elite club instead?
-- Do they regret the choice?
-
----
-
-## This Changes Your Thesis
-
-### The New Narrative
-**"It's not that elite competitive soccer requires $8,000/year. LA City United proves it doesn't. The pay-to-play model is a choice—one driven by private equity profit, not athletic necessity."**
-
-### The Smoking Gun
-- **LA City United:** Elite competitive soccer = $10/month ($120/year)
-- **Private clubs:** Elite competitive soccer = $8,000/year
-- **Difference:** 67x markup for the exact same experience
-- **Reason:** Funding model (public Olympics investment vs. private equity profit)
-
-### Your Survey's New Purpose
-**Not "How much does youth soccer cost?"**
-**But "Why do families choose $8,000 clubs when $10/month elite programs exist?"**
-
-Answers will reveal:
-- Lack of awareness (most families don't know about LA City United)
-- Geographic barriers (80% LA residency requirement)
-- Scarcity (limited spots)
-- Marketing (elite clubs sell a premium narrative)
-- Timing (when did they start? Before LA City United existed?)
-
-### The Policy Implication
-**This isn't about "how do we make soccer affordable?"**
-**It's about "why aren't we funding LA City United at scale?"**
-
-If LA28 Olympics can fund 3 elite training centers, why can't:
-- Every city in California have one?
-- The federal government fund nationwide expansion?
-- Other states copy this model?
-
----
-
-## Data to Collect
-
-When you analyze your survey responses, add a question:
-- "Are you aware of LA City United or similar public rec programs?"
-- "Would you consider enrolling instead of elite club?"
-- "What barriers prevent you from using public programs?"
-
-This will show whether families even know the alternative exists.
-
----
-
-## The Bigger Picture
-
-LA City United is a living example of what Senator Booker's "Let Kids Play Act" is trying to create nationwide:
-
-**Accessible. Affordable. Quality soccer.**
-
-Not $20,000/year predatory pricing.
+The corrected thesis line:
+**"Elite youth soccer costs about $1,600/player/year to deliver. Private clubs
+charge $7,000–$22,000. LA City United charges $120 — and covers the rest with
+public dollars. The question isn't whether youth soccer is expensive. It's who
+should pay for it."**
