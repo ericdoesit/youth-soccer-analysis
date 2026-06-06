@@ -89,7 +89,8 @@
         <tr>
           <td><span class="tier-badge t2">T2</span></td>
           <td>Competitive Travel</td>
-          <td>SoCal Soccer League, NPL, Coast Soccer, The National League, USL Youth</td>
+          <td>SoCal Soccer League, NPL, Coast Soccer, The National League, USL Youth<br>
+              <small style="color:#2e7d32;font-weight:600">▼ LA City United — $120/yr (public subsidy benchmark within this tier)</small></td>
           <td class="cost-mid">~$1,500–4,000</td>
           <td class="cost-mid">~$2,867</td>
         </tr>
@@ -113,13 +114,6 @@
           <td>MLS NEXT Homegrown Division — clubs directly tied to MLS first teams (Galaxy, LAFC, Union, etc.)</td>
           <td class="cost-low"><strong>$0</strong> (club-funded)</td>
           <td class="cost-mid">~$5,000–15,000 <small>(travel only)</small></td>
-        </tr>
-        <tr>
-          <td><span class="tier-badge t4b">T4B</span></td>
-          <td>Public Elite</td>
-          <td>LA City United (LA Dept. of Recreation &amp; Parks)</td>
-          <td class="cost-low">$120/yr</td>
-          <td class="cost-low">$120/yr</td>
         </tr>
       </tbody>
     </table>
@@ -364,25 +358,25 @@ Chart.defaults.font = { family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 
 new Chart(document.getElementById('costTierChart'), {
   type: 'bar',
   data: {
-    labels: ['T1 AYSO/Rec', 'T2 SoCal/NPL', 'T3 ECNL/GA', 'T4 Homegrown', 'T4B LA City United', 'T5 MLS Academy'],
+    labels: ['T1 Rec', 'T2 SoCal/NPL', 'T2 LA City United', 'T3 ECNL/GA', 'T3★ Indep. MLS NEXT', 'T4 MLS Pro Academy'],
     datasets: [
       {
         label: 'Low estimate',
-        data: [391, 1900, 4500, 10000, 120, 0],
+        data: [391, 1900, 120, 4500, 7000, 5000],
         backgroundColor: '#276749bb',
         borderColor: '#276749',
         borderWidth: 1, borderRadius: 3,
       },
       {
         label: 'Mid estimate',
-        data: [550, 3100, 7896, 17000, 120, 0],
+        data: [550, 3100, 120, 7896, 12000, 10000],
         backgroundColor: '#2b6cb0bb',
         borderColor: '#2b6cb0',
         borderWidth: 1, borderRadius: 3,
       },
       {
         label: 'High estimate',
-        data: [800, 5500, 14000, 28000, 120, 0],
+        data: [800, 5500, 120, 14000, 18000, 15000],
         backgroundColor: '#c53030bb',
         borderColor: '#c53030',
         borderWidth: 1, borderRadius: 3,
