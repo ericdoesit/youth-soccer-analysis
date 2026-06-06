@@ -39,9 +39,10 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
 .nav-inner {
-  max-width: 1080px;
+  width: 92%;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   gap: 0;
@@ -119,7 +120,7 @@ body {
 .page-header p { color: #a0aec0; font-size: 1.05rem; max-width: 660px; margin: 0 auto; }
 
 /* ── Layout ──────────────────────────────────────────────── */
-.container { max-width: 1020px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+.container { width: 92%; max-width: 1600px; margin: 0 auto; padding: 2.5rem 0; }
 
 /* ── Section card ────────────────────────────────────────── */
 section.card-section {
@@ -156,15 +157,16 @@ table {
 thead th {
   background: var(--slate);
   color: white;
-  padding: 0.7rem 1rem;
+  padding: 0.75rem 1.25rem;
   text-align: left;
   font-weight: 600;
 }
 tbody tr:nth-child(even) { background: var(--bg); }
 tbody td {
-  padding: 0.65rem 1rem;
+  padding: 0.75rem 1.25rem;
   border-bottom: 1px solid var(--border);
   color: var(--text);
+  vertical-align: top;
 }
 
 /* ── Callouts ────────────────────────────────────────────── */
