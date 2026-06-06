@@ -1,0 +1,882 @@
+club_id,team_id,club_name,conference,age_group
+3405,91703,Pipeline SC,ECNL Boys North Atlantic 2025-26,B2013
+37,114453,Dallas Texans Academy,ECNL Boys Texas 2025-26,B2013
+893,98194,St Croix,ECNL Boys Midwest 2025-26,B2013
+3476,82883,XF Academy,ECNL Boys Northwest 2025-26,B2013
+525,115421,Arlington Soccer,ECNL Boys Mid-Atlantic 2025-26,B2013
+2937,112887,Oregon Premier,ECNL Boys Far West 2025-26,B2013
+116,94610,World Class FC,ECNL Boys New England 2025-26,B2013
+87,105078,San Diego Surf,ECNL Boys Southwest 2025-26,B2013
+3054,99066,Placer United,ECNL Boys Northern Cal 2025-26,B2013
+3478,82565,Cleveland Force SC,ECNL Boys Ohio Valley 2025-26,B2013
+1760,117541,La Roca FC,ECNL Boys Mountain 2025-26,B2013
+5213,111722,Louisiana Fire Soccer Club,ECNL Boys Mid-America 2025-26,B2013
+56,116861,GSA,ECNL Boys Southeast 2025-26,B2013
+2106,98161,Chicago Magic,ECNL Boys Midwest 2025-26,B2013
+2955,99191,River Islands Surf B13 ECNL,ECNL Boys Northern Cal 2025-26,B2013
+294,99148,MVLA,ECNL Boys Northern Cal 2025-26,B2013
+13,81816,Sporting CA USA,ECNL Boys Southwest 2025-26,B2013
+86,78750,SDSC Surf,ECNL Boys Southwest 2025-26,B2013
+451,96685,LVU Rush,ECNL Boys North Atlantic 2025-26,B2013
+47,116038,FC Dallas Red,ECNL Boys Texas 2025-26,B2013
+1643,99133,Seattle United,ECNL Boys Northwest 2025-26,B2013
+22,113820,NCFC Youth Academy,ECNL Boys Mid-Atlantic 2025-26,B2013
+2258,111928,HTX,ECNL Boys Texas 2025-26,B2013
+79,94711,Penn Fusion SA,ECNL Boys North Atlantic 2025-26,B2013
+379,98666,Florida Kraze,ECNL Boys Florida 2025-26,B2013
+3065,98785,Association FC,ECNL Boys Northern Cal 2025-26,B2013
+1354,117352,Tennessee SC,ECNL Boys Mid-America 2025-26,B2013
+9,95342,SUSA FC ACADEMY,ECNL Boys New England 2025-26,B2013
+3486,117251,FC Wichita,ECNL Boys Heartland 2025-26,B2013
+1353,113644,Sporting Jax,ECNL Boys Florida 2025-26,B2013
+2322,101929,Columbia Premier SC,ECNL Boys Northwest 2025-26,B2013
+3483,98475,Sporting Iowa,ECNL Boys Heartland 2025-26,B2013
+1713,115101,Nationals Soccer Club,ECNL Boys Ohio Valley 2025-26,B2013
+37,114452,Dallas Texans,ECNL Boys Texas 2025-26,B2013
+1925,112971,Fort Lauderdale United FC,ECNL Boys Florida 2025-26,B2013
+62,114698,Lonestar Soccer Club Red,ECNL Boys Texas 2025-26,B2013
+4368,98264,El Paso Locomotive,ECNL Boys Mountain 2025-26,B2013
+26,112513,Charlotte SA Academy,ECNL Boys Mid-Atlantic 2025-26,B2013
+30,112293,Concorde Fire Platinum,ECNL Boys Southeast 2025-26,B2013
+81,113311,Real Colorado Academy,ECNL Boys Texas 2025-26,B2013
+2133,80818,OK Energy FC,ECNL Boys Texas 2025-26,B2013
+61,65098,Legends FC,ECNL Boys Southwest 2025-26,B2013
+71,112978,NC Fusion,ECNL Boys Mid-Atlantic 2025-26,B2013
+329,98603,NTH-NASA,ECNL Boys Southeast 2025-26,B2013
+28,112022,Colorado Rush Academy Blue,ECNL Boys Mountain 2025-26,B2013
+82,82148,LAFC So Cal,ECNL Boys Southwest 2025-26,B2013
+113,78674,West Coast FC,ECNL Boys Southwest 2025-26,B2013
+3644,109194,South Carolina Surf,ECNL Boys Southeast 2025-26,B2013
+18,83948,Alabama FC,ECNL Boys Mid-America 2025-26,B2012
+61,95395,Legends FC,ECNL Boys Southwest 2025-26,B2012
+2133,94439,OK Energy FC,ECNL Boys Texas 2025-26,B2012
+1353,94388,Sporting Jax,ECNL Boys Florida 2025-26,B2012
+379,39797,Florida Kraze,ECNL Boys Florida 2025-26,B2012
+69,84703,Mustang SC,ECNL Boys Northern Cal 2025-26,B2012
+3476,94930,XF Academy,ECNL Boys Northwest 2025-26,B2012
+398,79561,Eastside FC,ECNL Boys Northwest 2025-26,B2012
+1797,84625,FC Wisconsin,ECNL Boys Midwest 2025-26,B2012
+29,82619,Colorado Rapids Central,ECNL Boys Mountain 2025-26,B2012
+79,94710,Penn Fusion SA,ECNL Boys North Atlantic 2025-26,B2012
+2548,40071,Santa Clara Sporting,ECNL Boys Northern Cal 2025-26,B2012
+1501,54743,FC Pride Elite,ECNL Boys Ohio Valley 2025-26,B2012
+26,94384,Charlotte SA Academy,ECNL Boys Mid-Atlantic 2025-26,B2012
+2258,90777,HTX,ECNL Boys Texas 2025-26,B2012
+1730,114373,Missouri Rush,ECNL Boys Heartland 2025-26,B2012
+22,95045,NCFC Youth Academy,ECNL Boys Mid-Atlantic 2025-26,B2012
+87,71287,San Diego Surf,ECNL Boys Southwest 2025-26,B2012
+116,94666,World Class FC,ECNL Boys New England 2025-26,B2012
+2701,95401,Delaware FC,ECNL Boys North Atlantic 2025-26,B2012
+30,83908,Concorde Fire Platinum,ECNL Boys Southeast 2025-26,B2012
+1785,94869,VDA,ECNL Boys Mid-Atlantic 2025-26,B2012
+518,95286,Manhattan SC,ECNL Boys New England 2025-26,B2012
+3956,96283,Capital FC,ECNL Boys Far West 2025-26,B2012
+2536,84707,United PDX,ECNL Boys Far West 2025-26,B2012
+28,112021,Colorado Rush Academy Blue,ECNL Boys Mountain 2025-26,B2012
+1643,84928,Seattle United,ECNL Boys Northwest 2025-26,B2012
+4355,94432,SJEBFC,ECNL Boys North Atlantic 2025-26,B2012
+1925,44803,Fort Lauderdale United FC,ECNL Boys Florida 2025-26,B2012
+428,95335,STA,ECNL Boys New England 2025-26,B2012
+13,95278,Sporting CA USA,ECNL Boys Southwest 2025-26,B2012
+101,95093,Solar SC Academy,ECNL Boys Texas 2025-26,B2012
+3723,94490,VSA Rush,ECNL Boys Heartland 2025-26,B2012
+5147,112787,St. Louis Stars,ECNL Boys Heartland 2025-26,B2012
+37,95018,Dallas Texans Academy,ECNL Boys Texas 2025-26,B2012
+3475,69712,Louisville City Academy,ECNL Boys Ohio Valley 2025-26,B2012
+380,87404,CESA Triumph,ECNL Boys Southeast 2025-26,B2012
+9,95339,SUSA FC ACADEMY,ECNL Boys New England 2025-26,B2012
+525,94057,Arlington Soccer,ECNL Boys Mid-Atlantic 2025-26,B2012
+4063,91719,El Camino Futbol Club Salinas,ECNL Boys Northern Cal 2025-26,B2012
+4368,97085,El Paso Locomotive,ECNL Boys Mountain 2025-26,B2012
+3054,84676,Placer United,ECNL Boys Northern Cal 2025-26,B2012
+37,94834,Dallas Texans,ECNL Boys Texas 2025-26,B2012
+1354,117351,Tennessee SC,ECNL Boys Mid-America 2025-26,B2012
+47,94653,FC Dallas Red,ECNL Boys Texas 2025-26,B2012
+3231,117774,Los Gatos United,ECNL Boys Northern Cal 2025-26,B2012
+437,71994,Ohio Premier,ECNL Boys Ohio Valley 2025-26,B2012
+81,113310,Real Colorado Academy,ECNL Boys Texas 2025-26,B2012
+16,69406,Beach FC (CA),ECNL Boys Southwest 2025-26,B2012
+62,114696,Lonestar Soccer Club Red,ECNL Boys Texas 2025-26,B2012
+2106,84478,Chicago Magic,ECNL Boys Midwest 2025-26,B2012
+82,71955,LAFC So Cal,ECNL Boys Southwest 2025-26,B2012
+329,94459,NTH-NASA,ECNL Boys Southeast 2025-26,B2012
+300,94964,Rebels SC,ECNL Boys Southwest 2025-26,B2012
+56,84038,GSA,ECNL Boys Southeast 2025-26,B2012
+2167,117702,Chicago Inter Soccer,ECNL Boys Midwest 2025-26,B2012
+2331,94525,PacNW SC,ECNL Boys Northwest 2025-26,B2012
+417,94556,Richmond United,ECNL Boys Mid-Atlantic 2025-26,B2012
+5213,114280,Louisiana Fire Soccer Club,ECNL Boys Mid-America 2025-26,B2012
+10,57176,Albion Hurricanes FC,ECNL Boys Texas 2025-26,B2012
+186,89454,Pateadores,ECNL Boys Southwest 2025-26,B2012
+2235,95702,Lobos Rush,ECNL Boys Mid-America 2025-26,B2012
+26,94386,Charlotte SA,ECNL Boys Mid-Atlantic 2025-26,B2012
+3644,94956,South Carolina Surf,ECNL Boys Southeast 2025-26,B2012
+628,94923,Beach FC (VA),ECNL Boys Mid-Atlantic 2025-26,B2012
+96,94883,Slammers FC,ECNL Boys Southwest 2025-26,B2012
+30,81338,Concorde Fire Platinum,ECNL Boys Southeast 2025-26,B2011
+373,82055,Gretna Elite Academy,ECNL Boys Heartland 2025-26,B2011
+1643,71813,Seattle United,ECNL Boys Northwest 2025-26,B2011
+3405,66811,Pipeline SC,ECNL Boys North Atlantic 2025-26,B2011
+3480,81424,Union KC,ECNL Boys Heartland 2025-26,B2011
+2017,81222,Rockford Raptors,ECNL Boys Midwest 2025-26,B2011
+1470,39821,COSC,ECNL Boys Northern Cal 2025-26,B2011
+1760,68738,La Roca FC,ECNL Boys Mountain 2025-26,B2011
+107,69912,Utah Avalanche,ECNL Boys Mountain 2025-26,B2011
+428,83146,STA,ECNL Boys New England 2025-26,B2011
+1785,81267,VDA,ECNL Boys Mid-Atlantic 2025-26,B2011
+101,82752,Solar SC Academy,ECNL Boys Texas 2025-26,B2011
+18,81751,Alabama FC,ECNL Boys Mid-America 2025-26,B2011
+57,48236,LV Heat Surf,ECNL Boys Southwest 2025-26,B2011
+4063,79980,El Camino Futbol Club Salinas,ECNL Boys Northern Cal 2025-26,B2011
+26,82092,Charlotte SA Academy,ECNL Boys Mid-Atlantic 2025-26,B2011
+1353,69336,Sporting Jax,ECNL Boys Florida 2025-26,B2011
+2181,81414,Wilmington Hammerheads,ECNL Boys Mid-Atlantic 2025-26,B2011
+4368,97082,El Paso Locomotive,ECNL Boys Mountain 2025-26,B2011
+343,36939,WNY Flash,ECNL Boys Ohio Valley 2025-26,B2011
+186,81154,Pateadores,ECNL Boys Southwest 2025-26,B2011
+1354,117350,Tennessee SC,ECNL Boys Mid-America 2025-26,B2011
+1345,68033,Philadelphia Ukrainian Nationals,ECNL Boys North Atlantic 2025-26,B2011
+81,81432,Real Colorado Academy,ECNL Boys Texas 2025-26,B2011
+1425,81188,Davis Legacy,ECNL Boys Northern Cal 2025-26,B2011
+525,82210,Arlington Soccer,ECNL Boys Mid-Atlantic 2025-26,B2011
+22,82317,NCFC Youth Academy,ECNL Boys Mid-Atlantic 2025-26,B2011
+300,90067,Rebels SC,ECNL Boys Southwest 2025-26,B2011
+5147,116975,St. Louis Stars,ECNL Boys Heartland 2025-26,B2011
+2237,114362,Doral Soccer Club,ECNL Boys Florida 2025-26,B2011
+79,81242,Penn Fusion SA,ECNL Boys North Atlantic 2025-26,B2011
+603,116422,FC Portland,ECNL Boys Far West 2025-26,B2011
+3476,82130,XF Academy,ECNL Boys Northwest 2025-26,B2011
+398,71905,Eastside FC,ECNL Boys Northwest 2025-26,B2011
+2731,69299,FL Premier FC,ECNL Boys Florida 2025-26,B2011
+2133,80772,OK Energy FC,ECNL Boys Texas 2025-26,B2011
+3475,60643,Louisville City Academy,ECNL Boys Ohio Valley 2025-26,B2011
+9,82496,SUSA FC ACADEMY,ECNL Boys New England 2025-26,B2011
+2106,81259,Chicago Magic,ECNL Boys Midwest 2025-26,B2011
+69,81714,Mustang SC,ECNL Boys Northern Cal 2025-26,B2011
+101,69285,SOLAR SC,ECNL Boys Texas 2025-26,B2011
+1713,82740,Nationals Soccer Club,ECNL Boys Ohio Valley 2025-26,B2011
+3956,78723,Capital FC,ECNL Boys Far West 2025-26,B2011
+4338,112984,PSA Monmouth,ECNL Boys North Atlantic 2025-26,B2011
+10,81909,Albion Hurricanes FC,ECNL Boys Texas 2025-26,B2011
+380,82133,CESA Triumph,ECNL Boys Southeast 2025-26,B2011
+2229,116359,3RSC,ECNL Boys Northwest 2025-26,B2011
+37,62085,Dallas Texans Academy,ECNL Boys Texas 2025-26,B2011
+1409,117478,East Coast Surf SC,ECNL Boys New England 2025-26,B2011
+329,71637,NTH-NASA,ECNL Boys Southeast 2025-26,B2011
+82,71807,LAFC So Cal,ECNL Boys Southwest 2025-26,B2011
+1772,80357,RISE SC,ECNL Boys Texas 2025-26,B2011
+62,114695,Lonestar Soccer Club Red,ECNL Boys Texas 2025-26,B2011
+47,69605,FC Dallas Red,ECNL Boys Texas 2025-26,B2011
+3231,117773,Los Gatos United,ECNL Boys Northern Cal 2025-26,B2011
+86,59605,SDSC Surf,ECNL Boys Southwest 2025-26,B2011
+5213,114281,Louisiana Fire Soccer Club,ECNL Boys Mid-America 2025-26,B2011
+14,79892,Atlanta Fire United,ECNL Boys Southeast 2025-26,B2011
+43,81136,Eclipse Select SC,ECNL Boys Midwest 2025-26,B2011
+30,81342,Concorde Fire Premier,ECNL Boys Southeast 2025-26,B2011
+417,83055,Richmond United,ECNL Boys Mid-Atlantic 2025-26,B2011
+61,59684,Legends FC,ECNL Boys Southwest 2025-26,B2011
+2289,82178,LA Breakers FC,ECNL Boys Southwest 2025-26,B2011
+2235,82589,Lobos Rush,ECNL Boys Mid-America 2025-26,B2011
+16,60062,Beach FC (CA),ECNL Boys Southwest 2025-26,B2011
+22,81273,NCFC Youth,ECNL Boys Mid-Atlantic 2025-26,B2011
+3476,62277,XF Academy,ECNL Boys Northwest 2025-26,B2010
+373,69281,Gretna Elite Academy,ECNL Boys Heartland 2025-26,B2010
+1425,69627,Davis Legacy,ECNL Boys Northern Cal 2025-26,B2010
+3486,71653,FC Wichita,ECNL Boys Heartland 2025-26,B2010
+2133,62605,OK Energy FC,ECNL Boys Texas 2025-26,B2010
+428,70162,STA,ECNL Boys New England 2025-26,B2010
+2731,69297,FL Premier FC,ECNL Boys Florida 2025-26,B2010
+2701,83785,Delaware FC,ECNL Boys North Atlantic 2025-26,B2010
+107,59827,Utah Avalanche,ECNL Boys Mountain 2025-26,B2010
+431,60787,FSA FC,ECNL Boys New England 2025-26,B2010
+1771,66858,BVBIA,ECNL Boys Texas 2025-26,B2010
+1560,69123,NM Rapids,ECNL Boys Mountain 2025-26,B2010
+75,69455,Ohio Elite SA,ECNL Boys Ohio Valley 2025-26,B2010
+3405,55378,Pipeline SC,ECNL Boys North Atlantic 2025-26,B2010
+96,66723,Slammers FC,ECNL Boys Southwest 2025-26,B2010
+1936,95667,CCV Stars,ECNL Boys Mountain 2025-26,B2010
+1409,117477,East Coast Surf SC,ECNL Boys New England 2025-26,B2010
+893,69124,St Croix,ECNL Boys Midwest 2025-26,B2010
+2937,83462,Oregon Premier,ECNL Boys Far West 2025-26,B2010
+4063,70362,El Camino Futbol Club Salinas,ECNL Boys Northern Cal 2025-26,B2010
+379,34968,Florida Kraze,ECNL Boys Florida 2025-26,B2010
+22,70859,NCFC Youth Academy,ECNL Boys Mid-Atlantic 2025-26,B2010
+18,69019,Alabama FC,ECNL Boys Mid-America 2025-26,B2010
+30,68801,Concorde Fire Platinum,ECNL Boys Southeast 2025-26,B2010
+2955,71303,River Islands Surf B10 ECNL,ECNL Boys Northern Cal 2025-26,B2010
+81,113309,Real Colorado Academy,ECNL Boys Texas 2025-26,B2010
+10,48117,Albion Hurricanes FC,ECNL Boys Texas 2025-26,B2010
+2548,64799,Santa Clara Sporting,ECNL Boys Northern Cal 2025-26,B2010
+1585,62040,Marin FC,ECNL Boys Northern Cal 2025-26,B2010
+2330,67848,Kansas City Athletics,ECNL Boys Heartland 2025-26,B2010
+5213,111780,Louisiana Fire Soccer Club,ECNL Boys Mid-America 2025-26,B2010
+4304,81511,SAFC,ECNL Boys Texas 2025-26,B2010
+2258,68820,HTX,ECNL Boys Texas 2025-26,B2010
+46,67812,HEX FC Dominion,ECNL Boys North Atlantic 2025-26,B2010
+51,82123,Boise Timbers FC,ECNL Boys Far West 2025-26,B2010
+82,60730,LAFC So Cal,ECNL Boys Southwest 2025-26,B2010
+26,69029,Charlotte SA Academy,ECNL Boys Mid-Atlantic 2025-26,B2010
+37,62051,Dallas Texans Academy,ECNL Boys Texas 2025-26,B2010
+186,68944,Pateadores,ECNL Boys Southwest 2025-26,B2010
+3644,69221,South Carolina Surf,ECNL Boys Southeast 2025-26,B2010
+87,48132,San Diego Surf,ECNL Boys Southwest 2025-26,B2010
+628,67857,Beach FC (VA),ECNL Boys Mid-Atlantic 2025-26,B2010
+3478,59141,Cleveland Force SC,ECNL Boys Ohio Valley 2025-26,B2010
+1354,117349,Tennessee SC,ECNL Boys Mid-America 2025-26,B2010
+437,68979,Ohio Premier,ECNL Boys Ohio Valley 2025-26,B2010
+1643,62227,Seattle United,ECNL Boys Northwest 2025-26,B2010
+3387,67272,Parkland SC,ECNL Boys Florida 2025-26,B2010
+417,69349,Richmond United,ECNL Boys Mid-Atlantic 2025-26,B2010
+1785,45987,VDA,ECNL Boys Mid-Atlantic 2025-26,B2010
+2229,116358,3RSC,ECNL Boys Northwest 2025-26,B2010
+16,60063,Beach FC (CA),ECNL Boys Southwest 2025-26,B2010
+525,82208,Arlington Soccer,ECNL Boys Mid-Atlantic 2025-26,B2010
+300,69635,Rebels SC,ECNL Boys Southwest 2025-26,B2010
+35,68922,DKSC,ECNL Boys Texas 2025-26,B2010
+518,70073,Manhattan SC,ECNL Boys New England 2025-26,B2010
+61,50007,Legends FC,ECNL Boys Southwest 2025-26,B2010
+2235,82590,Lobos Rush,ECNL Boys Mid-America 2025-26,B2010
+30,68799,Concorde Fire Premier,ECNL Boys Southeast 2025-26,B2010
+1797,69153,FC Wisconsin,ECNL Boys Midwest 2025-26,B2010
+2257,25231,Indiana Elite FC,ECNL Boys Midwest 2025-26,B2010
+2331,68796,PacNW SC,ECNL Boys Northwest 2025-26,B2010
+1772,80367,RISE SC,ECNL Boys Texas 2025-26,B2010
+380,69002,CESA Triumph,ECNL Boys Southeast 2025-26,B2010
+4603,96990,Fairfax VA Union,ECNL Boys Mid-Atlantic 2025-26,B2010
+329,69399,NTH-NASA,ECNL Boys Southeast 2025-26,B2010
+113,48879,West Coast FC,ECNL Boys Southwest 2025-26,B2010
+3696,82022,Kansas Rush,ECNL Boys Heartland 2025-26,B2009
+79,48606,Penn Fusion SA,ECNL Boys North Atlantic 2025-26,B2009
+16,60060,Beach FC (CA),ECNL Boys Southwest 2025-26,B2009
+116,40389,World Class FC,ECNL Boys New England 2025-26,B2009
+22,60363,NCFC Youth Academy,ECNL Boys Mid-Atlantic 2025-26,B2009
+2731,47874,FL Premier FC,ECNL Boys Florida 2025-26,B2009
+107,71128,Utah Avalanche,ECNL Boys Mountain 2025-26,B2009
+3476,60435,XF Academy,ECNL Boys Northwest 2025-26,B2009
+2937,83463,Oregon Premier,ECNL Boys Far West 2025-26,B2009
+294,35860,MVLA,ECNL Boys Northern Cal 2025-26,B2009
+431,60107,FSA FC,ECNL Boys New England 2025-26,B2009
+2536,67188,United PDX,ECNL Boys Far West 2025-26,B2009
+1040,80575,San Francisco Elite Academy,ECNL Boys Northern Cal 2025-26,B2009
+1354,117348,Tennessee SC,ECNL Boys Mid-America 2025-26,B2009
+428,60303,STA,ECNL Boys New England 2025-26,B2009
+3483,59757,Sporting Iowa,ECNL Boys Heartland 2025-26,B2009
+1425,60302,Davis Legacy,ECNL Boys Northern Cal 2025-26,B2009
+1560,59620,NM Rapids,ECNL Boys Mountain 2025-26,B2009
+18,58878,Alabama FC,ECNL Boys Mid-America 2025-26,B2009
+101,60698,Solar SC Academy,ECNL Boys Texas 2025-26,B2009
+329,52302,NTH-NASA,ECNL Boys Southeast 2025-26,B2009
+3407,59529,United Futbol Academy,ECNL Boys Southeast 2025-26,B2009
+2181,50683,Wilmington Hammerheads,ECNL Boys Mid-Atlantic 2025-26,B2009
+437,60138,Ohio Premier,ECNL Boys Ohio Valley 2025-26,B2009
+2017,47259,Rockford Raptors,ECNL Boys Midwest 2025-26,B2009
+1643,59999,Seattle United,ECNL Boys Northwest 2025-26,B2009
+64,52825,Match Fit Surf,ECNL Boys North Atlantic 2025-26,B2009
+35,58707,DKSC,ECNL Boys Texas 2025-26,B2009
+451,66528,LVU Rush,ECNL Boys North Atlantic 2025-26,B2009
+113,48849,West Coast FC,ECNL Boys Southwest 2025-26,B2009
+4368,97061,El Paso Locomotive,ECNL Boys Mountain 2025-26,B2009
+3478,56272,Cleveland Force SC,ECNL Boys Ohio Valley 2025-26,B2009
+9,71673,SUSA FC ACADEMY,ECNL Boys New England 2025-26,B2009
+379,34971,Florida Kraze,ECNL Boys Florida 2025-26,B2009
+82,48374,LAFC So Cal,ECNL Boys Southwest 2025-26,B2009
+112,59878,Washington Premier,ECNL Boys Northwest 2025-26,B2009
+525,82207,Arlington Soccer,ECNL Boys Mid-Atlantic 2025-26,B2009
+1726,58826,Sporting Nebraska FC,ECNL Boys Heartland 2025-26,B2009
+43,60271,Eclipse Select SC,ECNL Boys Midwest 2025-26,B2009
+87,61188,San Diego Surf,ECNL Boys Southwest 2025-26,B2009
+628,67854,Beach FC (VA),ECNL Boys Mid-Atlantic 2025-26,B2009
+2519,59860,San Antonio City SC,ECNL Boys Texas 2025-26,B2009
+47,59581,FC Dallas Red,ECNL Boys Texas 2025-26,B2009
+2331,46839,PacNW SC,ECNL Boys Northwest 2025-26,B2009
+3054,59933,Placer United,ECNL Boys Northern Cal 2025-26,B2009
+4304,81512,SAFC,ECNL Boys Texas 2025-26,B2009
+893,60124,St. Croix,ECNL Boys Midwest 2025-26,B2009
+62,114693,Lonestar Soccer Club Red,ECNL Boys Texas 2025-26,B2009
+81,113308,Real Colorado Academy,ECNL Boys Texas 2025-26,B2009
+3109,80993,Palm Beach United,ECNL Boys Florida 2025-26,B2009
+186,59949,Pateadores,ECNL Boys Southwest 2025-26,B2009
+2548,56319,Santa Clara Sporting,ECNL Boys Northern Cal 2025-26,B2009
+30,59253,Concorde Fire Platinum,ECNL Boys Southeast 2025-26,B2009
+2258,58597,HTX,ECNL Boys Texas 2025-26,B2009
+3475,52301,Louisville City Academy,ECNL Boys Ohio Valley 2025-26,B2009
+1785,59473,VDA,ECNL Boys Mid-Atlantic 2025-26,B2009
+96,60024,Slammers FC,ECNL Boys Southwest 2025-26,B2009
+37,50648,Dallas Texans Academy,ECNL Boys Texas 2025-26,B2009
+26,60093,Charlotte SA Academy,ECNL Boys Mid-Atlantic 2025-26,B2009
+2289,58844,LA Breakers FC,ECNL Boys Southwest 2025-26,B2009
+3644,52307,South Carolina Surf,ECNL Boys Southeast 2025-26,B2009
+5213,111779,Louisiana Fire Soccer Club,ECNL Boys Mid-America 2025-26,B2009
+56,52310,GSA,ECNL Boys Southeast 2025-26,B2009
+3739,60072,Skyline Elite,ECNL Boys Mid-Atlantic 2025-26,B2009
+3589,83080,Germantown Legends,ECNL Boys Mid-America 2025-26,B2009
+61,49747,Legends FC,ECNL Boys Southwest 2025-26,B2009
+1354,117347,Tennessee SC,ECNL Boys Mid-America 2025-26,B2008
+3696,81346,Kansas Rush,ECNL Boys Heartland 2025-26,B2008
+2017,39095,Rockford Raptors,ECNL Boys Midwest 2025-26,B2008
+2731,46057,FL Premier FC,ECNL Boys Florida 2025-26,B2008
+3476,48210,XF Academy,ECNL Boys Northwest 2025-26,B2008
+30,46051,Concorde Fire Platinum,ECNL Boys Southeast 2025-26,B2008
+518,48494,Manhattan SC,ECNL Boys New England 2025-26,B2008
+1760,46119,La Roca FC,ECNL Boys Mountain 2025-26,B2008
+1785,45983,VDA,ECNL Boys Mid-Atlantic 2025-26,B2008
+52,35819,FC Stars,ECNL Boys New England 2025-26,B2008
+2330,67850,Kansas City Athletics,ECNL Boys Heartland 2025-26,B2008
+1797,46875,FC Wisconsin,ECNL Boys Midwest 2025-26,B2008
+47,46077,FC Dallas Red,ECNL Boys Texas 2025-26,B2008
+4368,97084,El Paso Locomotive,ECNL Boys Mountain 2025-26,B2008
+437,46801,Ohio Premier,ECNL Boys Ohio Valley 2025-26,B2008
+101,61625,Solar SC Academy,ECNL Boys Texas 2025-26,B2008
+3054,46160,Placer United,ECNL Boys Northern Cal 2025-26,B2008
+419,46873,Maryland United FC,ECNL Boys North Atlantic 2025-26,B2008
+22,46000,NCFC Youth Academy,ECNL Boys Mid-Atlantic 2025-26,B2008
+37,46083,Dallas Texans Academy,ECNL Boys Texas 2025-26,B2008
+106,44082,Tulsa SC,ECNL Boys Texas 2025-26,B2008
+69,33663,Mustang SC,ECNL Boys Northern Cal 2025-26,B2008
+1643,46841,Seattle United,ECNL Boys Northwest 2025-26,B2008
+16,46882,Beach FC (CA),ECNL Boys Southwest 2025-26,B2008
+1925,20915,Fort Lauderdale United FC,ECNL Boys Florida 2025-26,B2008
+51,82125,Boise Timbers FC,ECNL Boys Far West 2025-26,B2008
+61,10340,Legends FC,ECNL Boys Southwest 2025-26,B2008
+57,46746,LV Heat Surf,ECNL Boys Southwest 2025-26,B2008
+71,48648,NC Fusion,ECNL Boys Mid-Atlantic 2025-26,B2008
+329,46836,NTH-NASA,ECNL Boys Southeast 2025-26,B2008
+56,46813,GSA,ECNL Boys Southeast 2025-26,B2008
+82,45946,LAFC So Cal,ECNL Boys Southwest 2025-26,B2008
+2536,99056,United PDX,Far West,B2013
+1813,113973,Idaho Rush,Far West,B2013
+3956,110814,Capital FC,Far West,B2013
+51,115484,Boise Timbers FC,Far West,B2013
+4330,112351,Eugene Metro FC,Far West,B2013
+603,115434,FC Portland,Far West,B2012
+51,94492,Boise Timbers FC,Far West,B2012
+1813,97348,Idaho Rush,Far West,B2012
+4330,96070,Eugene Metro FC,Far West,B2012
+1813,81791,Idaho Rush,Far West,B2011
+4330,82265,Eugene Metro FC,Far West,B2011
+2536,81121,United PDX,Far West,B2011
+2536,69116,United PDX,Far West,B2010
+3956,78722,Capital FC,Far West,B2010
+603,116423,FC Portland,Far West,B2010
+4330,82266,Eugene Metro FC,Far West,B2010
+51,82124,Boise Timbers FC,Far West,B2009
+603,110786,FC Portland,Far West,B2009
+1813,82038,Idaho Rush,Far West,B2009
+3956,78721,Capital FC,Far West,B2009
+2937,83464,Oregon Premier,Far West,B2008
+3956,78720,Capital FC,Far West,B2008
+1813,82039,Idaho Rush,Far West,B2008
+603,116424,FC Portland,Far West,B2008
+4330,82268,Eugene Metro FC,Far West,B2008
+3387,111664,Parkland SC,Florida,B2013
+2237,114364,Doral Soccer Club,Florida,B2013
+3384,113997,Florida West FC,Florida,B2013
+3109,111680,Palm Beach United,Florida,B2013
+1919,113738,Space Coast United,Florida,B2013
+2329,113233,FC Prime,Florida,B2013
+2731,84177,FL Premier FC,Florida,B2012
+3387,67571,Parkland SC,Florida,B2012
+1919,94359,Space Coast United,Florida,B2012
+2329,62392,FC Prime,Florida,B2012
+3109,94554,Palm Beach United,Florida,B2012
+3384,68725,Florida West FC,Florida,B2012
+379,34965,Florida Kraze,Florida,B2011
+3109,69990,Palm Beach United,Florida,B2011
+1919,44610,Space Coast United,Florida,B2011
+2329,59550,FC Prime,Florida,B2011
+3387,48694,Parkland SC,Florida,B2011
+3384,68723,Florida West FC,Florida,B2011
+1919,44616,Space Coast United,Florida,B2010
+1925,44806,Fort Lauderdale United FC,Florida,B2010
+3109,46850,Palm Beach United,Florida,B2010
+2237,114354,Doral Soccer Club,Florida,B2010
+3384,68715,Florida West FC,Florida,B2010
+2329,61825,FC Prime,Florida,B2010
+3387,48695,Parkland SC,Florida,B2009
+1353,45071,Sporting Jax,Florida,B2009
+2329,46711,FC Prime,Florida,B2009
+1919,44617,Space Coast United,Florida,B2009
+1925,35790,Fort Lauderdale United FC,Florida,B2009
+3384,45631,Florida West FC,Florida,B2009
+1919,44614,Space Coast United,Florida,B2008
+2237,114305,Doral Soccer Club,Florida,B2008
+1353,46908,Sporting Jax,Florida,B2008
+3387,67202,Parkland SC,Florida,B2008
+3109,34896,Palm Beach United,Florida,B2008
+2329,68942,FC Prime,Florida,B2008
+3384,46058,Florida West FC,Florida,B2008
+3723,113117,VSA Rush,Heartland,B2013
+373,98185,Gretna Elite Academy,Heartland,B2013
+1730,114374,Missouri Rush,Heartland,B2013
+3480,111682,Union KC,Heartland,B2013
+1726,98187,Sporting Nebraska FC,Heartland,B2013
+3696,116871,Kansas Rush,Heartland,B2013
+2330,116233,Kansas City Athletics,Heartland,B2013
+3483,96755,Sporting Iowa,Heartland,B2012
+1726,94480,Sporting Nebraska FC,Heartland,B2012
+3480,96719,Union KC,Heartland,B2012
+373,94436,Gretna Elite Academy,Heartland,B2012
+2330,95651,Kansas City Athletics,Heartland,B2012
+3696,98221,Kansas Rush,Heartland,B2012
+1726,81306,Sporting Nebraska FC,Heartland,B2011
+3723,81209,VSA Rush,Heartland,B2011
+3696,82020,Kansas Rush,Heartland,B2011
+3486,83107,FC Wichita,Heartland,B2011
+1730,114372,Missouri Rush,Heartland,B2011
+3723,69155,VSA Rush,Heartland,B2010
+1726,68677,Sporting Nebraska FC,Heartland,B2010
+5147,112783,St. Louis Stars,Heartland,B2010
+3696,82021,Kansas Rush,Heartland,B2010
+1730,114371,Missouri Rush,Heartland,B2010
+3723,60229,VSA Rush,Heartland,B2009
+3486,60487,FC Wichita,Heartland,B2009
+1730,114370,Missouri Rush,Heartland,B2009
+3480,59538,Union KC,Heartland,B2009
+5147,116973,St. Louis Stars,Heartland,B2009
+1726,117186,Sporting Nebraska FC,Heartland,B2008
+3723,60358,VSA Rush,Heartland,B2008
+373,48121,Gretna Elite Academy,Heartland,B2008
+3483,60486,Sporting Iowa,Heartland,B2008
+1730,114369,Missouri Rush,Heartland,B2008
+3486,60488,FC Wichita,Heartland,B2008
+5147,116974,St. Louis Stars,Heartland,B2008
+18,98515,Alabama FC,Mid-America,B2013
+3589,98519,Germantown Legends,Mid-America,B2013
+1693,113253,FC Alliance,Mid-America,B2013
+3232,96440,Chattanooga Red Wolves SC,Mid-America,B2013
+4327,110630,Mississippi Rush United,Mid-America,B2013
+1693,94730,FC Alliance,Mid-America,B2012
+3589,94925,Germantown Legends,Mid-America,B2012
+3232,96438,Chattanooga Red Wolves SC,Mid-America,B2012
+4327,81760,Mississippi Rush United,Mid-America,B2011
+1693,71840,FC Alliance,Mid-America,B2011
+3232,96436,Chattanooga Red Wolves SC,Mid-America,B2011
+1693,69118,FC Alliance,Mid-America,B2010
+4327,81771,Mississippi Rush United,Mid-America,B2010
+3589,83075,Germantown Legends,Mid-America,B2010
+4327,81772,Mississippi Rush United,Mid-America,B2009
+2235,82591,Lobos Rush,Mid-America,B2009
+1693,58716,FC Alliance,Mid-America,B2009
+3589,83079,Germantown Legends,Mid-America,B2008
+5213,114282,Louisiana Fire Soccer Club,Mid-America,B2008
+18,46808,Alabama FC,Mid-America,B2008
+4327,112599,Mississippi Rush United,Mid-America,B2008
+2235,82592,Lobos Rush,Mid-America,B2008
+1693,35107,FC Alliance,Mid-America,B2008
+22,112372,NCFC Youth,Mid-Atlantic,B2013
+417,115036,Richmond United,Mid-Atlantic,B2013
+2181,114821,Wilmington Hammerheads,Mid-Atlantic,B2013
+26,112516,Charlotte SA,Mid-Atlantic,B2013
+628,112502,Beach FC (VA),Mid-Atlantic,B2013
+3739,117887,Skyline Elite,Mid-Atlantic,B2013
+4603,111259,Fairfax Virginia Union,Mid-Atlantic,B2013
+4012,83743,Highland FC,Mid-Atlantic,B2013
+22,94741,NCFC Youth,Mid-Atlantic,B2012
+2181,95474,Wilmington Hammerheads,Mid-Atlantic,B2012
+4012,83742,Highland FC,Mid-Atlantic,B2012
+71,95057,NC Fusion,Mid-Atlantic,B2012
+4603,96992,Fairfax VA Union,Mid-Atlantic,B2012
+4012,81824,Highland FC,Mid-Atlantic,B2011
+628,67861,Beach FC (VA),Mid-Atlantic,B2011
+3739,82062,Skyline Elite,Mid-Atlantic,B2011
+26,82097,Charlotte SA,Mid-Atlantic,B2011
+4603,96991,Fairfax VA Union,Mid-Atlantic,B2011
+22,69431,NCFC Youth,Mid-Atlantic,B2010
+71,62866,NC Fusion,Mid-Atlantic,B2010
+2181,69448,Wilmington Hammerheads,Mid-Atlantic,B2010
+3739,60154,Skyline Elite,Mid-Atlantic,B2010
+4012,69685,Highland FC,Mid-Atlantic,B2010
+417,59621,Richmond United,Mid-Atlantic,B2009
+22,60275,NCFC Youth,Mid-Atlantic,B2009
+71,37377,NC Fusion,Mid-Atlantic,B2009
+4012,69687,Highland FC,Mid-Atlantic,B2009
+4603,96989,Fairfax VA Union,Mid-Atlantic,B2009
+26,112514,Charlotte SA Academy,Mid-Atlantic,B2008
+628,67844,Beach FC (VA),Mid-Atlantic,B2008
+417,45977,Richmond United,Mid-Atlantic,B2008
+2181,46816,Wilmington Hammerheads,Mid-Atlantic,B2008
+26,112522,Charlotte SA,Mid-Atlantic,B2008
+525,82205,Arlington Soccer,Mid-Atlantic,B2008
+4603,96988,Fairfax Virginia Union,Mid-Atlantic,B2008
+22,45792,NCFC Youth,Mid-Atlantic,B2008
+4012,69690,Highland FC,Mid-Atlantic,B2008
+43,98454,Eclipse Select SC,Midwest,B2013
+67,87802,Minnesota Thunder,Midwest,B2013
+1797,113569,FC Wisconsin,Midwest,B2013
+2257,80548,Indiana Elite FC,Midwest,B2013
+2017,98304,Rockford Raptors,Midwest,B2013
+893,84517,St Croix,Midwest,B2012
+67,84638,Minnesota Thunder,Midwest,B2012
+2257,80550,Indiana Elite FC,Midwest,B2012
+43,94579,Eclipse Select SC,Midwest,B2012
+893,81660,St Croix,Midwest,B2011
+1797,70426,FC Wisconsin,Midwest,B2011
+2167,117703,Chicago Inter Soccer,Midwest,B2011
+67,82927,Minnesota Thunder,Midwest,B2011
+67,69525,Minnesota Thunder,Midwest,B2010
+43,70285,Eclipse Select SC,Midwest,B2010
+2167,117704,Chicago Inter Soccer,Midwest,B2010
+2106,70231,Chicago Magic,Midwest,B2010
+1797,60088,FC Wisconsin,Midwest,B2009
+2106,68208,Chicago Magic,Midwest,B2009
+2167,117705,Chicago Inter Soccer,Midwest,B2009
+2257,25230,Indiana Elite FC,Midwest,B2009
+67,46775,Minnesota Thunder,Midwest,B2008
+893,60125,St. Croix,Midwest,B2008
+2106,68209,Chicago Magic,Midwest,B2008
+2167,117707,Chicago Inter Soccer,Midwest,B2008
+2257,26502,Indiana Elite FC,Midwest,B2008
+3639,112846,Colorado EDGE SC,Mountain,B2013
+81,113305,Real Colorado National,Mountain,B2013
+2335,111974,Pride SC,Mountain,B2013
+29,114004,Colorado Rapids Central,Mountain,B2013
+1936,95670,CCV Stars,Mountain,B2013
+592,94416,Arizona Arsenal,Mountain,B2013
+2335,94786,Pride SC,Mountain,B2012
+81,95150,Real Colorado National,Mountain,B2012
+3639,112847,Colorado EDGE SC,Mountain,B2012
+592,82315,Arizona Arsenal,Mountain,B2012
+1760,94430,La Roca FC,Mountain,B2012
+1936,95669,CCV Stars,Mountain,B2012
+2335,78631,Pride SC,Mountain,B2011
+1560,81384,NM Rapids,Mountain,B2011
+3639,112848,Colorado EDGE SC,Mountain,B2011
+1936,95668,CCV Stars,Mountain,B2011
+592,80714,Arizona Arsenal,Mountain,B2011
+29,82624,Colorado Rapids Central,Mountain,B2011
+4368,97083,El Paso Locomotive,Mountain,B2010
+3639,112849,Colorado EDGE SC,Mountain,B2010
+2335,59884,Pride SC,Mountain,B2010
+28,112019,Colorado Rush Academy Blue,Mountain,B2010
+29,82623,Colorado Rapids Central,Mountain,B2010
+1760,69013,La Roca FC,Mountain,B2010
+2335,46852,Pride SC,Mountain,B2009
+3639,112850,Colorado EDGE SC,Mountain,B2009
+29,82622,Colorado Rapids Central,Mountain,B2009
+1936,95666,CCV Stars,Mountain,B2009
+1760,46118,La Roca FC,Mountain,B2009
+28,112018,Colorado Rush Academy Blue,Mountain,B2009
+81,46854,Real Colorado National,Mountain,B2008
+3639,112852,Colorado EDGE SC,Mountain,B2008
+1560,45741,NM Rapids,Mountain,B2008
+29,82621,Colorado Rapids Central,Mountain,B2008
+592,46878,Arizona Arsenal,Mountain,B2008
+1936,95665,CCV Stars,Mountain,B2008
+28,112017,Colorado Rush Academy Blue,Mountain,B2008
+428,96740,STA,New England,B2013
+518,113900,Manhattan SC,New England,B2013
+1409,115173,East Coast Surf SC,New England,B2013
+94,94751,Scorpions SC,New England,B2013
+9,114494,SUSA FC,New England,B2013
+52,94546,FC Stars,New England,B2013
+4370,116991,AC Connecticut,New England,B2013
+31,96817,Connecticut FC United,New England,B2013
+42,95605,East Meadow SC,New England,B2013
+4370,97125,AC Connecticut,New England,B2012
+431,82169,FSA FC,New England,B2012
+42,82245,East Meadow SC,New England,B2012
+31,96816,Connecticut FC United,New England,B2012
+9,114728,SUSA FC,New England,B2012
+94,116956,Scorpions SC,New England,B2012
+52,94543,FC Stars,New England,B2012
+31,69751,Connecticut FC United,New England,B2011
+94,116954,Scorpions SC,New England,B2011
+4370,84146,AC Connecticut,New England,B2011
+42,40955,East Meadow SC,New England,B2011
+518,70075,Manhattan SC,New England,B2011
+9,114493,SUSA FC,New England,B2011
+52,68685,FC Stars,New England,B2010
+31,58274,Connecticut FC United,New England,B2010
+94,116953,Scorpions SC,New England,B2010
+9,114492,SUSA FC,New England,B2010
+4370,84145,AC Connecticut,New England,B2010
+42,60356,East Meadow SC,New England,B2010
+31,31326,Connecticut FC United,New England,B2009
+52,46889,FC Stars,New England,B2009
+94,116952,Scorpions SC,New England,B2009
+4370,84148,AC Connecticut,New England,B2009
+42,60237,East Meadow SC,New England,B2009
+9,114724,SUSA FC,New England,B2009
+9,35816,SUSA FC ACADEMY,New England,B2008
+31,46830,Connecticut FC United,New England,B2008
+94,116951,Scorpions SC,New England,B2008
+1409,117475,East Coast Surf SC,New England,B2008
+116,46888,World Class FC,New England,B2008
+42,14319,East Meadow SC,New England,B2008
+4370,84149,AC Connecticut,New England,B2008
+9,114722,SUSA FC,New England,B2008
+46,95337,HEX FC Dominion,North Atlantic,B2013
+419,95034,Maryland United FC,North Atlantic,B2013
+1940,96841,Potomac SA,North Atlantic,B2013
+2701,117063,Delaware FC,North Atlantic,B2013
+4338,112987,PSA Monmouth,North Atlantic,B2013
+64,88549,Match Fit Surf,North Atlantic,B2013
+4355,88601,SJEB FC,North Atlantic,B2013
+494,112320,Baltimore Celtic,North Atlantic,B2013
+1940,94855,Potomac SA,North Atlantic,B2012
+1345,114662,Philadelphia Ukrainian Nationals,North Atlantic,B2012
+494,80788,Baltimore Celtic,North Atlantic,B2012
+46,95042,HEX FC Dominion,North Atlantic,B2012
+419,94640,Maryland United FC,North Atlantic,B2012
+451,93619,LVU Rush,North Atlantic,B2012
+4338,112983,PSA Monmouth,North Atlantic,B2012
+64,77567,Match Fit Surf,North Atlantic,B2012
+419,81398,Maryland United FC,North Atlantic,B2011
+2701,83784,Delaware FC,North Atlantic,B2011
+451,66524,LVU Rush,North Atlantic,B2011
+494,80782,Baltimore Celtic,North Atlantic,B2011
+1940,81284,Potomac SA,North Atlantic,B2011
+64,52824,Match Fit Surf,North Atlantic,B2011
+46,81423,HEX FC Dominion,North Atlantic,B2011
+64,35918,Match Fit Surf,North Atlantic,B2010
+1940,81286,Potomac SA,North Atlantic,B2010
+4355,82610,SJEBFC,North Atlantic,B2010
+419,69709,Maryland United FC,North Atlantic,B2010
+4338,112985,PSA Monmouth,North Atlantic,B2010
+1345,80911,Philadelphia Ukrainian Nationals,North Atlantic,B2010
+451,66526,LVU Rush,North Atlantic,B2010
+494,68756,Baltimore Celtic,North Atlantic,B2010
+3405,55382,Pipeline SC,North Atlantic,B2009
+419,59788,Maryland United FC,North Atlantic,B2009
+1345,71084,Philadelphia Ukrainian Nationals,North Atlantic,B2009
+2701,83786,Delaware FC,North Atlantic,B2009
+4338,112986,PSA Monmouth,North Atlantic,B2009
+46,46860,HEX FC Dominion,North Atlantic,B2009
+4355,82611,SJEBFC,North Atlantic,B2009
+494,59254,Baltimore Celtic,North Atlantic,B2009
+451,66531,LVU Rush,North Atlantic,B2008
+1940,115501,Potomac SA,North Atlantic,B2008
+1345,114661,Philadelphia Ukrainian Nationals,North Atlantic,B2008
+79,46887,Penn Fusion SA,North Atlantic,B2008
+2701,83787,Delaware FC,North Atlantic,B2008
+3405,46026,Pipeline SC,North Atlantic,B2008
+64,24886,Match Fit Surf,North Atlantic,B2008
+494,46890,Baltimore Celtic,North Atlantic,B2008
+4338,112988,PSA Monmouth,North Atlantic,B2008
+4355,82612,SJEBFC,North Atlantic,B2008
+88,99062,San Juan SC,Northern Cal,B2013
+2548,103708,Santa Clara Sporting,Northern Cal,B2013
+4342,99123,1974 Newark FC,Northern Cal,B2013
+1425,103014,Davis Legacy,Northern Cal,B2013
+1470,70860,COSC,Northern Cal,B2013
+3231,117775,Los Gatos United,Northern Cal,B2013
+1585,103177,Marin FC,Northern Cal,B2013
+1040,103185,San Francisco Elite Academy,Northern Cal,B2013
+91,94914,Santa Rosa United,Northern Cal,B2013
+69,99055,Mustang SC,Northern Cal,B2013
+294,84681,MVLA,Northern Cal,B2012
+3065,93951,Association FC,Northern Cal,B2012
+1470,97487,COSC,Northern Cal,B2012
+1585,84685,Marin FC,Northern Cal,B2012
+91,46181,Santa Rosa United,Northern Cal,B2012
+1040,94626,San Francisco Elite Academy,Northern Cal,B2012
+2955,84813,River Islands Surf B12 ECNL,Northern Cal,B2012
+4342,82821,1974 Newark FC,Northern Cal,B2012
+88,84679,San Juan SC,Northern Cal,B2012
+2548,81675,Santa Clara Sporting,Northern Cal,B2011
+4342,81051,1974 Newark FC,Northern Cal,B2011
+3054,71880,Placer United,Northern Cal,B2011
+1040,80573,San Francisco Elite Academy,Northern Cal,B2011
+1585,71821,Marin FC,Northern Cal,B2011
+91,71804,Santa Rosa United,Northern Cal,B2011
+2955,81001,River Islands Surf B11 ECNL,Northern Cal,B2011
+88,82111,San Juan SC,Northern Cal,B2011
+1470,33942,COSC,Northern Cal,B2010
+4342,81050,1974 Newark FC,Northern Cal,B2010
+3231,117772,Los Gatos United,Northern Cal,B2010
+1040,80574,San Francisco Elite Academy,Northern Cal,B2010
+3065,80634,Association FC,Northern Cal,B2010
+88,69483,San Juan SC,Northern Cal,B2010
+294,24504,MVLA,Northern Cal,B2010
+91,69415,Santa Rosa United,Northern Cal,B2010
+1585,47721,Marin FC,Northern Cal,B2009
+3231,117770,Los Gatos United,Northern Cal,B2009
+4342,80778,1974 Newark FC,Northern Cal,B2009
+3065,80633,Association FC,Northern Cal,B2009
+91,60194,Santa Rosa United,Northern Cal,B2009
+4063,70357,El Camino Futbol Club Salinas,Northern Cal,B2009
+88,60204,San Juan SC,Northern Cal,B2009
+2955,71302,River Islands Surf B09 ECNL,Northern Cal,B2009
+1040,80576,San Francisco Elite Academy,Northern Cal,B2008
+1470,26268,COSC,Northern Cal,B2008
+4342,81052,1974 Newark FC,Northern Cal,B2008
+1585,46148,Marin FC,Northern Cal,B2008
+2548,46172,Santa Clara Sporting,Northern Cal,B2008
+3065,80635,Association FC,Northern Cal,B2008
+294,46154,MVLA,Northern Cal,B2008
+1425,46130,Davis Legacy,Northern Cal,B2008
+91,46178,Santa Rosa United,Northern Cal,B2008
+88,46166,San Juan SC,Northern Cal,B2008
+2955,71301,River Islands Surf B08/07 ECNL,Northern Cal,B2008
+112,98188,Washington Premier,Northwest,B2013
+2331,111548,PacNW SC,Northwest,B2013
+2229,116361,3RSC,Northwest,B2013
+3476,92619,XF,Northwest,B2013
+2522,97512,Snohomish United,Northwest,B2013
+2229,116360,3RSC,Northwest,B2012
+2322,94668,Columbia Premier SC,Northwest,B2012
+3476,92522,XF,Northwest,B2012
+2522,83173,Snohomish United,Northwest,B2012
+2331,81137,PacNW SC,Northwest,B2011
+3476,82135,XF,Northwest,B2011
+2322,71873,Columbia Premier SC,Northwest,B2011
+2522,71809,Snohomish United,Northwest,B2011
+112,69052,Washington Premier,Northwest,B2010
+2522,69707,Snohomish United,Northwest,B2010
+2322,69797,Columbia Premier SC,Northwest,B2010
+3476,62278,XF,Northwest,B2010
+3476,60439,XF,Northwest,B2009
+2229,116357,3RSC,Northwest,B2009
+2322,60032,Columbia Premier SC,Northwest,B2009
+2522,57083,Snohomish United,Northwest,B2009
+2331,26470,PacNW SC,Northwest,B2008
+398,46838,Eastside FC,Northwest,B2008
+3476,60438,XF,Northwest,B2008
+2522,46847,Snohomish United,Northwest,B2008
+2322,46845,Columbia Premier SC,Northwest,B2008
+2229,116356,3RSC,Northwest,B2008
+3475,81995,Louisville City Academy,Ohio Valley,B2013
+538,69758,Pittsburgh Riverhounds,Ohio Valley,B2013
+1501,68814,FC Pride Elite,Ohio Valley,B2013
+343,79650,WNY Flash,Ohio Valley,B2013
+75,69938,Ohio Elite SA,Ohio Valley,B2013
+3478,59145,Cleveland Force SC,Ohio Valley,B2012
+75,69465,Ohio Elite SA,Ohio Valley,B2012
+343,61876,WNY Flash,Ohio Valley,B2012
+538,69759,Pittsburgh Riverhounds,Ohio Valley,B2012
+437,71993,Ohio Premier,Ohio Valley,B2011
+538,60738,Pittsburgh Riverhounds,Ohio Valley,B2011
+1501,54744,FC Pride Elite,Ohio Valley,B2011
+75,69464,Ohio Elite SA,Ohio Valley,B2011
+1713,70531,Nationals Soccer Club,Ohio Valley,B2010
+538,60739,Pittsburgh Riverhounds,Ohio Valley,B2010
+343,36928,WNY Flash,Ohio Valley,B2010
+1501,54745,FC Pride Elite,Ohio Valley,B2010
+1501,59991,FC Pride Elite,Ohio Valley,B2009
+538,4271,Pittsburgh Riverhounds,Ohio Valley,B2009
+343,12949,WNY Flash,Ohio Valley,B2009
+1713,60176,Nationals Soccer Club,Ohio Valley,B2009
+3475,46067,Louisville City Academy,Ohio Valley,B2008
+1501,110070,FC Pride Elite,Ohio Valley,B2008
+1713,60177,Nationals Soccer Club,Ohio Valley,B2008
+538,46803,Pittsburgh Riverhounds,Ohio Valley,B2008
+343,46858,WNY Flash,Ohio Valley,B2008
+3478,56923,Cleveland Force SC,Ohio Valley,B2008
+1689,98644,South Carolina United,Southeast,B2013
+14,116940,Atlanta Fire United,Southeast,B2013
+30,112294,Concorde Fire Premier,Southeast,B2013
+3407,98539,United Futbol Academy,Southeast,B2013
+14,79870,Atlanta Fire United,Southeast,B2012
+3407,81902,United Futbol Academy,Southeast,B2012
+1689,94987,South Carolina United,Southeast,B2012
+3644,81241,South Carolina Surf,Southeast,B2011
+56,81335,GSA,Southeast,B2011
+1689,82200,South Carolina United,Southeast,B2011
+14,67126,Atlanta Fire United,Southeast,B2010
+1689,69847,South Carolina United,Southeast,B2010
+3407,68839,United Futbol Academy,Southeast,B2010
+14,60031,Atlanta Fire United,Southeast,B2009
+1689,52497,South Carolina United,Southeast,B2009
+30,59237,Concorde Fire Premier,Southeast,B2009
+3644,52308,South Carolina Surf,Southeast,B2008
+14,44968,Atlanta Fire United,Southeast,B2008
+1689,102633,South Carolina United,Southeast,B2008
+30,35798,Concorde Fire Premier,Southeast,B2008
+3407,46038,United Futbol Academy,Southeast,B2008
+16,112366,Beach FC (CA),Southwest,B2013
+96,115064,SLAMMERS FC,Southwest,B2013
+57,110876,LV Heat Surf,Southwest,B2013
+300,113383,Rebels SC,Southwest,B2013
+2289,78582,LA Breakers FC,Southwest,B2013
+39,80990,Legends FC San Diego,Southwest,B2013
+2289,69638,LA Breakers FC,Southwest,B2012
+39,71126,Legends FC San Diego,Southwest,B2012
+86,68759,SDSC Surf,Southwest,B2012
+57,94646,LV Heat Surf,Southwest,B2012
+87,81456,San Diego Surf,Southwest,B2011
+96,81813,Slammers FC,Southwest,B2011
+113,59706,West Coast FC,Southwest,B2011
+39,100374,Legends FC San Diego,Southwest,B2011
+2289,60838,LA Breakers FC,Southwest,B2010
+86,37666,SDSC Surf,Southwest,B2010
+39,69041,Legends FC San Diego,Southwest,B2010
+57,48237,LV Heat Surf,Southwest,B2010
+57,59247,LV Heat Surf,Southwest,B2009
+39,53808,Legends FC San Diego,Southwest,B2009
+86,28807,SDSC Surf,Southwest,B2009
+300,69634,Rebels SC,Southwest,B2009
+13,46848,Sporting CA USA,Southwest,B2008
+87,45964,San Diego Surf,Southwest,B2008
+39,46834,Legends FC San Diego,Southwest,B2008
+96,2338,Slammers FC,Southwest,B2008
+113,46881,West Coast FC,Southwest,B2008
+2289,46826,LA Breakers FC,Southwest,B2008
+86,45958,SDSC Surf,Southwest,B2008
+300,65860,Rebels SC,Southwest,B2008
+101,113987,Solar SC Academy,Texas,B2013
+62,114685,Lonestar Soccer Club Black,Texas,B2013
+35,114023,DKSC,Texas,B2013
+10,69769,Albion Hurricanes FC,Texas,B2013
+1772,95935,RISE SC,Texas,B2013
+1771,80582,BVBIA,Texas,B2013
+29,111255,Colorado Rapids,Texas,B2013
+2519,114686,San Antonio City SC,Texas,B2013
+3234,113827,FC Westlake,Texas,B2013
+106,43043,Tulsa SC,Texas,B2013
+101,76665,SOLAR SC,Texas,B2013
+4304,111245,SAFC,Texas,B2013
+1772,94435,RISE SC,Texas,B2012
+29,81412,Colorado Rapids,Texas,B2012
+1771,95867,BVBIA,Texas,B2012
+35,94512,DKSC,Texas,B2012
+47,94660,FC Dallas White,Texas,B2012
+101,60621,SOLAR SC,Texas,B2012
+3234,84555,FC Westlake,Texas,B2012
+62,114684,Lonestar Soccer Club Black,Texas,B2012
+2519,95963,San Antonio City SC,Texas,B2012
+106,92791,Tulsa SC,Texas,B2012
+4304,81510,SAFC,Texas,B2011
+29,81111,Colorado Rapids,Texas,B2011
+37,81240,Dallas Texans,Texas,B2011
+47,69608,FC Dallas White,Texas,B2011
+35,81106,DKSC,Texas,B2011
+1771,67947,BVBIA,Texas,B2011
+2519,82495,San Antonio City SC,Texas,B2011
+3234,94601,FC Westlake,Texas,B2011
+62,114691,Lonestar Soccer Club Black,Texas,B2011
+106,43036,Tulsa SC,Texas,B2011
+101,82751,Solar SC Academy,Texas,B2010
+29,69487,Colorado Rapids,Texas,B2010
+47,69576,FC Dallas Red,Texas,B2010
+101,59418,SOLAR SC,Texas,B2010
+37,69514,Dallas Texans,Texas,B2010
+106,66280,Tulsa SC,Texas,B2010
+62,114694,Lonestar Soccer Club Red,Texas,B2010
+47,69544,FC Dallas White,Texas,B2010
+2519,69976,San Antonio City SC,Texas,B2010
+62,114682,Lonestar Soccer Club Black,Texas,B2010
+1772,80423,RISE SC,Texas,B2009
+101,60172,SOLAR SC,Texas,B2009
+1771,56481,BVBIA,Texas,B2009
+10,48116,Albion Hurricanes FC,Texas,B2009
+3234,94603,FC Westlake,Texas,B2009
+2133,59604,OK Energy FC,Texas,B2009
+106,30648,Tulsa SC,Texas,B2009
+37,59908,Dallas Texans,Texas,B2009
+47,48488,FC Dallas White,Texas,B2009
+62,114681,Lonestar Soccer Club Black,Texas,B2009
+1772,80425,RISE SC,Texas,B2008
+2519,46102,San Antonio City SC,Texas,B2008
+62,114692,Lonestar Soccer Club Red,Texas,B2008
+29,50072,Colorado Rapids,Texas,B2008
+4304,81514,SAFC,Texas,B2008
+1771,44976,BVBIA,Texas,B2008
+2258,46089,HTX,Texas,B2008
+35,58709,DKSC,Texas,B2008
+101,46793,SOLAR SC,Texas,B2008
+10,46865,Albion Hurricanes FC,Texas,B2008
+2133,46107,OK Energy FC,Texas,B2008
+3234,94604,FC Westlake,Texas,B2008
+47,69582,FC Dallas White,Texas,B2008
+37,46857,Dallas Texans,Texas,B2008
+62,114679,Lonestar Soccer Club Black,Texas,B2008

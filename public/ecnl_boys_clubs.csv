@@ -1,0 +1,155 @@
+club_id,club_name,region,state,conferences,age_groups,website
+9,SUSA FC ACADEMY,East,NY,New England,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://susafc.org
+10,Albion Hurricanes FC,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://albionhurricanes.org
+13,Sporting CA USA,West,CA,Southwest,B2008 | B2012 | B2013,https://sportingcausa.com
+14,Atlanta Fire United,East,GA,Southeast,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://atlantafire.com
+16,Beach FC (CA),West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://beachfc.com
+18,Alabama FC,Central,AL,Mid-America,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://alabamafc.org
+22,NCFC Youth Academy,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://ncfcyouth.com
+26,Charlotte SA Academy,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://charlottesa.com
+28,Colorado Rush Academy Blue,Central,CO,Mountain,B2008 | B2009 | B2010 | B2012 | B2013,https://coloradorush.com
+29,Colorado Rapids Central,Central,CO,Mountain | Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://www.coloradorapidscentral.com
+30,Concorde Fire Platinum,East,GA,Southeast,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://concordefire.com
+31,Connecticut FC United,East,CT,New England,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://ctfcunited.com
+35,DKSC,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://dksc.com
+37,Dallas Texans Academy,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://dallastexans.com
+39,Legends FC San Diego,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://legendsfc.com
+42,East Meadow SC,East,NY,New England,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://eastmeadowsc.com
+43,Eclipse Select SC,East,IL,Midwest,B2009 | B2010 | B2011 | B2012 | B2013,https://eclipseselect.com
+46,HEX FC Dominion,East,PA,North Atlantic,B2009 | B2010 | B2011 | B2012 | B2013,https://hexfc.com
+47,FC Dallas Red,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://fcdallas.com
+51,Boise Timbers FC,West,ID,Far West,B2008 | B2009 | B2010 | B2012 | B2013,https://boisetimbersthorns.org
+52,FC Stars,East,MA,New England,B2008 | B2009 | B2010 | B2012 | B2013,https://starsofma.org
+56,GSA,East,GA,Southeast,B2008 | B2009 | B2011 | B2012 | B2013,https://gsa-soccer.com
+57,LV Heat Surf,West,NV,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://lvheat.com
+61,Legends FC,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://legendsfc.com
+62,Lonestar Soccer Club Red,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://lonestarsoccer.com
+64,Match Fit Surf,East,NJ,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://matchfitacademy.com
+67,Minnesota Thunder,East,MN,Midwest,B2008 | B2010 | B2011 | B2012 | B2013,https://mnthunder.com
+69,Mustang SC,West,CA,Northern Cal,B2008 | B2011 | B2012 | B2013,https://mustangsc.com
+71,NC Fusion,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2012 | B2013,https://ncfusion.com
+75,Ohio Elite SA,East,OH,Ohio Valley,B2010 | B2011 | B2012 | B2013,https://ohioelite.com
+79,Penn Fusion SA,East,PA,North Atlantic,B2008 | B2009 | B2011 | B2012 | B2013,https://pennfusion.com
+81,Real Colorado Academy,Central,CO,Texas | Mountain,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://realcolorado.com
+82,LAFC So Cal,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://lafcsocal.com
+86,SDSC Surf,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://sdscsurfclub.com
+87,San Diego Surf,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://surfsoccer.com
+88,San Juan SC,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://sanjuansc.org
+91,Santa Rosa United,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://srunited.com
+94,Scorpions SC,East,MA,New England,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://scorpionssoccer.org
+96,Slammers FC,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://slammersfc.com
+101,Solar SC Academy,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://solarsc.com
+106,Tulsa SC,Central,OK,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://tulsasc.com
+107,Utah Avalanche,Central,UT,Mountain,B2009 | B2010 | B2011,https://utahavalanche.com
+112,Washington Premier,West,WA,Northwest,B2009 | B2010 | B2013,https://washingtonpremierfc.com
+113,West Coast FC,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2013,https://westcoastfc.com
+116,World Class FC,East,MA,New England,B2008 | B2009 | B2012 | B2013,https://worldclassfc.com
+186,Pateadores,West,CA,Southwest,B2009 | B2010 | B2011 | B2012,https://pateadores.com
+294,MVLA,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2012 | B2013,https://mvlasc.org
+300,Rebels SC,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://rebelssc.com
+329,NTH-NASA,East,TX,Southeast,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://nasatophat.com
+343,WNY Flash,East,NY,Ohio Valley,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://wnyflash.com
+373,Gretna Elite Academy,Central,LA,Heartland,B2008 | B2010 | B2011 | B2012 | B2013,https://gretnaeliteacademy.com
+379,Florida Kraze,East,FL,Florida,B2009 | B2010 | B2011 | B2012 | B2013,https://floridakrazekrush.com
+380,CESA Triumph,East,SC,Southeast,B2010 | B2011 | B2012,https://carolinaelitesc.com
+398,Eastside FC,West,WA,Northwest,B2008 | B2011 | B2012,https://eastsidefc.org
+417,Richmond United,East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://richmondunitedfc.com
+419,Maryland United FC,East,MD,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://marylandunitedfc.com
+428,STA,East,NJ,New England,B2009 | B2010 | B2011 | B2012 | B2013,https://stasoccer.org
+431,FSA FC,East,CT,New England,B2009 | B2010 | B2012,https://fsafc.com
+437,Ohio Premier,East,OH,Ohio Valley,B2008 | B2009 | B2010 | B2011 | B2012,https://opsoccer.com
+451,LVU Rush,East,PA,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://lvurush.com
+494,Baltimore Celtic,East,MD,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://balticceltic.com
+518,Manhattan SC,East,NY,New England,B2008 | B2010 | B2011 | B2012 | B2013,https://manhattansc.org
+525,Arlington Soccer,East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://arlingtonva.soccer
+538,Pittsburgh Riverhounds,East,PA,Ohio Valley,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://riverhoundssoccer.com
+592,Arizona Arsenal,Central,AZ,Mountain,B2008 | B2011 | B2012 | B2013,https://arizonaarsenalyouth.com
+603,FC Portland,West,OR,Far West,B2008 | B2009 | B2010 | B2011 | B2012,https://fcportland.com
+628,Beach FC (VA),East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://beachfutbolclub.com
+893,St Croix,East,MN,Midwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://stcroixsoccer.org
+1040,San Francisco Elite Academy,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://sfeafc.com
+1345,Philadelphia Ukrainian Nationals,East,PA,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012,https://ukrainiannationals.com
+1353,Sporting Jax,East,FL,Florida,B2008 | B2009 | B2011 | B2012 | B2013,https://sportingjax.com
+1354,Tennessee SC,Central,TN,Mid-America,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://tennesseesc.com
+1409,East Coast Surf SC,East,NH,New England,B2008 | B2010 | B2011 | B2013,https://ecsurfsoccer.com
+1425,Davis Legacy,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2013,https://davislegacysc.com
+1470,COSC,West,CA,Northern Cal,B2008 | B2010 | B2011 | B2012 | B2013,https://californiaodyssey.org
+1501,FC Pride Elite,East,IN,Ohio Valley,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://fcpride.org
+1560,NM Rapids,Central,NM,Mountain,B2008 | B2009 | B2010 | B2011,https://nmrapids.org
+1585,Marin FC,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://marinfc.org
+1643,Seattle United,West,WA,Northwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://seattleunited.com
+1689,South Carolina United,East,SC,Southeast,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://scunitedsoccer.com
+1693,FC Alliance,Central,TN,Mid-America,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://fcalliancetn.com
+1713,Nationals Soccer Club,East,OH,Ohio Valley,B2008 | B2009 | B2010 | B2011 | B2013,https://nationalssoccer.com
+1726,Sporting Nebraska FC,Central,NE,Heartland,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://sportingnebraskafc.com
+1730,Missouri Rush,Central,MO,Heartland,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://missourirush.com
+1760,La Roca FC,Central,UT,Mountain,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://larocafc.org
+1771,BVBIA,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://bvbia-northamerica.com
+1772,RISE SC,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://risesc.org
+1785,VDA,East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012,https://vdava.com
+1797,FC Wisconsin,East,WI,Midwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://fcwisconsin.com
+1813,Idaho Rush,West,ID,Far West,B2008 | B2009 | B2011 | B2012 | B2013,https://idahorush.com
+1919,Space Coast United,East,FL,Florida,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://spacecoastsoccer.org
+1925,Fort Lauderdale United FC,East,FL,Florida,B2008 | B2009 | B2010 | B2012 | B2013,https://ftlutd.com
+1936,CCV Stars,Central,AZ,Mountain,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://ccvstars.com
+1940,Potomac SA,East,MD,North Atlantic,B2008 | B2010 | B2011 | B2012 | B2013,https://potomacsoccer.org
+2017,Rockford Raptors,East,IL,Midwest,B2008 | B2009 | B2011 | B2013,https://rockfordraptors.org
+2106,Chicago Magic,East,IL,Midwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://chicagomagicsc.com
+2133,OK Energy FC,Central,OK,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://okenergyfc.org
+2167,Chicago Inter Soccer,East,IL,Midwest,B2008 | B2009 | B2010 | B2011 | B2012,https://chicagointersoccer.com
+2181,Wilmington Hammerheads,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://wilmingtonhammerheads.com
+2229,3RSC,West,WA,Northwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://3rsc.org
+2235,Lobos Rush,Central,TN,Mid-America,B2008 | B2009 | B2010 | B2011 | B2012,https://lobosrush.com
+2237,Doral Soccer Club,East,FL,Florida,B2008 | B2010 | B2011 | B2013,https://doralsoccer.com
+2257,Indiana Elite FC,East,IN,Midwest,B2008 | B2009 | B2010 | B2012 | B2013,https://indianaelitefc.com
+2258,HTX,Central,TX,Texas,B2008 | B2009 | B2010 | B2012 | B2013,https://htxsoccer.com
+2289,LA Breakers FC,West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://labreakersfc.com
+2322,Columbia Premier SC,West,OR,Northwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://columbiapremiersc.com
+2329,FC Prime,East,FL,Florida,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://fc-prime.com
+2330,Kansas City Athletics,Central,KS,Heartland,B2008 | B2010 | B2012 | B2013,https://athleticskc.com
+2331,PacNW SC,West,WA,Northwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://pacnwsc.com
+2335,Pride SC,Central,CO,Mountain,B2009 | B2010 | B2011 | B2012 | B2013,https://pridesc.com
+2519,San Antonio City SC,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://sacitysc.com
+2522,Snohomish United,West,WA,Northwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://snohomishunited.com
+2536,United PDX,West,OR,Far West,B2009 | B2010 | B2011 | B2012 | B2013,https://unitedpdx.com
+2548,Santa Clara Sporting,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://santaclarasporting.com
+2701,Delaware FC,East,DE,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://delawarefc.com
+2731,FL Premier FC,East,FL,Florida,B2008 | B2009 | B2010 | B2011 | B2012,https://floridapremierfc.com
+2937,Oregon Premier,West,OR,Far West,B2008 | B2009 | B2010 | B2013,https://oregonpremierfc.com
+2955,River Islands Surf B13 ECNL,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://riverislandssurf.com
+3054,Placer United,West,CA,Northern Cal,B2008 | B2009 | B2011 | B2012 | B2013,https://placerunited.com
+3065,Association FC,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2012 | B2013,https://associationfc.com
+3109,Palm Beach United,East,FL,Florida,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://palmbeachunited.org
+3231,Los Gatos United,West,CA,Northern Cal,B2009 | B2010 | B2011 | B2012 | B2013,https://losgatosunited.com
+3232,Chattanooga Red Wolves SC,Central,TN,Mid-America,B2011 | B2012 | B2013,https://chattanoogarwsc.com
+3234,FC Westlake,Central,TX,Texas,B2008 | B2009 | B2011 | B2012 | B2013,https://fcwestlake.com
+3384,Florida West FC,East,FL,Florida,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://floridawestfc.com
+3387,Parkland SC,East,FL,Florida,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://parklandtravelsoccer.com
+3405,Pipeline SC,East,MD,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2013,https://pipelinesc.org
+3407,United Futbol Academy,East,GA,Southeast,B2008 | B2009 | B2010 | B2012 | B2013,https://unitedfa.org
+3475,Louisville City Academy,East,KY,Ohio Valley,B2008 | B2009 | B2011 | B2012 | B2013,https://louisvillecityfc.com
+3476,XF Academy,West,WA,Northwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://crossfiresoccer.org
+3478,Cleveland Force SC,East,OH,Ohio Valley,B2008 | B2009 | B2010 | B2012 | B2013,https://clevelandforcefc.com
+3480,Union KC,Central,MO,Heartland,B2009 | B2011 | B2012 | B2013,https://unionkc.com
+3483,Sporting Iowa,Central,IA,Heartland,B2008 | B2009 | B2012 | B2013,https://sportingiowa.com
+3486,FC Wichita,Central,KS,Heartland,B2008 | B2009 | B2010 | B2011 | B2013,https://fcwichita.com
+3589,Germantown Legends,Central,TN,Mid-America,B2008 | B2009 | B2010 | B2012 | B2013,https://germantownlegends.com
+3639,Colorado EDGE SC,Central,CO,Mountain,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://coloradoedgesc.com
+3644,South Carolina Surf,East,SC,Southeast,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://scsurfclub.com
+3696,Kansas Rush,Central,KS,Heartland,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://kansasrush.com
+3723,VSA Rush,Central,VA,Heartland,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://vsarush.com
+3739,Skyline Elite,East,VA,Mid-Atlantic,B2009 | B2010 | B2011 | B2013,https://skylineelitesc.org
+3956,Capital FC,West,OR,Far West,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://capitalfc.com
+4012,Highland FC,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://highlandfc.com
+4063,El Camino Futbol Club Salinas,West,CA,Northern Cal,B2009 | B2010 | B2011 | B2012,https://ecfcsalinas.com
+4304,SAFC,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2013,https://sanantoniofc.com
+4327,Mississippi Rush United,Central,MS,Mid-America,B2008 | B2009 | B2010 | B2011 | B2013,https://msrushunited.com
+4330,Eugene Metro FC,West,OR,Far West,B2008 | B2010 | B2011 | B2012 | B2013,https://emfc.org
+4338,PSA Monmouth,East,NJ,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://psamonmouth.org
+4342,1974 Newark FC,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://newarksoccer.org
+4355,SJEBFC,East,NJ,North Atlantic,B2008 | B2009 | B2010 | B2012 | B2013,https://sjebfc.com
+4368,El Paso Locomotive,Central,TX,Mountain,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://elpasolomotive.com
+4370,AC Connecticut,East,CT,New England,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://acct.us
+4603,Fairfax VA Union,East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://fairfaxvaunion.com
+5147,St. Louis Stars,Central,MO,Heartland,B2008 | B2009 | B2010 | B2011 | B2012,https://stlouisstars.com
+5213,Louisiana Fire Soccer Club,Central,LA,Mid-America,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://lafiresoccer.com

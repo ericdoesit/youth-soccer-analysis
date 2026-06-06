@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECNL Boys Club Database — Free Open Data</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #222; }
+
+    header {
+      background: #1a1a2e;
+      color: white;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: .4rem; }
+    header p  { opacity: .8; font-size: .95rem; }
+    .badges { margin-top: .8rem; display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; }
+    .badge {
+      background: rgba(255,255,255,.15);
+      border-radius: 12px;
+      padding: .25rem .7rem;
+      font-size: .8rem;
+      font-weight: 600;
+    }
+
+    .controls {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      padding: .8rem 1rem;
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .controls label { font-size: .85rem; color: #555; white-space: nowrap; }
+    .controls input, .controls select {
+      padding: .4rem .6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: .85rem;
+      background: white;
+    }
+    .controls input { width: 220px; }
+    #count { margin-left: auto; font-size: .85rem; color: #666; white-space: nowrap; }
+
+    .table-wrap { overflow-x: auto; padding: 0 1rem 2rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: .8rem; font-size: .85rem; }
+    thead th {
+      background: #1a1a2e;
+      color: white;
+      text-align: left;
+      padding: .6rem .8rem;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    thead th:hover { background: #2d2d4e; }
+    thead th .arrow { opacity: .4; margin-left: .3rem; font-size: .7rem; }
+    thead th.sorted-asc .arrow::after { content: "▲"; opacity: 1; }
+    thead th.sorted-desc .arrow::after { content: "▼"; opacity: 1; }
+    thead th:not(.sorted-asc):not(.sorted-desc) .arrow::after { content: "⇅"; }
+
+    tbody tr:nth-child(even) { background: #f9f9f9; }
+    tbody tr:hover { background: #e8f0fe; }
+    td { padding: .5rem .8rem; border-bottom: 1px solid #eee; vertical-align: top; }
+
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .region-west    { color: #1565c0; font-weight: 600; }
+    .region-central { color: #c62828; font-weight: 600; }
+    .region-east    { color: #2e7d32; font-weight: 600; }
+
+    .conf-tag {
+      display: inline-block;
+      background: #e8eaf6;
+      color: #3949ab;
+      border-radius: 10px;
+      padding: .1rem .5rem;
+      font-size: .78rem;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .8rem;
+      color: #888;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ECNL Boys Club Database</h1>
+  <p>All 154 member clubs — 2025-26 season — free &amp; open data</p>
+  <div class="badges">
+    <span class="badge">154 clubs</span>
+    <span class="badge">15 conferences</span>
+    <span class="badge">CC0 Public Domain</span>
+    <span class="badge">Updated June 2026</span>
+  </div>
+</header>
+
+<div class="controls">
+  <label>Search:
+    <input id="search" type="text" placeholder="Club name, state, conference…">
+  </label>
+  <label>Region:
+    <select id="filterRegion">
+      <option value="">All regions</option>
+      <option value="West">West (43)</option>
+      <option value="Central">Central (43)</option>
+      <option value="East">East (68)</option>
+    </select>
+  </label>
+  <label>Conference:
+    <select id="filterConf">
+      <option value="">All conferences</option>
+    </select>
+  </label>
+  <span id="count"></span>
+</div>
+
+<div class="table-wrap">
+  <table id="clubTable">
+    <thead>
+      <tr>
+        <th data-col="club_name">Club <span class="arrow"></span></th>
+        <th data-col="state">State <span class="arrow"></span></th>
+        <th data-col="region">Region <span class="arrow"></span></th>
+        <th data-col="conferences">Conference <span class="arrow"></span></th>
+        <th data-col="age_groups">Age Groups <span class="arrow"></span></th>
+        <th data-col="website">Website <span class="arrow"></span></th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<footer>
+  Data scraped from ECNL standings API (api.athleteone.com) · Websites verified June 2026 ·
+  <a href="ecnl_boys_clubs.csv">Download CSV</a> ·
+  <a href="https://github.com/ericdoesit/ecnl-boys-clubs" target="_blank">GitHub</a> ·
+  CC0 Public Domain
+</footer>
+
+<script>
+let allClubs = [];
+let sortCol = "club_name";
+let sortDir = 1;
+
+async function loadData() {
+  const res  = await fetch("ecnl_boys_clubs.csv");
+  const text = await res.text();
+  const lines = text.trim().split("\n");
+  const headers = lines[0].split(",");
+  allClubs = lines.slice(1).map(line => {
+    // CSV parse (handles commas in quoted fields)
+    const vals = line.match(/(".*?"|[^,]+|(?<=,)(?=,)|^(?=,)|(?<=,)$)/g) || [];
+    const obj = {};
+    headers.forEach((h, i) => obj[h] = (vals[i] || "").replace(/^"|"$/g, "").trim());
+    return obj;
+  });
+
+  // Populate conference filter
+  const confs = [...new Set(allClubs.map(c => c.conferences.split(" | ")[0]))].sort();
+  const sel = document.getElementById("filterConf");
+  confs.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c;
+    opt.textContent = c;
+    sel.appendChild(opt);
+  });
+
+  render();
+}
+
+function getFiltered() {
+  const q    = document.getElementById("search").value.toLowerCase();
+  const reg  = document.getElementById("filterRegion").value;
+  const conf = document.getElementById("filterConf").value;
+  return allClubs.filter(c => {
+    if (q && !`${c.club_name} ${c.state} ${c.conferences}`.toLowerCase().includes(q)) return false;
+    if (reg  && c.region !== reg) return false;
+    if (conf && !c.conferences.includes(conf)) return false;
+    return true;
+  });
+}
+
+function render() {
+  const rows = getFiltered().sort((a, b) => {
+    const av = (a[sortCol] || "").toLowerCase();
+    const bv = (b[sortCol] || "").toLowerCase();
+    return av < bv ? -sortDir : av > bv ? sortDir : 0;
+  });
+
+  document.getElementById("count").textContent = `${rows.length} clubs`;
+
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = rows.map(c => {
+    const regClass = c.region === "West" ? "region-west" : c.region === "Central" ? "region-central" : "region-east";
+    const confs = c.conferences.split(" | ").map(cf =>
+      `<span class="conf-tag">${cf.replace("Northern Cal","N.Cal").replace("North Atlantic","N.Atl").replace("Mid-Atlantic","M.Atl")}</span>`
+    ).join(" ");
+    const site = c.website ? `<a href="${c.website}" target="_blank" rel="noopener">${c.website.replace(/https?:\/\/(www\.)?/,'')}</a>` : "—";
+    return `<tr>
+      <td><strong>${c.club_name}</strong></td>
+      <td>${c.state}</td>
+      <td><span class="${regClass}">${c.region}</span></td>
+      <td>${confs}</td>
+      <td style="font-size:.78rem;color:#555">${c.age_groups.replace(/B20/g,'').replace(/ \| /g,' · ')}</td>
+      <td>${site}</td>
+    </tr>`;
+  }).join("");
+}
+
+// Sort
+document.querySelectorAll("thead th[data-col]").forEach(th => {
+  th.addEventListener("click", () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortDir *= -1;
+    else { sortCol = col; sortDir = 1; }
+    document.querySelectorAll("thead th").forEach(t => t.classList.remove("sorted-asc","sorted-desc"));
+    th.classList.add(sortDir === 1 ? "sorted-asc" : "sorted-desc");
+    render();
+  });
+});
+
+// Filter inputs
+["search","filterRegion","filterConf"].forEach(id =>
+  document.getElementById(id).addEventListener("input", render)
+);
+
+loadData();
+</script>
+</body>
+</html>
