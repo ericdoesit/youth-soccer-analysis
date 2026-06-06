@@ -132,6 +132,28 @@ From `programs.csv` and scholarship analysis:
 
 ---
 
+## Supplemental Training Costs (SoCal, 2026)
+
+Beyond club fees, most competitive families layer in additional training. These aren't year-round — typically 12–16 sessions spread across the year (pre-season prep, skill gaps, tryout prep):
+
+| Type | Cost/Session | Typical Frequency | Annual Estimate |
+|------|-------------|-------------------|-----------------|
+| Drop-in futsal / group clinic | $25–35 | 12–16x/year | $300–560 |
+| Private coaching | $75–100 | 12–16x/year | $900–1,600 |
+
+Even at that limited rate, add-on training costs **$1,200–$2,160/year** on top of club fees.
+
+**Real mid-tier family annual total (before travel + tournaments):**
+```
+Club fees:           $6,500
+Privates (14x):      $1,260
+Drop-in futsal (14x):  $420
+________________________________
+Subtotal:            $8,180
+```
+
+---
+
 ## The Math That Matters
 
 ### The 67x Markup Problem
