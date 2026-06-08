@@ -3,798 +3,724 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>US Youth Soccer Survey</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Survey — Fool's Gold: Youth Soccer</title>
+  <link rel="stylesheet" href="report/site.css">
   <style>
-    * {
+    /* ── Survey-specific styles ─────────────────────────────── */
+    .survey-container {
+      max-width: 720px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    .form-preamble {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      padding: 1.25rem 1.75rem;
+    }
+
+    .form-preamble p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.7;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .header {
-      text-align: center;
-      color: white;
-      margin-bottom: 40px;
-      padding-top: 20px;
-    }
-
-    .header h1 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    .header p {
-      font-size: 1.1em;
-      opacity: 0.95;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
-      white-space: nowrap;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
     }
 
     .form-info {
-      background: #f8f9fa;
-      padding: 30px;
-      border-bottom: 1px solid #e9ecef;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      padding: 1.25rem 1.75rem;
     }
 
     .form-info h2 {
-      color: #2c3e50;
-      font-size: 1.3em;
-      margin-bottom: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
     }
 
     .form-info ul {
       list-style: none;
-      color: #555;
-      line-height: 1.8;
-      font-size: 0.95em;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.9;
     }
 
     .form-info li {
-      padding: 6px 0;
-      padding-left: 24px;
+      padding: 2px 0 2px 1.5rem;
       position: relative;
     }
 
-    .form-info li:before {
+    .form-info li::before {
       content: "✓";
       position: absolute;
       left: 0;
-      color: #667eea;
+      color: var(--gold);
       font-weight: bold;
+    }
+
+    .progress-wrapper {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      padding: 0.9rem 1.75rem;
+    }
+
+    .progress-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      letter-spacing: 0.04em;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 3px;
+      background: var(--border);
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--gold);
+      transition: width 0.3s ease;
+      width: 0%;
     }
 
     #typeform-container {
       min-height: 800px;
     }
 
-    .progress-wrapper {
-      background: white;
-      padding: 20px 30px;
-      border-bottom: 1px solid #e9ecef;
+    /* ── Results section ─────────────────────────────────────── */
+    .results-section {
+      max-width: 900px;
+      margin: 2rem auto 0;
+      padding: 0 1.5rem 4rem;
     }
 
-    .progress-label {
-      font-size: 0.85em;
-      color: #666;
-      margin-bottom: 8px;
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .progress-bar-container {
-      width: 100%;
-      height: 8px;
-      background: #e9ecef;
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .progress-bar-fill {
-      height: 100%;
-      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-      border-radius: 4px;
-      transition: width 0.3s ease;
-      width: 0%;
-    }
-
-    .sizzle {
-      border-bottom: 1px solid #e9ecef;
-    }
-
-    .sizzle-section {
-      padding: 28px 30px;
-      border-bottom: 1px solid #f0f0f0;
-    }
-
-    .sizzle-section:last-child {
-      border-bottom: none;
-    }
-
-    .sizzle-section-label {
-      display: inline-block;
-      font-size: 0.72em;
+    .results-section h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.45rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      color: var(--text-strong);
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .response-count {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      background: var(--surface-2);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 2px;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 10px;
     }
 
-    .sizzle-section-label.think {
-      background: #dce8ff;
-      color: #2d4fa8;
+    .results-subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
     }
 
-    .sizzle-section-label.know {
-      background: #e8e4f7;
-      color: #4a3b8c;
+    .results-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1px;
+      margin-bottom: 1.5rem;
+      background: var(--border);
+      border: 1px solid var(--border);
     }
 
-    .sizzle-section-label.dontknow {
-      background: #ede9f8;
-      color: #5b42b0;
+    .stat-card {
+      background: var(--surface-2);
+      padding: 1.1rem 1rem;
+      text-align: center;
     }
 
-    .sizzle-section-intro {
-      font-size: 0.88em;
-      color: #888;
-      margin-bottom: 12px;
-      font-style: italic;
-    }
-
-    .sizzle-bullets {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .sizzle-bullets li {
-      padding: 7px 0 7px 22px;
-      position: relative;
-      color: #444;
-      font-size: 0.93em;
-      line-height: 1.5;
-      border-bottom: 1px solid #f8f8f8;
-    }
-
-    .sizzle-bullets li:last-child {
-      border-bottom: none;
-    }
-
-    .sizzle-bullets li.sizzle-cta {
-      font-style: italic;
-      color: #667eea;
-      font-weight: 500;
-      margin-top: 4px;
-    }
-
-    .sizzle-bullets li:before {
-      content: "·";
-      position: absolute;
-      left: 0;
-      color: #bbb;
-      font-size: 1.4em;
+    .stat-card .sn {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--gold);
       line-height: 1;
     }
 
-    .sizzle-bullets li.sizzle-cta:before {
-      color: #667eea;
+    .stat-card .sl {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
 
-    .sizzle-quote {
-      margin: 16px 0 4px 0;
-      padding: 14px 20px;
-      border-left: 3px solid #667eea;
-      background: #f8f7ff;
-      border-radius: 0 8px 8px 0;
-      font-style: italic;
-      color: #2c3e50;
-      font-size: 0.95em;
-      line-height: 1.5;
-    }
+    .results-filters { margin-bottom: 1.1rem; }
 
-    .sizzle-quote cite {
-      display: block;
-      margin-top: 8px;
-      font-size: 0.82em;
-      font-style: normal;
-      color: #888;
-    }
-
-    .sizzle-quote cite a {
-      color: #667eea;
-      text-decoration: none;
-    }
-
-    .sizzle-quote cite a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .sizzle-section {
-        padding: 22px 20px;
-      }
-    }
-
-    .footer {
-      background: #f8f9fa;
-      padding: 20px;
-      text-align: center;
-      color: #999;
-      font-size: 0.85em;
-      border-top: 1px solid #e9ecef;
-    }
-
-    @media (max-width: 600px) {
-      .header h1 {
-        font-size: 1.8em;
-      }
-
-      .form-info {
-        padding: 20px;
-      }
-
-      .progress-wrapper {
-        padding: 15px 20px;
-      }
-
-      #typeform-container {
-        min-height: 600px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <h1>The Real Math Behind Club Soccer</h1>
-    <p>The data is out there. It's just never been collected in one place. Help change that.</p>
-  </div>
-
-  <div class="container">
-
-    <div class="sizzle">
-
-      <div class="sizzle-section">
-        <p style="color:#444;font-size:0.95em;line-height:1.7;">There's no independent, publicly available data on what families spend on youth soccer — by region, level, or income. We're collecting it here.</p>
-      </div>
-
-    </div>
-
-    <div class="form-info">
-      <h2>About This Survey</h2>
-      <ul>
-        <li><strong>10 questions</strong>, takes 3 minutes</li>
-        <li><strong>Anonymous</strong>, no names or email required</li>
-        <li><strong>All levels welcome</strong>: rec, travel, elite, or academy</li>
-        <li><strong>Results published</strong> publicly when complete</li>
-      </ul>
-    </div>
-
-    <div class="progress-wrapper">
-      <div class="progress-label">
-        <span>Progress</span>
-        <span id="progress-text">0%</span>
-      </div>
-      <div class="progress-bar-container">
-        <div class="progress-bar-fill" id="progress-bar"></div>
-      </div>
-    </div>
-
-    <iframe id="typeform-embed"
-            src="https://form.typeform.com/to/f1FkXdTE?typeform-source=github"
-            width="100%"
-            height="800px"
-            frameborder="0"
-            allow="camera; microphone; autoplay; encrypted-media;"
-            style="border: none;"></iframe>
-
-    <div class="footer">
-      <p>Your data helps parents make informed decisions about youth soccer investments.</p>
-    </div>
-  </div>
-
-  <!-- Survey Results -->
-  <div class="results-section">
-    <h2>Results So Far <span class="response-count" id="response-count">8 responses</span></h2>
-    <p class="results-subtitle">Anonymous responses from club soccer families. Team names hidden — leagues shown where identifiable.</p>
-
-    <div class="results-stats" id="results-stats"></div>
-
-    <div class="results-filters">
-      <input type="text" id="search-input" class="search-bar" placeholder="Search by level, league, region, income..." />
-      <div class="filter-chips" id="filter-chips">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="Elite club">Elite</button>
-        <button class="chip" data-filter="Competitive travel">Competitive</button>
-        <button class="chip" data-filter="U-travel">Travel</button>
-      </div>
-    </div>
-
-    <div class="results-grid" id="results-grid"></div>
-  </div>
-
-  <style>
-    .results-section {
-      max-width: 900px;
-      margin: 48px auto 0;
-      padding: 0 20px 60px;
-      color: white;
-    }
-    .results-section h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: white;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .response-count {
-      font-size: 0.8rem;
-      font-weight: 600;
-      background: rgba(255,255,255,0.25);
-      color: white;
-      padding: 3px 10px;
-      border-radius: 20px;
-      letter-spacing: 0.04em;
-    }
-    .results-subtitle {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.75);
-      margin-bottom: 24px;
-    }
-    .results-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 12px;
-      margin-bottom: 24px;
-    }
-    .stat-card {
-      background: rgba(255,255,255,0.15);
-      border-radius: 10px;
-      padding: 14px 18px;
-      text-align: center;
-      backdrop-filter: blur(4px);
-    }
-    .stat-card .sn { font-size: 1.8rem; font-weight: 800; color: white; line-height: 1; }
-    .stat-card .sl { font-size: 0.72rem; color: rgba(255,255,255,0.7); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
-    .results-filters { margin-bottom: 20px; }
     .search-bar {
       width: 100%;
-      padding: 12px 18px;
-      border-radius: 8px;
-      border: none;
-      font-size: 0.95rem;
-      font-family: inherit;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      padding: 0.65rem 1rem;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      margin-bottom: 0.65rem;
       outline: none;
+      transition: border-color .15s;
     }
-    .search-bar:focus { box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 0 0 3px rgba(102,126,234,0.5); }
-    .filter-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+
+    .search-bar::placeholder { color: var(--muted); }
+    .search-bar:focus { border-color: var(--gold); }
+
+    .filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+
     .chip {
-      padding: 6px 14px;
-      border-radius: 20px;
-      border: 2px solid rgba(255,255,255,0.4);
+      padding: 4px 12px;
+      border: 1px solid var(--border);
       background: transparent;
-      color: white;
-      font-size: 0.82rem;
+      color: var(--muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
       font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       cursor: pointer;
-      font-family: inherit;
-      transition: background 0.15s, border-color 0.15s;
+      border-radius: 2px;
+      transition: border-color .15s, color .15s, background .15s;
     }
-    .chip:hover { background: rgba(255,255,255,0.15); }
-    .chip.active { background: white; color: #764ba2; border-color: white; }
+
+    .chip:hover { border-color: var(--gold); color: var(--text); }
+    .chip.active { background: var(--gold); border-color: var(--gold); color: #0d0d0d; }
+
     .results-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 14px;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
     }
+
     .result-card {
-      background: white;
-      border-radius: 10px;
-      padding: 18px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+      background: var(--surface-2);
+      padding: 1.25rem;
     }
+
     .result-card-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem;
     }
+
     .level-badge {
-      font-size: 0.7rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 3px 9px;
-      border-radius: 12px;
-    }
-    .level-elite    { background: #764ba2; color: white; }
-    .level-travel   { background: #2b6cb0; color: white; }
-    .level-comp     { background: #4a6fa5; color: white; }
-    .league-tag {
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: #667eea;
-      background: #f0eeff;
+      letter-spacing: 0.08em;
       padding: 2px 8px;
-      border-radius: 8px;
+      border-radius: 2px;
     }
+
+    .level-elite  { background: var(--ch-gold-fill); color: var(--ch-gold); border: 1px solid rgba(201,168,76,.5); }
+    .level-travel { background: var(--ch-dim);        color: var(--muted);   border: 1px solid var(--ch-dim-bd); }
+    .level-comp   { background: var(--ch-blue-fill);  color: var(--ch-blue); border: 1px solid rgba(90,145,217,.5); }
+
+    .league-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+
     .result-total {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #2c3e50;
-      margin-bottom: 2px;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-strong);
+      margin-bottom: 1px;
+      line-height: 1.1;
     }
-    .result-total-label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
-    .result-rows { border-top: 1px solid #f0f0f0; padding-top: 10px; }
+
+    .result-total-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.65rem;
+    }
+
+    .result-rows {
+      border-top: 1px solid var(--border);
+      padding-top: 0.5rem;
+    }
+
     .result-row {
       display: flex;
       justify-content: space-between;
-      font-size: 0.82rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
       padding: 3px 0;
-      color: #555;
     }
-    .result-row .rk { color: #999; }
-    .result-row .rv { font-weight: 600; color: #2c3e50; }
-    .no-results { text-align: center; color: rgba(255,255,255,0.6); padding: 40px; grid-column: 1/-1; font-size: 0.95rem; }
+
+    .result-row .rk { color: var(--muted); }
+    .result-row .rv { font-weight: 600; color: var(--text); }
+
+    .no-results {
+      text-align: center;
+      color: var(--muted);
+      padding: 2.5rem;
+      grid-column: 1/-1;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+    }
+
     @media (max-width: 600px) {
-      .results-section { padding: 0 14px 40px; }
-      .results-section h2 { font-size: 1.2rem; }
+      .survey-container, .results-section { padding: 0 1rem 2.5rem; }
     }
   </style>
+</head>
+<body>
 
-  <script>
-    const RESPONSES = [
-      {
-        id: 'r3du3tekuna5urp72ldsr3du3tegxbe9',
-        date: '2026-06-05',
-        club_level: 'Competitive travel',
-        league: 'Competitive Travel',
-        travel_scope: 'Regional',
-        zip: '95776',
-        income: '$200,000+',
-        club_fee: 1250,
-        private_coaching: 2000,
-        travel: 1500,
-        equipment: 500,
-        tournament: 500,
-        training_hrs: 3,
-        private_hrs: 1,
-        years: 4,
-        total: 5750,
-      },
-      {
-        id: 'nuravznaxrze1fa3messnuravz9d9r9q',
-        date: '2026-06-05',
-        club_level: 'U-travel',
-        league: 'Travel',
-        travel_scope: 'Regional',
-        zip: '30062',
-        income: '$200,000+',
-        club_fee: 2000,
-        private_coaching: 1000,
-        travel: 1000,
-        equipment: 350,
-        tournament: 500,
-        training_hrs: 5,
-        private_hrs: 0,
-        years: 1,
-        total: 4850,
-      },
-      {
-        id: '7u7xolajwvf3zo95vx1o7jd7u7xovexe',
-        date: '2026-06-05',
-        club_level: 'U-travel',
-        league: 'Travel',
-        travel_scope: 'Local',
-        zip: '04021',
-        income: '$120,000 – $200,000',
-        club_fee: 500,
-        private_coaching: 300,
-        travel: 400,
-        equipment: 500,
-        tournament: 0,
-        training_hrs: 4,
-        private_hrs: 0,
-        years: 4,
-        total: 1700,
-      },
-      {
-        id: 'ecobyt7arroje4qvf4t1eecobyt7axeq',
-        date: '2026-06-05',
-        club_level: 'Elite club',
-        league: 'ECNL',
-        travel_scope: 'Regional (2-6 hrs)',
-        zip: '90806',
-        income: '$120,000 – $200,000',
-        club_fee: 4000,
-        private_coaching: 2000,
-        travel: null,
-        equipment: null,
-        tournament: null,
-        training_hrs: 6,
-        private_hrs: 2,
-        years: 5,
-        total: 6000,
-      },
-      {
-        id: '58ya7l55c0ril8cc58ya246n621rz55f',
-        date: '2026-06-05',
-        club_level: 'Elite club',
-        league: 'MLS Next',
-        travel_scope: 'Regional (2-6 hrs)',
-        zip: '92129',
-        income: '$200,000+',
-        club_fee: 3500,
-        private_coaching: 8000,
-        travel: null,
-        equipment: null,
-        tournament: null,
-        training_hrs: 5,
-        private_hrs: 6,
-        years: 5,
-        total: 11500,
-      },
-      {
-        id: 'idw8mo7h7z8qhm31idw8mo1prrqhuz7j',
-        date: '2026-06-05',
-        club_level: 'Competitive travel',
-        league: 'Competitive Travel',
-        travel_scope: 'Regional (2-6 hrs)',
-        zip: '91741',
-        income: '$200,000+',
-        club_fee: 2100,
-        private_coaching: 0,
-        travel: null,
-        equipment: null,
-        tournament: null,
-        training_hrs: 3,
-        private_hrs: 0,
-        years: 3,
-        total: 2100,
-      },
-      {
-        id: 'r54j6ih1u6uy0ew3r546znka7eplr4g7',
-        date: '2026-06-05',
-        club_level: 'Elite club',
-        league: 'ECNL',
-        travel_scope: 'Regional (2-6 hrs)',
-        zip: '90274',
-        income: '$200,000+',
-        club_fee: 5000,
-        private_coaching: 6000,
-        travel: null,
-        equipment: null,
-        tournament: null,
-        training_hrs: 3,
-        private_hrs: 4,
-        years: 2,
-        total: 11000,
-      },
-      {
-        id: 'ccd60cuc6hlf94jpxccd6a58n8tzd389',
-        date: '2026-06-06',
-        club_level: 'Elite club',
-        league: 'ECNL',
-        travel_scope: 'National',
-        zip: '90000',
-        income: '$120,000 – $200,000',
-        club_fee: 4200,
-        private_coaching: 2000,
-        travel: null,
-        equipment: null,
-        tournament: null,
-        training_hrs: 5,
-        private_hrs: 2,
-        years: 9,
-        total: 6200,
-      },
-    ];
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Fool's <span>Gold</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"
+            onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="report/costs.html">Costs</a>
+      <a href="report/fools_gold.html">Fools Gold</a>
+      <a href="report/mls.html">MLS</a>
+      <a href="report/equity.html">Equity</a>
+      <a href="report/methodology.html" class="nav-appendix">Methods</a>
+      <a href="report/data.html" class="nav-appendix">Data</a>
+      <a href="survey.html" class="nav-survey active">Survey</a>
+    </div>
+  </div>
+</nav>
 
-    function fmt(n) {
-      if (n == null) return '—';
-      return '$' + n.toLocaleString();
+<div class="page-header">
+  <h1>The Real Math Behind Club Soccer</h1>
+  <p>No independent, publicly available data exists on what families spend. Help change that.</p>
+</div>
+
+<div class="survey-container">
+
+  <div class="form-preamble">
+    <p>We're collecting cost data by region, level, and income — the kind of information every family needs before committing to elite club soccer.</p>
+  </div>
+
+  <div class="form-info">
+    <h2>About This Survey</h2>
+    <ul>
+      <li><strong>10 questions</strong>, takes 3 minutes</li>
+      <li><strong>Anonymous</strong>, no names or email required</li>
+      <li><strong>All levels welcome</strong>: rec, travel, elite, or academy</li>
+      <li><strong>Results published</strong> publicly when complete</li>
+    </ul>
+  </div>
+
+  <div class="progress-wrapper">
+    <div class="progress-label">
+      <span>Progress</span>
+      <span id="progress-text">0%</span>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+    </div>
+  </div>
+
+  <iframe id="typeform-embed"
+          src="https://form.typeform.com/to/f1FkXdTE?typeform-source=github"
+          width="100%"
+          height="800px"
+          frameborder="0"
+          allow="camera; microphone; autoplay; encrypted-media;"
+          style="border:1px solid var(--border);border-top:none;display:block;"></iframe>
+
+</div>
+
+<!-- Survey Results -->
+<div class="results-section">
+  <h2>Results So Far <span class="response-count" id="response-count">10 responses</span></h2>
+  <p class="results-subtitle">Anonymous responses from club soccer families. Team names hidden — leagues shown where identifiable.</p>
+
+  <div class="results-stats" id="results-stats"></div>
+
+  <div class="results-filters">
+    <input type="text" id="search-input" class="search-bar" placeholder="Search by level, league, region, income…" />
+    <div class="filter-chips" id="filter-chips">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="Academy">Academy</button>
+      <button class="chip" data-filter="Elite club">Elite</button>
+      <button class="chip" data-filter="Competitive travel">Competitive</button>
+      <button class="chip" data-filter="U-travel">Travel</button>
+    </div>
+  </div>
+
+  <div class="results-grid" id="results-grid"></div>
+</div>
+
+<footer>
+  Fool's Gold: Youth Soccer Research &nbsp;·&nbsp;
+  <a href="report/methodology.html">Methodology</a> &bull;
+  <a href="report/data.html">Data</a>
+</footer>
+
+<script>
+  const RESPONSES = [
+    {
+      id: 'lb9d35lv1kd0plb9b452ahg4mb09at6v',
+      date: '2026-06-08',
+      club_level: 'Academy',
+      league: 'MLS NEXT',
+      travel_scope: 'National',
+      zip: '92780',
+      income: '$120,000 – $200,000',
+      club_fee: 3500,
+      private_coaching: 0,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 6,
+      private_hrs: 0,
+      years: 10,
+      total: 3500,
+    },
+    {
+      id: 'u08r0msrrvtku08sxwy1frgbw20jd09o',
+      date: '2026-06-08',
+      club_level: 'U-travel',
+      league: 'Travel',
+      travel_scope: 'Local',
+      zip: '92780',
+      income: '$120,000 – $200,000',
+      club_fee: 1500,
+      private_coaching: 800,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 3,
+      private_hrs: 1,
+      years: 3,
+      total: 2300,
+    },
+    {
+      id: 'r3du3tekuna5urp72ldsr3du3tegxbe9',
+      date: '2026-06-05',
+      club_level: 'Competitive travel',
+      league: 'Competitive Travel',
+      travel_scope: 'Regional',
+      zip: '95776',
+      income: '$200,000+',
+      club_fee: 1250,
+      private_coaching: 2000,
+      travel: 1500,
+      equipment: 500,
+      tournament: 500,
+      training_hrs: 3,
+      private_hrs: 1,
+      years: 4,
+      total: 5750,
+    },
+    {
+      id: 'nuravznaxrze1fa3messnuravz9d9r9q',
+      date: '2026-06-05',
+      club_level: 'U-travel',
+      league: 'Travel',
+      travel_scope: 'Regional',
+      zip: '30062',
+      income: '$200,000+',
+      club_fee: 2000,
+      private_coaching: 1000,
+      travel: 1000,
+      equipment: 350,
+      tournament: 500,
+      training_hrs: 5,
+      private_hrs: 0,
+      years: 1,
+      total: 4850,
+    },
+    {
+      id: '7u7xolajwvf3zo95vx1o7jd7u7xovexe',
+      date: '2026-06-05',
+      club_level: 'U-travel',
+      league: 'Travel',
+      travel_scope: 'Local',
+      zip: '04021',
+      income: '$120,000 – $200,000',
+      club_fee: 500,
+      private_coaching: 300,
+      travel: 400,
+      equipment: 500,
+      tournament: 0,
+      training_hrs: 4,
+      private_hrs: 0,
+      years: 4,
+      total: 1700,
+    },
+    {
+      id: 'ecobyt7arroje4qvf4t1eecobyt7axeq',
+      date: '2026-06-05',
+      club_level: 'Elite club',
+      league: 'ECNL',
+      travel_scope: 'Regional (2-6 hrs)',
+      zip: '90806',
+      income: '$120,000 – $200,000',
+      club_fee: 4000,
+      private_coaching: 2000,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 6,
+      private_hrs: 2,
+      years: 5,
+      total: 6000,
+    },
+    {
+      id: '58ya7l55c0ril8cc58ya246n621rz55f',
+      date: '2026-06-05',
+      club_level: 'Elite club',
+      league: 'MLS Next',
+      travel_scope: 'Regional (2-6 hrs)',
+      zip: '92129',
+      income: '$200,000+',
+      club_fee: 3500,
+      private_coaching: 8000,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 5,
+      private_hrs: 6,
+      years: 5,
+      total: 11500,
+    },
+    {
+      id: 'idw8mo7h7z8qhm31idw8mo1prrqhuz7j',
+      date: '2026-06-05',
+      club_level: 'Competitive travel',
+      league: 'Competitive Travel',
+      travel_scope: 'Regional (2-6 hrs)',
+      zip: '91741',
+      income: '$200,000+',
+      club_fee: 2100,
+      private_coaching: 0,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 3,
+      private_hrs: 0,
+      years: 3,
+      total: 2100,
+    },
+    {
+      id: 'r54j6ih1u6uy0ew3r546znka7eplr4g7',
+      date: '2026-06-05',
+      club_level: 'Elite club',
+      league: 'ECNL',
+      travel_scope: 'Regional (2-6 hrs)',
+      zip: '90274',
+      income: '$200,000+',
+      club_fee: 5000,
+      private_coaching: 6000,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 3,
+      private_hrs: 4,
+      years: 2,
+      total: 11000,
+    },
+    {
+      id: 'ccd60cuc6hlf94jpxccd6a58n8tzd389',
+      date: '2026-06-06',
+      club_level: 'Elite club',
+      league: 'ECNL',
+      travel_scope: 'National',
+      zip: '90000',
+      income: '$120,000 – $200,000',
+      club_fee: 4200,
+      private_coaching: 2000,
+      travel: null,
+      equipment: null,
+      tournament: null,
+      training_hrs: 5,
+      private_hrs: 2,
+      years: 9,
+      total: 6200,
+    },
+  ];
+
+  function fmt(n) {
+    if (n == null) return '—';
+    return '$' + n.toLocaleString();
+  }
+
+  function levelClass(level) {
+    if (level === 'Elite club' || level === 'Academy') return 'level-elite';
+    if (level === 'Competitive travel') return 'level-comp';
+    return 'level-travel';
+  }
+
+  function renderStats(data) {
+    const totals = data.map(r => r.total).filter(Boolean);
+    const avg = Math.round(totals.reduce((a, b) => a + b, 0) / totals.length);
+    const max = Math.max(...totals);
+    const min = Math.min(...totals);
+    const avgPrivate = Math.round(data.map(r => r.private_coaching || 0).reduce((a, b) => a + b, 0) / data.length);
+
+    document.getElementById('results-stats').innerHTML = `
+      <div class="stat-card"><div class="sn">${data.length}</div><div class="sl">Responses</div></div>
+      <div class="stat-card"><div class="sn">${fmt(avg)}</div><div class="sl">Avg annual spend</div></div>
+      <div class="stat-card"><div class="sn">${fmt(max)}</div><div class="sl">Highest reported</div></div>
+      <div class="stat-card"><div class="sn">${fmt(min)}</div><div class="sl">Lowest reported</div></div>
+      <div class="stat-card"><div class="sn">${fmt(avgPrivate)}</div><div class="sl">Avg private coaching</div></div>
+    `;
+    document.getElementById('response-count').textContent = data.length + ' response' + (data.length !== 1 ? 's' : '');
+  }
+
+  function renderCards(data) {
+    const grid = document.getElementById('results-grid');
+    if (!data.length) {
+      grid.innerHTML = '<div class="no-results">No responses match your filter.</div>';
+      return;
     }
-
-    function levelClass(level) {
-      if (level === 'Elite club') return 'level-elite';
-      if (level === 'Competitive travel') return 'level-comp';
-      return 'level-travel';
-    }
-
-    function renderStats(data) {
-      const totals = data.map(r => r.total).filter(Boolean);
-      const avg = Math.round(totals.reduce((a, b) => a + b, 0) / totals.length);
-      const max = Math.max(...totals);
-      const min = Math.min(...totals);
-      const avgPrivate = Math.round(data.map(r => r.private_coaching || 0).reduce((a, b) => a + b, 0) / data.length);
-
-      document.getElementById('results-stats').innerHTML = `
-        <div class="stat-card"><div class="sn">${data.length}</div><div class="sl">Responses</div></div>
-        <div class="stat-card"><div class="sn">${fmt(avg)}</div><div class="sl">Avg annual spend</div></div>
-        <div class="stat-card"><div class="sn">${fmt(max)}</div><div class="sl">Highest reported</div></div>
-        <div class="stat-card"><div class="sn">${fmt(min)}</div><div class="sl">Lowest reported</div></div>
-        <div class="stat-card"><div class="sn">${fmt(avgPrivate)}</div><div class="sl">Avg private coaching</div></div>
-      `;
-      document.getElementById('response-count').textContent = data.length + ' response' + (data.length !== 1 ? 's' : '');
-    }
-
-    function renderCards(data) {
-      const grid = document.getElementById('results-grid');
-      if (!data.length) {
-        grid.innerHTML = '<div class="no-results">No responses match your filter.</div>';
-        return;
-      }
-      grid.innerHTML = data.map(r => `
-        <div class="result-card">
-          <div class="result-card-header">
-            <span class="level-badge ${levelClass(r.club_level)}">${r.club_level}</span>
-            <span class="league-tag">${r.league}</span>
-          </div>
-          <div class="result-total">${fmt(r.total)}</div>
-          <div class="result-total-label">Est. annual spend</div>
-          <div class="result-rows">
-            <div class="result-row"><span class="rk">Club fees</span><span class="rv">${fmt(r.club_fee)}</span></div>
-            <div class="result-row"><span class="rk">Private coaching</span><span class="rv">${fmt(r.private_coaching)}</span></div>
-            ${r.travel != null ? `<div class="result-row"><span class="rk">Travel</span><span class="rv">${fmt(r.travel)}</span></div>` : ''}
-            ${r.equipment != null ? `<div class="result-row"><span class="rk">Equipment</span><span class="rv">${fmt(r.equipment)}</span></div>` : ''}
-            ${r.tournament != null ? `<div class="result-row"><span class="rk">Tournaments</span><span class="rv">${fmt(r.tournament)}</span></div>` : ''}
-            <div class="result-row"><span class="rk">Training hrs/wk</span><span class="rv">${r.training_hrs}h + ${r.private_hrs}h private</span></div>
-            <div class="result-row"><span class="rk">Years in club</span><span class="rv">${r.years} yr${r.years !== 1 ? 's' : ''}</span></div>
-            <div class="result-row"><span class="rk">Travel scope</span><span class="rv">${r.travel_scope}</span></div>
-            <div class="result-row"><span class="rk">Income</span><span class="rv">${r.income}</span></div>
-          </div>
+    grid.innerHTML = data.map(r => `
+      <div class="result-card">
+        <div class="result-card-header">
+          <span class="level-badge ${levelClass(r.club_level)}">${r.club_level}</span>
+          <span class="league-tag">${r.league}</span>
         </div>
-      `).join('');
+        <div class="result-total">${fmt(r.total)}</div>
+        <div class="result-total-label">Est. annual spend</div>
+        <div class="result-rows">
+          <div class="result-row"><span class="rk">Club fees</span><span class="rv">${fmt(r.club_fee)}</span></div>
+          <div class="result-row"><span class="rk">Private coaching</span><span class="rv">${fmt(r.private_coaching)}</span></div>
+          ${r.travel != null ? `<div class="result-row"><span class="rk">Travel</span><span class="rv">${fmt(r.travel)}</span></div>` : ''}
+          ${r.equipment != null ? `<div class="result-row"><span class="rk">Equipment</span><span class="rv">${fmt(r.equipment)}</span></div>` : ''}
+          ${r.tournament != null ? `<div class="result-row"><span class="rk">Tournaments</span><span class="rv">${fmt(r.tournament)}</span></div>` : ''}
+          <div class="result-row"><span class="rk">Training hrs/wk</span><span class="rv">${r.training_hrs}h + ${r.private_hrs}h private</span></div>
+          <div class="result-row"><span class="rk">Years in club</span><span class="rv">${r.years} yr${r.years !== 1 ? 's' : ''}</span></div>
+          <div class="result-row"><span class="rk">Travel scope</span><span class="rv">${r.travel_scope}</span></div>
+          <div class="result-row"><span class="rk">Income</span><span class="rv">${r.income}</span></div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  let activeFilter = 'all';
+  let searchQuery = '';
+
+  function applyFilters() {
+    let data = RESPONSES;
+    if (activeFilter !== 'all') data = data.filter(r => r.club_level === activeFilter);
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      data = data.filter(r =>
+        [r.club_level, r.league, r.travel_scope, r.zip, r.income].some(v => v && v.toLowerCase().includes(q))
+      );
     }
+    renderStats(data);
+    renderCards(data);
+  }
 
-    let activeFilter = 'all';
-    let searchQuery = '';
-
-    function applyFilters() {
-      let data = RESPONSES;
-      if (activeFilter !== 'all') data = data.filter(r => r.club_level === activeFilter);
-      if (searchQuery) {
-        const q = searchQuery.toLowerCase();
-        data = data.filter(r =>
-          [r.club_level, r.league, r.travel_scope, r.zip, r.income].some(v => v && v.toLowerCase().includes(q))
-        );
-      }
-      renderStats(data);
-      renderCards(data);
-    }
-
-    document.querySelectorAll('.chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        activeFilter = chip.dataset.filter;
-        applyFilters();
-      });
-    });
-
-    document.getElementById('search-input').addEventListener('input', e => {
-      searchQuery = e.target.value;
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeFilter = chip.dataset.filter;
       applyFilters();
     });
+  });
 
+  document.getElementById('search-input').addEventListener('input', e => {
+    searchQuery = e.target.value;
     applyFilters();
-  </script>
+  });
 
-  <script>
-    // 15 questions = 6.67% per question
-    const TOTAL_QUESTIONS = 15;
-    const PERCENT_PER_QUESTION = 100 / TOTAL_QUESTIONS;
-    let currentProgress = 0;
+  applyFilters();
+</script>
 
-    function updateProgress(targetPercentage) {
-      const progressBar = document.getElementById("progress-bar");
-      const progressText = document.getElementById("progress-text");
+<script>
+  const TOTAL_QUESTIONS = 15;
+  const PERCENT_PER_QUESTION = 100 / TOTAL_QUESTIONS;
+  let currentProgress = 0;
 
-      // Animate from current progress to target
-      const start = parseFloat(progressBar.style.width) || 0;
-      const duration = 600; // ms
-      const startTime = Date.now();
+  function updateProgress(targetPercentage) {
+    const progressBar = document.getElementById("progress-bar");
+    const progressText = document.getElementById("progress-text");
+    const start = parseFloat(progressBar.style.width) || 0;
+    const duration = 600;
+    const startTime = Date.now();
 
-      function animate() {
-        const elapsed = Date.now() - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const current = start + (targetPercentage - start) * progress;
-
-        progressBar.style.width = current + "%";
-        progressText.textContent = Math.round(current) + "%";
-        currentProgress = current;
-
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      }
-
-      animate();
+    function animate() {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const current = start + (targetPercentage - start) * progress;
+      progressBar.style.width = current + "%";
+      progressText.textContent = Math.round(current) + "%";
+      currentProgress = current;
+      if (progress < 1) requestAnimationFrame(animate);
     }
 
-    // Track question progression
-    const iframe = document.getElementById("typeform-embed");
-    let lastEstimatedQuestion = 0;
+    animate();
+  }
 
-    function detectQuestionProgress() {
-      // Get iframe scroll position and height
-      try {
-        // We can't directly access iframe content, so we estimate based on:
-        // 1. How much the user has scrolled on the page
-        // 2. Form visibility in viewport
+  const iframe = document.getElementById("typeform-embed");
+  let lastEstimatedQuestion = 0;
 
-        const iframeRect = iframe.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
+  function detectQuestionProgress() {
+    try {
+      const scrollTop = window.scrollY;
+      const iframeTop = iframe.offsetTop;
+      const scrollWithinForm = Math.max(0, scrollTop - iframeTop);
+      const estimatedQuestion = Math.min(TOTAL_QUESTIONS, Math.floor(scrollWithinForm / 70) + 1);
 
-        // Calculate what "question" they're likely on based on scroll depth
-        const scrollTop = window.scrollY;
-        const iframeTop = iframe.offsetTop;
-        const scrollWithinForm = Math.max(0, scrollTop - iframeTop);
-
-        // Estimate question based on scroll (rough calculation)
-        // Each "question section" is approximately 70px tall (conservative estimate)
-        const estimatedQuestion = Math.min(
-          TOTAL_QUESTIONS,
-          Math.floor(scrollWithinForm / 70) + 1
-        );
-
-        // Update progress if we've moved to a new question
-        if (estimatedQuestion > lastEstimatedQuestion) {
-          lastEstimatedQuestion = estimatedQuestion;
-          const targetProgress = Math.min(
-            estimatedQuestion * PERCENT_PER_QUESTION,
-            95 // Cap at 95% until submitted
-          );
-          updateProgress(targetProgress);
-        }
-      } catch (e) {
-        // Fallback: silent fail
+      if (estimatedQuestion > lastEstimatedQuestion) {
+        lastEstimatedQuestion = estimatedQuestion;
+        const targetProgress = Math.min(estimatedQuestion * PERCENT_PER_QUESTION, 95);
+        updateProgress(targetProgress);
       }
-    }
+    } catch (e) {}
+  }
 
-    // Listen for scroll events
-    window.addEventListener("scroll", detectQuestionProgress, { passive: true });
+  window.addEventListener("scroll", detectQuestionProgress, { passive: true });
+  document.addEventListener("click", detectQuestionProgress);
+  document.addEventListener("input", detectQuestionProgress);
+  document.addEventListener("change", detectQuestionProgress);
 
-    // Also detect when user interacts with form
-    document.addEventListener("click", detectQuestionProgress);
-    document.addEventListener("input", detectQuestionProgress);
-    document.addEventListener("change", detectQuestionProgress);
+  setTimeout(() => {
+    const iframeRect = iframe.getBoundingClientRect();
+    if (iframeRect.top < window.innerHeight) updateProgress(PERCENT_PER_QUESTION);
+  }, 500);
+</script>
 
-    // Start at 0% but increment to first question when form becomes visible
-    setTimeout(() => {
-      const iframeRect = iframe.getBoundingClientRect();
-      if (iframeRect.top < window.innerHeight) {
-        updateProgress(PERCENT_PER_QUESTION);
-      }
-    }, 500);
-  </script>
 </body>
 </html>

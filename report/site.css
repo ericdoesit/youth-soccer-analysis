@@ -86,6 +86,19 @@ body {
 }
 .nav-links a:hover { color: var(--text-strong); border-bottom-color: var(--border); }
 .nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-links a.nav-appendix { opacity: 0.55; font-size: 0.65rem; }
+.nav-links a.nav-appendix:hover { opacity: 1; }
+.nav-links a.nav-survey {
+  color: var(--gold);
+  border: 1px solid rgba(201,168,76,.4);
+  border-radius: 2px;
+  margin-left: 0.6rem;
+  padding: 0 0.9rem;
+  height: 32px;
+  border-bottom: 1px solid rgba(201,168,76,.4);
+  align-self: center;
+}
+.nav-links a.nav-survey:hover { background: rgba(201,168,76,.1); border-color: var(--gold); }
 
 /* Hamburger (mobile) */
 .nav-toggle {

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLS Wages &amp; Pipeline | Fool's Gold Research</title>
+  <link rel="stylesheet" href="site.css">
+  <style>
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 1.25rem 0; }
+    .two-col > div { background: var(--surface-2); padding: 1.5rem; }
+    .two-col .label { font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 1rem; }
+    .pipeline-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 1.25rem 0; }
+    .pipeline-cell { background: var(--surface-2); padding: 1.75rem 1.5rem; }
+    .pipeline-cell.bad { border-top: 3px solid var(--red); }
+    .pipeline-cell.good { border-top: 3px solid var(--green); }
+    .pipeline-cell h4 { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+    .pipeline-cell.bad h4 { color: var(--red); }
+    .pipeline-cell.good h4 { color: var(--green); }
+    .pipeline-cell ul { padding-left: 1.25rem; }
+    .pipeline-cell li { font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--text); line-height: 1.7; margin-bottom: 0.3rem; }
+    .nat-bar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.82rem; }
+    .nat-bar .country { width: 130px; color: var(--text); flex-shrink: 0; }
+    .nat-bar .bar { height: 10px; border-radius: 2px; background: var(--blue); flex-shrink: 0; }
+    .nat-bar .pct { color: var(--muted); font-size: 0.75rem; }
+    .finding-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 1.25rem 0; }
+    .finding { background: var(--surface-2); padding: 1.5rem 1.25rem; border-top: 3px solid var(--red); }
+    .finding.gold  { border-color: var(--gold); }
+    .finding.green { border-color: var(--green); }
+    .finding .fnum { font-family: 'Playfair Display', Georgia, serif; font-size: 2.4rem; font-weight: 700; color: var(--red); line-height: 1; }
+    .finding.gold  .fnum { color: var(--gold); }
+    .finding.green .fnum { color: var(--green); }
+    .finding p { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--muted); margin: 0.4rem 0 0; line-height: 1.5; }
+    @media (max-width: 768px) {
+      .two-col, .pipeline-row { grid-template-columns: 1fr; }
+      .finding-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .finding-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"
+            onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="costs.html">Costs</a>
+      <a href="fools_gold.html">Fools Gold</a>
+      <a href="mls.html" class="active">MLS</a>
+      <a href="equity.html">Equity</a>
+      <a href="methodology.html" class="nav-appendix">Methods</a>
+      <a href="data.html" class="nav-appendix">Data</a>
+      <a href="../survey.html" class="nav-survey">Survey</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Inside MLS Wages &amp; the Pipeline Myth</h1>
+  <p>What 916 player salaries, 490 draft picks, and 6 years of career data
+     reveal about the professional pathway families are paying to access.</p>
+</div>
+
+<div class="container">
+
+  <!-- Ticker -->
+  <div style="background:var(--surface);border:1px solid var(--border);display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid var(--border);margin-bottom:1.75rem;">
+    <div style="text-align:center;padding:1.75rem 1rem;border-right:1px solid var(--border);">
+      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;">916</div>
+      <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">MLS players on 2026 spring rosters</div>
+    </div>
+    <div style="text-align:center;padding:1.75rem 1rem;border-right:1px solid var(--border);">
+      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;">$352K</div>
+      <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">Median guaranteed compensation (2026)</div>
+    </div>
+    <div style="text-align:center;padding:1.75rem 1rem;border-right:1px solid var(--border);">
+      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--red);line-height:1;">21%</div>
+      <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">Draft picks still active after 5+ years</div>
+    </div>
+    <div style="text-align:center;padding:1.75rem 1rem;border-right:1px solid var(--border);">
+      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--red);line-height:1;">51%</div>
+      <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">Of surviving picks earn at or below reserve minimum ($113K)</div>
+    </div>
+  </div>
+
+  <!-- Wage Distribution -->
+  <section class="card-section">
+    <h2>Wage Distribution — 843 Non-Designated Players (2026)</h2>
+    <p>Designated Players (73 players, up to 3 per club) are excluded — their compensation is set by
+       international transfer markets, not the domestic pathway. These charts show the 843 non-DP
+       roster players: what the league actually pays the players most families are trying to produce.
+       Source: MLSPA Spring 2026 Salary Guide. Figures are Annualized Average Guaranteed Compensation.</p>
+
+    <div class="callout blue" style="margin-bottom:0;">
+      <strong>Roster structure:</strong> Each MLS club carries up to 30 players across three tiers.
+      <strong>Senior Roster</strong> (spots 1–20) counts against the salary budget — these 18–20 players,
+      including up to 3 Designated Players, are the club's real financial commitments.
+      <strong>Supplemental spots 21–24</strong> are off-budget but must earn at least the Senior Minimum ($88,025).
+      <strong>Reserve spots 25–30</strong> are also off-budget, limited to players age 25 or younger, and
+      spots 29–30 are exclusively reserved for Homegrown players.
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="label">Non-DP players by salary band (843 players)</div>
+        <canvas id="wageDistChart" height="140"></canvas>
+      </div>
+      <div>
+        <div class="label">Non-DP median salary by position</div>
+        <canvas id="positionChart" height="140"></canvas>
+      </div>
+    </div>
+
+    <div class="finding-grid">
+      <div class="finding">
+        <div class="fnum">36%</div>
+        <p>of non-DP players earn under $150K/yr.</p>
+      </div>
+      <div class="finding gold">
+        <div class="fnum">$304K</div>
+        <p>Non-DP median salary. The full-roster median ($352K) is inflated by 73 DPs who are priced by the global transfer market.</p>
+      </div>
+      <div class="finding green">
+        <div class="fnum">$88K</div>
+        <p>League minimum. 59 players (7%) earn exactly this — the floor for all senior and supplemental roster spots.</p>
+      </div>
+    </div>
+
+    <div class="callout yellow">
+      <strong>The DP distortion:</strong> 73 Designated Players are 6.6% of the roster but earn
+      31% of total league payroll — $196M of $631M. The median DP earns <strong>$2.6M</strong>;
+      the median non-DP earns <strong>$304K</strong>. When a family imagines their child "making it to MLS,"
+      they are almost certainly imagining a DP career. They are statistically projecting into
+      the top 6.6% of an already nearly-impossible outcome.
+    </div>
+  </section>
+
+  <!-- Country Representation -->
+  <section class="card-section">
+    <h2>Where MLS Players Come From</h2>
+    <p>The MLS SuperDraft is 61% American — but the draft is not how MLS builds its rosters.
+       The highest-value players come via international transfer. Of the top 100 transfer deals
+       in MLS history, <strong style="color:var(--text-strong);">92.6% of total spend went to non-American players</strong>.
+       Argentina alone accounts for more transfer investment than Mexico, Brazil, and the US combined.</p>
+
+    <div class="finding-grid" style="margin-bottom:1.5rem;">
+      <div class="finding">
+        <div class="fnum">59%</div>
+        <p>Of MLS roster spots are held by foreign nationals (Transfermarkt full-roster data, 2026).</p>
+      </div>
+      <div class="finding gold">
+        <div class="fnum">€208M</div>
+        <p>Transfer spend on Argentine players alone — top 100 MLS transfers. 29 deals, avg €7.2M each.</p>
+      </div>
+      <div class="finding green">
+        <div class="fnum">7.4%</div>
+        <p>Of total top-100 transfer spend went to American players. 6 players, €57.6M of €782M total.</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="label">Transfer spend by nationality — top 100 MLS transfers (Transfermarkt)</div>
+        <canvas id="transferSpendChart" height="160"></canvas>
+      </div>
+      <div style="padding-top:0.5rem;">
+        <div class="label" style="margin-bottom:1.25rem;">Why the draft misleads</div>
+
+        <div class="nat-bar"><span class="country">Argentina</span><div class="bar" style="width:200px;background:var(--blue);"></div><span class="pct">29 deals &nbsp;·&nbsp; €208M</span></div>
+        <div class="nat-bar"><span class="country">Mexico</span><div class="bar" style="width:81px;"></div><span class="pct">11 deals &nbsp;·&nbsp; €85M</span></div>
+        <div class="nat-bar"><span class="country">Brazil</span><div class="bar" style="width:63px;"></div><span class="pct">7 deals &nbsp;·&nbsp; €66M</span></div>
+        <div class="nat-bar"><span class="country">USA</span><div class="bar" style="width:55px;background:var(--gold);"></div><span class="pct">6 deals &nbsp;·&nbsp; €58M</span></div>
+        <div class="nat-bar"><span class="country">Uruguay</span><div class="bar" style="width:43px;"></div><span class="pct">6 deals &nbsp;·&nbsp; €44M</span></div>
+        <div class="nat-bar"><span class="country">Côte d'Ivoire</span><div class="bar" style="width:26px;"></div><span class="pct">2 deals &nbsp;·&nbsp; €27M</span></div>
+        <div class="nat-bar"><span class="country">Paraguay</span><div class="bar" style="width:22px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €23M</span></div>
+        <div class="nat-bar"><span class="country">Croatia</span><div class="bar" style="width:21px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €22M</span></div>
+        <div class="nat-bar"><span class="country">South Korea</span><div class="bar" style="width:21px;background:var(--red);"></div><span class="pct">1 deal &nbsp;·&nbsp; €22M (Son)</span></div>
+        <div class="nat-bar"><span class="country">Belgium</span><div class="bar" style="width:21px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €21M</span></div>
+        <div class="nat-bar"><span class="country">20+ others</span><div class="bar" style="width:95px;background:var(--muted);"></div><span class="pct">24 deals &nbsp;·&nbsp; €185M</span></div>
+
+        <p style="margin-top:1.25rem;font-family:'Inter',sans-serif;font-size:0.78rem;color:var(--muted);line-height:1.6;">
+          The SuperDraft is dominated by domestic college players — a narrow slice of MLS talent.
+          Stars like Messi (Argentina), Son (South Korea), Lozano (Mexico), and Denkey (Togo)
+          never touched the draft. MLS builds its best squads through the transfer window,
+          not the pipeline that American youth families are funding.
+        </p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>The pipeline illusion:</strong> American youth families spend $70K+ developing players
+      for a league that fills 59% of its roster spots internationally. The MLS draft is a domestic
+      college pipeline — but the league's actual talent acquisition strategy is global transfers,
+      with South America and Europe as the primary markets. An American kid "making it to MLS"
+      competes against a global pool, not just fellow draft picks.
+    </div>
+  </section>
+
+  <!-- Career Survival -->
+  <section class="card-section">
+    <h2>MLS Career Survival</h2>
+    <p>697 MLS SuperDraft picks across 11 cohorts (2010–2020) tracked against MLSPA salary guides from 2015–2026.
+       The chart below starts at 100% — every player on draft day. Each subsequent point shows what percentage
+       was still collecting an MLS paycheck at that year's September salary guide release.</p>
+
+    <div class="callout blue">
+      <strong>Being drafted is not the same as being paid.</strong> The draft gives a club negotiating rights — it is not a contract.
+      After January's draft, every pick must survive training camp (February–March), be offered a contract, and make the 30-man active roster
+      before the September salary guide is published. The 56% who disappear by that first data point were
+      cut in preseason, never offered a deal, sent to a lower-level affiliate (MLS NEXT Pro, USL), or went abroad.
+      Getting drafted sounds like making it. Statistically, it is the beginning of the next cut.
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">5-year attrition — 11 draft cohorts averaged (2010–2020) · starts at 100% on draft day</div>
+      <canvas id="attritionCurveChart" height="130"></canvas>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="label">% of draft class still active in MLS (2026)</div>
+        <canvas id="survivalByYearChart" height="130"></canvas>
+      </div>
+      <div>
+        <div class="label">Survival rate by draft round (all cohorts)</div>
+        <canvas id="survivalByRoundChart" height="130"></canvas>
+      </div>
+    </div>
+
+    <div class="finding-grid">
+      <div class="finding">
+        <div class="fnum">22%</div>
+        <p>Average share of draft picks still earning MLS pay 5 years after being drafted — across 11 cohorts.</p>
+      </div>
+      <div class="finding">
+        <div class="fnum">40%</div>
+        <p>Round 1 picks still in MLS at Year 5 — the only group with meaningful long-term survival. All other rounds average under 15%.</p>
+      </div>
+      <div class="finding gold">
+        <div class="fnum">$113K</div>
+        <p>Median salary of surviving draft picks who made it to 2026. Just $25K above the league minimum of $88,025.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Salary of surviving picks:</strong> Of 94 active draft picks matched to 2026 salary data,
+      <strong>51% earn at or below $113,400</strong> — barely above the $88,025 league minimum. Only 1 earns over $1M.
+      A surviving draft pick's median annual salary ($113,400) is roughly what a family spends
+      on 7–8 years of T4/T5 club soccer, returned after a full professional career.
+    </div>
+
+    <div class="chart-wrap" style="margin-top:1.25rem;">
+      <div class="chart-title">Salary distribution — 94 active 2020–2025 draft picks (2026)</div>
+      <canvas id="activeSalaryChart" height="50"></canvas>
+    </div>
+
+    <h3>Top 10 earners — active 2020–2025 draft picks</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Draft</th>
+            <th>Pick</th>
+            <th>Club</th>
+            <th>Position</th>
+            <th>Drafted From</th>
+            <th>Developed At</th>
+            <th style="text-align:right;">2026 Comp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Patrick Schulte</td><td>2022 R1</td><td>#12</td><td>Columbus Crew</td><td>Goalkeeper</td><td>Saint Louis Univ.</td><td>St. Louis Scott Gallagher</td><td style="text-align:right;color:var(--green);">$1,032,083</td></tr>
+          <tr><td>Joey Maher</td><td>2024 R2</td><td>#30</td><td>Nashville SC</td><td>Center-back</td><td>Indiana</td><td>St. Louis FC Academy</td><td style="text-align:right;">$995,467</td></tr>
+          <tr><td>Jack Maher</td><td>2020 R1</td><td>#2</td><td>Nashville SC</td><td>Center-back</td><td>Indiana</td><td>St. Louis Scott Gallagher</td><td style="text-align:right;">$995,467</td></tr>
+          <tr><td>Henry Kessler</td><td>2020 R1</td><td>#6</td><td>Charlotte FC</td><td>Center-back</td><td>Virginia</td><td>NY Red Bulls Academy</td><td style="text-align:right;">$965,525</td></tr>
+          <tr><td>Duncan McGuire</td><td>2023 R1</td><td>#6</td><td>Orlando City SC</td><td>Center Forward</td><td>Creighton</td><td>Elkhorn SC</td><td style="text-align:right;">$921,000</td></tr>
+          <tr><td>Maximilian Arfsten</td><td>2023 R1</td><td>#14</td><td>Columbus Crew</td><td>Left Wing</td><td>UC Davis</td><td>California Odyssey</td><td style="text-align:right;">$895,000</td></tr>
+          <tr><td>Daniel Pereira</td><td>2021 R1</td><td>#1</td><td>Austin FC</td><td>Central Midfield</td><td>Virginia Tech</td><td>Virginia Blue Ridge Star</td><td style="text-align:right;">$793,750</td></tr>
+          <tr><td>Jackson Ragen</td><td>2021 R2</td><td>#33</td><td>Seattle Sounders FC</td><td>Center-back</td><td>Michigan</td><td>Seattle Sounders Academy</td><td style="text-align:right;">$635,000</td></tr>
+          <tr><td>Lucas Bartlett</td><td>2022 R1</td><td>#6</td><td>DC United</td><td>Center-back</td><td>St. John's</td><td>Sporting Blue Valley</td><td style="text-align:right;">$585,625</td></tr>
+          <tr><td>Daniel Munie</td><td>2023 R1</td><td>#10</td><td>San Jose Earthquakes</td><td>Center-back</td><td>Indiana</td><td>St. Louis Scott Gallagher</td><td style="text-align:right;">$574,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sources">Only 1 of 94 active picks earns over $1M (Patrick Schulte). 9 of the top 10 are R1 picks — 8 of those 9 are defenders or goalkeepers. The one R2 pick (Joey Maher, #30) is a Nashville SC Homegrown player.</div>
+  </section>
+
+  <!-- MLS Next Pipeline Problem -->
+  <section class="card-section">
+    <h2>The MLS NEXT Pipeline Problem</h2>
+    <p>MLS NEXT markets itself as the top developmental league in North America — the direct pathway
+       to professional soccer. Families at independent MLS NEXT clubs pay $5,000–$15,000/year
+       believing they are buying access to that pipeline. The data tells a more complicated story.</p>
+
+    <div class="pipeline-row">
+      <div class="pipeline-cell good">
+        <h4>MLS Pro Academies (30 clubs)</h4>
+        <ul>
+          <li>$0 to families — fully funded by MLS clubs</li>
+          <li>MLS clubs spend $50K–$100K+ per player per year in facilities, coaching, and staff</li>
+          <li>Top performers receive Homegrown contracts — bypassing the draft entirely</li>
+          <li>Only 1–3 Homegrown signings per academy per year, but those are guaranteed roster spots</li>
+          <li><strong>Roster spots 29–30 are exclusively Homegrown</strong> — structurally reserved, not competitive</li>
+          <li>Players remain MLS club property; overseas interest triggers FIFA training compensation</li>
+        </ul>
+      </div>
+      <div class="pipeline-cell bad">
+        <h4>MLS NEXT Independent Clubs (122 clubs)</h4>
+        <ul>
+          <li>$5,000–$15,000/year charged to families</li>
+          <li>5–7 year commitment: $25K–$105K total family investment</li>
+          <li>No Homegrown pathway — players must enter the draft</li>
+          <li>Spots 29–30 are structurally inaccessible — those slots are Homegrown-only by CBA rule</li>
+          <li>Competing against pro academy players whose development was fully subsidized</li>
+          <li>Even R1 picks: only 40% survive 5 years; the average all-pick survival is 22%</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout yellow" style="margin-top:0.25rem;">
+      <strong>The structural problem:</strong> The 122 independent MLS NEXT clubs charge families
+      to fund development that feeds the same draft pool the pro academies dominate. The best
+      pro academy players never enter that draft — they already have contracts. And by CBA rule,
+      two roster spots on every MLS team are permanently reserved for pro academy Homegrown players.
+      Independent families are paying premium prices to compete in a pool that has already been skimmed,
+      for roster spots that have been structurally reduced.
+    </div>
+
+    <h3>Expected Value — Independent MLS NEXT Player</h3>
+    <div style="background:var(--surface-2);border:1px solid var(--border);padding:1.25rem 1.5rem;font-family:'Inter',sans-serif;font-size:0.83rem;line-height:1.9;color:var(--text);margin:0.75rem 0;">
+      <div><span style="color:var(--muted);">Family investment (5–7 yrs, mid estimate)</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">$70,000</strong></div>
+      <div><span style="color:var(--muted);">Probability of entering MLS draft</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">~3–5%</strong> of MLS NEXT players</div>
+      <div><span style="color:var(--muted);">Probability of surviving 5+ years if drafted</span> &nbsp;·&nbsp; <strong style="color:var(--red);">22% all picks · 40% R1 picks</strong></div>
+      <div><span style="color:var(--muted);">Median salary of a surviving pick (non-DP)</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">$113,400/yr</strong></div>
+      <div><span style="color:var(--muted);">Probability of becoming a Designated Player</span> &nbsp;·&nbsp; <strong style="color:var(--red);">&lt;0.5%</strong> of draft picks</div>
+      <div><span style="color:var(--muted);">Expected MLS career value (5 yrs × median)</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">$567,000</strong></div>
+      <div style="border-top:1px solid var(--border);margin-top:0.5rem;padding-top:0.5rem;">
+        <span style="color:var(--muted);">Expected value of investment</span> &nbsp;·&nbsp;
+        <strong style="color:var(--red);">~$17,000–$28,000</strong>
+        <span style="color:var(--muted);"> (4% × $567K)</span> &nbsp;vs.&nbsp;
+        <strong style="color:var(--red);">$70,000 spent</strong>
+      </div>
+      <div style="border-top:1px solid var(--border);margin-top:0.5rem;padding-top:0.5rem;font-size:0.75rem;color:var(--muted);">
+        Note: DP median ($2.6M) is the salary families imagine. The draft-to-DP path requires making a roster,
+        surviving 5+ years, and becoming one of 73 players (6.6%) that MLS clubs designate globally.
+        Most DPs arrive by international transfer — not the domestic draft pipeline.
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">MLS NEXT Homegrown Division — 152 clubs by type</div>
+      <canvas id="mlsnextTypeChart" height="45"></canvas>
+    </div>
+
+    <p style="margin-top:1rem;font-family:'Inter',sans-serif;font-size:0.82rem;color:var(--muted);line-height:1.7;">
+      Data sources: MLSPA Spring 2026 Salary Guide (916 players, as of April 16, 2026), MLS SuperDraft records 2020–2025
+      (490 picks), MLS Designated Player roster May 2026 (73 DPs, 30 clubs), 2025–26 MLS NEXT Homegrown Division
+      official member list (152 clubs), Transfermarkt top-100 MLS transfers, active roster cross-reference June 2026.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>Fool's Gold: Youth Soccer Research &bull; MLS Wages &amp; Pipeline Analysis &bull;
+     <a href="../index.html">Home</a> &bull; <a href="methodology.html">Methodology</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+const C = (function(){
+  const r = getComputedStyle(document.documentElement);
+  const v = k => r.getPropertyValue(k).trim();
+  return {
+    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
+    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
+    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
+    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
+  };
+})();
+// keep P as alias so older chart refs still work during transition
+const P = { red: C.dim, amber: C.gold, green: C.gold, blue: C.blue,
+            muted: C.muted, grid: C.grid, text: C.text };
+Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
+Chart.defaults.color = C.muted;
+
+// ── Wage Distribution (non-DP only) ───────────────────────
+(function() {
+  const labels = ['$88K\n(min)', '$88K–$150K', '$150K–$250K', '$250K–$500K', '$500K–$1M', '$1M+'];
+  const data   = [59, 245, 86, 160, 231, 62];
+  const colors = [C.gold, C.dim, C.dim, C.dim, C.dim, C.blue];
+  new Chart(document.getElementById('wageDistChart'), {
+    type: 'bar',
+    data: { labels, datasets: [{ label: 'Players', data, backgroundColor: colors, borderColor: colors, borderWidth: 1, borderRadius: 2 }] },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.raw} players (${Math.round(ctx.raw/843*100)}%)` } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: P.muted, font: { size: 10 } } },
+        y: { grid: { color: P.grid }, ticks: { color: P.muted } }
+      }
+    }
+  });
+})();
+
+// ── Salary by Position (non-DP) ───────────────────────────
+(function() {
+  const data = [
+    { pos: 'Def. Midfield',  med: 451750 },
+    { pos: 'Right Midfield', med: 437600 },
+    { pos: 'Left Wing',      med: 403500 },
+    { pos: 'Center-back',    med: 360204 },
+    { pos: 'Central Mid',    med: 352000 },
+    { pos: 'Attacking Mid',  med: 336500 },
+    { pos: 'Left-back',      med: 324166 },
+    { pos: 'Right-back',     med: 300000 },
+    { pos: 'Right Wing',     med: 283252 },
+    { pos: 'Center Forward', med: 171000 },
+    { pos: 'Goalkeeper',     med: 163750 },
+  ].sort((a, b) => a.med - b.med);
+  new Chart(document.getElementById('positionChart'), {
+    type: 'bar',
+    data: {
+      labels: data.map(d => d.pos),
+      datasets: [{ label: 'Median guaranteed comp', data: data.map(d => d.med),
+        backgroundColor: C.dim, borderColor: C.dimBd, borderWidth: 1, borderRadius: 2 }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` $${ctx.raw.toLocaleString()} median (non-DP)` } }
+      },
+      scales: {
+        x: { grid: { color: P.grid }, ticks: { color: P.muted, callback: v => '$' + (v >= 1000000 ? (v/1000000).toFixed(1)+'M' : (v/1000)+'K') } },
+        y: { grid: { display: false }, ticks: { color: P.muted } }
+      }
+    }
+  });
+})();
+
+// ── Transfer Spend by Nationality ────────────────────────
+(function() {
+  const nations = ['Argentina','Mexico','Brazil','USA','Uruguay','Côte d\'Ivoire','Paraguay','Croatia','South Korea','Belgium','Ghana','Colombia','Romania','England','Israel','Albania','Russia','Others'];
+  const spend   = [208.47, 84.56, 65.89, 57.63, 44.40, 27.43, 22.55, 22.30, 22.00, 21.46, 15.50, 15.13, 14.00, 13.05, 12.70, 12.00, 11.80, 110.65];
+  const colors  = nations.map(n =>
+    n === 'Argentina' ? C.goldFill :
+    n === 'USA'       ? C.blueFill :
+    C.dim
+  );
+  const borders = nations.map(n =>
+    n === 'Argentina' ? C.gold :
+    n === 'USA'       ? C.blue :
+    C.dimBd
+  );
+  new Chart(document.getElementById('transferSpendChart'), {
+    type: 'bar',
+    data: {
+      labels: nations,
+      datasets: [{
+        label: 'Transfer spend (€M)',
+        data: spend,
+        backgroundColor: colors,
+        borderColor: borders,
+        borderWidth: 1, borderRadius: 2,
+      }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` €${ctx.raw.toFixed(1)}M` } }
+      },
+      scales: {
+        x: { grid: { color: P.grid }, ticks: { color: P.muted, callback: v => '€' + v + 'M' } },
+        y: { grid: { display: false }, ticks: { color: P.muted, font: { size: 10 } } }
+      }
+    }
+  });
+})();
+
+// ── Attrition Curve (multi-cohort average) ────────────────
+(function() {
+  new Chart(document.getElementById('attritionCurveChart'), {
+    type: 'line',
+    data: {
+      labels: ['Draft Day', 'Sep · same year', 'Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
+      datasets: [
+        {
+          label: 'Round 1 picks',
+          data: [100, 78.5, 67.5, 51.7, 46.8, 38.7, 40.2],
+          borderColor: P.green,
+          backgroundColor: C.goldFill,
+          borderWidth: 2.5,
+          tension: 0.35,
+          fill: true,
+          pointBackgroundColor: P.green,
+          pointRadius: 5,
+        },
+        {
+          label: 'All draft picks',
+          data: [100, 44.1, 33.9, 28.8, 26.5, 22.8, 21.9],
+          borderColor: P.blue,
+          backgroundColor: C.blueFill,
+          borderWidth: 2.5,
+          tension: 0.35,
+          fill: true,
+          pointBackgroundColor: P.blue,
+          pointRadius: 5,
+        },
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, labels: { color: P.muted, font: { size: 11 }, boxWidth: 14 } },
+        tooltip: { callbacks: {
+          label: ctx => {
+            if (ctx.dataIndex === 0) return ` ${ctx.raw}% — all picks are drafted`;
+            return ` ${ctx.raw}% of original draft class still on MLS salary guide`;
+          }
+        }}
+      },
+      scales: {
+        x: { grid: { color: P.grid }, ticks: { color: P.muted } },
+        y: { grid: { color: P.grid }, min: 0, max: 100,
+             ticks: { color: P.muted, callback: v => v + '%' } }
+      }
+    }
+  });
+})();
+
+// ── Survival by Year ──────────────────────────────────────
+(function() {
+  new Chart(document.getElementById('survivalByYearChart'), {
+    type: 'bar',
+    data: {
+      labels: ['2025\n(1 yr)', '2024\n(2 yrs)', '2023\n(3 yrs)', '2022\n(4 yrs)', '2021\n(5 yrs)', '2020\n(6 yrs)'],
+      datasets: [{
+        label: '% still active in MLS',
+        data: [29, 37, 13, 19, 12, 14],
+        backgroundColor: [C.dim, C.dim, C.dim, C.dim, C.dim, C.dim],
+        borderColor:     [C.dimBd, C.dimBd, C.dimBd, C.dimBd, C.dimBd, C.dimBd],
+        borderWidth: 1.5, borderRadius: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.raw}% of draft class still active` } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: P.muted, font: { size: 10 } } },
+        y: { grid: { color: P.grid }, max: 50, ticks: { color: P.muted, callback: v => v + '%' } }
+      }
+    }
+  });
+})();
+
+// ── Survival by Round ─────────────────────────────────────
+(function() {
+  new Chart(document.getElementById('survivalByRoundChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Round 1\n(169 picks)', 'Round 2\n(167 picks)', 'Round 3\n(138 picks)', 'Round 4\n(16 picks)'],
+      datasets: [{
+        label: '% still active',
+        data: [36, 15, 12, 0],
+        backgroundColor: [C.goldFill, C.dim, C.dim, C.dim],
+        borderColor:     [C.gold, C.dimBd, C.dimBd, C.dimBd],
+        borderWidth: 1.5, borderRadius: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.raw}% survival rate` } }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: P.muted, font: { size: 10 } } },
+        y: { grid: { color: P.grid }, max: 50, ticks: { color: P.muted, callback: v => v + '%' } }
+      }
+    }
+  });
+})();
+
+// ── Active Pick Salary Distribution ──────────────────────
+(function() {
+  new Chart(document.getElementById('activeSalaryChart'), {
+    type: 'bar',
+    data: {
+      labels: ['At min\n$88K', 'Reserve\n$113K', '$114K–\n$200K', '$200K–\n$400K', '$400K–\n$1M', '$1M+'],
+      datasets: [{
+        label: 'Active picks',
+        data: [22, 26, 12, 18, 15, 1],
+        backgroundColor: [C.dim, C.dim, C.dim, C.dim, C.dim, C.dim],
+        borderColor:     [C.dimBd, C.dimBd, C.dimBd, C.dimBd, C.dimBd, C.dimBd],
+        borderWidth: 1, borderRadius: 2,
+      }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.raw} players` } }
+      },
+      scales: {
+        x: { grid: { color: P.grid }, ticks: { color: P.muted } },
+        y: { grid: { display: false }, ticks: { color: P.muted, font: { size: 10 } } }
+      }
+    }
+  });
+})();
+
+// ── MLS NEXT Club Type ────────────────────────────────────
+(function() {
+  new Chart(document.getElementById('mlsnextTypeChart'), {
+    type: 'bar',
+    data: {
+      labels: ['152 MLS NEXT Homegrown Division Clubs'],
+      datasets: [
+        { label: 'MLS Pro Academies — $0 to families (30)',       data: [30], backgroundColor: C.goldFill, borderColor: C.gold, borderWidth: 1 },
+        { label: 'Independent clubs — $5K–$15K/yr to families (122)', data: [122], backgroundColor: C.dim, borderColor: C.dimBd, borderWidth: 1 },
+      ]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 10, padding: 14, color: P.muted } },
+        tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label } }
+      },
+      scales: {
+        x: { stacked: true, max: 152, grid: { color: P.grid }, ticks: { color: P.muted } },
+        y: { stacked: true, grid: { display: false }, ticks: { color: P.muted } }
+      }
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

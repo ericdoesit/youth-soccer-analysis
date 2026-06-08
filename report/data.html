@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Downloads — Fool's Gold: Youth Soccer</title>
+  <link rel="stylesheet" href="site.css" />
+  <style>
+    .dl-section { margin-bottom: 2.5rem; }
+    .dl-section-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .dl-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .dl-card {
+      background: var(--surface);
+      padding: 1.5rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .dl-card:hover { background: var(--surface-2); }
+    .dl-filename {
+      font-family: "SFMono-Regular", Menlo, monospace;
+      font-size: 0.82rem;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+    .dl-desc {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .dl-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      margin-top: 0.2rem;
+    }
+    .dl-pill {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+    .dl-fields {
+      font-family: "SFMono-Regular", Menlo, monospace;
+      font-size: 0.73rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .dl-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-strong);
+      background: #1e1e1e;
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.9rem;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background .15s, border-color .15s;
+      align-self: flex-start;
+    }
+    .dl-btn:hover { background: #2a2a2a; border-color: var(--gold); color: var(--gold); text-decoration: none; }
+    .dl-btn svg { flex-shrink: 0; }
+    .intro-note {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 0.93rem;
+      color: var(--text);
+      line-height: 1.78;
+      max-width: 720px;
+      margin-bottom: 2rem;
+    }
+    .license-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      color: var(--muted);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 0.85rem 1.1rem;
+      margin-bottom: 2.25rem;
+      line-height: 1.65;
+    }
+    .license-note strong { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"
+            onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="costs.html">Costs</a>
+      <a href="fools_gold.html">Fools Gold</a>
+      <a href="mls.html">MLS</a>
+      <a href="equity.html">Equity</a>
+      <a href="methodology.html" class="nav-appendix">Methods</a>
+      <a href="data.html" class="nav-appendix active">Data</a>
+      <a href="../survey.html" class="nav-survey">Survey</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Research Data Downloads</h1>
+  <p>All datasets used in this project, available as CSV files.</p>
+</div>
+
+<div class="container">
+
+  <p class="intro-note">
+    These datasets were compiled from publicly available sources including the MLSPA Salary Guide,
+    Transfermarkt, MLS SuperDraft records, club websites, and league directories.
+    All files are in CSV format and can be opened in Excel, Google Sheets, R, Python, or any data tool.
+  </p>
+
+  <div class="license-note">
+    <strong>License:</strong> All datasets on this page are released under
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0 (Public Domain)</a>.
+    You may use, share, or build on them without restriction. Attribution appreciated but not required.
+    MLS salary data originates from the MLSPA Salary Guide (mlsplayers.org), which is publicly released by the players union.
+  </div>
+
+  <!-- MLS Salary & Career -->
+  <div class="dl-section">
+    <div class="dl-section-title">MLS Salary &amp; Career</div>
+    <div class="dl-grid">
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_player_salaries_2026.csv</div>
+        <div class="dl-desc">Full 2026 MLSPA Salary Guide. Guaranteed compensation for every player on an MLS roster, as of the September 2026 release. Excludes performance bonuses per MLSPA methodology.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">916 players</span>
+          <span class="dl-pill">30 clubs</span>
+          <span class="dl-pill">56 KB</span>
+        </div>
+        <div class="dl-fields">first_name · last_name · club · position · base_salary · guaranteed_comp</div>
+        <a class="dl-btn" href="../data/mls_player_salaries_2026.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_salaries_2025.csv</div>
+        <div class="dl-desc">2025 MLSPA Salary Guide. Full guaranteed compensation for all players, released September 2025.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">943 players</span>
+          <span class="dl-pill">67 KB</span>
+        </div>
+        <div class="dl-fields">First Name · Last Name · Team Name · Position · PA Base Salary · Guaranteed Comp</div>
+        <a class="dl-btn" href="../data/mls_salaries_2025.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_salaries_2024.csv</div>
+        <div class="dl-desc">2024 MLSPA Salary Guide. Full guaranteed compensation for all players, released September 2024.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">909 players</span>
+          <span class="dl-pill">67 KB</span>
+        </div>
+        <div class="dl-fields">fname · lname · club · position · CY Base Salary · CY Guaranteed Comp</div>
+        <a class="dl-btn" href="../data/mls_salaries_2024.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_designated_players_2026.csv</div>
+        <div class="dl-desc">All 73 MLS Designated Players for the 2026 season. DPs are the top earners whose compensation exceeds the maximum salary budget charge. LA Galaxy holds 4 (one above the normal limit).</div>
+        <div class="dl-meta">
+          <span class="dl-pill">73 DPs · 30 clubs</span>
+          <span class="dl-pill">2.7 KB</span>
+        </div>
+        <div class="dl-fields">club · player · position · dp</div>
+        <a class="dl-btn" href="../data/mls_designated_players_2026.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_top_transfers.csv</div>
+        <div class="dl-desc">Top 100 MLS transfer fees by acquisition cost, sourced from Transfermarkt. Covers the highest-spending deals in league history. Argentina alone accounts for €208M — 92.6% of top-100 spend is international.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">100 transfers</span>
+          <span class="dl-pill">5.9 KB</span>
+        </div>
+        <div class="dl-fields">rank · player · position · age · season · nationality · club · fee_millions_eur</div>
+        <a class="dl-btn" href="../data/mls_top_transfers.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MLS SuperDraft -->
+  <div class="dl-section">
+    <div class="dl-section-title">MLS SuperDraft</div>
+    <div class="dl-grid">
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_draft_2010_2020.csv</div>
+        <div class="dl-desc">697 MLS SuperDraft picks across 11 cohorts (2010–2020). Used to compute the 5-year attrition curve: 56% of draft picks never appear on an MLS salary guide in their draft year (cut in camp, never signed, or sent to affiliates), and only 22% are still earning MLS pay 5 years later.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">697 picks</span>
+          <span class="dl-pill">11 cohorts</span>
+          <span class="dl-pill">36 KB</span>
+        </div>
+        <div class="dl-fields">year · overall_pick · round · team_drafted · player_name · college</div>
+        <a class="dl-btn" href="../data/mls_draft_2010_2020.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mls_draft_picks_2020_2025.csv</div>
+        <div class="dl-desc">490 SuperDraft picks from recent cohorts (2020–2025), cross-referenced against the 2026 MLSPA salary guide. Includes matched salary data for active picks and identifies the 94 still earning MLS pay.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">490 picks</span>
+          <span class="dl-pill">6 cohorts</span>
+          <span class="dl-pill">29 KB</span>
+        </div>
+        <div class="dl-fields">year · round · pick · player · college · club · position · 2026_comp</div>
+        <a class="dl-btn" href="../data/mls_draft_picks_2020_2025.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Club Directory -->
+  <div class="dl-section">
+    <div class="dl-section-title">Club Directory</div>
+    <div class="dl-grid">
+
+      <div class="dl-card">
+        <div class="dl-filename">master_clubs_index.csv</div>
+        <div class="dl-desc">The master club database: 5,693 youth soccer clubs across 15 leagues in the United States. Each club is tagged with competitive tier (T1–T5), league, conference, division, and gender. The backbone of all cost analysis on this site.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">5,693 clubs</span>
+          <span class="dl-pill">15 leagues</span>
+          <span class="dl-pill">592 KB</span>
+        </div>
+        <div class="dl-fields">club_name · city · state · league · tier · tier_label · conference · division · gender</div>
+        <a class="dl-btn" href="../data/master_clubs_index.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mlsnext_homegrown.csv</div>
+        <div class="dl-desc">152 MLS NEXT clubs, tagged as Pro Academy (30 clubs, free) or Independent (122 clubs, $5K–$15K/year). Families at independent clubs pay to develop players who then compete for draft spots against pro academy players whose training was fully subsidized.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">152 clubs</span>
+          <span class="dl-pill">30 pro · 122 independent</span>
+          <span class="dl-pill">11 KB</span>
+        </div>
+        <div class="dl-fields">club_name · state · type · league · season</div>
+        <a class="dl-btn" href="../data/mlsnext_homegrown.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">ecnl_clubs.csv</div>
+        <div class="dl-desc">154 ECNL Boys clubs with websites, states, and conference assignments. ECNL is one of the top two national elite leagues for boys (alongside MLS NEXT). Most clubs charge $6,000–$12,000/year.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">154 clubs</span>
+          <span class="dl-pill">15 KB</span>
+        </div>
+        <div class="dl-fields">club · state · website · program_name · program_url · program_type</div>
+        <a class="dl-btn" href="../data/ecnl_clubs.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">socal_soccer_clubs.csv</div>
+        <div class="dl-desc">172 SoCal Soccer League clubs (Southern California competitive travel tier, T2). Includes city, state, team count per club, and gender. SoCal Soccer is the dominant competitive travel league in Southern California.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">172 clubs</span>
+          <span class="dl-pill">16 KB</span>
+        </div>
+        <div class="dl-fields">club_name · city · state · league · tier · tier_label · team_count · gender</div>
+        <a class="dl-btn" href="../data/socal_soccer_clubs.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">coast_soccer_clubs.csv</div>
+        <div class="dl-desc">258 Coast Soccer League clubs (Southern California, T2 competitive travel). Coast Soccer is one of the two largest competitive travel leagues in SoCal alongside SoCal Soccer League.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">258 clubs</span>
+          <span class="dl-pill">31 KB</span>
+        </div>
+        <div class="dl-fields">club · city · state · league · tier · tier_label · gender</div>
+        <a class="dl-btn" href="../data/coast_soccer_clubs.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Fee Data -->
+  <div class="dl-section">
+    <div class="dl-section-title">Club Fee Data</div>
+    <div class="dl-grid">
+
+      <div class="dl-card">
+        <div class="dl-filename">national_fees.csv</div>
+        <div class="dl-desc">362 fee records scraped from club websites in the national youth soccer directory. Includes recreational, competitive travel, and elite programs. Used to establish the T1–T5 cost ranges on the Costs page.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">362 records</span>
+          <span class="dl-pill">41 KB</span>
+        </div>
+        <div class="dl-fields">state · club · program_name · age_group · fee · fee_url</div>
+        <a class="dl-btn" href="../data/national_fees.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mlsnext_fees.csv</div>
+        <div class="dl-desc">153 fee records from MLS NEXT club websites — the elite end of the pay-to-play market. Most programs charge $5,000–$15,000/year. Pro academies (free) are not represented here; these are all independent clubs.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">153 records</span>
+          <span class="dl-pill">12 KB</span>
+        </div>
+        <div class="dl-fields">club · program_name · age_group · fee · fee_url</div>
+        <a class="dl-btn" href="../data/mlsnext_fees.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+      <div class="dl-card">
+        <div class="dl-filename">mlsnext_programs.csv</div>
+        <div class="dl-desc">585 program listings scraped from MLS NEXT club websites. Includes program type (Academy, Elite, Competitive, Recreational), URL source, and club website. More granular than the fee file — useful for understanding what each club offers.</div>
+        <div class="dl-meta">
+          <span class="dl-pill">585 programs</span>
+          <span class="dl-pill">74 KB</span>
+        </div>
+        <div class="dl-fields">club · state · website · program_name · program_url · program_type</div>
+        <a class="dl-btn" href="../data/mlsnext_programs.csv" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CSV
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sources" style="margin-top:0.5rem;">
+    <strong>Sources:</strong> MLSPA Salary Guide (mlsplayers.org) · Transfermarkt · MLS SuperDraft records (Wikipedia/MLS) ·
+    Club websites · SoCal Soccer League · Coast Soccer · ECNL · MLS NEXT (mlsnextsoccer.com) ·
+    US Soccer Parent directory (ussoccerparent.com) &nbsp;|&nbsp;
+    All scraping and parsing code available on request. Data collected 2025–2026.
+  </div>
+
+</div>
+
+<footer>
+  <p>Fool's Gold: Youth Soccer Research &nbsp;·&nbsp; <a href="methodology.html">Methodology</a> &nbsp;·&nbsp; <a href="../survey.html">Take the Survey</a></p>
+</footer>
+
+</body>
+</html>
