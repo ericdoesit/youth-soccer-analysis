@@ -6,37 +6,16 @@
   <title>The Fool's Gold Problem: ROI of Elite Youth Soccer</title>
   <link rel="stylesheet" href="site.css">
   <style>
-    /* page-specific overrides */
-    section { background: white; border-radius: 10px; padding: 1.75rem 2rem;
-              margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
-    h2 { font-size: 1.35rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem; }
-    h3 { font-size: 1.05rem; font-weight: 600; color: #4a5568; margin: 1.25rem 0 0.5rem; }
-    p  { color: #4a5568; margin-bottom: 0.85rem; }
     .big-stat { text-align: center; padding: 1.5rem; }
-    .big-stat .number { font-size: 3.5rem; font-weight: 900; line-height: 1; }
-    .big-stat .label  { font-size: 0.9rem; color: #718096; margin-top: 0.35rem; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
-                 gap: 1rem; margin: 1.25rem 0; }
-    .stat-card { background: #f7f8fa; border-radius: 8px; padding: 1.25rem;
-                 text-align: center; border: 1px solid #e2e8f0; }
-    .stat-card .num { font-size: 2.2rem; font-weight: 800; color: #c53030; }
-    .stat-card .num.good { color: #276749; }
-    .stat-card p { font-size: 0.82rem; color: #4a5568; margin-top: 0.25rem; margin-bottom: 0; }
-    .chart-canvas-wrap {
-      background: #f7f8fa;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      padding: 1rem;
-      margin: 1.25rem 0;
-    }
-    .chart-canvas-wrap .chart-label {
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #718096;
-      margin-bottom: 0.75rem;
-    }
+    .big-stat .number { font-family: 'Playfair Display', Georgia, serif; font-size: 3.5rem;
+                        font-weight: 700; line-height: 1; color: var(--red); }
+    .big-stat .label  { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: var(--muted);
+                        margin-top: 0.35rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .chart-canvas-wrap { background: var(--surface-2); border: 1px solid var(--border);
+                         border-radius: 2px; padding: 1rem; margin: 1.25rem 0; }
+    .chart-canvas-wrap .chart-label { font-family: 'Inter', sans-serif; font-size: 0.82rem;
+                                      font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+                                      color: var(--muted); margin-bottom: 0.75rem; }
     .ev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.25rem 0; }
     @media (max-width: 700px) { .ev-grid { grid-template-columns: 1fr; } }
   </style>
@@ -55,7 +34,9 @@
       <a href="costs.html">Costs</a>
       <a href="fools_gold.html" class="active">ROI</a>
       <a href="equity.html">Equity</a>
+      <a href="mls.html">MLS</a>
       <a href="methodology.html">Methods</a>
+      <a href="data.html">Data</a>
       <a href="../survey.html">Survey</a>
     </div>
   </div>
@@ -153,7 +134,7 @@
       the $55,000 career cost of Tier 3 youth soccer.
     </div>
 
-    <div class="callout" style="background:#e6fffa; border-color:#38a169; margin-bottom:1rem;">
+    <div class="callout green" style="margin-bottom:1rem;">
       <strong>2025-26 NCAA rule change:</strong> D1 soccer has eliminated scholarship
       equivalency limits (previously 9.9 men / 14.0 women) and replaced them with a
       28-player roster cap. Under the House settlement, schools may share revenue with
@@ -176,7 +157,7 @@
 
     <div class="chart-canvas-wrap">
       <div class="chart-label">Average scholarship value by division and gender</div>
-      <canvas id="scholarshipChart" height="160"></canvas>
+      <canvas id="scholarshipChart" height="80"></canvas>
     </div>
   </section>
 
@@ -242,7 +223,7 @@
     <h2>The Professional Pathway</h2>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Median salary by professional league</div>
-      <canvas id="salaryLeagueChart" height="140"></canvas>
+      <canvas id="salaryLeagueChart" height="70"></canvas>
     </div>
 
     <table>
@@ -308,95 +289,95 @@
        of everyone drafted in the last 6 years, who still has a job?</p>
 
     <!-- Big number hero -->
-    <div style="text-align:center;margin:2rem 0;padding:2rem;background:#1a1a2e;border-radius:12px;border:2px solid #e74c3c;">
-      <div style="font-size:4rem;font-weight:900;color:#e74c3c;line-height:1;">78.8%</div>
-      <div style="font-size:1.1rem;color:#ccc;margin-top:.5rem;">of all MLS draft picks from 2020–2025 are <strong style="color:#fff;">NOT on an active MLS roster</strong> in 2026</div>
-      <div style="font-size:.9rem;color:#888;margin-top:.5rem;">386 of 490 picks — gone</div>
+    <div style="text-align:center;margin:2rem 0;padding:2rem;background:var(--surface-2);border-radius:2px;border:1px solid var(--border);">
+      <div style="font-size:4rem;font-weight:900;color:var(--gold);line-height:1;">78.8%</div>
+      <div style="font-size:1.1rem;color:var(--text);margin-top:.5rem;">of all MLS draft picks from 2020–2025 are <strong style="color:var(--text-strong);">NOT on an active MLS roster</strong> in 2026</div>
+      <div style="font-size:.9rem;color:var(--muted);margin-top:.5rem;">386 of 490 picks — gone</div>
     </div>
 
     <!-- Dot grid: Class of 2020 -->
     <h3>The Class of 2020: What Happened to 77 Draft Picks?</h3>
-    <p>Each dot represents one player drafted in 2020. <span style="color:#2ecc71;font-weight:bold;">Green = still on an active MLS roster in 2026.</span> Gray = no longer in MLS.</p>
+    <p>Each dot represents one player drafted in 2020. <span style="color:var(--gold);font-weight:bold;">Gold = still on an active MLS roster in 2026.</span> Gray = no longer in MLS.</p>
     <div style="display:flex;flex-wrap:wrap;gap:6px;margin:1.5rem 0;padding:1.5rem;background:#111;border-radius:8px;">
       <!-- 11 active (green), 66 gone (gray) for 2020 class -->
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:#2ecc71;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
-      <span style="width:18px;height:18px;border-radius:50%;background:#444;display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
+      <span style="width:18px;height:18px;border-radius:50%;background:var(--border);display:inline-block;"></span>
     </div>
-    <p style="font-size:.9rem;color:#999;margin-top:-.5rem;">11 of 77 Class of 2020 picks still active in MLS (2026) = 14.3%. These were the best college soccer players in the country that year.</p>
+    <p style="font-size:.9rem;color:var(--muted);margin-top:-.5rem;">11 of 77 Class of 2020 picks still active in MLS (2026) = 14.3%. These were the best college soccer players in the country that year.</p>
 
     <!-- Year-by-Year Survival Table -->
     <h3>Six-Year Survival Rates by Draft Class</h3>
@@ -412,16 +393,16 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>2020 (6 yrs ago)</td><td>77</td><td>11</td><td><strong style="color:#e74c3c;">14.3%</strong></td><td>23%</td><td>12%</td></tr>
-        <tr><td>2021 (5 yrs ago)</td><td>74</td><td>9</td><td><strong style="color:#e74c3c;">12.2%</strong></td><td>15%</td><td>12%</td></tr>
-        <tr><td>2022 (4 yrs ago)</td><td>79</td><td>15</td><td><strong style="color:#f39c12;">19.0%</strong></td><td>32%</td><td>15%</td></tr>
-        <tr><td>2023 (3 yrs ago)</td><td>83</td><td>11</td><td><strong style="color:#e74c3c;">13.3%</strong></td><td>31%</td><td>3%</td></tr>
-        <tr><td>2024 (2 yrs ago)</td><td>87</td><td>32</td><td><strong style="color:#f39c12;">36.8%</strong></td><td>52%</td><td>31%</td></tr>
-        <tr><td>2025 (just drafted)</td><td>90</td><td>26</td><td><strong style="color:#2ecc71;">28.9%</strong></td><td>60%</td><td>20%</td></tr>
-        <tr style="font-weight:bold;background:#222;"><td>TOTAL</td><td>490</td><td>104</td><td><strong style="color:#e74c3c;">21.2%</strong></td><td>36%</td><td>16%</td></tr>
+        <tr><td>2020 (6 yrs ago)</td><td>77</td><td>11</td><td><strong style="color:var(--gold);">14.3%</strong></td><td>23%</td><td>12%</td></tr>
+        <tr><td>2021 (5 yrs ago)</td><td>74</td><td>9</td><td><strong style="color:var(--gold);">12.2%</strong></td><td>15%</td><td>12%</td></tr>
+        <tr><td>2022 (4 yrs ago)</td><td>79</td><td>15</td><td><strong style="color:var(--gold);">19.0%</strong></td><td>32%</td><td>15%</td></tr>
+        <tr><td>2023 (3 yrs ago)</td><td>83</td><td>11</td><td><strong style="color:var(--gold);">13.3%</strong></td><td>31%</td><td>3%</td></tr>
+        <tr><td>2024 (2 yrs ago)</td><td>87</td><td>32</td><td><strong style="color:var(--gold);">36.8%</strong></td><td>52%</td><td>31%</td></tr>
+        <tr><td>2025 (just drafted)</td><td>90</td><td>26</td><td><strong style="color:var(--gold);">28.9%</strong></td><td>60%</td><td>20%</td></tr>
+        <tr style="font-weight:bold;background:var(--surface-2);"><td>TOTAL</td><td>490</td><td>104</td><td><strong style="color:var(--gold);">21.2%</strong></td><td>36%</td><td>16%</td></tr>
       </tbody>
     </table>
-    <p style="font-size:.85rem;color:#999;font-style:italic;">Note: 2024–2025 rates are inflated because players drafted recently are still on initial contracts. The mature survival rate (2020–2023 classes) averages 14.7%.</p>
+    <p style="font-size:.85rem;color:var(--muted);font-style:italic;">Note: 2024–2025 rates are inflated because players drafted recently are still on initial contracts. The mature survival rate (2020–2023 classes) averages 14.7%.</p>
 
     <!-- Round survival bar chart (CSS) -->
     <h3>Survival Rate by Draft Round</h3>
@@ -430,29 +411,29 @@
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.3rem;">
           <span style="width:80px;text-align:right;font-size:.9rem;">Round 1</span>
           <div style="flex:1;background:#333;border-radius:4px;height:28px;position:relative;">
-            <div style="width:36.1%;background:#2ecc71;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-              <span style="font-size:.85rem;font-weight:bold;color:#111;">36.1%</span>
+            <div style="width:36.1%;background:var(--gold);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+              <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">36.1%</span>
             </div>
           </div>
-          <span style="font-size:.8rem;color:#999;">61/169 picks</span>
+          <span style="font-size:.8rem;color:var(--muted);">61/169 picks</span>
         </div>
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.3rem;">
           <span style="width:80px;text-align:right;font-size:.9rem;">Round 2</span>
           <div style="flex:1;background:#333;border-radius:4px;height:28px;position:relative;">
-            <div style="width:15.6%;background:#f39c12;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-              <span style="font-size:.85rem;font-weight:bold;color:#111;">15.6%</span>
+            <div style="width:15.6%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+              <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">15.6%</span>
             </div>
           </div>
-          <span style="font-size:.8rem;color:#999;">26/167 picks</span>
+          <span style="font-size:.8rem;color:var(--muted);">26/167 picks</span>
         </div>
         <div style="display:flex;align-items:center;gap:1rem;">
           <span style="width:80px;text-align:right;font-size:.9rem;">Round 3</span>
           <div style="flex:1;background:#333;border-radius:4px;height:28px;position:relative;">
-            <div style="width:12.3%;background:#e74c3c;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-              <span style="font-size:.85rem;font-weight:bold;color:#111;">12.3%</span>
+            <div style="width:12.3%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+              <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">12.3%</span>
             </div>
           </div>
-          <span style="font-size:.8rem;color:#999;">17/138 picks</span>
+          <span style="font-size:.8rem;color:var(--muted);">17/138 picks</span>
         </div>
       </div>
     </div>
@@ -492,50 +473,50 @@
     <h3>Salary Distribution of the 104 Survivors</h3>
     <div style="margin:1.5rem 0;">
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">MLS minimum<br><span style="color:#888;">$88K–$113K</span></span>
+        <span style="width:160px;text-align:right;font-size:.85rem;">MLS minimum<br><span style="color:var(--muted);">$88K–$113K</span></span>
         <div style="flex:1;background:#333;border-radius:4px;height:28px;">
-          <div style="width:35%;background:#e74c3c;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:#fff;">35% · 36 players</span>
+          <div style="width:35%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">35% · 36 players</span>
           </div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">Low<br><span style="color:#888;">$114K–$299K</span></span>
+        <span style="width:160px;text-align:right;font-size:.85rem;">Low<br><span style="color:var(--muted);">$114K–$299K</span></span>
         <div style="flex:1;background:#333;border-radius:4px;height:28px;">
-          <div style="width:42%;background:#f39c12;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:#111;">42% · 44 players</span>
+          <div style="width:42%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">42% · 44 players</span>
           </div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">Mid<br><span style="color:#888;">$300K–$599K</span></span>
+        <span style="width:160px;text-align:right;font-size:.85rem;">Mid<br><span style="color:var(--muted);">$300K–$599K</span></span>
         <div style="flex:1;background:#333;border-radius:4px;height:28px;">
           <div style="width:15%;background:#3498db;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:#fff;">15% · 16</span>
+            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">15% · 16</span>
           </div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">Upper<br><span style="color:#888;">$600K+</span></span>
+        <span style="width:160px;text-align:right;font-size:.85rem;">Upper<br><span style="color:var(--muted);">$600K+</span></span>
         <div style="flex:1;background:#333;border-radius:4px;height:28px;">
-          <div style="width:8%;background:#2ecc71;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:#111;">8% · 8</span>
+          <div style="width:8%;background:var(--gold);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">8% · 8</span>
           </div>
         </div>
       </div>
     </div>
-    <p style="font-size:.85rem;color:#999;">Median survivor salary: <strong style="color:#fff;">$113,412/yr</strong>. Only 8 of 490 total picks (1.6%) earn $600K+.</p>
+    <p style="font-size:.85rem;color:var(--muted);">Median survivor salary: <strong style="color:var(--text-strong);">$113,412/yr</strong>. Only 8 of 490 total picks (1.6%) earn $600K+.</p>
 
     <!-- The end-to-end math -->
     <h3>The End-to-End Probability</h3>
     <p>Combining the draft survival data with scholarship and draft probability data
        yields a complete picture of the professional pathway odds:</p>
     <div style="background:#111;border-radius:8px;padding:1.5rem;margin:1.5rem 0;font-family:monospace;font-size:.9rem;line-height:2;">
-      <div>Tier 3 player → earns D1 scholarship:       <strong style="color:#f39c12;">~5–8%</strong></div>
-      <div>D1 player → gets drafted in MLS SuperDraft: <strong style="color:#f39c12;">~5%</strong></div>
-      <div>Draft pick → active MLS roster 3+ years:    <strong style="color:#e74c3c;">~14–21%</strong></div>
+      <div>Tier 3 player → earns D1 scholarship:       <strong style="color:var(--gold);">~5–8%</strong></div>
+      <div>D1 player → gets drafted in MLS SuperDraft: <strong style="color:var(--gold);">~5%</strong></div>
+      <div>Draft pick → active MLS roster 3+ years:    <strong style="color:var(--gold);">~14–21%</strong></div>
       <div style="border-top:1px solid #333;margin-top:.5rem;padding-top:.5rem;">
-        End-to-end probability (Tier 3 → sustained MLS career): <strong style="color:#e74c3c;font-size:1.1rem;">~0.04–0.08%</strong>
+        End-to-end probability (Tier 3 → sustained MLS career): <strong style="color:var(--gold);font-size:1.1rem;">~0.04–0.08%</strong>
       </div>
     </div>
     <div class="callout">
@@ -564,11 +545,11 @@
     <div class="ev-grid">
       <div class="chart-canvas-wrap">
         <div class="chart-label">10-yr cost vs. expected financial return</div>
-        <canvas id="evCostChart" height="240"></canvas>
+        <canvas id="evCostChart" height="120"></canvas>
       </div>
       <div class="chart-canvas-wrap">
         <div class="chart-label">Break-even scholarship rate needed vs. actual</div>
-        <canvas id="evBreakevenChart" height="240"></canvas>
+        <canvas id="evBreakevenChart" height="120"></canvas>
       </div>
     </div>
 
@@ -587,21 +568,21 @@
       <tbody>
         <tr>
           <td>T1 AYSO ($550/yr)</td><td>$5,500</td><td>$301</td>
-          <td style="color:#e74c3c;">−$5,199</td><td>10%</td><td>~0.5%</td>
+          <td style="color:var(--gold);">−$5,199</td><td>10%</td><td>~0.5%</td>
         </tr>
         <tr>
           <td>T2 SoCal/NPL ($3,100/yr)</td><td>$31,000</td><td>$1,704</td>
-          <td style="color:#e74c3c;">−$29,296</td><td>58%</td><td>~3%</td>
+          <td style="color:var(--gold);">−$29,296</td><td>58%</td><td>~3%</td>
         </tr>
         <tr>
           <td>T3 ECNL/GA ($7,000/yr)</td><td>$70,000</td><td>$3,675</td>
-          <td style="color:#e74c3c;">−$66,325</td>
-          <td style="color:#e74c3c;font-weight:bold;">131% — impossible</td><td>~6.5%</td>
+          <td style="color:var(--gold);">−$66,325</td>
+          <td style="color:var(--gold);font-weight:bold;">131% — impossible</td><td>~6.5%</td>
         </tr>
         <tr>
           <td>T4 Homegrown ($12,000/yr)</td><td>$120,000</td><td>$5,379</td>
-          <td style="color:#e74c3c;">−$114,621</td>
-          <td style="color:#e74c3c;font-weight:bold;">225% — impossible</td><td>~9.5%</td>
+          <td style="color:var(--gold);">−$114,621</td>
+          <td style="color:var(--gold);font-weight:bold;">225% — impossible</td><td>~9.5%</td>
         </tr>
       </tbody>
     </table>
@@ -616,7 +597,7 @@
     <h3>The non-financial benefit curve</h3>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Is there a "likelihood-appropriate" cost? Financial return, non-financial benefit, and cost by annual spending</div>
-      <canvas id="frontierChart" height="180"></canvas>
+      <canvas id="frontierChart" height="90"></canvas>
     </div>
 
     <p>This chart adds a third dimension: the estimated non-financial benefit index
@@ -638,22 +619,22 @@
         <tr>
           <td>Child loves soccer; family can afford T2 comfortably; no scholarship expectation</td>
           <td>$3,100/yr</td>
-          <td style="color:#2ecc71;">Benefit-appropriate — paying for the experience</td>
+          <td style="color:var(--gold);">Benefit-appropriate — paying for the experience</td>
         </tr>
         <tr>
           <td>Child is genuinely exceptional; family has confirmed interest from college coaches</td>
           <td>$7,000/yr (2–3 yrs)</td>
-          <td style="color:#f39c12;">Conditionally rational — if evidence supports it</td>
+          <td style="color:var(--gold);">Conditionally rational — if evidence supports it</td>
         </tr>
         <tr>
           <td>Stretching financially; belief that T3 will "open doors"; no specific signal of exceptional ability</td>
           <td>$7,000–$22,000/yr</td>
-          <td style="color:#e74c3c;">Poor expected value — cost far exceeds realistic return</td>
+          <td style="color:var(--gold);">Poor expected value — cost far exceeds realistic return</td>
         </tr>
         <tr>
           <td>Any family; banking on T4 to produce a professional career</td>
           <td>$12,000+/yr</td>
-          <td style="color:#e74c3c;">No tier produces positive financial EV for a typical player</td>
+          <td style="color:var(--gold);">No tier produces positive financial EV for a typical player</td>
         </tr>
       </tbody>
     </table>
@@ -787,10 +768,18 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
-const gridLine = 'rgba(0,0,0,0.06)';
-const textColor = '#4a5568';
-Chart.defaults.color = textColor;
-Chart.defaults.font = { family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", size: 11 };
+const C = (function(){
+  const r = getComputedStyle(document.documentElement);
+  const v = k => r.getPropertyValue(k).trim();
+  return {
+    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
+    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
+    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
+    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
+  };
+})();
+Chart.defaults.color = C.muted;
+Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
 
 // ── Scholarship by division ────────────────────────────────
 new Chart(document.getElementById('scholarshipChart'), {
@@ -800,8 +789,8 @@ new Chart(document.getElementById('scholarshipChart'), {
     datasets: [{
       label: 'Avg annual scholarship value',
       data: [34000, 40000, 19000, 21000, 0, 0],
-      backgroundColor: ['#2b6cb0cc','#276749cc','#553c9acc','#d69e2ecc','#71809688','#71809688'],
-      borderColor:     ['#2b6cb0',  '#276749',  '#553c9a',  '#d69e2e',  '#718096',  '#718096'],
+      backgroundColor: [C.goldFill, C.goldFill, C.blueFill, C.blueFill, C.dim, C.dim],
+      borderColor:     [C.gold,     C.gold,     C.blue,     C.blue,     C.dimBd, C.dimBd],
       borderWidth: 1.5,
       borderRadius: 4,
     }]
@@ -813,10 +802,10 @@ new Chart(document.getElementById('scholarshipChart'), {
       tooltip: { callbacks: { label: ctx => ` $${ctx.raw.toLocaleString()}/yr avg` } }
     },
     scales: {
-      x: { grid: { display: false } },
+      x: { grid: { display: false }, ticks: { color: C.muted } },
       y: {
-        grid: { color: gridLine },
-        ticks: { callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
+        grid: { color: C.grid },
+        ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
       }
     }
   }
@@ -831,13 +820,15 @@ new Chart(document.getElementById('salaryLeagueChart'), {
       {
         label: 'Minimum',
         data: [88025, 65000, 35000, 25000, 18000],
-        backgroundColor: '#718096bb',
+        backgroundColor: C.dim,
+        borderColor: C.dimBd,
         borderRadius: 3,
       },
       {
         label: 'Median',
         data: [352000, 180000, 75000, 50000, 30000],
-        backgroundColor: '#2b6cb0cc',
+        backgroundColor: C.goldFill,
+        borderColor: C.gold,
         borderRadius: 3,
       }
     ]
@@ -846,15 +837,15 @@ new Chart(document.getElementById('salaryLeagueChart'), {
     indexAxis: 'y',
     responsive: true,
     plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12 } },
+      legend: { position: 'bottom', labels: { boxWidth: 12, color: C.muted } },
       tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
     },
     scales: {
       x: {
-        grid: { color: gridLine },
-        ticks: { callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
+        grid: { color: C.grid },
+        ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
       },
-      y: { grid: { display: false } }
+      y: { grid: { display: false }, ticks: { color: C.muted } }
     }
   }
 });
@@ -868,15 +859,15 @@ new Chart(document.getElementById('evCostChart'), {
       {
         label: '10-yr family cost',
         data: [5500, 31000, 70000, 120000],
-        backgroundColor: ['#3b82f6cc','#f59e0bcc','#ef4444cc','#9b2335cc'],
-        borderColor:     ['#3b82f6',  '#f59e0b',  '#ef4444',  '#9b2335'],
+        backgroundColor: C.dim,
+        borderColor: C.dimBd,
         borderWidth: 1.5, borderRadius: 4,
       },
       {
         label: 'Expected financial return',
         data: [301, 1704, 3675, 5379],
-        backgroundColor: '#22c55e99',
-        borderColor: '#22c55e',
+        backgroundColor: C.goldFill,
+        borderColor: C.gold,
         borderWidth: 1.5, borderRadius: 4,
       }
     ]
@@ -884,12 +875,12 @@ new Chart(document.getElementById('evCostChart'), {
   options: {
     responsive: true,
     plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: C.muted } },
       tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
     },
     scales: {
-      x: { grid: { display: false }, ticks: { font: { size: 10 } } },
-      y: { grid: { color: gridLine }, ticks: { callback: v => '$' + (v >= 1000 ? v/1000+'K' : v) } }
+      x: { grid: { display: false }, ticks: { color: C.muted, font: { size: 10 } } },
+      y: { grid: { color: C.grid }, ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000+'K' : v) } }
     }
   }
 });
@@ -903,16 +894,16 @@ new Chart(document.getElementById('evBreakevenChart'), {
       {
         label: '% needed to break even',
         data: [10.3, 58.1, 131.1, 224.7],
-        backgroundColor: ['#3b82f644','#f59e0b44','#ef444444','#9b233544'],
-        borderColor:     ['#3b82f6',  '#f59e0b',  '#ef4444',  '#9b2335'],
+        backgroundColor: C.dim,
+        borderColor: C.dimBd,
         borderWidth: 1.5, borderRadius: 4,
       },
       {
         label: 'Actual scholarship rate',
         data: [0.5, 3.0, 6.5, 9.5],
         type: 'line',
-        borderColor: '#22c55e', backgroundColor: '#22c55e33',
-        pointBackgroundColor: '#22c55e', pointRadius: 6,
+        borderColor: C.gold, backgroundColor: C.goldFill,
+        pointBackgroundColor: C.gold, pointRadius: 6,
         borderWidth: 2, fill: false, tension: 0.1,
       }
     ]
@@ -920,12 +911,12 @@ new Chart(document.getElementById('evBreakevenChart'), {
   options: {
     responsive: true,
     plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: C.muted } },
       tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toFixed(1)}%` } }
     },
     scales: {
-      x: { grid: { display: false } },
-      y: { grid: { color: gridLine }, ticks: { callback: v => v + '%' } }
+      x: { grid: { display: false }, ticks: { color: C.muted } },
+      y: { grid: { color: C.grid }, ticks: { color: C.muted, callback: v => v + '%' } }
     }
   }
 });
@@ -946,8 +937,7 @@ new Chart(document.getElementById('evBreakevenChart'), {
     return 90;
   }
 
-  const evPerYear  = [30.1, 170.4, 367.5, 537.9]; // annual EV at tier points
-  const tierSpend  = [550, 3100, 7000, 12000];
+  const evPerYear  = [30.1, 170.4, 367.5, 537.9];
   function evAt(s) {
     if (s <= 550)  return (s/550) * evPerYear[0];
     if (s <= 3100) return evPerYear[0] + (s-550)/(3100-550) * (evPerYear[1]-evPerYear[0]);
@@ -963,19 +953,19 @@ new Chart(document.getElementById('evBreakevenChart'), {
         {
           label: 'Non-financial benefit index (estimated)',
           data: spend.map(benefitAt),
-          borderColor: '#3b82f6', backgroundColor: '#3b82f611',
+          borderColor: C.blue, backgroundColor: C.blueFill,
           borderWidth: 2.5, fill: true, tension: 0.35, pointRadius: 0,
         },
         {
           label: 'Financial EV (annualized, per $100)',
           data: spend.map(s => evAt(s) / 100),
-          borderColor: '#22c55e', backgroundColor: '#22c55e11',
+          borderColor: C.gold, backgroundColor: C.goldFill,
           borderWidth: 2, fill: true, tension: 0.35, pointRadius: 0,
         },
         {
           label: 'Annual cost (scaled: $13K = 100)',
           data: spend.map(s => s / 130),
-          borderColor: '#ef4444', borderDash: [6, 4],
+          borderColor: C.dimBd, borderDash: [6, 4],
           borderWidth: 2, fill: false, tension: 0, pointRadius: 0,
         }
       ]
@@ -984,7 +974,7 @@ new Chart(document.getElementById('evBreakevenChart'), {
       responsive: true,
       interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: C.muted } },
         tooltip: {
           callbacks: {
             title: items => '$' + items[0].label.toLocaleString() + '/yr',
@@ -995,13 +985,13 @@ new Chart(document.getElementById('evBreakevenChart'), {
       scales: {
         x: {
           type: 'linear', min: 0, max: 13000,
-          grid: { color: gridLine },
-          ticks: { callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v), maxTicksLimit: 8 }
+          grid: { color: C.grid },
+          ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v), maxTicksLimit: 8 }
         },
         y: {
           min: 0, max: 100,
-          grid: { color: gridLine },
-          ticks: { callback: v => v }
+          grid: { color: C.grid },
+          ticks: { color: C.muted, callback: v => v }
         }
       }
     }

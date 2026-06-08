@@ -145,18 +145,18 @@
     }
 
     .sizzle-section-label.think {
-      background: #fff3cd;
-      color: #856404;
+      background: #dce8ff;
+      color: #2d4fa8;
     }
 
     .sizzle-section-label.know {
-      background: #d1e7dd;
-      color: #0a5c36;
+      background: #e8e4f7;
+      color: #4a3b8c;
     }
 
     .sizzle-section-label.dontknow {
-      background: #e8e4f7;
-      color: #4a3b8c;
+      background: #ede9f8;
+      color: #5b42b0;
     }
 
     .sizzle-section-intro {
@@ -280,7 +280,7 @@
 
       <div class="sizzle-section">
         <div class="sizzle-section-label think">What We Think</div>
-        <p class="sizzle-section-intro">The story parents are told on the sideline:</p>
+        <p class="sizzle-section-intro">What parents commonly hear:</p>
         <ul class="sizzle-bullets">
           <li>Elite clubs give kids the best shot at a college scholarship</li>
           <li>Starting young and investing more leads to better outcomes</li>
@@ -291,24 +291,17 @@
 
       <div class="sizzle-section">
         <div class="sizzle-section-label know">What We Know</div>
-        <p class="sizzle-section-intro">The numbers that rarely make it to the sideline:</p>
+        <p class="sizzle-section-intro">A few reference points:</p>
         <ul class="sizzle-bullets">
           <li>Youth sports is a <strong>$40 billion industry</strong>, up 46% since 2019</li>
           <li>Odds of a D1 full scholarship for a competitive 15-year-old: <strong>less than 1%</strong></li>
-          <li>Typical elite club spend over 6 years: <strong>$54,000+</strong>, before travel, privates, and tournaments</li>
-          <li>That same $54,000 in a college savings account grows to <strong>$126,000 by freshman year</strong></li>
-          <li>Two-thirds of kids <strong>quit organized sports by age 13</strong>. Burnout and cost are the top reasons.</li>
-          <li>NCAA D1 men's soccer offers <strong>9.9 scholarships per team</strong>, split among 20+ players. Most "scholarships" cover less than a semester.</li>
+          <li>NCAA D1 men's soccer: <strong>9.9 scholarship equivalencies per team</strong>, split among 20+ players — most awards cover a fraction of tuition</li>
         </ul>
-        <blockquote class="sizzle-quote">
-          "If you're chasing a scholarship, just know that you're crazy."
-          <cite>— Jon Simoneau, teacher, coach, and soccer parent &bull; <a href="https://www.nj.com/sports/2026/05/the-shocking-cost-of-youth-sports-in-new-jersey.html" target="_blank" rel="noopener">NJ.com, May 2026</a></cite>
-        </blockquote>
       </div>
 
       <div class="sizzle-section">
         <div class="sizzle-section-label dontknow">What We Don't Know</div>
-        <p class="sizzle-section-intro">The data that doesn't exist yet. Clubs won't share it:</p>
+        <p class="sizzle-section-intro">This data isn't publicly available:</p>
         <ul class="sizzle-bullets">
           <li>What families are <em>actually</em> spending, all-in, by region and level</li>
           <li>How many competitive players eventually earn any scholarship at all</li>
@@ -352,6 +345,397 @@
       <p>Your data helps parents make informed decisions about youth soccer investments.</p>
     </div>
   </div>
+
+  <!-- Survey Results -->
+  <div class="results-section">
+    <h2>Results So Far <span class="response-count" id="response-count">8 responses</span></h2>
+    <p class="results-subtitle">Anonymous responses from club soccer families. Team names hidden — leagues shown where identifiable.</p>
+
+    <div class="results-stats" id="results-stats"></div>
+
+    <div class="results-filters">
+      <input type="text" id="search-input" class="search-bar" placeholder="Search by level, league, region, income..." />
+      <div class="filter-chips" id="filter-chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="Elite club">Elite</button>
+        <button class="chip" data-filter="Competitive travel">Competitive</button>
+        <button class="chip" data-filter="U-travel">Travel</button>
+      </div>
+    </div>
+
+    <div class="results-grid" id="results-grid"></div>
+  </div>
+
+  <style>
+    .results-section {
+      max-width: 900px;
+      margin: 48px auto 0;
+      padding: 0 20px 60px;
+      color: white;
+    }
+    .results-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .response-count {
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.25);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.04em;
+    }
+    .results-subtitle {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 24px;
+    }
+    .results-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 14px 18px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+    .stat-card .sn { font-size: 1.8rem; font-weight: 800; color: white; line-height: 1; }
+    .stat-card .sl { font-size: 0.72rem; color: rgba(255,255,255,0.7); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .results-filters { margin-bottom: 20px; }
+    .search-bar {
+      width: 100%;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: none;
+      font-size: 0.95rem;
+      font-family: inherit;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      outline: none;
+    }
+    .search-bar:focus { box-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 0 0 3px rgba(102,126,234,0.5); }
+    .filter-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 2px solid rgba(255,255,255,0.4);
+      background: transparent;
+      color: white;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .chip:hover { background: rgba(255,255,255,0.15); }
+    .chip.active { background: white; color: #764ba2; border-color: white; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .result-card {
+      background: white;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+    .result-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .level-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 12px;
+    }
+    .level-elite    { background: #764ba2; color: white; }
+    .level-travel   { background: #2b6cb0; color: white; }
+    .level-comp     { background: #4a6fa5; color: white; }
+    .league-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #667eea;
+      background: #f0eeff;
+      padding: 2px 8px;
+      border-radius: 8px;
+    }
+    .result-total {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #2c3e50;
+      margin-bottom: 2px;
+    }
+    .result-total-label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+    .result-rows { border-top: 1px solid #f0f0f0; padding-top: 10px; }
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      padding: 3px 0;
+      color: #555;
+    }
+    .result-row .rk { color: #999; }
+    .result-row .rv { font-weight: 600; color: #2c3e50; }
+    .no-results { text-align: center; color: rgba(255,255,255,0.6); padding: 40px; grid-column: 1/-1; font-size: 0.95rem; }
+    @media (max-width: 600px) {
+      .results-section { padding: 0 14px 40px; }
+      .results-section h2 { font-size: 1.2rem; }
+    }
+  </style>
+
+  <script>
+    const RESPONSES = [
+      {
+        id: 'r3du3tekuna5urp72ldsr3du3tegxbe9',
+        date: '2026-06-05',
+        club_level: 'Competitive travel',
+        league: 'Competitive Travel',
+        travel_scope: 'Regional',
+        zip: '95776',
+        income: '$200,000+',
+        club_fee: 1250,
+        private_coaching: 2000,
+        travel: 1500,
+        equipment: 500,
+        tournament: 500,
+        training_hrs: 3,
+        private_hrs: 1,
+        years: 4,
+        total: 5750,
+      },
+      {
+        id: 'nuravznaxrze1fa3messnuravz9d9r9q',
+        date: '2026-06-05',
+        club_level: 'U-travel',
+        league: 'Travel',
+        travel_scope: 'Regional',
+        zip: '30062',
+        income: '$200,000+',
+        club_fee: 2000,
+        private_coaching: 1000,
+        travel: 1000,
+        equipment: 350,
+        tournament: 500,
+        training_hrs: 5,
+        private_hrs: 0,
+        years: 1,
+        total: 4850,
+      },
+      {
+        id: '7u7xolajwvf3zo95vx1o7jd7u7xovexe',
+        date: '2026-06-05',
+        club_level: 'U-travel',
+        league: 'Travel',
+        travel_scope: 'Local',
+        zip: '04021',
+        income: '$120,000 – $200,000',
+        club_fee: 500,
+        private_coaching: 300,
+        travel: 400,
+        equipment: 500,
+        tournament: 0,
+        training_hrs: 4,
+        private_hrs: 0,
+        years: 4,
+        total: 1700,
+      },
+      {
+        id: 'ecobyt7arroje4qvf4t1eecobyt7axeq',
+        date: '2026-06-05',
+        club_level: 'Elite club',
+        league: 'ECNL',
+        travel_scope: 'Regional (2-6 hrs)',
+        zip: '90806',
+        income: '$120,000 – $200,000',
+        club_fee: 4000,
+        private_coaching: 2000,
+        travel: null,
+        equipment: null,
+        tournament: null,
+        training_hrs: 6,
+        private_hrs: 2,
+        years: 5,
+        total: 6000,
+      },
+      {
+        id: '58ya7l55c0ril8cc58ya246n621rz55f',
+        date: '2026-06-05',
+        club_level: 'Elite club',
+        league: 'MLS Next',
+        travel_scope: 'Regional (2-6 hrs)',
+        zip: '92129',
+        income: '$200,000+',
+        club_fee: 3500,
+        private_coaching: 8000,
+        travel: null,
+        equipment: null,
+        tournament: null,
+        training_hrs: 5,
+        private_hrs: 6,
+        years: 5,
+        total: 11500,
+      },
+      {
+        id: 'idw8mo7h7z8qhm31idw8mo1prrqhuz7j',
+        date: '2026-06-05',
+        club_level: 'Competitive travel',
+        league: 'Competitive Travel',
+        travel_scope: 'Regional (2-6 hrs)',
+        zip: '91741',
+        income: '$200,000+',
+        club_fee: 2100,
+        private_coaching: 0,
+        travel: null,
+        equipment: null,
+        tournament: null,
+        training_hrs: 3,
+        private_hrs: 0,
+        years: 3,
+        total: 2100,
+      },
+      {
+        id: 'r54j6ih1u6uy0ew3r546znka7eplr4g7',
+        date: '2026-06-05',
+        club_level: 'Elite club',
+        league: 'ECNL',
+        travel_scope: 'Regional (2-6 hrs)',
+        zip: '90274',
+        income: '$200,000+',
+        club_fee: 5000,
+        private_coaching: 6000,
+        travel: null,
+        equipment: null,
+        tournament: null,
+        training_hrs: 3,
+        private_hrs: 4,
+        years: 2,
+        total: 11000,
+      },
+      {
+        id: 'ccd60cuc6hlf94jpxccd6a58n8tzd389',
+        date: '2026-06-06',
+        club_level: 'Elite club',
+        league: 'ECNL',
+        travel_scope: 'National',
+        zip: '90000',
+        income: '$120,000 – $200,000',
+        club_fee: 4200,
+        private_coaching: 2000,
+        travel: null,
+        equipment: null,
+        tournament: null,
+        training_hrs: 5,
+        private_hrs: 2,
+        years: 9,
+        total: 6200,
+      },
+    ];
+
+    function fmt(n) {
+      if (n == null) return '—';
+      return '$' + n.toLocaleString();
+    }
+
+    function levelClass(level) {
+      if (level === 'Elite club') return 'level-elite';
+      if (level === 'Competitive travel') return 'level-comp';
+      return 'level-travel';
+    }
+
+    function renderStats(data) {
+      const totals = data.map(r => r.total).filter(Boolean);
+      const avg = Math.round(totals.reduce((a, b) => a + b, 0) / totals.length);
+      const max = Math.max(...totals);
+      const min = Math.min(...totals);
+      const avgPrivate = Math.round(data.map(r => r.private_coaching || 0).reduce((a, b) => a + b, 0) / data.length);
+
+      document.getElementById('results-stats').innerHTML = `
+        <div class="stat-card"><div class="sn">${data.length}</div><div class="sl">Responses</div></div>
+        <div class="stat-card"><div class="sn">${fmt(avg)}</div><div class="sl">Avg annual spend</div></div>
+        <div class="stat-card"><div class="sn">${fmt(max)}</div><div class="sl">Highest reported</div></div>
+        <div class="stat-card"><div class="sn">${fmt(min)}</div><div class="sl">Lowest reported</div></div>
+        <div class="stat-card"><div class="sn">${fmt(avgPrivate)}</div><div class="sl">Avg private coaching</div></div>
+      `;
+      document.getElementById('response-count').textContent = data.length + ' response' + (data.length !== 1 ? 's' : '');
+    }
+
+    function renderCards(data) {
+      const grid = document.getElementById('results-grid');
+      if (!data.length) {
+        grid.innerHTML = '<div class="no-results">No responses match your filter.</div>';
+        return;
+      }
+      grid.innerHTML = data.map(r => `
+        <div class="result-card">
+          <div class="result-card-header">
+            <span class="level-badge ${levelClass(r.club_level)}">${r.club_level}</span>
+            <span class="league-tag">${r.league}</span>
+          </div>
+          <div class="result-total">${fmt(r.total)}</div>
+          <div class="result-total-label">Est. annual spend</div>
+          <div class="result-rows">
+            <div class="result-row"><span class="rk">Club fees</span><span class="rv">${fmt(r.club_fee)}</span></div>
+            <div class="result-row"><span class="rk">Private coaching</span><span class="rv">${fmt(r.private_coaching)}</span></div>
+            ${r.travel != null ? `<div class="result-row"><span class="rk">Travel</span><span class="rv">${fmt(r.travel)}</span></div>` : ''}
+            ${r.equipment != null ? `<div class="result-row"><span class="rk">Equipment</span><span class="rv">${fmt(r.equipment)}</span></div>` : ''}
+            ${r.tournament != null ? `<div class="result-row"><span class="rk">Tournaments</span><span class="rv">${fmt(r.tournament)}</span></div>` : ''}
+            <div class="result-row"><span class="rk">Training hrs/wk</span><span class="rv">${r.training_hrs}h + ${r.private_hrs}h private</span></div>
+            <div class="result-row"><span class="rk">Years in club</span><span class="rv">${r.years} yr${r.years !== 1 ? 's' : ''}</span></div>
+            <div class="result-row"><span class="rk">Travel scope</span><span class="rv">${r.travel_scope}</span></div>
+            <div class="result-row"><span class="rk">Income</span><span class="rv">${r.income}</span></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    let activeFilter = 'all';
+    let searchQuery = '';
+
+    function applyFilters() {
+      let data = RESPONSES;
+      if (activeFilter !== 'all') data = data.filter(r => r.club_level === activeFilter);
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        data = data.filter(r =>
+          [r.club_level, r.league, r.travel_scope, r.zip, r.income].some(v => v && v.toLowerCase().includes(q))
+        );
+      }
+      renderStats(data);
+      renderCards(data);
+    }
+
+    document.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeFilter = chip.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    document.getElementById('search-input').addEventListener('input', e => {
+      searchQuery = e.target.value;
+      applyFilters();
+    });
+
+    applyFilters();
+  </script>
 
   <script>
     // 15 questions = 6.67% per question

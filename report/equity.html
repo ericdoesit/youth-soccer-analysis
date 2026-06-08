@@ -6,43 +6,26 @@
   <title>Who Loses Most: The Equity Problem in Youth Soccer</title>
   <link rel="stylesheet" href="site.css">
   <style>
-    section { background: white; border-radius: 10px; padding: 1.75rem 2rem;
-              margin-bottom: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
-    h2 { font-size: 1.35rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem; }
-    h3 { font-size: 1.05rem; font-weight: 600; color: #4a5568; margin: 1.25rem 0 0.5rem; }
-    p  { color: #4a5568; margin-bottom: 0.85rem; }
-    .callout { background: #fffbeb; border-left: 4px solid #d69e2e; padding: 1rem 1.25rem;
-               border-radius: 0 6px 6px 0; margin: 1.25rem 0; }
-    .callout.red { background: #fff5f5; border-color: #c53030; }
-    .callout.green { background: #f0fff4; border-color: #38a169; }
-    .callout strong { color: #92400e; }
-    .callout.red strong { color: #c53030; }
-    .callout.green strong { color: #276749; }
     .loser-rank { display: inline-block; width: 1.6rem; height: 1.6rem; border-radius: 50%;
-                  background: #c53030; color: white; font-weight: 800; font-size: 0.8rem;
-                  text-align: center; line-height: 1.6rem; margin-right: 0.4rem; }
-    .loser-rank.green { background: #38a169; }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-                 gap: 1rem; margin: 1.25rem 0; }
-    .stat-card { background: #f7f8fa; border-radius: 8px; padding: 1.25rem;
-                 text-align: center; border: 1px solid #e2e8f0; }
-    .stat-card .num { font-size: 2.2rem; font-weight: 800; }
-    .stat-card .num.bad { color: #c53030; }
-    .stat-card .num.ok  { color: #d69e2e; }
-    .stat-card .num.good { color: #276749; }
-    .stat-card p { font-size: 0.82rem; color: #4a5568; margin-top: 0.25rem; margin-bottom: 0; }
-    .ratio-bad  { color: #c53030; font-weight: 700; }
-    .ratio-ok   { color: #d69e2e; font-weight: 700; }
-    .ratio-good { color: #276749; font-weight: 700; }
-    .income-bar { height: 1.6rem; border-radius: 4px; display: flex; align-items: center;
-                  justify-content: flex-end; padding-right: 0.5rem; color: white;
-                  font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem; }
-    .chart-canvas-wrap { background: #f7f8fa; border: 1px solid #e2e8f0; border-radius: 8px;
-                         padding: 1rem; margin: 1.25rem 0; }
-    .chart-canvas-wrap .chart-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
-                                      letter-spacing: 0.06em; color: #718096; margin-bottom: 0.75rem; }
+                  background: var(--red); color: #0d0d0d; font-weight: 800; font-size: 0.8rem;
+                  text-align: center; line-height: 1.6rem; margin-right: 0.4rem;
+                  font-family: 'Inter', sans-serif; }
+    .loser-rank.green { background: var(--green); }
+    .stat-card .num.bad  { color: var(--red); }
+    .stat-card .num.ok   { color: var(--gold); }
+    .ratio-bad  { color: var(--red); font-weight: 700; }
+    .ratio-ok   { color: var(--gold); font-weight: 700; }
+    .ratio-good { color: var(--green); font-weight: 700; }
+    .income-bar { height: 1.6rem; border-radius: 2px; display: flex; align-items: center;
+                  justify-content: flex-end; padding-right: 0.5rem; color: #0d0d0d;
+                  font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem;
+                  font-family: 'Inter', sans-serif; }
+    .chart-canvas-wrap { background: var(--surface-2); border: 1px solid var(--border);
+                         border-radius: 2px; padding: 1rem; margin: 1.25rem 0; }
+    .chart-canvas-wrap .chart-label { font-family: 'Inter', sans-serif; font-size: 0.82rem;
+                                      font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+                                      color: var(--muted); margin-bottom: 0.75rem; }
     @media (max-width: 600px) {
-      .stat-grid { grid-template-columns: 1fr 1fr; }
       table { font-size: 0.78rem; }
     }
   </style>
@@ -62,6 +45,7 @@
       <a href="fools_gold.html">ROI</a>
       <a href="equity.html" class="active">Equity</a>
       <a href="methodology.html">Methods</a>
+      <a href="data.html">Data</a>
       <a href="../survey.html">Survey</a>
     </div>
   </div>
@@ -103,7 +87,7 @@
     <h3>Income distribution in youth soccer vs. general population</h3>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Income distribution: club soccer families vs. US general population</div>
-      <canvas id="incomeChart" height="160"></canvas>
+      <canvas id="incomeChart" height="80"></canvas>
     </div>
 
     <p style="margin-top: 1rem;">Families below $50K — roughly 40% of US households — represent
@@ -193,7 +177,7 @@
           <td class="ratio-bad">22 : 1 loss</td>
         </tr>
         <tr>
-          <td><span class="loser-rank" style="background:#d69e2e">5</span></td>
+          <td><span class="loser-rank" style="background:var(--gold)">5</span></td>
           <td><strong>Female elite (ECNL) players</strong><br>
               <small>Same cost as boys, fewer pro spots but more college opportunities</small></td>
           <td>~$52,500</td>
@@ -381,9 +365,18 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
-Chart.defaults.color = '#4a5568';
-Chart.defaults.font = { family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", size: 11 };
-const gridLine = 'rgba(0,0,0,0.06)';
+const C = (function(){
+  const r = getComputedStyle(document.documentElement);
+  const v = k => r.getPropertyValue(k).trim();
+  return {
+    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
+    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
+    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
+    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
+  };
+})();
+Chart.defaults.color = C.muted;
+Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
 
 new Chart(document.getElementById('incomeChart'), {
   type: 'bar',
@@ -393,16 +386,16 @@ new Chart(document.getElementById('incomeChart'), {
       {
         label: 'Club soccer families',
         data: [8, 13, 19, 60],
-        backgroundColor: '#c53030cc',
-        borderColor: '#c53030',
+        backgroundColor: C.goldFill,
+        borderColor: C.gold,
         borderWidth: 1.5,
         borderRadius: 4,
       },
       {
         label: 'US general population',
         data: [40, 18, 16, 26],
-        backgroundColor: '#71809699',
-        borderColor: '#718096',
+        backgroundColor: C.dim,
+        borderColor: C.dimBd,
         borderWidth: 1.5,
         borderRadius: 4,
       }
@@ -411,15 +404,15 @@ new Chart(document.getElementById('incomeChart'), {
   options: {
     responsive: true,
     plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14 } },
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14, color: C.muted } },
       tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw}% of households` } }
     },
     scales: {
-      x: { grid: { display: false } },
+      x: { grid: { display: false }, ticks: { color: C.muted } },
       y: {
-        grid: { color: gridLine },
+        grid: { color: C.grid },
         max: 70,
-        ticks: { callback: v => v + '%' }
+        ticks: { color: C.muted, callback: v => v + '%' }
       }
     }
   }
