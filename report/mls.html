@@ -11,11 +11,11 @@
     .two-col .label { font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 1rem; }
     .pipeline-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 1.25rem 0; }
     .pipeline-cell { background: var(--surface-2); padding: 1.75rem 1.5rem; }
-    .pipeline-cell.bad { border-top: 3px solid var(--red); }
-    .pipeline-cell.good { border-top: 3px solid var(--green); }
+    .pipeline-cell.bad { border-top: 3px solid var(--gold); }
+    .pipeline-cell.good { border-top: 3px solid var(--blue); }
     .pipeline-cell h4 { font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
-    .pipeline-cell.bad h4 { color: var(--red); }
-    .pipeline-cell.good h4 { color: var(--green); }
+    .pipeline-cell.bad h4 { color: var(--gold); }
+    .pipeline-cell.good h4 { color: var(--blue); }
     .pipeline-cell ul { padding-left: 1.25rem; }
     .pipeline-cell li { font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--text); line-height: 1.7; margin-bottom: 0.3rem; }
     .nat-bar { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.82rem; }
@@ -23,12 +23,12 @@
     .nat-bar .bar { height: 10px; border-radius: 2px; background: var(--blue); flex-shrink: 0; }
     .nat-bar .pct { color: var(--muted); font-size: 0.75rem; }
     .finding-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin: 1.25rem 0; }
-    .finding { background: var(--surface-2); padding: 1.5rem 1.25rem; border-top: 3px solid var(--red); }
+    .finding { background: var(--surface-2); padding: 1.5rem 1.25rem; border-top: 3px solid var(--gold); }
     .finding.gold  { border-color: var(--gold); }
-    .finding.green { border-color: var(--green); }
-    .finding .fnum { font-family: 'Playfair Display', Georgia, serif; font-size: 2.4rem; font-weight: 700; color: var(--red); line-height: 1; }
+    .finding.green { border-color: var(--blue); }
+    .finding .fnum { font-family: 'Playfair Display', Georgia, serif; font-size: 2.4rem; font-weight: 700; color: var(--gold); line-height: 1; }
     .finding.gold  .fnum { color: var(--gold); }
-    .finding.green .fnum { color: var(--green); }
+    .finding.green .fnum { color: var(--blue); }
     .finding p { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--muted); margin: 0.4rem 0 0; line-height: 1.5; }
     @media (max-width: 768px) {
       .two-col, .pipeline-row { grid-template-columns: 1fr; }
@@ -50,6 +50,7 @@
     </button>
     <div class="nav-links">
       <a href="../index.html">Home</a>
+      <a href="scope.html">Youth Scope</a>
       <a href="costs.html">Costs</a>
       <a href="fools_gold.html">Fools Gold</a>
       <a href="mls.html" class="active">MLS</a>
@@ -80,11 +81,11 @@
       <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">Median guaranteed compensation (2026)</div>
     </div>
     <div style="text-align:center;padding:1.75rem 1rem;border-right:1px solid var(--border);">
-      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--red);line-height:1;">21%</div>
+      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;">21%</div>
       <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">Draft picks still active after 5+ years</div>
     </div>
     <div style="text-align:center;padding:1.75rem 1rem;border-right:1px solid var(--border);">
-      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--red);line-height:1;">51%</div>
+      <div style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold);line-height:1;">51%</div>
       <div style="font-family:'Inter',sans-serif;font-size:0.72rem;color:var(--text);margin-top:0.4rem;">Of surviving picks earn at or below reserve minimum ($113K)</div>
     </div>
   </div>
@@ -164,33 +165,27 @@
       </div>
     </div>
 
-    <div class="two-col">
-      <div>
-        <div class="label">Transfer spend by nationality — top 100 MLS transfers (Transfermarkt)</div>
-        <canvas id="transferSpendChart" height="160"></canvas>
-      </div>
-      <div style="padding-top:0.5rem;">
-        <div class="label" style="margin-bottom:1.25rem;">Why the draft misleads</div>
+    <div>
+      <div class="label" style="margin-bottom:1.25rem;">Transfer spend by nationality — top 100 MLS transfers (Transfermarkt)</div>
 
-        <div class="nat-bar"><span class="country">Argentina</span><div class="bar" style="width:200px;background:var(--blue);"></div><span class="pct">29 deals &nbsp;·&nbsp; €208M</span></div>
-        <div class="nat-bar"><span class="country">Mexico</span><div class="bar" style="width:81px;"></div><span class="pct">11 deals &nbsp;·&nbsp; €85M</span></div>
-        <div class="nat-bar"><span class="country">Brazil</span><div class="bar" style="width:63px;"></div><span class="pct">7 deals &nbsp;·&nbsp; €66M</span></div>
-        <div class="nat-bar"><span class="country">USA</span><div class="bar" style="width:55px;background:var(--gold);"></div><span class="pct">6 deals &nbsp;·&nbsp; €58M</span></div>
-        <div class="nat-bar"><span class="country">Uruguay</span><div class="bar" style="width:43px;"></div><span class="pct">6 deals &nbsp;·&nbsp; €44M</span></div>
-        <div class="nat-bar"><span class="country">Côte d'Ivoire</span><div class="bar" style="width:26px;"></div><span class="pct">2 deals &nbsp;·&nbsp; €27M</span></div>
-        <div class="nat-bar"><span class="country">Paraguay</span><div class="bar" style="width:22px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €23M</span></div>
-        <div class="nat-bar"><span class="country">Croatia</span><div class="bar" style="width:21px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €22M</span></div>
-        <div class="nat-bar"><span class="country">South Korea</span><div class="bar" style="width:21px;background:var(--red);"></div><span class="pct">1 deal &nbsp;·&nbsp; €22M (Son)</span></div>
-        <div class="nat-bar"><span class="country">Belgium</span><div class="bar" style="width:21px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €21M</span></div>
-        <div class="nat-bar"><span class="country">20+ others</span><div class="bar" style="width:95px;background:var(--muted);"></div><span class="pct">24 deals &nbsp;·&nbsp; €185M</span></div>
+      <div class="nat-bar"><span class="country">Argentina</span><div class="bar" style="width:200px;background:var(--blue);"></div><span class="pct">29 deals &nbsp;·&nbsp; €208M</span></div>
+      <div class="nat-bar"><span class="country">Mexico</span><div class="bar" style="width:81px;"></div><span class="pct">11 deals &nbsp;·&nbsp; €85M</span></div>
+      <div class="nat-bar"><span class="country">Brazil</span><div class="bar" style="width:63px;"></div><span class="pct">7 deals &nbsp;·&nbsp; €66M</span></div>
+      <div class="nat-bar"><span class="country">USA</span><div class="bar" style="width:55px;background:var(--gold);"></div><span class="pct">6 deals &nbsp;·&nbsp; €58M</span></div>
+      <div class="nat-bar"><span class="country">Uruguay</span><div class="bar" style="width:43px;"></div><span class="pct">6 deals &nbsp;·&nbsp; €44M</span></div>
+      <div class="nat-bar"><span class="country">Côte d'Ivoire</span><div class="bar" style="width:26px;"></div><span class="pct">2 deals &nbsp;·&nbsp; €27M</span></div>
+      <div class="nat-bar"><span class="country">Paraguay</span><div class="bar" style="width:22px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €23M</span></div>
+      <div class="nat-bar"><span class="country">Croatia</span><div class="bar" style="width:21px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €22M</span></div>
+      <div class="nat-bar"><span class="country">South Korea</span><div class="bar" style="width:21px;background:var(--ch-dim-bd);"></div><span class="pct">1 deal &nbsp;·&nbsp; €22M (Son)</span></div>
+      <div class="nat-bar"><span class="country">Belgium</span><div class="bar" style="width:21px;"></div><span class="pct">3 deals &nbsp;·&nbsp; €21M</span></div>
+      <div class="nat-bar"><span class="country">20+ others</span><div class="bar" style="width:95px;background:var(--muted);"></div><span class="pct">24 deals &nbsp;·&nbsp; €185M</span></div>
 
-        <p style="margin-top:1.25rem;font-family:'Inter',sans-serif;font-size:0.78rem;color:var(--muted);line-height:1.6;">
-          The SuperDraft is dominated by domestic college players — a narrow slice of MLS talent.
-          Stars like Messi (Argentina), Son (South Korea), Lozano (Mexico), and Denkey (Togo)
-          never touched the draft. MLS builds its best squads through the transfer window,
-          not the pipeline that American youth families are funding.
-        </p>
-      </div>
+      <p style="margin-top:1.25rem;font-family:'Inter',sans-serif;font-size:0.78rem;color:var(--muted);line-height:1.6;">
+        The SuperDraft is dominated by domestic college players — a narrow slice of MLS talent.
+        Stars like Messi (Argentina), Son (South Korea), Lozano (Mexico), and Denkey (Togo)
+        never touched the draft. MLS builds its best squads through the transfer window,
+        not the pipeline that American youth families are funding.
+      </p>
     </div>
 
     <div class="callout">
@@ -276,7 +271,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Patrick Schulte</td><td>2022 R1</td><td>#12</td><td>Columbus Crew</td><td>Goalkeeper</td><td>Saint Louis Univ.</td><td>St. Louis Scott Gallagher</td><td style="text-align:right;color:var(--green);">$1,032,083</td></tr>
+          <tr><td>Patrick Schulte</td><td>2022 R1</td><td>#12</td><td>Columbus Crew</td><td>Goalkeeper</td><td>Saint Louis Univ.</td><td>St. Louis Scott Gallagher</td><td style="text-align:right;color:var(--gold);">$1,032,083</td></tr>
           <tr><td>Joey Maher</td><td>2024 R2</td><td>#30</td><td>Nashville SC</td><td>Center-back</td><td>Indiana</td><td>St. Louis FC Academy</td><td style="text-align:right;">$995,467</td></tr>
           <tr><td>Jack Maher</td><td>2020 R1</td><td>#2</td><td>Nashville SC</td><td>Center-back</td><td>Indiana</td><td>St. Louis Scott Gallagher</td><td style="text-align:right;">$995,467</td></tr>
           <tr><td>Henry Kessler</td><td>2020 R1</td><td>#6</td><td>Charlotte FC</td><td>Center-back</td><td>Virginia</td><td>NY Red Bulls Academy</td><td style="text-align:right;">$965,525</td></tr>
@@ -337,15 +332,15 @@
     <div style="background:var(--surface-2);border:1px solid var(--border);padding:1.25rem 1.5rem;font-family:'Inter',sans-serif;font-size:0.83rem;line-height:1.9;color:var(--text);margin:0.75rem 0;">
       <div><span style="color:var(--muted);">Family investment (5–7 yrs, mid estimate)</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">$70,000</strong></div>
       <div><span style="color:var(--muted);">Probability of entering MLS draft</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">~3–5%</strong> of MLS NEXT players</div>
-      <div><span style="color:var(--muted);">Probability of surviving 5+ years if drafted</span> &nbsp;·&nbsp; <strong style="color:var(--red);">22% all picks · 40% R1 picks</strong></div>
+      <div><span style="color:var(--muted);">Probability of surviving 5+ years if drafted</span> &nbsp;·&nbsp; <strong style="color:var(--gold);">22% all picks · 40% R1 picks</strong></div>
       <div><span style="color:var(--muted);">Median salary of a surviving pick (non-DP)</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">$113,400/yr</strong></div>
-      <div><span style="color:var(--muted);">Probability of becoming a Designated Player</span> &nbsp;·&nbsp; <strong style="color:var(--red);">&lt;0.5%</strong> of draft picks</div>
+      <div><span style="color:var(--muted);">Probability of becoming a Designated Player</span> &nbsp;·&nbsp; <strong style="color:var(--gold);">&lt;0.5%</strong> of draft picks</div>
       <div><span style="color:var(--muted);">Expected MLS career value (5 yrs × median)</span> &nbsp;·&nbsp; <strong style="color:var(--text-strong);">$567,000</strong></div>
       <div style="border-top:1px solid var(--border);margin-top:0.5rem;padding-top:0.5rem;">
         <span style="color:var(--muted);">Expected value of investment</span> &nbsp;·&nbsp;
-        <strong style="color:var(--red);">~$17,000–$28,000</strong>
+        <strong style="color:var(--gold);">~$17,000–$28,000</strong>
         <span style="color:var(--muted);"> (4% × $567K)</span> &nbsp;vs.&nbsp;
-        <strong style="color:var(--red);">$70,000 spent</strong>
+        <strong style="color:var(--gold);">$70,000 spent</strong>
       </div>
       <div style="border-top:1px solid var(--border);margin-top:0.5rem;padding-top:0.5rem;font-size:0.75rem;color:var(--muted);">
         Note: DP median ($2.6M) is the salary families imagine. The draft-to-DP path requires making a roster,
@@ -444,46 +439,6 @@ Chart.defaults.color = C.muted;
       scales: {
         x: { grid: { color: P.grid }, ticks: { color: P.muted, callback: v => '$' + (v >= 1000000 ? (v/1000000).toFixed(1)+'M' : (v/1000)+'K') } },
         y: { grid: { display: false }, ticks: { color: P.muted } }
-      }
-    }
-  });
-})();
-
-// ── Transfer Spend by Nationality ────────────────────────
-(function() {
-  const nations = ['Argentina','Mexico','Brazil','USA','Uruguay','Côte d\'Ivoire','Paraguay','Croatia','South Korea','Belgium','Ghana','Colombia','Romania','England','Israel','Albania','Russia','Others'];
-  const spend   = [208.47, 84.56, 65.89, 57.63, 44.40, 27.43, 22.55, 22.30, 22.00, 21.46, 15.50, 15.13, 14.00, 13.05, 12.70, 12.00, 11.80, 110.65];
-  const colors  = nations.map(n =>
-    n === 'Argentina' ? C.goldFill :
-    n === 'USA'       ? C.blueFill :
-    C.dim
-  );
-  const borders = nations.map(n =>
-    n === 'Argentina' ? C.gold :
-    n === 'USA'       ? C.blue :
-    C.dimBd
-  );
-  new Chart(document.getElementById('transferSpendChart'), {
-    type: 'bar',
-    data: {
-      labels: nations,
-      datasets: [{
-        label: 'Transfer spend (€M)',
-        data: spend,
-        backgroundColor: colors,
-        borderColor: borders,
-        borderWidth: 1, borderRadius: 2,
-      }]
-    },
-    options: {
-      indexAxis: 'y', responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` €${ctx.raw.toFixed(1)}M` } }
-      },
-      scales: {
-        x: { grid: { color: P.grid }, ticks: { color: P.muted, callback: v => '€' + v + 'M' } },
-        y: { grid: { display: false }, ticks: { color: P.muted, font: { size: 10 } } }
       }
     }
   });

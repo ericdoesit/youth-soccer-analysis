@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Scope | Fool's Gold Research</title>
+  <link rel="stylesheet" href="site.css">
+  <style>
+    /* ── Pyramid ─────────────────────────────────────────────── */
+    #pyramid-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      margin: 1.75rem auto;
+      max-width: 640px;
+    }
+
+    .pyr-band {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.65rem 1rem;
+      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+    }
+
+    .pyr-band .pyr-level {
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+      white-space: nowrap;
+    }
+
+    .pyr-band .pyr-name {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-strong);
+    }
+
+    .pyr-band .pyr-leagues {
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .pyr-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.25rem;
+    }
+
+    /* ── Scope table ─────────────────────────────────────────── */
+    .scope-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      margin: 1.25rem 0;
+    }
+
+    .scope-table th {
+      text-align: left;
+      font-size: 0.67rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      padding: 0.5rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .scope-table td {
+      padding: 0.6rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    .scope-table tr:last-child td { border-bottom: none; }
+
+    .scope-table tr.level-header td {
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.67rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.4rem 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .scope-table tr.summary-row td {
+      background: rgba(201,168,76,.05);
+      font-weight: 600;
+      border-top: 2px solid var(--border);
+      color: var(--text-strong);
+    }
+
+    .scope-table td.gold   { color: var(--gold);  font-weight: 600; }
+    .scope-table td.blue   { color: var(--blue);  font-weight: 600; }
+    .scope-table td.muted  { color: var(--muted); }
+    .scope-table td.right  { text-align: right; }
+    .scope-table td.free   { color: var(--blue); font-weight: 700; }
+
+    .flight-chain {
+      font-size: 0.7rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footnote-mark {
+      font-size: 0.65rem;
+      color: var(--muted);
+      vertical-align: super;
+    }
+
+    .scope-footnotes {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+      line-height: 1.7;
+    }
+
+    /* ── Cost table ──────────────────────────────────────────── */
+    .cost-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      margin: 1.25rem 0;
+    }
+
+    .cost-table th {
+      text-align: left;
+      font-size: 0.67rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      padding: 0.5rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .cost-table th.right,
+    .cost-table td.right { text-align: right; }
+
+    .cost-table td {
+      padding: 0.6rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    .cost-table tr:last-child td { border-bottom: none; }
+
+    .cost-table tr.level-header td {
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.67rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.4rem 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .cost-table td.gold   { color: var(--gold);  font-weight: 600; }
+    .cost-table td.blue   { color: var(--blue);  font-weight: 600; }
+    .cost-table td.muted  { color: var(--muted); }
+    .cost-table td.free   { color: var(--blue);  font-weight: 700; }
+
+    .cost-range {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      justify-content: flex-end;
+    }
+
+    .cost-low  { color: var(--muted); font-size: 0.78rem; }
+    .cost-sep  { color: var(--border); }
+    .cost-high { color: var(--text); font-weight: 600; }
+
+    /* ── USL club table ──────────────────────────────────────── */
+    .club-count-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 1.25rem 0;
+    }
+
+    .count-card {
+      background: var(--surface-2);
+      padding: 1.1rem 1rem;
+      text-align: center;
+    }
+
+    .count-card .cn {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .count-card .cl {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .source-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu"
+            onclick="this.nextElementSibling.classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="scope.html" class="active">Youth Scope</a>
+      <a href="costs.html">Costs</a>
+      <a href="fools_gold.html">Fools Gold</a>
+      <a href="mls.html">MLS</a>
+      <a href="equity.html">Equity</a>
+      <a href="methodology.html" class="nav-appendix">Methods</a>
+      <a href="data.html" class="nav-appendix">Data</a>
+      <a href="../survey.html" class="nav-survey">Survey</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Youth Soccer Scope</h1>
+  <p>The full boys/male landscape — every league, how they connect, how many clubs and teams, and what families pay at each level.</p>
+</div>
+
+<div class="container">
+
+  <!-- Pyramid -->
+  <section class="card-section">
+    <h2>The Boys Soccer Pyramid</h2>
+    <p>Youth soccer in the United States is structured as a pyramid. The base is wide — millions of recreational players. Each level above narrows. By the time you reach pro academies, fewer than 8,000 players nationally have a spot.</p>
+
+    <div id="pyramid-placeholder">
+      <div class="pyr-band" style="width:22%; background:var(--ch-gold-fill); border:1px solid rgba(201,168,76,.4);">
+        <span class="pyr-level" style="color:var(--gold);">Level 4</span>
+        <span class="pyr-name" style="color:var(--gold);">Pro Academy</span>
+      </div>
+      <div class="pyr-band" style="width:44%; background:rgba(90,145,217,.08); border:1px solid rgba(90,145,217,.3);">
+        <span class="pyr-level" style="color:var(--blue);">Level 3</span>
+        <span class="pyr-name">Elite / National</span>
+        <span class="pyr-leagues">MLS NEXT · ECNL · EA</span>
+      </div>
+      <div class="pyr-band" style="width:66%; background:var(--ch-dim); border:1px solid var(--ch-dim-bd);">
+        <span class="pyr-level">Level 2</span>
+        <span class="pyr-name">Competitive Travel</span>
+        <span class="pyr-leagues">SoCal League · CSL · USL Youth</span>
+      </div>
+      <div class="pyr-band" style="width:88%; background:var(--surface); border:1px solid var(--border);">
+        <span class="pyr-level">Level 1</span>
+        <span class="pyr-name">Recreational</span>
+        <span class="pyr-leagues">AYSO · City &amp; County Parks</span>
+      </div>
+    </div>
+    <p class="pyr-note">Placeholder graphic — final version in progress</p>
+  </section>
+
+  <!-- Scope Table -->
+  <section class="card-section">
+    <h2>Boys League Landscape</h2>
+    <p>All competitive leagues by level, with confirmed club and team counts where available. SoCal-specific leagues are noted. Data from <code>data/processed/programs.csv</code>, USL Youth direct contact, and <a href="https://socalpitch.com" style="color:var(--blue);">SoCal Pitch</a>.</p>
+
+    <div style="overflow-x:auto;">
+      <table class="scope-table">
+        <thead>
+          <tr>
+            <th>League</th>
+            <th>Flights / Divisions</th>
+            <th class="right">Clubs</th>
+            <th class="right">Teams</th>
+            <th class="right">Players (Est.)</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="level-header"><td colspan="6">Level 1 — Recreational</td></tr>
+          <tr>
+            <td>AYSO Recreational</td>
+            <td class="muted">Local regions</td>
+            <td class="right muted">800</td>
+            <td class="right muted">~50,000</td>
+            <td class="right blue">600,000</td>
+            <td class="muted">Everyone Plays; volunteer coaches; U6–U19</td>
+          </tr>
+          <tr>
+            <td>City / County Parks</td>
+            <td class="muted">Local</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="right blue">3,000,000+</td>
+            <td class="muted">US Youth Soccer affiliation; broadest base</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="6">Level 2 — Competitive Travel</td></tr>
+          <tr>
+            <td><strong>SoCal Soccer League</strong></td>
+            <td><span class="flight-chain">N1L → Flt 1 → Flt 2 → Flt 3 → Flt 4 / Discovery</span></td>
+            <td class="right">~170</td>
+            <td class="right">~4,700</td>
+            <td class="right">~70,000</td>
+            <td class="muted">8 SoCal counties; N1L is top flight + national operator</td>
+          </tr>
+          <tr>
+            <td><strong>Coast Soccer League (CSL)</strong></td>
+            <td><span class="flight-chain">Premier → Champ → Div 1 → Div 2 → Div 3 → Juniors</span></td>
+            <td class="right">~500</td>
+            <td class="right">~2,700</td>
+            <td class="right">~40,000</td>
+            <td class="muted">Coastal OC &amp; LA; separate from SoCal League</td>
+          </tr>
+          <tr>
+            <td>USL Youth <span class="footnote-mark">1</span></td>
+            <td><span class="flight-chain">4 regional divisions</span></td>
+            <td class="right">96</td>
+            <td class="right">850</td>
+            <td class="right">~25,000</td>
+            <td class="muted">Summer league; evolved from Super Y League</td>
+          </tr>
+          <tr>
+            <td>ECNL Regional League (ECNL-RL) <span class="footnote-mark">2</span></td>
+            <td><span class="flight-chain">26 regional conferences</span></td>
+            <td class="right">309</td>
+            <td class="right">781</td>
+            <td class="right muted">—</td>
+            <td class="muted">Bridge between T2 travel and full ECNL; 6 age groups (B2007–B2013)</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="6">Level 3 — Elite / National</td></tr>
+          <tr>
+            <td><strong>MLS NEXT — Homegrown Division</strong></td>
+            <td class="muted">1 national</td>
+            <td class="right">50</td>
+            <td class="right">~300</td>
+            <td class="right">5,000</td>
+            <td class="muted">MLS academies + elite non-MLS; direct pro pipeline; HS play not allowed</td>
+          </tr>
+          <tr>
+            <td><strong>MLS NEXT — Academy Division</strong></td>
+            <td class="muted">Regional conferences</td>
+            <td class="right">223</td>
+            <td class="right">~1,500</td>
+            <td class="right">38,000</td>
+            <td class="muted">Broader clubs; HS play allowed; every player gets min. 25-min period</td>
+          </tr>
+          <tr>
+            <td><strong>ECNL Boys</strong></td>
+            <td class="muted">1 national</td>
+            <td class="right">70</td>
+            <td class="right">~800</td>
+            <td class="right">12,000</td>
+            <td class="muted">Top non-MLS boys league; 24 national events; 1,300+ scouts</td>
+          </tr>
+          <tr>
+            <td>EA (Elite Academy)</td>
+            <td class="muted">National + EA2 tier</td>
+            <td class="right">150</td>
+            <td class="right">~900</td>
+            <td class="right">12,000</td>
+            <td class="muted">National championship June, St. Louis; HS play allowed</td>
+          </tr>
+          <tr>
+            <td>NL Club Premier 1 <span class="footnote-mark">3</span></td>
+            <td class="muted">National</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="muted">Formerly Elite 64</td>
+          </tr>
+          <tr>
+            <td>NL Club Premier 2 <span class="footnote-mark">3</span></td>
+            <td class="muted">Regional</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="muted">Formerly Elite 64 Regional</td>
+          </tr>
+          <tr>
+            <td>EA2 <span class="footnote-mark">3</span></td>
+            <td class="muted">Regional</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="muted">Second tier below EA; regional conferences</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="6">Level 4 — Pro Academy (funded)</td></tr>
+          <tr>
+            <td>USL Academy</td>
+            <td class="muted">1</td>
+            <td class="right">80</td>
+            <td class="right">~400</td>
+            <td class="right">3,000</td>
+            <td class="muted">U20 roster model; maintains NCAA eligibility (unlike MLS HG)</td>
+          </tr>
+          <tr>
+            <td>MLS Pro Academies</td>
+            <td class="muted">1</td>
+            <td class="right">29</td>
+            <td class="right">~200</td>
+            <td class="right">5,000</td>
+            <td class="free">Free — funded by MLS clubs</td>
+          </tr>
+
+          <tr class="summary-row">
+            <td colspan="2"><strong>Recreational Total (Level 1)</strong></td>
+            <td class="right">~10,300</td>
+            <td class="right">~100,000</td>
+            <td class="right">3.6M+</td>
+            <td class="muted">AYSO + city/parks estimate</td>
+          </tr>
+          <tr class="summary-row">
+            <td colspan="2"><strong>Competitive &amp; Elite Total (Level 2–4)</strong></td>
+            <td class="right">~1,400</td>
+            <td class="right">~12,000</td>
+            <td class="right">~226,000</td>
+            <td class="muted">Known leagues only; excludes leagues with missing data</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="scope-footnotes">
+      <sup>1</sup> Club and team counts confirmed directly by Michael Jacoby Jr., Director of Operations — USL Youth (email, June 2026).<br>
+      <sup>2</sup> ECNL-RL clubs and teams scraped from theecnl.com standings (June 2026); 780 API calls across all 26 conferences, 6 age groups, and conference + playoff standings. Player estimates not available.<br>
+      <sup>3</sup> NL Club Premier 1/2 and EA2 club/team data not yet confirmed. Listed for completeness per SoCal Pitch league hierarchy.
+    </div>
+  </section>
+
+  <!-- Financial Burden -->
+  <section class="card-section">
+    <h2>Financial Burden by League</h2>
+    <p>Annual cost estimates by league and flight. Club fee is what you pay the club directly. All-in adds equipment, tournament entry, and regional travel — the realistic family outlay before national showcases or private coaching.</p>
+
+    <div style="overflow-x:auto;">
+      <table class="cost-table">
+        <thead>
+          <tr>
+            <th>League / Flight</th>
+            <th class="right">Annual Club Fee</th>
+            <th class="right">All-In Low</th>
+            <th class="right">All-In High</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="level-header"><td colspan="5">Level 1 — Recreational</td></tr>
+          <tr>
+            <td>AYSO / City Parks Rec</td>
+            <td class="right"><span class="cost-low">$150</span><span class="cost-sep"> – </span><span class="cost-high">$600</span></td>
+            <td class="right blue">$400</td>
+            <td class="right">$1,000</td>
+            <td class="muted">AYSO official / Aspen Institute</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="5">Level 2 — Competitive Travel</td></tr>
+          <tr>
+            <td>SoCal Soccer League — Flight 4 / Discovery</td>
+            <td class="right"><span class="cost-low">$2,000</span><span class="cost-sep"> – </span><span class="cost-high">$3,500</span></td>
+            <td class="right">$2,500</td>
+            <td class="right">$5,000</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td>SoCal Soccer League — Flight 3</td>
+            <td class="right"><span class="cost-low">$2,500</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
+            <td class="right">$3,500</td>
+            <td class="right">$6,000</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td>SoCal Soccer League — Flight 2</td>
+            <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
+            <td class="right">$4,000</td>
+            <td class="right">$7,000</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td>SoCal Soccer League — Flight 1</td>
+            <td class="right"><span class="cost-low">$3,500</span><span class="cost-sep"> – </span><span class="cost-high">$5,500</span></td>
+            <td class="right">$4,500</td>
+            <td class="right">$8,000</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td><strong>SoCal Soccer League — N1L</strong></td>
+            <td class="right"><span class="cost-low">$4,000</span><span class="cost-sep"> – </span><span class="cost-high">$6,000+</span></td>
+            <td class="right">$5,000</td>
+            <td class="right gold">$9,000+</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td>Coast Soccer League (CSL)</td>
+            <td class="right"><span class="cost-low">$1,500</span><span class="cost-sep"> – </span><span class="cost-high">$3,800</span></td>
+            <td class="right">$2,200</td>
+            <td class="right">$6,000</td>
+            <td class="muted">One Ivy FC real data / US Club survey</td>
+          </tr>
+          <tr>
+            <td>USL Youth</td>
+            <td class="right"><span class="cost-low">$575</span><span class="cost-sep"> – </span><span class="cost-high">$600</span></td>
+            <td class="right blue">$1,325</td>
+            <td class="right">$2,150</td>
+            <td class="muted">USL Youth / Gemini research</td>
+          </tr>
+          <tr>
+            <td>ECNL Regional League (ECNL-RL)</td>
+            <td class="right"><span class="cost-low">$2,000</span><span class="cost-sep"> – </span><span class="cost-high">$3,500</span></td>
+            <td class="right">$3,500</td>
+            <td class="right">$7,000</td>
+            <td class="muted">Estimated; similar to Flight 1 / N1L range</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="5">Level 3 — Elite / National</td></tr>
+          <tr>
+            <td>ECNL Boys</td>
+            <td class="right"><span class="cost-low">$2,200</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
+            <td class="right">$6,400</td>
+            <td class="right">$13,200</td>
+            <td class="muted">ECNL / TopDrawerSoccer 2024</td>
+          </tr>
+          <tr>
+            <td>MLS NEXT — Academy Division</td>
+            <td class="right"><span class="cost-low">$2,800</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
+            <td class="right">$8,450</td>
+            <td class="right">$18,250</td>
+            <td class="muted">MLS NEXT / Soccer America 2024</td>
+          </tr>
+          <tr>
+            <td>EA / NAL</td>
+            <td class="right"><span class="cost-low">~$2,500</span><span class="cost-sep"> – </span><span class="cost-high">~$4,000</span></td>
+            <td class="right">~$6,000</td>
+            <td class="right">~$12,000</td>
+            <td class="muted">Estimated from programs.csv</td>
+          </tr>
+          <tr>
+            <td><strong>MLS NEXT — Homegrown Division</strong></td>
+            <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
+            <td class="right">~$10,000</td>
+            <td class="right gold">~$20,000+</td>
+            <td class="muted">MLS NEXT / Soccer America 2024</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="5">Level 4 — Pro Academy</td></tr>
+          <tr>
+            <td>USL Academy</td>
+            <td class="right"><span class="cost-low">$1,500</span><span class="cost-sep"> – </span><span class="cost-high">$3,000</span></td>
+            <td class="right">~$3,000</td>
+            <td class="right">~$7,000</td>
+            <td class="muted">Estimated; varies by club</td>
+          </tr>
+          <tr>
+            <td>MLS Pro Academies</td>
+            <td class="right free">$0</td>
+            <td class="right free">$400</td>
+            <td class="right free">$400</td>
+            <td class="muted">Gear only; fully funded by MLS</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <strong>All-in estimates</strong> include equipment, tournament entry, and regional travel. National travel for U16–U19 elite players (ECNL showcases, MLS NEXT Fest, GA Summer Showcase) adds <strong>$3,000–$5,000/yr</strong> on top. Private coaching — common at Level 3 — adds another $2,000–$8,000/yr.
+    </div>
+  </section>
+
+  <!-- USL Youth Club Database -->
+  <section class="card-section">
+    <h2>USL Youth Club Database</h2>
+    <p>85 clubs identified from public sources via scrape — <strong>unverified</strong>. Confirmed by Michael Jacoby Jr. (Director of Operations, USL Youth, June 2026): <strong>96 clubs, ~850 teams</strong>. 11 clubs remain unidentified.</p>
+
+    <div class="club-count-grid">
+      <div class="count-card"><div class="cn">96</div><div class="cl">Confirmed clubs</div></div>
+      <div class="count-card"><div class="cn">~850</div><div class="cl">Confirmed teams</div></div>
+      <div class="count-card"><div class="cn">85</div><div class="cl">Clubs identified</div></div>
+      <div class="count-card"><div class="cn">11</div><div class="cl">Clubs unconfirmed</div></div>
+    </div>
+
+    <div class="club-count-grid" style="grid-template-columns:repeat(auto-fit,minmax(120px,1fr));">
+      <div class="count-card"><div class="cn">6</div><div class="cl">Mid-South</div></div>
+      <div class="count-card"><div class="cn">23</div><div class="cl">Mid-Atlantic</div></div>
+      <div class="count-card"><div class="cn">31</div><div class="cl">Midwest</div></div>
+      <div class="count-card"><div class="cn">26</div><div class="cl">North Atlantic</div></div>
+    </div>
+
+    <div style="overflow-x:auto;margin-top:1rem;">
+      <table class="scope-table" id="usl-table">
+        <thead>
+          <tr>
+            <th>Club</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Division</th>
+          </tr>
+        </thead>
+        <tbody id="usl-tbody"></tbody>
+      </table>
+    </div>
+    <p class="source-note">Source: usl-youth.com league directory (June 2026). 11 clubs pending verification. Data file: data/usl_youth_clubs.csv</p>
+  </section>
+
+</div>
+
+<footer>
+  Fool's Gold: Youth Soccer Research &nbsp;·&nbsp;
+  <a href="methodology.html">Methodology</a> &bull;
+  <a href="data.html">Data</a>
+</footer>
+
+<script>
+const USL_CLUBS = [
+  ["West Side Alliance SC","Tulsa","OK","Mid-South"],
+  ["Texoma FC","Melissa","TX","Mid-South"],
+  ["Denton Diablos FC","Denton","TX","Mid-South"],
+  ["Kernow Storm City FC","Dallas-Fort Worth","TX","Mid-South"],
+  ["Steel United Texas","McKinney","TX","Mid-South"],
+  ["North Texas United FC","Denton","TX","Mid-South"],
+  ["Alexandria Soccer Association","Alexandria","VA","Mid-Atlantic"],
+  ["Annapolis Select FC","Annapolis","MD","Mid-Atlantic"],
+  ["Arlington Soccer Association","Arlington","VA","Mid-Atlantic"],
+  ["Bethesda SC","Bethesda","MD","Mid-Atlantic"],
+  ["Christos FC","Gambrills","MD","Mid-Atlantic"],
+  ["DC Eleven Football Club","Washington","DC","Mid-Atlantic"],
+  ["Fairfax Virginia Union","Fairfax","VA","Mid-Atlantic"],
+  ["Future Soccer Club","Lanham","MD","Mid-Atlantic"],
+  ["Great Falls Reston","Great Falls","VA","Mid-Atlantic"],
+  ["Loudoun Soccer","Leesburg","VA","Mid-Atlantic"],
+  ["Luciano Emilio Soccer Club","Kensington","MD","Mid-Atlantic"],
+  ["Maryland Rush","Gaithersburg","MD","Mid-Atlantic"],
+  ["Maryland United FC","Bowie","MD","Mid-Atlantic"],
+  ["Northern Virginia SC","Manassas","VA","Mid-Atlantic"],
+  ["Northern Virginia United FC","Northern Virginia","VA","Mid-Atlantic"],
+  ["NOVA Majestics McLean","McLean","VA","Mid-Atlantic"],
+  ["NOVA Majestics Springfield","Springfield","VA","Mid-Atlantic"],
+  ["Real Elite FC","Montgomery County","MD","Mid-Atlantic"],
+  ["The St. James FC","Springfield","VA","Mid-Atlantic"],
+  ["VA Marauders","Winchester","VA","Mid-Atlantic"],
+  ["Virginia Development Academy","Woodbridge","VA","Mid-Atlantic"],
+  ["Virginia Valor FC","Chantilly","VA","Mid-Atlantic"],
+  ["Villarreal VA","Springfield","VA","Mid-Atlantic"],
+  ["Bloomingdale Lightning FC","Bloomingdale","IL","Midwest"],
+  ["Chicago City Soccer Club","Chicago","IL","Midwest"],
+  ["Chicago Inferno","Chicago","IL","Midwest"],
+  ["Chicago Rush SC","Chicago","IL","Midwest"],
+  ["Chicago Soccer Academy","Chicago","IL","Midwest"],
+  ["Chicagoland United SC","Chicago","IL","Midwest"],
+  ["Cleveland Force SC","Cleveland","OH","Midwest"],
+  ["Columbus Force","Columbus","OH","Midwest"],
+  ["DBBS","Portage","MI","Midwest"],
+  ["Evolution SC","Chicago","IL","Midwest"],
+  ["FC Milwaukee Torrent","Milwaukee","WI","Midwest"],
+  ["FORCE FCLC","Crystal Lake","IL","Midwest"],
+  ["Galaxy SC","Naperville","IL","Midwest"],
+  ["Indy Eleven North","Middlebury","IN","Midwest"],
+  ["Kingdom Soccer Club","Portage","MI","Midwest"],
+  ["Liverpool FC Michigan Central","Pontiac","MI","Midwest"],
+  ["Liverpool FC Michigan West","Ann Arbor","MI","Midwest"],
+  ["Michigan Rangers FC","Hudsonville","MI","Midwest"],
+  ["Midland SC","Midland","MI","Midwest"],
+  ["Midwest United FC","Kentwood","MI","Midwest"],
+  ["Midwest United FC SCOR","Rockford","MI","Midwest"],
+  ["Nationals","Detroit","MI","Midwest"],
+  ["Oak Brook SC","Oak Brook","IL","Midwest"],
+  ["Portage Soccer Club","Portage","MI","Midwest"],
+  ["Rush Union Wisconsin","Kenosha","WI","Midwest"],
+  ["Team Chicago SC","Chicago","IL","Midwest"],
+  ["TBAYS North Storm","Traverse City","MI","Midwest"],
+  ["Toledo Villa FC","Toledo","OH","Midwest"],
+  ["Upper 90 FC","Seville","OH","Midwest"],
+  ["VARDAR Soccer Club","Detroit","MI","Midwest"],
+  ["AC Connecticut","Danbury","CT","North Atlantic"],
+  ["Barcelona SC","New York","NY","North Atlantic"],
+  ["Brooklyn Italians Youth SC","Brooklyn","NY","North Atlantic"],
+  ["Cedar Stars Academy HV","Ridgefield Park","NJ","North Atlantic"],
+  ["Commack Soccer","Commack","NY","North Atlantic"],
+  ["Dix Hills SC","Dix Hills","NY","North Atlantic"],
+  ["East Meadow SC","East Meadow","NY","North Atlantic"],
+  ["FC Motown STA","Morristown","NJ","North Atlantic"],
+  ["Hudson Valley Hammers","Hudson Valley","NY","North Atlantic"],
+  ["Inter Connecticut FC","Norwalk","CT","North Atlantic"],
+  ["Ironbound SC","Newark","NJ","North Atlantic"],
+  ["Istria SC","New York","NY","North Atlantic"],
+  ["Kearny Thistle United","Kearny","NJ","North Atlantic"],
+  ["LIJSL Academy","Islip","NY","North Atlantic"],
+  ["Long Island Rough Riders","Massapequa","NY","North Atlantic"],
+  ["Massapequa SC","Massapequa","NY","North Atlantic"],
+  ["Morris Elite SC","Morris County","NJ","North Atlantic"],
+  ["New York Braveheart SC","New York","NY","North Atlantic"],
+  ["New York Titans FC","New York","NY","North Atlantic"],
+  ["NY Surf","New York","NY","North Atlantic"],
+  ["Oceanside United SC","Oceanside","NY","North Atlantic"],
+  ["Paisley Athletic FC","Kearny","NJ","North Atlantic"],
+  ["PASCO Soccer Club","Wayne","NJ","North Atlantic"],
+  ["Union County FC","Westfield","NJ","North Atlantic"],
+  ["Union SC","Union","NJ","North Atlantic"],
+  ["Westchester Flames","Westchester","NY","North Atlantic"],
+];
+
+const divColors = {
+  "Mid-South":     "var(--gold)",
+  "Mid-Atlantic":  "var(--blue)",
+  "Midwest":       "var(--muted)",
+  "North Atlantic":"var(--text)",
+};
+
+const tbody = document.getElementById('usl-tbody');
+tbody.innerHTML = USL_CLUBS.map(([name, city, state, div]) => `
+  <tr>
+    <td>${name}</td>
+    <td class="muted">${city}</td>
+    <td class="muted">${state}</td>
+    <td style="color:${divColors[div]};font-weight:600;">${div}</td>
+  </tr>
+`).join('');
+</script>
+
+</body>
+</html>

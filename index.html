@@ -65,9 +65,6 @@
       border-bottom: 1px solid var(--border);
     }
     .ticker-inner {
-      width: 92%;
-      max-width: 1600px;
-      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       border-left: 1px solid var(--border);
@@ -141,19 +138,17 @@
     }
     .insight {
       background: var(--surface-2);
-      border-left: 3px solid var(--red);
+      border-left: 3px solid var(--gold);
       padding: 1.25rem 1rem;
     }
-    .insight.green { border-color: var(--green); }
     .insight.blue  { border-color: var(--blue); }
     .insight .i-num {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 1.8rem;
       font-weight: 700;
-      color: var(--red);
+      color: var(--gold);
       line-height: 1;
     }
-    .insight.green .i-num { color: var(--green); }
     .insight.blue  .i-num { color: var(--blue); }
     .insight p {
       font-family: 'Inter', sans-serif;
@@ -195,8 +190,8 @@
     }
     .rcard:hover { background: var(--surface-2); }
     .rcard.costs  { border-color: var(--blue); }
-    .rcard.roi    { border-color: var(--red); }
-    .rcard.equity { border-color: var(--green); }
+    .rcard.roi    { border-color: var(--gold); }
+    .rcard.equity { border-color: var(--blue); }
     .rcard.methods{ border-color: var(--muted); }
     .rcard h3 {
       font-family: 'Playfair Display', Georgia, serif;
@@ -222,8 +217,8 @@
       margin-top: 1.25rem;
     }
     .rcard.costs  .rcard-link { color: var(--blue); }
-    .rcard.roi    .rcard-link { color: var(--red); }
-    .rcard.equity .rcard-link { color: var(--green); }
+    .rcard.roi    .rcard-link { color: var(--gold); }
+    .rcard.equity .rcard-link { color: var(--blue); }
     .rcard.methods .rcard-link { color: var(--muted); }
 
     /* ── Database grid ───────────────────────────────────────── */
@@ -320,6 +315,7 @@
     </button>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
+      <a href="report/scope.html">Youth Scope</a>
       <a href="report/costs.html">Costs</a>
       <a href="report/fools_gold.html">Fools Gold</a>
       <a href="report/mls.html">MLS</a>
@@ -377,10 +373,10 @@
     <p>This research challenges that promise with data. We built a national database of 5,600+
        clubs across 15 competitive leagues, combined survey cost data with academic literature,
        and ran expected-value analysis at each tier. The findings are consistent:
-       <strong style="color:var(--red)">elite youth soccer is a negative expected value investment
+       <strong style="color:var(--gold)">elite youth soccer is a negative expected value investment
        for the vast majority of families</strong> — and the families who can least afford to lose
        are the ones being shut out entirely.</p>
-    <p>The policy exception: LA City United charges <strong style="color:var(--green)">$120/year</strong>
+    <p>The policy exception: LA City United charges <strong style="color:var(--blue)">$120/year</strong>
        for Tier 3–4 competitive soccer by absorbing ~$1,647/player/year in public subsidy. Its
        existence proves that high club fees reflect margin and access, not the inherent cost of
        the sport.</p>
