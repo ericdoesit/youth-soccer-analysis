@@ -189,46 +189,6 @@
     .cost-sep  { color: var(--border); }
     .cost-high { color: var(--text); font-weight: 600; }
 
-    /* ── USL club table ──────────────────────────────────────── */
-    .club-count-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin: 1.25rem 0;
-    }
-
-    .count-card {
-      background: var(--surface-2);
-      padding: 1.1rem 1rem;
-      text-align: center;
-    }
-
-    .count-card .cn {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.65rem;
-      font-weight: 700;
-      color: var(--gold);
-      line-height: 1;
-    }
-
-    .count-card .cl {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.65rem;
-      color: var(--muted);
-      margin-top: 0.3rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .source-note {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      color: var(--muted);
-      margin-top: 0.5rem;
-      font-style: italic;
-    }
   </style>
 </head>
 <body>
@@ -357,8 +317,8 @@
             <td><span class="flight-chain">26 regional conferences</span></td>
             <td class="right">309</td>
             <td class="right">781</td>
-            <td class="right muted">—</td>
-            <td class="muted">Bridge between T2 travel and full ECNL; 6 age groups (B2007–B2013)</td>
+            <td class="right">~14,000</td>
+            <td class="muted">Bridge between T2 travel and full ECNL; 6 age groups (B2007–B2013); all 11v11</td>
           </tr>
 
           <tr class="level-header"><td colspan="6">Level 3 — Elite / National</td></tr>
@@ -458,7 +418,7 @@
 
     <div class="scope-footnotes">
       <sup>1</sup> Club and team counts confirmed directly by Michael Jacoby Jr., Director of Operations — USL Youth (email, June 2026).<br>
-      <sup>2</sup> ECNL-RL clubs and teams scraped from theecnl.com standings (June 2026); 780 API calls across all 26 conferences, 6 age groups, and conference + playoff standings. Player estimates not available.<br>
+      <sup>2</sup> ECNL-RL clubs and teams scraped from theecnl.com standings (June 2026); 780 API calls across all 26 conferences, 6 age groups, and conference + playoff standings. Player estimate: 781 teams × 18 roster (all B2007–B2013 = U13+, 11v11 format; SoCal roster standard: 7v7 = 12, 9v9 = 14, 11v11 = 18 — 2 GK + 16 field).<br>
       <sup>3</sup> NL Club Premier 1/2 and EA2 club/team data not yet confirmed. Listed for completeness per SoCal Pitch league hierarchy.
     </div>
   </section>
@@ -603,40 +563,6 @@
     </div>
   </section>
 
-  <!-- USL Youth Club Database -->
-  <section class="card-section">
-    <h2>USL Youth Club Database</h2>
-    <p>85 clubs identified from public sources via scrape — <strong>unverified</strong>. Confirmed by Michael Jacoby Jr. (Director of Operations, USL Youth, June 2026): <strong>96 clubs, ~850 teams</strong>. 11 clubs remain unidentified.</p>
-
-    <div class="club-count-grid">
-      <div class="count-card"><div class="cn">96</div><div class="cl">Confirmed clubs</div></div>
-      <div class="count-card"><div class="cn">~850</div><div class="cl">Confirmed teams</div></div>
-      <div class="count-card"><div class="cn">85</div><div class="cl">Clubs identified</div></div>
-      <div class="count-card"><div class="cn">11</div><div class="cl">Clubs unconfirmed</div></div>
-    </div>
-
-    <div class="club-count-grid" style="grid-template-columns:repeat(auto-fit,minmax(120px,1fr));">
-      <div class="count-card"><div class="cn">6</div><div class="cl">Mid-South</div></div>
-      <div class="count-card"><div class="cn">23</div><div class="cl">Mid-Atlantic</div></div>
-      <div class="count-card"><div class="cn">31</div><div class="cl">Midwest</div></div>
-      <div class="count-card"><div class="cn">26</div><div class="cl">North Atlantic</div></div>
-    </div>
-
-    <div style="overflow-x:auto;margin-top:1rem;">
-      <table class="scope-table" id="usl-table">
-        <thead>
-          <tr>
-            <th>Club</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Division</th>
-          </tr>
-        </thead>
-        <tbody id="usl-tbody"></tbody>
-      </table>
-    </div>
-    <p class="source-note">Source: usl-youth.com league directory (June 2026). 11 clubs pending verification. Data file: data/usl_youth_clubs.csv</p>
-  </section>
 
 </div>
 
@@ -646,112 +572,6 @@
   <a href="data.html">Data</a>
 </footer>
 
-<script>
-const USL_CLUBS = [
-  ["West Side Alliance SC","Tulsa","OK","Mid-South"],
-  ["Texoma FC","Melissa","TX","Mid-South"],
-  ["Denton Diablos FC","Denton","TX","Mid-South"],
-  ["Kernow Storm City FC","Dallas-Fort Worth","TX","Mid-South"],
-  ["Steel United Texas","McKinney","TX","Mid-South"],
-  ["North Texas United FC","Denton","TX","Mid-South"],
-  ["Alexandria Soccer Association","Alexandria","VA","Mid-Atlantic"],
-  ["Annapolis Select FC","Annapolis","MD","Mid-Atlantic"],
-  ["Arlington Soccer Association","Arlington","VA","Mid-Atlantic"],
-  ["Bethesda SC","Bethesda","MD","Mid-Atlantic"],
-  ["Christos FC","Gambrills","MD","Mid-Atlantic"],
-  ["DC Eleven Football Club","Washington","DC","Mid-Atlantic"],
-  ["Fairfax Virginia Union","Fairfax","VA","Mid-Atlantic"],
-  ["Future Soccer Club","Lanham","MD","Mid-Atlantic"],
-  ["Great Falls Reston","Great Falls","VA","Mid-Atlantic"],
-  ["Loudoun Soccer","Leesburg","VA","Mid-Atlantic"],
-  ["Luciano Emilio Soccer Club","Kensington","MD","Mid-Atlantic"],
-  ["Maryland Rush","Gaithersburg","MD","Mid-Atlantic"],
-  ["Maryland United FC","Bowie","MD","Mid-Atlantic"],
-  ["Northern Virginia SC","Manassas","VA","Mid-Atlantic"],
-  ["Northern Virginia United FC","Northern Virginia","VA","Mid-Atlantic"],
-  ["NOVA Majestics McLean","McLean","VA","Mid-Atlantic"],
-  ["NOVA Majestics Springfield","Springfield","VA","Mid-Atlantic"],
-  ["Real Elite FC","Montgomery County","MD","Mid-Atlantic"],
-  ["The St. James FC","Springfield","VA","Mid-Atlantic"],
-  ["VA Marauders","Winchester","VA","Mid-Atlantic"],
-  ["Virginia Development Academy","Woodbridge","VA","Mid-Atlantic"],
-  ["Virginia Valor FC","Chantilly","VA","Mid-Atlantic"],
-  ["Villarreal VA","Springfield","VA","Mid-Atlantic"],
-  ["Bloomingdale Lightning FC","Bloomingdale","IL","Midwest"],
-  ["Chicago City Soccer Club","Chicago","IL","Midwest"],
-  ["Chicago Inferno","Chicago","IL","Midwest"],
-  ["Chicago Rush SC","Chicago","IL","Midwest"],
-  ["Chicago Soccer Academy","Chicago","IL","Midwest"],
-  ["Chicagoland United SC","Chicago","IL","Midwest"],
-  ["Cleveland Force SC","Cleveland","OH","Midwest"],
-  ["Columbus Force","Columbus","OH","Midwest"],
-  ["DBBS","Portage","MI","Midwest"],
-  ["Evolution SC","Chicago","IL","Midwest"],
-  ["FC Milwaukee Torrent","Milwaukee","WI","Midwest"],
-  ["FORCE FCLC","Crystal Lake","IL","Midwest"],
-  ["Galaxy SC","Naperville","IL","Midwest"],
-  ["Indy Eleven North","Middlebury","IN","Midwest"],
-  ["Kingdom Soccer Club","Portage","MI","Midwest"],
-  ["Liverpool FC Michigan Central","Pontiac","MI","Midwest"],
-  ["Liverpool FC Michigan West","Ann Arbor","MI","Midwest"],
-  ["Michigan Rangers FC","Hudsonville","MI","Midwest"],
-  ["Midland SC","Midland","MI","Midwest"],
-  ["Midwest United FC","Kentwood","MI","Midwest"],
-  ["Midwest United FC SCOR","Rockford","MI","Midwest"],
-  ["Nationals","Detroit","MI","Midwest"],
-  ["Oak Brook SC","Oak Brook","IL","Midwest"],
-  ["Portage Soccer Club","Portage","MI","Midwest"],
-  ["Rush Union Wisconsin","Kenosha","WI","Midwest"],
-  ["Team Chicago SC","Chicago","IL","Midwest"],
-  ["TBAYS North Storm","Traverse City","MI","Midwest"],
-  ["Toledo Villa FC","Toledo","OH","Midwest"],
-  ["Upper 90 FC","Seville","OH","Midwest"],
-  ["VARDAR Soccer Club","Detroit","MI","Midwest"],
-  ["AC Connecticut","Danbury","CT","North Atlantic"],
-  ["Barcelona SC","New York","NY","North Atlantic"],
-  ["Brooklyn Italians Youth SC","Brooklyn","NY","North Atlantic"],
-  ["Cedar Stars Academy HV","Ridgefield Park","NJ","North Atlantic"],
-  ["Commack Soccer","Commack","NY","North Atlantic"],
-  ["Dix Hills SC","Dix Hills","NY","North Atlantic"],
-  ["East Meadow SC","East Meadow","NY","North Atlantic"],
-  ["FC Motown STA","Morristown","NJ","North Atlantic"],
-  ["Hudson Valley Hammers","Hudson Valley","NY","North Atlantic"],
-  ["Inter Connecticut FC","Norwalk","CT","North Atlantic"],
-  ["Ironbound SC","Newark","NJ","North Atlantic"],
-  ["Istria SC","New York","NY","North Atlantic"],
-  ["Kearny Thistle United","Kearny","NJ","North Atlantic"],
-  ["LIJSL Academy","Islip","NY","North Atlantic"],
-  ["Long Island Rough Riders","Massapequa","NY","North Atlantic"],
-  ["Massapequa SC","Massapequa","NY","North Atlantic"],
-  ["Morris Elite SC","Morris County","NJ","North Atlantic"],
-  ["New York Braveheart SC","New York","NY","North Atlantic"],
-  ["New York Titans FC","New York","NY","North Atlantic"],
-  ["NY Surf","New York","NY","North Atlantic"],
-  ["Oceanside United SC","Oceanside","NY","North Atlantic"],
-  ["Paisley Athletic FC","Kearny","NJ","North Atlantic"],
-  ["PASCO Soccer Club","Wayne","NJ","North Atlantic"],
-  ["Union County FC","Westfield","NJ","North Atlantic"],
-  ["Union SC","Union","NJ","North Atlantic"],
-  ["Westchester Flames","Westchester","NY","North Atlantic"],
-];
-
-const divColors = {
-  "Mid-South":     "var(--gold)",
-  "Mid-Atlantic":  "var(--blue)",
-  "Midwest":       "var(--muted)",
-  "North Atlantic":"var(--text)",
-};
-
-const tbody = document.getElementById('usl-tbody');
-tbody.innerHTML = USL_CLUBS.map(([name, city, state, div]) => `
-  <tr>
-    <td>${name}</td>
-    <td class="muted">${city}</td>
-    <td class="muted">${state}</td>
-    <td style="color:${divColors[div]};font-weight:600;">${div}</td>
-  </tr>
-`).join('');
-</script>
 
 </body>
 </html>
