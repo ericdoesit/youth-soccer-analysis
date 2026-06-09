@@ -1,782 +1,782 @@
-team_id,club_id,team_name,club_name,age_group,conference,standing,league,season
-47541,26,Charlotte SA Blue ECNL RL B08/07,Charlotte SA Blue ECNL RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-47551,26,Charlotte SA White ECNL RL B08/07,Charlotte SA White ECNL RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-114742,4012,Highland FC ECNL RL B08/07,Highland FC ECNL RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-47557,71,NC Fusion ECNL RL B08/07,NC Fusion ECNL RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-47575,22,NCFC Youth Elite ECNL RL B08/07,NCFC Youth Elite ECNL RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-47581,22,NCFC Youth Premier ECNL RL B08/07,NCFC Youth Premier ECNL RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-47593,2181,Wilmington Hammerheads RL B08/07,Wilmington Hammerheads RL B08/07,B2008/2007,Carolinas,Conference,ECNL RL Boys,2025-26
-59868,26,Charlotte SA Blue ECNL RL B09,Charlotte SA Blue ECNL RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-59876,26,Charlotte SA White ECNL RL B09,Charlotte SA White ECNL RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-114743,4012,Highland FC ECNL RL B09,Highland FC ECNL RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-59960,71,NC Fusion ECNL RL B09,NC Fusion ECNL RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-59959,22,NCFC Youth Elite ECNL RL B09,NCFC Youth Elite ECNL RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-60002,22,NCFC Youth Premier ECNL RL B09,NCFC Youth Premier ECNL RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-59889,2181,Wilmington Hammerheads RL B09,Wilmington Hammerheads RL B09,B2009,Carolinas,Conference,ECNL RL Boys,2025-26
-68762,26,Charlotte SA Blue ECNL RL B10,Charlotte SA Blue ECNL RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-68761,26,Charlotte SA White ECNL RL B10,Charlotte SA White ECNL RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-114744,4012,Highland FC ECNL RL B10,Highland FC ECNL RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-62867,71,NC Fusion ECNL RL B10,NC Fusion ECNL RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-69372,22,NCFC Youth Elite ECNL RL B10,NCFC Youth Elite ECNL RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-69316,22,NCFC Youth Premier ECNL RL B10,NCFC Youth Premier ECNL RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-69449,2181,Wilmington Hammerheads RL B10,Wilmington Hammerheads RL B10,B2010,Carolinas,Conference,ECNL RL Boys,2025-26
-81118,26,Charlotte SA Blue ECNL RL B11,Charlotte SA Blue ECNL RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-81110,26,Charlotte SA White ECNL RL B11,Charlotte SA White ECNL RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-114745,4012,Highland FC ECNL RL B11,Highland FC ECNL RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-82110,71,NC Fusion ECNL RL B11,NC Fusion ECNL RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-81065,22,NCFC Youth Elite ECNL RL B11,NCFC Youth Elite ECNL RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-81274,22,NCFC Youth Premier ECNL RL B11,NCFC Youth Premier ECNL RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-81417,2181,Wilmington Hammerheads RL B11,Wilmington Hammerheads RL B11,B2011,Carolinas,Conference,ECNL RL Boys,2025-26
-94565,26,Charlotte SA Blue ECNL RL B12,Charlotte SA Blue ECNL RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-94564,26,Charlotte SA White ECNL RL B12,Charlotte SA White ECNL RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-114747,4012,Highland FC ECNL RL B12,Highland FC ECNL RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-95056,71,NC Fusion ECNL RL B12,NC Fusion ECNL RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-94746,22,NCFC Youth Elite ECNL RL B12,NCFC Youth Elite ECNL RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-94850,22,NCFC Youth Premier ECNL RL B12,NCFC Youth Premier ECNL RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-95475,2181,Wilmington Hammerheads RL B12,Wilmington Hammerheads RL B12,B2012,Carolinas,Conference,ECNL RL Boys,2025-26
-112746,26,Charlotte SA Blue ECNL RL B13,Charlotte SA Blue ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-112743,26,Charlotte SA White ECNL RL B13,Charlotte SA White ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-114748,4012,Highland FC ECNL RL B13,Highland FC ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-112979,71,NC Fusion ECNL RL B13,NC Fusion ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-112370,22,NCFC Youth Elite ECNL RL B13,NCFC Youth Elite ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-112371,22,NCFC Youth Premier ECNL RL B13,NCFC Youth Premier ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-114820,2181,Wilmington Hammerheads ECNL RL B13,Wilmington Hammerheads ECNL RL B13,B2013,Carolinas,Conference,ECNL RL Boys,2025-26
-82908,2476,Chicago City SC ECNL RL B08/07,Chicago City SC ECNL RL B08/07,B2008/2007,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-80809,4324,Northern Indiana Express ECNL RL B08/07,Northern Indiana Express ECNL RL B08/07,B2008/2007,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-21441,2419,Bloomingdale Lightning FC ECNL RL B09,Bloomingdale Lightning FC ECNL RL B09,B2009,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-81739,4326,Force ECNL RL B09,Force ECNL RL B09,B2009,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-80808,4324,Northern Indiana Express ECNL RL B09,Northern Indiana Express ECNL RL B09,B2009,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-82904,2476,Chicago City SC ECNL RL B10,Chicago City SC ECNL RL B10,B2010,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-81317,1255,FC 1974 Libertyville ECNL RL B10,FC 1974 Libertyville ECNL RL B10,B2010,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-80807,4324,Northern Indiana Express ECNL RL B10,Northern Indiana Express ECNL RL B10,B2010,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-97056,2419,Bloomingdale Lightning FC ECNL RL B11,Bloomingdale Lightning FC ECNL RL B11,B2011,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-82905,2476,Chicago City SC ECNL RL B11,Chicago City SC ECNL RL B11,B2011,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-117193,5009,Roadrunners SC ECNL RL B11,Roadrunners SC ECNL RL B11,B2011,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-97055,2419,Bloomingdale Lightning FC ECNL RL B12,Bloomingdale Lightning FC ECNL RL B12,B2012,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-94514,2476,Chicago City SC ECNL RL B12,Chicago City SC ECNL RL B12,B2012,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-117194,5009,Roadrunners SC ECNL RL B12,Roadrunners SC ECNL RL B12,B2012,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-97159,2419,Bloomingdale Lightning FC ECNL RL B13,Bloomingdale Lightning FC ECNL RL B13,B2013,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-97886,2476,Chicago City SC ECNL RL B13,Chicago City SC ECNL RL B13,B2013,Chicago Metro,Conference,ECNL RL Boys,2025-26
-114423,3153,Chicago Soccer Academy ECNL RL B13,Chicago Soccer Academy ECNL RL B13,B2013,Chicago Metro,Conference,ECNL RL Boys,2025-26
-97935,1255,FC 1974 Libertyville ECNL RL B13,FC 1974 Libertyville ECNL RL B13,B2013,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-98297,4326,Force ECNL RL B13,Force ECNL RL B13,B2013,Chicago Metro,Conference,ECNL RL Boys,2025-26
-114136,4324,Northern Indiana Express ECNL RL B13,Northern Indiana Express ECNL RL B13,B2013,Chicago Metro,Playoffs-Central,ECNL RL Boys,2025-26
-117195,5009,Roadrunners SC ECNL RL B13,Roadrunners SC ECNL RL B13,B2013,Chicago Metro,Conference,ECNL RL Boys,2025-26
-115488,51,Boise Timbers FC ECNL RL B08/07,Boise Timbers FC ECNL RL B08/07,B2008/2007,Far West,Playoffs-West,ECNL RL Boys,2025-26
-114502,4344,PCU Red 1 ECNL RL B08/07,PCU Red 1 ECNL RL B08/07,B2008/2007,Far West,Playoffs-West,ECNL RL Boys,2025-26
-114727,2554,Eastside Timbers ECNL RL B09,Eastside Timbers ECNL RL B09,B2009,Far West,Playoffs-West,ECNL RL Boys,2025-26
-111713,2536,United PDX ECNL RL B09,United PDX ECNL RL B09,B2009,Far West,Playoffs-West,ECNL RL Boys,2025-26
-112869,2937,Oregon Premier FC ECNL RL B10,Oregon Premier FC ECNL RL B10,B2010,Far West,Playoffs-West,ECNL RL Boys,2025-26
-114500,4344,Portland City United ECNL RL B10,Portland City United ECNL RL B10,B2010,Far West,Playoffs-West,ECNL RL Boys,2025-26
-111158,3956,Capital FC ECNL RL B11,Capital FC ECNL RL B11,B2011,Far West,Playoffs-West,ECNL RL Boys,2025-26
-112830,2937,Oregon Premier FC ECNL RL B11,Oregon Premier FC ECNL RL B11,B2011,Far West,Playoffs-West,ECNL RL Boys,2025-26
-114720,2554,Eastside Timbers ECNL RL B12,Eastside Timbers ECNL RL B12,B2012,Far West,Playoffs-West,ECNL RL Boys,2025-26
-111893,2536,United PDX ECNL RL B12,United PDX ECNL RL B12,B2012,Far West,Playoffs-West,ECNL RL Boys,2025-26
-115493,51,Boise Timbers FC ECNL RL B13,Boise Timbers FC ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-116411,3956,Capital FC ECNL RL B13,Capital FC ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-114719,2554,Eastside Timbers ECNL RL B13,Eastside Timbers ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-116439,4330,Eugene Metro FC ECNL RL B13,Eugene Metro FC ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-117874,603,FC Portland ECNL RL B13,FC Portland ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-113982,1813,Idaho Rush ECNL RL B13,Idaho Rush ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-112725,2937,Oregon Premier FC ECNL RL B13,Oregon Premier FC ECNL RL B13,B2013,Far West,Playoffs-West,ECNL RL Boys,2025-26
-114497,4344,Portland City United ECNL RL B13 Red 1,Portland City United ECNL RL B13 Red 1,B2013,Far West,Playoffs-West,ECNL RL Boys,2025-26
-111895,2536,United PDX ECNL RL B13,United PDX ECNL RL B13,B2013,Far West,Conference,ECNL RL Boys,2025-26
-114102,3390,Cape Coral SA ECNL RL B13,Cape Coral SA ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113732,354,Davie United SC ECNL RL B13,Davie United SC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-114365,2237,Doral Soccer Club ECNL RL B13,Doral Soccer Club ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-112328,5158,FC America ECNL RL B13,FC America ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113235,2329,FC Prime ECNL RL B13,FC Prime ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-111958,3055,FHFC ECNL RL B13,FHFC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-112368,2731,FL Premier FC Black ECNL RL B13,FL Premier FC Black ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-114697,2731,FL Premier FC Gold ECNL RL B13,FL Premier FC Gold ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113667,3424,Florida Celtic ECNL RL B13,Florida Celtic ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113716,379,Florida Kraze ECNL RL B13,Florida Kraze ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-114000,3384,Florida West FC ECNL RL B13,Florida West FC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-112974,1925,Fort Lauderdale United FC ECNL RL B13,Fort Lauderdale United FC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-112548,4568,Orlando City Lake Nona ECNL RL B13,Orlando City Lake Nona ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-111913,3387,Parkland SC ECNL RL B13,Parkland SC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-111662,2731,SWFL Premier FC ECNL RL B13,SWFL Premier FC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-111342,3303,South Orlando Soccer Club ECNL RL B13,South Orlando Soccer Club ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113758,1919,Space Coast United ECNL RL B13,Space Coast United ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113714,4317,Sporting Club Tallahassee ECNL RL B13,Sporting Club Tallahassee ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113643,1353,Sporting Jax ECNL RL B13,Sporting Jax ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-111437,4566,Springs SC ECNL RL B13,Springs SC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-110221,4873,Strikers Miami FC ECNL RL B13,Strikers Miami FC ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-109674,4795,Tropical Soccer Club ECNL RL B13,Tropical Soccer Club ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-113106,840,Wellington ECNL RL B13,Wellington ECNL RL B13,B2013,Florida,Conference,ECNL RL Boys,2025-26
-81777,3585,Arkansas Comets FC ECNL RL B08/07,Arkansas Comets FC ECNL RL B08/07,B2008/2007,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-42874,106,Tulsa SC ECNL RL B08/07,Tulsa SC ECNL RL B08/07,B2008/2007,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-81780,3585,Arkansas Comets FC ECNL RL B09,Arkansas Comets FC ECNL RL B09,B2009,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-60908,3594,Arkansas Rising ECNL RL B09,Arkansas Rising ECNL RL B09,B2009,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-77795,3620,FC Tulsa Academy ECNL RL B09,FC Tulsa Academy ECNL RL B09,B2009,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-109309,5136,SW Missouri Rush ECNL RL B09,SW Missouri Rush ECNL RL B09,B2009,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-81781,3585,Arkansas Comets FC ECNL RL B10,Arkansas Comets FC ECNL RL B10,B2010,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-81699,3620,FC Tulsa Academy ECNL RL B10,FC Tulsa Academy ECNL RL B10,B2010,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-72542,2250,Oklahoma Cosmos ECNL RL B10,Oklahoma Cosmos ECNL RL B10,B2010,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-69325,3587,West Side Alliance White ECNL RL B10,West Side Alliance White ECNL RL B10,B2010,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-81782,3585,Arkansas Comets FC ECNL RL B11,Arkansas Comets FC ECNL RL B11,B2011,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-71765,3594,Arkansas Rising ECNL RL B11,Arkansas Rising ECNL RL B11,B2011,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-81696,3620,FC Tulsa Academy ECNL RL B11,FC Tulsa Academy ECNL RL B11,B2011,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-114847,2133,OK Energy FC II ECNL RL B11,OK Energy FC II ECNL RL B11,B2011,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-84694,3585,Arkansas Comets FC ECNL RL B12,Arkansas Comets FC ECNL RL B12,B2012,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-64066,2250,Oklahoma Cosmos ECNL RL B12,Oklahoma Cosmos ECNL RL B12,B2012,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-111559,5136,SW Missouri Rush ECNL RL B12,SW Missouri Rush ECNL RL B12,B2012,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-107393,3587,West Side Alliance Red ECNL RL B12,West Side Alliance Red ECNL RL B12,B2012,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-90161,3585,Arkansas Comets FC ECNL RL B13,Arkansas Comets FC ECNL RL B13,B2013,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-71898,3594,Arkansas Rising ECNL RL B13,Arkansas Rising ECNL RL B13,B2013,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-116917,3620,FC Tulsa Academy ECNL RL B13,FC Tulsa Academy ECNL RL B13,B2013,Frontier,Conference,ECNL RL Boys,2025-26
-117987,3694,Kernow Storm FC Frontier ECNL RL B13,Kernow Storm FC Frontier ECNL RL B13,B2013,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-96128,2133,OK Energy FC II ECNL RL B13,OK Energy FC II ECNL RL B13,B2013,Frontier,Conference,ECNL RL Boys,2025-26
-72164,2250,Oklahoma Cosmos ECNL RL B13,Oklahoma Cosmos ECNL RL B13,B2013,Frontier,Conference,ECNL RL Boys,2025-26
-111558,5136,SW Missouri Rush ECNL RL B13,SW Missouri Rush ECNL RL B13,B2013,Frontier,Conference,ECNL RL Boys,2025-26
-52147,106,Tulsa SC ECNL RL B13,Tulsa SC ECNL RL B13,B2013,Frontier,Conference,ECNL RL Boys,2025-26
-107345,3587,West Side Alliance Red ECNL RL B13,West Side Alliance Red ECNL RL B13,B2013,Frontier,Conference,ECNL RL Boys,2025-26
-78782,3587,West Side Alliance White ECNL RL B13,West Side Alliance White ECNL RL B13,B2013,Frontier,Playoffs-South,ECNL RL Boys,2025-26
-109076,4063,El Camino Futbol Club Salinas ECNL RL B08/07,El Camino Futbol Club Salinas ECNL RL B08/07,B2008/2007,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-95065,3054,Placer United ECNL RL B08/07,Placer United ECNL RL B08/07,B2008/2007,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-93390,3065,Association FC ECNL RL B09,Association FC ECNL RL B09,B2009,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-85062,1425,Davis Legacy ECNL RL B09,Davis Legacy ECNL RL B09,B2009,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-110955,4518,Club America Nido Aguila | Stockton ECNL RL B1,Club America Nido Aguila | Stockton ECNL RL B1,B2010,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-115398,69,Mustang SC ECNL RL B10,Mustang SC ECNL RL B10,B2010,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-117681,1470,COSC ECNL RL B11,COSC ECNL RL B11,B2011,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-107704,3054,Placer United ECNL RL B11,Placer United ECNL RL B11,B2011,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-109080,4063,El Camino FC Salinas ECNL RL B12 Golden State,El Camino FC Salinas ECNL RL B12 Golden State,B2012,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-109239,3054,Placer United ECNL RL B12,Placer United ECNL RL B12,B2012,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-114180,4342,1974 Newark FC ECNL RL B13,1974 Newark FC ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-113203,3065,Association FC ECNL RL B13,Association FC ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-117682,1470,COSC ECNL RL B13,COSC ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-110958,4518,Club America Stockton ECNL RL B13,Club America Stockton ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-110983,1425,Davis Legacy ECNL RL B13,Davis Legacy ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-109081,4063,El Camino Futbol Club Salinas ECNL RL B13,El Camino Futbol Club Salinas ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-117896,3231,Los Gatos United ECNL RL B13,Los Gatos United ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-114295,1585,Marin FC ECNL RL B13,Marin FC ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-115395,69,Mustang SC ECNL RL B13,Mustang SC ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-109255,3054,Placer United ECNL RL B13,Placer United ECNL RL B13,B2013,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-112663,1040,San Francisco Elite Academy ECNL RL B13,San Francisco Elite Academy ECNL RL B13,B2013,Golden State,Conference,ECNL RL Boys,2025-26
-115642,88,San Juan SC RL B13,San Juan SC RL B13,B2013,Golden State,Playoffs-West,ECNL RL Boys,2025-26
-59530,3475,Louisville City Academy ECNL RL B08/07,Louisville City Academy ECNL RL B08/07,B2008/2007,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-109937,3075,Pacesetter Soccer Club ECNL RL B08/07,Pacesetter Soccer Club ECNL RL B08/07,B2008/2007,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-114227,4563,Steel City FC ECNL RL B08/07,Steel City FC ECNL RL B08/07,B2008/2007,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-71233,4080,Blast FC Academy ECNL RL B09,Blast FC Academy ECNL RL B09,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95565,4578,CAU Force ECNL RL B09,CAU Force ECNL RL B09,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-59134,3478,Cleveland Force SC White ECNL RL B09,Cleveland Force SC White ECNL RL B09,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112836,1874,Cuyahoga Valley SA - CVSA 2009 Boys ECNL RL,Cuyahoga Valley SA - CVSA 2009 Boys ECNL RL,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95228,4575,North FC ECNL RL B09,North FC ECNL RL B09,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113463,4006,Ohio Galaxies FC ECNL RL B09,Ohio Galaxies FC ECNL RL B09,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113545,5184,Team Challenger FC North ECNL RL B09,Team Challenger FC North ECNL RL B09,B2009,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95564,4578,CAU Force ECNL RL B10,CAU Force ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-70141,4075,Columbus Force ECNL RL B10,Columbus Force ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-69119,3475,Louisville City Academy ECNL RL B10,Louisville City Academy ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95229,4575,North FC ECNL RL B10,North FC ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-81329,4009,Sporting Columbus ECNL RL B10,Sporting Columbus ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95364,4563,Steel City FC ECNL RL B10,Steel City FC ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113544,5184,Team Challenger FC North ECNL RL B10,Team Challenger FC North ECNL RL B10,B2010,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-79631,4080,Blast FC Academy ECNL RL B11,Blast FC Academy ECNL RL B11,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-81788,4075,Columbus Force ECNL RL B11,Columbus Force ECNL RL B11,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112841,1874,Cuyahoga Valley SA - CVSA 2011 Boys ECNL RL,Cuyahoga Valley SA - CVSA 2011 Boys ECNL RL,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-96296,4458,Manta ECNL RL B11,Manta ECNL RL B11,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95230,4575,North FC ECNL RL B11,North FC ECNL RL B11,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95367,4563,Steel City FC ECNL RL B11,Steel City FC ECNL RL B11,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113542,5184,Team Challenger FC North ECNL RL B11,Team Challenger FC North ECNL RL B11,B2011,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-59146,3478,Cleveland Force SC White ECNL RL B12,Cleveland Force SC White ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-95231,4575,North FC ECNL RL B12,North FC ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113472,4006,Ohio Galaxies FC ECNL RL B12,Ohio Galaxies FC ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-109948,3075,Pacesetter Soccer Club ECNL RL B12,Pacesetter Soccer Club ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-81421,4009,Sporting Columbus ECNL RL B12,Sporting Columbus ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113541,5184,Team Challenger FC North ECNL RL B12,Team Challenger FC North ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113461,4460,Upper 90 FC - ECNL RL B12,Upper 90 FC - ECNL RL B12,B2012,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-114925,4080,Blast FC Academy ECNL RL B13,Blast FC Academy ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-95574,4578,CAU Force ECNL RL B13,CAU Force ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-71191,4087,Cincinnati Elite FC ECNL RL B13,Cincinnati Elite FC ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-93563,3478,Cleveland Force SC White ECNL RL B13,Cleveland Force SC White ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-113406,3478,Cleveland Force SC Yellow ECNL RL B13,Cleveland Force SC Yellow ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-94547,4075,Columbus Force ECNL RL B13,Columbus Force ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-114317,4598,Croatia Juniors ECNL RL B13,Croatia Juniors ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-114947,1874,Cuyahoga Valley SA - CVSA 2013 Boys ECNL RL,Cuyahoga Valley SA - CVSA 2013 Boys ECNL RL,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-112924,5124,Elite FC - Elite FC 2013 Boys ECNL RL,Elite FC - Elite FC 2013 Boys ECNL RL,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-110654,1501,FC Pride Elite ECNL RL B13,FC Pride Elite ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-80935,4008,GTFC Impact ECNL RL B13,GTFC Impact ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-113011,5203,Liverpool FC IA Central - 13B ECNL RL,Liverpool FC IA Central - 13B ECNL RL,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-113525,3475,Louisville City Academy ECNL RL B13,Louisville City Academy ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-93515,4458,Manta ECNL RL B13,Manta ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115174,1713,Nationals SC CA ECNL RL B13,Nationals SC CA ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115102,1713,Nationals Soccer Club ECNL RL B13,Nationals Soccer Club ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-113555,4575,North FC ECNL RL B13,North FC ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-112508,75,Ohio Elite SA ECNL RL B13,Ohio Elite SA ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-113474,4006,Ohio Galaxies FC ECNL RL B13,Ohio Galaxies FC ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-81321,437,Ohio Premier ECNL RL B13,Ohio Premier ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-109949,3075,Pacesetter Soccer Club ECNL RL B13,Pacesetter Soccer Club ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-82471,538,Pittsburgh Riverhounds ECNL RL B13,Pittsburgh Riverhounds ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-81420,4009,Sporting Columbus ECNL RL B13,Sporting Columbus ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-114230,4563,Steel City FC ECNL RL B13,Steel City FC ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113540,5184,Team Challenger FC North ECNL RL B13,Team Challenger FC North ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-113460,4460,Upper 90 FC ECNL RL B13,Upper 90 FC ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-115201,343,WNY Flash ECNL RL B13,WNY Flash ECNL RL B13,B2013,Great Lakes Alliance,Conference,ECNL RL Boys,2025-26
-111533,343,WNY Flash Rochester ECNL RL B13,WNY Flash Rochester ECNL RL B13,B2013,Great Lakes Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115976,4484,Michigan Rangers FC ECNL RL B08/07,Michigan Rangers FC ECNL RL B08/07,B2008/2007,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112160,4874,TKO Premier SC ECNL RL B08/07,TKO Premier SC ECNL RL B08/07,B2008/2007,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115974,4484,Michigan Rangers FC ECNL RL B09,Michigan Rangers FC ECNL RL B09,B2009,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115360,1713,Nationals SC Union ECNL RL GMA B09,Nationals SC Union ECNL RL GMA B09,B2009,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112031,4874,TKO Premier SC ECNL RL B09,TKO Premier SC ECNL RL B09,B2009,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-81148,3712,Liverpool FC IA Michigan Ann Arbor ECNL RL B10,Liverpool FC IA Michigan Ann Arbor ECNL RL B10,B2010,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115729,4484,Michigan Rangers FC ECNL RL B10,Michigan Rangers FC ECNL RL B10,B2010,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112067,4874,TKO Premier SC ECNL RL B10,TKO Premier SC ECNL RL B10,B2010,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-118078,4852,Legends FC Michigan - ECNL RL B11,Legends FC Michigan - ECNL RL B11,B2011,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-100915,1720,Michigan Burn ECNL RL B11,Michigan Burn ECNL RL B11,B2011,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112068,4874,TKO Premier SC ECNL RL B11,TKO Premier SC ECNL RL B11,B2011,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115019,4858,Detroit City FC West ECNL RL B12,Detroit City FC West ECNL RL B12,B2012,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115975,4484,Michigan Rangers FC ECNL RL B12,Michigan Rangers FC ECNL RL B12,B2012,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-112029,4874,TKO Premier SC ECNL RL B12,TKO Premier SC ECNL RL B12,B2012,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-110900,4742,Cap City Athletic 1847 ECNL RL B13,Cap City Athletic 1847 ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-115020,4858,Detroit City FC West ECNL RL B13,Detroit City FC West ECNL RL B13,B2013,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-116300,4852,Legends FC Michigan ECNL RL B13,Legends FC Michigan ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-111346,3712,Liverpool FC IA Michigan Ann Arbor ECNL RL B13,Liverpool FC IA Michigan Ann Arbor ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-110973,5200,Liverpool North Oakland ECNL RL B13,Liverpool North Oakland ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-111079,1720,Michigan Burn ECNL RL B13,Michigan Burn ECNL RL B13,B2013,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-115727,4484,Michigan Rangers FC ECNL RL B13,Michigan Rangers FC ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-115338,1713,Nationals SC Cap Area ECNL RL GMA B13,Nationals SC Cap Area ECNL RL GMA B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-115356,1713,Nationals SC Union ECNL RL GMA B13,Nationals SC Union ECNL RL GMA B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-114577,1678,Plymouth Reign SC ECNL RL B13,Plymouth Reign SC ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-110927,4589,Portage SC ECNL RL B13,Portage SC ECNL RL B13,B2013,Greater Michigan Alliance,Conference,ECNL RL Boys,2025-26
-112069,4874,TKO Premier SC ECNL RL B13,TKO Premier SC ECNL RL B13,B2013,Greater Michigan Alliance,Playoffs-Central,ECNL RL Boys,2025-26
-113843,4319,Coastal Rush ECNL RL B13,Coastal Rush ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-111116,3714,Gulf Coast United FC ECNL RL B13,Gulf Coast United FC ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-114974,5143,Hattiesburg FC ECNL RL B13,Hattiesburg FC ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-113794,5144,LA Krewe Rush ECNL RL B13,LA Krewe Rush ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-111745,5213,Louisiana Fire Soccer Club ECNL RL B13,Louisiana Fire Soccer Club ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-115899,5145,MSC Lakers ECNL RL B13,MSC Lakers ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-116326,5146,Union 10 FC ECNL RL B13,Union 10 FC ECNL RL B13,B2013,Gulf Coast,Conference,ECNL RL Boys,2025-26
-80891,4315,FC United Iowa ECNL RL B08/07,FC United Iowa ECNL RL B08/07,B2008/2007,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-58214,3615,KC Fusion ECNL RL B08/07,KC Fusion ECNL RL B08/07,B2008/2007,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-80890,4315,FC United Iowa ECNL RL B09,FC United Iowa ECNL RL B09,B2009,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-117256,3486,FC Wichita ECNL RL B09,FC Wichita ECNL RL B09,B2009,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-116237,2330,Kansas City Athletics ECNL RL B09,Kansas City Athletics ECNL RL B09,B2009,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-113539,3480,Union KC Navy ECNL RL B09,Union KC Navy ECNL RL B09,B2009,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-81764,4356,Vision Soccer Academy Premier ECNL RL B09,Vision Soccer Academy Premier ECNL RL B09,B2009,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-81744,373,Gretna Elite Academy ECNL RL B10,Gretna Elite Academy ECNL RL B10,B2010,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-71275,3615,KC Fusion ECNL RL B10,KC Fusion ECNL RL B10,B2010,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-113608,3740,Kansas City Surf ECNL RL B10,Kansas City Surf ECNL RL B10,B2010,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-69103,3480,Union KC Navy ECNL RL B10,Union KC Navy ECNL RL B10,B2010,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-81763,4356,Vision Soccer Academy Premier ECNL RL B10,Vision Soccer Academy Premier ECNL RL B10,B2010,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-80888,4315,FC United Iowa ECNL RL B11,FC United Iowa ECNL RL B11,B2011,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-82027,3615,KC Fusion ECNL RL B11,KC Fusion ECNL RL B11,B2011,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-113607,3740,Kansas City Surf ECNL RL B11,Kansas City Surf ECNL RL B11,B2011,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-116980,5147,St. Louis Stars ECNL RL B11,St. Louis Stars ECNL RL B11,B2011,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-81761,4356,Vision Soccer Academy Premier ECNL RL B11,Vision Soccer Academy Premier ECNL RL B11,B2011,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-92661,4315,FC United Iowa ECNL RL B12,FC United Iowa ECNL RL B12,B2012,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-117261,3486,FC Wichita ECNL RL B12,FC Wichita ECNL RL B12,B2012,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-113605,3740,Kansas City Surf ECNL RL B12,Kansas City Surf ECNL RL B12,B2012,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-96756,3483,Sporting Iowa ECNL RL B12,Sporting Iowa ECNL RL B12,B2012,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-96742,3480,Union KC Navy ECNL RL B12,Union KC Navy ECNL RL B12,B2012,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-84658,4315,FC United Iowa ECNL RL B13,FC United Iowa ECNL RL B13,B2013,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-117262,3486,FC Wichita ECNL RL B13,FC Wichita ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-112745,373,Gretna Elite Academy ECNL RL B13,Gretna Elite Academy ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-114891,3615,KC Fusion ECNL RL B13,KC Fusion ECNL RL B13,B2013,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-116241,2330,Kansas City Athletics ECNL RL B13,Kansas City Athletics ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-113604,3740,Kansas City Surf ECNL RL B13,Kansas City Surf ECNL RL B13,B2013,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-117047,3696,Kansas Rush ECNL RL B13,Kansas Rush ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-114055,1730,Missouri Rush ECNL RL B13,Missouri Rush ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-117750,3483,Sporting Iowa ECNL RL B13,Sporting Iowa ECNL RL B13,B2013,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-117185,1726,Sporting Nebraska FC ECNL RL B13,Sporting Nebraska FC ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-116978,5147,St. Louis Stars ECNL RL B13,St. Louis Stars ECNL RL B13,B2013,Heartland,Playoffs-Central,ECNL RL Boys,2025-26
-111683,3480,Union KC Navy ECNL RL B13,Union KC Navy ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-111684,3480,Union KC Red ECNL RL B13,Union KC Red ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-113962,4356,Vision Soccer Academy Premier ECNL RL B13,Vision Soccer Academy Premier ECNL RL B13,B2013,Heartland,Conference,ECNL RL Boys,2025-26
-117353,1354,Tennessee SC ECNL RL B08/07,Tennessee SC ECNL RL B08/07,B2008/2007,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-102351,4565,Tennessee United ECNL RL B08/07,Tennessee United ECNL RL B08/07,B2008/2007,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-112531,18,Alabama FC Huntsville ECNL RL B09,Alabama FC Huntsville ECNL RL B09,B2009,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-117354,1354,Tennessee SC ECNL RL B09,Tennessee SC ECNL RL B09,B2009,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-117455,1354,Tennessee SC Murfreesboro ECNL RL B09,Tennessee SC Murfreesboro ECNL RL B09,B2009,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-69020,18,Alabama FC ECNL RL B10,Alabama FC ECNL RL B10,B2010,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-112533,18,Alabama FC Huntsville ECNL RL B10,Alabama FC Huntsville ECNL RL B10,B2010,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-115166,4565,Tennessee United ECNL RL B10,Tennessee United ECNL RL B10,B2010,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-81752,18,Alabama FC ECNL RL B11,Alabama FC ECNL RL B11,B2011,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-117356,1354,Tennessee SC ECNL RL B11,Tennessee SC ECNL RL B11,B2011,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-115167,4565,Tennessee United ECNL RL B11,Tennessee United ECNL RL B11,B2011,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-94975,18,Alabama FC ECNL RL B12,Alabama FC ECNL RL B12,B2012,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-112538,18,Alabama FC Huntsville ECNL RL B12,Alabama FC Huntsville ECNL RL B12,B2012,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-115168,4565,Tennessee United ECNL RL B12,Tennessee United ECNL RL B12,B2012,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-112306,18,Alabama FC ECNL RL B13,Alabama FC ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-112541,18,Alabama FC Huntsville ECNL RL B13,Alabama FC Huntsville ECNL RL B13,B2013,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-96441,3232,Chattanooga Red Wolves SC ECNL RL B13,Chattanooga Red Wolves SC ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-112681,3589,Germantown Legends ECNL RL B13,Germantown Legends ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-113739,2235,Lobos Rush ECNL RL B13,Lobos Rush ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-110357,4327,Mississippi Rush United ECNL RL B13,Mississippi Rush United ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-117358,1354,Tennessee SC ECNL RL B13,Tennessee SC ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-117743,1354,Tennessee SC Murfreesboro ECNL RL B13,Tennessee SC Murfreesboro ECNL RL B13,B2013,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-115169,4565,Tennessee United ECNL RL B13,Tennessee United ECNL RL B13,B2013,Mid-America,Playoffs-Central,ECNL RL Boys,2025-26
-117456,4569,Tupelo FC ECNL RL B13,Tupelo FC ECNL RL B13,B2013,Mid-America,Conference,ECNL RL Boys,2025-26
-81263,2106,Chicago Magic ECNL RL B08/07,Chicago Magic ECNL RL B08/07,B2008/2007,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-117285,893,St Croix Soccer Club ECNL RL B08/07,St Croix Soccer Club ECNL RL B08/07,B2008/2007,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-81262,2106,Chicago Magic ECNL RL B09,Chicago Magic ECNL RL B09,B2009,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-117284,893,St Croix Soccer Club ECNL RL B09,St Croix Soccer Club ECNL RL B09,B2009,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-81261,2106,Chicago Magic ECNL RL B10,Chicago Magic ECNL RL B10,B2010,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-80833,2257,Indiana Elite FC ECNL RL B10,Indiana Elite FC ECNL RL B10,B2010,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-80843,2257,Indiana Elite FC ECNL RL B11,Indiana Elite FC ECNL RL B11,B2011,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-81223,2017,Rockford Raptors ECNL RL B11,Rockford Raptors ECNL RL B11,B2011,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-77720,2167,Chicago Inter Soccer ECNL RL B12,Chicago Inter Soccer ECNL RL B12,B2012,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-94375,2257,Indiana Elite FC ECNL RL B12,Indiana Elite FC ECNL RL B12,B2012,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-117711,2167,Chicago Inter Soccer ECNL RL B13,Chicago Inter Soccer ECNL RL B13,B2013,Midwest,Conference,ECNL RL Boys,2025-26
-117451,2106,Chicago Magic ECNL RL B13,Chicago Magic ECNL RL B13,B2013,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-113574,1797,FC WISCONSIN ECNL RL B13,FC WISCONSIN ECNL RL B13,B2013,Midwest,Conference,ECNL RL Boys,2025-26
-116594,2257,Indiana Elite FC ECNL RL B13,Indiana Elite FC ECNL RL B13,B2013,Midwest,Playoffs-Central,ECNL RL Boys,2025-26
-117427,67,Minnesota Thunder ECNL RL B13,Minnesota Thunder ECNL RL B13,B2013,Midwest,Conference,ECNL RL Boys,2025-26
-116230,2017,Rockford Raptors ECNL RL B13,Rockford Raptors ECNL RL B13,B2013,Midwest,Conference,ECNL RL Boys,2025-26
-117280,893,St Croix Soccer Club ECNL RL B13,St Croix Soccer Club ECNL RL B13,B2013,Midwest,Conference,ECNL RL Boys,2025-26
-116015,4368,El Paso Locomotive Youth Soccer Club ECNL RL B08,El Paso Locomotive Youth Soccer Club ECNL RL B08,B2008/2007,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-112807,107,NUU Avalanche ECNL RL B08/07,NUU Avalanche ECNL RL B08/07,B2008/2007,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-72314,81,Real Colorado Athletico ECNL RL B08/07,Real Colorado Athletico ECNL RL B08/07,B2008/2007,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-111377,1560,NM Rapids ECNL RL B09,NM Rapids ECNL RL B09,B2009,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-116399,5137,PlayMaker Futbol Academy ECNL RL B09,PlayMaker Futbol Academy ECNL RL B09,B2009,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-81632,2335,Pride SC ECNL RL B09,Pride SC ECNL RL B09,B2009,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-81509,81,Real Colorado Athletico ECNL RL B09,Real Colorado Athletico ECNL RL B09,B2009,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-113319,81,Real Colorado North National ECNL RL B09,Real Colorado North National ECNL RL B09,B2009,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-113619,107,Utah Avalanche ECNL RL B09,Utah Avalanche ECNL RL B09,B2009,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-112386,1936,CCV Stars ECNL RL B10,CCV Stars ECNL RL B10,B2010,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-62861,3639,Colorado EDGE ECNL RL B10,Colorado EDGE ECNL RL B10,B2010,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-117311,29,Colorado Rapids South ECNL RL B10,Colorado Rapids South ECNL RL B10,B2010,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-116428,5137,PlayMaker Futbol Academy ECNL RL B10,PlayMaker Futbol Academy ECNL RL B10,B2010,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-113322,81,Real Colorado North National ECNL RL B10,Real Colorado North National ECNL RL B10,B2010,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-113620,107,Utah Avalanche ECNL RL B10,Utah Avalanche ECNL RL B10,B2010,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-111801,592,Arizona Arsenal ECNL RL B11,Arizona Arsenal ECNL RL B11,B2011,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-82397,2232,Arsenal Colorado ECNL RL B11,Arsenal Colorado ECNL RL B11,B2011,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-117312,29,Colorado Rapids South ECNL RL B11,Colorado Rapids South ECNL RL B11,B2011,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-116430,5137,PlayMaker Futbol Academy ECNL RL B11,PlayMaker Futbol Academy ECNL RL B11,B2011,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-95151,81,Real Colorado Athletico ECNL RL B11,Real Colorado Athletico ECNL RL B11,B2011,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-110665,4179,Utah Surf ECNL RL B11,Utah Surf ECNL RL B11,B2011,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-94778,2232,Arsenal Colorado ECNL RL B12,Arsenal Colorado ECNL RL B12,B2012,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-117313,29,Colorado Rapids South ECNL RL B12,Colorado Rapids South ECNL RL B12,B2012,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-82295,3998,FC Arizona ECNL RL B12,FC Arizona ECNL RL B12,B2012,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-111381,1560,NM Rapids ECNL RL B12,NM Rapids ECNL RL B12,B2012,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-116431,5137,PlayMaker Futbol Academy ECNL RL B12,PlayMaker Futbol Academy ECNL RL B12,B2012,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-113323,81,Real Colorado North National ECNL RL B12,Real Colorado North National ECNL RL B12,B2012,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-111803,592,Arizona Arsenal ECNL RL B13,Arizona Arsenal ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-111486,2232,Arsenal Colorado ECNL RL B13,Arsenal Colorado ECNL RL B13,B2013,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-112388,1936,CCV Stars ECNL RL B13,CCV Stars ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-112856,3639,Colorado EDGE SC ECNL RL B13,Colorado EDGE SC ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-112601,29,Colorado Rapids North ECNL RL B13,Colorado Rapids North ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-117314,29,Colorado Rapids South ECNL RL B13,Colorado Rapids South ECNL RL B13,B2013,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-112016,28,Colorado Rush Academy Blue ECNL RL B13,Colorado Rush Academy Blue ECNL RL B13,B2013,Mountain,Playoffs-Central,ECNL RL Boys,2025-26
-116011,4368,El Paso Locomotive ECNL RL B13,El Paso Locomotive ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-96027,3998,FC Arizona ECNL RL B13,FC Arizona ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-117542,1760,La Roca FC ECNL RL B13,La Roca FC ECNL RL B13,B2013,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-111382,1560,NM Rapids ECNL RL B13,NM Rapids ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-112802,107,NUU Avalanche ECNL RL B13,NUU Avalanche ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-105393,5137,Playmaker Futbol Academy ECNL RL B13,Playmaker Futbol Academy ECNL RL B13,B2013,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-111976,2335,Pride SC ECNL RL B13,Pride SC ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-113307,81,Real Colorado Athletico ECNL RL B13,Real Colorado Athletico ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-113320,81,Real Colorado North National ECNL RL B13,Real Colorado North National ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-113624,107,Utah Avalanche ECNL RL B13,Utah Avalanche ECNL RL B13,B2013,Mountain,Conference,ECNL RL Boys,2025-26
-110667,4179,Utah Surf ECNL RL B13,Utah Surf ECNL RL B13,B2013,Mountain,Playoffs-West,ECNL RL Boys,2025-26
-68934,47,FC Dallas Red ECNL RL NTX B08/07,FC Dallas Red ECNL RL NTX B08/07,B2008/2007,NTX,Playoffs-South,ECNL RL Boys,2025-26
-81932,36,Sting ECNL RL NTX B08/07 Pitcock,Sting ECNL RL NTX B08/07 Pitcock,B2008/2007,NTX,Playoffs-South,ECNL RL Boys,2025-26
-72342,4068,Avanti SA Grey ECNL RL NTX B09,Avanti SA Grey ECNL RL NTX B09,B2009,NTX,Playoffs-South,ECNL RL Boys,2025-26
-69801,47,FC Dallas Navy ECNL RL NTX B09,FC Dallas Navy ECNL RL NTX B09,B2009,NTX,Playoffs-South,ECNL RL Boys,2025-26
-82538,3694,Kernow Storm FC ECNL RL NTX B09,Kernow Storm FC ECNL RL NTX B09,B2009,NTX,Playoffs-South,ECNL RL Boys,2025-26
-69133,2738,Atletico Dallas Youth ECNL RL NTX B10,Atletico Dallas Youth ECNL RL NTX B10,B2010,NTX,Playoffs-South,ECNL RL Boys,2025-26
-69794,4068,Avanti SA Blue ECNL RL NTX B10,Avanti SA Blue ECNL RL NTX B10,B2010,NTX,Playoffs-South,ECNL RL Boys,2025-26
-68880,3717,NTX Celtic FC ECNL RL NTX B10,NTX Celtic FC ECNL RL NTX B10,B2010,NTX,Playoffs-South,ECNL RL Boys,2025-26
-70305,4068,Avanti SA Blue ECNL RL NTX B11,Avanti SA Blue ECNL RL NTX B11,B2011,NTX,Playoffs-South,ECNL RL Boys,2025-26
-82089,47,FC Dallas Red ECNL RL NTX B11,FC Dallas Red ECNL RL NTX B11,B2011,NTX,Playoffs-South,ECNL RL Boys,2025-26
-68587,2127,Fever United FC ECNL RL NTX B11,Fever United FC ECNL RL NTX B11,B2011,NTX,Playoffs-South,ECNL RL Boys,2025-26
-96722,2738,Atletico Dallas Youth ECNL RL NTX B12,Atletico Dallas Youth ECNL RL NTX B12,B2012,NTX,Playoffs-South,ECNL RL Boys,2025-26
-114035,35,DKSC WHITE ECNL RL NTX B12,DKSC WHITE ECNL RL NTX B12,B2012,NTX,Playoffs-South,ECNL RL Boys,2025-26
-69611,47,FC Dallas Blue ECNL RL NTX B12,FC Dallas Blue ECNL RL NTX B12,B2012,NTX,Playoffs-South,ECNL RL Boys,2025-26
-76769,2738,Atletico Dallas Youth ECNL RL NTX B13,Atletico Dallas Youth ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-116777,2738,AtlÃ©tico Dallas Youth Blue ECNL RL NTX B13,AtlÃ©tico Dallas Youth Blue ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-95829,4068,Avanti SA Blue ECNL RL NTX B13,Avanti SA Blue ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-81581,4068,Avanti SA White ECNL RL NTX B13,Avanti SA White ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-96880,1771,BVBIA Black ECNL RL NTX B13,BVBIA Black ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-112990,1771,BVBIA Yellow ECNL RL NTX B13,BVBIA Yellow ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-102936,35,DKSC ECNL RL NTX B13,DKSC ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-114026,35,DKSC WHITE ECNL RL NTX B13,DKSC WHITE ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-116135,37,Dallas Texans ECNL RL NTX B13,Dallas Texans ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-116136,37,Dallas Texans Red ECNL RL NTX B13,Dallas Texans Red ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-82309,47,FC Dallas Blue ECNL RL NTX B13,FC Dallas Blue ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-82311,47,FC Dallas ECNL RL NTX B13,FC Dallas ECNL RL NTX B13,B2013,NTX,Playoffs-South,ECNL RL Boys,2025-26
-82310,47,FC Dallas Navy ECNL RL NTX B13,FC Dallas Navy ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-117302,47,FC Dallas North ECNL RL NTX B13,FC Dallas North ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-116039,47,FC Dallas Red ECNL RL NTX B13,FC Dallas Red ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-82313,47,FC Dallas White ECNL RL NTX B13,FC Dallas White ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-80984,2127,Fever United FC ECNL RL NTX B13,Fever United FC ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-98192,3694,Kernow Storm FC ECNL RL NTX B13,Kernow Storm FC ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-115809,3717,NTX Celtic FC ECNL RL NTX B13,NTX Celtic FC ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-59396,101,SOLAR BLUE ECNL RL NTX B13,SOLAR BLUE ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-82604,101,SOLAR RED ECNL RL NTX B13,SOLAR RED ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-83029,101,SOLAR WHITE ECNL RL NTX B13,SOLAR WHITE ECNL RL NTX B13,B2013,NTX,Conference,ECNL RL Boys,2025-26
-115799,36,Sting Brave ECNL RL NTX B13,Sting Brave ECNL RL NTX B13,B2013,NTX,Playoffs-South,ECNL RL Boys,2025-26
-111043,36,Sting ECNL RL NTX B13,Sting ECNL RL NTX B13,B2013,NTX,Playoffs-South,ECNL RL Boys,2025-26
-57883,431,FSA FC ECNL RL B08/07,FSA FC ECNL RL B08/07,B2008/2007,New England,Playoffs-East,ECNL RL Boys,2025-26
-60048,428,STA ECNL RL B08/07,STA ECNL RL B08/07,B2008/2007,New England,Playoffs-East,ECNL RL Boys,2025-26
-57867,52,FC Stars ECNL RL B09,FC Stars ECNL RL B09,B2009,New England,Playoffs-East,ECNL RL Boys,2025-26
-57881,431,FSA FC ECNL RL B09,FSA FC ECNL RL B09,B2009,New England,Playoffs-East,ECNL RL Boys,2025-26
-57891,518,Manhattan SC ECNL RL B09,Manhattan SC ECNL RL B09,B2009,New England,Playoffs-East,ECNL RL Boys,2025-26
-60047,428,STA ECNL RL B09,STA ECNL RL B09,B2009,New England,Playoffs-East,ECNL RL Boys,2025-26
-49657,1409,East Coast Surf SC ECNL RL B10,East Coast Surf SC ECNL RL B10,B2010,New England,Playoffs-East,ECNL RL Boys,2025-26
-59798,52,FC Stars ECNL RL B10,FC Stars ECNL RL B10,B2010,New England,Playoffs-East,ECNL RL Boys,2025-26
-70163,428,STA ECNL RL B10,STA ECNL RL B10,B2010,New England,Playoffs-East,ECNL RL Boys,2025-26
-59880,9,SUSA FC ECNL RL B10,SUSA FC ECNL RL B10,B2010,New England,Playoffs-East,ECNL RL Boys,2025-26
-96821,31,Connecticut FC United ECNL RL B11,Connecticut FC United ECNL RL B11,B2011,New England,Playoffs-East,ECNL RL Boys,2025-26
-82517,1409,East Coast Surf SC ECNL RL B11,East Coast Surf SC ECNL RL B11,B2011,New England,Playoffs-East,ECNL RL Boys,2025-26
-82071,518,Manhattan SC ECNL RL B11,Manhattan SC ECNL RL B11,B2011,New England,Playoffs-East,ECNL RL Boys,2025-26
-83243,428,STA ECNL RL B11,STA ECNL RL B11,B2011,New England,Playoffs-East,ECNL RL Boys,2025-26
-96820,31,Connecticut FC United ECNL RL B12,Connecticut FC United ECNL RL B12,B2012,New England,Playoffs-East,ECNL RL Boys,2025-26
-95587,1409,East Coast Surf SC ECNL RL B12,East Coast Surf SC ECNL RL B12,B2012,New England,Playoffs-East,ECNL RL Boys,2025-26
-94752,94,Scorpions SC ECNL RL B12,Scorpions SC ECNL RL B12,B2012,New England,Playoffs-East,ECNL RL Boys,2025-26
-87717,116,World Class FC ECNL RL B12,World Class FC ECNL RL B12,B2012,New England,Playoffs-East,ECNL RL Boys,2025-26
-116992,4370,AC Connecticut ECNL RL B13,AC Connecticut ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-96818,31,Connecticut FC United ECNL RL B13,Connecticut FC United ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-117484,1409,East Coast Surf SC ECNL RL B13,East Coast Surf SC ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-85575,42,East Meadow SC ECNL RL B13,East Meadow SC ECNL RL B13,B2013,New England,Playoffs-East,ECNL RL Boys,2025-26
-94545,52,FC Stars ECNL RL B13,FC Stars ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-82174,431,FSA FC ECNL RL B13,FSA FC ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-113902,518,Manhattan SC ECNL RL B13,Manhattan SC ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-96741,428,STA ECNL RL B13,STA ECNL RL B13,B2013,New England,Playoffs-East,ECNL RL Boys,2025-26
-95343,9,SUSA FC ECNL RL B13,SUSA FC ECNL RL B13,B2013,New England,Playoffs-East,ECNL RL Boys,2025-26
-116957,94,Scorpions SC ECNL RL B13,Scorpions SC ECNL RL B13,B2013,New England,Conference,ECNL RL Boys,2025-26
-95017,116,World Class FC ECNL RL B13,World Class FC ECNL RL B13,B2013,New England,Playoffs-East,ECNL RL Boys,2025-26
-72752,1249,Clovis Crossfire ECNL RL B08/07,Clovis Crossfire ECNL RL B08/07,B2008/2007,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-113276,3068,Fusion SC ECNL RL B08/07,Fusion SC ECNL RL B08/07,B2008/2007,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-112883,4398,Albion SC Central Valley ECNL RL B09,Albion SC Central Valley ECNL RL B09,B2009,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-110858,5087,Central Valley Premier FC  ECNL RL B09,Central Valley Premier FC  ECNL RL B09,B2009,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-109919,4580,Legends FC (SJ) ECNL RL B09,Legends FC (SJ) ECNL RL B09,B2009,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-112859,1649,Union FC ECNL RL B09,Union FC ECNL RL B09,B2009,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-93285,1249,Clovis Crossfire ECNL RL B10,Clovis Crossfire ECNL RL B10,B2010,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-93678,3989,FLS ECNL RL B10,FLS ECNL RL B10,B2010,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-93972,3252,SF United FC ECNL RL B10,SF United FC ECNL RL B10,B2010,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-99741,2482,Stanford Strikers FC ECNL RL B10,Stanford Strikers FC ECNL RL B10,B2010,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-117917,5323,Albany Berkeley SC Lightning Elite ECNL RL B11,Albany Berkeley SC Lightning Elite ECNL RL B11,B2011,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-89718,3989,FLS ECNL RL B11,FLS ECNL RL B11,B2011,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-93398,3252,SF United FC ECNL RL B11,SF United FC ECNL RL B11,B2011,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-112784,3183,Stockton TLJ FC ECNL RL B11,Stockton TLJ FC ECNL RL B11,B2011,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-104954,4403,Eastshore Alliance FC ECNL RL B12,Eastshore Alliance FC ECNL RL B12,B2012,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-111052,4063,El Camino FC Salinas ECNL RL B12 NorCal,El Camino FC Salinas ECNL RL B12 NorCal,B2012,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-104319,3989,FLS ECNL RL B12,FLS ECNL RL B12,B2012,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-114144,2495,Palo Alto Soccer Club  ECNL RL B12,Palo Alto Soccer Club  ECNL RL B12,B2012,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-111992,4582,CVFA Academy ECNL RL B13,CVFA Academy ECNL RL B13,B2013,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-110346,1249,Clovis Crossfire ECNL RL B13,Clovis Crossfire ECNL RL B13,B2013,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-112415,4544,East Bay United ECNL RL B13,East Bay United ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-112909,4403,Eastshore Alliance FC ECNL RL B13,Eastshore Alliance FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111573,5109,FC Fresno Academy ECNL RL B13,FC Fresno Academy ECNL RL B13,B2013,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-111815,3989,FLS ECNL RL B13,FLS ECNL RL B13,B2013,NorCal,Playoffs-West,ECNL RL Boys,2025-26
-113330,4659,JSC Soccer Club ECNL RL B13,JSC Soccer Club ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111737,3068,Livermore Fusion SC ECNL RL B13,Livermore Fusion SC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-113290,4067,Revolution FC ECNL RL B13,Revolution FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111361,3252,SF United FC ECNL RL B13,SF United FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-117907,5322,San Jose Rush ECNL RL B13,San Jose Rush ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111830,2850,San Ramon FC ECNL RL B13,San Ramon FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-112423,2748,Sheriffs FC ECNL RL B13,Sheriffs FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-114147,5114,South Valley Chivas ECNL RL B13,South Valley Chivas ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111832,1721,South Valley United ECNL RL B13,South Valley United ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111502,2482,Stanford Strikers FC ECNL RL B13,Stanford Strikers FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-112868,1649,Union Sacramento FC ECNL RL B13,Union Sacramento FC ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-111636,3983,Walnut Creek Surf ECNL RL B13,Walnut Creek Surf ECNL RL B13,B2013,NorCal,Conference,ECNL RL Boys,2025-26
-59980,419,Maryland United FC ECNL RL B08/07,Maryland United FC ECNL RL B08/07,B2008/2007,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-55386,3405,Pipeline SC ECNL RL B08/07,Pipeline SC ECNL RL B08/07,B2008/2007,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-80786,494,Baltimore Celtic ECNL RL B09,Baltimore Celtic ECNL RL B09,B2009,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-66529,451,LVU Rush ECNL RL B09,LVU Rush ECNL RL B09,B2009,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-57932,79,Penn Fusion SA ECNL RL B09,Penn Fusion SA ECNL RL B09,B2009,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-81298,1940,Potomac SA ECNL RL B09,Potomac SA ECNL RL B09,B2009,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-48189,598,FC DELCO ECNL RL B10,FC DELCO ECNL RL B10,B2010,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-68441,78,PDA ECNL RL B10,PDA ECNL RL B10,B2010,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-68825,79,Penn Fusion SA ECNL RL B10,Penn Fusion SA ECNL RL B10,B2010,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-55379,3405,Pipeline SC ECNL RL B10,Pipeline SC ECNL RL B10,B2010,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-48188,598,FC DELCO ECNL RL B11,FC DELCO ECNL RL B11,B2011,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-81399,419,Maryland United FC ECNL RL B11,Maryland United FC ECNL RL B11,B2011,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-81243,79,Penn Fusion SA ECNL RL B11,Penn Fusion SA ECNL RL B11,B2011,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-79390,3405,Pipeline SC ECNL RL B11,Pipeline SC ECNL RL B11,B2011,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-94406,598,FC DELCO ECNL RL B12,FC DELCO ECNL RL B12,B2012,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-93620,451,LVU Rush ECNL RL B12,LVU Rush ECNL RL B12,B2012,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-94641,419,Maryland United FC ECNL RL B12,Maryland United FC ECNL RL B12,B2012,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-94713,79,Penn Fusion SA ECNL RL B12,Penn Fusion SA ECNL RL B12,B2012,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-94096,494,Baltimore Celtic ECNL RL B13,Baltimore Celtic ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-117069,2701,Delaware FC ECNL RL B13,Delaware FC ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-111508,598,FC DELCO ECNL RL B13,FC DELCO ECNL RL B13,B2013,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-114690,46,HEX FC Keystone ECNL RL B13,HEX FC Keystone ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-112512,451,LVU Rush ECNL RL B13,LVU Rush ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-95154,419,Maryland United FC ECNL RL B13,Maryland United FC ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-54414,64,Match Fit Surf ECNL RL B13,Match Fit Surf ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-118058,78,PDA ECNL RL B13,PDA ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-112982,4338,PSA Monmouth ECNL RL B13,PSA Monmouth ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-114896,79,Penn Fusion SA ECNL RL B13,Penn Fusion SA ECNL RL B13,B2013,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-114659,1345,Philadelphia Ukrainian Nationals ECNL RL B13,Philadelphia Ukrainian Nationals ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-91704,3405,Pipeline SC ECNL RL B13,Pipeline SC ECNL RL B13,B2013,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-115505,1940,Potomac SA ECNL RL B13,Potomac SA ECNL RL B13,B2013,North Atlantic,Playoffs-East,ECNL RL Boys,2025-26
-115027,4355,SJEB FC ECNL RL B13,SJEB FC ECNL RL B13,B2013,North Atlantic,Conference,ECNL RL Boys,2025-26
-115510,5290,Lancaster FC ECNL RL B08/07,Lancaster FC ECNL RL B08/07,B2008/2007,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115555,1030,Western United Pioneers ECNL RL B08/07,Western United Pioneers ECNL RL B08/07,B2008/2007,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-111790,489,Brentwood SC ECNL RL B09,Brentwood SC ECNL RL B09,B2009,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-94766,4349,CFC North ECNL RL B09,CFC North ECNL RL B09,B2009,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-97094,397,FC Europa ECNL RL B09,FC Europa ECNL RL B09,B2009,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-75561,435,Quickstrike FC ECNL RL B09,Quickstrike FC ECNL RL B09,B2009,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-114956,613,STA MO ECNL RL B09,STA MO ECNL RL B09,B2009,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-96961,527,YMS ECNL RL B09,YMS ECNL RL B09,B2009,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-94767,4349,CFC North ECNL RL B10,CFC North ECNL RL B10,B2010,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-97328,397,FC Europa ECNL RL B10,FC Europa ECNL RL B10,B2010,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-117376,342,Select North ECNL RL B10,Select North ECNL RL B10,B2010,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-113945,1484,West-Mont United ECNL RL B10,West-Mont United ECNL RL B10,B2010,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115557,1030,Western United Pioneers ECNL RL B10,Western United Pioneers ECNL RL B10,B2010,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-96963,527,YMS ECNL RL B10,YMS ECNL RL B10,B2010,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-111792,489,Brentwood SC ECNL RL B11,Brentwood SC ECNL RL B11,B2011,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-94768,4349,CFC North ECNL RL B11,CFC North ECNL RL B11,B2011,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-97330,397,FC Europa ECNL RL B11,FC Europa ECNL RL B11,B2011,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115514,5290,Lancaster FC ECNL RL B11,Lancaster FC ECNL RL B11,B2011,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115559,1030,Western United Pioneers ECNL RL B11,Western United Pioneers ECNL RL B11,B2011,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-96965,527,YMS ECNL RL B11,YMS ECNL RL B11,B2011,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115254,5150,Brooklyn United ECNL RL B12,Brooklyn United ECNL RL B12,B2012,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-97329,397,FC Europa ECNL RL B12,FC Europa ECNL RL B12,B2012,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115515,5290,Lancaster FC ECNL RL B12,Lancaster FC ECNL RL B12,B2012,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-114953,613,STA MO ECNL RL B12,STA MO ECNL RL B12,B2012,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-117374,342,Select North ECNL RL B12,Select North ECNL RL B12,B2012,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115560,1030,Western United Pioneers ECNL RL B12,Western United Pioneers ECNL RL B12,B2012,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-118989,756,Black Watch Premier ECNL RL B13,Black Watch Premier ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-111795,489,Brentwood SC ECNL RL B13,Brentwood SC ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-115255,5150,Brooklyn United ECNL RL B13,Brooklyn United ECNL RL B13,B2013,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-97459,4349,CFC North ECNL RL B13,CFC North ECNL RL B13,B2013,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-113706,5229,Eagle FC ECNL RL B13,Eagle FC ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-96591,4220,Eastern FC ECNL RL B13,Eastern FC ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-112839,385,FC Copa Academy ECNL RL B13,FC Copa Academy ECNL RL B13,B2013,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-98248,397,FC Europa ECNL RL B13,FC Europa ECNL RL B13,B2013,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-115516,5290,Lancaster FC ECNL RL B13,Lancaster FC ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-114840,369,PSA North ECNL RL B13,PSA North ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-115156,435,Quickstrike FC ECNL RL B13,Quickstrike FC ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-114952,613,STA MO ECNL RL B13,STA MO ECNL RL B13,B2013,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-117373,342,Select North ECNL RL B13,Select North ECNL RL B13,B2013,Northeast,Playoffs-East,ECNL RL Boys,2025-26
-117093,342,Select South ECNL RL B13,Select South ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-114242,1484,West-Mont United ECNL RL B13,West-Mont United ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-118599,5327,Westchester Soccer Club ECNL RL B13,Westchester Soccer Club ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-115561,1030,Western United Pioneers ECNL RL B13,Western United Pioneers ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-96969,527,YMS ECNL RL B13,YMS ECNL RL B13,B2013,Northeast,Conference,ECNL RL Boys,2025-26
-109327,4551,Northwest United FC ECNL RL B08/07,Northwest United FC ECNL RL B08/07,B2008/2007,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-69683,1643,Seattle United ECNL RL B08/07,Seattle United ECNL RL B08/07,B2008/2007,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-93858,4551,Northwest United FC ECNL RL B09,Northwest United FC ECNL RL B09,B2009,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-81690,1643,Seattle United ECNL RL B09,Seattle United ECNL RL B09,B2009,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-58260,2544,Spokane Shadow ECNL RL B09,Spokane Shadow ECNL RL B09,B2009,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-81542,112,Washington Premier ECNL RL B09,Washington Premier ECNL RL B09,B2009,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-111145,4333,Central Washington Sounders ECNL RL B10,Central Washington Sounders ECNL RL B10,B2010,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-82421,4551,Northwest United FC ECNL RL B10,Northwest United FC ECNL RL B10,B2010,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-81691,1643,Seattle United ECNL RL B10,Seattle United ECNL RL B10,B2010,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-69838,2544,Spokane Shadow ECNL RL B10,Spokane Shadow ECNL RL B10,B2010,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-112465,4333,Central Washington Sounders ECNL RL B11,Central Washington Sounders ECNL RL B11,B2011,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-81732,398,Eastside FC ECNL RL B11,Eastside FC ECNL RL B11,B2011,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-81692,1643,Seattle United ECNL RL B11,Seattle United ECNL RL B11,B2011,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-81544,112,Washington Premier ECNL RL B11,Washington Premier ECNL RL B11,B2011,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-91365,398,Eastside FC ECNL RL B12,Eastside FC ECNL RL B12,B2012,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-94796,1643,Seattle United ECNL RL B12,Seattle United ECNL RL B12,B2012,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-94897,112,Washington Premier ECNL RL B12,Washington Premier ECNL RL B12,B2012,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-90739,4153,Wenatchee FC Youth ECNL RL B12,Wenatchee FC Youth ECNL RL B12,B2012,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-103666,4333,Central Washington Sounders ECNL RL B13,Central Washington Sounders ECNL RL B13,B2013,Northwest,Conference,ECNL RL Boys,2025-26
-113603,2322,Columbia Premier SC ECNL RL13B,Columbia Premier SC ECNL RL13B,B2013,Northwest,Conference,ECNL RL Boys,2025-26
-90879,398,Eastside FC ECNL RL B13,Eastside FC ECNL RL B13,B2013,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-93841,4551,Northwest United FC ECNL RL B13,Northwest United FC ECNL RL B13,B2013,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-110683,2331,PacNW SC ECNL RL B13,PacNW SC ECNL RL B13,B2013,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-114766,1643,Seattle United ECNL RL B13,Seattle United ECNL RL B13,B2013,Northwest,Playoffs-West,ECNL RL Boys,2025-26
-113337,2544,Spokane Shadow ECNL RL B13,Spokane Shadow ECNL RL B13,B2013,Northwest,Conference,ECNL RL Boys,2025-26
-80505,112,Washington Premier ECNL RL B13,Washington Premier ECNL RL B13,B2013,Northwest,Conference,ECNL RL Boys,2025-26
-112192,4153,Wenatchee FC ECNL RL B13,Wenatchee FC ECNL RL B13,B2013,Northwest,Conference,ECNL RL Boys,2025-26
-111216,3476,XF ECNL RL B13,XF ECNL RL B13,B2013,Northwest,Conference,ECNL RL Boys,2025-26
-110227,25,Challenge United EAST ECNL RL STXCL B07,Challenge United EAST ECNL RL STXCL B07,B2008/2007,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-92494,25,Challenge United EAST ECNL RL STXCL B09,Challenge United EAST ECNL RL STXCL B09,B2009,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-92657,25,Challenge United ECNL RL STXCL B09,Challenge United ECNL RL STXCL B09,B2009,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-50861,3575,MAFC ECNL RL STXCL B09,MAFC ECNL RL STXCL B09,B2009,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-59637,3718,Imperial SC ECNL RL STXCL B10,Imperial SC ECNL RL STXCL B10,B2010,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-93726,4543,JS Legends ECNL RL STXCL B10,JS Legends ECNL RL STXCL B10,B2010,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-95357,3575,MAFC ECNL RL STXCL B10,MAFC ECNL RL STXCL B10,B2010,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-80688,3603,210 FC ECNL RL STXCL B11,210 FC ECNL RL STXCL B11,B2011,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-56879,10,AHFC CY-FAIR ECNL RL STXCL B11,AHFC CY-FAIR ECNL RL STXCL B11,B2011,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-95661,3575,MAFC Guerreros Houston ECNL RL STXCL B11,MAFC Guerreros Houston ECNL RL STXCL B11,B2011,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-112607,62,Lonestar SC STH ECNL RL STXCL B12,Lonestar SC STH ECNL RL STXCL B12,B2012,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-115219,3575,MAFC ECNL RL STXCL B12,MAFC ECNL RL STXCL B12,B2012,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-92879,3900,Pearland SC NextUp ECNL RL STXCL B12,Pearland SC NextUp ECNL RL STXCL B12,B2012,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-113185,3603,210 FC ECNL RL STXCL B13,210 FC ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-80655,10,AHFC CENTRAL ECNL RL STXCL B13,AHFC CENTRAL ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-75438,10,AHFC CY-FAIR ECNL RL STXCL B13,AHFC CY-FAIR ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-80852,10,AHFC PRE-ECNL ECNL RL STXCL B14,AHFC PRE-ECNL ECNL RL STXCL B14,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-80801,3432,Cavalry ECNL RL STXCL B13,Cavalry ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-69753,3489,Cedar Stars Rush Houston ECNL RL STXCL B13,Cedar Stars Rush Houston ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-109692,25,Challenge United EAST ECNL RL STXCL B13,Challenge United EAST ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-110332,1655,Cosmos FC ECNL RL STXCL B13,Cosmos FC ECNL RL STXCL B13,B2013,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-74790,3321,Dynamos ECNL RL STXCL B13,Dynamos ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-75505,3433,Houstonians FC Red ECNL RL STXCL B13,Houstonians FC Red ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-113600,4557,LTFC ECNL RL STXCL B13,LTFC ECNL RL STXCL B13,B2013,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-112645,62,Lonestar SC Black ECNL RL STXCL B14,Lonestar SC Black ECNL RL STXCL B14,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-112604,62,Lonestar SC NTH ECNL RL STXCL B13,Lonestar SC NTH ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-112644,62,Lonestar SC Red ECNL RL STXCL B14,Lonestar SC Red ECNL RL STXCL B14,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-112605,62,Lonestar SC STH ECNL RL STXCL B13,Lonestar SC STH ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-96736,3575,MAFC ECNL RL STXCL B13,MAFC ECNL RL STXCL B13,B2013,STXCL,Playoffs-South,ECNL RL Boys,2025-26
-97736,3900,Pearland SC NextUp ECNL RL STXCL B13,Pearland SC NextUp ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-95921,1772,RISE SC ECNL RL STXCL B14,RISE SC ECNL RL STXCL B14,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-112303,4560,TC Premier SC ECNL RL STXCL B13,TC Premier SC ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-75143,3653,VCF Houston Black ECNL RL STXCL B13,VCF Houston Black ECNL RL STXCL B13,B2013,STXCL,Conference,ECNL RL Boys,2025-26
-113075,16,Beach FC (CA) ECNL RL S.Cal B08/07,Beach FC (CA) ECNL RL S.Cal B08/07,B2008/2007,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-114250,86,SDSC Surf ECNL RL S.Cal B08/07,SDSC Surf ECNL RL S.Cal B08/07,B2008/2007,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-94900,2289,LA Breakers FC ECNL RL SoCal B09 LB,LA Breakers FC ECNL RL SoCal B09 LB,B2009,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-114251,86,SDSC Surf ECNL RL S.Cal B09,SDSC Surf ECNL RL S.Cal B09,B2009,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-68853,2289,LA Breakers FC ECNL RL S.Cal B10,LA Breakers FC ECNL RL S.Cal B10,B2010,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-95263,13,Sporting CA USA ECNL RL S.Cal B10,Sporting CA USA ECNL RL S.Cal B10,B2010,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-114253,86,SDSC Surf ECNL RL S.Cal B11,SDSC Surf ECNL RL S.Cal B11,B2011,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-61048,113,West Coast FC ECNL RL B11 S. Cal,West Coast FC ECNL RL B11 S. Cal,B2011,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-113086,16,Beach FC (CA) ECNL RL S.Cal B12,Beach FC (CA) ECNL RL S.Cal B12,B2012,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-114254,86,SDSC Surf ECNL RL S.Cal B12,SDSC Surf ECNL RL S.Cal B12,B2012,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-113088,16,Beach FC (CA) ECNL RL S.Cal B13,Beach FC (CA) ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-118274,2289,LA Breakers FC ECNL RL LB S.Cal B13,LA Breakers FC ECNL RL LB S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-66150,2289,LA Breakers FC ECNL RL S.Cal B13,LA Breakers FC ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-106674,82,LAFC So Cal ECNL RL S.Cal B13,LAFC So Cal ECNL RL S.Cal B13,B2013,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-113083,57,LV Heat Surf ECNL RL S.Cal B13,LV Heat Surf ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-81127,39,Legends FC San Diego ECNL RL S.Cal B13,Legends FC San Diego ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-113761,300,Rebels SC ECNL RL S.Cal B13,Rebels SC ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-114255,86,SDSC Surf ECNL RL S.Cal B13,SDSC Surf ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-114938,13,Sporting CA USA ECNL RL S.Cal B13,Sporting CA USA ECNL RL S.Cal B13,B2013,SoCal,Playoffs-West,ECNL RL Boys,2025-26
-105506,113,West Coast FC ECNL RL S.Cal B13,West Coast FC ECNL RL S.Cal B13,B2013,SoCal,Conference,ECNL RL Boys,2025-26
-79848,14,Atlanta Fire United ECNL RL B13,Atlanta Fire United ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-110976,380,CESA Triumph ECNL RL B13,CESA Triumph ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-112312,30,Concorde Fire Platinum ECNL RL B13,Concorde Fire Platinum ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-112313,30,Concorde Fire Premier ECNL RL B13,Concorde Fire Premier ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-116862,56,GSA ECNL RL B13,GSA ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-113019,329,NTH NASA ECNL RL B13,NTH NASA ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-109200,3644,South Carolina Surf ECNL RL B13,South Carolina Surf ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-113292,1689,South Carolina United ECNL RL B13,South Carolina United ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-118018,3407,United Futbol Academy ECNL RL B13,United Futbol Academy ECNL RL B13,B2013,Southeast,Conference,ECNL RL Boys,2025-26
-47440,16,Beach FC (CA) ECNL RL B08/07,Beach FC (CA) ECNL RL B08/07,B2008/2007,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-47204,82,LAFC So Cal ECNL RL B08/07,LAFC So Cal ECNL RL B08/07,B2008/2007,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-46315,61,Legends FC ECNL RL B08/07,Legends FC ECNL RL B08/07,B2008/2007,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-47483,86,SDSC Surf ECNL RL B08/07,SDSC Surf ECNL RL B08/07,B2008/2007,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-60058,16,Beach FC (CA) ECNL RL B09,Beach FC (CA) ECNL RL B09,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-59871,82,LAFC So Cal ECNL RL B09,LAFC So Cal ECNL RL B09,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-59685,61,Legends FC ECNL RL B09,Legends FC ECNL RL B09,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-81755,186,Pateadores NB ECNL RL B09,Pateadores NB ECNL RL B09,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-81465,87,San Diego Surf ECNL RL B09 Blue,San Diego Surf ECNL RL B09 Blue,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-60895,87,San Diego Surf ECNL RL B09 White,San Diego Surf ECNL RL B09 White,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-21850,96,Slammers FC Maroon ECNL RL B09,Slammers FC Maroon ECNL RL B09,B2009,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-60061,16,Beach FC (CA) ECNL RL B10,Beach FC (CA) ECNL RL B10,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-60732,82,LAFC So Cal ECNL RL B10,LAFC So Cal ECNL RL B10,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-59683,61,Legends FC ECNL RL B10,Legends FC ECNL RL B10,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-68760,86,SDSC Surf ECNL RL B10,SDSC Surf ECNL RL B10,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-81466,87,San Diego Surf ECNL RL B10 Blue,San Diego Surf ECNL RL B10 Blue,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-65709,96,Slammers FC Maroon ECNL RL B10,Slammers FC Maroon ECNL RL B10,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-61047,113,West Coast FC ECNL RL B10,West Coast FC ECNL RL B10,B2010,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-60429,16,Beach FC (CA) ECNL RL B11,Beach FC (CA) ECNL RL B11,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-60734,82,LAFC So Cal ECNL RL B11,LAFC So Cal ECNL RL B11,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-80520,57,LV Heat Surf ECNL RL B11,LV Heat Surf ECNL RL B11,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-81618,186,Pateadores ECNL RL B11,Pateadores ECNL RL B11,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-94966,300,Rebels SC ECNL RL B11,Rebels SC ECNL RL B11,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-81469,87,San Diego Surf ECNL RL B11 Blue,San Diego Surf ECNL RL B11 Blue,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-91204,113,West Coast FC ECNL RL B11 SW,West Coast FC ECNL RL B11 SW,B2011,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-94859,16,Beach FC (CA) ECNL RL B12,Beach FC (CA) ECNL RL B12,B2012,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-95396,61,Legends FC ECNL RL B12,Legends FC ECNL RL B12,B2012,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-95412,61,Legends FC ECNL RL B12 2,Legends FC ECNL RL B12 2,B2012,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-94965,300,Rebels SC ECNL RL B12,Rebels SC ECNL RL B12,B2012,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-94886,96,Slammers FC White ECNL RL B12,Slammers FC White ECNL RL B12,B2012,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-111334,16,Beach FC (CA) ECNL RL B13,Beach FC (CA) ECNL RL B13,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-57121,41,Eagles SC ECNL RL B13,Eagles SC ECNL RL B13,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-82149,82,LAFC So Cal ECNL RL B13,LAFC So Cal ECNL RL B13,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-110875,57,LV Heat Surf ECNL RL B13,LV Heat Surf ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-113522,61,Legends FC - ECNL RL 2 B13,Legends FC - ECNL RL 2 B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-66057,61,Legends FC ECNL RL B13,Legends FC ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-104672,186,Pateadores ECNL RL B13,Pateadores ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-107592,186,Pateadores NB ECNL RL B13,Pateadores NB ECNL RL B13,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-113765,300,Rebels SC ECNL RL B13,Rebels SC ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-78751,86,SDSC Surf ECNL RL B13,SDSC Surf ECNL RL B13,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-94959,96,SLAMMERS FC White ECNL RL B13,SLAMMERS FC White ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-105080,87,San Diego Surf ECNL RL B13 Blue,San Diego Surf ECNL RL B13 Blue,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-105079,87,San Diego Surf ECNL RL B13 White,San Diego Surf ECNL RL B13 White,B2013,Southwest,Playoffs-West,ECNL RL Boys,2025-26
-94958,96,Slammers FC Maroon ECNL RL B13,Slammers FC Maroon ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-81819,13,Sporting CA USA ECNL RL B13,Sporting CA USA ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-67217,113,West Coast FC ECNL RL B13,West Coast FC ECNL RL B13,B2013,Southwest,Conference,ECNL RL Boys,2025-26
-81205,4068,Avanti SA ECNL RL B08/07,Avanti SA ECNL RL B08/07,B2008/2007,Texas,Playoffs-South,ECNL RL Boys,2025-26
-57754,37,Dallas Texans RL B08/07,Dallas Texans RL B08/07,B2008/2007,Texas,Playoffs-South,ECNL RL Boys,2025-26
-69591,47,FC Dallas ECNL RL B08/07,FC Dallas ECNL RL B08/07,B2008/2007,Texas,Playoffs-South,ECNL RL Boys,2025-26
-81206,4068,Avanti SA ECNL RL B09,Avanti SA ECNL RL B09,B2009,Texas,Playoffs-South,ECNL RL Boys,2025-26
-69593,47,FC Dallas ECNL RL B09,FC Dallas ECNL RL B09,B2009,Texas,Playoffs-South,ECNL RL Boys,2025-26
-68858,3234,FC Westlake ECNL RL B09,FC Westlake ECNL RL B09,B2009,Texas,Playoffs-South,ECNL RL Boys,2025-26
-50721,3433,HOUSTONIANS FC ECNL RL B09,HOUSTONIANS FC ECNL RL B09,B2009,Texas,Playoffs-South,ECNL RL Boys,2025-26
-58624,2258,HTX N ECNL RL B09,HTX N ECNL RL B09,B2009,Texas,Playoffs-South,ECNL RL Boys,2025-26
-95199,4304,SAFC Red ECNL RL B09,SAFC Red ECNL RL B09,B2009,Texas,Playoffs-South,ECNL RL Boys,2025-26
-81207,4068,Avanti SA ECNL RL B10,Avanti SA ECNL RL B10,B2010,Texas,Playoffs-South,ECNL RL Boys,2025-26
-112677,1771,BVBIA ECNL RL B10,BVBIA ECNL RL B10,B2010,Texas,Playoffs-South,ECNL RL Boys,2025-26
-68857,3234,FC Westlake ECNL RL B10,FC Westlake ECNL RL B10,B2010,Texas,Playoffs-South,ECNL RL Boys,2025-26
-50713,3433,HOUSTONIANS FC ECNL RL B10,HOUSTONIANS FC ECNL RL B10,B2010,Texas,Playoffs-South,ECNL RL Boys,2025-26
-68821,2258,HTX N ECNL RL B10,HTX N ECNL RL B10,B2010,Texas,Playoffs-South,ECNL RL Boys,2025-26
-80327,2258,HTX S ECNL RL B10,HTX S ECNL RL B10,B2010,Texas,Playoffs-South,ECNL RL Boys,2025-26
-81910,10,Albion Hurricanes FC ECNL RL B11,Albion Hurricanes FC ECNL RL B11,B2011,Texas,Playoffs-South,ECNL RL Boys,2025-26
-81208,4068,Avanti SA ECNL RL B11,Avanti SA ECNL RL B11,B2011,Texas,Playoffs-South,ECNL RL Boys,2025-26
-79540,25,CHALLENGE UNITED ECNL RL B11,CHALLENGE UNITED ECNL RL B11,B2011,Texas,Playoffs-South,ECNL RL Boys,2025-26
-50719,3433,HOUSTONIANS FC ECNL RL B11,HOUSTONIANS FC ECNL RL B11,B2011,Texas,Playoffs-South,ECNL RL Boys,2025-26
-80773,2133,OK Energy FC ECNL RL B11,OK Energy FC ECNL RL B11,B2011,Texas,Playoffs-South,ECNL RL Boys,2025-26
-80407,1772,RISE SC ECNL Navy RL B11,RISE SC ECNL Navy RL B11,B2011,Texas,Playoffs-South,ECNL RL Boys,2025-26
-57175,10,Albion Hurricanes FC ECNL RL B12,Albion Hurricanes FC ECNL RL B12,B2012,Texas,Playoffs-South,ECNL RL Boys,2025-26
-91314,25,CHALLENGE UNITED ECNL RL B12,CHALLENGE UNITED ECNL RL B12,B2012,Texas,Playoffs-South,ECNL RL Boys,2025-26
-94513,35,DKSC ECNL RL B12,DKSC ECNL RL B12,B2012,Texas,Playoffs-South,ECNL RL Boys,2025-26
-55701,3433,HOUSTONIANS FC ECNL RL B12,HOUSTONIANS FC ECNL RL B12,B2012,Texas,Playoffs-South,ECNL RL Boys,2025-26
-92540,2258,HTX S ECNL RL B12,HTX S ECNL RL B12,B2012,Texas,Playoffs-South,ECNL RL Boys,2025-26
-94442,2133,OK Energy FC ECNL RL B12,OK Energy FC ECNL RL B12,B2012,Texas,Playoffs-South,ECNL RL Boys,2025-26
-69770,10,Albion Hurricanes FC ECNL RL B13,Albion Hurricanes FC ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-70304,4068,Avanti SA ECNL RL B13,Avanti SA ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-112676,1771,BVBIA ECNL RL B13,BVBIA ECNL RL B13,B2013,Texas,Playoffs-South,ECNL RL Boys,2025-26
-108527,25,CHALLENGE UNITED ECNL RL B13,CHALLENGE UNITED ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-114024,35,DKSC ECNL RL B13,DKSC ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-114454,37,Dallas Texans ECNL RL B13,Dallas Texans ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-96481,47,FC Dallas ECNL RL B13,FC Dallas ECNL RL B13,B2013,Texas,Playoffs-South,ECNL RL Boys,2025-26
-113829,3234,FC Westlake ECNL RL B13,FC Westlake ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-110028,3433,HOUSTONIANS FC ECNL RL B13,HOUSTONIANS FC ECNL RL B13,B2013,Texas,Playoffs-South,ECNL RL Boys,2025-26
-111933,2258,HTX N ECNL RL B13,HTX N ECNL RL B13,B2013,Texas,Playoffs-South,ECNL RL Boys,2025-26
-111934,2258,HTX S ECNL RL B13,HTX S ECNL RL B13,B2013,Texas,Playoffs-South,ECNL RL Boys,2025-26
-114705,62,Lonestar Soccer Club ECNL RL B13,Lonestar Soccer Club ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-80820,2133,OK Energy FC ECNL RL B13,OK Energy FC ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-49853,2134,Oklahoma Celtic ECNL RL B13,Oklahoma Celtic ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-95937,1772,RISE SC ECNL Navy RL B13,RISE SC ECNL Navy RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-95938,1772,RISE SC ECNL White RL B13,RISE SC ECNL White RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-112171,4304,SAFC Black ECNL RL B13,SAFC Black ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-111246,4304,SAFC Red ECNL RL B13,SAFC Red ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-70751,101,SOLAR SC ECNL RL B13,SOLAR SC ECNL RL B13,B2013,Texas,Playoffs-South,ECNL RL Boys,2025-26
-114687,2519,San Antonio City SC ECNL RL B13,San Antonio City SC ECNL RL B13,B2013,Texas,Conference,ECNL RL Boys,2025-26
-117115,4803,BOREAL FC ECNL RL B2008/07,BOREAL FC ECNL RL B2008/07,B2008/2007,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-111570,4817,North Star FC ECNL RL B08/07,North Star FC ECNL RL B08/07,B2008/2007,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119322,4149,EPSC ECNL RL B09,EPSC ECNL RL B09,B2009,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119452,4716,Keliix-Intra SC - ECNL RL B2009,Keliix-Intra SC -,B2009,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119457,4716,Keliix-Intra SC - ECNL RL B2010,Keliix-Intra SC -,B2010,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119251,4137,North Suburban ECNL RL B10,North Suburban ECNL RL B10,B2010,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119074,4812,Fusion Soccer Club ECNL RL B11,Fusion Soccer Club ECNL RL B11,B2011,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119471,4143,Minneapolis United SC ECNL RL B11,Minneapolis United SC ECNL RL B11,B2011,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119462,4716,Keliix-Intra SC ECNL RL B2012,Keliix-Intra SC,B2012,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119250,4137,North Suburban ECNL RL B12,North Suburban ECNL RL B12,B2012,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119319,4149,EPSC ECNL RL B13,EPSC ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119142,4132,Edina Soccer Club ECNL RL B13,Edina Soccer Club ECNL RL B13,B2013,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119073,4812,Fusion Soccer Club ECNL RL B13,Fusion Soccer Club ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-75588,4716,Keliix-Intra SC ECNL RL B2013,Keliix-Intra SC,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119437,4825,Minnesota Rush ECNL RL B13,Minnesota Rush ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119063,4137,North Suburban ECNL RL B13,North Suburban ECNL RL B13,B2013,Twin Cities,Playoffs-Central,ECNL RL Boys,2025-26
-119337,4105,Prior Lake SC ECNL RL B13,Prior Lake SC ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119271,4136,Salvo SC ECNL RL B13,Salvo SC ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119446,4506,Shakopee Soccer Association ECNL RL B13,Shakopee Soccer Association ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119127,4827,Wave SC ECNL RL B13,Wave SC ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-119294,3732,Western Wisconsin Soccer ECNL RL B13,Western Wisconsin Soccer ECNL RL B13,B2013,Twin Cities,Conference,ECNL RL Boys,2025-26
-82228,525,Arlington Soccer ECNL RL B08/07,Arlington Soccer ECNL RL B08/07,B2008/2007,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-48213,629,PWSI Courage ECNL RL B08/07,PWSI Courage ECNL RL B08/07,B2008/2007,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-48076,1288,Great Falls Reston Soccer Club ECNL RL B09,Great Falls Reston Soccer Club ECNL RL B09,B2009,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-47971,417,Richmond United Blue ECNL RL B09,Richmond United Blue ECNL RL B09,B2009,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-48229,629,PWSI Courage ECNL RL B10,PWSI Courage ECNL RL B10,B2010,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-47979,3176,Villarreal VA ECNL RL B10,Villarreal VA ECNL RL B10,B2010,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-81810,629,PWSI Courage ECNL RL B11,PWSI Courage ECNL RL B11,B2011,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-59669,417,Richmond United Blue ECNL RL B11,Richmond United Blue ECNL RL B11,B2011,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-94721,4083,VA Reign FC ECNL RL B12,VA Reign FC ECNL RL B12,B2012,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-93365,4055,Virginia United ECNL RL B12,Virginia United ECNL RL B12,B2012,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-115422,525,Arlington Soccer ECNL RL B13,Arlington Soccer ECNL RL B13,B2013,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-113170,357,BRYC Academy ECNL RL B13,BRYC Academy ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-112505,628,Beach FC (VA) ECNL RL B13,Beach FC (VA) ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-112343,4295,DCSC ECNL RL B13,DCSC ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-115813,1288,Great Falls Reston Soccer Club ECNL RL B13,Great Falls Reston Soccer Club ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-112507,611,Herndon ECNL RL B13,Herndon ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-113139,448,LMVSC ECNL RL B13,LMVSC ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-70124,629,PWSI Courage ECNL RL B13,PWSI Courage ECNL RL B13,B2013,Virginia,Playoffs-East,ECNL RL Boys,2025-26
-115039,417,Richmond United Blue ECNL RL B13,Richmond United Blue ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-115048,417,Richmond United Orange ECNL RL B13,Richmond United Orange ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-114626,417,Richmond United Red ECNL RL B13,Richmond United Red ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-114671,1885,SOCA Elite ECNL RL B13,SOCA Elite ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-114081,636,Stafford Revolution ECNL RL B13,Stafford Revolution ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-116972,4083,VA Reign FC ECNL RL B13,VA Reign FC ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-82065,412,VSA ECNL RL B13,VSA ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-112288,528,Vienna Youth Soccer ECNL RL B13,Vienna Youth Soccer ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-114746,3176,Villarreal VA ECNL RL B13,Villarreal VA ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-113518,4055,Virginia United ECNL RL B13,Virginia United ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
-78014,4013,Virginia Valor FC ECNL RL B13,Virginia Valor FC ECNL RL B13,B2013,Virginia,Conference,ECNL RL Boys,2025-26
+team_id,club_id,team_name,club_name,age_group,conference,league,season
+47541,26,Charlotte SA Blue ECNL RL B08/07,Charlotte SA Blue ECNL RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+47551,26,Charlotte SA White ECNL RL B08/07,Charlotte SA White ECNL RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+114742,4012,Highland FC ECNL RL B08/07,Highland FC ECNL RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+47557,71,NC Fusion ECNL RL B08/07,NC Fusion ECNL RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+47575,22,NCFC Youth Elite ECNL RL B08/07,NCFC Youth Elite ECNL RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+47581,22,NCFC Youth Premier ECNL RL B08/07,NCFC Youth Premier ECNL RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+47593,2181,Wilmington Hammerheads RL B08/07,Wilmington Hammerheads RL B08/07,B2008/2007,Carolinas,ECNL RL Boys,2025-26
+59868,26,Charlotte SA Blue ECNL RL B09,Charlotte SA Blue ECNL RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+59876,26,Charlotte SA White ECNL RL B09,Charlotte SA White ECNL RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+114743,4012,Highland FC ECNL RL B09,Highland FC ECNL RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+59960,71,NC Fusion ECNL RL B09,NC Fusion ECNL RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+59959,22,NCFC Youth Elite ECNL RL B09,NCFC Youth Elite ECNL RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+60002,22,NCFC Youth Premier ECNL RL B09,NCFC Youth Premier ECNL RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+59889,2181,Wilmington Hammerheads RL B09,Wilmington Hammerheads RL B09,B2009,Carolinas,ECNL RL Boys,2025-26
+68762,26,Charlotte SA Blue ECNL RL B10,Charlotte SA Blue ECNL RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+68761,26,Charlotte SA White ECNL RL B10,Charlotte SA White ECNL RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+114744,4012,Highland FC ECNL RL B10,Highland FC ECNL RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+62867,71,NC Fusion ECNL RL B10,NC Fusion ECNL RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+69372,22,NCFC Youth Elite ECNL RL B10,NCFC Youth Elite ECNL RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+69316,22,NCFC Youth Premier ECNL RL B10,NCFC Youth Premier ECNL RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+69449,2181,Wilmington Hammerheads RL B10,Wilmington Hammerheads RL B10,B2010,Carolinas,ECNL RL Boys,2025-26
+81118,26,Charlotte SA Blue ECNL RL B11,Charlotte SA Blue ECNL RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+81110,26,Charlotte SA White ECNL RL B11,Charlotte SA White ECNL RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+114745,4012,Highland FC ECNL RL B11,Highland FC ECNL RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+82110,71,NC Fusion ECNL RL B11,NC Fusion ECNL RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+81065,22,NCFC Youth Elite ECNL RL B11,NCFC Youth Elite ECNL RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+81274,22,NCFC Youth Premier ECNL RL B11,NCFC Youth Premier ECNL RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+81417,2181,Wilmington Hammerheads RL B11,Wilmington Hammerheads RL B11,B2011,Carolinas,ECNL RL Boys,2025-26
+94565,26,Charlotte SA Blue ECNL RL B12,Charlotte SA Blue ECNL RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+94564,26,Charlotte SA White ECNL RL B12,Charlotte SA White ECNL RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+114747,4012,Highland FC ECNL RL B12,Highland FC ECNL RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+95056,71,NC Fusion ECNL RL B12,NC Fusion ECNL RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+94746,22,NCFC Youth Elite ECNL RL B12,NCFC Youth Elite ECNL RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+94850,22,NCFC Youth Premier ECNL RL B12,NCFC Youth Premier ECNL RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+95475,2181,Wilmington Hammerheads RL B12,Wilmington Hammerheads RL B12,B2012,Carolinas,ECNL RL Boys,2025-26
+112746,26,Charlotte SA Blue ECNL RL B13,Charlotte SA Blue ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+112743,26,Charlotte SA White ECNL RL B13,Charlotte SA White ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+114748,4012,Highland FC ECNL RL B13,Highland FC ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+112979,71,NC Fusion ECNL RL B13,NC Fusion ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+112370,22,NCFC Youth Elite ECNL RL B13,NCFC Youth Elite ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+112371,22,NCFC Youth Premier ECNL RL B13,NCFC Youth Premier ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+114820,2181,Wilmington Hammerheads ECNL RL B13,Wilmington Hammerheads ECNL RL B13,B2013,Carolinas,ECNL RL Boys,2025-26
+82908,2476,Chicago City SC ECNL RL B08/07,Chicago City SC ECNL RL B08/07,B2008/2007,Chicago Metro,ECNL RL Boys,2025-26
+80809,4324,Northern Indiana Express ECNL RL B08/07,Northern Indiana Express ECNL RL B08/07,B2008/2007,Chicago Metro,ECNL RL Boys,2025-26
+21441,2419,Bloomingdale Lightning FC ECNL RL B09,Bloomingdale Lightning FC ECNL RL B09,B2009,Chicago Metro,ECNL RL Boys,2025-26
+81739,4326,Force ECNL RL B09,Force ECNL RL B09,B2009,Chicago Metro,ECNL RL Boys,2025-26
+80808,4324,Northern Indiana Express ECNL RL B09,Northern Indiana Express ECNL RL B09,B2009,Chicago Metro,ECNL RL Boys,2025-26
+82904,2476,Chicago City SC ECNL RL B10,Chicago City SC ECNL RL B10,B2010,Chicago Metro,ECNL RL Boys,2025-26
+81317,1255,FC 1974 Libertyville ECNL RL B10,FC 1974 Libertyville ECNL RL B10,B2010,Chicago Metro,ECNL RL Boys,2025-26
+80807,4324,Northern Indiana Express ECNL RL B10,Northern Indiana Express ECNL RL B10,B2010,Chicago Metro,ECNL RL Boys,2025-26
+97056,2419,Bloomingdale Lightning FC ECNL RL B11,Bloomingdale Lightning FC ECNL RL B11,B2011,Chicago Metro,ECNL RL Boys,2025-26
+82905,2476,Chicago City SC ECNL RL B11,Chicago City SC ECNL RL B11,B2011,Chicago Metro,ECNL RL Boys,2025-26
+117193,5009,Roadrunners SC ECNL RL B11,Roadrunners SC ECNL RL B11,B2011,Chicago Metro,ECNL RL Boys,2025-26
+97055,2419,Bloomingdale Lightning FC ECNL RL B12,Bloomingdale Lightning FC ECNL RL B12,B2012,Chicago Metro,ECNL RL Boys,2025-26
+94514,2476,Chicago City SC ECNL RL B12,Chicago City SC ECNL RL B12,B2012,Chicago Metro,ECNL RL Boys,2025-26
+117194,5009,Roadrunners SC ECNL RL B12,Roadrunners SC ECNL RL B12,B2012,Chicago Metro,ECNL RL Boys,2025-26
+97159,2419,Bloomingdale Lightning FC ECNL RL B13,Bloomingdale Lightning FC ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+97886,2476,Chicago City SC ECNL RL B13,Chicago City SC ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+114423,3153,Chicago Soccer Academy ECNL RL B13,Chicago Soccer Academy ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+97935,1255,FC 1974 Libertyville ECNL RL B13,FC 1974 Libertyville ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+98297,4326,Force ECNL RL B13,Force ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+114136,4324,Northern Indiana Express ECNL RL B13,Northern Indiana Express ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+117195,5009,Roadrunners SC ECNL RL B13,Roadrunners SC ECNL RL B13,B2013,Chicago Metro,ECNL RL Boys,2025-26
+115488,51,Boise Timbers FC ECNL RL B08/07,Boise Timbers FC ECNL RL B08/07,B2008/2007,Far West,ECNL RL Boys,2025-26
+114502,4344,PCU Red 1 ECNL RL B08/07,PCU Red 1 ECNL RL B08/07,B2008/2007,Far West,ECNL RL Boys,2025-26
+114727,2554,Eastside Timbers ECNL RL B09,Eastside Timbers ECNL RL B09,B2009,Far West,ECNL RL Boys,2025-26
+111713,2536,United PDX ECNL RL B09,United PDX ECNL RL B09,B2009,Far West,ECNL RL Boys,2025-26
+112869,2937,Oregon Premier FC ECNL RL B10,Oregon Premier FC ECNL RL B10,B2010,Far West,ECNL RL Boys,2025-26
+114500,4344,Portland City United ECNL RL B10,Portland City United ECNL RL B10,B2010,Far West,ECNL RL Boys,2025-26
+111158,3956,Capital FC ECNL RL B11,Capital FC ECNL RL B11,B2011,Far West,ECNL RL Boys,2025-26
+112830,2937,Oregon Premier FC ECNL RL B11,Oregon Premier FC ECNL RL B11,B2011,Far West,ECNL RL Boys,2025-26
+114720,2554,Eastside Timbers ECNL RL B12,Eastside Timbers ECNL RL B12,B2012,Far West,ECNL RL Boys,2025-26
+111893,2536,United PDX ECNL RL B12,United PDX ECNL RL B12,B2012,Far West,ECNL RL Boys,2025-26
+115493,51,Boise Timbers FC ECNL RL B13,Boise Timbers FC ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+116411,3956,Capital FC ECNL RL B13,Capital FC ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+114719,2554,Eastside Timbers ECNL RL B13,Eastside Timbers ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+116439,4330,Eugene Metro FC ECNL RL B13,Eugene Metro FC ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+117874,603,FC Portland ECNL RL B13,FC Portland ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+113982,1813,Idaho Rush ECNL RL B13,Idaho Rush ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+112725,2937,Oregon Premier FC ECNL RL B13,Oregon Premier FC ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+114497,4344,Portland City United ECNL RL B13 Red 1,Portland City United ECNL RL B13 Red 1,B2013,Far West,ECNL RL Boys,2025-26
+111895,2536,United PDX ECNL RL B13,United PDX ECNL RL B13,B2013,Far West,ECNL RL Boys,2025-26
+114102,3390,Cape Coral SA ECNL RL B13,Cape Coral SA ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113732,354,Davie United SC ECNL RL B13,Davie United SC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+114365,2237,Doral Soccer Club ECNL RL B13,Doral Soccer Club ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+112328,5158,FC America ECNL RL B13,FC America ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113235,2329,FC Prime ECNL RL B13,FC Prime ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+111958,3055,FHFC ECNL RL B13,FHFC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+112368,2731,FL Premier FC Black ECNL RL B13,FL Premier FC Black ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+114697,2731,FL Premier FC Gold ECNL RL B13,FL Premier FC Gold ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113667,3424,Florida Celtic ECNL RL B13,Florida Celtic ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113716,379,Florida Kraze ECNL RL B13,Florida Kraze ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+114000,3384,Florida West FC ECNL RL B13,Florida West FC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+112974,1925,Fort Lauderdale United FC ECNL RL B13,Fort Lauderdale United FC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+112548,4568,Orlando City Lake Nona ECNL RL B13,Orlando City Lake Nona ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+111913,3387,Parkland SC ECNL RL B13,Parkland SC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+111662,2731,SWFL Premier FC ECNL RL B13,SWFL Premier FC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+111342,3303,South Orlando Soccer Club ECNL RL B13,South Orlando Soccer Club ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113758,1919,Space Coast United ECNL RL B13,Space Coast United ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113714,4317,Sporting Club Tallahassee ECNL RL B13,Sporting Club Tallahassee ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113643,1353,Sporting Jax ECNL RL B13,Sporting Jax ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+111437,4566,Springs SC ECNL RL B13,Springs SC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+110221,4873,Strikers Miami FC ECNL RL B13,Strikers Miami FC ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+109674,4795,Tropical Soccer Club ECNL RL B13,Tropical Soccer Club ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+113106,840,Wellington ECNL RL B13,Wellington ECNL RL B13,B2013,Florida,ECNL RL Boys,2025-26
+81777,3585,Arkansas Comets FC ECNL RL B08/07,Arkansas Comets FC ECNL RL B08/07,B2008/2007,Frontier,ECNL RL Boys,2025-26
+42874,106,Tulsa SC ECNL RL B08/07,Tulsa SC ECNL RL B08/07,B2008/2007,Frontier,ECNL RL Boys,2025-26
+81780,3585,Arkansas Comets FC ECNL RL B09,Arkansas Comets FC ECNL RL B09,B2009,Frontier,ECNL RL Boys,2025-26
+60908,3594,Arkansas Rising ECNL RL B09,Arkansas Rising ECNL RL B09,B2009,Frontier,ECNL RL Boys,2025-26
+77795,3620,FC Tulsa Academy ECNL RL B09,FC Tulsa Academy ECNL RL B09,B2009,Frontier,ECNL RL Boys,2025-26
+109309,5136,SW Missouri Rush ECNL RL B09,SW Missouri Rush ECNL RL B09,B2009,Frontier,ECNL RL Boys,2025-26
+81781,3585,Arkansas Comets FC ECNL RL B10,Arkansas Comets FC ECNL RL B10,B2010,Frontier,ECNL RL Boys,2025-26
+81699,3620,FC Tulsa Academy ECNL RL B10,FC Tulsa Academy ECNL RL B10,B2010,Frontier,ECNL RL Boys,2025-26
+72542,2250,Oklahoma Cosmos ECNL RL B10,Oklahoma Cosmos ECNL RL B10,B2010,Frontier,ECNL RL Boys,2025-26
+69325,3587,West Side Alliance White ECNL RL B10,West Side Alliance White ECNL RL B10,B2010,Frontier,ECNL RL Boys,2025-26
+81782,3585,Arkansas Comets FC ECNL RL B11,Arkansas Comets FC ECNL RL B11,B2011,Frontier,ECNL RL Boys,2025-26
+71765,3594,Arkansas Rising ECNL RL B11,Arkansas Rising ECNL RL B11,B2011,Frontier,ECNL RL Boys,2025-26
+81696,3620,FC Tulsa Academy ECNL RL B11,FC Tulsa Academy ECNL RL B11,B2011,Frontier,ECNL RL Boys,2025-26
+114847,2133,OK Energy FC II ECNL RL B11,OK Energy FC II ECNL RL B11,B2011,Frontier,ECNL RL Boys,2025-26
+84694,3585,Arkansas Comets FC ECNL RL B12,Arkansas Comets FC ECNL RL B12,B2012,Frontier,ECNL RL Boys,2025-26
+64066,2250,Oklahoma Cosmos ECNL RL B12,Oklahoma Cosmos ECNL RL B12,B2012,Frontier,ECNL RL Boys,2025-26
+111559,5136,SW Missouri Rush ECNL RL B12,SW Missouri Rush ECNL RL B12,B2012,Frontier,ECNL RL Boys,2025-26
+107393,3587,West Side Alliance Red ECNL RL B12,West Side Alliance Red ECNL RL B12,B2012,Frontier,ECNL RL Boys,2025-26
+90161,3585,Arkansas Comets FC ECNL RL B13,Arkansas Comets FC ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+71898,3594,Arkansas Rising ECNL RL B13,Arkansas Rising ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+116917,3620,FC Tulsa Academy ECNL RL B13,FC Tulsa Academy ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+117987,3694,Kernow Storm FC Frontier ECNL RL B13,Kernow Storm FC Frontier ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+96128,2133,OK Energy FC II ECNL RL B13,OK Energy FC II ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+72164,2250,Oklahoma Cosmos ECNL RL B13,Oklahoma Cosmos ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+111558,5136,SW Missouri Rush ECNL RL B13,SW Missouri Rush ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+52147,106,Tulsa SC ECNL RL B13,Tulsa SC ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+107345,3587,West Side Alliance Red ECNL RL B13,West Side Alliance Red ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+78782,3587,West Side Alliance White ECNL RL B13,West Side Alliance White ECNL RL B13,B2013,Frontier,ECNL RL Boys,2025-26
+109076,4063,El Camino Futbol Club Salinas ECNL RL B08/07,El Camino Futbol Club Salinas ECNL RL B08/07,B2008/2007,Golden State,ECNL RL Boys,2025-26
+95065,3054,Placer United ECNL RL B08/07,Placer United ECNL RL B08/07,B2008/2007,Golden State,ECNL RL Boys,2025-26
+93390,3065,Association FC ECNL RL B09,Association FC ECNL RL B09,B2009,Golden State,ECNL RL Boys,2025-26
+85062,1425,Davis Legacy ECNL RL B09,Davis Legacy ECNL RL B09,B2009,Golden State,ECNL RL Boys,2025-26
+110955,4518,Club America Nido Aguila | Stockton ECNL RL B1,Club America Nido Aguila | Stockton ECNL RL B1,B2010,Golden State,ECNL RL Boys,2025-26
+115398,69,Mustang SC ECNL RL B10,Mustang SC ECNL RL B10,B2010,Golden State,ECNL RL Boys,2025-26
+117681,1470,COSC ECNL RL B11,COSC ECNL RL B11,B2011,Golden State,ECNL RL Boys,2025-26
+107704,3054,Placer United ECNL RL B11,Placer United ECNL RL B11,B2011,Golden State,ECNL RL Boys,2025-26
+109080,4063,El Camino FC Salinas ECNL RL B12 Golden State,El Camino FC Salinas ECNL RL B12 Golden State,B2012,Golden State,ECNL RL Boys,2025-26
+109239,3054,Placer United ECNL RL B12,Placer United ECNL RL B12,B2012,Golden State,ECNL RL Boys,2025-26
+114180,4342,1974 Newark FC ECNL RL B13,1974 Newark FC ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+113203,3065,Association FC ECNL RL B13,Association FC ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+117682,1470,COSC ECNL RL B13,COSC ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+110958,4518,Club America Stockton ECNL RL B13,Club America Stockton ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+110983,1425,Davis Legacy ECNL RL B13,Davis Legacy ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+109081,4063,El Camino Futbol Club Salinas ECNL RL B13,El Camino Futbol Club Salinas ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+117896,3231,Los Gatos United ECNL RL B13,Los Gatos United ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+114295,1585,Marin FC ECNL RL B13,Marin FC ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+115395,69,Mustang SC ECNL RL B13,Mustang SC ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+109255,3054,Placer United ECNL RL B13,Placer United ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+112663,1040,San Francisco Elite Academy ECNL RL B13,San Francisco Elite Academy ECNL RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+115642,88,San Juan SC RL B13,San Juan SC RL B13,B2013,Golden State,ECNL RL Boys,2025-26
+59530,3475,Louisville City Academy ECNL RL B08/07,Louisville City Academy ECNL RL B08/07,B2008/2007,Great Lakes Alliance,ECNL RL Boys,2025-26
+109937,3075,Pacesetter Soccer Club ECNL RL B08/07,Pacesetter Soccer Club ECNL RL B08/07,B2008/2007,Great Lakes Alliance,ECNL RL Boys,2025-26
+114227,4563,Steel City FC ECNL RL B08/07,Steel City FC ECNL RL B08/07,B2008/2007,Great Lakes Alliance,ECNL RL Boys,2025-26
+71233,4080,Blast FC Academy ECNL RL B09,Blast FC Academy ECNL RL B09,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+95565,4578,CAU Force ECNL RL B09,CAU Force ECNL RL B09,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+59134,3478,Cleveland Force SC White ECNL RL B09,Cleveland Force SC White ECNL RL B09,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+112836,1874,Cuyahoga Valley SA - CVSA 2009 Boys ECNL RL,Cuyahoga Valley SA - CVSA 2009 Boys ECNL RL,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+95228,4575,North FC ECNL RL B09,North FC ECNL RL B09,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+113463,4006,Ohio Galaxies FC ECNL RL B09,Ohio Galaxies FC ECNL RL B09,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+113545,5184,Team Challenger FC North ECNL RL B09,Team Challenger FC North ECNL RL B09,B2009,Great Lakes Alliance,ECNL RL Boys,2025-26
+95564,4578,CAU Force ECNL RL B10,CAU Force ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+70141,4075,Columbus Force ECNL RL B10,Columbus Force ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+69119,3475,Louisville City Academy ECNL RL B10,Louisville City Academy ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+95229,4575,North FC ECNL RL B10,North FC ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+81329,4009,Sporting Columbus ECNL RL B10,Sporting Columbus ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+95364,4563,Steel City FC ECNL RL B10,Steel City FC ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+113544,5184,Team Challenger FC North ECNL RL B10,Team Challenger FC North ECNL RL B10,B2010,Great Lakes Alliance,ECNL RL Boys,2025-26
+79631,4080,Blast FC Academy ECNL RL B11,Blast FC Academy ECNL RL B11,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+81788,4075,Columbus Force ECNL RL B11,Columbus Force ECNL RL B11,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+112841,1874,Cuyahoga Valley SA - CVSA 2011 Boys ECNL RL,Cuyahoga Valley SA - CVSA 2011 Boys ECNL RL,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+96296,4458,Manta ECNL RL B11,Manta ECNL RL B11,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+95230,4575,North FC ECNL RL B11,North FC ECNL RL B11,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+95367,4563,Steel City FC ECNL RL B11,Steel City FC ECNL RL B11,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+113542,5184,Team Challenger FC North ECNL RL B11,Team Challenger FC North ECNL RL B11,B2011,Great Lakes Alliance,ECNL RL Boys,2025-26
+59146,3478,Cleveland Force SC White ECNL RL B12,Cleveland Force SC White ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+95231,4575,North FC ECNL RL B12,North FC ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+113472,4006,Ohio Galaxies FC ECNL RL B12,Ohio Galaxies FC ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+109948,3075,Pacesetter Soccer Club ECNL RL B12,Pacesetter Soccer Club ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+81421,4009,Sporting Columbus ECNL RL B12,Sporting Columbus ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+113541,5184,Team Challenger FC North ECNL RL B12,Team Challenger FC North ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+113461,4460,Upper 90 FC - ECNL RL B12,Upper 90 FC - ECNL RL B12,B2012,Great Lakes Alliance,ECNL RL Boys,2025-26
+114925,4080,Blast FC Academy ECNL RL B13,Blast FC Academy ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+95574,4578,CAU Force ECNL RL B13,CAU Force ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+71191,4087,Cincinnati Elite FC ECNL RL B13,Cincinnati Elite FC ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+93563,3478,Cleveland Force SC White ECNL RL B13,Cleveland Force SC White ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113406,3478,Cleveland Force SC Yellow ECNL RL B13,Cleveland Force SC Yellow ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+94547,4075,Columbus Force ECNL RL B13,Columbus Force ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+114317,4598,Croatia Juniors ECNL RL B13,Croatia Juniors ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+114947,1874,Cuyahoga Valley SA - CVSA 2013 Boys ECNL RL,Cuyahoga Valley SA - CVSA 2013 Boys ECNL RL,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+112924,5124,Elite FC - Elite FC 2013 Boys ECNL RL,Elite FC - Elite FC 2013 Boys ECNL RL,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+110654,1501,FC Pride Elite ECNL RL B13,FC Pride Elite ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+80935,4008,GTFC Impact ECNL RL B13,GTFC Impact ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113011,5203,Liverpool FC IA Central - 13B ECNL RL,Liverpool FC IA Central - 13B ECNL RL,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113525,3475,Louisville City Academy ECNL RL B13,Louisville City Academy ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+93515,4458,Manta ECNL RL B13,Manta ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+115174,1713,Nationals SC CA ECNL RL B13,Nationals SC CA ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+115102,1713,Nationals Soccer Club ECNL RL B13,Nationals Soccer Club ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113555,4575,North FC ECNL RL B13,North FC ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+112508,75,Ohio Elite SA ECNL RL B13,Ohio Elite SA ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113474,4006,Ohio Galaxies FC ECNL RL B13,Ohio Galaxies FC ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+81321,437,Ohio Premier ECNL RL B13,Ohio Premier ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+109949,3075,Pacesetter Soccer Club ECNL RL B13,Pacesetter Soccer Club ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+82471,538,Pittsburgh Riverhounds ECNL RL B13,Pittsburgh Riverhounds ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+81420,4009,Sporting Columbus ECNL RL B13,Sporting Columbus ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+114230,4563,Steel City FC ECNL RL B13,Steel City FC ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113540,5184,Team Challenger FC North ECNL RL B13,Team Challenger FC North ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+113460,4460,Upper 90 FC ECNL RL B13,Upper 90 FC ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+115201,343,WNY Flash ECNL RL B13,WNY Flash ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+111533,343,WNY Flash Rochester ECNL RL B13,WNY Flash Rochester ECNL RL B13,B2013,Great Lakes Alliance,ECNL RL Boys,2025-26
+115976,4484,Michigan Rangers FC ECNL RL B08/07,Michigan Rangers FC ECNL RL B08/07,B2008/2007,Greater Michigan Alliance,ECNL RL Boys,2025-26
+112160,4874,TKO Premier SC ECNL RL B08/07,TKO Premier SC ECNL RL B08/07,B2008/2007,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115974,4484,Michigan Rangers FC ECNL RL B09,Michigan Rangers FC ECNL RL B09,B2009,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115360,1713,Nationals SC Union ECNL RL GMA B09,Nationals SC Union ECNL RL GMA B09,B2009,Greater Michigan Alliance,ECNL RL Boys,2025-26
+112031,4874,TKO Premier SC ECNL RL B09,TKO Premier SC ECNL RL B09,B2009,Greater Michigan Alliance,ECNL RL Boys,2025-26
+81148,3712,Liverpool FC IA Michigan Ann Arbor ECNL RL B10,Liverpool FC IA Michigan Ann Arbor ECNL RL B10,B2010,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115729,4484,Michigan Rangers FC ECNL RL B10,Michigan Rangers FC ECNL RL B10,B2010,Greater Michigan Alliance,ECNL RL Boys,2025-26
+112067,4874,TKO Premier SC ECNL RL B10,TKO Premier SC ECNL RL B10,B2010,Greater Michigan Alliance,ECNL RL Boys,2025-26
+118078,4852,Legends FC Michigan - ECNL RL B11,Legends FC Michigan - ECNL RL B11,B2011,Greater Michigan Alliance,ECNL RL Boys,2025-26
+100915,1720,Michigan Burn ECNL RL B11,Michigan Burn ECNL RL B11,B2011,Greater Michigan Alliance,ECNL RL Boys,2025-26
+112068,4874,TKO Premier SC ECNL RL B11,TKO Premier SC ECNL RL B11,B2011,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115019,4858,Detroit City FC West ECNL RL B12,Detroit City FC West ECNL RL B12,B2012,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115975,4484,Michigan Rangers FC ECNL RL B12,Michigan Rangers FC ECNL RL B12,B2012,Greater Michigan Alliance,ECNL RL Boys,2025-26
+112029,4874,TKO Premier SC ECNL RL B12,TKO Premier SC ECNL RL B12,B2012,Greater Michigan Alliance,ECNL RL Boys,2025-26
+110900,4742,Cap City Athletic 1847 ECNL RL B13,Cap City Athletic 1847 ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115020,4858,Detroit City FC West ECNL RL B13,Detroit City FC West ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+116300,4852,Legends FC Michigan ECNL RL B13,Legends FC Michigan ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+111346,3712,Liverpool FC IA Michigan Ann Arbor ECNL RL B13,Liverpool FC IA Michigan Ann Arbor ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+110973,5200,Liverpool North Oakland ECNL RL B13,Liverpool North Oakland ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+111079,1720,Michigan Burn ECNL RL B13,Michigan Burn ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115727,4484,Michigan Rangers FC ECNL RL B13,Michigan Rangers FC ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115338,1713,Nationals SC Cap Area ECNL RL GMA B13,Nationals SC Cap Area ECNL RL GMA B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+115356,1713,Nationals SC Union ECNL RL GMA B13,Nationals SC Union ECNL RL GMA B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+114577,1678,Plymouth Reign SC ECNL RL B13,Plymouth Reign SC ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+110927,4589,Portage SC ECNL RL B13,Portage SC ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+112069,4874,TKO Premier SC ECNL RL B13,TKO Premier SC ECNL RL B13,B2013,Greater Michigan Alliance,ECNL RL Boys,2025-26
+113843,4319,Coastal Rush ECNL RL B13,Coastal Rush ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+111116,3714,Gulf Coast United FC ECNL RL B13,Gulf Coast United FC ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+114974,5143,Hattiesburg FC ECNL RL B13,Hattiesburg FC ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+113794,5144,LA Krewe Rush ECNL RL B13,LA Krewe Rush ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+111745,5213,Louisiana Fire Soccer Club ECNL RL B13,Louisiana Fire Soccer Club ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+115899,5145,MSC Lakers ECNL RL B13,MSC Lakers ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+116326,5146,Union 10 FC ECNL RL B13,Union 10 FC ECNL RL B13,B2013,Gulf Coast,ECNL RL Boys,2025-26
+80891,4315,FC United Iowa ECNL RL B08/07,FC United Iowa ECNL RL B08/07,B2008/2007,Heartland,ECNL RL Boys,2025-26
+58214,3615,KC Fusion ECNL RL B08/07,KC Fusion ECNL RL B08/07,B2008/2007,Heartland,ECNL RL Boys,2025-26
+80890,4315,FC United Iowa ECNL RL B09,FC United Iowa ECNL RL B09,B2009,Heartland,ECNL RL Boys,2025-26
+117256,3486,FC Wichita ECNL RL B09,FC Wichita ECNL RL B09,B2009,Heartland,ECNL RL Boys,2025-26
+116237,2330,Kansas City Athletics ECNL RL B09,Kansas City Athletics ECNL RL B09,B2009,Heartland,ECNL RL Boys,2025-26
+113539,3480,Union KC Navy ECNL RL B09,Union KC Navy ECNL RL B09,B2009,Heartland,ECNL RL Boys,2025-26
+81764,4356,Vision Soccer Academy Premier ECNL RL B09,Vision Soccer Academy Premier ECNL RL B09,B2009,Heartland,ECNL RL Boys,2025-26
+81744,373,Gretna Elite Academy ECNL RL B10,Gretna Elite Academy ECNL RL B10,B2010,Heartland,ECNL RL Boys,2025-26
+71275,3615,KC Fusion ECNL RL B10,KC Fusion ECNL RL B10,B2010,Heartland,ECNL RL Boys,2025-26
+113608,3740,Kansas City Surf ECNL RL B10,Kansas City Surf ECNL RL B10,B2010,Heartland,ECNL RL Boys,2025-26
+69103,3480,Union KC Navy ECNL RL B10,Union KC Navy ECNL RL B10,B2010,Heartland,ECNL RL Boys,2025-26
+81763,4356,Vision Soccer Academy Premier ECNL RL B10,Vision Soccer Academy Premier ECNL RL B10,B2010,Heartland,ECNL RL Boys,2025-26
+80888,4315,FC United Iowa ECNL RL B11,FC United Iowa ECNL RL B11,B2011,Heartland,ECNL RL Boys,2025-26
+82027,3615,KC Fusion ECNL RL B11,KC Fusion ECNL RL B11,B2011,Heartland,ECNL RL Boys,2025-26
+113607,3740,Kansas City Surf ECNL RL B11,Kansas City Surf ECNL RL B11,B2011,Heartland,ECNL RL Boys,2025-26
+116980,5147,St. Louis Stars ECNL RL B11,St. Louis Stars ECNL RL B11,B2011,Heartland,ECNL RL Boys,2025-26
+81761,4356,Vision Soccer Academy Premier ECNL RL B11,Vision Soccer Academy Premier ECNL RL B11,B2011,Heartland,ECNL RL Boys,2025-26
+92661,4315,FC United Iowa ECNL RL B12,FC United Iowa ECNL RL B12,B2012,Heartland,ECNL RL Boys,2025-26
+117261,3486,FC Wichita ECNL RL B12,FC Wichita ECNL RL B12,B2012,Heartland,ECNL RL Boys,2025-26
+113605,3740,Kansas City Surf ECNL RL B12,Kansas City Surf ECNL RL B12,B2012,Heartland,ECNL RL Boys,2025-26
+96756,3483,Sporting Iowa ECNL RL B12,Sporting Iowa ECNL RL B12,B2012,Heartland,ECNL RL Boys,2025-26
+96742,3480,Union KC Navy ECNL RL B12,Union KC Navy ECNL RL B12,B2012,Heartland,ECNL RL Boys,2025-26
+84658,4315,FC United Iowa ECNL RL B13,FC United Iowa ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+117262,3486,FC Wichita ECNL RL B13,FC Wichita ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+112745,373,Gretna Elite Academy ECNL RL B13,Gretna Elite Academy ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+114891,3615,KC Fusion ECNL RL B13,KC Fusion ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+116241,2330,Kansas City Athletics ECNL RL B13,Kansas City Athletics ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+113604,3740,Kansas City Surf ECNL RL B13,Kansas City Surf ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+117047,3696,Kansas Rush ECNL RL B13,Kansas Rush ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+114055,1730,Missouri Rush ECNL RL B13,Missouri Rush ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+117750,3483,Sporting Iowa ECNL RL B13,Sporting Iowa ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+117185,1726,Sporting Nebraska FC ECNL RL B13,Sporting Nebraska FC ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+116978,5147,St. Louis Stars ECNL RL B13,St. Louis Stars ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+111683,3480,Union KC Navy ECNL RL B13,Union KC Navy ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+111684,3480,Union KC Red ECNL RL B13,Union KC Red ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+113962,4356,Vision Soccer Academy Premier ECNL RL B13,Vision Soccer Academy Premier ECNL RL B13,B2013,Heartland,ECNL RL Boys,2025-26
+117353,1354,Tennessee SC ECNL RL B08/07,Tennessee SC ECNL RL B08/07,B2008/2007,Mid-America,ECNL RL Boys,2025-26
+102351,4565,Tennessee United ECNL RL B08/07,Tennessee United ECNL RL B08/07,B2008/2007,Mid-America,ECNL RL Boys,2025-26
+112531,18,Alabama FC Huntsville ECNL RL B09,Alabama FC Huntsville ECNL RL B09,B2009,Mid-America,ECNL RL Boys,2025-26
+117354,1354,Tennessee SC ECNL RL B09,Tennessee SC ECNL RL B09,B2009,Mid-America,ECNL RL Boys,2025-26
+117455,1354,Tennessee SC Murfreesboro ECNL RL B09,Tennessee SC Murfreesboro ECNL RL B09,B2009,Mid-America,ECNL RL Boys,2025-26
+69020,18,Alabama FC ECNL RL B10,Alabama FC ECNL RL B10,B2010,Mid-America,ECNL RL Boys,2025-26
+112533,18,Alabama FC Huntsville ECNL RL B10,Alabama FC Huntsville ECNL RL B10,B2010,Mid-America,ECNL RL Boys,2025-26
+115166,4565,Tennessee United ECNL RL B10,Tennessee United ECNL RL B10,B2010,Mid-America,ECNL RL Boys,2025-26
+81752,18,Alabama FC ECNL RL B11,Alabama FC ECNL RL B11,B2011,Mid-America,ECNL RL Boys,2025-26
+117356,1354,Tennessee SC ECNL RL B11,Tennessee SC ECNL RL B11,B2011,Mid-America,ECNL RL Boys,2025-26
+115167,4565,Tennessee United ECNL RL B11,Tennessee United ECNL RL B11,B2011,Mid-America,ECNL RL Boys,2025-26
+94975,18,Alabama FC ECNL RL B12,Alabama FC ECNL RL B12,B2012,Mid-America,ECNL RL Boys,2025-26
+112538,18,Alabama FC Huntsville ECNL RL B12,Alabama FC Huntsville ECNL RL B12,B2012,Mid-America,ECNL RL Boys,2025-26
+115168,4565,Tennessee United ECNL RL B12,Tennessee United ECNL RL B12,B2012,Mid-America,ECNL RL Boys,2025-26
+112306,18,Alabama FC ECNL RL B13,Alabama FC ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+112541,18,Alabama FC Huntsville ECNL RL B13,Alabama FC Huntsville ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+96441,3232,Chattanooga Red Wolves SC ECNL RL B13,Chattanooga Red Wolves SC ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+112681,3589,Germantown Legends ECNL RL B13,Germantown Legends ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+113739,2235,Lobos Rush ECNL RL B13,Lobos Rush ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+110357,4327,Mississippi Rush United ECNL RL B13,Mississippi Rush United ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+117358,1354,Tennessee SC ECNL RL B13,Tennessee SC ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+117743,1354,Tennessee SC Murfreesboro ECNL RL B13,Tennessee SC Murfreesboro ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+115169,4565,Tennessee United ECNL RL B13,Tennessee United ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+117456,4569,Tupelo FC ECNL RL B13,Tupelo FC ECNL RL B13,B2013,Mid-America,ECNL RL Boys,2025-26
+81263,2106,Chicago Magic ECNL RL B08/07,Chicago Magic ECNL RL B08/07,B2008/2007,Midwest,ECNL RL Boys,2025-26
+117285,893,St Croix Soccer Club ECNL RL B08/07,St Croix Soccer Club ECNL RL B08/07,B2008/2007,Midwest,ECNL RL Boys,2025-26
+81262,2106,Chicago Magic ECNL RL B09,Chicago Magic ECNL RL B09,B2009,Midwest,ECNL RL Boys,2025-26
+117284,893,St Croix Soccer Club ECNL RL B09,St Croix Soccer Club ECNL RL B09,B2009,Midwest,ECNL RL Boys,2025-26
+81261,2106,Chicago Magic ECNL RL B10,Chicago Magic ECNL RL B10,B2010,Midwest,ECNL RL Boys,2025-26
+80833,2257,Indiana Elite FC ECNL RL B10,Indiana Elite FC ECNL RL B10,B2010,Midwest,ECNL RL Boys,2025-26
+80843,2257,Indiana Elite FC ECNL RL B11,Indiana Elite FC ECNL RL B11,B2011,Midwest,ECNL RL Boys,2025-26
+81223,2017,Rockford Raptors ECNL RL B11,Rockford Raptors ECNL RL B11,B2011,Midwest,ECNL RL Boys,2025-26
+77720,2167,Chicago Inter Soccer ECNL RL B12,Chicago Inter Soccer ECNL RL B12,B2012,Midwest,ECNL RL Boys,2025-26
+94375,2257,Indiana Elite FC ECNL RL B12,Indiana Elite FC ECNL RL B12,B2012,Midwest,ECNL RL Boys,2025-26
+117711,2167,Chicago Inter Soccer ECNL RL B13,Chicago Inter Soccer ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+117451,2106,Chicago Magic ECNL RL B13,Chicago Magic ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+113574,1797,FC WISCONSIN ECNL RL B13,FC WISCONSIN ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+116594,2257,Indiana Elite FC ECNL RL B13,Indiana Elite FC ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+117427,67,Minnesota Thunder ECNL RL B13,Minnesota Thunder ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+116230,2017,Rockford Raptors ECNL RL B13,Rockford Raptors ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+117280,893,St Croix Soccer Club ECNL RL B13,St Croix Soccer Club ECNL RL B13,B2013,Midwest,ECNL RL Boys,2025-26
+116015,4368,El Paso Locomotive Youth Soccer Club ECNL RL B08,El Paso Locomotive Youth Soccer Club ECNL RL B08,B2008/2007,Mountain,ECNL RL Boys,2025-26
+112807,107,NUU Avalanche ECNL RL B08/07,NUU Avalanche ECNL RL B08/07,B2008/2007,Mountain,ECNL RL Boys,2025-26
+72314,81,Real Colorado Athletico ECNL RL B08/07,Real Colorado Athletico ECNL RL B08/07,B2008/2007,Mountain,ECNL RL Boys,2025-26
+111377,1560,NM Rapids ECNL RL B09,NM Rapids ECNL RL B09,B2009,Mountain,ECNL RL Boys,2025-26
+116399,5137,PlayMaker Futbol Academy ECNL RL B09,PlayMaker Futbol Academy ECNL RL B09,B2009,Mountain,ECNL RL Boys,2025-26
+81632,2335,Pride SC ECNL RL B09,Pride SC ECNL RL B09,B2009,Mountain,ECNL RL Boys,2025-26
+81509,81,Real Colorado Athletico ECNL RL B09,Real Colorado Athletico ECNL RL B09,B2009,Mountain,ECNL RL Boys,2025-26
+113319,81,Real Colorado North National ECNL RL B09,Real Colorado North National ECNL RL B09,B2009,Mountain,ECNL RL Boys,2025-26
+113619,107,Utah Avalanche ECNL RL B09,Utah Avalanche ECNL RL B09,B2009,Mountain,ECNL RL Boys,2025-26
+112386,1936,CCV Stars ECNL RL B10,CCV Stars ECNL RL B10,B2010,Mountain,ECNL RL Boys,2025-26
+62861,3639,Colorado EDGE ECNL RL B10,Colorado EDGE ECNL RL B10,B2010,Mountain,ECNL RL Boys,2025-26
+117311,29,Colorado Rapids South ECNL RL B10,Colorado Rapids South ECNL RL B10,B2010,Mountain,ECNL RL Boys,2025-26
+116428,5137,PlayMaker Futbol Academy ECNL RL B10,PlayMaker Futbol Academy ECNL RL B10,B2010,Mountain,ECNL RL Boys,2025-26
+113322,81,Real Colorado North National ECNL RL B10,Real Colorado North National ECNL RL B10,B2010,Mountain,ECNL RL Boys,2025-26
+113620,107,Utah Avalanche ECNL RL B10,Utah Avalanche ECNL RL B10,B2010,Mountain,ECNL RL Boys,2025-26
+111801,592,Arizona Arsenal ECNL RL B11,Arizona Arsenal ECNL RL B11,B2011,Mountain,ECNL RL Boys,2025-26
+82397,2232,Arsenal Colorado ECNL RL B11,Arsenal Colorado ECNL RL B11,B2011,Mountain,ECNL RL Boys,2025-26
+117312,29,Colorado Rapids South ECNL RL B11,Colorado Rapids South ECNL RL B11,B2011,Mountain,ECNL RL Boys,2025-26
+116430,5137,PlayMaker Futbol Academy ECNL RL B11,PlayMaker Futbol Academy ECNL RL B11,B2011,Mountain,ECNL RL Boys,2025-26
+95151,81,Real Colorado Athletico ECNL RL B11,Real Colorado Athletico ECNL RL B11,B2011,Mountain,ECNL RL Boys,2025-26
+110665,4179,Utah Surf ECNL RL B11,Utah Surf ECNL RL B11,B2011,Mountain,ECNL RL Boys,2025-26
+94778,2232,Arsenal Colorado ECNL RL B12,Arsenal Colorado ECNL RL B12,B2012,Mountain,ECNL RL Boys,2025-26
+117313,29,Colorado Rapids South ECNL RL B12,Colorado Rapids South ECNL RL B12,B2012,Mountain,ECNL RL Boys,2025-26
+82295,3998,FC Arizona ECNL RL B12,FC Arizona ECNL RL B12,B2012,Mountain,ECNL RL Boys,2025-26
+111381,1560,NM Rapids ECNL RL B12,NM Rapids ECNL RL B12,B2012,Mountain,ECNL RL Boys,2025-26
+116431,5137,PlayMaker Futbol Academy ECNL RL B12,PlayMaker Futbol Academy ECNL RL B12,B2012,Mountain,ECNL RL Boys,2025-26
+113323,81,Real Colorado North National ECNL RL B12,Real Colorado North National ECNL RL B12,B2012,Mountain,ECNL RL Boys,2025-26
+111803,592,Arizona Arsenal ECNL RL B13,Arizona Arsenal ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+111486,2232,Arsenal Colorado ECNL RL B13,Arsenal Colorado ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+112388,1936,CCV Stars ECNL RL B13,CCV Stars ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+112856,3639,Colorado EDGE SC ECNL RL B13,Colorado EDGE SC ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+112601,29,Colorado Rapids North ECNL RL B13,Colorado Rapids North ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+117314,29,Colorado Rapids South ECNL RL B13,Colorado Rapids South ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+112016,28,Colorado Rush Academy Blue ECNL RL B13,Colorado Rush Academy Blue ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+116011,4368,El Paso Locomotive ECNL RL B13,El Paso Locomotive ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+96027,3998,FC Arizona ECNL RL B13,FC Arizona ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+117542,1760,La Roca FC ECNL RL B13,La Roca FC ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+111382,1560,NM Rapids ECNL RL B13,NM Rapids ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+112802,107,NUU Avalanche ECNL RL B13,NUU Avalanche ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+105393,5137,Playmaker Futbol Academy ECNL RL B13,Playmaker Futbol Academy ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+111976,2335,Pride SC ECNL RL B13,Pride SC ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+113307,81,Real Colorado Athletico ECNL RL B13,Real Colorado Athletico ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+113320,81,Real Colorado North National ECNL RL B13,Real Colorado North National ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+113624,107,Utah Avalanche ECNL RL B13,Utah Avalanche ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+110667,4179,Utah Surf ECNL RL B13,Utah Surf ECNL RL B13,B2013,Mountain,ECNL RL Boys,2025-26
+68934,47,FC Dallas Red ECNL RL NTX B08/07,FC Dallas Red ECNL RL NTX B08/07,B2008/2007,NTX,ECNL RL Boys,2025-26
+81932,36,Sting ECNL RL NTX B08/07 Pitcock,Sting ECNL RL NTX B08/07 Pitcock,B2008/2007,NTX,ECNL RL Boys,2025-26
+72342,4068,Avanti SA Grey ECNL RL NTX B09,Avanti SA Grey ECNL RL NTX B09,B2009,NTX,ECNL RL Boys,2025-26
+69801,47,FC Dallas Navy ECNL RL NTX B09,FC Dallas Navy ECNL RL NTX B09,B2009,NTX,ECNL RL Boys,2025-26
+82538,3694,Kernow Storm FC ECNL RL NTX B09,Kernow Storm FC ECNL RL NTX B09,B2009,NTX,ECNL RL Boys,2025-26
+69133,2738,Atletico Dallas Youth ECNL RL NTX B10,Atletico Dallas Youth ECNL RL NTX B10,B2010,NTX,ECNL RL Boys,2025-26
+69794,4068,Avanti SA Blue ECNL RL NTX B10,Avanti SA Blue ECNL RL NTX B10,B2010,NTX,ECNL RL Boys,2025-26
+68880,3717,NTX Celtic FC ECNL RL NTX B10,NTX Celtic FC ECNL RL NTX B10,B2010,NTX,ECNL RL Boys,2025-26
+70305,4068,Avanti SA Blue ECNL RL NTX B11,Avanti SA Blue ECNL RL NTX B11,B2011,NTX,ECNL RL Boys,2025-26
+82089,47,FC Dallas Red ECNL RL NTX B11,FC Dallas Red ECNL RL NTX B11,B2011,NTX,ECNL RL Boys,2025-26
+68587,2127,Fever United FC ECNL RL NTX B11,Fever United FC ECNL RL NTX B11,B2011,NTX,ECNL RL Boys,2025-26
+96722,2738,Atletico Dallas Youth ECNL RL NTX B12,Atletico Dallas Youth ECNL RL NTX B12,B2012,NTX,ECNL RL Boys,2025-26
+114035,35,DKSC WHITE ECNL RL NTX B12,DKSC WHITE ECNL RL NTX B12,B2012,NTX,ECNL RL Boys,2025-26
+69611,47,FC Dallas Blue ECNL RL NTX B12,FC Dallas Blue ECNL RL NTX B12,B2012,NTX,ECNL RL Boys,2025-26
+76769,2738,Atletico Dallas Youth ECNL RL NTX B13,Atletico Dallas Youth ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+116777,2738,AtlÃ©tico Dallas Youth Blue ECNL RL NTX B13,AtlÃ©tico Dallas Youth Blue ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+95829,4068,Avanti SA Blue ECNL RL NTX B13,Avanti SA Blue ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+81581,4068,Avanti SA White ECNL RL NTX B13,Avanti SA White ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+96880,1771,BVBIA Black ECNL RL NTX B13,BVBIA Black ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+112990,1771,BVBIA Yellow ECNL RL NTX B13,BVBIA Yellow ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+102936,35,DKSC ECNL RL NTX B13,DKSC ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+114026,35,DKSC WHITE ECNL RL NTX B13,DKSC WHITE ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+116135,37,Dallas Texans ECNL RL NTX B13,Dallas Texans ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+116136,37,Dallas Texans Red ECNL RL NTX B13,Dallas Texans Red ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+82309,47,FC Dallas Blue ECNL RL NTX B13,FC Dallas Blue ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+82311,47,FC Dallas ECNL RL NTX B13,FC Dallas ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+82310,47,FC Dallas Navy ECNL RL NTX B13,FC Dallas Navy ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+117302,47,FC Dallas North ECNL RL NTX B13,FC Dallas North ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+116039,47,FC Dallas Red ECNL RL NTX B13,FC Dallas Red ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+82313,47,FC Dallas White ECNL RL NTX B13,FC Dallas White ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+80984,2127,Fever United FC ECNL RL NTX B13,Fever United FC ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+98192,3694,Kernow Storm FC ECNL RL NTX B13,Kernow Storm FC ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+115809,3717,NTX Celtic FC ECNL RL NTX B13,NTX Celtic FC ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+59396,101,SOLAR BLUE ECNL RL NTX B13,SOLAR BLUE ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+82604,101,SOLAR RED ECNL RL NTX B13,SOLAR RED ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+83029,101,SOLAR WHITE ECNL RL NTX B13,SOLAR WHITE ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+115799,36,Sting Brave ECNL RL NTX B13,Sting Brave ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+111043,36,Sting ECNL RL NTX B13,Sting ECNL RL NTX B13,B2013,NTX,ECNL RL Boys,2025-26
+57883,431,FSA FC ECNL RL B08/07,FSA FC ECNL RL B08/07,B2008/2007,New England,ECNL RL Boys,2025-26
+60048,428,STA ECNL RL B08/07,STA ECNL RL B08/07,B2008/2007,New England,ECNL RL Boys,2025-26
+57867,52,FC Stars ECNL RL B09,FC Stars ECNL RL B09,B2009,New England,ECNL RL Boys,2025-26
+57881,431,FSA FC ECNL RL B09,FSA FC ECNL RL B09,B2009,New England,ECNL RL Boys,2025-26
+57891,518,Manhattan SC ECNL RL B09,Manhattan SC ECNL RL B09,B2009,New England,ECNL RL Boys,2025-26
+60047,428,STA ECNL RL B09,STA ECNL RL B09,B2009,New England,ECNL RL Boys,2025-26
+49657,1409,East Coast Surf SC ECNL RL B10,East Coast Surf SC ECNL RL B10,B2010,New England,ECNL RL Boys,2025-26
+59798,52,FC Stars ECNL RL B10,FC Stars ECNL RL B10,B2010,New England,ECNL RL Boys,2025-26
+70163,428,STA ECNL RL B10,STA ECNL RL B10,B2010,New England,ECNL RL Boys,2025-26
+59880,9,SUSA FC ECNL RL B10,SUSA FC ECNL RL B10,B2010,New England,ECNL RL Boys,2025-26
+96821,31,Connecticut FC United ECNL RL B11,Connecticut FC United ECNL RL B11,B2011,New England,ECNL RL Boys,2025-26
+82517,1409,East Coast Surf SC ECNL RL B11,East Coast Surf SC ECNL RL B11,B2011,New England,ECNL RL Boys,2025-26
+82071,518,Manhattan SC ECNL RL B11,Manhattan SC ECNL RL B11,B2011,New England,ECNL RL Boys,2025-26
+83243,428,STA ECNL RL B11,STA ECNL RL B11,B2011,New England,ECNL RL Boys,2025-26
+96820,31,Connecticut FC United ECNL RL B12,Connecticut FC United ECNL RL B12,B2012,New England,ECNL RL Boys,2025-26
+95587,1409,East Coast Surf SC ECNL RL B12,East Coast Surf SC ECNL RL B12,B2012,New England,ECNL RL Boys,2025-26
+94752,94,Scorpions SC ECNL RL B12,Scorpions SC ECNL RL B12,B2012,New England,ECNL RL Boys,2025-26
+87717,116,World Class FC ECNL RL B12,World Class FC ECNL RL B12,B2012,New England,ECNL RL Boys,2025-26
+116992,4370,AC Connecticut ECNL RL B13,AC Connecticut ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+96818,31,Connecticut FC United ECNL RL B13,Connecticut FC United ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+117484,1409,East Coast Surf SC ECNL RL B13,East Coast Surf SC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+85575,42,East Meadow SC ECNL RL B13,East Meadow SC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+94545,52,FC Stars ECNL RL B13,FC Stars ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+82174,431,FSA FC ECNL RL B13,FSA FC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+113902,518,Manhattan SC ECNL RL B13,Manhattan SC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+96741,428,STA ECNL RL B13,STA ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+95343,9,SUSA FC ECNL RL B13,SUSA FC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+116957,94,Scorpions SC ECNL RL B13,Scorpions SC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+95017,116,World Class FC ECNL RL B13,World Class FC ECNL RL B13,B2013,New England,ECNL RL Boys,2025-26
+72752,1249,Clovis Crossfire ECNL RL B08/07,Clovis Crossfire ECNL RL B08/07,B2008/2007,NorCal,ECNL RL Boys,2025-26
+113276,3068,Fusion SC ECNL RL B08/07,Fusion SC ECNL RL B08/07,B2008/2007,NorCal,ECNL RL Boys,2025-26
+112883,4398,Albion SC Central Valley ECNL RL B09,Albion SC Central Valley ECNL RL B09,B2009,NorCal,ECNL RL Boys,2025-26
+110858,5087,Central Valley Premier FC  ECNL RL B09,Central Valley Premier FC  ECNL RL B09,B2009,NorCal,ECNL RL Boys,2025-26
+109919,4580,Legends FC (SJ) ECNL RL B09,Legends FC (SJ) ECNL RL B09,B2009,NorCal,ECNL RL Boys,2025-26
+112859,1649,Union FC ECNL RL B09,Union FC ECNL RL B09,B2009,NorCal,ECNL RL Boys,2025-26
+93285,1249,Clovis Crossfire ECNL RL B10,Clovis Crossfire ECNL RL B10,B2010,NorCal,ECNL RL Boys,2025-26
+93678,3989,FLS ECNL RL B10,FLS ECNL RL B10,B2010,NorCal,ECNL RL Boys,2025-26
+93972,3252,SF United FC ECNL RL B10,SF United FC ECNL RL B10,B2010,NorCal,ECNL RL Boys,2025-26
+99741,2482,Stanford Strikers FC ECNL RL B10,Stanford Strikers FC ECNL RL B10,B2010,NorCal,ECNL RL Boys,2025-26
+117917,5323,Albany Berkeley SC Lightning Elite ECNL RL B11,Albany Berkeley SC Lightning Elite ECNL RL B11,B2011,NorCal,ECNL RL Boys,2025-26
+89718,3989,FLS ECNL RL B11,FLS ECNL RL B11,B2011,NorCal,ECNL RL Boys,2025-26
+93398,3252,SF United FC ECNL RL B11,SF United FC ECNL RL B11,B2011,NorCal,ECNL RL Boys,2025-26
+112784,3183,Stockton TLJ FC ECNL RL B11,Stockton TLJ FC ECNL RL B11,B2011,NorCal,ECNL RL Boys,2025-26
+104954,4403,Eastshore Alliance FC ECNL RL B12,Eastshore Alliance FC ECNL RL B12,B2012,NorCal,ECNL RL Boys,2025-26
+111052,4063,El Camino FC Salinas ECNL RL B12 NorCal,El Camino FC Salinas ECNL RL B12 NorCal,B2012,NorCal,ECNL RL Boys,2025-26
+104319,3989,FLS ECNL RL B12,FLS ECNL RL B12,B2012,NorCal,ECNL RL Boys,2025-26
+114144,2495,Palo Alto Soccer Club  ECNL RL B12,Palo Alto Soccer Club  ECNL RL B12,B2012,NorCal,ECNL RL Boys,2025-26
+111992,4582,CVFA Academy ECNL RL B13,CVFA Academy ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+110346,1249,Clovis Crossfire ECNL RL B13,Clovis Crossfire ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+112415,4544,East Bay United ECNL RL B13,East Bay United ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+112909,4403,Eastshore Alliance FC ECNL RL B13,Eastshore Alliance FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111573,5109,FC Fresno Academy ECNL RL B13,FC Fresno Academy ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111815,3989,FLS ECNL RL B13,FLS ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+113330,4659,JSC Soccer Club ECNL RL B13,JSC Soccer Club ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111737,3068,Livermore Fusion SC ECNL RL B13,Livermore Fusion SC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+113290,4067,Revolution FC ECNL RL B13,Revolution FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111361,3252,SF United FC ECNL RL B13,SF United FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+117907,5322,San Jose Rush ECNL RL B13,San Jose Rush ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111830,2850,San Ramon FC ECNL RL B13,San Ramon FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+112423,2748,Sheriffs FC ECNL RL B13,Sheriffs FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+114147,5114,South Valley Chivas ECNL RL B13,South Valley Chivas ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111832,1721,South Valley United ECNL RL B13,South Valley United ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111502,2482,Stanford Strikers FC ECNL RL B13,Stanford Strikers FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+112868,1649,Union Sacramento FC ECNL RL B13,Union Sacramento FC ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+111636,3983,Walnut Creek Surf ECNL RL B13,Walnut Creek Surf ECNL RL B13,B2013,NorCal,ECNL RL Boys,2025-26
+59980,419,Maryland United FC ECNL RL B08/07,Maryland United FC ECNL RL B08/07,B2008/2007,North Atlantic,ECNL RL Boys,2025-26
+55386,3405,Pipeline SC ECNL RL B08/07,Pipeline SC ECNL RL B08/07,B2008/2007,North Atlantic,ECNL RL Boys,2025-26
+80786,494,Baltimore Celtic ECNL RL B09,Baltimore Celtic ECNL RL B09,B2009,North Atlantic,ECNL RL Boys,2025-26
+66529,451,LVU Rush ECNL RL B09,LVU Rush ECNL RL B09,B2009,North Atlantic,ECNL RL Boys,2025-26
+57932,79,Penn Fusion SA ECNL RL B09,Penn Fusion SA ECNL RL B09,B2009,North Atlantic,ECNL RL Boys,2025-26
+81298,1940,Potomac SA ECNL RL B09,Potomac SA ECNL RL B09,B2009,North Atlantic,ECNL RL Boys,2025-26
+48189,598,FC DELCO ECNL RL B10,FC DELCO ECNL RL B10,B2010,North Atlantic,ECNL RL Boys,2025-26
+68441,78,PDA ECNL RL B10,PDA ECNL RL B10,B2010,North Atlantic,ECNL RL Boys,2025-26
+68825,79,Penn Fusion SA ECNL RL B10,Penn Fusion SA ECNL RL B10,B2010,North Atlantic,ECNL RL Boys,2025-26
+55379,3405,Pipeline SC ECNL RL B10,Pipeline SC ECNL RL B10,B2010,North Atlantic,ECNL RL Boys,2025-26
+48188,598,FC DELCO ECNL RL B11,FC DELCO ECNL RL B11,B2011,North Atlantic,ECNL RL Boys,2025-26
+81399,419,Maryland United FC ECNL RL B11,Maryland United FC ECNL RL B11,B2011,North Atlantic,ECNL RL Boys,2025-26
+81243,79,Penn Fusion SA ECNL RL B11,Penn Fusion SA ECNL RL B11,B2011,North Atlantic,ECNL RL Boys,2025-26
+79390,3405,Pipeline SC ECNL RL B11,Pipeline SC ECNL RL B11,B2011,North Atlantic,ECNL RL Boys,2025-26
+94406,598,FC DELCO ECNL RL B12,FC DELCO ECNL RL B12,B2012,North Atlantic,ECNL RL Boys,2025-26
+93620,451,LVU Rush ECNL RL B12,LVU Rush ECNL RL B12,B2012,North Atlantic,ECNL RL Boys,2025-26
+94641,419,Maryland United FC ECNL RL B12,Maryland United FC ECNL RL B12,B2012,North Atlantic,ECNL RL Boys,2025-26
+94713,79,Penn Fusion SA ECNL RL B12,Penn Fusion SA ECNL RL B12,B2012,North Atlantic,ECNL RL Boys,2025-26
+94096,494,Baltimore Celtic ECNL RL B13,Baltimore Celtic ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+117069,2701,Delaware FC ECNL RL B13,Delaware FC ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+111508,598,FC DELCO ECNL RL B13,FC DELCO ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+114690,46,HEX FC Keystone ECNL RL B13,HEX FC Keystone ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+112512,451,LVU Rush ECNL RL B13,LVU Rush ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+95154,419,Maryland United FC ECNL RL B13,Maryland United FC ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+54414,64,Match Fit Surf ECNL RL B13,Match Fit Surf ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+118058,78,PDA ECNL RL B13,PDA ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+112982,4338,PSA Monmouth ECNL RL B13,PSA Monmouth ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+114896,79,Penn Fusion SA ECNL RL B13,Penn Fusion SA ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+114659,1345,Philadelphia Ukrainian Nationals ECNL RL B13,Philadelphia Ukrainian Nationals ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+91704,3405,Pipeline SC ECNL RL B13,Pipeline SC ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+115505,1940,Potomac SA ECNL RL B13,Potomac SA ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+115027,4355,SJEB FC ECNL RL B13,SJEB FC ECNL RL B13,B2013,North Atlantic,ECNL RL Boys,2025-26
+115510,5290,Lancaster FC ECNL RL B08/07,Lancaster FC ECNL RL B08/07,B2008/2007,Northeast,ECNL RL Boys,2025-26
+115555,1030,Western United Pioneers ECNL RL B08/07,Western United Pioneers ECNL RL B08/07,B2008/2007,Northeast,ECNL RL Boys,2025-26
+111790,489,Brentwood SC ECNL RL B09,Brentwood SC ECNL RL B09,B2009,Northeast,ECNL RL Boys,2025-26
+94766,4349,CFC North ECNL RL B09,CFC North ECNL RL B09,B2009,Northeast,ECNL RL Boys,2025-26
+97094,397,FC Europa ECNL RL B09,FC Europa ECNL RL B09,B2009,Northeast,ECNL RL Boys,2025-26
+75561,435,Quickstrike FC ECNL RL B09,Quickstrike FC ECNL RL B09,B2009,Northeast,ECNL RL Boys,2025-26
+114956,613,STA MO ECNL RL B09,STA MO ECNL RL B09,B2009,Northeast,ECNL RL Boys,2025-26
+96961,527,YMS ECNL RL B09,YMS ECNL RL B09,B2009,Northeast,ECNL RL Boys,2025-26
+94767,4349,CFC North ECNL RL B10,CFC North ECNL RL B10,B2010,Northeast,ECNL RL Boys,2025-26
+97328,397,FC Europa ECNL RL B10,FC Europa ECNL RL B10,B2010,Northeast,ECNL RL Boys,2025-26
+117376,342,Select North ECNL RL B10,Select North ECNL RL B10,B2010,Northeast,ECNL RL Boys,2025-26
+113945,1484,West-Mont United ECNL RL B10,West-Mont United ECNL RL B10,B2010,Northeast,ECNL RL Boys,2025-26
+115557,1030,Western United Pioneers ECNL RL B10,Western United Pioneers ECNL RL B10,B2010,Northeast,ECNL RL Boys,2025-26
+96963,527,YMS ECNL RL B10,YMS ECNL RL B10,B2010,Northeast,ECNL RL Boys,2025-26
+111792,489,Brentwood SC ECNL RL B11,Brentwood SC ECNL RL B11,B2011,Northeast,ECNL RL Boys,2025-26
+94768,4349,CFC North ECNL RL B11,CFC North ECNL RL B11,B2011,Northeast,ECNL RL Boys,2025-26
+97330,397,FC Europa ECNL RL B11,FC Europa ECNL RL B11,B2011,Northeast,ECNL RL Boys,2025-26
+115514,5290,Lancaster FC ECNL RL B11,Lancaster FC ECNL RL B11,B2011,Northeast,ECNL RL Boys,2025-26
+115559,1030,Western United Pioneers ECNL RL B11,Western United Pioneers ECNL RL B11,B2011,Northeast,ECNL RL Boys,2025-26
+96965,527,YMS ECNL RL B11,YMS ECNL RL B11,B2011,Northeast,ECNL RL Boys,2025-26
+115254,5150,Brooklyn United ECNL RL B12,Brooklyn United ECNL RL B12,B2012,Northeast,ECNL RL Boys,2025-26
+97329,397,FC Europa ECNL RL B12,FC Europa ECNL RL B12,B2012,Northeast,ECNL RL Boys,2025-26
+115515,5290,Lancaster FC ECNL RL B12,Lancaster FC ECNL RL B12,B2012,Northeast,ECNL RL Boys,2025-26
+114953,613,STA MO ECNL RL B12,STA MO ECNL RL B12,B2012,Northeast,ECNL RL Boys,2025-26
+117374,342,Select North ECNL RL B12,Select North ECNL RL B12,B2012,Northeast,ECNL RL Boys,2025-26
+115560,1030,Western United Pioneers ECNL RL B12,Western United Pioneers ECNL RL B12,B2012,Northeast,ECNL RL Boys,2025-26
+118989,756,Black Watch Premier ECNL RL B13,Black Watch Premier ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+111795,489,Brentwood SC ECNL RL B13,Brentwood SC ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+115255,5150,Brooklyn United ECNL RL B13,Brooklyn United ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+97459,4349,CFC North ECNL RL B13,CFC North ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+113706,5229,Eagle FC ECNL RL B13,Eagle FC ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+96591,4220,Eastern FC ECNL RL B13,Eastern FC ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+112839,385,FC Copa Academy ECNL RL B13,FC Copa Academy ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+98248,397,FC Europa ECNL RL B13,FC Europa ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+115516,5290,Lancaster FC ECNL RL B13,Lancaster FC ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+114840,369,PSA North ECNL RL B13,PSA North ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+115156,435,Quickstrike FC ECNL RL B13,Quickstrike FC ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+114952,613,STA MO ECNL RL B13,STA MO ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+117373,342,Select North ECNL RL B13,Select North ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+117093,342,Select South ECNL RL B13,Select South ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+114242,1484,West-Mont United ECNL RL B13,West-Mont United ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+118599,5327,Westchester Soccer Club ECNL RL B13,Westchester Soccer Club ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+115561,1030,Western United Pioneers ECNL RL B13,Western United Pioneers ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+96969,527,YMS ECNL RL B13,YMS ECNL RL B13,B2013,Northeast,ECNL RL Boys,2025-26
+109327,4551,Northwest United FC ECNL RL B08/07,Northwest United FC ECNL RL B08/07,B2008/2007,Northwest,ECNL RL Boys,2025-26
+69683,1643,Seattle United ECNL RL B08/07,Seattle United ECNL RL B08/07,B2008/2007,Northwest,ECNL RL Boys,2025-26
+93858,4551,Northwest United FC ECNL RL B09,Northwest United FC ECNL RL B09,B2009,Northwest,ECNL RL Boys,2025-26
+81690,1643,Seattle United ECNL RL B09,Seattle United ECNL RL B09,B2009,Northwest,ECNL RL Boys,2025-26
+58260,2544,Spokane Shadow ECNL RL B09,Spokane Shadow ECNL RL B09,B2009,Northwest,ECNL RL Boys,2025-26
+81542,112,Washington Premier ECNL RL B09,Washington Premier ECNL RL B09,B2009,Northwest,ECNL RL Boys,2025-26
+111145,4333,Central Washington Sounders ECNL RL B10,Central Washington Sounders ECNL RL B10,B2010,Northwest,ECNL RL Boys,2025-26
+82421,4551,Northwest United FC ECNL RL B10,Northwest United FC ECNL RL B10,B2010,Northwest,ECNL RL Boys,2025-26
+81691,1643,Seattle United ECNL RL B10,Seattle United ECNL RL B10,B2010,Northwest,ECNL RL Boys,2025-26
+69838,2544,Spokane Shadow ECNL RL B10,Spokane Shadow ECNL RL B10,B2010,Northwest,ECNL RL Boys,2025-26
+112465,4333,Central Washington Sounders ECNL RL B11,Central Washington Sounders ECNL RL B11,B2011,Northwest,ECNL RL Boys,2025-26
+81732,398,Eastside FC ECNL RL B11,Eastside FC ECNL RL B11,B2011,Northwest,ECNL RL Boys,2025-26
+81692,1643,Seattle United ECNL RL B11,Seattle United ECNL RL B11,B2011,Northwest,ECNL RL Boys,2025-26
+81544,112,Washington Premier ECNL RL B11,Washington Premier ECNL RL B11,B2011,Northwest,ECNL RL Boys,2025-26
+91365,398,Eastside FC ECNL RL B12,Eastside FC ECNL RL B12,B2012,Northwest,ECNL RL Boys,2025-26
+94796,1643,Seattle United ECNL RL B12,Seattle United ECNL RL B12,B2012,Northwest,ECNL RL Boys,2025-26
+94897,112,Washington Premier ECNL RL B12,Washington Premier ECNL RL B12,B2012,Northwest,ECNL RL Boys,2025-26
+90739,4153,Wenatchee FC Youth ECNL RL B12,Wenatchee FC Youth ECNL RL B12,B2012,Northwest,ECNL RL Boys,2025-26
+103666,4333,Central Washington Sounders ECNL RL B13,Central Washington Sounders ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+113603,2322,Columbia Premier SC ECNL RL13B,Columbia Premier SC ECNL RL13B,B2013,Northwest,ECNL RL Boys,2025-26
+90879,398,Eastside FC ECNL RL B13,Eastside FC ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+93841,4551,Northwest United FC ECNL RL B13,Northwest United FC ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+110683,2331,PacNW SC ECNL RL B13,PacNW SC ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+114766,1643,Seattle United ECNL RL B13,Seattle United ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+113337,2544,Spokane Shadow ECNL RL B13,Spokane Shadow ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+80505,112,Washington Premier ECNL RL B13,Washington Premier ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+112192,4153,Wenatchee FC ECNL RL B13,Wenatchee FC ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+111216,3476,XF ECNL RL B13,XF ECNL RL B13,B2013,Northwest,ECNL RL Boys,2025-26
+110227,25,Challenge United EAST ECNL RL STXCL B07,Challenge United EAST ECNL RL STXCL B07,B2008/2007,STXCL,ECNL RL Boys,2025-26
+92494,25,Challenge United EAST ECNL RL STXCL B09,Challenge United EAST ECNL RL STXCL B09,B2009,STXCL,ECNL RL Boys,2025-26
+92657,25,Challenge United ECNL RL STXCL B09,Challenge United ECNL RL STXCL B09,B2009,STXCL,ECNL RL Boys,2025-26
+50861,3575,MAFC ECNL RL STXCL B09,MAFC ECNL RL STXCL B09,B2009,STXCL,ECNL RL Boys,2025-26
+59637,3718,Imperial SC ECNL RL STXCL B10,Imperial SC ECNL RL STXCL B10,B2010,STXCL,ECNL RL Boys,2025-26
+93726,4543,JS Legends ECNL RL STXCL B10,JS Legends ECNL RL STXCL B10,B2010,STXCL,ECNL RL Boys,2025-26
+95357,3575,MAFC ECNL RL STXCL B10,MAFC ECNL RL STXCL B10,B2010,STXCL,ECNL RL Boys,2025-26
+80688,3603,210 FC ECNL RL STXCL B11,210 FC ECNL RL STXCL B11,B2011,STXCL,ECNL RL Boys,2025-26
+56879,10,AHFC CY-FAIR ECNL RL STXCL B11,AHFC CY-FAIR ECNL RL STXCL B11,B2011,STXCL,ECNL RL Boys,2025-26
+95661,3575,MAFC Guerreros Houston ECNL RL STXCL B11,MAFC Guerreros Houston ECNL RL STXCL B11,B2011,STXCL,ECNL RL Boys,2025-26
+112607,62,Lonestar SC STH ECNL RL STXCL B12,Lonestar SC STH ECNL RL STXCL B12,B2012,STXCL,ECNL RL Boys,2025-26
+115219,3575,MAFC ECNL RL STXCL B12,MAFC ECNL RL STXCL B12,B2012,STXCL,ECNL RL Boys,2025-26
+92879,3900,Pearland SC NextUp ECNL RL STXCL B12,Pearland SC NextUp ECNL RL STXCL B12,B2012,STXCL,ECNL RL Boys,2025-26
+113185,3603,210 FC ECNL RL STXCL B13,210 FC ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+80655,10,AHFC CENTRAL ECNL RL STXCL B13,AHFC CENTRAL ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+75438,10,AHFC CY-FAIR ECNL RL STXCL B13,AHFC CY-FAIR ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+80852,10,AHFC PRE-ECNL ECNL RL STXCL B14,AHFC PRE-ECNL ECNL RL STXCL B14,B2013,STXCL,ECNL RL Boys,2025-26
+80801,3432,Cavalry ECNL RL STXCL B13,Cavalry ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+69753,3489,Cedar Stars Rush Houston ECNL RL STXCL B13,Cedar Stars Rush Houston ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+109692,25,Challenge United EAST ECNL RL STXCL B13,Challenge United EAST ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+110332,1655,Cosmos FC ECNL RL STXCL B13,Cosmos FC ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+74790,3321,Dynamos ECNL RL STXCL B13,Dynamos ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+75505,3433,Houstonians FC Red ECNL RL STXCL B13,Houstonians FC Red ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+113600,4557,LTFC ECNL RL STXCL B13,LTFC ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+112645,62,Lonestar SC Black ECNL RL STXCL B14,Lonestar SC Black ECNL RL STXCL B14,B2013,STXCL,ECNL RL Boys,2025-26
+112604,62,Lonestar SC NTH ECNL RL STXCL B13,Lonestar SC NTH ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+112644,62,Lonestar SC Red ECNL RL STXCL B14,Lonestar SC Red ECNL RL STXCL B14,B2013,STXCL,ECNL RL Boys,2025-26
+112605,62,Lonestar SC STH ECNL RL STXCL B13,Lonestar SC STH ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+96736,3575,MAFC ECNL RL STXCL B13,MAFC ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+97736,3900,Pearland SC NextUp ECNL RL STXCL B13,Pearland SC NextUp ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+95921,1772,RISE SC ECNL RL STXCL B14,RISE SC ECNL RL STXCL B14,B2013,STXCL,ECNL RL Boys,2025-26
+112303,4560,TC Premier SC ECNL RL STXCL B13,TC Premier SC ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+75143,3653,VCF Houston Black ECNL RL STXCL B13,VCF Houston Black ECNL RL STXCL B13,B2013,STXCL,ECNL RL Boys,2025-26
+113075,16,Beach FC (CA) ECNL RL S.Cal B08/07,Beach FC (CA) ECNL RL S.Cal B08/07,B2008/2007,SoCal,ECNL RL Boys,2025-26
+114250,86,SDSC Surf ECNL RL S.Cal B08/07,SDSC Surf ECNL RL S.Cal B08/07,B2008/2007,SoCal,ECNL RL Boys,2025-26
+94900,2289,LA Breakers FC ECNL RL SoCal B09 LB,LA Breakers FC ECNL RL SoCal B09 LB,B2009,SoCal,ECNL RL Boys,2025-26
+114251,86,SDSC Surf ECNL RL S.Cal B09,SDSC Surf ECNL RL S.Cal B09,B2009,SoCal,ECNL RL Boys,2025-26
+68853,2289,LA Breakers FC ECNL RL S.Cal B10,LA Breakers FC ECNL RL S.Cal B10,B2010,SoCal,ECNL RL Boys,2025-26
+95263,13,Sporting CA USA ECNL RL S.Cal B10,Sporting CA USA ECNL RL S.Cal B10,B2010,SoCal,ECNL RL Boys,2025-26
+114253,86,SDSC Surf ECNL RL S.Cal B11,SDSC Surf ECNL RL S.Cal B11,B2011,SoCal,ECNL RL Boys,2025-26
+61048,113,West Coast FC ECNL RL B11 S. Cal,West Coast FC ECNL RL B11 S. Cal,B2011,SoCal,ECNL RL Boys,2025-26
+113086,16,Beach FC (CA) ECNL RL S.Cal B12,Beach FC (CA) ECNL RL S.Cal B12,B2012,SoCal,ECNL RL Boys,2025-26
+114254,86,SDSC Surf ECNL RL S.Cal B12,SDSC Surf ECNL RL S.Cal B12,B2012,SoCal,ECNL RL Boys,2025-26
+113088,16,Beach FC (CA) ECNL RL S.Cal B13,Beach FC (CA) ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+118274,2289,LA Breakers FC ECNL RL LB S.Cal B13,LA Breakers FC ECNL RL LB S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+66150,2289,LA Breakers FC ECNL RL S.Cal B13,LA Breakers FC ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+106674,82,LAFC So Cal ECNL RL S.Cal B13,LAFC So Cal ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+113083,57,LV Heat Surf ECNL RL S.Cal B13,LV Heat Surf ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+81127,39,Legends FC San Diego ECNL RL S.Cal B13,Legends FC San Diego ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+113761,300,Rebels SC ECNL RL S.Cal B13,Rebels SC ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+114255,86,SDSC Surf ECNL RL S.Cal B13,SDSC Surf ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+114938,13,Sporting CA USA ECNL RL S.Cal B13,Sporting CA USA ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+105506,113,West Coast FC ECNL RL S.Cal B13,West Coast FC ECNL RL S.Cal B13,B2013,SoCal,ECNL RL Boys,2025-26
+79848,14,Atlanta Fire United ECNL RL B13,Atlanta Fire United ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+110976,380,CESA Triumph ECNL RL B13,CESA Triumph ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+112312,30,Concorde Fire Platinum ECNL RL B13,Concorde Fire Platinum ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+112313,30,Concorde Fire Premier ECNL RL B13,Concorde Fire Premier ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+116862,56,GSA ECNL RL B13,GSA ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+113019,329,NTH NASA ECNL RL B13,NTH NASA ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+109200,3644,South Carolina Surf ECNL RL B13,South Carolina Surf ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+113292,1689,South Carolina United ECNL RL B13,South Carolina United ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+118018,3407,United Futbol Academy ECNL RL B13,United Futbol Academy ECNL RL B13,B2013,Southeast,ECNL RL Boys,2025-26
+47440,16,Beach FC (CA) ECNL RL B08/07,Beach FC (CA) ECNL RL B08/07,B2008/2007,Southwest,ECNL RL Boys,2025-26
+47204,82,LAFC So Cal ECNL RL B08/07,LAFC So Cal ECNL RL B08/07,B2008/2007,Southwest,ECNL RL Boys,2025-26
+46315,61,Legends FC ECNL RL B08/07,Legends FC ECNL RL B08/07,B2008/2007,Southwest,ECNL RL Boys,2025-26
+47483,86,SDSC Surf ECNL RL B08/07,SDSC Surf ECNL RL B08/07,B2008/2007,Southwest,ECNL RL Boys,2025-26
+60058,16,Beach FC (CA) ECNL RL B09,Beach FC (CA) ECNL RL B09,B2009,Southwest,ECNL RL Boys,2025-26
+59871,82,LAFC So Cal ECNL RL B09,LAFC So Cal ECNL RL B09,B2009,Southwest,ECNL RL Boys,2025-26
+59685,61,Legends FC ECNL RL B09,Legends FC ECNL RL B09,B2009,Southwest,ECNL RL Boys,2025-26
+81755,186,Pateadores NB ECNL RL B09,Pateadores NB ECNL RL B09,B2009,Southwest,ECNL RL Boys,2025-26
+81465,87,San Diego Surf ECNL RL B09 Blue,San Diego Surf ECNL RL B09 Blue,B2009,Southwest,ECNL RL Boys,2025-26
+60895,87,San Diego Surf ECNL RL B09 White,San Diego Surf ECNL RL B09 White,B2009,Southwest,ECNL RL Boys,2025-26
+21850,96,Slammers FC Maroon ECNL RL B09,Slammers FC Maroon ECNL RL B09,B2009,Southwest,ECNL RL Boys,2025-26
+60061,16,Beach FC (CA) ECNL RL B10,Beach FC (CA) ECNL RL B10,B2010,Southwest,ECNL RL Boys,2025-26
+60732,82,LAFC So Cal ECNL RL B10,LAFC So Cal ECNL RL B10,B2010,Southwest,ECNL RL Boys,2025-26
+59683,61,Legends FC ECNL RL B10,Legends FC ECNL RL B10,B2010,Southwest,ECNL RL Boys,2025-26
+68760,86,SDSC Surf ECNL RL B10,SDSC Surf ECNL RL B10,B2010,Southwest,ECNL RL Boys,2025-26
+81466,87,San Diego Surf ECNL RL B10 Blue,San Diego Surf ECNL RL B10 Blue,B2010,Southwest,ECNL RL Boys,2025-26
+65709,96,Slammers FC Maroon ECNL RL B10,Slammers FC Maroon ECNL RL B10,B2010,Southwest,ECNL RL Boys,2025-26
+61047,113,West Coast FC ECNL RL B10,West Coast FC ECNL RL B10,B2010,Southwest,ECNL RL Boys,2025-26
+60429,16,Beach FC (CA) ECNL RL B11,Beach FC (CA) ECNL RL B11,B2011,Southwest,ECNL RL Boys,2025-26
+60734,82,LAFC So Cal ECNL RL B11,LAFC So Cal ECNL RL B11,B2011,Southwest,ECNL RL Boys,2025-26
+80520,57,LV Heat Surf ECNL RL B11,LV Heat Surf ECNL RL B11,B2011,Southwest,ECNL RL Boys,2025-26
+81618,186,Pateadores ECNL RL B11,Pateadores ECNL RL B11,B2011,Southwest,ECNL RL Boys,2025-26
+94966,300,Rebels SC ECNL RL B11,Rebels SC ECNL RL B11,B2011,Southwest,ECNL RL Boys,2025-26
+81469,87,San Diego Surf ECNL RL B11 Blue,San Diego Surf ECNL RL B11 Blue,B2011,Southwest,ECNL RL Boys,2025-26
+91204,113,West Coast FC ECNL RL B11 SW,West Coast FC ECNL RL B11 SW,B2011,Southwest,ECNL RL Boys,2025-26
+94859,16,Beach FC (CA) ECNL RL B12,Beach FC (CA) ECNL RL B12,B2012,Southwest,ECNL RL Boys,2025-26
+95396,61,Legends FC ECNL RL B12,Legends FC ECNL RL B12,B2012,Southwest,ECNL RL Boys,2025-26
+95412,61,Legends FC ECNL RL B12 2,Legends FC ECNL RL B12 2,B2012,Southwest,ECNL RL Boys,2025-26
+94965,300,Rebels SC ECNL RL B12,Rebels SC ECNL RL B12,B2012,Southwest,ECNL RL Boys,2025-26
+94886,96,Slammers FC White ECNL RL B12,Slammers FC White ECNL RL B12,B2012,Southwest,ECNL RL Boys,2025-26
+111334,16,Beach FC (CA) ECNL RL B13,Beach FC (CA) ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+57121,41,Eagles SC ECNL RL B13,Eagles SC ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+82149,82,LAFC So Cal ECNL RL B13,LAFC So Cal ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+110875,57,LV Heat Surf ECNL RL B13,LV Heat Surf ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+113522,61,Legends FC - ECNL RL 2 B13,Legends FC - ECNL RL 2 B13,B2013,Southwest,ECNL RL Boys,2025-26
+66057,61,Legends FC ECNL RL B13,Legends FC ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+104672,186,Pateadores ECNL RL B13,Pateadores ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+107592,186,Pateadores NB ECNL RL B13,Pateadores NB ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+113765,300,Rebels SC ECNL RL B13,Rebels SC ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+78751,86,SDSC Surf ECNL RL B13,SDSC Surf ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+94959,96,SLAMMERS FC White ECNL RL B13,SLAMMERS FC White ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+105080,87,San Diego Surf ECNL RL B13 Blue,San Diego Surf ECNL RL B13 Blue,B2013,Southwest,ECNL RL Boys,2025-26
+105079,87,San Diego Surf ECNL RL B13 White,San Diego Surf ECNL RL B13 White,B2013,Southwest,ECNL RL Boys,2025-26
+94958,96,Slammers FC Maroon ECNL RL B13,Slammers FC Maroon ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+81819,13,Sporting CA USA ECNL RL B13,Sporting CA USA ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+67217,113,West Coast FC ECNL RL B13,West Coast FC ECNL RL B13,B2013,Southwest,ECNL RL Boys,2025-26
+81205,4068,Avanti SA ECNL RL B08/07,Avanti SA ECNL RL B08/07,B2008/2007,Texas,ECNL RL Boys,2025-26
+57754,37,Dallas Texans RL B08/07,Dallas Texans RL B08/07,B2008/2007,Texas,ECNL RL Boys,2025-26
+69591,47,FC Dallas ECNL RL B08/07,FC Dallas ECNL RL B08/07,B2008/2007,Texas,ECNL RL Boys,2025-26
+81206,4068,Avanti SA ECNL RL B09,Avanti SA ECNL RL B09,B2009,Texas,ECNL RL Boys,2025-26
+69593,47,FC Dallas ECNL RL B09,FC Dallas ECNL RL B09,B2009,Texas,ECNL RL Boys,2025-26
+68858,3234,FC Westlake ECNL RL B09,FC Westlake ECNL RL B09,B2009,Texas,ECNL RL Boys,2025-26
+50721,3433,HOUSTONIANS FC ECNL RL B09,HOUSTONIANS FC ECNL RL B09,B2009,Texas,ECNL RL Boys,2025-26
+58624,2258,HTX N ECNL RL B09,HTX N ECNL RL B09,B2009,Texas,ECNL RL Boys,2025-26
+95199,4304,SAFC Red ECNL RL B09,SAFC Red ECNL RL B09,B2009,Texas,ECNL RL Boys,2025-26
+81207,4068,Avanti SA ECNL RL B10,Avanti SA ECNL RL B10,B2010,Texas,ECNL RL Boys,2025-26
+112677,1771,BVBIA ECNL RL B10,BVBIA ECNL RL B10,B2010,Texas,ECNL RL Boys,2025-26
+68857,3234,FC Westlake ECNL RL B10,FC Westlake ECNL RL B10,B2010,Texas,ECNL RL Boys,2025-26
+50713,3433,HOUSTONIANS FC ECNL RL B10,HOUSTONIANS FC ECNL RL B10,B2010,Texas,ECNL RL Boys,2025-26
+68821,2258,HTX N ECNL RL B10,HTX N ECNL RL B10,B2010,Texas,ECNL RL Boys,2025-26
+80327,2258,HTX S ECNL RL B10,HTX S ECNL RL B10,B2010,Texas,ECNL RL Boys,2025-26
+81910,10,Albion Hurricanes FC ECNL RL B11,Albion Hurricanes FC ECNL RL B11,B2011,Texas,ECNL RL Boys,2025-26
+81208,4068,Avanti SA ECNL RL B11,Avanti SA ECNL RL B11,B2011,Texas,ECNL RL Boys,2025-26
+79540,25,CHALLENGE UNITED ECNL RL B11,CHALLENGE UNITED ECNL RL B11,B2011,Texas,ECNL RL Boys,2025-26
+50719,3433,HOUSTONIANS FC ECNL RL B11,HOUSTONIANS FC ECNL RL B11,B2011,Texas,ECNL RL Boys,2025-26
+80773,2133,OK Energy FC ECNL RL B11,OK Energy FC ECNL RL B11,B2011,Texas,ECNL RL Boys,2025-26
+80407,1772,RISE SC ECNL Navy RL B11,RISE SC ECNL Navy RL B11,B2011,Texas,ECNL RL Boys,2025-26
+57175,10,Albion Hurricanes FC ECNL RL B12,Albion Hurricanes FC ECNL RL B12,B2012,Texas,ECNL RL Boys,2025-26
+91314,25,CHALLENGE UNITED ECNL RL B12,CHALLENGE UNITED ECNL RL B12,B2012,Texas,ECNL RL Boys,2025-26
+94513,35,DKSC ECNL RL B12,DKSC ECNL RL B12,B2012,Texas,ECNL RL Boys,2025-26
+55701,3433,HOUSTONIANS FC ECNL RL B12,HOUSTONIANS FC ECNL RL B12,B2012,Texas,ECNL RL Boys,2025-26
+92540,2258,HTX S ECNL RL B12,HTX S ECNL RL B12,B2012,Texas,ECNL RL Boys,2025-26
+94442,2133,OK Energy FC ECNL RL B12,OK Energy FC ECNL RL B12,B2012,Texas,ECNL RL Boys,2025-26
+69770,10,Albion Hurricanes FC ECNL RL B13,Albion Hurricanes FC ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+70304,4068,Avanti SA ECNL RL B13,Avanti SA ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+112676,1771,BVBIA ECNL RL B13,BVBIA ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+108527,25,CHALLENGE UNITED ECNL RL B13,CHALLENGE UNITED ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+114024,35,DKSC ECNL RL B13,DKSC ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+114454,37,Dallas Texans ECNL RL B13,Dallas Texans ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+96481,47,FC Dallas ECNL RL B13,FC Dallas ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+113829,3234,FC Westlake ECNL RL B13,FC Westlake ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+110028,3433,HOUSTONIANS FC ECNL RL B13,HOUSTONIANS FC ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+111933,2258,HTX N ECNL RL B13,HTX N ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+111934,2258,HTX S ECNL RL B13,HTX S ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+114705,62,Lonestar Soccer Club ECNL RL B13,Lonestar Soccer Club ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+80820,2133,OK Energy FC ECNL RL B13,OK Energy FC ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+49853,2134,Oklahoma Celtic ECNL RL B13,Oklahoma Celtic ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+95937,1772,RISE SC ECNL Navy RL B13,RISE SC ECNL Navy RL B13,B2013,Texas,ECNL RL Boys,2025-26
+95938,1772,RISE SC ECNL White RL B13,RISE SC ECNL White RL B13,B2013,Texas,ECNL RL Boys,2025-26
+112171,4304,SAFC Black ECNL RL B13,SAFC Black ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+111246,4304,SAFC Red ECNL RL B13,SAFC Red ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+70751,101,SOLAR SC ECNL RL B13,SOLAR SC ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+114687,2519,San Antonio City SC ECNL RL B13,San Antonio City SC ECNL RL B13,B2013,Texas,ECNL RL Boys,2025-26
+117115,4803,BOREAL FC ECNL RL B2008/07,BOREAL FC ECNL RL B2008/07,B2008/2007,Twin Cities,ECNL RL Boys,2025-26
+111570,4817,North Star FC ECNL RL B08/07,North Star FC ECNL RL B08/07,B2008/2007,Twin Cities,ECNL RL Boys,2025-26
+119322,4149,EPSC ECNL RL B09,EPSC ECNL RL B09,B2009,Twin Cities,ECNL RL Boys,2025-26
+119452,4716,Keliix-Intra SC - ECNL RL B2009,Keliix-Intra SC -,B2009,Twin Cities,ECNL RL Boys,2025-26
+119457,4716,Keliix-Intra SC - ECNL RL B2010,Keliix-Intra SC -,B2010,Twin Cities,ECNL RL Boys,2025-26
+119251,4137,North Suburban ECNL RL B10,North Suburban ECNL RL B10,B2010,Twin Cities,ECNL RL Boys,2025-26
+119074,4812,Fusion Soccer Club ECNL RL B11,Fusion Soccer Club ECNL RL B11,B2011,Twin Cities,ECNL RL Boys,2025-26
+119471,4143,Minneapolis United SC ECNL RL B11,Minneapolis United SC ECNL RL B11,B2011,Twin Cities,ECNL RL Boys,2025-26
+119462,4716,Keliix-Intra SC ECNL RL B2012,Keliix-Intra SC,B2012,Twin Cities,ECNL RL Boys,2025-26
+119250,4137,North Suburban ECNL RL B12,North Suburban ECNL RL B12,B2012,Twin Cities,ECNL RL Boys,2025-26
+119319,4149,EPSC ECNL RL B13,EPSC ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119142,4132,Edina Soccer Club ECNL RL B13,Edina Soccer Club ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119073,4812,Fusion Soccer Club ECNL RL B13,Fusion Soccer Club ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+75588,4716,Keliix-Intra SC ECNL RL B2013,Keliix-Intra SC,B2013,Twin Cities,ECNL RL Boys,2025-26
+119437,4825,Minnesota Rush ECNL RL B13,Minnesota Rush ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119063,4137,North Suburban ECNL RL B13,North Suburban ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119337,4105,Prior Lake SC ECNL RL B13,Prior Lake SC ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119271,4136,Salvo SC ECNL RL B13,Salvo SC ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119446,4506,Shakopee Soccer Association ECNL RL B13,Shakopee Soccer Association ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119127,4827,Wave SC ECNL RL B13,Wave SC ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+119294,3732,Western Wisconsin Soccer ECNL RL B13,Western Wisconsin Soccer ECNL RL B13,B2013,Twin Cities,ECNL RL Boys,2025-26
+82228,525,Arlington Soccer ECNL RL B08/07,Arlington Soccer ECNL RL B08/07,B2008/2007,Virginia,ECNL RL Boys,2025-26
+48213,629,PWSI Courage ECNL RL B08/07,PWSI Courage ECNL RL B08/07,B2008/2007,Virginia,ECNL RL Boys,2025-26
+48076,1288,Great Falls Reston Soccer Club ECNL RL B09,Great Falls Reston Soccer Club ECNL RL B09,B2009,Virginia,ECNL RL Boys,2025-26
+47971,417,Richmond United Blue ECNL RL B09,Richmond United Blue ECNL RL B09,B2009,Virginia,ECNL RL Boys,2025-26
+48229,629,PWSI Courage ECNL RL B10,PWSI Courage ECNL RL B10,B2010,Virginia,ECNL RL Boys,2025-26
+47979,3176,Villarreal VA ECNL RL B10,Villarreal VA ECNL RL B10,B2010,Virginia,ECNL RL Boys,2025-26
+81810,629,PWSI Courage ECNL RL B11,PWSI Courage ECNL RL B11,B2011,Virginia,ECNL RL Boys,2025-26
+59669,417,Richmond United Blue ECNL RL B11,Richmond United Blue ECNL RL B11,B2011,Virginia,ECNL RL Boys,2025-26
+94721,4083,VA Reign FC ECNL RL B12,VA Reign FC ECNL RL B12,B2012,Virginia,ECNL RL Boys,2025-26
+93365,4055,Virginia United ECNL RL B12,Virginia United ECNL RL B12,B2012,Virginia,ECNL RL Boys,2025-26
+115422,525,Arlington Soccer ECNL RL B13,Arlington Soccer ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+113170,357,BRYC Academy ECNL RL B13,BRYC Academy ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+112505,628,Beach FC (VA) ECNL RL B13,Beach FC (VA) ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+112343,4295,DCSC ECNL RL B13,DCSC ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+115813,1288,Great Falls Reston Soccer Club ECNL RL B13,Great Falls Reston Soccer Club ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+112507,611,Herndon ECNL RL B13,Herndon ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+113139,448,LMVSC ECNL RL B13,LMVSC ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+70124,629,PWSI Courage ECNL RL B13,PWSI Courage ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+115039,417,Richmond United Blue ECNL RL B13,Richmond United Blue ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+115048,417,Richmond United Orange ECNL RL B13,Richmond United Orange ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+114626,417,Richmond United Red ECNL RL B13,Richmond United Red ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+114671,1885,SOCA Elite ECNL RL B13,SOCA Elite ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+114081,636,Stafford Revolution ECNL RL B13,Stafford Revolution ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+116972,4083,VA Reign FC ECNL RL B13,VA Reign FC ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+82065,412,VSA ECNL RL B13,VSA ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+112288,528,Vienna Youth Soccer ECNL RL B13,Vienna Youth Soccer ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+114746,3176,Villarreal VA ECNL RL B13,Villarreal VA ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+113518,4055,Virginia United ECNL RL B13,Virginia United ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26
+78014,4013,Virginia Valor FC ECNL RL B13,Virginia Valor FC ECNL RL B13,B2013,Virginia,ECNL RL Boys,2025-26

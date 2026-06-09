@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Scrape ECNL Regional League Boys standings — conference standings only.
-Each conference/age-group call returns all teams in that division; no playoff
-brackets needed, so conference attribution is always exact.
+Scrape Pre-ECNL Boys standings — U11 (B2015) and U12 (B2014) only.
+Same TGS API as ECNL-RL but different org/season IDs.
 
 API: https://api.athleteone.com/api/Script/get-conference-standings/
      {eventId}/{orgId}/{seasonId}/{divisionId}/{standingId}
@@ -15,51 +14,39 @@ from html.parser import HTMLParser
 from collections import defaultdict
 
 HEADERS = {
-    "Referer": "https://theecnl.com/sports/2023/8/8/ECNLRLB_0808230006.aspx",
+    "Referer": "https://theecnl.com/sports/2023/8/8/Pre-ECNLB_0808231942.aspx",
     "Origin": "https://theecnl.com",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "*/*",
 }
 
-ORG_ID    = 16
-SEASON_ID = 72
-STANDING_CONFERENCE = 0  # shows all teams in the conference
+ORG_ID    = 22
+SEASON_ID = 76
+STANDING_CONFERENCE = 0
 
+# NTX and Ohio Valley have both Fall 2025 and Spring 2026 events;
+# both are included and teams are deduplicated by team_id.
 CONFERENCES = {
-    3891: "Carolinas",
-    3892: "Chicago Metro",
-    3893: "Far West",
-    3894: "Florida",
-    3895: "Frontier",
-    3896: "Golden State",
-    3899: "Great Lakes Alliance",
-    3898: "Greater Michigan Alliance",
-    3900: "Gulf Coast",
-    3901: "Heartland",
-    3902: "Mid-America",
-    3903: "Midwest",
-    3904: "Mountain",
-    3905: "New England",
-    3906: "NorCal",
-    3907: "North Atlantic",
-    3908: "Northeast",
-    3910: "Northwest",
-    3909: "NTX",
-    3911: "SoCal",
-    3912: "Southeast",
-    4001: "Southwest",
-    3973: "STXCL",
-    3913: "Texas",
-    3998: "Twin Cities",
-    3915: "Virginia",
+    4011: "Florida",
+    4007: "Frontier",
+    4008: "GMA",
+    4009: "Heartland",
+    3916: "Lake Michigan",
+    4023: "Mountain",
+    3919: "New England",
+    3920: "North Atlantic",
+    3918: "Northeast",
+    4010: "Northern Cal",
+    3921: "NTX",
+    4171: "NTX",
+    3981: "Ohio Valley",
+    4168: "Ohio Valley",
+    3923: "SoCal",
 }
 
 AGE_GROUPS = {
-    18364: "B2013",
-    18363: "B2012",
-    18362: "B2011",
-    18361: "B2010",
-    18360: "B2009",
-    18359: "B2008/2007",
+    19178: "B2015",  # U11
+    19179: "B2014",  # U12
 }
 
 
@@ -102,6 +89,7 @@ def fetch_standings(event_id, division_id):
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
         if r.status_code != 200:
+            print(f"  HTTP {r.status_code} for event={event_id} div={division_id}")
             return []
         p = StandingsParser()
         p.feed(r.text)
@@ -115,9 +103,13 @@ def fetch_standings(event_id, division_id):
 def clean_club_name(team_name, age_group):
     """Strip age group suffix to approximate club name."""
     for ag in AGE_GROUPS.values():
-        suffix = f" ECNL RL {ag}"
+        suffix = f" Pre-ECNL {ag}"
         if team_name.endswith(suffix):
             return team_name[: -len(suffix)].strip()
+        # Also try plain birth year
+        suffix2 = f" {ag}"
+        if team_name.endswith(suffix2):
+            return team_name[: -len(suffix2)].strip()
     return team_name
 
 
@@ -141,19 +133,18 @@ def main():
                         "club_name":  clean_club_name(t["team_name"], age_group),
                         "age_group":  age_group,
                         "conference": conf_name,
-                        "league":     "ECNL RL Boys",
+                        "league":     "Pre-ECNL Boys",
                         "season":     "2025-26",
                     })
 
             done += 1
-            if done % 26 == 0:
-                print(f"  {done}/{total} calls done, {len(all_teams)} unique teams so far")
+            print(f"  {done}/{total} — {conf_name} {age_group}: {len(teams)} teams")
             time.sleep(0.15)
 
     print(f"\nTotal unique teams: {len(all_teams)}")
 
     # ── Write teams CSV ───────────────────────────────────────────
-    teams_path = "/Users/Eric/Documents/Claude/soccer/data/ecnl_rl_teams.csv"
+    teams_path = "/Users/Eric/Documents/Claude/soccer/data/pre_ecnl_teams.csv"
     with open(teams_path, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=[
             "team_id", "club_id", "team_name", "club_name",
@@ -172,7 +163,7 @@ def main():
                 "club_id":    cid,
                 "club_name":  t["club_name"],
                 "conference": t["conference"],
-                "league":     "ECNL RL Boys",
+                "league":     "Pre-ECNL Boys",
                 "season":     "2025-26",
                 "age_groups": set(),
             }
@@ -184,7 +175,7 @@ def main():
         row["age_groups"] = " | ".join(sorted(row["age_groups"]))
         clubs_list.append(row)
 
-    clubs_path = "/Users/Eric/Documents/Claude/soccer/data/ecnl_rl_clubs.csv"
+    clubs_path = "/Users/Eric/Documents/Claude/soccer/data/pre_ecnl_clubs.csv"
     with open(clubs_path, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=[
             "club_id", "club_name", "conference", "age_groups", "league", "season"
