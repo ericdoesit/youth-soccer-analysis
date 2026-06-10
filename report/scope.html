@@ -7,52 +7,124 @@
   <link rel="stylesheet" href="site.css">
   <style>
     /* ── Pyramid ─────────────────────────────────────────────── */
-    #pyramid-placeholder {
+    .pyramid {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2px;
-      margin: 1.75rem auto;
-      max-width: 640px;
+      gap: 3px;
+      margin: 2rem auto;
+      width: 100%;
+      max-width: 900px;
     }
 
     .pyr-band {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.65rem 1rem;
-      font-family: 'Inter', sans-serif;
       box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 120px;
+      padding: 14px 18px 12px;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      transition: opacity 0.15s;
     }
+    .pyr-band:hover { opacity: 0.92; }
 
-    .pyr-band .pyr-level {
-      font-size: 0.62rem;
+    /* top-left: level number */
+    .pyr-lnum {
+      grid-column: 1; grid-row: 1;
+      font-size: 0.6rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      opacity: 0.7;
-      white-space: nowrap;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      align-self: start;
     }
 
-    .pyr-band .pyr-name {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--text-strong);
-    }
-
-    .pyr-band .pyr-leagues {
+    /* top-right: league names */
+    .pyr-leagues {
+      grid-column: 2; grid-row: 1;
       font-size: 0.68rem;
       color: var(--muted);
       text-align: right;
+      align-self: start;
+      line-height: 1.5;
     }
 
-    .pyr-note {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.68rem;
-      color: var(--muted);
-      text-align: center;
-      font-style: italic;
-      margin-top: 0.25rem;
+    /* center: logo grid */
+    .pyr-logos {
+      grid-column: 1 / -1; grid-row: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 0;
+    }
+
+    .pyr-logo-slot {
+      width: 48px;
+      height: 32px;
+      border-radius: 3px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.5rem;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .pyr-logo-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    /* bottom-left: level name */
+    .pyr-name {
+      grid-column: 1; grid-row: 3;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-strong);
+      align-self: end;
+      letter-spacing: -0.01em;
+    }
+
+    /* band color themes */
+    .pyr-band.pyr-l0 {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .pyr-band.pyr-l5 {
+      background: rgba(100,185,110,0.09);
+      border: 1px solid rgba(100,185,110,0.2);
+    }
+    .pyr-band.pyr-l4 {
+      background: rgba(80,190,180,0.09);
+      border: 1px solid rgba(80,190,180,0.2);
+    }
+    .pyr-band.pyr-l3 {
+      background: rgba(90,145,217,0.1);
+      border: 1px solid rgba(90,145,217,0.25);
+    }
+    .pyr-band.pyr-l2 {
+      background: rgba(130,110,220,0.1);
+      border: 1px solid rgba(130,110,220,0.25);
+    }
+    .pyr-band.pyr-l1 {
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.35);
+    }
+    .pyr-band.pyr-l1 .pyr-name,
+    .pyr-band.pyr-l1 .pyr-lnum { color: var(--gold); }
+    .pyr-band.pyr-l1 .pyr-leagues { color: rgba(201,168,76,0.6); }
+    .pyr-band.pyr-l1 .pyr-logo-slot {
+      background: rgba(201,168,76,0.08);
+      border-color: rgba(201,168,76,0.15);
     }
 
     /* ── Scope table ─────────────────────────────────────────── */
@@ -226,34 +298,88 @@
     <h2>The Boys Soccer Pyramid</h2>
     <p>Youth soccer in the United States is structured as a pyramid. The base is wide — millions of recreational players. Each level above narrows. By the time you reach pro academies, fewer than 8,000 players nationally have a spot.</p>
 
-    <div id="pyramid-placeholder">
-      <div class="pyr-band" style="width:22%; background:var(--ch-gold-fill); border:1px solid rgba(201,168,76,.4);">
-        <span class="pyr-level" style="color:var(--gold);">Level 4</span>
-        <span class="pyr-name" style="color:var(--gold);">Pro Academy</span>
+    <div class="pyramid">
+
+      <!-- Level 1 — Pro Pipeline, narrowest at top -->
+      <div class="pyr-band pyr-l1" style="width:30%;">
+        <span class="pyr-lnum">Level 1</span>
+        <span class="pyr-leagues">MLS NEXT HD · MLS Pro Academies</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot">MLS HD</div>
+          <div class="pyr-logo-slot">MLS Pro</div>
+        </div>
+        <span class="pyr-name">Pro Pipeline</span>
       </div>
-      <div class="pyr-band" style="width:44%; background:rgba(90,145,217,.08); border:1px solid rgba(90,145,217,.3);">
-        <span class="pyr-level" style="color:var(--blue);">Level 3</span>
-        <span class="pyr-name">Elite / National</span>
-        <span class="pyr-leagues">MLS NEXT · ECNL · EA</span>
+
+      <!-- Level 2 — National Elite -->
+      <div class="pyr-band pyr-l2" style="width:44%;">
+        <span class="pyr-lnum">Level 2</span>
+        <span class="pyr-leagues">ECNL Boys · USL Academy</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot">ECNL</div>
+          <div class="pyr-logo-slot">USL A</div>
+        </div>
+        <span class="pyr-name">National Elite</span>
       </div>
-      <div class="pyr-band" style="width:66%; background:var(--ch-dim); border:1px solid var(--ch-dim-bd);">
-        <span class="pyr-level">Level 2</span>
-        <span class="pyr-name">Competitive Travel</span>
-        <span class="pyr-leagues">SoCal League · CSL · USL Youth</span>
+
+      <!-- Level 3 — National Competitive -->
+      <div class="pyr-band pyr-l3" style="width:58%;">
+        <span class="pyr-lnum">Level 3</span>
+        <span class="pyr-leagues">MLS NEXT AD · ECNL-RL · Elite Academy · NAL</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot">MLS AD</div>
+          <div class="pyr-logo-slot">ECNL RL</div>
+          <div class="pyr-logo-slot">EA</div>
+          <div class="pyr-logo-slot">NAL</div>
+        </div>
+        <span class="pyr-name">National Competitive</span>
       </div>
-      <div class="pyr-band" style="width:88%; background:var(--surface); border:1px solid var(--border);">
-        <span class="pyr-level">Level 1</span>
+
+      <!-- Level 4 — Regional / National Bridge -->
+      <div class="pyr-band pyr-l4" style="width:72%;">
+        <span class="pyr-lnum">Level 4</span>
+        <span class="pyr-leagues">USYS Elite 64 · The National League · Pre-ECNL</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot">E64</div>
+          <div class="pyr-logo-slot">TNL</div>
+          <div class="pyr-logo-slot">Pre-E</div>
+        </div>
+        <span class="pyr-name">Regional / National Bridge</span>
+      </div>
+
+      <!-- Level 5 — Regional Travel -->
+      <div class="pyr-band pyr-l5" style="width:86%;">
+        <span class="pyr-lnum">Level 5</span>
+        <span class="pyr-leagues">SoCal League · Coast Soccer · N1 League · USL Youth · EDP</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot">SoCal</div>
+          <div class="pyr-logo-slot">Coast</div>
+          <div class="pyr-logo-slot">N1</div>
+          <div class="pyr-logo-slot">USL Y</div>
+          <div class="pyr-logo-slot">EDP</div>
+        </div>
+        <span class="pyr-name">Regional Travel</span>
+      </div>
+
+      <!-- Foundation — widest at bottom -->
+      <div class="pyr-band pyr-l0" style="width:100%;">
+        <span class="pyr-lnum">Foundation</span>
+        <span class="pyr-leagues">AYSO · City &amp; County Parks · USYS Recreational</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot">AYSO</div>
+          <div class="pyr-logo-slot">Parks</div>
+          <div class="pyr-logo-slot">USYS</div>
+        </div>
         <span class="pyr-name">Recreational</span>
-        <span class="pyr-leagues">AYSO · City &amp; County Parks</span>
       </div>
+
     </div>
-    <p class="pyr-note">Placeholder graphic — final version in progress</p>
   </section>
 
   <!-- Scope Table -->
   <section class="card-section">
     <h2>Boys League Landscape</h2>
-    <p>All competitive leagues by level, with confirmed club and team counts where available. SoCal-specific leagues are noted. Data from <code>data/processed/programs.csv</code>, USL Youth direct contact, and <a href="https://socalpitch.com" style="color:var(--blue);">SoCal Pitch</a>.</p>
+    <p>All competitive leagues by level, with confirmed club and team counts where available. SoCal-specific leagues are noted. Data from <code>data/leagues.csv</code>, USL Youth direct contact, and <a href="https://socalpitch.com" style="color:var(--blue);">SoCal Pitch</a>.</p>
 
     <div style="overflow-x:auto;">
       <table class="scope-table">
@@ -413,16 +539,16 @@
             <td class="muted">Local</td>
             <td class="right muted">—</td>
             <td class="right muted">—</td>
-            <td class="right blue">3,000,000+</td>
-            <td class="muted">US Youth Soccer affiliation; broadest base</td>
+            <td class="right blue">~1,000,000+</td>
+            <td class="muted">Rough national estimate; not centrally tracked. LA City Parks example: 272 programs, 102 facilities, ~27,000 spots/summer at $10/player</td>
           </tr>
 
           <tr class="summary-row">
             <td colspan="2"><strong>Recreational Total</strong></td>
             <td class="right">~10,300</td>
             <td class="right">~100,000</td>
-            <td class="right">3.6M+</td>
-            <td class="muted">AYSO + city/parks estimate</td>
+            <td class="right">~1.6M+</td>
+            <td class="muted">AYSO 600K + parks/rec ~1M est.; parks not centrally tracked</td>
           </tr>
           <tr class="summary-row">
             <td colspan="2"><strong>Competitive Total (Levels 1–5)</strong></td>
@@ -457,21 +583,67 @@
             <th class="right">Annual Club Fee</th>
             <th class="right">All-In Low</th>
             <th class="right">All-In High</th>
-            <th>Source</th>
+            <th>Notes</th>
           </tr>
         </thead>
         <tbody>
 
-          <tr class="level-header"><td colspan="5">Level 1 — Recreational</td></tr>
+          <tr class="level-header"><td colspan="5">Level 1 — Pro Pipeline</td></tr>
           <tr>
-            <td>AYSO / City Parks Rec</td>
-            <td class="right"><span class="cost-low">$150</span><span class="cost-sep"> – </span><span class="cost-high">$600</span></td>
-            <td class="right blue">$400</td>
-            <td class="right">$1,000</td>
-            <td class="muted">AYSO official / Aspen Institute</td>
+            <td><strong>MLS NEXT — Homegrown Division</strong></td>
+            <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,300</span></td>
+            <td class="right">~$10,000</td>
+            <td class="right gold">~$25,000+</td>
+            <td class="muted">Club registration ~$3,500–$4,850 + separate MLS Next competition fee ~$1,700 + uniform $400–$1,100. Travel is the largest variable — ranges from $3k (local) to $15k+ depending on location. Community-reported 2025–2026.</td>
+          </tr>
+          <tr>
+            <td>MLS Pro Academies</td>
+            <td class="right free">$0</td>
+            <td class="right free">$400</td>
+            <td class="right free">$400</td>
+            <td class="muted">Gear only; fully funded by MLS</td>
           </tr>
 
-          <tr class="level-header"><td colspan="5">Level 2 — Competitive Travel</td></tr>
+          <tr class="level-header"><td colspan="5">Level 2 — National Elite</td></tr>
+          <tr>
+            <td>ECNL Boys</td>
+            <td class="right"><span class="cost-low">$2,200</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
+            <td class="right">$6,400</td>
+            <td class="right">$13,200</td>
+            <td class="muted">ECNL / TopDrawerSoccer 2024</td>
+          </tr>
+          <tr>
+            <td>USL Academy</td>
+            <td class="right"><span class="cost-low">$1,500</span><span class="cost-sep"> – </span><span class="cost-high">$3,000</span></td>
+            <td class="right">~$3,000</td>
+            <td class="right">~$7,000</td>
+            <td class="muted">Estimated; varies by club</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="5">Level 3 — National Competitive</td></tr>
+          <tr>
+            <td>MLS NEXT — Academy Division</td>
+            <td class="right"><span class="cost-low">$2,800</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
+            <td class="right">$8,450</td>
+            <td class="right">$18,250</td>
+            <td class="muted">MLS NEXT / Soccer America 2024</td>
+          </tr>
+          <tr>
+            <td>ECNL Regional League (ECNL-RL)</td>
+            <td class="right"><span class="cost-low">$2,000</span><span class="cost-sep"> – </span><span class="cost-high">$3,500</span></td>
+            <td class="right">$3,500</td>
+            <td class="right">$7,000</td>
+            <td class="muted">Estimated; similar to Flight 1 / N1L range</td>
+          </tr>
+          <tr>
+            <td>EA / NAL</td>
+            <td class="right"><span class="cost-low">~$2,500</span><span class="cost-sep"> – </span><span class="cost-high">~$4,000</span></td>
+            <td class="right">~$6,000</td>
+            <td class="right">~$12,000</td>
+            <td class="muted">Estimated from leagues.csv</td>
+          </tr>
+
+          <tr class="level-header"><td colspan="5">Level 5 — Regional Travel</td></tr>
           <tr>
             <td>Pre-ECNL Boys (U11–U12)</td>
             <td class="right"><span class="cost-low">$3,800</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
@@ -480,24 +652,10 @@
             <td class="muted">Breakers / One Ivy confirmed; 9v9, boys only</td>
           </tr>
           <tr>
-            <td>SoCal Soccer League — Flight 4 / Discovery</td>
-            <td class="right"><span class="cost-low">$2,000</span><span class="cost-sep"> – </span><span class="cost-high">$3,500</span></td>
-            <td class="right">$2,500</td>
+            <td><strong>SoCal Soccer League — N1L</strong></td>
+            <td class="right"><span class="cost-low">$4,000</span><span class="cost-sep"> – </span><span class="cost-high">$6,000+</span></td>
             <td class="right">$5,000</td>
-            <td class="muted">SoCal Pitch 2025</td>
-          </tr>
-          <tr>
-            <td>SoCal Soccer League — Flight 3</td>
-            <td class="right"><span class="cost-low">$2,500</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
-            <td class="right">$3,500</td>
-            <td class="right">$6,000</td>
-            <td class="muted">SoCal Pitch 2025</td>
-          </tr>
-          <tr>
-            <td>SoCal Soccer League — Flight 2</td>
-            <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
-            <td class="right">$4,000</td>
-            <td class="right">$7,000</td>
+            <td class="right gold">$9,000+</td>
             <td class="muted">SoCal Pitch 2025</td>
           </tr>
           <tr>
@@ -508,10 +666,24 @@
             <td class="muted">SoCal Pitch 2025</td>
           </tr>
           <tr>
-            <td><strong>SoCal Soccer League — N1L</strong></td>
-            <td class="right"><span class="cost-low">$4,000</span><span class="cost-sep"> – </span><span class="cost-high">$6,000+</span></td>
+            <td>SoCal Soccer League — Flight 2</td>
+            <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
+            <td class="right">$4,000</td>
+            <td class="right">$7,000</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td>SoCal Soccer League — Flight 3</td>
+            <td class="right"><span class="cost-low">$2,500</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
+            <td class="right">$3,500</td>
+            <td class="right">$6,000</td>
+            <td class="muted">SoCal Pitch 2025</td>
+          </tr>
+          <tr>
+            <td>SoCal Soccer League — Flight 4 / Discovery</td>
+            <td class="right"><span class="cost-low">$2,000</span><span class="cost-sep"> – </span><span class="cost-high">$3,500</span></td>
+            <td class="right">$2,500</td>
             <td class="right">$5,000</td>
-            <td class="right gold">$9,000+</td>
             <td class="muted">SoCal Pitch 2025</td>
           </tr>
           <tr>
@@ -528,58 +700,21 @@
             <td class="right">$2,150</td>
             <td class="muted">USL Youth / Gemini research</td>
           </tr>
-          <tr>
-            <td>ECNL Regional League (ECNL-RL)</td>
-            <td class="right"><span class="cost-low">$2,000</span><span class="cost-sep"> – </span><span class="cost-high">$3,500</span></td>
-            <td class="right">$3,500</td>
-            <td class="right">$7,000</td>
-            <td class="muted">Estimated; similar to Flight 1 / N1L range</td>
-          </tr>
 
-          <tr class="level-header"><td colspan="5">Level 3 — Elite / National</td></tr>
+          <tr class="level-header"><td colspan="5">Foundation — Recreational</td></tr>
           <tr>
-            <td>ECNL Boys</td>
-            <td class="right"><span class="cost-low">$2,200</span><span class="cost-sep"> – </span><span class="cost-high">$4,000</span></td>
-            <td class="right">$6,400</td>
-            <td class="right">$13,200</td>
-            <td class="muted">ECNL / TopDrawerSoccer 2024</td>
+            <td>AYSO Recreational</td>
+            <td class="right"><span class="cost-low">$150</span><span class="cost-sep"> – </span><span class="cost-high">$600</span></td>
+            <td class="right blue">$400</td>
+            <td class="right">$1,000</td>
+            <td class="muted">AYSO official / Aspen Institute</td>
           </tr>
           <tr>
-            <td>MLS NEXT — Academy Division</td>
-            <td class="right"><span class="cost-low">$2,800</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
-            <td class="right">$8,450</td>
-            <td class="right">$18,250</td>
-            <td class="muted">MLS NEXT / Soccer America 2024</td>
-          </tr>
-          <tr>
-            <td>EA / NAL</td>
-            <td class="right"><span class="cost-low">~$2,500</span><span class="cost-sep"> – </span><span class="cost-high">~$4,000</span></td>
-            <td class="right">~$6,000</td>
-            <td class="right">~$12,000</td>
-            <td class="muted">Estimated from programs.csv</td>
-          </tr>
-          <tr>
-            <td><strong>MLS NEXT — Homegrown Division</strong></td>
-            <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,000</span></td>
-            <td class="right">~$10,000</td>
-            <td class="right gold">~$20,000+</td>
-            <td class="muted">MLS NEXT / Soccer America 2024</td>
-          </tr>
-
-          <tr class="level-header"><td colspan="5">Level 4 — Pro Academy</td></tr>
-          <tr>
-            <td>USL Academy</td>
-            <td class="right"><span class="cost-low">$1,500</span><span class="cost-sep"> – </span><span class="cost-high">$3,000</span></td>
-            <td class="right">~$3,000</td>
-            <td class="right">~$7,000</td>
-            <td class="muted">Estimated; varies by club</td>
-          </tr>
-          <tr>
-            <td>MLS Pro Academies</td>
-            <td class="right free">$0</td>
-            <td class="right free">$400</td>
-            <td class="right free">$400</td>
-            <td class="muted">Gear only; fully funded by MLS</td>
+            <td>City / County Parks (e.g. PlayLA)</td>
+            <td class="right"><span class="cost-low">$0</span><span class="cost-sep"> – </span><span class="cost-high">$10</span></td>
+            <td class="right blue">$10</td>
+            <td class="right">$10</td>
+            <td class="muted">LA Parks: $10/player ages 3–15; 272 programs at 102 facilities</td>
           </tr>
 
         </tbody>

@@ -3,7 +3,7 @@
 Build a master clubs index combining all collected league data.
 Adds a 'tier' classification to each club based on league.
 
-Output: data/master_clubs_index.csv
+Output: data/clubs_raw.csv
 
 Tier definitions (per the plan):
   T1  Recreational       AYSO Rec, USYS Rec              ~$550/yr
@@ -19,7 +19,7 @@ import csv, os, re
 from collections import Counter
 
 DATA_DIR = "data"
-OUT_CSV = os.path.join(DATA_DIR, "master_clubs_index.csv")
+OUT_CSV = os.path.join(DATA_DIR, "clubs_raw.csv")
 
 FIELDS = [
     "club_name", "city", "state", "league", "tier", "tier_label",

@@ -1,0 +1,74 @@
+club,player,position,dp
+Atlanta United,Miguel Almirón,M,True
+Atlanta United,Emmanuel Latte Lath,F,True
+Atlanta United,Alexey Miranchuk,M,True
+Austin FC,Facundo Torres,F,True
+Austin FC,Myrto Uzuni,F,True
+Austin FC,Brandon Vazquez,F,True
+Charlotte FC,Liel Abada,F,True
+Charlotte FC,Pep Biel,M,True
+Charlotte FC,Wilfried Zaha,F,True
+Chicago Fire FC,Jonathan Bamba,F,True
+Chicago Fire FC,Hugo Cuypers,F,True
+FC Cincinnati,Kevin Denkey,F,True
+FC Cincinnati,Evander,M,True
+FC Cincinnati,Miles Robinson,D,True
+Colorado Rapids,Paxten Aaronson,M,True
+Colorado Rapids,Rafael Navarro,F,True
+Columbus Crew,Wessam Abou Ali,F,True
+Columbus Crew,Daniel Gazdag,M,True
+Columbus Crew,Diego Rossi,F,True
+FC Dallas,Santiago Moreno,F,True
+FC Dallas,Petar Musa,F,True
+DC United,Tai Baribo,F,True
+DC United,Louis Munteanu,F,True
+Houston Dynamo FC,Mateusz Bogusz,M,True
+Houston Dynamo FC,Guilherme,F,True
+Houston Dynamo FC,Ezequiel Ponce,F,True
+Sporting Kansas City,Manu Garcia,M,True
+Sporting Kansas City,Dejan Joveljic,F,True
+LA Galaxy,Joao Klauss,F,True
+LA Galaxy,Joseph Paintsil,F,True
+LA Galaxy,Gabriel Pec,F,True
+LA Galaxy,Riqui Puig,M,True
+LAFC,Denis Bouanga,F,True
+LAFC,Son Heung-Min,F,True
+Inter Miami,German Berterame,F,True
+Inter Miami,Rodrigo De Paul,M,True
+Inter Miami,Lionel Messi,F,True
+Minnesota United FC,Joaquin Pereyra,M,True
+Minnesota United FC,Kelvin Yeboah,F,True
+CF Montreal,Ivan Jaime,M,True
+Nashville SC,Cristian Espinoza,F,True
+Nashville SC,Hany Mukhtar,M,True
+Nashville SC,Sam Surridge,F,True
+New England Revolution,Carles Gil,M,True
+New England Revolution,Matt Turner,GK,True
+New York City FC,Nicolas Fernandez Mercau,M,True
+New York City FC,Talles Magno,F,True
+New York City FC,Thiago Martins,D,True
+New York Red Bulls,Eric Maxim Choupo-Moting,F,True
+New York Red Bulls,Emil Forsberg,M,True
+New York Red Bulls,Jorge Ruvalcaba,F,True
+Orlando City SC,Braian Ojeda,M,True
+Orlando City SC,Martin Ojeda,F,True
+Orlando City SC,Marco Pasalic,F,True
+Philadelphia Union,Bruno Damiani,F,True
+Portland Timbers,David Da Costa,F,True
+Portland Timbers,Christoffer Velde,F,True
+Real Salt Lake,Justen Glad,D,True
+Real Salt Lake,Morgan Guilavogui,F,True
+San Diego FC,Anders Dreyer,F,True
+San Diego FC,Hirving Lozano,F,True
+San Jose Earthquakes,Hernan Lopez,M,True
+San Jose Earthquakes,Timo Werner,F,True
+Seattle Sounders FC,Pedro de la Vega,F,True
+Seattle Sounders FC,Jordan Morris,F,True
+Seattle Sounders FC,Albert Rusnak,M,True
+St. Louis City SC,Roman Burki,GK,True
+St. Louis City SC,Sergio Cordova,F,True
+St. Louis City SC,Marcel Hartel,M,True
+Toronto FC,Djordje Mihailovic,M,True
+Toronto FC,Josh Sargent,F,True
+Vancouver Whitecaps FC,Ryan Gauld,M,True
+Vancouver Whitecaps FC,Thomas Muller,M,True

@@ -4,7 +4,7 @@ When raw NCAA scholarship data is downloaded to data/raw/scholarships/,
 this script normalizes it into the scholarship_outcomes.csv schema.
 
 Expected raw input format: NCAA sport sponsorship report (CSV or Excel)
-Output: rows appended to data/processed/scholarship_outcomes.csv
+Output: rows appended to data/scholarship_outcomes.csv
 """
 import pandas as pd
 from pathlib import Path

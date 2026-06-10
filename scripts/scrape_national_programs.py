@@ -3,9 +3,9 @@
 Phase 2 national scraper: reads national_clubs.csv (from scrape_national_clubs.py),
 visits each club website, extracts program pages and fee data.
 
-Resumable — skips clubs already in national_programs.csv.
+Resumable — skips clubs already in ussoccerparent_programs_scrape.csv.
 
-Output: data/national_programs.csv  — state, club, website, program_name, program_url, program_type
+Output: data/ussoccerparent_programs_scrape.csv  — state, club, website, program_name, program_url, program_type
         data/national_fees.csv      — state, club, program_name, age_group, fee, fee_url
 """
 
@@ -19,7 +19,7 @@ from urllib.parse import urljoin, urlparse
 
 DATA_DIR = "data"
 CLUBS_IN   = os.path.join(DATA_DIR, "national_clubs.csv")
-PROGRAMS_CSV = os.path.join(DATA_DIR, "national_programs.csv")
+PROGRAMS_CSV = os.path.join(DATA_DIR, "ussoccerparent_programs_scrape.csv")
 FEES_CSV     = os.path.join(DATA_DIR, "national_fees.csv")
 
 HEADERS = {

@@ -15,7 +15,7 @@ data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed')
 # Load datasets
 try:
     costs = pd.read_csv(os.path.join(data_dir, 'costs.csv'))
-    programs = pd.read_csv(os.path.join(data_dir, 'programs.csv'))
+    programs = pd.read_csv(os.path.join(data_dir, 'leagues.csv'))
     scholarships = pd.read_csv(os.path.join(data_dir, 'scholarship_outcomes.csv'))
     mls_salaries = pd.read_csv(os.path.join(data_dir, 'mls_player_salaries_2026.csv'))
     research = pd.read_csv(os.path.join(data_dir, 'research_statistics.csv'))

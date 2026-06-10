@@ -11,7 +11,7 @@ What this script tries:
 Notes:
 - The script intentionally stays within ordinary public fetch paths.
 - If a site returns 403 or blocks requests, the script falls back gracefully.
-- Output: data/processed/usl_teams.csv with columns:
+- Output: data/usl_teams.csv with columns:
   league, team_name, city, state, website_url
 """
 
@@ -45,8 +45,8 @@ except Exception:  # pragma: no cover
 
 
 ROOT = Path("/Users/Eric/Documents/Claude/soccer")
-DATA_DIR = ROOT / "data" / "processed"
-OUT_CSV = DATA_DIR / "usl_teams.csv"
+DATA_DIR = ROOT / "data"
+OUT_CSV = ROOT / "data" / "usl_teams.csv"
 
 TARGETS = [
     {

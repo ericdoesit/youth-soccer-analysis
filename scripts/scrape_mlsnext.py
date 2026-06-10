@@ -12,7 +12,7 @@ Phase 2: For each club, fetch their academy/programs page and extract:
 
 Outputs:
   data/mlsnext_clubs.csv     — club, state, league_tier, website
-  data/mlsnext_programs.csv  — club, state, program_name, program_url, program_type
+  data/mlsnext_club_programs_scrape.csv  — club, state, program_name, program_url, program_type
   data/mlsnext_fees.csv      — club, program_name, age_group, fee, fee_url
 """
 
@@ -26,7 +26,7 @@ from urllib.parse import urljoin, urlparse
 
 DATA_DIR = "data"
 CLUBS_CSV = os.path.join(DATA_DIR, "mlsnext_clubs.csv")
-PROGRAMS_CSV = os.path.join(DATA_DIR, "mlsnext_programs.csv")
+PROGRAMS_CSV = os.path.join(DATA_DIR, "mlsnext_club_programs_scrape.csv")
 FEES_CSV = os.path.join(DATA_DIR, "mlsnext_fees.csv")
 
 HEADERS = {

@@ -1,0 +1,698 @@
+year,overall_pick,round,team_drafted,player_name,college
+2010,1,R1,Philadelphia Union,Danny Mwanga,Oregon State
+2010,2,R1,Red Bull New York,Tony Tchani,Virginia
+2010,3,R1,San Jose Earthquakes,Ike Opara,Wake Forest
+2010,4,R1,Sporting Kansas City,Teal Bunbury,Akron
+2010,5,R1,FC Dallas,Zach Loyd,North Carolina
+2010,6,R1,Philadelphia Union,Amobi Okugo,UCLA
+2010,7,R1,Philadelphia Union,Jack McInerney,
+2010,8,R1,Columbus Crew,Dilly Duka,Rutgers
+2010,9,R1,New England Revolution,Zack Schilawski,Wake Forest
+2010,10,R1,Chivas USA,Blair Gavin,Akron
+2010,11,R1,Seattle Sounders,David Estrada,UCLA
+2010,12,R1,Columbus Crew,Bright Dike,Notre Dame
+2010,13,R1,Chicago Fire,Corben Bone,Wake Forest
+2010,14,R1,Red Bull New York,Austin da Luz,Wake Forest
+2010,15,R1,Real Salt Lake,Collen Warner,Portland
+2010,16,R1,LA Galaxy,Michael Stephens,UCLA
+2010,17,R2,Philadelphia Union,Toni Ståhl,Connecticut
+2010,18,R2,Red Bull New York,Tim Ream,Saint Louis
+2010,19,R2,San Jose Earthquakes,Michael Thomas,Notre Dame
+2010,20,R2,Sporting Kansas City,Korede Aiyegbusi,NC State
+2010,21,R2,FC Dallas,Andrew Wiedeman,California
+2010,22,R2,Colorado Rapids,Andre Akpan,Harvard
+2010,23,R2,Colorado Rapids,Ross LaBauex,Virginia
+2010,24,R2,Toronto FC,Zachary Herold,
+2010,25,R2,New England Revolution,eth Sinovic,Creighton
+2010,26,R2,Chicago Fire,Kwame Watson-Siriboe,Connecticut
+2010,27,R2,Seattle Sounders,Mike Seamon,Villanova
+2010,28,R2,San Jose Earthquakes,Justin Morrow,Notre Dame
+2010,29,R2,Chicago Fire,Drew Yates,Maryland
+2010,30,R2,San Jose Earthquakes,Steven Beitashour,San Diego State
+2010,31,R2,New England Revolution,Zak Boggs,South Florida
+2010,32,R2,Real Salt Lake,Justin Davis,New Mexico
+2010,33,R3,Philadelphia Union,Kyle Nakazawa,UCLA
+2010,34,R3,Red Bull New York,Conor Chinn,San Francisco
+2010,35,R3,Chivas USA,Kevin Tangney,Maryland
+2010,36,R3,Sporting Kansas City,Nick Cardenas,San Diego State
+2010,37,R3,San Jose Earthquakes,Andrew Hoxie,William & Mary
+2010,38,R3,FC Dallas,Jason Yeisley,Penn State
+2010,39,R3,Real Salt Lake,Chris Schuler,Creighton
+2010,40,R3,Colorado Rapids,Chad Borak,Cal State Northridge
+2010,41,R3,Sporting Kansas City,Mauro Fuzetti,Michigan
+2010,42,R3,Chivas USA,Isaac Kissi,Dayton
+2010,43,R3,Houston Dynamo,David Walker,UC Santa Barbara
+2010,44,R3,FC Dallas,Eric Alexander,Indiana
+2010,45,R3,Chicago Fire,Steven Kinney,Elon
+2010,46,R3,Houston Dynamo,Samuel Appiah,Boston University
+2010,47,R3,Chivas USA,Ben Zemanski,Akron
+2010,48,R3,New England Revolution,Jason Griffiths,Kentucky
+2010,49,R4,Philadelphia Union,Brian Perk,UCLA
+2010,50,R4,Red Bull New York,Irving Garcia,UC Irvine
+2010,51,R4,Chicago Fire,Sean Johnson,Central Florida
+2010,52,R4,Sporting Kansas City,Ofori Sarkodie,Indiana
+2010,53,R4,Toronto FC,Joseph Nane,Old Dominion
+2010,54,R4,FC Dallas,Dane Saintus,
+2010,55,R4,D.C. United,Jordan Graye,North Carolina
+2010,56,R4,Colorado Rapids,Chris Cutshaw,Bradley
+2010,57,R4,New England Revolution,Adam Welch,Lehigh
+2010,58,R4,Chivas USA,Chris Ross,Colgate
+2010,59,R4,Seattle Sounders,Jamel Wallace,San Diego State
+2010,60,R4,Columbus Crew,Kwaku Nyamekye,Harvard
+2010,61,R4,Columbus Crew,Othaniel Yanez,Louisville
+2010,62,R4,Houston Dynamo,Euan Holden,New Mexico
+2010,63,R4,Columbus Crew,Shaun Francis,Lindsey Wilson
+2010,64,R4,Real Salt Lake,Kris Banghart,Denver
+2011,1,R1,Vancouver Whitecaps FC,Omar Salgado,
+2011,2,R1,Portland Timbers,Darlington Nagbe,Akron
+2011,3,R1,D.C. United,Perry Kitchen,Akron
+2011,4,R1,Chivas USA,Zarek Valentin,Akron
+2011,5,R1,Philadelphia Union,Zac MacMath,Maryland
+2011,6,R1,New England Revolution,A.J. Soares,California
+2011,7,R1,Houston Dynamo,Kofi Sarkodie,Akron
+2011,8,R1,Vancouver Whitecaps FC,Michael Nanchoff,Akron
+2011,9,R1,Chicago Fire,Jalil Anibaba,North Carolina
+2011,10,R1,Sporting Kansas City,C.J. Sapong,James Madison
+2011,11,R1,Houston Dynamo,Will Bruin,Indiana
+2011,12,R1,Columbus Crew,Rich Balchan,Indiana
+2011,13,R1,Red Bull New York,Corey Hertzog,Penn State
+2011,14,R1,Chivas USA,Víctor Estupiñán,
+2011,15,R1,Columbus Crew,Justin Meram,Michigan
+2011,16,R1,LA Galaxy,Paolo Cardozo,
+2011,17,R1,FC Dallas,Bobby Warshaw,Stanford
+2011,18,R1,Colorado Rapids,Eddie Ababio,North Carolina
+2011,19,R2,Vancouver Whitecaps FC,Jeb Brovsky,Notre Dame
+2011,20,R2,Seattle Sounders,Michael Tetteh,UC Santa Barbara
+2011,21,R2,Seattle Sounders,Leone Cruz,
+2011,22,R2,Portland Timbers,Chris Taylor,Tulsa
+2011,23,R2,Philadelphia Union,Michael Farfan,North Carolina
+2011,24,R2,New England Revolution,Stephen McCarthy,North Carolina
+2011,25,R2,Red Bull New York,Johnoney,
+2011,26,R2,Toronto FC,Demitrius Omphroy,California
+2011,27,R2,Seattle Sounders,Servando Carrasco,California
+2011,28,R2,Columbus Crew,Cole Grossman,Duke
+2011,29,R2,Seattle Sounders,Bryan Meredith,Monmouth
+2011,30,R2,Red Bull New York,Tyler Lassiter,NC State
+2011,31,R2,D.C. United,Chris Korb,Akron
+2011,32,R2,Sporting Kansas City,J. T. Murray,Louisville
+2011,33,R2,San Jose Earthquakes,Anthony Ampaipitakwong,Akron
+2011,34,R2,LA Galaxy,Hector Jiménez,California
+2011,35,R2,FC Dallas,Charlie Campbell,Louisville
+2011,36,R2,Colorado Rapids,Colin Givens,Michigan State
+2011,37,R3,Vancouver Whitecaps FC,Bilal Duckett,Notre Dame
+2011,38,R3,Red Bull New York,Billy Crtes,Maryland
+2011,39,R3,New England Revolution,Steven Perry,Notre Dame
+2011,40,R3,Chivas USA,Jon Okafor,Brown
+2011,41,R3,Philadelphia Union,Levi Houapeu,UMBC
+2011,42,R3,New England Revolution,Ryan Kinne,Monmouth
+2011,43,R3,Toronto FC,Matt Gold,Ohio State
+2011,44,R3,Toronto FC,Junior Burgos,Cal Poly
+2011,45,R3,Chicago Fire,Jason Herrick,Maryland
+2011,46,R3,Sporting Kansas City,Konrad Warzycha,Ohio State
+2011,47,R3,Seattle Sounders,Alex Caskey,Davidson
+2011,48,R3,Columbus Crew,Bernardo Añor,South Florida
+2011,49,R3,Toronto FC,Joao Plata,
+2011,50,R3,D.C. United,Joe Willis,Denver
+2011,51,R3,Chicago Fire,Davis Paul,California
+2011,52,R3,Real Salt Lake,Jarad van Schaik,Portland
+2011,53,R3,FC Dallas,Scott Gordon,Lynn (FL)
+2011,54,R3,New England Revolution,Alan Koger,William & Mary
+2012,1,R1,CF Montréal,Andrew Wenger,Duke
+2012,2,R1,Vancouver Whitecaps FC,Darren Mattocks,Akron
+2012,3,R1,New England Revolution,Kelyn Rowe,UCLA
+2012,4,R1,Toronto FC,Luis Silva,UC Santa Barbara
+2012,5,R1,Chivas USA,Casey Townsend,Maryland
+2012,6,R1,San Jose Earthquakes,Sam Garza,UC Santa Barbara
+2012,7,R1,D.C. United,Nick DeLeon,Louisville
+2012,8,R1,Portland Timbers,Andrew Jean-Baptiste,Connecticut
+2012,9,R1,Chicago Fire,Austin Berry,Louisville
+2012,10,R1,Columbus Crew,Ethan Finlay,Creighton
+2012,11,R1,FC Dallas,Matt Hedges,North Carolina
+2012,12,R1,Toronto FC,Aaron Maund,Notre Dame
+2012,13,R1,Philadelphia Union,Chandler Hoffman,UCLA
+2012,14,R1,Colorado Rapids,Tony Cascio,Connecticut
+2012,15,R1,Seattle Sounders,Andrew Duran,Creighton
+2012,16,R1,Sporting Kansas City,Dom Dwyer,South Florida
+2012,17,R1,Real Salt Lake,Enzo Martínez,North Carolina
+2012,18,R1,Houston Dynamo,Colin Rolfe,Louisville
+2012,19,R1,LA Galaxy,Tommy Meyer,Indiana
+2012,20,R2,CF Montréal,Calum Mallace,Marquette
+2012,21,R2,Vancouver Whitecaps FC,Chris Estridge,Indiana
+2012,22,R2,New England Revolution,Tyler Polak,Creighton
+2012,23,R2,Chicago Fire,Lucky Mkosana,Dartmouth
+2012,24,R2,Real Salt Lake,Diogo de Almeida,
+2012,25,R2,San Jose Earthquakes,Jacob Hustedt,Washington
+2012,26,R2,Columbus Crew,Aubrey Perry,South Florida
+2012,27,R2,Portland Timbers,Brendan King,Notre Dame
+2012,28,R2,Chicago Fire,Hunter Jumper,Virginia
+2012,29,R2,Columbus Crew,Kevan George,Central Florida
+2012,30,R2,Sporting Kansas City,Cyprian Hedrick,Coastal Carolina
+2012,31,R2,Red Bull New York,Ryan Meara,Fordham
+2012,32,R2,Philadelphia Union,Greg Jordan,Creighton
+2012,33,R2,San Jose Earthquakes,Chris Blais,South Florida
+2012,34,R2,Seattle Sounders,Babayele Sodade,
+2012,35,R2,Philadelphia Union,Ray Gaddis,West Virginia
+2012,36,R2,Real Salt Lake,Sebastián Velásquez,Spartanburg Methodist (SC)
+2012,37,R2,Houston Dynamo,Warren Creavalle,Central Florida
+2012,38,R2,LA Galaxy,Kenney Walker,Louisville
+2013,1,R1,New England Revolution,Andrew Farrell,Louisville
+2013,2,R1,Chivas USA,Carlos Alvarez,Connecticut
+2013,3,R1,Toronto FC,Kyle Bekker,Boston College
+2013,4,R1,Vancouver Whitecaps FC,Kekuta Manneh,
+2013,5,R1,Vancouver Whitecaps FC,Erik Hurtado,Santa Clara
+2013,6,R1,Colorado Rapids,Deshorn Brown,Central Florida
+2013,7,R1,FC Dallas,Walker Zimmerman,Furman
+2013,8,R1,CF Montréal,Blake Smith,New Mexico
+2013,9,R1,Columbus Crew,Ryan Finley,Notre Dame
+2013,10,R1,Seattle Sounders,Eriq Zavaleta,Indiana
+2013,11,R1,Colorado Rapids,Dillon Powers,Notre Dame
+2013,12,R1,Real Salt Lake,John Stertzer,Maryland
+2013,13,R1,Houston Dynamo,Jason Johnson,
+2013,14,R1,Sporting Kansas City,Mikey Lopez,North Carolina
+2013,15,R1,San Jose Earthquakes,Tommy Muller,Georgetown
+2013,16,R1,Toronto FC,Emery Welshman,Oregon State
+2013,17,R1,D.C. United,Taylor Kemp,Maryland
+2013,18,R1,CF Montréal,Fernando Monge,UCLA
+2013,19,R1,LA Galaxy,Charlie Rugg,Boston College
+2013,20,R2,FC Dallas,Ryan Hollingshead,UCLA
+2013,21,R2,New England Revolution,Donnie Smith,Charlotte
+2013,22,R2,Red Bull New York,Ian Christianson,Georgetown
+2013,23,R2,New England Revolution,Luke Spencer,Xavier
+2013,24,R2,LA Galaxy,Kofi Opare,Michigan
+2013,25,R2,Colorado Rapids,Kory Kindle,Cal State Bakersfield
+2013,26,R2,Philadelphia Union,Don Anding,Northeastern
+2013,27,R2,CF Montréal,Paolo DelPiccolo,Louisville
+2013,28,R2,Columbus Crew,Drew Beckie,Denver
+2013,29,R2,Real Salt Lake,Devon Sandoval,New Mexico
+2013,30,R2,Chicago Fire,Yazid Atouba,
+2013,31,R2,Philadelphia Union,Stephen Okai,Mobile
+2013,32,R2,CF Montréal,Brad Stuver,Cleveland State
+2013,33,R2,San Jose Earthquakes,Dan Delgado,San Diego
+2013,34,R2,Portland Timbers,Dylan Tucker-Gangnes,Washington
+2013,35,R2,Seattle Sounders,Dylan Remick,Brown
+2013,36,R2,New England Revolution,Luis Soffner,Indiana
+2013,37,R2,Houston Dynamo,Jimmy Nealis,Georgetown
+2013,38,R2,LA Galaxy,Greg Cochrane,Louisville
+2014,1,R1,Philadelphia Union,Andre Blake,Connecticut
+2014,2,R1,D.C. United,Steve Birnbaum,California
+2014,3,R1,Vancouver Whitecaps FC,Christian Dean,California
+2014,4,R1,New England Revolution,Steve Neumann,Georgetown
+2014,5,R1,CF Montréal,Eric Miller,Creighton
+2014,6,R1,FC Dallas,Tesho Akindele,Colorado Mines
+2014,7,R1,Vancouver Whitecaps FC,Andre Lewis,
+2014,8,R1,Seattle Sounders,Damion Lowe,Hartford
+2014,9,R1,San Jose Earthquakes,J. J. Koval,Stanford
+2014,10,R1,Toronto FC,Nick Hagglund,Xavier
+2014,11,R1,New England Revolution,Patrick Mullins,Marylad
+2014,12,R1,Colorado Rapids,Marlon Hairston,Louisville
+2014,13,R1,Chicago Fire,Marco Franco,UC Irvine
+2014,14,R1,Columbus Crew,Ben Sweat,South Florida
+2014,15,R1,Philadelphia Union,Pedro Ribeiro,Coastal Carolina
+2014,16,R1,Houston Dynamo,A. J. Cochran,Wisconsin
+2014,17,R1,Portland Timbers,Schillo Tshuma,Maryland
+2014,18,R1,Real Salt Lake,Ryan Neil,California
+2014,19,R1,Colorado Rapids,Grant Van De Casteele,Notre Dame
+2014,20,R2,Chivas USA,Thomas McNamara,Clemson
+2014,21,R2,Seattle Sounders,Jimmy Ockford,Louisville
+2014,22,R2,Red Bull New York,Chris Duvall,Wake Forest
+2014,23,R2,LA Galaxy,Kyle Venter,New Mexico
+2014,24,R2,Toronto FC,Daniel Lovitz,Elon
+2014,25,R2,Philadelphia Union,Kevin Cope,Michigan State
+2014,26,R2,Portland Timbers,Taylor Peay,Washington
+2014,27,R2,Philadelphia Union,Robbie Derschang,Akron
+2014,28,R2,San Jose Earthquakes,Joe Sofia,UCLA
+2014,29,R2,D.C. United,Victor Muñoz,UCLA
+2014,30,R2,Vancouver Whitecaps FC,Mamadou Diouf,Connecticut
+2014,31,R2,New England Revolution,Alec Sundly,California
+2014,32,R2,Houston Dynamo,Mark Sherrod,Memphis
+2014,33,R2,Colorado Rapids,Jared Watts,Wake Forest
+2014,34,R2,Red Bull New York,Eric Stevenson,Akron
+2014,35,R2,Colorado Rapids,John Berner,SIU Edwardsville
+2014,36,R2,Portland Timbers,Aaron Long,UC Riverside
+2014,37,R2,CF Montréal,George Malki,Cal Poly
+2014,38,R2,Sporting Kansas City,Adnan Gabeljic,Saint Louis
+2014,39,R3,Portland Timbers,George Fochive,Connecticut
+2014,40,R3,Chivas USA,Kris Tyrpak,Houston Baptist
+2014,41,R3,Sporting Kansas City,Peter Schmetz,UC Santa Barbara
+2014,42,R3,Columbus Crew,Fifi Baiden,UC Santa Barbara
+2014,43,R3,FC Dallas,Nick Walker,Fairleigh Dickinson
+2014,44,R3,Philadelphia Union,Richie Marquez,Redlands
+2014,45,R3,Columbus Crew,Adam Bedell,Detroit Mercy
+2014,46,R3,Philadelphia Union,Alex Sweetin,Saint Louis
+2014,47,R3,San Jose Earthquakes,A. J. Corrado,Indiana
+2014,48,R3,CF Montréal,Pete Caringi,UMBC
+2014,49,R3,Colorado Rapids,Tolani Ibikunle,Wake Forest
+2014,50,R3,New England Revolution,Pierre Omanga,Southern New Hampshire
+2014,51,R3,Vancouver Whitecaps FC,Michael Kafari,New Mexico
+2014,52,R3,Philadelphia Union,Aodhan Quinn,Akron
+2014,53,R3,Real Salt Lake,Joey Dillon,Georgetown
+2014,54,R3,Houston Dynamo,Michael Lisch,New Mexico
+2014,55,R3,Seattle Sounders,Stefano Rijssel,
+2014,56,R3,D.C. United,Zach Barnes,Creighton
+2014,57,R3,Sporting Kansas City,Alex Martinez,NC State
+2014,58,R4,Vancouver Whitecaps FC,Mackenzie Pridham,Cal Poly
+2014,59,R4,Chivas USA,Michael Nwiloh,Georgia State
+2014,60,R4,Toronto FC,Kene Eze,Rutgers
+2014,61,R4,Chicago Fire,Zach Bolden,Denver
+2014,62,R4,FC Dallas,Ronny Santos Mendoza,
+2014,63,R4,Philadelphia Union,Luca Gimenez,Wake Forest
+2014,64,R4,Vancouver Whitecaps FC,Michael Calderón,New Mexico
+2014,65,R4,Chicago Fire,Kadeem Dacres,UMBC
+2014,66,R4,San Jose Earthquakes,Devante Dubose,Virginia Tech
+2014,67,R4,CF Montréal,Jordan Ongaro,San Diego State
+2014,68,R4,Colorado Rapids,Albert Edward,Lindsey Wilson
+2014,69,R4,D.C. United,Travis Golden,Campbell
+2014,70,R4,Real Salt Lake,Daniel Jackson,Coker
+2014,71,R4,Portland Timbers,Victor Chavez,UCLA
+2014,73,R4,Portland Timbers,Nikita Kotlov,Indiana
+2014,74,R4,San Jose Earthquakes,Billy Knutsen,American
+2014,75,R4,Chicago Fire,Bryan Ciesiulka,Marquette
+2014,76,R4,Sporting Kansas City,Reinaldo Brenes,Akron
+2014,77,R5,Seattle Sounders,Fabio Pereira,Michigan
+2015,1,R1,Orlando City,Cyle Larin,Connecticut
+2015,2,R1,New York City FC,Khiry Shelton,Oregon State
+2015,3,R1,CF Montréal,Romario Williams,Central Florida
+2015,4,R1,San Jose Earthquakes,Fatai Alashe,Michigan State
+2015,5,R1,Portland Timbers,Nick Besler,Notre Dame
+2015,6,R1,Toronto FC,Alex Bono,Syracuse
+2015,7,R1,Chicago Fire,Matt Polster,SIU Edwardsville
+2015,8,R1,Houston Dynamo,Zach Steinberger,Butler
+2015,9,R1,Toronto FC,Clément Simonin,NC State
+2015,10,R1,Sporting Kansas City,Connor Hallisey,California
+2015,11,R1,Toronto FC,Skylar Thomas,Syracu
+2015,12,R1,Sporting Kansas City,Saad Abdul-Salaam,Akron
+2015,13,R1,Vancouver Whitecaps FC,Tim Parker,St. John's (NY)
+2015,14,R1,Colorado Rapids,Axel Sjöberg,Marquette
+2015,15,R1,FC Dallas,Otis Earle,UC Riverside
+2015,16,R1,Seattle Sounders,Cristian Roldan,Washington
+2015,17,R1,D.C. United,Miguel Aguilar,San Francisco
+2015,18,R1,Red Bull New York,Leo Stolz,UCLA
+2015,19,R1,Columbus Crew,Sergio Campbell,Connecticut
+2015,20,R1,Sporting Kansas City,Amadou Dia,Clemson
+2015,21,R1,LA Galaxy,Ignacio Maganto,Iona
+2015,22,R2,Orlando City,Conor Donovan,NC State
+2015,23,R2,New York City FC,Connor Brandt,San Diego
+2015,24,R2,Portland Timbers,Andy Thoma,Washington
+2015,25,R2,Orlando City,Akeil Barrett,Tulsa
+2015,26,R2,Colorado Rapids,Joseph Greenspan,Navy
+2015,27,R2,Real Salt Lake,Boyd Okwuonu,North Carolina
+2015,28,R2,Chicago Fire,Kingsley Bryce,Saint Louis
+2015,29,R2,Toronto FC,Wesley Charpie,South Florida
+2015,30,R2,Houston Dynamo,Oumar Ballo,UMBC
+2015,31,R2,Philadelphia Union,Dzenan Catic,Davenport
+2015,32,R2,Portland Timbers,Christian Volesky,SIU Edwardsville
+2015,33,R2,Seattle Sounders,Tyler Miller,Northwestern
+2015,34,R2,Portland Timbers,Kharlton Belmar,
+2015,35,R2,Columbus Crew,Sagi Lev-Ari,Cal State Northridge
+2015,36,R2,Houston Dynamo,Rob Lovejoy,North Carolina
+2015,37,R2,Toronto FC,Edwin Rivas,Cal State Northridge
+2015,38,R2,Vancouver Whitecaps FC,Kay Banjo,UMBC
+2015,39,R2,Red Bull New York,Stefano Bonomo,California
+2015,40,R2,Seattle Sounders,Oniel Fisher,New Mexico
+2015,41,R2,Philadelphia Union,Eric Bird,Virginia
+2015,42,R2,D.C. United,Dan Metzger,Maryland
+2015,43,R3,Orlando City,Earl Edwards Jr.,UCLA
+2015,44,R3,New York City FC,Andre Rawls,St. Mary's (CA)
+2015,45,R3,CF Montréal,Cameron Porter,Princeton
+2015,46,R3,San Jose Earthquakes,Keasel Broome,Providence
+2015,47,R3,New England Revolution,Marc Fenelus,Cal State Fullerton
+2015,48,R3,Seattle Sounders,Andy Craven,North Carolina
+2015,49,R3,Houston Dynamo,Taylor Hunter,Denver
+2015,50,R3,Toronto FC,Mike Ramos,Whitworth
+2015,51,R3,Philadelphia Union,Aaron Simmons,UCLA
+2015,52,R3,Portland Timbers,Anthony Manning,Saint Louis
+2015,53,R3,Sporting Kansas City,James Rogers,New Mexico
+2015,54,R3,Vancouver Whitecaps FC,Jovan Blagojević,Simon Fraser
+2015,55,R3,Columbus Crew,Robert Kristo,Saint Louis
+2015,56,R3,FC Dallas,Will Seymore,Oregon State
+2015,57,R3,Real Salt Lake,Jordan Murrell,Syracuse
+2015,58,R3,Vancouver Whitecaps FC,Adam Montague,Michigan State
+2015,59,R3,Red Bull New York,Shawn McLaws,Coastal Carolina
+2015,60,R3,Columbus Crew,Tomas Gomez,Georgetown
+2015,61,R3,Vancouver Whitecaps FC,Spencer Richey,Washington
+2015,62,R3,LA Galaxy,Daniel Keller,Louisville
+2015,63,R3,Orlando City,Sidney Rivera,Old Dominion
+2015,64,R4,New York City FC,Markus Naglestad,Providence
+2015,65,R4,CF Montréal,Cameron Iwasa,UC Irvine
+2015,66,R4,San Jose Earthquakes,Chimdum Mez,Sacramento State
+2015,67,R4,Colorado Rapids,Dominique Badji,Boston University
+2015,68,R4,Chicago Fire,Alex Shinsky,Maryland
+2015,69,R4,Columbus Crew,Kalen Ryden,Midwestern State
+2015,70,R4,Toronto FC,Sal Bernal,UNLV
+2015,71,R4,Philadelphia Union,Raymond Lee,Saint Louis
+2015,72,R4,Vancouver Whitecaps FC,Craig Nitti,Loyola Marymount
+2015,73,R4,Sporting Kansas City,Tony Rocha,Tulsa
+2015,74,R4,Vancouver Whitecaps FC,Nikola Paunic,South Florida
+2015,75,R4,Seattle Sounders,Charlie Lyon,Marquette
+2015,77,R4,Real Salt Lake,Lucas Baldin,South Florida
+2015,79,R4,Red Bull New York,Manolo Sanchez,Clemson
+2015,81,R4,Toronto FC,Tyler Engel,North Carolina
+2015,82,R4,LA Galaxy,Andrew Wolverton,Penn State
+2015,83,R4,Colorado Rapids,Brandon Fricke,Butler
+2015,84,R4,Portland Timbers,Seth Casiple,California
+2016,1,R1,Chicago Fire,Jack Harrison,Wake Forest
+2016,2,R1,Philadelphia Union,Joshua Yaro,Georgetown
+2016,3,R1,Philadelphia Union,Keegan Rosenberry,Georgetown
+2016,4,R1,Chicago Fire,Brandon Vincent,Stanford
+2016,5,R1,Real Salt Lake,Omar Holness,North Carolina
+2016,6,R1,Philadelphia Union,Fabian Herbers,Creighton
+2016,7,R1,Orlando City,Richie Laryea,Akron
+2016,8,R1,San Jose Earthquakes,Andrew Tarbell,Clemson
+2016,9,R1,Toronto FC,Tsubasa Endoh,Maryland
+2016,10,R1,New England Revolution,Jordan McCrary,North Carolina
+2016,11,R1,D.C. United,Julian Büscher,Syracuse
+2016,12,R1,Chicago Fire,Jonathan Campbell,North Carolina
+2016,13,R1,Orlando City,Hadji Barry,Central Florida
+2016,14,R1,CF Montréal,Kyle Fisher,Clemson
+2016,15,R1,Colorado Rapids,Emmanuel Appiah,Cincinnati
+2016,16,R1,Vancouver Whitecaps FC,Cole Seiler,Georgetown
+2016,17,R1,FC Dallas,Ryan Herman,Washington
+2016,18,R1,Red Bull New York,Justin Bilyeu,SIU Edwardsville
+2016,19,R1,Columbus Crew,Rodrigo Saravia,Florida Gulf Coast
+2016,20,R1,Portland Timbers,Ben Polk,Syracuse
+2016,21,R2,Columbus Crew,Chase Minter,Cal Poly
+2016,22,R2,Chicago Fire,Alex Morrell,North Florida
+2016,23,R2,Philadelphia Union,Taylor Washington,George Mason
+2016,24,R2,CF Montréal,Michael Salazar,UC Riverside
+2016,25,R2,Real Salt Lake,Max Lachowecki,Notre Dame
+2016,26,R2,Houston Dynamo,Ivan Magalhães,Maryland
+2016,27,R2,Seattle Sounders,Tony Alfaro,Cal State Dominguez Hills
+2016,28,R2,San Jose Earthquakes,Patrick Hodan,Notre Dame
+2016,29,R2,Vancouver Whitecaps FC,Christopher Hellmann,Lynn (FL)
+2016,30,R2,New England Revolution,Michael Gamble,Wake Forest
+2016,31,R2,Columbus Crew,Kyle Parker,Charlotte
+2016,32,R2,D.C. United,Paul Clowes,Clemson
+2016,33,R2,FC Dallas,Timo Pitter,Creighton
+2016,34,R2,CF Montréal,Eric Verso,Stanford
+2016,35,R2,Seattle Sounders,Zach Mathers,Duke
+2016,36,R2,Vancouver Whitecaps FC,Thomas Sanner,Princeton
+2016,37,R2,Colorado Rapids,Dennis Castillo,
+2016,38,R2,Red Bull New York,Zach Carroll,Michigan State
+2016,39,R2,CF Montréal,Keegan Smith,San Diego
+2016,40,R2,Portland Timbers,Neco Brett,Robert Morris
+2016,41,R3,Columbus Crew,Marshall Hollingsworth,Wheaton (IL)
+2016,42,R3,LA Galaxy,Josh Turnley,Georgetown
+2016,43,R3,Colorado Rapids,Chris Froschauer,Ohio State
+2016,44,R3,Philadelphia Union,Mitchell Lurie,Rutgers
+2016,45,R3,FC Dallas,Colin Bonner,UNC Wilmington
+2016,46,R3,Real Salt Lake,Amass Amankona,Dayton
+2016,47,R3,Houston Dynamo,T. J. Casner,Clemson
+2016,48,R3,Orlando City,Antonio Matarazzo,Columbia
+2016,49,R3,San Jose Earthquakes,Kip Colvey,Cal Poly
+2016,50,R3,Vancouver Whitecaps FC,James Moberg,Washington
+2016,51,R3,New England Revolution,Femi Hollinger-Janzen,Indiana
+2016,52,R3,Sporting Kansas City,Ryan James,Bowling Green
+2016,54,R3,Seattle Sounders,Emir Alihodžić,Omaha
+2016,55,R3,CF Montréal,Brendan Hines-Ike,South Florida
+2016,56,R3,Colorado Rapids,Javan Torre,UCLA
+2016,58,R3,Colorado Rapids,Bradley Kamdem,UNLV
+2016,59,R3,Toronto FC,Mitchell Taintor,Rutgers
+2016,60,R3,Columbus Crew,Vince Cicciarelli,Saint Louis
+2016,61,R4,Portland Timbers,Wade Hamilton,Cal Poly
+2016,64,R4,Philadelphia Union,Cole Missimo,Northwestern
+2016,65,R4,Real Salt Lake,Connor Sparrow,Creighton
+2016,67,R4,D.C. United,Liam Doyle,Ohio State
+2016,68,R4,Orlando City,Tobenna Uzo,Coastal Carolina
+2016,70,R4,Toronto FC,Darius Madison,UMBC
+2016,71,R4,Vancouver Whitecaps FC,Josh Heard,Washington
+2016,76,R4,Seattle Sounders,Michael Nelson,Old Dominion
+2016,77,R4,Vancouver Whitecaps FC,Tyler David,Saint Louis
+2016,80,R4,Toronto FC,Brian James,Penn State
+2016,81,R5,Portland Timbers,Trevor Morley,Cal State Northridge
+2017,1,R1,Minnesota United,Abu Danladi,UCLA
+2017,2,R1,Atlanta United,Miles Robinson,Syracuse
+2017,3,R1,New York City FC,Jonathan Lewis,Akron
+2017,4,R1,Portland Timbers,Jeremy Ebobisse,Duke
+2017,5,R1,Columbus Crew,Lalas Abubakar,Dayton
+2017,6,R1,San Jose Earthquakes,Jackson Yueill,UCLA
+2017,7,R1,Vancouver Whitecaps FC,Jake Nerwinski,Connecticut
+2017,8,R1,Atlanta United,Julian Gressel,Providence
+2017,9,R1,Columbus Crew,Niko Hansen,New Mexico
+2017,10,R1,Houston Dynamo,Joe Holland,Hofstra
+2017,11,R1,Chicago Fire,Daniel Johnson,Louisville
+2017,12,R1,D.C. United,Chris Odoi-Atsem,Maryland
+2017,13,R1,Real Salt Lake,Reagan Dunk,Denver
+2017,14,R1,Sporting Kansas City,Colton Storm,North Carolina
+2017,15,R1,Colorado Rapids,Sam Hamilton,Denver
+2017,16,R1,New York City FC,Kwame Awuah,Connecticut
+2017,17,R1,Red Bull New York,Zeiko Lewis,Boston College
+2017,18,R1,FC Dallas,Jacori Hayes,Wake Forest
+2017,19,R1,CF Montréal,Nick DePuy,UC Santa Barbara
+2017,20,R1,New England Revolution,Brian Wright,Vermont
+2017,21,R1,Toronto FC,Brandon Aubrey,Notre Dame
+2017,22,R1,Seattle Sounders,Brian Nana-Sinkam,Stanford
+2017,23,R2,Minnesota United,Alec Ferrell,Wake Forest
+2017,24,R2,Colorado Rapids,Liam Callahan,Syracuse
+2017,25,R2,Philadelphia Union,Marcus Epps,South Florida
+2017,26,R2,Chicago Fire,Stefan Cleveland,Louisville
+2017,27,R2,Chicago Fire,Guillermo Delgado,Delaware
+2017,28,R2,San Jose Earthquakes,Lindo Mfeka,South Florida
+2017,29,R2,Vancouver Whitecaps FC,Francis de Vries,Saint Francis (PA)
+2017,30,R2,Houston Dynamo,Jake McGuire,Tulsa
+2017,31,R2,New England Revolution,Napo Matsoso,Kentucky
+2017,32,R2,Portland Timbers,Michael Amick,UCLA
+2017,33,R2,Philadelphia Union,Aaron Jones,Clemson
+2017,34,R2,D.C. United,Eric Klenofsky,Monmouth
+2017,35,R2,Real Salt Lake,Justin Schmidt,Washington
+2017,36,R2,Houston Dynamo,Danilo Radjen,Akron
+2017,37,R2,FC Dallas,Walker Hume,North Carolina
+2017,38,R2,New York City FC,Jalen Brown,Xavier
+2017,39,R2,Red Bull New York,Ethan Kutler,Colgate
+2017,40,R2,FC Dallas,Adonijah Reid,
+2017,41,R2,CF Montréal,Shamit Shome,
+2017,42,R2,Minnesota United,Thomas De Villardi,Delaware
+2017,44,R2,Seattle Sounders,Dominic Oduro,
+2017,45,R3,Colorado Rapids,Jaime Siaj,Pfeiffer
+2017,46,R3,Atlanta United,Andrew Wheeler-Omiunu,Harvard
+2017,47,R3,Chicago Fire,Brandt Bronico,Charlotte
+2017,48,R3,Real Salt Lake,Andrew Putna,Illinois–Chicago
+2017,49,R3,Columbus Crew,Connor Maloney,Penn State
+2017,50,R3,San Jose Earthquakes,Christian Thierjung,California
+2017,52,R3,Toronto FC,Robert Moewes,Duke
+2017,53,R3,FC Dallas,Austin Ledbetter,SIU Edwardsville
+2017,54,R3,New York City FC,Chris Wingate,New Hampshire
+2017,55,R3,Philadelphia Union,Chris Nanco,Syracuse
+2017,56,R3,Seattle Sounders,Bakie Goodman,Georgetown
+2017,58,R3,Sporting Kansas City,David Greczek,Rutgers
+2017,59,R3,FC Dallas,Dakota Barnathan,
+2017,60,R3,New York City FC,Michael DeGraffenriedt,Louisville
+2017,61,R3,Red Bull New York,Jordan Scarlett,Iona
+2017,62,R3,FC Dallas,Wuilito Fernandes,UMass Lowell
+2017,64,R3,Orlando City,Danny Deakin,South Carolina
+2017,65,R3,Toronto FC,Øyvind Alseth,Syracuse
+2017,66,R3,Seattle Sounders,Jake Stovall,Wright State
+2017,67,R4,Minnesota United,Tanner Thompson,Indiana
+2017,68,R4,Atlanta United,Alex Kapp,Creighton
+2017,69,R4,Chicago Fire,Matej Deković,Charlotte
+2017,70,R4,Houston Dynamo,Robby Sagel,Penn State
+2017,71,R4,Columbus Crew,Logan Ketterer,Bradley
+2017,73,R4,Vancouver Whitecaps FC,Nazeem Bartman,South Florida
+2017,75,R4,New England Revolution,Joshua Smith,San Francisco
+2017,76,R4,Portland Timbers,Russell Cicerone,Buffalo
+2017,77,R4,Philadelphia Union,Jack Elliott,West Virginia
+2017,80,R4,Portland Timbers,Romilio Hernandez,Louisville
+2017,82,R4,Philadelphia Union,Santi Moar,Pfeiffer
+2017,83,R4,Toronto FC,Lars Eckenrode,Michigan
+2017,88,R4,Seattle Sounders,Kyle Bjornethun,Seattle
+2018,1,R1,Los Angeles FC,João Moutinho,Akron
+2018,2,R1,LA Galaxy,Tomas Hilliard-Arce,Stanford
+2018,3,R1,Los Angeles FC,Tristan Blackmon,Pacific
+2018,4,R1,FC Dallas,Francis Atuahene,Michigan
+2018,5,R1,Chicago Fire,Jon Bakero,Wake Forest
+2018,6,R1,Orlando City,Chris Mueller,Wisconsin
+2018,7,R1,Minnesota United,Mason Toye,Indiana
+2018,8,R1,New England Revolution,Brandon Bye,Western Michigan
+2018,9,R1,New England Revolution,Mark Segbers,Wisconsin
+2018,10,R1,Chicago Fire,Mo Adams,Syracuse
+2018,11,R1,FC Dallas,Ema Twumasi,Wake Forest
+2018,12,R1,San Jose Earthquakes,Paul Marie,Florida International
+2018,13,R1,Sporting Kansas City,Eric Dick,Butler
+2018,14,R1,Atlanta United,Jon Gallagher,Notre Dame
+2018,15,R1,Minnesota United,Wyatt Omsberg,Dartmouth
+2018,16,R1,Red Bull New York,Brian White,Duke
+2018,17,R1,Vancouver Whitecaps FC,Justin Fiddes,Washington
+2018,18,R1,Sporting Kansas City,Graham Smith,Denver
+2018,19,R1,New York City FC,Jefferson Caldwell,Virginia
+2018,20,R1,Houston Dynamo,Michael Nelson,
+2018,21,R1,Columbus Crew,Ben Lundgaard,Virginia Tech
+2018,22,R1,Seattle Sounders,Alex Roldan,Seattle
+2018,23,R1,Minnesota United,Carter Manley,Duke
+2018,24,R2,Los Angeles FC,Pol Calvet,Pittsburgh
+2018,25,R2,Colorado Rapids,Alan Winn,North Carolina
+2018,26,R2,Vancouver Whitecaps FC,Lucas Stauffer,Creighton
+2018,27,R2,Colorado Rapids,Frantzdy Pierrot,Coastal Carolina
+2018,28,R2,Toronto FC,Tim Kübel,Louisville
+2018,29,R2,FC Dallas,Mauro Cichero,
+2018,30,R2,San Jose Earthquakes,Daniel Musovski,UNLV
+2018,31,R2,Red Bull New York,Niko De Vera,Akron
+2018,32,R2,Columbus Crew,Edward Opoku,Virginia
+2018,33,R2,Real Salt Lake,Ricky Lopez-Espin,Creighton
+2018,34,R2,FC Dallas,Chris Lema,Georgetown
+2018,35,R2,San Jose Earthquakes,Mohamed Thiaw,Louisville
+2018,36,R2,Atlanta United,Oliver Shannon,Clemson
+2018,37,R2,Atlanta United,Gordon Wild,Maryland
+2018,38,R2,Chicago Fire,Diego Campos,Clemson
+2018,39,R2,Red Bull New York,Tom Barlow,Wisconsin
+2018,40,R2,LA Galaxy,Drew Skundrich,Stanford
+2018,41,R2,Minnesota United,Xavier Gomez,Omaha
+2018,42,R2,New York City FC,AJ Paterson,Wright State
+2018,43,R2,Houston Dynamo,Mac Steeves,Providence
+2018,44,R2,Columbus Crew,Jake Rozhansky,Maryland
+2018,45,R2,Seattle Sounders,Markus Fjørtoft,Duke
+2018,46,R2,Toronto FC,Drew Shepherd,Western Michigan
+2018,47,R3,Los Angeles FC,Jordan Jones,Oregon State
+2018,48,R3,LA Galaxy,Nate Shultz,Akron
+2018,49,R3,Chicago Fire,Elliot Collier,Loyola Chicago
+2018,50,R3,Colorado Rapids,Thomas Olsen,San Diego
+2018,52,R3,New York City FC,Alex Bumpus,Kentucky
+2018,53,R3,CF Montréal,Ken Krolicki,Michigan State
+2018,54,R3,Philadelphia Union,Mike Catalano,Wisconsin
+2018,55,R3,Philadelphia Union,Aidan Apodaca,California Baptist
+2018,57,R3,FC Dallas,Amer Šašivarević,Grand Canyon
+2018,58,R3,San Jose Earthquakes,Kevin Partida,UNLV
+2018,59,R3,Houston Dynamo,Pablo Aguilar,Virginia
+2018,61,R3,Portland Timbers,Caleb Duvernay,NC State
+2018,62,R3,Vancouver Whitecaps FC,Cory Brown,Xavier
+2018,64,R3,Portland Timbers,Stuart Holthusen,Akron
+2018,66,R3,Houston Dynamo,Sheldon Sullivan,Virginia
+2018,67,R3,Columbus Crew,Luis Argudo,Wake Forest
+2018,68,R3,Seattle Sounders,Chris Bared,Villanova
+2018,70,R4,Atlanta United,Paul Christensen,Portland
+2018,72,R4,Colorado Rapids,Brian Iloski,UCLA
+2018,73,R4,Colorado Rapids,Niki Jackson,Grand Canyon
+2018,78,R4,New England Revolution,Nicolás Samayoa,Florida Gulf Coast
+2018,80,R4,FC Dallas,Noah Franke,Creighton
+2018,83,R4,Red Bull New York,Jared Stroud,Colgate
+2018,84,R4,Chicago Fire,Joshua Morton,California
+2018,85,R4,Red Bull New York,José Aguinaga,Rider
+2018,87,R4,Portland Timbers,Mamadou Guirassy,NJIT
+2018,89,R4,Houston Dynamo,Manny Padilla,San Francisco
+2019,1,R1,FC Cincinnati,Frankie Amaya,UCLA
+2019,2,R1,San Jose Earthquakes,Siad Haji,
+2019,3,R1,Orlando City,Santiago Patiño,Florida International
+2019,4,R1,FC Dallas,Callum Montgomery,Charlotte
+2019,5,R1,Colorado Rapids,Andre Shinyashiki,Denver
+2019,6,R1,Toronto FC,Griffin Dorsey,Indiana
+2019,7,R1,Minnesota United,Dayne St. Clair,Maryland
+2019,8,R1,Houston Dynamo,Sam Junqua,California
+2019,9,R1,New England Revolution,Tajon Buchanan,Syracuse
+2019,10,R1,FC Dallas,John Nelson,North Carolina
+2019,11,R1,New England Revolution,DeJuan Jones,Michigan State
+2019,12,R1,New York City FC,Luis Barraza,Marquette
+2019,13,R1,FC Cincinnati,Logan Gdula,Wake Forest
+2019,14,R1,D.C. United,Akeem Ward,Creighton
+2019,15,R1,Minnesota United,Chase Gasper,Maryland
+2019,16,R1,Red Bull New York,Roy Boateng,UC Davis
+2019,17,R1,Real Salt Lake,Sam Brown,Harvard
+2019,18,R1,Columbus Crew,JJ Williams,Kentucky
+2019,19,R1,LA Galaxy,Emil Cuello,
+2019,20,R1,Seattle Sounders,Tucker Bone,Air Force
+2019,22,R1,Red Bull New York,János Löbe,Fordham
+2019,23,R1,Portland Timbers,Ryan Sierakowski,Michigan State
+2019,24,R1,Atlanta United,Anderson Asiedu,UCLA
+2019,25,R2,Red Bull New York,Sean Nealis,Hofstra
+2019,26,R2,San Jose Earthquakes,Sergio Rivas,Seattle
+2019,27,R2,Orlando City,Kamal Miller,Syracuse
+2019,28,R2,Colorado Rapids,Marcello Borges,Michigan
+2019,29,R2,FC Cincinnati,Thomas McCabe,Notre Dame
+2019,30,R2,FC Cincinnati,Jimmy Hague,Michigan State
+2019,31,R2,Minnesota United,Hassani Dotson,Oregon State
+2019,32,R2,Red Bull New York,Rece Buckmaster,Indiana
+2019,33,R2,Houston Dynamo,Andrew Samuels,Maryland
+2019,34,R2,CF Montréal,Amar Sejdic,Maryland
+2019,35,R2,Vancouver Whitecaps FC,Brendan McDonough,Georgetown
+2019,36,R2,LA Galaxy,Armel-Don Tchilao,Oregon State
+2019,37,R2,FC Cincinnati,Benjamin Lundt,Akron
+2019,39,R2,Toronto FC,Adam Wilson,Louisville
+2019,40,R2,Los Angeles FC,Peter-Lee Vassell,
+2019,41,R2,Real Salt Lake,Kyle Coffee,Washington
+2019,42,R2,Colorado Rapids,Jacob Hauser-Ramsey,Connecticut
+2019,43,R2,New York City FC,Abdi Mohamed,Akron
+2019,44,R2,Seattle Sounders,Joel Rydstrand,Creighton
+2019,45,R2,Sporting Kansas City,Camden Riley,Pacific
+2019,46,R2,San Jose Earthquakes,Mamadi Camara,Simon Fraser
+2019,47,R2,Portland Timbers,Lennart Hein,Saint Louis
+2019,48,R2,Atlanta United,Amir Bashti,Stanford
+2019,49,R3,FC Cincinnati,Rashawn Dally,Quinnipiac
+2019,50,R3,San Jose Earthquakes,Nathan Aune,Seattle
+2019,53,R3,Chicago Fire,Ebenezer Ackon,Bowling Green
+2019,54,R3,Toronto FC,Patrick Bunk-Andersen,Clemson
+2019,55,R3,Chicago Fire,Grant Stoneman,Loyola Chicago
+2019,56,R3,Houston Dynamo,Brad Dunwell,Wake Forest
+2019,63,R3,FC Dallas,Eduvie Ikoba,Dartmouth
+2019,66,R3,Columbus Crew,Justin Donawa,Dartmouth
+2019,68,R3,Seattle Sounders,Aleks Berkolds,San Diego State
+2019,69,R3,Sporting Kansas City,Franky Martinez,UMass Lowell
+2019,70,R3,Red Bull New York,Rashid Nuhu,Fordham
+2019,72,R3,D.C. United,Shinya Kadono,California
+2019,75,R4,Minnesota United,Kevin Rodríguez,Northern Illinois
+2019,76,R4,Colorado Rapids,Robbie Mertz,Michigan
+2019,88,R4,FC Dallas,Dylan Castanheira,Columbia
+2019,90,R4,Columbus Crew,Rafa Mentzingen,Valparaiso
+2019,94,R4,Minnesota United,Mitchell Osmond,Texas-Rio Grande Valley
+2019,95,R4,Portland Timbers,David Zalzman,Memphis
+2020,1,R1,Inter Miami,Robbie Robinson,Clemson
+2020,2,R1,Nashville SC,Jack Maher,Indiana
+2020,3,R1,Inter Miami,Dylan Nealis,Georgetown
+2020,4,R1,Vancouver Whitecaps FC,Ryan Raposo,Syracuse
+2020,5,R1,Orlando City,Daryl Dike,Virginia
+2020,6,R1,New England Revolution,Henry Kessler,Virginia
+2020,7,R1,Columbus Crew,Miguel Berry,San Diego
+2020,8,R1,Houston Dynamo,Garrett McLaughlin,
+2020,9,R1,CF Montréal,Jeremy Kelly,North Carolina
+2020,10,R1,Red Bull New York,Patrick Seagrist,Marquette
+2020,11,R1,Nashville SC,Alistair Johnston,Wake Forest
+2020,12,R1,San Jose Earthquakes,Tanner Beason,Stanford
+2020,13,R1,Nashville SC,Elliot Panicco,Charlotte
+2020,14,R1,FC Dallas,Nkosi Tafari,Seattle
+2020,15,R1,Red Bull New York,Cherif Dieye,Louisville
+2020,16,R1,Portland Timbers,Aaron Molloy,Penn State
+2020,17,R1,FC Dallas,Cal Jennings,Central Florida
+2020,18,R1,Minnesota United,Noah Billingsley,UC Santa Barbara
+2020,19,R1,Toronto FC,Nyal Higgins,Syracuse
+2020,20,R1,Real Salt Lake,Dayonn Harris,Connecticut
+2020,21,R1,D.C. United,Simon Lefebvre,Temple
+2020,22,R1,New York City FC,Jesus Perez,Illinois-Chicago
+2020,23,R1,Atlanta United,Patrick Nielsen,Michigan State
+2020,24,R1,Los Angeles FC,Paulo Pita,Marshall
+2020,25,R1,Toronto FC,Ifunanyachi Achara,Georgetown
+2020,26,R1,Chicago Fire,Jonathan Jimenez,Pacific
+2020,27,R2,San Jose Earthquakes,Jack Skahan,North Carolina
+2020,28,R2,Nashville SC,Tanner Dieterich,Clemson
+2020,29,R2,FC Cincinnati,Rey Ortiz Flores,Portland
+2020,30,R2,New England Revolution,Simon Lekressner,California
+2020,31,R2,Orlando City,Joey DeZart,Wake Forest
+2020,32,R2,Vancouver Whitecaps FC,Daniel Gagliardi,Florida International
+2020,33,R2,Toronto FC,Malick Mbaye,Clemson
+2020,34,R2,Houston Dynamo,Luka Prpa,Marquette
+2020,35,R2,Seattle Sounders,Danny Reynolds,UNC Wilmington
+2020,36,R2,Red Bull New York,Wallis Lapsley,UC Davis
+2020,38,R2,San Jose Earthquakes,Jon Bell,UMBC
+2020,39,R2,Orlando City,Jonathan Dean,Central Florida
+2020,40,R2,FC Dallas,Manuel Ferriol,James Madison
+2020,41,R2,Red Bull New York,Deri Corfe,Wright State
+2020,42,R2,D.C. United,Josh Fawole,Loyola (MD)
+2020,43,R2,New England Revolution,Keegan Meyer,High Point
+2020,44,R2,Orlando City,Austin Aviza,Providence
+2020,46,R2,Real Salt Lake,Michael Wetungu,Michigan State
+2020,47,R2,Columbus Crew,Remi Prieur,St. Mary's (CA)
+2020,48,R2,New York City FC,Felicien Dumas,Notre Dame
+2020,49,R2,Columbus Crew,Danny Griffin,Providence
+2020,50,R2,Los Angeles FC,Jack Hallahan,Michigan
+2020,51,R2,Toronto FC,Simon Wæver,Indiana
+2020,53,R3,FC Cincinnati,Joris Ahlinvi,Indiana
+2020,54,R3,Nashville SC,Shak Adams,Florida Gulf Coast
+2020,57,R3,Orlando City,Nick O'Callaghan,Florida International
+2020,58,R3,Sporting Kansas City,Jaret Townsend,Washington
+2020,59,R3,Columbus Crew,Ryo Shimazaki,
+2020,62,R3,Red Bull New York,Stavros Zarokostas,Rhode Island
+2020,66,R3,FC Dallas,Derek Waldeck,Stanford
+2020,68,R3,Portland Timbers,Zac McGraw,Army
+2020,74,R3,New York City FC,Parker Siegfried,Ohio State
+2020,75,R3,Atlanta United,Phillip Goodrum,UNC Wilmington
+2020,76,R3,Los Angeles FC,Jorge González,SIU Edwardsville
+2020,80,R4,Nashville SC,Luke Haakenson,Creighton
+2020,86,R4,Houston Dynamo,Kyle Edwards,Texas-Rio Grande Valley
+2020,88,R4,Minnesota United,Matthew Bentley,Missouri State
+2020,96,R4,Minnesota United,Andrew Booth,Florida International
+2020,102,R4,Los Angeles FC,Younes Boudadi,Creighton

@@ -270,6 +270,35 @@
       font-size: 0.88rem;
     }
 
+    /* ── D3 chart ── */
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+    .legend-swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+    .chart-tooltip {
+      display: none;
+      position: absolute;
+      pointer-events: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 8px 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: var(--text);
+      line-height: 1.5;
+      z-index: 10;
+      max-width: 260px;
+    }
+    #results-chart svg { display: block; width: 100%; height: auto; }
+
     @media (max-width: 600px) {
       .survey-container, .results-section { padding: 0 1rem 2.5rem; }
     }
@@ -300,13 +329,13 @@
 
 <div class="page-header">
   <h1>The Real Math Behind Club Soccer</h1>
-  <p>No independent, publicly available data exists on what families spend. Help change that.</p>
+  <p>The scale of youth soccer and the variety of options available for athletes is staggering. Making sense of the information is difficult even for participants. We want to change that.</p>
 </div>
 
 <div class="survey-container">
 
   <div class="form-preamble">
-    <p>We're collecting cost data by region, level, and income — the kind of information every family needs before committing to elite club soccer.</p>
+    <p>I'm building a public database of youth soccer program costs — what clubs actually charge by region, level, and age group. The survey and site are both a work in progress.</p>
   </div>
 
   <div class="form-info">
@@ -342,17 +371,15 @@
   <div class="results-stats" id="results-stats"></div>
 
   <div class="results-filters">
-    <input type="text" id="search-input" class="search-bar" placeholder="Search by level, league, region, income…" />
-    <div class="filter-chips" id="filter-chips">
-      <button class="chip active" data-filter="all">All</button>
-      <button class="chip" data-filter="Academy">Academy</button>
-      <button class="chip" data-filter="Elite club">Elite</button>
-      <button class="chip" data-filter="Competitive travel">Competitive</button>
-      <button class="chip" data-filter="U-travel">Travel</button>
-    </div>
+    <input type="text" id="search-input" class="search-bar" placeholder="Search by league, region, zip…" />
+    <div class="filter-chips" id="filter-chips"></div>
   </div>
 
-  <div class="results-grid" id="results-grid"></div>
+  <div class="chart-wrap">
+    <div class="chart-legend" id="chart-legend"></div>
+    <div id="results-chart"></div>
+    <div class="chart-tooltip" id="chart-tooltip"></div>
+  </div>
 </div>
 
 <footer>
@@ -361,6 +388,7 @@
   <a href="report/data.html">Data</a>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script>
   const RESPONSES = [
     {
@@ -385,7 +413,7 @@
       id: 'u08r0msrrvtku08sxwy1frgbw20jd09o',
       date: '2026-06-08',
       club_level: 'U-travel',
-      league: 'Travel',
+      league: 'Other / Unspecified', // legacy free-text answer: "Travel"
       travel_scope: 'Local',
       zip: '92780',
       income: '$120,000 – $200,000',
@@ -403,7 +431,7 @@
       id: 'r3du3tekuna5urp72ldsr3du3tegxbe9',
       date: '2026-06-05',
       club_level: 'Competitive travel',
-      league: 'Competitive Travel',
+      league: 'Other / Unspecified', // legacy free-text answer: "Competitive Travel"
       travel_scope: 'Regional',
       zip: '95776',
       income: '$200,000+',
@@ -421,7 +449,7 @@
       id: 'nuravznaxrze1fa3messnuravz9d9r9q',
       date: '2026-06-05',
       club_level: 'U-travel',
-      league: 'Travel',
+      league: 'Other / Unspecified', // legacy free-text answer: "Travel"
       travel_scope: 'Regional',
       zip: '30062',
       income: '$200,000+',
@@ -439,7 +467,7 @@
       id: '7u7xolajwvf3zo95vx1o7jd7u7xovexe',
       date: '2026-06-05',
       club_level: 'U-travel',
-      league: 'Travel',
+      league: 'Other / Unspecified', // legacy free-text answer: "Travel"
       travel_scope: 'Local',
       zip: '04021',
       income: '$120,000 – $200,000',
@@ -475,7 +503,7 @@
       id: '58ya7l55c0ril8cc58ya246n621rz55f',
       date: '2026-06-05',
       club_level: 'Elite club',
-      league: 'MLS Next',
+      league: 'MLS NEXT',
       travel_scope: 'Regional (2-6 hrs)',
       zip: '92129',
       income: '$200,000+',
@@ -493,7 +521,7 @@
       id: 'idw8mo7h7z8qhm31idw8mo1prrqhuz7j',
       date: '2026-06-05',
       club_level: 'Competitive travel',
-      league: 'Competitive Travel',
+      league: 'Other / Unspecified', // legacy free-text answer: "Competitive Travel"
       travel_scope: 'Regional (2-6 hrs)',
       zip: '91741',
       income: '$200,000+',
@@ -543,17 +571,45 @@
       years: 9,
       total: 6200,
     },
+    {
+      id: 'vXBZ82d',
+      date: '2026-06-09',
+      club_level: 'Elite club',
+      league: 'ECNL',
+      team_name: 'Sporting',
+      travel_scope: 'Regional (2–6 hrs)',
+      zip: '92373',
+      club_fee: 4100,
+      private_coaching: 0,
+      tournament: null,
+      uniform: null,
+      regional_travel: null,
+      training_hrs: 3,
+      multi_club: true,
+      total: 4100,
+    },
+    {
+      id: 'Dq1ljpb',
+      date: '2026-06-10',
+      club_level: 'Competitive travel',
+      league: 'DPL',
+      team_name: 'Rangers FC',
+      travel_scope: 'Regional (1–2 hrs)',
+      zip: '92782',
+      club_fee: 3300,
+      private_coaching: 1000,
+      tournament: null,
+      uniform: null,
+      regional_travel: null,
+      training_hrs: 2,
+      multi_club: false,
+      total: 4300,
+    },
   ];
 
   function fmt(n) {
     if (n == null) return '—';
     return '$' + n.toLocaleString();
-  }
-
-  function levelClass(level) {
-    if (level === 'Elite club' || level === 'Academy') return 'level-elite';
-    if (level === 'Competitive travel') return 'level-comp';
-    return 'level-travel';
   }
 
   function renderStats(data) {
@@ -573,33 +629,171 @@
     document.getElementById('response-count').textContent = data.length + ' response' + (data.length !== 1 ? 's' : '');
   }
 
-  function renderCards(data) {
-    const grid = document.getElementById('results-grid');
+  // ── D3 stacked bar chart ──────────────────────────────────
+  // League priority order — mirrors the survey dropdown (SoCal Pitch hierarchy)
+  const LEAGUE_ORDER = [
+    'MLS NEXT — Homegrown (HG)',
+    'MLS NEXT — Academy Division (AD)',
+    'MLS NEXT', // legacy answers, division unknown
+    'ECNL',
+    'GA (Girls Academy)',
+    'EA (Elite Academy)',
+    'ECNL-RL (ECRL)',
+    'GA Aspire (Girls)',
+    'DPL',
+    'EA2',
+    'N1L',
+    'CSL',
+    'USL Academy',
+    'USL Youth',
+    'SoCal Soccer League',
+    'Other / Unspecified',
+  ];
+  const leagueRank = l => {
+    const i = LEAGUE_ORDER.indexOf(l);
+    return i === -1 ? LEAGUE_ORDER.length : i;
+  };
+
+  // Mirrors the survey's five cost questions, in order
+  const CATEGORIES = [
+    { key: 'club_fee',         label: 'Club fees',        color: '#c9a84c' },
+    { key: 'tournament',       label: 'Tournament fees',  color: '#a07ad9' },
+    { key: 'uniform_all',      label: 'Uniform/kit',      color: '#4fa877' },
+    { key: 'travel_all',       label: 'Travel',           color: '#d95f5f' },
+    { key: 'private_coaching', label: 'Private coaching', color: '#5a91d9' },
+  ];
+
+  function renderLegend() {
+    document.getElementById('chart-legend').innerHTML = CATEGORIES.map(c =>
+      `<span class="legend-item"><span class="legend-swatch" style="background:${c.color}"></span>${c.label}</span>`
+    ).join('');
+  }
+
+  function renderChart(data) {
+    const container = document.getElementById('results-chart');
+    container.innerHTML = '';
     if (!data.length) {
-      grid.innerHTML = '<div class="no-results">No responses match your filter.</div>';
+      container.innerHTML = '<div class="no-results">No responses match your filter.</div>';
       return;
     }
-    grid.innerHTML = data.map(r => `
-      <div class="result-card">
-        <div class="result-card-header">
-          <span class="level-badge ${levelClass(r.club_level)}">${r.club_level}</span>
-          <span class="league-tag">${r.league}</span>
-        </div>
-        <div class="result-total">${fmt(r.total)}</div>
-        <div class="result-total-label">Est. annual spend</div>
-        <div class="result-rows">
-          <div class="result-row"><span class="rk">Club fees</span><span class="rv">${fmt(r.club_fee)}</span></div>
-          <div class="result-row"><span class="rk">Private coaching</span><span class="rv">${fmt(r.private_coaching)}</span></div>
-          ${r.travel != null ? `<div class="result-row"><span class="rk">Travel</span><span class="rv">${fmt(r.travel)}</span></div>` : ''}
-          ${r.equipment != null ? `<div class="result-row"><span class="rk">Equipment</span><span class="rv">${fmt(r.equipment)}</span></div>` : ''}
-          ${r.tournament != null ? `<div class="result-row"><span class="rk">Tournaments</span><span class="rv">${fmt(r.tournament)}</span></div>` : ''}
-          <div class="result-row"><span class="rk">Training hrs/wk</span><span class="rv">${r.training_hrs}h + ${r.private_hrs}h private</span></div>
-          <div class="result-row"><span class="rk">Years in club</span><span class="rv">${r.years} yr${r.years !== 1 ? 's' : ''}</span></div>
-          <div class="result-row"><span class="rk">Travel scope</span><span class="rv">${r.travel_scope}</span></div>
-          <div class="result-row"><span class="rk">Income</span><span class="rv">${r.income}</span></div>
-        </div>
-      </div>
-    `).join('');
+
+    // normalize each response
+    const normalized = data.map(r => ({
+      ...r,
+      travel_all: (r.travel ?? 0) + (r.regional_travel ?? 0),
+      uniform_all: (r.uniform ?? 0) + (r.equipment ?? 0), // legacy "equipment" folded into uniform/kit
+      tournament: r.tournament ?? 0,
+      club_fee: r.club_fee ?? 0,
+      private_coaching: r.private_coaching ?? 0,
+    }));
+
+    // aggregate: one row per league, averaged across its responses, in priority order
+    const byLeague = d3.group(normalized, r => r.league);
+    const rows = [...byLeague].map(([league, rs]) => {
+      const avg = key => Math.round(d3.mean(rs, r => r[key]));
+      return {
+        league,
+        n: rs.length,
+        club_fee: avg('club_fee'),
+        tournament: avg('tournament'),
+        uniform_all: avg('uniform_all'),
+        travel_all: avg('travel_all'),
+        private_coaching: avg('private_coaching'),
+        total: avg('total'),
+        minTotal: d3.min(rs, r => r.total),
+        maxTotal: d3.max(rs, r => r.total),
+        scopes: [...new Set(rs.map(r => r.travel_scope).filter(Boolean))],
+      };
+    }).sort((a, b) => leagueRank(a.league) - leagueRank(b.league));
+
+    const margin = { top: 4, right: 80, bottom: 28, left: 200 };
+    const width = container.clientWidth || 800;
+    const barH = 34, gap = 12;
+    const height = margin.top + margin.bottom + rows.length * (barH + gap);
+
+    const svg = d3.select(container).append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('viewBox', `0 0 ${width} ${height}`);
+
+    const x = d3.scaleLinear()
+      .domain([0, d3.max(rows, r => r.total)])
+      .range([margin.left, width - margin.right]);
+
+    const stack = d3.stack().keys(CATEGORIES.map(c => c.key))(rows);
+    const color = d3.scaleOrdinal()
+      .domain(CATEGORIES.map(c => c.key))
+      .range(CATEGORIES.map(c => c.color));
+
+    const tooltip = document.getElementById('chart-tooltip');
+
+    // grid lines
+    svg.append('g')
+      .selectAll('line')
+      .data(x.ticks(5))
+      .join('line')
+      .attr('x1', d => x(d)).attr('x2', d => x(d))
+      .attr('y1', margin.top).attr('y2', height - margin.bottom)
+      .attr('stroke', 'rgba(255,255,255,0.05)');
+
+    // axis labels
+    svg.append('g')
+      .selectAll('text')
+      .data(x.ticks(5))
+      .join('text')
+      .attr('x', d => x(d)).attr('y', height - 8)
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#6b6560').attr('font-size', '11px')
+      .text(d => '$' + (d >= 1000 ? (d / 1000) + 'k' : d));
+
+    // stacked segments
+    svg.append('g')
+      .selectAll('g')
+      .data(stack)
+      .join('g')
+      .attr('fill', d => color(d.key))
+      .selectAll('rect')
+      .data(d => d.map(seg => ({ ...seg, key: d.key })))
+      .join('rect')
+      .attr('x', d => x(d[0]))
+      .attr('y', (d, i) => margin.top + i * (barH + gap))
+      .attr('width', d => Math.max(0, x(d[1]) - x(d[0])))
+      .attr('height', barH)
+      .on('mousemove', (event, d) => {
+        const r = d.data;
+        const cat = CATEGORIES.find(c => c.key === d.key);
+        const wrapRect = container.parentElement.getBoundingClientRect();
+        tooltip.style.display = 'block';
+        tooltip.style.left = Math.min(event.clientX - wrapRect.left + 14, wrapRect.width - 270) + 'px';
+        tooltip.style.top = (event.clientY - wrapRect.top - 10) + 'px';
+        tooltip.innerHTML = `
+          <strong>${r.league}</strong> · ${r.n} response${r.n !== 1 ? 's' : ''}<br>
+          ${cat.label}: <strong>${fmt(d[1] - d[0])}</strong> avg<br>
+          Avg total: ${fmt(r.total)}${r.n > 1 ? ` · range ${fmt(r.minTotal)}–${fmt(r.maxTotal)}` : ''}<br>
+          <span style="color:#6b6560">Travel: ${r.scopes.join(' · ') || '—'}</span>`;
+      })
+      .on('mouseleave', () => { tooltip.style.display = 'none'; });
+
+    // left labels: league + response count
+    svg.append('g')
+      .selectAll('text')
+      .data(rows)
+      .join('text')
+      .attr('x', margin.left - 10)
+      .attr('y', (d, i) => margin.top + i * (barH + gap) + barH / 2 + 4)
+      .attr('text-anchor', 'end')
+      .attr('fill', '#c8c3bb').attr('font-size', '12px')
+      .text(d => `${d.league} (${d.n})`);
+
+    // average total at end of each bar
+    svg.append('g')
+      .selectAll('text')
+      .data(rows)
+      .join('text')
+      .attr('x', d => x(d.total) + 8)
+      .attr('y', (d, i) => margin.top + i * (barH + gap) + barH / 2 + 4)
+      .attr('fill', '#f0ece4').attr('font-size', '12px').attr('font-weight', '600')
+      .text(d => fmt(d.total) + (d.n > 1 ? ' avg' : ''));
   }
 
   let activeFilter = 'all';
@@ -607,32 +801,43 @@
 
   function applyFilters() {
     let data = RESPONSES;
-    if (activeFilter !== 'all') data = data.filter(r => r.club_level === activeFilter);
+    if (activeFilter !== 'all') data = data.filter(r => r.league === activeFilter);
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       data = data.filter(r =>
-        [r.club_level, r.league, r.travel_scope, r.zip, r.income].some(v => v && v.toLowerCase().includes(q))
+        [r.league, r.travel_scope, r.zip].some(v => v && v.toLowerCase().includes(q))
       );
     }
     renderStats(data);
-    renderCards(data);
+    renderChart(data);
   }
 
-  document.querySelectorAll('.chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      activeFilter = chip.dataset.filter;
-      applyFilters();
+  function renderChips() {
+    const leagues = [...new Set(RESPONSES.map(r => r.league))]
+      .sort((a, b) => leagueRank(a) - leagueRank(b));
+    const wrap = document.getElementById('filter-chips');
+    wrap.innerHTML =
+      `<button class="chip active" data-filter="all">All</button>` +
+      leagues.map(l => `<button class="chip" data-filter="${l}">${l}</button>`).join('');
+    wrap.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        wrap.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeFilter = chip.dataset.filter;
+        applyFilters();
+      });
     });
-  });
+  }
 
   document.getElementById('search-input').addEventListener('input', e => {
     searchQuery = e.target.value;
     applyFilters();
   });
 
+  renderLegend();
+  renderChips();
   applyFilters();
+  window.addEventListener('resize', () => applyFilters());
 </script>
 
 

@@ -1,0 +1,956 @@
+Team             First Name   Last Name     2023 Base Salary              2023 Guaranteed Comp      Position
+Atlanta United   Luis         Abram                            $556,364                     $695,977 D
+Atlanta United   Thiago       Almada                      $1,650,000                      $2,332,000 M-F
+Atlanta United   Osvaldo      Alonso                            $88,200                      $88,200 D-M
+Atlanta United   Esequiel     Barco                       $2,200,000                      $2,200,000 M
+Atlanta United   Miguel       Berry                            $135,000                     $135,000 F
+Atlanta United   Erik         Centeno                           $67,360                      $79,136 D
+Atlanta United   Machop       Chol                              $89,716                      $89,716 M
+Atlanta United   Noah         Cobb                              $67,360                      $67,360 D
+Atlanta United   Jackson      Conway                            $89,716                      $89,716 F
+Atlanta United   Clément      Diop                              $85,444                      $85,444 GK
+Atlanta United   Derrick      Etienne Jr.                      $676,250                     $676,250 M
+Atlanta United   Ajani        Fortune                           $67,360                      $67,360 M
+Atlanta United   Justin       Garces                            $68,775                      $68,775 GK
+Atlanta United   Georgios     Giakoumakis                 $1,576,636                      $2,160,453 F
+Atlanta United   Brad         Guzan                            $600,000                     $612,500 GK
+Atlanta United   Ronald       Hernández                        $375,000                     $375,000 D
+Atlanta United   Franco       Ibarra                           $550,000                     $620,000 D-M
+Atlanta United   Brooks       Lennon                           $700,000                     $700,000 D
+Atlanta United   Saba         Lobjanidze                  $2,052,000                      $2,150,750 M
+Atlanta United   Aiden        McFadden                          $85,444                      $85,444 D
+Atlanta United   Efraín       Morales                           $85,444                      $85,444 D
+Atlanta United   Edwin        Mosquera                         $375,000                     $412,000 M
+Atlanta United   Tristan      Muyumba                          $450,000                     $491,600 D-M
+Atlanta United   Juan José    Purata                           $400,000                     $483,500 D
+Atlanta United   Miles        Robinson                    $1,400,000                      $1,437,500 D
+Atlanta United   Matheus      Rossetto                         $650,000                     $764,375 M
+Atlanta United   Amar         Sejdic                            $85,444                      $92,111 D-M
+Atlanta United   Xande        Silva                            $480,000                     $524,250 M
+Atlanta United   Santiago     Sosa                             $575,000                     $693,100 D-M
+Atlanta United   Jamal        Thiaré                           $977,679                   $1,072,679 F
+Atlanta United   Quentin      Westberg                         $200,000                     $200,000 GK
+Team             First Name    Last Name       2023 Base Salary              2023 Guaranteed Comp      Position
+Atlanta United   Caleb         Wiley                               $85,444                      $87,044 D
+Atlanta United   Tyler         Wolff                              $120,000                     $124,500 M
+Austin FC        Charlie       Asensio                             $68,775                      $68,775 D
+Austin FC        Matt          Bersano                            $125,000                     $132,500 GK
+Austin FC        Will          Bruin                              $200,000                     $200,000 F
+Austin FC        Julio         Cascante                           $620,000                     $693,750 D
+Austin FC        Sofiane       Djeffal                             $75,325                      $75,325 M
+Austin FC        Moussa        Djitté                             $600,000                     $600,000 F
+Austin FC        Sebastián     Driussi                       $3,800,000                      $6,022,500 M-F
+Austin FC        Ethan         Finlay                             $425,000                     $425,000 M
+Austin FC        CJ            Fodrey                              $67,360                      $69,360 M
+Austin FC        Jon           Gallagher                          $300,000                     $300,000 D
+Austin FC        Matt          Hedges                             $776,250                     $908,859 D
+Austin FC        Héctor        Jiménez                             $85,444                      $85,444 D
+Austin FC        Kipp          Keller                             $100,000                     $112,500 D
+Austin FC        Zan           Kolmanic                           $325,000                     $325,000 D
+Austin FC        Damian        Las                                 $67,360                      $67,360 GK
+Austin FC        Nick          Lima                               $375,000                     $375,000 D
+Austin FC        Adam          Lundqvist                          $350,000                     $397,500 D
+Austin FC        Alfonso       Ocampo-Chávez                       $67,360                      $83,360 F
+Austin FC        Daniel        Pereira                            $100,000                     $118,414 M
+Austin FC        Rodney        Redes                              $440,000                     $440,000 M
+Austin FC        Emiliano      Rigoni                        $1,599,996                      $2,047,996 M
+Austin FC        Alexander     Ring                          $1,500,000                      $1,640,000 M
+Austin FC        Memo          Rodríguez                          $180,000                     $210,167 M
+Austin FC        Jhohan        Romaña                             $460,000                     $460,000 D
+Austin FC        Brad          Stuver                             $408,000                     $430,813 GK
+Austin FC        Maximiliano   Urruti                             $700,000                     $736,250 F
+Austin FC        Leo           Väisänen                           $600,000                     $654,500 D
+Austin FC        Jhojan        Valencia                           $400,000                     $445,125 D-M
+Team          First Name      Last Name         2023 Base Salary              2023 Guaranteed Comp      Position
+Austin FC     Owen            Wolff                                $100,000                     $113,053 M
+Austin FC     Gyasi           Zardes                               $800,000                     $800,000 F
+CF Montreal   Fernando        Álvarez                               $85,444                     $117,444 D
+CF Montreal   Jean-Aniel      Assi                                  $85,444                      $94,749 M
+CF Montreal   Zachary         Brault-Guillard                      $275,000                     $319,375 D
+CF Montreal   George          Campbell                             $325,000                     $365,625 D
+CF Montreal   Mathieu         Choinière                            $250,000                     $276,667 M
+CF Montreal   Gabriele        Corbo                                $216,350                     $216,350 D
+CF Montreal   Bryce           Duke                                 $150,000                     $231,875 M
+CF Montreal   Ahmed           Hamdi                                $500,000                     $597,500 M-F
+CF Montreal   Aarón           Herrera                              $725,000                     $820,220 D
+CF Montreal   Sunusi          Ibrahim                              $200,000                     $291,250 F
+CF Montreal   Ilias           Iliadis                               $85,444                      $92,319 D-M
+CF Montreal   Ousman          Jabang                                $67,360                      $67,360 D-M
+CF Montreal   Logan           Ketterer                              $88,200                      $88,200 GK
+CF Montreal   Jojea           Kwizera                               $68,775                      $68,775 M
+CF Montreal   Lassi           Lappalainen                          $630,000                     $660,000 M
+CF Montreal   Ariel           Lassiter                             $220,000                     $240,280 M
+CF Montreal   Matko           Miljevic                             $545,455                     $593,364 M
+CF Montreal   Chinonso        Offor                                $200,000                     $257,875 F
+CF Montreal   Kwadwo          Opoku                                $310,344                     $512,100 M
+CF Montreal   James           Pantemis                             $144,996                     $163,996 GK
+CF Montreal   Samuel          Piette                               $397,375                     $469,563 D-M
+CF Montreal   Romell          Quioto                               $950,000                   $1,035,000 F
+CF Montreal   Sean            Rea                                   $85,444                      $92,340 M-F
+CF Montreal   Nathan-Dylan    Saliba                                $67,360                      $79,169 M
+CF Montreal   Jonathan        Sirois                                $85,444                      $89,780 GK
+CF Montreal   Róbert Orri     Thorkelsson                          $175,000                     $198,500 D
+CF Montreal   Mason           Toye                                 $550,000                     $608,000 F
+CF Montreal   Jules-Anthony   Vilsaint                              $85,444                      $92,319 F
+Team           First Name   Last Name           2023 Base Salary              2023 Guaranteed Comp      Position
+CF Montreal    Victor       Wanyama                           $1,440,000                      $1,800,000 D-M
+CF Montreal    Joel         Waterman                               $161,369                     $288,202 D
+CF Montreal    Rida         Zouhir                                  $85,444                      $92,340 M
+Charlotte FC   Harrison     Afful                                   $85,444                      $85,444 D
+Charlotte FC   Patrick      Agyemang                                $67,360                      $67,360 F
+Charlotte FC   Scott        Arfield                                $400,000                     $437,500 M
+Charlotte FC   Ben          Bender                                  $85,444                     $105,444 M
+Charlotte FC   Nimfasha     Berchimas                               $67,360                      $82,294 M
+Charlotte FC   Brandt       Bronico                                $310,000                     $348,375 M
+Charlotte FC   Nathan       Byrne                                  $560,000                     $607,833 D
+Charlotte FC   Brandon      Cambridge                               $67,360                      $75,386 M
+Charlotte FC   Enzo         Copetti                           $1,000,000                      $1,142,250 F
+Charlotte FC   Guzmán       Corujo                                 $625,000                     $658,500 D
+Charlotte FC   Brecht       Dejaegere                              $820,000                     $999,375 M
+Charlotte FC   Hamady       Diop                                    $67,360                      $74,860 D
+Charlotte FC   McKinze      Gaines                                 $100,000                     $102,750 M
+Charlotte FC   Chris        Hegardt                                 $85,444                      $92,956 D-M
+Charlotte FC   Derrick      Jones                                  $325,000                     $347,969 M
+Charlotte FC   Kamil        Józwiak                           $1,100,000                      $1,217,000 M
+Charlotte FC   Kristijan    Kahlina                                $500,000                     $526,875 GK
+Charlotte FC   Jaylin       Lindsey                                $250,000                     $286,250 D
+Charlotte FC   Adilson      Malanda                                $275,000                     $303,083 D
+Charlotte FC   George       Marks                                   $68,775                      $68,775 GK
+Charlotte FC   Justin       Meram                                  $450,000                     $493,750 M
+Charlotte FC   Jack         Neeley                                  $67,360                      $69,360 D
+Charlotte FC   Andrew       Privett                                 $67,360                      $67,360 D
+Charlotte FC   Brian        Romero                                  $67,360                      $78,193 M
+Charlotte FC   Nick         Scardina                                $67,360                      $67,360 M
+Charlotte FC   Vinicius     Silveira de Mello                      $315,000                     $349,900 F
+Charlotte FC   Pablo        Sisniega                               $190,000                     $210,667 GK
+Team           First Name   Last Name        2023 Base Salary              2023 Guaranteed Comp      Position
+Charlotte FC   Jan          Sobocinski                          $325,000                     $351,250 D
+Charlotte FC   Karol        Swiderski                      $2,200,000                      $2,258,000 F
+Charlotte FC   Bill         Tuiloma                             $435,000                     $459,938 D
+Charlotte FC   Jere         Uronen                              $450,000                     $497,813 D
+Charlotte FC   Kerwin       Vargas                              $375,000                     $412,125 F
+Charlotte FC   Ashley       Westwood                            $750,000                     $850,000 D-M
+Charlotte FC   Adrián       Zendejas                             $85,444                      $93,430 GK
+Chicago Fire   Alonso       Aceves                              $330,000                     $368,900 D
+Chicago Fire   Victor       Bezerra                              $85,444                      $97,905 F
+Chicago Fire   Chris        Brady                               $189,996                     $213,246 GK
+Chicago Fire   Kendall      Burks                                $88,200                      $88,200 D
+Chicago Fire   Javier       Casas                                $85,444                      $87,344 M
+Chicago Fire   Rafael       Czichos                        $1,300,000                      $1,336,667 D
+Chicago Fire   Jonathan     Dean                                 $85,444                      $93,611 D
+Chicago Fire   Ousmane      Doumbia                             $420,000                     $564,000 D-M
+Chicago Fire   Jeff         Gal                                  $85,444                      $85,444 GK
+Chicago Fire   Gastón       Giménez                        $1,600,000                      $1,633,333 D-M
+Chicago Fire   Brian        Gutiérrez                           $200,004                     $240,004 M-F
+Chicago Fire   Maren        Haile-Selassie                      $264,000                     $279,800 M
+Chicago Fire   Fabian       Herbers                             $310,000                     $331,250 M
+Chicago Fire   Kei          Kamara                              $200,000                     $210,000 F
+Chicago Fire   Georgios     Koutsias                            $470,800                     $470,800 F
+Chicago Fire   Alex         Monis                                $85,444                      $87,344 M
+Chicago Fire   Chris        Mueller                             $600,000                     $662,320 M
+Chicago Fire   Federico     Navarro                             $450,000                     $507,500 D-M
+Chicago Fire   Miguel       Navarro                             $260,004                     $299,004 D
+Chicago Fire   Wyatt        Omsberg                             $170,000                     $187,000 D
+Chicago Fire   Sergio       Oregel                               $67,360                      $67,360 M
+Chicago Fire   Mauricio     Pineda                              $255,000                     $286,220 D
+Chicago Fire   Kacper       Przybylko                      $1,100,004                      $1,212,504 F
+Team              First Name   Last Name        2023 Base Salary              2023 Guaranteed Comp      Position
+Chicago Fire      Justin       Reynolds                             $67,360                      $67,360 D
+Chicago Fire      Spencer      Richey                              $132,000                     $132,000 GK
+Chicago Fire      Allan        Rodriguez                            $85,444                      $87,344 D-M
+Chicago Fire      Missael      Rodríguez                            $67,360                      $67,360 F
+Chicago Fire      Xherdan      Shaqiri                        $7,350,000                      $8,153,000 M-F
+Chicago Fire      Arnaud       Souquet                             $600,000                     $679,667 D
+Chicago Fire      Carlos       Terán                               $260,004                     $350,004 D
+Chicago Fire      Jairo        Torres                         $1,100,004                      $1,469,337 M
+Colorado Rapids   Lalas        Abubakar                            $665,000                     $702,125 D
+Colorado Rapids   Max          Alves da Silva                      $232,000                     $313,360 M-F
+Colorado Rapids   Sebastian    Anderson                            $120,000                     $121,667 D
+Colorado Rapids   Cole         Bassett                             $450,000                     $450,000 M-F
+Colorado Rapids   Steven       Beitashour                          $150,000                     $172,500 D
+Colorado Rapids   Moïse        Bombito                              $67,360                      $85,572 D
+Colorado Rapids   Kévin        Cabral                         $1,800,000                      $1,800,000 M
+Colorado Rapids   Daniel       Chacón                               $67,360                      $75,110 D
+Colorado Rapids   Luis         Díaz                                $500,000                     $533,900 M
+Colorado Rapids   Michael      Edwards                             $125,000                     $125,000 D
+Colorado Rapids   Braian       Galván                              $365,700                     $462,022 M
+Colorado Rapids   Alex         Gersbach                            $230,000                     $270,433 D
+Colorado Rapids   Andrew       Gutman                              $350,000                     $381,250 D
+Colorado Rapids   Calvin       Harris                              $100,000                     $113,000 M
+Colorado Rapids   Marko        Ilic                                $420,000                     $442,850 GK
+Colorado Rapids   Aboubacar    Keita                               $215,000                     $245,313 D
+Colorado Rapids   Oliver       Larraz                               $85,444                      $85,444 M
+Colorado Rapids   Jonathan     Lewis                               $410,000                     $435,000 M
+Colorado Rapids   Danny        Leyva                               $200,000                     $224,900 D-M
+Colorado Rapids   Andreas      Maxsö                          $1,100,000                      $1,292,500 D
+Colorado Rapids   Rafael       Navarro Leal                   $1,100,000                      $1,427,708 F
+Colorado Rapids   Sam          Nicholson                           $325,000                     $360,313 M
+Team              First Name   Last Name       2023 Base Salary              2023 Guaranteed Comp      Position
+Colorado Rapids   Jack         Price                              $762,500                     $825,000 M
+Colorado Rapids   Ralph        Priso-Mbongue                       $89,716                      $89,716 D-M
+Colorado Rapids   Abraham      Rodriguez                           $88,200                      $88,200 GK
+Colorado Rapids   Connor       Ronan                              $460,000                     $512,400 M
+Colorado Rapids   Keegan       Rosenberry                         $400,000                     $400,000 D
+Colorado Rapids   Diego        Rubio                              $660,000                     $714,667 F
+Colorado Rapids   Sidnei       Tavares                            $525,000                     $750,600 M
+Colorado Rapids   Jackson      Travis                              $67,360                      $69,860 D
+Colorado Rapids   Danny        Wilson                             $330,000                     $354,750 D
+Colorado Rapids   Darren       Yapi                                $85,444                      $96,277 F
+Colorado Rapids   William      Yarbrough                          $400,000                     $475,000 GK
+Columbus Crew     Malte        Amundsen                           $300,000                     $338,700 D
+Columbus Crew     Max          Arfsten                             $67,360                      $69,205 M
+Columbus Crew     Evan         Bush                                $88,200                      $88,200 GK
+Columbus Crew     Rudy         Camacho                            $500,000                     $554,000 D
+Columbus Crew     Yevgen       Cheberko                           $370,000                     $418,250 D
+Columbus Crew     Mohamed      Farsi                               $67,360                      $74,735 D
+Columbus Crew     Julian       Gressel                            $884,000                     $930,406 M
+Columbus Crew     Cucho        Hernández                     $2,600,000                      $2,886,000 F
+Columbus Crew     Keegan       Hughes                              $85,444                      $85,444 D
+Columbus Crew     Alexandru    Matan                              $450,000                     $483,250 M
+Columbus Crew     Jimmy        Medranda                           $300,000                     $331,250 D
+Columbus Crew     Kevin        Molino                             $735,367                     $735,367 M
+Columbus Crew     Steven       Moreira                            $700,000                     $782,708 D
+Columbus Crew     Aidan        Morris                             $500,000                     $562,500 M
+Columbus Crew     Jake         Morris                              $85,444                      $85,444 D
+Columbus Crew     Darlington   Nagbe                         $1,800,000                      $1,800,000 M
+Columbus Crew     Isaiah       Parente                             $85,444                      $89,444 M
+Columbus Crew     Philip       Quinton                             $67,360                      $67,360 D
+Columbus Crew     Christian    Ramirez                            $400,000                     $445,833 F
+Team            First Name   Last Name           2023 Base Salary              2023 Guaranteed Comp      Position
+Columbus Crew   Diego        Rossi                             $2,625,000                      $2,677,000 M
+Columbus Crew   Jacen        Russell-Rowe                            $67,360                      $74,749 F
+Columbus Crew   Will         Sands                                   $85,444                      $91,694 D
+Columbus Crew   Patrick      Schulte                                 $88,200                     $103,178 GK
+Columbus Crew   Brady        Scott                                   $88,200                      $88,200 GK
+Columbus Crew   Gustavo      Vallecilla                             $336,000                     $368,880 D
+Columbus Crew   Josh         Williams                               $325,000                     $325,000 D
+Columbus Crew   Yaw          Yeboah                                 $600,000                     $663,750 M
+Columbus Crew   Sean         Zawadzki                                $88,200                      $93,200 M
+DC United       Matai        Akinmboni                               $67,360                      $76,860 D
+DC United       Yamil        Asad                                   $100,000                     $100,000 M
+DC United       Christian    Benteke                           $4,250,000                      $4,432,778 F
+DC United       Steve        Birnbaum                               $815,000                     $815,000 D
+DC United       Alex         Bono                                    $85,444                     $105,444 GK
+DC United       Russell      Canouse                                $575,000                     $575,000 M
+DC United       Gabriel      Cordeiro Pirani                        $530,000                     $596,700 M
+DC United       Cristian     Dájome                                 $900,000                     $965,625 M
+DC United       Éric         Davis                                  $180,000                     $212,500 D
+DC United       Chris        Durkin                                 $425,000                     $481,250 D-M
+DC United       José         Fajardo                                $240,000                     $269,500 F
+DC United       Kristian     Fletcher                                $85,444                     $104,953 M
+DC United       Jeremy       Garay                                   $67,360                      $71,410 D-M
+DC United       Jacob        Greene                                  $89,716                      $92,716 D
+DC United       Ruan         Gregório Teixeira                      $400,000                     $400,000 D
+DC United       Brendan      Hines-Ike                              $425,000                     $467,917 D
+DC United       Jackson      Hopkins                                 $85,444                      $85,730 F
+DC United       Erik         Hurtado                                 $85,444                     $102,216 F
+DC United       Mohanad      Jeahze                                 $660,000                     $660,000 D
+DC United       Mateusz      Klich                             $1,900,000                      $2,093,588 M
+DC United       Theodore     Ku-DiPietro                             $85,444                      $85,444 M-F
+Team            First Name   Last Name   2023 Base Salary              2023 Guaranteed Comp      Position
+DC United       Tyler        Miller                         $400,000                     $425,000 GK
+DC United       Andy         Nájar                          $450,000                     $450,000 D
+DC United       Donovan      Pines                          $200,000                     $202,000 D
+DC United       Nigel        Robertha                       $550,000                     $646,542 F
+DC United       Martín       Rodríguez                 $1,000,000                      $1,266,200 M
+DC United       Gaoussou     Samaké                          $85,444                      $85,444 D
+DC United       Pedro        Santos                         $350,000                     $390,000 M
+DC United       Hayden       Sargis                          $85,444                      $85,444 D
+DC United       Derrick      Williams                       $800,000                     $871,458 D
+DC United       Luis         Zamudio                         $85,444                      $85,444 GK
+FC Cincinnati   Luciano      Acosta                    $1,943,500                      $2,222,854 M-F
+FC Cincinnati   London       Aghedo                          $67,360                      $67,360 D
+FC Cincinnati   Joey         Akpunonu                        $67,360                      $69,860 D
+FC Cincinnati   Marco        Angulo                         $275,000                     $323,000 D-M
+FC Cincinnati   Santiago     Arias                          $550,000                     $611,354 D
+FC Cincinnati   Dominique    Badji                          $550,000                     $605,000 F
+FC Cincinnati   Álvaro       Barreal                        $300,000                     $519,297 M
+FC Cincinnati   Aaron        Boupendza                      $720,000                   $1,127,600 F
+FC Cincinnati   Roman        Celentano                      $100,000                     $149,000 GK
+FC Cincinnati   Isaiah       Foster                          $85,444                      $89,823 D
+FC Cincinnati   Raymon       Gaddis                         $300,000                     $300,000 D
+FC Cincinnati   Nick         Hagglund                       $175,000                     $188,521 D
+FC Cincinnati   Bret         Halsey                          $85,444                      $94,194 D
+FC Cincinnati   Stiven       Jimenez                         $67,360                      $67,360 D-M
+FC Cincinnati   Alec         Kann                           $200,000                     $220,833 GK
+FC Cincinnati   Yuya         Kubo                      $1,091,000                      $1,206,750 M-F
+FC Cincinnati   Evan         Louro                           $88,200                      $88,200 GK
+FC Cincinnati   Matt         Miazga                    $1,500,000                      $1,500,000 D
+FC Cincinnati   Júnior       Moreno                         $349,992                     $398,741 D-M
+FC Cincinnati   Yerson       Mosquera                       $600,000                     $650,000 D
+Team            First Name     Last Name        2023 Base Salary              2023 Guaranteed Comp      Position
+FC Cincinnati   Ian            Murphy                               $72,050                      $74,300 D
+FC Cincinnati   Obinna         Nwobodo                        $1,155,000                      $1,289,400 D-M
+FC Cincinnati   Arquímides     Ordóñez                              $85,444                      $88,981 F
+FC Cincinnati   Malik          Pinto                                $67,360                      $67,360 D-M
+FC Cincinnati   Alvas          Powell                              $190,000                     $207,000 D
+FC Cincinnati   Harrison       Robledo                              $85,444                     $106,336 D-M
+FC Cincinnati   Sergio         Santos                              $700,000                     $814,375 F
+FC Cincinnati   Gerardo        Valenzuela                           $67,360                      $84,902 M-F
+FC Cincinnati   Brandon        Vazquez                             $900,000                   $1,041,000 F
+FC Cincinnati   Paul           Walters                              $67,360                      $75,327 GK
+FC Dallas       Eugene         Ansah                               $200,000                     $302,833 M
+FC Dallas       Paul           Arriola                        $1,550,000                      $1,729,400 M
+FC Dallas       Nkosi Tafari   Burgess                             $240,750                     $240,750 D
+FC Dallas       Antonio        Carrera                              $85,444                     $104,963 GK
+FC Dallas       Geovane        de Jesus Rocha                      $250,000                     $297,000 D
+FC Dallas       Herbert        Endeley                              $67,360                      $67,360 D
+FC Dallas       Marco          Farfán                              $425,000                     $457,813 D
+FC Dallas       Jesús          Ferreira                       $1,650,000                      $1,852,000 F
+FC Dallas       Liam           Fraser                              $130,000                     $157,750 D-M
+FC Dallas       Sebastien      Ibeagha                             $520,000                     $583,625 D
+FC Dallas       Asier          Illarramendi                        $300,000                     $339,750 D-M
+FC Dallas       Jesús          Jiménez                        $1,100,000                      $1,219,927 F
+FC Dallas       Sam            Junqua                               $85,444                      $93,777 D
+FC Dallas       Bernard        Kamungo                              $85,444                      $85,444 M
+FC Dallas       Amet           Korca                                $85,444                      $85,444 D
+FC Dallas       Sebastian      Lletget                             $700,000                     $791,250 M
+FC Dallas       José Antonio   Martínez                            $700,000                     $773,000 D
+FC Dallas       Jimmy          Maurer                              $300,000                     $317,938 GK
+FC Dallas       José           Mulato                               $85,444                     $123,627 F
+FC Dallas       Nolan          Norris                               $67,360                      $86,002 D
+Team             First Name    Last Name          2023 Base Salary              2023 Guaranteed Comp      Position
+FC Dallas        Tsiki         Ntsabeleng                             $85,444                      $85,444 M-F
+FC Dallas        Jáder         Obrian                                $382,500                     $467,100 M
+FC Dallas        Maarten       Paes                                  $300,000                     $337,500 GK
+FC Dallas        Isaiah        Parker                                 $67,360                      $77,360 D
+FC Dallas        Paxton        Pomykal                               $800,000                     $908,000 M-F
+FC Dallas        Facundo       Quignón                               $836,000                     $890,627 D-M
+FC Dallas        Tarik         Scott                                  $67,360                      $83,302 M
+FC Dallas        Dante         Sealy                                 $250,000                     $277,301 M
+FC Dallas        Collin        Smith                                 $130,000                     $135,000 D
+FC Dallas        Ema           Twumasi                               $320,000                     $339,300 D
+FC Dallas        Alan          Velasco                          $1,200,000                      $1,401,000 M
+Houston Dynamo   Ifunanyachi   Achara                                 $85,444                      $85,444 F
+Houston Dynamo   Ibrahim       Aliyu                                 $425,004                     $476,383 F
+Houston Dynamo   Charles       Auguste                                $67,360                      $71,110 M
+Houston Dynamo   Beto          Avila                                  $67,360                      $67,360 F
+Houston Dynamo   Corey         Baird                                 $550,000                     $581,031 F
+Houston Dynamo   Ethan         Bartlow                               $125,000                     $135,000 D
+Houston Dynamo   Amine         Bassi                                 $550,000                     $550,000 M-F
+Houston Dynamo   Luis          Caicedo                               $110,000                     $110,000 D-M
+Houston Dynamo   Adalberto     Carrasquilla                          $500,000                     $550,224 M
+Houston Dynamo   Steve         Clark                                 $560,000                     $619,281 GK
+Houston Dynamo   José Artur    de Lima Júnior                        $600,000                     $651,633 D-M
+Houston Dynamo   Griffin       Dorsey                                $150,000                     $165,000 D
+Houston Dynamo   Micael        dos Santos Silva                      $120,000                     $134,250 D
+Houston Dynamo   Franco        Escobar                               $475,000                     $524,167 D
+Houston Dynamo   Sebastián     Ferreira                         $1,760,000                      $2,130,200 F
+Houston Dynamo   Iván          Franco                                $335,000                     $384,250 M
+Houston Dynamo   Chase         Gasper                                $400,000                     $425,000 D
+Houston Dynamo   Teenage       Hadebe                           $1,122,900                      $1,288,077 D
+Houston Dynamo   Héctor        Herrera                          $4,750,000                      $5,246,875 M
+Team             First Name   Last Name               2023 Base Salary              2023 Guaranteed Comp      Position
+Houston Dynamo   Sebastian    Kowalczyk                                   $85,444                     $155,062 M-F
+Houston Dynamo   Mujeeb       Murana                                      $67,360                      $67,360 D
+Houston Dynamo   Michael      Nelson                                     $135,000                     $149,500 GK
+Houston Dynamo   Nelson       Quiñónes                                   $216,996                     $237,890 M
+Houston Dynamo   Brooklyn     Raines                                      $85,444                     $103,507 M
+Houston Dynamo   Daniel       Ríos                                        $85,444                      $89,886 M-F
+Houston Dynamo   Tate         Schmitt                                     $85,444                      $85,444 D
+Houston Dynamo   Brad         Smith                                      $375,000                     $416,875 D
+Houston Dynamo   Daniel       Steres                                     $355,000                     $402,175 D
+Houston Dynamo   Erik         Sviatchenko                                $410,532                     $460,532 D
+Houston Dynamo   Andrew       Tarbell                                    $250,000                     $280,000 GK
+Houston Dynamo   Thor         Úlfarsson                                   $85,444                      $97,643 M-F
+Houston Dynamo   Xavier       Valdez                                      $85,444                      $95,155 GK
+Houston Dynamo   Matías       Vera                                       $550,000                     $622,813 D-M
+Inter Miami      Jordi        Alba                                  $1,000,000                      $1,250,000 D
+Inter Miami      Noah         Allen                                       $67,360                      $67,360 D
+Inter Miami      Dixon        Arroyo                                     $150,000                     $297,708 D-M
+Inter Miami      Tomás        Avilés                                     $360,000                     $387,500 D
+Inter Miami      Edison       Azcona                                      $85,444                      $85,444 M
+Inter Miami      Shanyder     Borgelin                                    $67,360                      $69,860 F
+Inter Miami      Sergio       Busquets                              $1,500,000                      $1,775,000 D-M
+Inter Miami      Drake        Callender                                  $300,000                     $355,917 GK
+Inter Miami      Leonardo     Campana                                    $549,996                     $672,329 F
+Inter Miami      Benja        Cremaschi                                   $67,360                      $69,360 M
+Inter Miami      Gregore      de Magalhães da Silva                      $725,000                     $961,250 D-M
+Inter Miami      CJ           dos Santos                                  $67,360                      $72,660 GK
+Inter Miami      Facundo      Farías                                     $500,000                     $525,000 M-F
+Inter Miami      Ian          Fray                                       $110,000                     $110,000 D
+Inter Miami      Diego        Gómez                                      $500,000                     $504,167 M
+Inter Miami      Leandro      González Pírez                             $935,004                   $1,095,254 D
+Team          First Name    Last Name           2023 Base Salary              2023 Guaranteed Comp      Position
+Inter Miami   Corentin      Jean                                   $720,000                     $788,400 F
+Inter Miami   Cole          Jensen                                  $67,360                      $67,360 GK
+Inter Miami   Sergiy        Kryvtsov                               $555,500                     $614,500 D
+Inter Miami   Jake          LaCava                                  $85,444                      $85,444 M
+Inter Miami   Josef         Martínez                          $4,000,000                      $4,391,667 F
+Inter Miami   Christopher   McVey                                  $219,996                     $244,296 D
+Inter Miami   Lionel        Messi                            $12,000,000                     $20,446,667 M
+Inter Miami   Kamal         Miller                                 $375,000                     $420,000 D
+Inter Miami   Santiago      Morales                                 $67,360                      $75,693 M-F
+Inter Miami   Franco        Negri                                  $225,000                     $317,500 D
+Inter Miami   Harvey        Neville                                 $67,360                      $67,360 D
+Inter Miami   David         Ochoa                                   $67,360                      $69,360 D-M
+Inter Miami   Jean Mota     Oliveira de Sousa                      $750,000                     $828,750 M
+Inter Miami   Robbie        Robinson                               $200,000                     $231,000 M
+Inter Miami   Emerson       Rodríguez                              $330,000                     $365,700 M
+Inter Miami   Ryan          Sailor                                  $85,444                      $85,444 D
+Inter Miami   Nicolás       Stefanelli                             $400,000                     $441,667 F
+Inter Miami   Lawson        Sunderland                              $67,360                      $67,360 M
+Inter Miami   Robert        Taylor                                 $276,000                     $302,900 M
+Inter Miami   Víctor        Ulloa                                  $250,000                     $250,000 D-M
+Inter Miami   Felipe        Valencia                                $85,444                      $85,444 M
+Inter Miami   DeAndre       Yedlin                                 $825,000                     $873,750 D
+LA Galaxy     Daniel        Aguirre                                 $85,444                      $85,444 M
+LA Galaxy     Tony          Alfaro                                 $120,000                     $120,000 D
+LA Galaxy     Julián        Aude                                   $275,000                     $285,000 D
+LA Galaxy     Michael       Barrios                                $650,000                     $680,000 M
+LA Galaxy     Jonathan      Bond                                   $475,000                     $525,833 GK
+LA Galaxy     Tyler         Boyd                                   $275,000                     $350,000 M
+LA Galaxy     Gastón        Brugman                           $1,200,000                      $1,409,000 D-M
+LA Galaxy     Martín        Cáceres                                $500,004                     $556,671 D
+Team        First Name     Last Name            2023 Base Salary              2023 Guaranteed Comp      Position
+LA Galaxy   Lucas Felipe   Calegari                                $550,000                     $611,564 D
+LA Galaxy   Edwin          Cerrillo                                $149,500                     $164,500 D-M
+LA Galaxy   Douglas        Costa                              $3,000,000                      $4,508,333 M
+LA Galaxy   Mauricio       Cuevas                                  $100,000                     $118,500 D
+LA Galaxy   Mark           Delgado                                 $750,000                     $826,250 M
+LA Galaxy   Raheem         Edwards                                 $315,000                     $347,500 D
+LA Galaxy   Diego          Fagúndez                           $1,000,000                      $1,060,000 M
+LA Galaxy   Marcus         Ferkranus                               $125,000                     $138,625 D
+LA Galaxy   Javier         Hernández Balcázar                 $6,000,000                      $7,443,750 F
+LA Galaxy   Dejan          Joveljic                                $651,250                     $651,250 F
+LA Galaxy   Preston        Judd                                     $67,360                      $67,360 F
+LA Galaxy   Jonathan       Klinsmann                               $200,004                     $200,004 GK
+LA Galaxy   Kelvin         Leerdam                                 $300,000                     $335,000 D
+LA Galaxy   Chris          Mavinga                                 $399,996                     $452,496 D
+LA Galaxy   Novak          Micovic                                  $67,360                      $67,360 GK
+LA Galaxy   Jalen          Neal                                    $125,000                     $138,625 D
+LA Galaxy   Jonathan       Pérez                                   $250,000                     $283,000 M
+LA Galaxy   Riqui          Puig                               $1,650,000                      $1,732,500 M
+LA Galaxy   Uri            Rosell                                  $500,000                     $500,000 D-M
+LA Galaxy   Adam           Saldaña                                  $93,989                      $93,989 M
+LA Galaxy   Billy          Sharp                                   $240,000                     $240,000 F
+LA Galaxy   Gino           Vivi                                     $67,360                      $67,360 M
+LA Galaxy   Maya           Yoshida                                 $800,000                     $893,334 D
+LA Galaxy   Eriq           Zavaleta                                 $85,444                      $85,444 D
+LAFC        Kellyn         Acosta                             $1,250,000                      $1,365,000 D-M
+LAFC        Stipe          Biuk                                    $650,000                     $650,000 M
+LAFC        Mateusz        Bogusz                                  $650,000                     $650,000 M-F
+LAFC        Denis          Bouanga                            $2,083,333                      $2,472,222 M
+LAFC        Giorgio        Chiellini                          $1,000,000                      $1,075,000 D
+LAFC        Maxime         Crépeau                                 $350,000                     $377,500 GK
+Team                  First Name   Last Name      2023 Base Salary              2023 Guaranteed Comp      Position
+LAFC                  Danny        Crisostomo                         $85,444                      $85,444 D-M
+LAFC                  Bajung       Darboe                             $67,360                      $79,740 M
+LAFC                  Érik         Dueñas                            $125,000                     $127,000 M
+LAFC                  Mamadou      Fall                              $149,000                     $161,750 D
+LAFC                  Julian       Gaines                            $104,004                     $107,337 D
+LAFC                  Francisco    Ginella                           $475,000                     $516,667 M
+LAFC                  Mario        González                          $888,500                     $888,500 F
+LAFC                  Ryan         Hollingshead                      $515,000                     $515,000 D
+LAFC                  Eldin        Jakupovic                         $100,000                     $112,000 GK
+LAFC                  Filip        Krastev                           $500,000                     $557,000 M
+LAFC                  Tony         Leone                             $125,000                     $127,000 D
+LAFC                  Aaron        Long                         $1,199,772                      $1,243,056 D
+LAFC                  Denil        Maldonado                         $355,000                     $386,167 D
+LAFC                  John         McCarthy                          $115,000                     $121,667 GK
+LAFC                  Jesús        Murillo                           $450,000                     $509,500 D
+LAFC                  Cristian     Olivera                           $650,000                     $650,000 M
+LAFC                  Nathan       Ordaz                              $85,444                      $87,944 F
+LAFC                  Diego        Palacios                          $540,000                     $564,000 D
+LAFC                  Sergi        Palencia                          $225,000                     $432,500 D
+LAFC                  Abraham      Romero                             $85,444                      $85,444 GK
+LAFC                  Diego        Rosales                            $67,360                      $67,360 D
+LAFC                  Ilie         Sánchez                      $1,207,500                      $1,207,500 D-M
+LAFC                  Eddie        Segura                            $450,000                     $450,000 D
+LAFC                  Timothy      Tillman                           $500,000                     $537,500 M
+LAFC                  Christian    Torres                            $112,500                     $123,165 M
+LAFC                  Mohamed      Traore                            $125,000                     $125,000 D
+LAFC                  Carlos       Vela                         $3,000,000                      $4,383,900 M
+Major League Soccer   Jozy         Altidore                     $2,381,139                      $2,939,963 F
+Major League Soccer   Adam         Armour                             $85,444                      $85,444 D
+Major League Soccer   Pablo        Bonilla                           $135,000                     $147,667 D
+Team                  First Name   Last Name   2023 Base Salary              2023 Guaranteed Comp      Position
+Major League Soccer   Séga         Coulibaly                      $480,000                     $517,000 D
+Major League Soccer   Dom          Dwyer                           $85,444                      $85,444 F
+Major League Soccer   Chris        Gloster                        $250,000                     $260,000 D
+Major League Soccer   Nick         Marsman                        $474,996                     $587,184 GK
+Major League Soccer   Dantouma     Toure                           $85,444                     $100,062 M
+Major League Soccer   Kenneth      Vermeer                        $387,334                     $387,334 GK
+Major League Soccer   Collen       Warner                          $85,444                      $85,444 M
+Minnesota United      Kervin       Arriaga                        $170,000                     $189,667 D-M
+Minnesota United      Michael      Boxall                         $650,000                     $703,097 D
+Minnesota United      Ethan        Bristow                         $85,444                     $136,630 D
+Minnesota United      Bakaye       Dibassy                        $600,000                     $661,250 D
+Minnesota United      Eric         Dick                            $85,444                      $85,444 GK
+Minnesota United      Hassani      Dotson                         $450,000                     $507,500 M
+Minnesota United      Cameron      Dunbar                         $165,000                     $181,750 M
+Minnesota United      Fred         Emmings                         $85,444                      $91,444 GK
+Minnesota United      Franco       Fragapane                      $260,000                     $267,500 M
+Minnesota United      Mender       García                         $350,000                     $372,313 F
+Minnesota United      Ján          Gregus                         $240,000                     $266,750 M
+Minnesota United      Bongokuhle   Hlongwane                      $560,000                     $610,000 M
+Minnesota United      Clint        Irwin                          $190,000                     $203,533 GK
+Minnesota United      Emmanuel     Iwe                             $67,360                      $67,360 M
+Minnesota United      Sang-bin     Jeong                          $548,000                     $654,708 F
+Minnesota United      Ryen         Jiba                            $67,360                      $67,360 D
+Minnesota United      Brent        Kallman                        $160,000                     $168,000 D
+Minnesota United      Robin        Lod                            $900,000                   $1,039,375 M
+Minnesota United      Mikael       Marqués                        $100,000                     $116,250 D
+Minnesota United      Tani         Oluwaseyi                       $68,775                      $68,775 F
+Minnesota United      Devin        Padelford                       $67,360                      $74,360 D
+Minnesota United      Teemu        Pukki                     $3,200,000                      $3,550,000 F
+Minnesota United      Emanuel      Reynoso                   $1,600,000                      $2,151,200 M-F
+Team               First Name   Last Name        2023 Base Salary              2023 Guaranteed Comp      Position
+Minnesota United   Joseph       Rosales                              $85,444                      $85,444 M
+Minnesota United   Dayne        St. Clair                           $410,000                     $431,875 GK
+Minnesota United   Ismael       Tajouri-Shradi                       $85,444                      $98,777 M
+Minnesota United   Miguel       Tapias                              $500,012                     $586,887 D
+Minnesota United   D.J.         Taylor                               $98,261                      $98,261 D
+Minnesota United   Wil          Trapp                               $850,000                     $850,000 D-M
+Minnesota United   Zarek        Valentin                             $85,444                      $85,444 D
+Minnesota United   Patrick      Weah                                 $85,444                      $98,736 M
+Nashville SC       Kemy         Amiche                               $67,360                      $67,360 M
+Nashville SC       Tah          Anunga                              $250,000                     $270,000 M
+Nashville SC       Josh         Bauer                                $89,716                      $89,716 D
+Nashville SC       Teal         Bunbury                             $425,000                     $469,167 F
+Nashville SC       Sean         Davis                               $825,000                     $939,000 M
+Nashville SC       Nick         DePuy                               $252,000                     $252,000 D
+Nashville SC       Tyler        Freeman                              $67,360                      $67,360 F
+Nashville SC       Aníbal       Godoy                               $750,000                     $821,250 D-M
+Nashville SC       Luke         Haakenson                            $88,200                      $88,200 M
+Nashville SC       Randall      Leal                           $1,000,000                      $1,115,000 M
+Nashville SC       Ahmed        Longmire                             $67,360                      $67,360 D
+Nashville SC       Daniel       Lovitz                              $551,250                     $568,750 D
+Nashville SC       Lukas        MacNaughton                          $85,444                      $87,544 D
+Nashville SC       Jack         Maher                               $260,004                     $355,471 D
+Nashville SC       Ben          Martino                              $67,360                      $87,610 GK
+Nashville SC       Dax          McCarty                             $275,000                     $302,500 M
+Nashville SC       Shaq         Moore                               $725,000                     $806,500 D
+Nashville SC       Hany         Mukhtar                        $2,900,000                      $3,188,750 M-F
+Nashville SC       Alex         Muyl                                $500,000                     $500,000 M
+Nashville SC       Elliot       Panicco                              $89,716                      $89,716 GK
+Nashville SC       Nebiyou      Perry                                $67,360                      $74,860 M
+Nashville SC       Fafà         Picault                             $650,000                     $650,000 M
+Team                    First Name    Last Name       2023 Base Salary              2023 Guaranteed Comp      Position
+Nashville SC            Jacob         Shaffelburg                        $150,000                     $195,000 M
+Nashville SC            Joey          Skinner                             $67,360                      $72,360 D
+Nashville SC            Sam           Surridge                      $2,500,000                      $2,907,639 F
+Nashville SC            Taylor        Washington                          $98,688                     $112,269 D
+Nashville SC            Joe           Willis                             $375,000                     $391,250 GK
+Nashville SC            Laurence      Wyke                                $85,444                      $87,777 D
+Nashville SC            Walker        Zimmerman                     $1,800,000                      $2,056,979 D
+Nashville SC            Ethan         Zubak                              $195,000                     $209,000 F
+New England Revolution Esmir          Bajraktarevic                       $85,444                      $91,367 M
+New England Revolution Emmanuel       Boateng                             $85,444                      $95,784 M
+New England Revolution Josh           Bolma                               $67,360                      $74,027 M
+New England Revolution Dylan          Borrero                            $575,000                     $638,962 M
+New England Revolution Gustavo        Bou                           $2,500,000                      $2,675,000 F
+New England Revolution Noel           Buck                                $67,360                      $67,360 M
+New England Revolution Brandon        Bye                                $350,000                     $368,813 D
+New England Revolution Tomás          Chancalay                          $666,250                     $726,250 M
+New England Revolution Earl           Edwards Jr.                        $125,000                     $125,000 GK
+New England Revolution Andrew         Farrell                            $651,250                     $651,250 D
+New England Revolution Lucas Maciel   Felix                               $85,444                      $85,444 M
+New England Revolution Carles         Gil                           $3,250,000                      $3,545,833 M-F
+New England Revolution Nacho          Gil                                $375,000                     $396,250 M
+New England Revolution Omar           González                           $425,000                     $450,000 D
+New England Revolution Ian            Harkes                             $240,000                     $251,583 M
+New England Revolution Jacob          Jackson                             $68,775                      $68,775 GK
+New England Revolution DeJuan         Jones                              $375,000                     $395,000 D
+New England Revolution Mark-Anthony   Kaye                               $750,000                     $750,000 M
+New England Revolution Henry          Kessler                            $200,000                     $217,500 D
+New England Revolution Christian      Makoun                             $225,000                     $225,000 D
+New England Revolution Tommy          McNamara                           $420,000                     $420,000 M
+New England Revolution Jack           Panayotou                           $67,360                      $69,360 M-F
+Team                   First Name       Last Name         2023 Base Salary              2023 Guaranteed Comp      Position
+New England Revolution Matt             Polster                              $500,000                     $541,667 D-M
+New England Revolution Justin           Rennicks                             $125,000                     $133,000 F
+New England Revolution Ben              Reveno                                $68,775                      $68,775 D
+New England Revolution Damián           Rivera                                $88,200                      $88,200 M
+New England Revolution Dave             Romney                               $625,000                     $671,667 D
+New England Revolution Ryan             Spaulding                             $85,444                      $85,444 D
+New England Revolution Santiago         Suárez                                $67,360                      $80,582 D
+New England Revolution Ben              Sweat                                $250,000                     $250,000 D
+New England Revolution Tomas            Vaclik                               $400,000                     $436,944 GK
+New England Revolution Giacomo          Vrioni                          $1,600,000                      $1,847,500 F
+New England Revolution Bobby            Wood                                 $400,000                     $421,250 F
+New York City FC       Nicolás          Acevedo                              $230,000                     $274,800 D-M
+New York City FC       Talles Magno     Bacelar Martins                      $950,000                   $1,198,000 M
+New York City FC       Drew             Baiera                                $67,360                      $73,296 D
+New York City FC       Monsef           Bakrar                               $336,000                     $432,720 F
+New York City FC       Luis             Barraza                              $145,000                     $152,688 GK
+New York City FC       Nico             Benalcázar                            $68,775                      $68,775 D
+New York City FC       Máximo           Carrizo                               $67,360                     $111,597 M-F
+New York City FC       Braian           Cufré                                $672,000                     $757,800 D
+New York City FC       Thiago Eduardo   de Andrade                           $200,000                     $219,600 M
+New York City FC       Julián           Fernández                            $540,000                     $604,300 M
+New York City FC       Matt             Freese                               $161,250                     $180,000 GK
+New York City FC       Tayvon           Gray                                 $300,000                     $350,000 D
+New York City FC       Justin           Haak                                 $150,000                     $165,000 M
+New York City FC       Mitja            Ilenic                               $204,000                     $295,700 D
+New York City FC       Andres           Jasson                               $125,000                     $142,144 M
+New York City FC       Jonathan         Jiménez                               $68,775                      $68,775 M
+New York City FC       Richard          Ledezma                              $350,000                     $396,000 M-F
+New York City FC       Alonso           Martínez                             $249,996                     $278,479 M
+New York City FC       Thiago           Martins                         $1,650,000                      $2,112,000 D
+Team                 First Name   Last Name               2023 Base Salary              2023 Guaranteed Comp      Position
+New York City FC     Christian    McFarlane                                   $85,444                     $108,700 D
+New York City FC     Cody         Mizell                                      $85,444                      $85,444 GK
+New York City FC     Alfredo      Morales                                    $600,000                     $662,250 M
+New York City FC     Maxi         Moralez                                    $480,000                     $500,000 M-F
+New York City FC     Kevin        O'Toole                                     $85,444                      $85,444 D
+New York City FC     Samuel       Owusu                                       $67,360                      $67,360 D
+New York City FC     Keaton       Parks                                      $550,000                     $550,000 D-M
+New York City FC     Matías       Pellegrini                            $1,025,000                      $1,120,833 M
+New York City FC     Andrés       Perea                                      $525,000                     $591,500 D-M
+New York City FC     Birk         Risa                                       $600,000                     $689,750 D
+New York City FC     Santiago     Rodríguez                             $1,200,000                      $1,331,333 M-F
+New York City FC     James        Sands                                 $1,000,000                      $1,058,333 D
+New York City FC     Gabriel      Segal                                       $67,360                      $67,360 F
+New York City FC     Jonathan     Shore                                       $67,360                      $79,860 M
+New York City FC     Stephen      Turnbull                                    $85,444                      $85,444 D
+New York Red Bulls   Frankie      Amaya                                      $350,000                     $406,406 M-F
+New York Red Bulls   Tom          Barlow                                     $195,000                     $206,625 F
+New York Red Bulls   Cory         Burke                                      $500,000                     $571,871 F
+New York Red Bulls   Jorge        Cabezas                                     $85,444                      $85,444 F
+New York Red Bulls   Wikelman     Carmona                                     $85,444                      $88,194 M-F
+New York Red Bulls   Carlos       Coronel                                    $490,000                     $539,649 GK
+New York Red Bulls   Ronald       Donkor                                     $120,000                     $145,400 M
+New York Red Bulls   Kyle         Duncan                                     $500,000                     $555,750 D
+New York Red Bulls   Daniel       Edelman                                     $85,444                      $93,026 D-M
+New York Red Bulls   Bento        Estrela                                     $85,444                     $109,444 M
+New York Red Bulls   Omir         Fernandez                                  $161,000                     $173,000 M
+New York Red Bulls   Julian       Hall                                        $85,444                     $167,685 M
+New York Red Bulls   Cameron      Harper                                     $250,000                     $301,250 M
+New York Red Bulls   Lucas        Lima Linhares                         $1,155,000                      $1,206,042 M-F
+New York Red Bulls   Elias        Manoel Alves de Paula                      $420,000                     $497,250 F
+Team                 First Name       Last Name                2023 Base Salary              2023 Guaranteed Comp      Position
+New York Red Bulls   AJ               Marcucci                                     $85,444                      $85,444 GK
+New York Red Bulls   Ryan             Meara                                       $280,000                     $280,000 GK
+New York Red Bulls   Juan             Mina                                        $131,000                     $146,432 D
+New York Red Bulls   Lewis            Morgan                                 $1,200,000                      $1,375,000 M
+New York Red Bulls   Hassan           Ndam                                         $88,200                      $88,200 D
+New York Red Bulls   Sean             Nealis                                      $400,000                     $476,250 D
+New York Red Bulls   Dylan            Nealis                                      $225,000                     $246,250 D
+New York Red Bulls   Serge            Ngoma                                        $67,360                      $87,312 M
+New York Red Bulls   Matthew          Nocita                                       $88,200                      $88,200 D
+New York Red Bulls   Curtis           Ofori                                        $67,360                      $76,110 D
+New York Red Bulls   Jayden           Reid                                         $67,360                      $77,179 D
+New York Red Bulls   Andrés           Reyes                                       $450,000                     $494,375 D
+New York Red Bulls   Steven           Sserwadda                                    $68,775                      $68,775 M
+New York Red Bulls   Peter            Stroud                                       $85,444                     $105,447 M
+New York Red Bulls   John             Tolkin                                      $400,000                     $435,500 D
+New York Red Bulls   Dante            Vanzeir                                $1,320,000                      $1,459,767 F
+New York Red Bulls   Dru              Yearwood                                    $525,000                     $593,750 M
+Orlando City SC      Iván             Angulo                                      $348,000                     $380,660 M
+Orlando City SC      César            Araújo                                      $255,000                     $294,000 D-M
+Orlando City SC      Wilder           Cartagena                                   $348,000                     $388,250 D-M
+Orlando City SC      Antônio Carlos   Cunha Capocasali Junio                      $900,000                     $925,000 D
+Orlando City SC      Ocimar           de Almeida Júnior                           $360,000                     $360,000 M
+Orlando City SC      Ramiro           Enrique                                     $318,182                     $375,909 F
+Orlando City SC      Alex             Freeman                                      $67,360                      $71,360 D
+Orlando City SC      Pedro            Gallese                                     $720,000                   $1,009,333 GK
+Orlando City SC      Gastón           González                                    $330,000                     $332,000 M
+Orlando City SC      Adam             Grinwis                                      $85,444                      $85,444 GK
+Orlando City SC      Michael          Halliday                                    $110,000                     $116,300 D
+Orlando City SC      Robin            Jansson                                     $575,000                     $631,250 D
+Orlando City SC      Favian           Loyola                                       $67,360                      $69,495 M-F
+Team                 First Name   Last Name                2023 Base Salary              2023 Guaranteed Comp      Position
+Orlando City SC      Rafael       Lucas Cardoso dos Sant                      $300,000                     $326,188 D
+Orlando City SC      Jack         Lynn                                         $68,775                      $68,775 F
+Orlando City SC      Felipe       Martins                                      $85,444                      $85,444 M
+Orlando City SC      Duncan       McGuire                                      $67,360                      $77,360 F
+Orlando City SC      Shak         Mohammed                                     $85,444                     $102,444 M
+Orlando City SC      Martín       Ojeda                                       $840,000                     $912,600 M
+Orlando City SC      Javier       Otero                                        $67,360                      $67,360 GK
+Orlando City SC      Mauricio     Pereyra                                     $675,000                     $675,000 M-F
+Orlando City SC      Luca         Petrasso                                     $85,444                      $94,468 D
+Orlando City SC      Wilfredo     Rivera                                       $85,444                      $85,444 F
+Orlando City SC      Abdi         Salim                                        $67,360                      $67,360 D
+Orlando City SC      Rodrigo      Schlegel                                    $300,000                     $349,250 D
+Orlando City SC      Kyle         Smith                                       $250,000                     $265,900 D
+Orlando City SC      Mason        Stajduhar                                   $130,000                     $145,650 GK
+Orlando City SC      Dagur Dan    Thórhallsson                                $160,000                     $195,500 M
+Orlando City SC      Facundo      Torres                                      $640,000                     $993,200 M
+Orlando City SC      Thomas       Williams                                     $85,444                      $91,974 D
+Philadelphia Union   Tai          Baribo                                      $600,000                     $710,000 F
+Philadelphia Union   Alejandro    Bedoya                                      $780,000                   $1,060,000 M
+Philadelphia Union   Joe          Bendik                                      $175,000                     $192,500 GK
+Philadelphia Union   Andre        Blake                                       $775,000                     $894,375 GK
+Philadelphia Union   Jesús        Bueno                                       $170,000                     $185,378 D-M
+Philadelphia Union   Julián       Carranza                                    $950,000                     $950,000 F
+Philadelphia Union   Brandan      Craig                                       $115,000                     $127,825 D
+Philadelphia Union   Chris        Donovan                                      $68,775                      $68,775 F
+Philadelphia Union   Jack         Elliott                                     $750,000                     $843,750 D
+Philadelphia Union   Leon         Flach                                       $280,000                     $294,500 M
+Philadelphia Union   Dániel       Gazdag                                 $1,200,000                      $1,355,000 M-F
+Philadelphia Union   Jakob        Glesnes                                     $900,000                   $1,038,125 D
+Philadelphia Union   Nathan       Harriel                                     $160,000                     $181,675 D
+Team                 First Name   Last Name           2023 Base Salary              2023 Guaranteed Comp      Position
+Philadelphia Union   Damion       Lowe                                   $275,000                     $318,333 D
+Philadelphia Union   Olwethu      Makhanya                               $150,000                     $188,875 D
+Philadelphia Union   José         Martínez                               $550,000                     $772,500 D-M
+Philadelphia Union   Olivier      Mbaizo                                 $300,000                     $373,589 D
+Philadelphia Union   Jack         McGlynn                                $160,000                     $186,533 M
+Philadelphia Union   Richard      Odada                                   $95,000                     $113,500 M
+Philadelphia Union   Nelson       Pierre                                  $67,360                      $81,476 F
+Philadelphia Union   Jeremy       Rafanello                               $85,444                      $93,080 M-F
+Philadelphia Union   Matt         Real                                   $140,000                     $149,833 D
+Philadelphia Union   Anton        Sorenson                                $95,000                      $98,000 D
+Philadelphia Union   Quinn        Sullivan                               $120,000                     $123,500 M
+Philadelphia Union   Joaquín      Torres                                 $260,000                     $309,800 M
+Philadelphia Union   Holden       Trent                                   $67,360                      $67,360 GK
+Philadelphia Union   Mikael       Uhre                              $1,700,000                      $1,940,000 F
+Philadelphia Union   Kai          Wagner                                 $630,000                     $701,000 D
+Portland Timbers     Bryan        Acosta                                 $675,000                     $731,667 M
+Portland Timbers     Antony       Alves Santos                           $425,000                     $490,042 M
+Portland Timbers     Miguel       Araujo                                 $525,000                     $680,313 D
+Portland Timbers     Dairon       Asprilla                               $365,000                     $377,500 M
+Portland Timbers     David        Ayala                                  $375,000                     $496,000 D-M
+Portland Timbers     David        Bingham                                 $85,444                      $85,444 GK
+Portland Timbers     Sebastián    Blanco                            $1,380,000                      $1,748,000 M-F
+Portland Timbers     Franck       Boli                                   $450,000                     $532,000 F
+Portland Timbers     Claudio      Bravo                                  $315,000                     $371,654 D
+Portland Timbers     Noel         Caliskan                                $67,360                      $67,360 M
+Portland Timbers     Diego        Chará                                  $650,000                     $658,333 M
+Portland Timbers     Yimmi        Chará                             $1,500,000                      $1,803,000 M
+Portland Timbers     Evander      da Silva Ferreira                 $1,885,000                      $2,230,000 M
+Portland Timbers     Diego        Gutiérrez                               $68,775                      $68,775 F
+Portland Timbers     Tega         Ikoba                                   $89,716                      $89,716 F
+Team               First Name      Last Name       2023 Base Salary              2023 Guaranteed Comp      Position
+Portland Timbers   Aljaz           Ivacic                             $375,000                     $460,000 GK
+Portland Timbers   Marvin          Loría                              $200,000                     $239,375 M
+Portland Timbers   Larrys          Mabiala                            $400,000                     $412,500 D
+Portland Timbers   Zac             McGraw                             $130,000                     $151,875 D
+Portland Timbers   Eric            Miller                             $120,000                     $135,000 D
+Portland Timbers   Felipe          Mora                               $120,000                     $317,750 F
+Portland Timbers   Santiago        Moreno                             $340,000                     $384,993 M
+Portland Timbers   Juan David      Mosquera                           $184,000                     $209,667 D
+Portland Timbers   Jaroslaw        Niezgoda                           $850,000                   $1,019,244 F
+Portland Timbers   Cristhian       Paredes                            $550,000                     $648,000 M
+Portland Timbers   Justin          Rasmussen                           $85,444                      $85,444 D
+Portland Timbers   Hunter          Sulte                               $85,444                      $89,247 GK
+Portland Timbers   Nathan          Uiliam Fogaça                       $68,775                      $68,775 F
+Portland Timbers   Eryk            Williamson                         $625,000                     $625,000 M
+Portland Timbers   Dario           Zuparic                            $735,000                     $939,200 D
+Real Salt Lake     Cristian        Arango                        $1,899,996                      $2,088,746 F
+Real Salt Lake     Gavin           Beavers                             $85,444                      $91,027 GK
+Real Salt Lake     Julio           Benitez                             $85,444                      $95,069 D-M
+Real Salt Lake     Andrew          Brody                              $250,000                     $275,678 D
+Real Salt Lake     Scott           Caldwell                           $225,000                     $230,000 M
+Real Salt Lake     Maikel          Chang                              $170,000                     $193,750 M
+Real Salt Lake     Emeka           Eneli                               $67,360                      $67,360 D
+Real Salt Lake     Zack            Farnsworth                         $115,000                     $129,750 D
+Real Salt Lake     Justen          Glad                               $725,000                     $905,000 D
+Real Salt Lake     Tomás           Gómez                               $85,444                      $85,444 GK
+Real Salt Lake     Carlos Andrés   Gómez                              $220,000                     $252,000 M
+Real Salt Lake     Bode            Hidalgo                            $104,000                     $108,294 D
+Real Salt Lake     Erik            Holt                               $200,000                     $218,750 D
+Real Salt Lake     Bertin          Jacquesson                          $67,360                      $74,686 M
+Real Salt Lake     Anderson        Julio                              $750,000                     $820,000 M
+Team                   First Name   Last Name         2023 Base Salary              2023 Guaranteed Comp      Position
+Real Salt Lake         Axel         Kei                                   $85,444                     $101,444 F
+Real Salt Lake         Damir        Kreilach                        $1,650,000                      $1,650,000 M
+Real Salt Lake         Kevon        Lambert                              $180,000                     $198,150 D-M
+Real Salt Lake         Jasper       Löffelsend                            $96,600                      $96,600 M
+Real Salt Lake         Diego        Luna                                 $120,000                     $134,380 M-F
+Real Salt Lake         Zac          MacMath                              $350,000                     $350,000 GK
+Real Salt Lake         Danny        Musovski                              $98,687                      $98,687 F
+Real Salt Lake         Moses        Nyeman                               $115,000                     $133,822 D-M
+Real Salt Lake         Braian       Ojeda                                $590,000                     $648,653 M
+Real Salt Lake         Jaziel       Orozco                                $85,444                      $85,444 D
+Real Salt Lake         Bryan        Oviedo                               $325,000                     $375,826 D
+Real Salt Lake         Nelson       Palacio                              $300,000                     $343,167 M
+Real Salt Lake         Ilijah       Paul                                  $67,360                      $74,873 F
+Real Salt Lake         Delentz      Pierre                                $67,360                      $72,795 D
+Real Salt Lake         Luis         Rivera                                $67,360                      $78,460 D
+Real Salt Lake         Rubio        Rubín                                $600,000                     $672,847 F
+Real Salt Lake         Pablo        Ruiz                                 $500,000                     $573,500 M
+Real Salt Lake         Jefferson    Savarino                        $1,525,000                      $1,749,292 M
+Real Salt Lake         Marcelo      Silva                                $600,000                     $600,000 D
+Real Salt Lake         Brayan       Vera                                 $450,000                     $507,000 D
+Real Salt Lake         Jude         Wellings                              $85,444                     $105,444 M
+San Jose Earthquakes   Oskar        Agren                                 $85,444                      $85,444 D
+San Jose Earthquakes   Carlos       Akapo                                $525,000                     $570,111 D
+San Jose Earthquakes   Ayo          Akinola                              $700,000                     $771,875 F
+San Jose Earthquakes   Michael      Baldisimo                             $85,444                      $85,444 D-M
+San Jose Earthquakes   Tanner       Beason                               $250,000                     $250,000 D
+San Jose Earthquakes   Ousseni      Bouda                                $100,000                     $112,500 M
+San Jose Earthquakes   Cam          Cilley                                $67,360                      $67,360 M
+San Jose Earthquakes   Cade         Cowell                               $600,000                     $689,909 M
+San Jose Earthquakes   Daniel       de Sousa Britto                      $400,000                     $400,000 GK
+Team                   First Name          Last Name               2023 Base Salary              2023 Guaranteed Comp      Position
+San Jose Earthquakes   Jeremy              Ebobisse                                   $763,980                     $909,863 F
+San Jose Earthquakes   Cristian            Espinoza                              $1,150,000                      $1,265,000 M
+San Jose Earthquakes   Carlos              Gruezo                                $1,350,000                      $1,571,086 D-M
+San Jose Earthquakes   Matthew             Hoppe                                      $650,004                     $725,004 F
+San Jose Earthquakes   Benjamin            Kikanovic                                  $130,000                     $135,775 M
+San Jose Earthquakes   JT                  Marcinkowski                               $350,000                     $350,000 GK
+San Jose Earthquakes   Paul                Marie                                      $180,000                     $191,375 D
+San Jose Earthquakes   Cruz                Medina                                      $85,444                     $103,838 M-F
+San Jose Earthquakes   Jonathan            Mensah                                $1,025,000                      $1,165,667 D
+San Jose Earthquakes   Jamiro              Monteiro                              $1,200,000                      $1,293,500 M
+San Jose Earthquakes   Daniel              Munie                                       $67,360                      $67,360 D
+San Jose Earthquakes   Emmanuel            Ochoa                                      $130,000                     $140,071 GK
+San Jose Earthquakes   Nathan Raphael      Pelae Cardoso                              $700,000                     $741,250 D
+San Jose Earthquakes   Will                Richmond                                    $68,775                      $68,775 M
+San Jose Earthquakes   Antônio Josenildo   Rodrigues de Oliveira                      $600,000                     $658,000 D
+San Jose Earthquakes   Judson              Silva Tavares                              $250,000                     $250,000 D-M
+San Jose Earthquakes   Jack                Skahan                                      $88,200                      $88,200 M
+San Jose Earthquakes   Tommy               Thompson                                   $115,000                     $115,000 D
+San Jose Earthquakes   Keegan              Tingey                                      $67,360                      $67,360 D
+San Jose Earthquakes   Miguel              Trauco                                     $500,000                     $550,000 D
+San Jose Earthquakes   Niko                Tsakiris                                    $85,444                      $89,611 M
+San Jose Earthquakes   Oscar               Verhoeven                                   $67,360                      $80,755 D
+San Jose Earthquakes   Casey               Walls                                      $150,000                     $153,000 D
+San Jose Earthquakes   Jackson             Yueill                                     $750,000                     $786,875 M
+Seattle Sounders FC    Leonardo            Alves Chú Franco                           $550,000                     $550,000 M
+Seattle Sounders FC    Héber               Araújo dos Santos                          $930,000                   $1,019,000 F
+Seattle Sounders FC    Xavier              Arreaga                                    $750,000                     $750,000 D
+Seattle Sounders FC    Josh                Atencio                                     $92,400                      $96,762 D-M
+Seattle Sounders FC    Cody                Baker                                       $67,360                      $73,064 D
+Seattle Sounders FC    Reed                Baker-Whiting                               $85,444                     $105,444 M
+Team                   First Name   Last Name       2023 Base Salary              2023 Guaranteed Comp      Position
+Seattle Sounders FC    Jacob        Castro                              $67,360                      $67,360 GK
+Seattle Sounders FC    Abdoulaye    Cissoko                             $85,444                      $85,444 D
+Seattle Sounders FC    Stefan       Cleveland                          $200,000                     $217,500 GK
+Seattle Sounders FC    Ethan        Dobbelaere                         $104,000                     $118,000 M
+Seattle Sounders FC    Stefan       Frei                               $650,000                     $650,000 GK
+Seattle Sounders FC    Yeimar       Gómez Andrade                      $672,732                     $741,820 D
+Seattle Sounders FC    Stuart       Hawkins                             $67,360                      $79,381 D
+Seattle Sounders FC    Sota         Kitahara                            $67,360                      $69,860 D-M
+Seattle Sounders FC    Nicolás      Lodeiro                       $2,640,000                      $3,256,667 M-F
+Seattle Sounders FC    João Paulo   Mior                          $1,300,000                      $1,383,333 M
+Seattle Sounders FC    Fredy        Montero                            $195,000                     $195,000 F
+Seattle Sounders FC    Jordan       Morris                        $1,550,000                      $1,560,000 M
+Seattle Sounders FC    Jackson      Ragen                               $85,444                      $85,444 D
+Seattle Sounders FC    Cristian     Roldán                        $1,320,000                      $1,441,000 M
+Seattle Sounders FC    Álex         Roldán                             $300,000                     $332,500 D
+Seattle Sounders FC    Paul         Rothrock                            $85,444                      $85,444 F
+Seattle Sounders FC    Kelyn        Rowe                               $300,000                     $300,000 M
+Seattle Sounders FC    Raúl         Ruidíaz                       $2,472,000                      $3,201,120 F
+Seattle Sounders FC    Albert       Rusnák                        $1,800,000                      $1,871,667 M-F
+Seattle Sounders FC    Dylan        Teves                               $68,775                      $68,775 M
+Seattle Sounders FC    Andrew       Thomas                             $125,000                     $132,500 GK
+Seattle Sounders FC    Nouhou       Tolo                               $550,000                     $571,875 D
+Seattle Sounders FC    Obed         Vargas                              $67,360                      $76,392 M
+Sporting Kansas City   Stephen      Afrifa                              $67,360                      $67,360 F
+Sporting Kansas City   Willy        Agada                              $225,000                     $271,875 F
+Sporting Kansas City   Robert       Castellanos                         $85,444                      $85,444 D
+Sporting Kansas City   Ozzie        Cisneros                            $85,444                      $88,444 M-F
+Sporting Kansas City   Jake         Davis                               $85,444                      $85,444 D
+Sporting Kansas City   Cameron      Duke                               $137,500                     $140,500 M
+Sporting Kansas City   Róger        Espinoza                            $85,444                      $85,444 M
+Team                   First Name   Last Name   2023 Base Salary              2023 Guaranteed Comp      Position
+Sporting Kansas City   Danny        Flores                          $67,360                      $67,360 M
+Sporting Kansas City   Andreu       Fontàs                         $450,000                     $450,000 D
+Sporting Kansas City   Kortne       Ford                           $165,000                     $170,000 D
+Sporting Kansas City   Felipe       Gutiérrez                      $165,000                     $165,000 M
+Sporting Kansas City   Felipe       Hernández                      $175,000                     $207,000 M
+Sporting Kansas City   Gadi         Kinda                          $850,000                     $918,000 M-F
+Sporting Kansas City   Tim          Leibold                        $500,000                     $501,050 D
+Sporting Kansas City   Kendall      McIntosh                       $130,000                     $130,000 GK
+Sporting Kansas City   Tim          Melia                          $625,000                     $637,500 GK
+Sporting Kansas City   Logan        Ndenbe                         $350,000                     $396,125 D
+Sporting Kansas City   Kayden       Pierre                          $85,444                      $91,819 D
+Sporting Kansas City   Alan         Pulido                    $2,200,000                      $2,200,000 F
+Sporting Kansas City   John         Pulskamp                       $150,000                     $173,500 GK
+Sporting Kansas City   Nemanja      Radoja                         $800,000                     $890,000 D-M
+Sporting Kansas City   Chris        Rindov                          $67,360                      $67,360 D
+Sporting Kansas City   Dany         Rosero                         $456,000                     $456,000 D
+Sporting Kansas City   Johnny       Russell                   $1,000,000                      $1,000,000 M
+Sporting Kansas City   Dániel       Sallói                    $1,100,000                      $1,100,000 M
+Sporting Kansas City   Khiry        Shelton                        $575,000                     $625,000 F
+Sporting Kansas City   Erik         Thommy                    $1,550,000                      $1,656,250 M-F
+Sporting Kansas City   Marinos      Tzionis                        $625,000                     $625,000 M
+Sporting Kansas City   Robert       Voloder                        $425,000                     $452,860 D
+Sporting Kansas City   Rémi         Walter                         $850,000                     $850,000 M
+Sporting Kansas City   Graham       Zusi                           $325,000                     $325,000 D
+St. Louis City SC      Samuel       Adeniran                        $85,444                      $85,444 F
+St. Louis City SC      Rasmus       Alm                            $220,000                     $284,425 M
+St. Louis City SC      Lucas        Bartlett                        $85,444                      $85,444 D
+St. Louis City SC      Jon          Bell                            $88,200                      $88,200 D
+St. Louis City SC      Njabulo      Blom                           $246,000                     $338,250 D-M
+St. Louis City SC      Roman        Bürki                     $1,500,000                      $1,632,469 GK
+Team                First Name      Last Name         2023 Base Salary              2023 Guaranteed Comp      Position
+St. Louis City SC   Michael         Creek                                 $85,444                      $85,444 GK
+St. Louis City SC   Nicholas        Gioacchini                           $380,004                     $399,287 F
+St. Louis City SC   Caden           Glover                                $67,360                      $72,360 F
+St. Louis City SC   Kyle            Hiebert                               $85,444                      $85,444 D
+St. Louis City SC   Aziel           Jackson                               $85,444                      $89,341 M-F
+St. Louis City SC   Isak            Jensen                               $175,000                     $228,250 M
+St. Louis City SC   João            Klauss de Mello                 $1,230,000                      $1,370,284 F
+St. Louis City SC   Eduard          Löwen                           $1,200,000                      $1,344,250 M
+St. Louis City SC   Ben             Lundt                                $100,000                     $112,833 GK
+St. Louis City SC   Anthony         Markanich                             $68,775                      $68,775 D
+St. Louis City SC   John            Nelson                               $160,000                     $168,000 D
+St. Louis City SC   Jake            Nerwinski                            $250,000                     $277,500 D
+St. Louis City SC   Joakim          Nilsson                         $1,102,450                      $1,170,950 D
+St. Louis City SC   Owen            O'Malley                              $67,360                      $72,360 D
+St. Louis City SC   Tomás           Ostrák                               $700,000                     $801,000 M-F
+St. Louis City SC   Tim             Parker                          $1,000,000                      $1,037,500 D
+St. Louis City SC   Miguel          Perez                                 $67,360                      $67,360 M
+St. Louis City SC   Selmir          Pidro                                $325,000                     $374,375 D
+St. Louis City SC   Célio Antonio   Pompeu                                $68,775                      $68,775 M
+St. Louis City SC   Max             Schneider                             $68,775                      $68,775 M
+St. Louis City SC   Jared           Stroud                                $88,200                     $103,200 M
+St. Louis City SC   Nökkvi          Thórisson                            $150,000                     $172,438 M
+St. Louis City SC   Indiana         Vassilev                             $250,000                     $281,250 M-F
+St. Louis City SC   Akil            Watts                                 $67,360                      $67,360 D-M
+St. Louis City SC   Joshua          Yaro                                  $85,444                      $85,444 D
+Toronto FC          Themi           Antonoglou                            $68,775                      $72,880 D
+Toronto FC          Federico        Bernardeschi                    $3,125,000                      $6,295,381 M
+Toronto FC          Latif           Blessing                             $600,000                     $665,000 M-F
+Toronto FC          Michael         Bradley                              $614,286                     $614,286 M
+Toronto FC          Alonso          Coello                                $67,360                      $71,693 D-M
+Team                  First Name    Last Name                 2023 Base Salary              2023 Guaranteed Comp      Position
+Toronto FC            Adama         Diomande                                     $525,000                     $585,000 F
+Toronto FC            Kobe          Franklin                                      $67,360                      $78,162 D
+Toronto FC            Luka          Gavran                                        $67,360                      $70,827 GK
+Toronto FC            Cristián      Gutiérrez                                    $300,000                     $311,667 D
+Toronto FC            Lorenzo       Insigne                                 $7,500,000                     $15,400,000 M
+Toronto FC            Sean          Johnson                                      $405,751                     $683,013 GK
+Toronto FC            Deandre       Kerr                                          $85,444                      $90,763 M
+Toronto FC            Aimé          Mabika                                        $85,444                      $93,569 D
+Toronto FC            Cassius       Mailula                                      $275,000                     $291,003 M
+Toronto FC            Jahkeele      Marshall-Rutty                               $152,500                     $159,313 D
+Toronto FC            Hugo          Mbongue                                       $67,360                      $78,787 F
+Toronto FC            Shane         O'Neill                                      $350,000                     $388,000 D
+Toronto FC            Jonathan      Osorio                                  $1,400,000                      $1,400,000 M
+Toronto FC            Prince Osei   Owusu                                        $600,000                     $707,500 F
+Toronto FC            Jordan        Perruzza                                     $130,000                     $132,500 F
+Toronto FC            Raoul         Petretta                                     $625,000                     $856,625 D
+Toronto FC            Greg          Ranjitsingh                                   $95,000                     $100,167 GK
+Toronto FC            Tomás         Romero                                       $120,000                     $125,000 GK
+Toronto FC            Sigurd        Rosted                                       $763,636                     $768,636 D
+Toronto FC            C.J.          Sapong                                       $600,000                     $616,667 F
+Toronto FC            Brandon       Servania                                     $475,000                     $530,833 M
+Toronto FC            Luke          Singh                                         $85,444                      $93,410 D
+Toronto FC            Kosi          Thompson                                      $85,444                      $90,704 M
+Toronto FC            Víctor        Vázquez                                      $268,000                     $301,500 M-F
+Vancouver Whitecaps   Sam           Adekugbe                                     $729,516                     $817,516 D
+Vancouver Whitecaps   Ali           Ahmed                                         $85,444                      $94,819 M
+Vancouver Whitecaps   Caio          Alexandre Souza e Silva                      $500,000                     $562,500 M
+Vancouver Whitecaps   Max           Anchor                                        $67,360                      $74,802 GK
+Vancouver Whitecaps   Simon         Becher                                        $67,360                      $70,485 F
+Vancouver Whitecaps   Sebastian     Berhalter                                    $150,000                     $160,250 M
+Team                  First Name   Last Name     2023 Base Salary              2023 Guaranteed Comp      Position
+Vancouver Whitecaps   Tristan      Blackmon                         $400,000                     $451,208 D
+Vancouver Whitecaps   Isaac        Boehmer                           $68,775                      $68,775 GK
+Vancouver Whitecaps   Javain       Brown                            $140,000                     $153,688 D
+Vancouver Whitecaps   Déiber       Caicedo                          $350,000                     $381,125 M
+Vancouver Whitecaps   Matteo       Campagna                          $85,444                      $94,456 D
+Vancouver Whitecaps   Andrés       Cubas                       $1,050,000                      $1,146,375 D-M
+Vancouver Whitecaps   Ryan         Gauld                       $2,400,000                      $2,505,000 M-F
+Vancouver Whitecaps   Kamron       Habibullah                        $85,444                      $95,044 M
+Vancouver Whitecaps   Thomas       Hasal                            $203,000                     $222,412 GK
+Vancouver Whitecaps   Junior       Hoilett                          $228,000                     $228,000 M
+Vancouver Whitecaps   Levonte      Johnson                           $67,360                      $67,360 M
+Vancouver Whitecaps   Mathías      Laborda                          $760,000                     $903,625 D
+Vancouver Whitecaps   Richie       Laryea                      $1,436,338                      $1,436,338 D
+Vancouver Whitecaps   Luís         Martins                          $300,000                     $300,000 D
+Vancouver Whitecaps   J.C.         Ngando                            $67,360                      $85,359 D-M
+Vancouver Whitecaps   Ryan         Raposo                           $120,000                     $137,000 M
+Vancouver Whitecaps   Alessandro   Schöpf                           $900,000                     $992,500 M-F
+Vancouver Whitecaps   Yohei        Takaoka                          $179,520                     $297,233 GK
+Vancouver Whitecaps   Russell      Teibert                          $400,000                     $449,375 D-M
+Vancouver Whitecaps   Ranko        Veselinovic                      $495,000                     $580,500 D
+Vancouver Whitecaps   Pedro        Vite                             $592,000                     $645,997 M-F
+Vancouver Whitecaps   Brian        White                            $511,000                     $511,000 F
+Vancouver Whitecaps   Karifa       Yao                               $89,716                      $94,123 D
+
