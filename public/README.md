@@ -7,8 +7,8 @@ No paywall, no signup required. Use it, share it, build on it.
 
 | File | Rows | Description |
 |------|------|-------------|
-| `ecnl_boys_clubs.csv` | 154 | Club directory: name, state, conference, website |
-| `ecnl_boys_fees.csv` | growing | Annual tuition data scraped from club websites |
+| [`data/ecnl_boys_clubs.csv`](../data/ecnl_boys_clubs.csv) | 154 | Club directory: name, state, conference, website |
+| [`data/ecnl_boys_fees.csv`](../data/ecnl_boys_fees.csv) | growing | Annual tuition data scraped from club websites |
 
 ## Column Definitions
 
@@ -102,7 +102,7 @@ Data was collected via this API in June 2026 (collection scripts have since been
 Found a club website that's wrong? Have fee data to add?
 
 1. Open an issue with the correction
-2. Submit a PR editing `ecnl_boys_clubs.csv` or `ecnl_boys_fees.csv`
+2. Submit a PR editing `data/ecnl_boys_clubs.csv` or `data/ecnl_boys_fees.csv`
 
 The fee CSV especially needs community contributions — most clubs don't publish fees publicly
 and the data needs to be collected one club at a time.

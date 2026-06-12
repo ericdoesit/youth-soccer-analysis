@@ -146,7 +146,7 @@
 
 <footer>
   Data scraped from ECNL standings API (api.athleteone.com) · Websites verified June 2026 ·
-  <a href="ecnl_boys_clubs.csv">Download CSV</a> ·
+  <a href="../data/ecnl_boys_clubs.csv">Download CSV</a> ·
   <a href="https://github.com/ericdoesit/ecnl-boys-clubs" target="_blank">GitHub</a> ·
   CC0 Public Domain
 </footer>
@@ -157,7 +157,7 @@ let sortCol = "club_name";
 let sortDir = 1;
 
 async function loadData() {
-  const res  = await fetch("ecnl_boys_clubs.csv");
+  const res  = await fetch("../data/ecnl_boys_clubs.csv");
   const text = await res.text();
   const lines = text.trim().split("\n");
   const headers = lines[0].split(",");
