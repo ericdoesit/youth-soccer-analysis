@@ -636,7 +636,7 @@ a { text-decoration-color: rgba(139,134,123,.4); }
   gap: 0;
   margin: 2rem auto;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1050px;
 }
 .pyr-band {
   box-sizing: border-box;
