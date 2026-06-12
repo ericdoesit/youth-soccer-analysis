@@ -16,3 +16,4 @@ data/analysis/*.csv
 
 # Local image archive (not published)
 public/img/backup/
+.vercel
