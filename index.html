@@ -320,6 +320,14 @@
     }
     .btn-survey:hover { opacity: 0.85; transform: translateY(-1px); }
 
+    /* ── D1 source tables ── */
+    .d1-src-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 0.82rem; }
+    .d1-src-table th { text-align: left; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em;
+                       color: var(--muted); padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--line); }
+    .d1-src-table td { padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--line); color: var(--text); }
+    .d1-src-table td:last-child, .d1-src-table th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+    .table-note { font-family: var(--font-sans); font-size: 0.72rem; color: var(--muted); margin: 0.6rem 0 0; line-height: 1.5; }
+
     /* ── Scroll reveal: base rules live in report/site.css (global) ── */
     .insight-row .insight:nth-child(2) { transition-delay: .12s; }
     .insight-row .insight:nth-child(3) { transition-delay: .24s; }
@@ -558,6 +566,63 @@
     <div class="chart-panel-full reveal">
       <div class="label">Who actually fills the 6,020 D1 men's roster spots?</div>
       <div id="rosterChart" class="d3-chart"></div>
+    </div>
+
+    <div class="chart-panel-full reveal">
+      <div class="label">And the US club slice — which youth league supplies committed D1 players</div>
+      <div id="d1SourceChart" class="d3-chart"></div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="chart-panel reveal">
+        <div class="label">Boys: D1 commits by youth league — class of 2026</div>
+        <table class="d1-src-table">
+          <thead><tr><th>League</th><th>Commits</th><th>Share</th></tr></thead>
+          <tbody>
+            <tr><td>MLS NEXT</td><td>380</td><td>51%</td></tr>
+            <tr><td>ECNL Boys</td><td>83</td><td>11%</td></tr>
+            <tr><td>Other leagues (N1/NPL, Elite 64, USL, SoCal…)</td><td>132</td><td>18%</td></tr>
+            <tr><td>Club unknown / not in index</td><td>148</td><td>20%</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note">n=743 · TopDrawerSoccer commitments, June 2026</p>
+      </div>
+      <div class="chart-panel reveal">
+        <div class="label">Girls: D1 commits by youth league — classes 2024–27</div>
+        <table class="d1-src-table">
+          <thead><tr><th>League</th><th>Commits</th><th>Share</th></tr></thead>
+          <tbody>
+            <tr><td>ECNL Girls</td><td>2,032</td><td>66%</td></tr>
+            <tr><td>Girls Academy</td><td>529</td><td>17%</td></tr>
+            <tr><td>Other leagues (ECRL, DPL, NL P.R.O.…)</td><td>189</td><td>6%</td></tr>
+            <tr><td>League unknown</td><td>329</td><td>11%</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note">n=3,079 · SoccerWire commitments, June 2026</p>
+      </div>
+    </div>
+
+    <div class="chart-panel-full reveal">
+      <div class="label">Top 10 boys clubs sending the class of 2026 to D1 — nine are free MLS academies</div>
+      <table class="d1-src-table">
+        <thead><tr><th>#</th><th>Club</th><th>League</th><th>D1 commits</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Philadelphia Union</td><td>MLS NEXT</td><td>13</td></tr>
+          <tr><td>2</td><td>Intercontinental Football Academy</td><td>Independent academy</td><td>12</td></tr>
+          <tr><td>3</td><td>LA Galaxy</td><td>MLS NEXT</td><td>11</td></tr>
+          <tr><td>4</td><td>Baltimore Armour</td><td>MLS NEXT</td><td>11</td></tr>
+          <tr><td>5</td><td>San Jose Earthquakes</td><td>MLS NEXT</td><td>10</td></tr>
+          <tr><td>6</td><td>NYCFC</td><td>MLS NEXT</td><td>10</td></tr>
+          <tr><td>7</td><td>Sockers FC</td><td>MLS NEXT</td><td>10</td></tr>
+          <tr><td>8</td><td>Inter Miami CF</td><td>MLS NEXT</td><td>10</td></tr>
+          <tr><td>9</td><td>Orlando City</td><td>MLS NEXT</td><td>9</td></tr>
+          <tr><td>10</td><td>Charlotte FC</td><td>MLS NEXT</td><td>9</td></tr>
+        </tbody>
+      </table>
+      <p class="table-note">The pay-to-play pitch inverts at the top: the clubs that actually deliver D1
+        rosters are the ones that don't charge. Sources: TopDrawerSoccer (boys) and SoccerWire (girls)
+        commitment listings; league attributed from my 4,576-club index where not listed.
+        Self-reported data — directional, not a census.</p>
     </div>
 
     <div class="insight-row">
@@ -833,6 +898,21 @@ function renderAll() {
     { label: 'Transfer portal',         v: 1650, c: 'blue', end: '25–30%', tip: '~1,650 spots filled by transfers, many international' },
     { label: 'International players',   v: 1970, c: 'gold', end: '30–35%', tip: '~1,970 spots recruited from abroad' },
   ], { left: 180, barH: 24, tickFmt: d => d.toLocaleString(), valFmt: v => '~' + v.toLocaleString() + ' of 6,020 spots' });
+
+  /* which youth league supplies committed D1 players — TDS boys 2026 (n=743),
+     SoccerWire girls 2024-27 (n=3,079); league inferred from club where unlisted */
+  hStacked('d1SourceChart', [
+    { label: 'Boys · class of 2026', end: 'n=743', parts: [
+      { label: 'MLS NEXT',      v: 51, c: 'gold' },
+      { label: 'ECNL Boys',     v: 11, c: 'blue' },
+      { label: 'Other leagues', v: 18, c: 'green' },
+      { label: 'Club unknown',  v: 20, c: 'dim' } ] },
+    { label: 'Girls · 2024–27', end: 'n=3,079', parts: [
+      { label: 'ECNL Girls',    v: 66, c: 'gold' },
+      { label: 'Girls Academy', v: 17, c: 'blue' },
+      { label: 'Other leagues', v: 6,  c: 'green' },
+      { label: 'Unknown',       v: 11, c: 'dim' } ] },
+  ], { left: 170, barH: 26, max: 100, tickFmt: d => d + '%', valFmt: v => v + '% of D1 commits' });
 
   lineChart('attritionChart',
     ['Draft', 'Sep', 'Yr 1', 'Yr 2', 'Yr 3', 'Yr 4', 'Yr 5'],

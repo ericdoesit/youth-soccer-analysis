@@ -17,16 +17,62 @@ Rerun anytime:
 
 import csv
 import json
+import re
 import urllib.request
 
 ES_URL = "https://www.soccerwire.com/wp-json/v1/elastic-proxy/soccerwirecom-post-1/_search"
 OUT = "data/college_commitments_soccerwire.csv"
+CLUB_INDEX = "data/clubs.csv"
 PAGE = 500
 
 FIELDS = [
     "player", "gender", "recruit_year", "position", "state",
-    "club", "league", "college_team", "college_division", "profile_slug",
+    "club", "league", "club_league_inferred", "league_resolved",
+    "college_team", "college_division", "profile_slug",
 ]
+
+# canonical league buckets, highest tier first; matched against the
+# multi-valued leagues column of data/clubs.csv. Gender-restricted so a
+# girl at a club is never attributed to the club's boys league.
+LEAGUE_BUCKETS = [
+    ("mls next", "MLS NEXT", "male"),
+    ("ecnl boys", "ECNL Boys", "male"),
+    ("ecnl girls", "ECNL Girls", "female"),
+    ("girls academy", "Girls Academy", "female"),
+    ("usl academy", "USL Academy", "male"),
+    ("national academy", "NAL", "male"),
+    ("elite 64", "Elite 64", "male"),
+    ("dpl", "DPL", "female"),
+    ("ecnl regional", "ECNL Regional League", None),
+]
+
+
+def norm_name(s):
+    s = re.sub(r"\(.*?\)", "", s.lower())
+    for word in ("academy", "soccer club", "futbol club", " sc", " fc"):
+        s = s.replace(word, "")
+    return re.sub(r"[^a-z0-9]", "", s)
+
+
+def load_club_leagues():
+    lookup = {}
+    with open(CLUB_INDEX, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            lookup.setdefault(norm_name(r["club_name"]), r["leagues"])
+    return lookup
+
+
+def infer_league(club, gender, lookup):
+    leagues = lookup.get(norm_name(club), "") if club else ""
+    if not leagues:
+        return ""
+    low = leagues.lower()
+    for needle, label, bucket_gender in LEAGUE_BUCKETS:
+        if bucket_gender not in (None, gender):
+            continue
+        if needle in low:
+            return label
+    return leagues.split(",")[0].strip()
 
 
 def first(meta_list, key="value", idx=0):
@@ -97,11 +143,20 @@ def main():
         offset += PAGE
         print(f"  fetched {min(offset, total)}/{total}")
 
+    lookup = load_club_leagues()
+    inferred = 0
+    for r in rows:
+        r["club_league_inferred"] = infer_league(r["club"], r["gender"], lookup)
+        r["league_resolved"] = r["league"] or r["club_league_inferred"]
+        if not r["league"] and r["club_league_inferred"]:
+            inferred += 1
+
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         w.writerows(rows)
-    print(f"Wrote {len(rows)} players to {OUT}")
+    print(f"Wrote {len(rows)} players to {OUT} "
+          f"({inferred} leagues inferred via {CLUB_INDEX})")
 
 
 if __name__ == "__main__":
