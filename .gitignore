@@ -13,3 +13,6 @@ __pycache__/
 # Analysis outputs (generated; not source)
 data/analysis/*.png
 data/analysis/*.csv
+
+# Local image archive (not published)
+public/img/backup/
