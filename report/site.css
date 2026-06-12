@@ -19,7 +19,7 @@
    ─ FAQ accordion ........ .faq-item > .faq-q (+ .faq-icon) + .faq-a; JS toggles .open
    ─ Pyramid .............. .pyramid > .pyr-band.pyr-l0..l5 (solid poster fills)
    ─ Tables ............... table/thead/tbody (light grey --line separators)
-   ─ Callout .............. .callout (.blue/.yellow) — prefer .insight for key findings
+   ─ Callout .............. .callout (neutral grey, single style site-wide)
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap');
@@ -375,21 +375,20 @@ tbody td {
   vertical-align: top;
 }
 
-/* ── Callouts ────────────────────────────────────────────── */
+/* ── Callouts ────────────────────────────────────────────────
+   One neutral style site-wide (grey surface, like index insight
+   cards). Edit here to retheme every page. Color variants
+   (.blue etc.) intentionally retired — chart colors stay in charts. */
 .callout {
-  background: rgba(201,168,76,.08);
-  border-left: 3px solid var(--gold);
+  background: var(--surface-2);
+  border-left: 3px solid var(--line);
   padding: 1rem 1.25rem;
   border-radius: 0 2px 2px 0;
   margin: 1.25rem 0;
   color: var(--text);
   font-size: 0.93rem;
 }
-.callout.blue   { background: var(--blue-lt);  border-color: var(--blue); }
-.callout.yellow { background: rgba(242,223,34,.12); border-color: var(--gold); }
 .callout strong { color: var(--text-strong); }
-.callout.blue   strong { color: var(--text-strong); }
-.callout.yellow strong { color: var(--gold); }
 
 /* ── Stat grids ──────────────────────────────────────────── */
 .stat-grid {
