@@ -109,6 +109,9 @@
       font-weight: 500;
       color: var(--text-strong);
       line-height: 1;
+      /* digits have no descenders; reclaim the descender space the
+         display font reserves below the baseline */
+      margin-bottom: -0.14em;
       font-variant-numeric: tabular-nums;
       letter-spacing: -0.03em;
     }
