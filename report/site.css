@@ -733,9 +733,11 @@ a { text-decoration-color: rgba(139,134,123,.4); }
   .pyr-band.pyr-l4 { width: 85% !important; }
   .pyr-band.pyr-l5 { width: 92% !important; }
   .pyr-band.pyr-l0 { width: 100% !important; }
-  .pyr-logos { gap: 6px; padding: 2px 0; }
-  .pyr-logo-slot:has(img) { height: 44px; min-width: 44px; }
-  .pyr-logo-slot.logo-wide:has(img) { height: 24px; }
+  /* logos flow 3 across; partial rows (e.g. nal+e64, usl-youth+edp) stay centered */
+  .pyr-logos { gap: 8px 4px; padding: 2px 0; }
+  .pyr-logo-slot:has(img) { height: 44px; min-width: 0; flex: 0 0 30%; }
+  .pyr-logo-slot.logo-wide:has(img) { height: 24px; flex: 0 0 30%; }
+  .pyr-logo-slot.logo-wide img { max-width: 100%; }
   .pyr-leagues { font-size: 0.56rem; line-height: 1.4; }
   .pyr-lnum { font-size: 0.54rem; }
   .pyr-name { font-size: 0.7rem; }
