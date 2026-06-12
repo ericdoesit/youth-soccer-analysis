@@ -18,6 +18,20 @@
                                       color: var(--muted); margin-bottom: 0.75rem; }
     .ev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.25rem 0; }
     @media (max-width: 700px) { .ev-grid { grid-template-columns: 1fr; } }
+
+    /* salary distribution rows — value sits after the bar, single line */
+    .sal-row { display: flex; align-items: center; gap: 1rem; margin-bottom: .5rem; }
+    .sal-label { flex: 0 0 160px; text-align: right; font-size: .85rem; line-height: 1.35; }
+    .sal-range { display: block; color: var(--muted); }
+    .sal-track { flex: 1; display: flex; align-items: center; background: var(--ch-dim); border-radius: 4px; height: 28px; }
+    .sal-fill { height: 100%; border-radius: 4px; flex: 0 0 auto; }
+    .sal-val { font-size: .85rem; font-weight: 600; color: var(--text-strong); margin-left: .5rem; white-space: nowrap; }
+    @media (max-width: 600px) {
+      .sal-row { flex-wrap: wrap; gap: .3rem; margin-bottom: .8rem; }
+      .sal-label { flex: 1 1 100%; text-align: left; }
+      .sal-range { display: inline; margin-left: .35rem; }
+      .sal-track { flex: 1 1 100%; }
+    }
   </style>
 </head>
 <body>
@@ -476,36 +490,32 @@
     <!-- Salary distribution of survivors -->
     <h3>Salary Distribution of the 104 Survivors</h3>
     <div style="margin:1.5rem 0;">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">MLS minimum<br><span style="color:var(--muted);">$88K–$113K</span></span>
-        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
-          <div style="width:35%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">35% · 36 players</span>
-          </div>
+      <div class="sal-row">
+        <span class="sal-label">MLS minimum<span class="sal-range">$88K–$113K</span></span>
+        <div class="sal-track">
+          <div class="sal-fill" style="width:35%;background:var(--ch-dim-bd);"></div>
+          <span class="sal-val">35% · 36 players</span>
         </div>
       </div>
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">Low<br><span style="color:var(--muted);">$114K–$299K</span></span>
-        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
-          <div style="width:42%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">42% · 44 players</span>
-          </div>
+      <div class="sal-row">
+        <span class="sal-label">Low<span class="sal-range">$114K–$299K</span></span>
+        <div class="sal-track">
+          <div class="sal-fill" style="width:42%;background:var(--ch-dim-bd);"></div>
+          <span class="sal-val">42% · 44 players</span>
         </div>
       </div>
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">Mid<br><span style="color:var(--muted);">$300K–$599K</span></span>
-        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
-          <div style="width:15%;background:var(--blue);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">15% · 16</span>
-          </div>
+      <div class="sal-row">
+        <span class="sal-label">Mid<span class="sal-range">$300K–$599K</span></span>
+        <div class="sal-track">
+          <div class="sal-fill" style="width:15%;background:var(--blue);"></div>
+          <span class="sal-val">15% · 16 players</span>
         </div>
       </div>
-      <div style="display:flex;align-items:center;gap:1rem;">
-        <span style="width:160px;text-align:right;font-size:.85rem;">Upper<br><span style="color:var(--muted);">$600K+</span></span>
-        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
-          <div style="width:8%;background:var(--gold);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
-            <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">8% · 8</span>
-          </div>
+      <div class="sal-row">
+        <span class="sal-label">Upper<span class="sal-range">$600K+</span></span>
+        <div class="sal-track">
+          <div class="sal-fill" style="width:8%;background:var(--gold);"></div>
+          <span class="sal-val">8% · 8 players</span>
         </div>
       </div>
     </div>

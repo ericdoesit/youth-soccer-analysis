@@ -204,8 +204,11 @@ function vGrouped(elId, cats, series, opts = {}) {
   const el = document.getElementById(elId);
   el.innerHTML = '';
   htmlLegend(el, series, P);
-  const W = el.clientWidth || 420, H = opts.h ?? 220;
-  const m = { top: 8, right: 12, bottom: opts.bottom ?? 28, left: 48 };
+  const W = el.clientWidth || 420;
+  /* narrow screens: rotate category labels so adjacent ones can't collide */
+  const narrow = W < 520;
+  const H = (opts.h ?? 220) + (narrow ? 30 : 0);
+  const m = { top: 8, right: 12, bottom: (opts.bottom ?? 28) + (narrow ? 30 : 0), left: 48 };
   const svg = d3.select(el).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', W).attr('height', H);
 
   const bars = series.filter(s => s.type !== 'line');
@@ -249,15 +252,23 @@ function vGrouped(elId, cats, series, opts = {}) {
     });
   });
 
-  svg.append('g').selectAll('text').data(cats).join('text')
-    .attr('x', c => x0(c) + x0.bandwidth()/2).attr('y', H - m.bottom + 16)
-    .attr('text-anchor', 'middle').attr('fill', P.muted).attr('font-size', '10px')
-    .each(function(c) {
-      const lines = String(c).split('\n');
-      d3.select(this).text(null);
-      lines.forEach((l, i) => d3.select(this).append('tspan')
-        .attr('x', x0(c) + x0.bandwidth()/2).attr('dy', i ? 12 : 0).text(l));
-    });
+  if (narrow) {
+    svg.append('g').selectAll('text').data(cats).join('text')
+      .attr('x', c => x0(c) + x0.bandwidth()/2).attr('y', H - m.bottom + 14)
+      .attr('text-anchor', 'end').attr('fill', P.muted).attr('font-size', '10px')
+      .attr('transform', c => `rotate(-32 ${x0(c) + x0.bandwidth()/2} ${H - m.bottom + 14})`)
+      .text(c => String(c).replace(/\n/g, ' '));
+  } else {
+    svg.append('g').selectAll('text').data(cats).join('text')
+      .attr('x', c => x0(c) + x0.bandwidth()/2).attr('y', H - m.bottom + 16)
+      .attr('text-anchor', 'middle').attr('fill', P.muted).attr('font-size', '10px')
+      .each(function(c) {
+        const lines = String(c).split('\n');
+        d3.select(this).text(null);
+        lines.forEach((l, i) => d3.select(this).append('tspan')
+          .attr('x', x0(c) + x0.bandwidth()/2).attr('dy', i ? 12 : 0).text(l));
+      });
+  }
 }
 
 /* multi-series line chart; opts.tipFmt(label, seriesLabel, value) */

@@ -128,7 +128,10 @@
 
     .cost-table td.gold   { color: var(--text-strong); font-weight: 600; }
     .cost-table td.blue   { color: var(--blue);  font-weight: 600; }
-    .cost-table td.muted  { color: var(--muted); }
+    .cost-table td.muted  { color: var(--muted); max-width: 280px; }
+    @media (max-width: 600px) {
+      .cost-table td.muted { max-width: 190px; font-size: 0.72rem; }
+    }
     .cost-table td.free   { color: var(--green); font-weight: 600; }
 
     .cost-range {
@@ -474,7 +477,7 @@
             <td class="right"><span class="cost-low">$3,000</span><span class="cost-sep"> – </span><span class="cost-high">$5,300</span></td>
             <td class="right">~$10,000</td>
             <td class="right gold">~$25,000+</td>
-            <td class="muted">Club registration ~$3,500–$4,850 + separate MLS Next competition fee ~$1,700 + uniform $400–$1,100. Travel is the largest variable — ranges from $3k (local) to $15k+ depending on location. Community-reported 2025–2026.</td>
+            <td class="muted">Registration ~$3,500–$4,850 + $1,700 MLS NEXT fee + uniforms $400–$1,100; travel $3K–$15K+ is the swing. Community-reported 2025–26.</td>
           </tr>
           <tr>
             <td>MLS Pro Academies</td>
@@ -594,7 +597,7 @@
             <td class="right"><span class="cost-low">$0</span><span class="cost-sep"> – </span><span class="cost-high">$10</span></td>
             <td class="right blue">$10</td>
             <td class="right">$10</td>
-            <td class="muted">LA Parks: $10/player ages 3–15; 272 programs at 102 facilities</td>
+            <td class="muted">LA Parks: $10/player, ages 3–15</td>
           </tr>
 
         </tbody>
