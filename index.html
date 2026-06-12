@@ -798,11 +798,11 @@ function renderAll() {
   ], { log: true, logMin: 50, left: 200, tickFmt: d => d.toLocaleString(), valFmt: v => v.toLocaleString() + ' players' });
 
   hBars('costChart', [
+    { label: 'LA City United',        v: 120,            c: 'blue', end: '$120', tip: '$120/yr flat, publicly subsidized' },
     { label: 'T1 Rec / AYSO',         v: [250, 700],     c: 'dim' },
     { label: 'T2 Competitive travel', v: [2200, 9200],   c: 'dim' },
     { label: 'T3 ECNL / GA',          v: [6400, 13200],  c: 'gold' },
     { label: 'T4 MLS NEXT HG',        v: [8450, 25000],  c: 'gold' },
-    { label: 'LA City United',        v: 120,            c: 'blue', end: '$120', tip: '$120/yr flat, publicly subsidized' },
   ], { left: 180, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() + '/yr' });
 
   hBars('careerChart', [

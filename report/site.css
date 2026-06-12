@@ -609,6 +609,8 @@ footer a { color: var(--muted); text-decoration: underline; text-underline-offse
   /* wide tables stay in frame and scroll sideways (same pattern as scope) */
   table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .chart-wrap { padding: 0.75rem 0.4rem; }
+  /* insight numbers match h2 scale on phones */
+  .insight-row .insight .i-num { font-size: 1.55rem; }
 }
 
 /* ── Scroll reveal (global — elements are tagged by nav.js) ── */
@@ -641,7 +643,7 @@ a { text-decoration-color: rgba(139,134,123,.4); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
-  min-height: 150px;
+  min-height: 118px;
   padding: 12px 18px 10px;
   border-radius: 0;
   font-family: var(--font-sans);
@@ -696,14 +698,14 @@ a { text-decoration-color: rgba(139,134,123,.4); }
   background: transparent;
   border: none;
   width: auto;
-  min-width: 100px;
-  height: 100px;
+  min-width: 75px;
+  height: 75px;
   padding: 0;
   border-radius: 0;
 }
 /* landscape logos: 50% of the standard slot height, width follows aspect */
 .pyr-logo-slot.logo-wide:has(img) {
-  height: 50px;
+  height: 38px;
   min-width: 0;
 }
 .pyr-logo-slot.logo-wide img { width: auto; }

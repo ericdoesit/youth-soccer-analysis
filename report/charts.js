@@ -99,9 +99,16 @@ function hBars(elId, rows, opts = {}) {
       svg.append('text')
         .attr('x', m.left).attr('y', y - 5)
         .attr('fill', P.text).attr('font-size', '11px').text(r.label);
-      if (r.end) svg.append('text')
-        .attr('x', W - m.right).attr('y', y - 5).attr('text-anchor', 'end')
-        .attr('fill', P.strong).attr('font-size', '11px').attr('font-weight', 600).text(r.end);
+      if (r.end) {
+        /* sit beside the bar when it fits; otherwise top-right of the row */
+        const ex = x(lo) + bw + 6;
+        const fits = ex < W - m.right - 8 * r.end.length;
+        svg.append('text')
+          .attr('x', fits ? ex : W - m.right)
+          .attr('y', fits ? y + barH / 2 + 4 : y - 5)
+          .attr('text-anchor', fits ? 'start' : 'end')
+          .attr('fill', P.strong).attr('font-size', '11px').attr('font-weight', 600).text(r.end);
+      }
     } else {
       svg.append('text')
         .attr('x', m.left - 10).attr('y', y + barH/2 + 4).attr('text-anchor', 'end')
