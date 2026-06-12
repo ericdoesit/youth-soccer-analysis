@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 Pull survey responses from the master Google Sheet (Tally + imported
-Typeform rows) and regenerate the RESPONSES data block in survey.html.
+Typeform rows) and regenerate everything downstream of it:
+  - the RESPONSES data block in survey.html
+  - data/survey_merged.csv (read by report/costs.html survey chart)
 
-Rerun anytime the sheet gets new responses:
+The sheet is the source of truth; edit dollar amounts there, then rerun:
     python3 scripts/sheet_to_survey.py
 """
 
@@ -40,6 +42,20 @@ SPECIFY_MAP = {
     "ea": "EA (Elite Academy)",
     "mls next": "MLS NEXT — Homegrown (HG)",
 }
+
+# League -> club_level bucket for survey_merged.csv (matches the levels the
+# legacy Typeform asked for directly). Used only for rows the merged CSV
+# hasn't seen before; existing rows keep their original level.
+def league_level(league):
+    if league.startswith("MLS NEXT"):
+        return "Academy"
+    if league.startswith("EA"):
+        return "EA (Elite Academy)"
+    if league in ("ECNL", "ECNL RL", "DPL", "GA", "Girls Academy"):
+        return "Elite club"
+    if league == "AYSO":
+        return "Rec"
+    return "Competitive travel"
 
 # Tally private-coaching ranges: (low, high, midpoint estimate)
 COACHING_RANGES = {
@@ -116,16 +132,66 @@ def resolve_league(r):
     return LEAGUE_OVERRIDES.get(r[COL["id"]].strip(), "Other / Unspecified")
 
 
+MERGED_FIELDS = [
+    "submission_id", "submitted_at", "zip_code", "income_bracket",
+    "club_level", "club_name", "travel_scope",
+    "club_fee_annual", "league_fee_annual", "private_coaching_annual",
+    "travel_annual", "equipment_annual", "tournament_annual",
+    "training_hours_week", "private_coaching_hours_week",
+    "years_in_club", "recruited", "total_annual_est",
+]
+
+
+def write_merged_csv(responses, prev_merged):
+    """Regenerate data/survey_merged.csv from sheet rows. The sheet is the
+    source of truth for dollar amounts; fields the sheet doesn't carry
+    (club_level, hours, tenure) are preserved from the previous CSV.
+    club_name stays blank — never published per survey promise."""
+    out = []
+    for r in responses:
+        prev = prev_merged.get(r["id"], {})
+        out.append({
+            "submission_id": r["id"],
+            "submitted_at": prev.get("submitted_at") or r["date"],
+            "zip_code": r["zip"] or "",
+            "income_bracket": r["income"] or "",
+            "club_level": prev.get("club_level") or league_level(r["league"]),
+            "club_name": "",
+            "travel_scope": r["travel_scope"] or prev.get("travel_scope", ""),
+            "club_fee_annual": r["club_fee"] if r["club_fee"] is not None else "",
+            "league_fee_annual": r["league_fee"] if r["league_fee"] is not None else "",
+            "private_coaching_annual": r["private_coaching"] if r["private_coaching"] is not None else "",
+            "travel_annual": r["travel"] if r["travel"] is not None else "",
+            "equipment_annual": r["uniform"] if r["uniform"] is not None else "",
+            "tournament_annual": r["tournament"] if r["tournament"] is not None else "",
+            "training_hours_week": prev.get("training_hours_week", ""),
+            "private_coaching_hours_week": prev.get("private_coaching_hours_week", ""),
+            "years_in_club": prev.get("years_in_club", ""),
+            "recruited": prev.get("recruited", ""),
+            "total_annual_est": r["total"],
+        })
+    with open(MERGED_CSV, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=MERGED_FIELDS)
+        w.writeheader()
+        w.writerows(out)
+    print(f"Wrote {len(out)} responses to {MERGED_CSV}")
+
+
 def main():
     with urllib.request.urlopen(SHEET_CSV) as resp:
         raw_rows = list(csv.DictReader(io.StringIO(resp.read().decode("utf-8"))))
 
-    exact_coaching = {}
+    # Previous merged CSV: source of exact legacy coaching dollars and of
+    # fields the sheet doesn't carry (club_level, hours, tenure).
+    prev_merged = {}
     with open(MERGED_CSV, newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            val = r.get("private_coaching_annual", "")
-            if val != "":
-                exact_coaching[r["submission_id"]] = int(val)
+            prev_merged[r["submission_id"]] = r
+    exact_coaching = {
+        sid: int(r["private_coaching_annual"])
+        for sid, r in prev_merged.items()
+        if r.get("private_coaching_annual", "") != ""
+    }
 
     # A duplicate row can carry an exact coaching figure for its twin
     dup_exact = {}
@@ -169,6 +235,8 @@ def main():
         responses.append(rec)
 
     responses.sort(key=lambda r: r["date"])
+
+    write_merged_csv(responses, prev_merged)
 
     js = "  const RESPONSES = " + json.dumps(responses, indent=2, ensure_ascii=False) + ";"
     js = "\n".join("  " + line if i else line for i, line in enumerate(js.split("\n")))

@@ -99,23 +99,23 @@
   <!-- Survey Results -->
   <section class="card-section">
     <h2>What Families in My Survey Actually Paid</h2>
-    <p>Anonymous survey of youth soccer parents (n=12 respondents, collected June 2026). All respondents earn $120K+ household income. Results are directional — not a representative sample. Club names are collected for verification but never published; teams are identified by area and league only.</p>
+    <p>Anonymous survey of youth soccer parents (n=<span class="surveyN">12</span> respondents, collected June 2026). All respondents earn $120K+ household income. Results are directional — not a representative sample. Club names are collected for verification but never published; teams are identified by area and league only.</p>
 
     <div class="stat-grid">
       <div class="stat-card">
-        <div class="num">$3,600</div>
-        <p>Avg total annual spend<br>competitive travel families (n=4)</p>
+        <div class="num" id="surveyCompAvg">$3,600</div>
+        <p>Avg total annual spend<br>competitive travel families (n=<span id="surveyCompN">4</span>)</p>
       </div>
       <div class="stat-card">
-        <div class="num bad">$8,675</div>
-        <p>Avg total annual spend<br>elite club families (n=4)</p>
+        <div class="num bad" id="surveyEliteAvg">$8,675</div>
+        <p>Avg total annual spend<br>elite club families (n=<span id="surveyEliteN">4</span>)</p>
       </div>
       <div class="stat-card">
-        <div class="num bad">$4,500</div>
+        <div class="num bad" id="surveyElitePC">$4,500</div>
         <p>Avg private coaching add-on<br>elite club families (above club fee)</p>
       </div>
       <div class="stat-card">
-        <div class="num">$825</div>
+        <div class="num" id="surveyCompPC">$825</div>
         <p>Avg private coaching add-on<br>competitive travel families</p>
       </div>
     </div>
@@ -148,9 +148,9 @@
     </table>
 
     <div class="callout blue" style="margin-top:1.25rem;">
-      <strong>Private coaching is the hidden cost.</strong> Elite club families in my survey spent an average of $4,500/yr on private coaching on top of club fees — nearly matching the club fee itself. No club discloses this number upfront, because no club sends this bill. It arrives one $100 session at a time.
+      <strong>Private coaching is the hidden cost.</strong> Elite club families in my survey spent an average of <span id="surveyElitePCProse">$4,500</span>/yr on private coaching on top of club fees — nearly matching the club fee itself. No club discloses this number upfront, because no club sends this bill. It arrives one $100 session at a time.
     </div>
-    <p class="sources">Survey collected June 2026 · n=12 · Self-selected, not representative · All respondents $120K+ household income · Live results at <a href="../survey.html">the survey page</a></p>
+    <p class="sources">Survey collected June 2026 · n=<span class="surveyN">12</span> · Self-selected, not representative · All respondents $120K+ household income · Live results at <a href="../survey.html">the survey page</a></p>
   </section>
 
   <!-- Career Cost Chart -->
@@ -350,17 +350,11 @@ function renderAll() {
     { label: 'T5 MLS NEXT',       v: [5000, 20000],   c: 'gold', end: '$10K mid',   tip: 'Low $5,000 · Mid $10,000 · High $20,000' },
   ], { left: 150, tickFmt: fmt$, valFmt: fmt$ });
 
-  /* survey families — stacked spend */
-  hStacked('surveyChart', [
-    { label: 'Comp. travel A', parts: [ { label: 'Club fee', v: 1250, c: 'gold' }, { label: 'Private coaching', v: 2000, c: 'blue' }, { label: 'Other (travel, equip, tournaments)', v: 2500, c: 'dim' } ] },
-    { label: 'Comp. travel B', parts: [ { label: 'Club fee', v: 2000, c: 'gold' }, { label: 'Private coaching', v: 1000, c: 'blue' }, { label: 'Other (travel, equip, tournaments)', v: 1850, c: 'dim' } ] },
-    { label: 'Comp. travel C', parts: [ { label: 'Club fee', v: 500,  c: 'gold' }, { label: 'Private coaching', v: 300,  c: 'blue' }, { label: 'Other (travel, equip, tournaments)', v: 900,  c: 'dim' } ] },
-    { label: 'Comp. travel D', parts: [ { label: 'Club fee', v: 2100, c: 'gold' } ] },
-    { label: 'Elite club A',   parts: [ { label: 'Club fee', v: 4000, c: 'gold' }, { label: 'Private coaching', v: 2000, c: 'blue' } ] },
-    { label: 'Elite club B',   parts: [ { label: 'Club fee', v: 5000, c: 'gold' }, { label: 'Private coaching', v: 6000, c: 'blue' } ] },
-    { label: 'Elite club C',   parts: [ { label: 'Club fee', v: 3500, c: 'gold' }, { label: 'Private coaching', v: 8000, c: 'blue' } ] },
-    { label: 'Elite club D',   parts: [ { label: 'Club fee', v: 4200, c: 'gold' }, { label: 'Private coaching', v: 2000, c: 'blue' } ] },
-  ], { left: 130, barH: 22, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() });
+  /* survey families — stacked spend, rows loaded from ../data/survey_merged.csv */
+  if (surveyRows) {
+    hStacked('surveyChart', surveyChartRows(surveyRows),
+      { left: 130, barH: 22, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() });
+  }
 
   /* career investment by tier — from data/analysis/career_cost_by_tier.csv */
   hBars('careerCostChart', [
@@ -378,6 +372,56 @@ function renderAll() {
     { label: 'Tier 4 (~$23,400/yr)',  parts: [ { label: 'Club fee', v: 18350, c: 'gold' }, { label: 'Travel', v: 2610, c: 'red' }, { label: 'Tournaments', v: 1050, c: 'blue' }, { label: 'Equipment', v: 560, c: 'dim' }, { label: 'Extra coaching & camps', v: 840, c: 'green' } ] },
   ], { left: 160, barH: 24, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() });
 }
+/* ── survey chart + stat tiles, driven by data/survey_merged.csv ──
+   Club names are never read here; respondents appear as level + letter only. */
+let surveyRows = null;
+const SURVEY_LEVEL_ORDER = ['Rec', 'U-travel', 'Competitive travel', 'Academy', 'EA (Elite Academy)', 'Elite club'];
+const SURVEY_LEVEL_SHORT = { 'Competitive travel': 'Comp. travel', 'EA (Elite Academy)': 'EA' };
+const SURVEY_COMP_LEVELS = ['U-travel', 'Competitive travel'];
+const surveyOther = r => (+r.travel_annual || 0) + (+r.equipment_annual || 0) + (+r.tournament_annual || 0) + (+r.league_fee_annual || 0);
+const surveyTotal = r => +r.total_annual_est || (+r.club_fee_annual || 0) + (+r.private_coaching_annual || 0) + surveyOther(r);
+
+function surveyChartRows(rows) {
+  const counters = {};
+  return rows.slice()
+    .sort((a, b) => SURVEY_LEVEL_ORDER.indexOf(a.club_level) - SURVEY_LEVEL_ORDER.indexOf(b.club_level))
+    .map(r => {
+      const lvl = SURVEY_LEVEL_SHORT[r.club_level] || r.club_level;
+      counters[lvl] = (counters[lvl] || 0) + 1;
+      const parts = [];
+      if (+r.club_fee_annual) parts.push({ label: 'Club fee', v: +r.club_fee_annual, c: 'gold' });
+      if (+r.private_coaching_annual) parts.push({ label: 'Private coaching', v: +r.private_coaching_annual, c: 'blue' });
+      if (surveyOther(r)) parts.push({ label: 'Other (travel, equip, tournaments, league fees)', v: surveyOther(r), c: 'dim' });
+      return { label: lvl + ' ' + String.fromCharCode(64 + counters[lvl]), parts };
+    });
+}
+
+function updateSurveyStats(rows) {
+  const money = v => '$' + Math.round(v).toLocaleString();
+  const avg = a => a.reduce((s, v) => s + v, 0) / a.length;
+  const comp = rows.filter(r => SURVEY_COMP_LEVELS.includes(r.club_level));
+  const elite = rows.filter(r => r.club_level === 'Elite club');
+  if (!comp.length || !elite.length) return;
+  document.getElementById('surveyCompAvg').textContent = money(avg(comp.map(surveyTotal)));
+  document.getElementById('surveyEliteAvg').textContent = money(avg(elite.map(surveyTotal)));
+  document.getElementById('surveyElitePC').textContent = money(avg(elite.map(r => +r.private_coaching_annual || 0)));
+  document.getElementById('surveyCompPC').textContent = money(avg(comp.map(r => +r.private_coaching_annual || 0)));
+  document.getElementById('surveyCompN').textContent = comp.length;
+  document.getElementById('surveyEliteN').textContent = elite.length;
+  document.querySelectorAll('.surveyN').forEach(el => { el.textContent = rows.length; });
+  const pcProse = document.getElementById('surveyElitePCProse');
+  if (pcProse) pcProse.textContent = money(avg(elite.map(r => +r.private_coaching_annual || 0)));
+}
+
+d3.csv('../data/survey_merged.csv').then(rows => {
+  surveyRows = rows.filter(r => surveyTotal(r) > 0);
+  updateSurveyStats(surveyRows);
+  renderAll();
+}).catch(() => {
+  document.getElementById('surveyChart').innerHTML =
+    '<p style="color:var(--muted);font-size:0.85rem;">Live survey data could not be loaded (page must be served over HTTP).</p>';
+});
+
 renderAll();
 let rT; window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(renderAll, 150); });
 </script>

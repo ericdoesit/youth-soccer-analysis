@@ -1,12 +1,15 @@
-submission_id,submitted_at,zip_code,income_bracket,club_level,club_name,travel_scope,club_fee_annual,private_coaching_annual,travel_annual,equipment_annual,tournament_annual,training_hours_week,private_coaching_hours_week,years_in_club,recruited,total_annual_est
-r3du3tekuna5urp72ldsr3du3tegxbe9,2026-06-05T00:05:09Z,95776,"$200,000+",Competitive travel,,Regional,1250,2000,1500,500,500,3,1,4,No,5750
-nuravznaxrze1fa3messnuravz9d9r9q,2026-06-05T00:09:49Z,30062,"$200,000+",U-travel,,Regional,2000,1000,1000,350,500,5,0,1,No,4850
-7u7xolajwvf3zo95vx1o7jd7u7xovexe,2026-06-05T00:12:16Z,04021,"$120,000 - $200,000",U-travel,,Local,500,300,400,500,0,4,0,4,No,1700
-ecobyt7arroje4qvf4t1eecobyt7axeq,2026-06-05T15:55:17Z,90806,"$120,000 - $200,000",Elite club,Slammers,"Regional (2-6 hours, occasional overnight)",4000,2000,,,,6,2,5,,6000
-58ya7l55c0ril8cc58ya246n621rz55f,2026-06-05T16:40:40Z,92129,"$200,000+",Elite club,City SC San Diego PRE-MLS NEXT B2015,"Regional (2-6 hours, occasional overnight)",3500,8000,,,,5,6,5,,11500
-idw8mo7h7z8qhm31idw8mo1prrqhuz7j,2026-06-05T16:54:26Z,91741,"$200,000+",Competitive travel,Claremont Stars,"Regional (2-6 hours, occasional overnight)",2100,0,,,,3,0,3,,2100
-r54j6ih1u6uy0ew3r546znka7eplr4g7,2026-06-05T17:12:52Z,90274,"$200,000+",Elite club,SoCal Blues U12,"Regional (2-6 hours, occasional overnight)",5000,6000,,,,3,4,2,,11000
-ccd60cuc6hlf94jpxccd6a58n8tzd389,2026-06-06T16:32:38Z,90000,"$120,000 - $200,000",Elite club,A SoCal ECNL team,"National (multiple states, regular flights)",4200,2000,,,,5,2,9,,6200
-u08r0msrrvtku08sxwy1frgbw20jd09o,2026-06-08T14:40:28Z,92780,"$120,000 - $200,000",U-travel,Strikers Orange,Local only (within 2 hours),1500,800,,,,3,1,3,,2300
-lb9d35lv1kd0plb9b452ahg4mb09at6v,2026-06-08T22:12:29Z,92780,"$120,000 - $200,000",Academy,Strikers FC,"National (multiple states, regular flights)",3500,0,,,,6,0,10,,3500
-tally_20260610_1550,2026-06-10T15:50:00,90638,"$200,000+",EA (Elite Academy),EA,Local (under 1 hr),4200,1250,3000,400,0,2,1,,,8850
+submission_id,submitted_at,zip_code,income_bracket,club_level,club_name,travel_scope,club_fee_annual,league_fee_annual,private_coaching_annual,travel_annual,equipment_annual,tournament_annual,training_hours_week,private_coaching_hours_week,years_in_club,recruited,total_annual_est
+r3du3tekuna5urp72ldsr3du3tegxbe9,2026-06-05T00:05:09Z,95776,"$200,000+",Competitive travel,,Regional (2–6 hrs),1250,,2000,1500,500,500,3,1,4,No,5750
+7u7xolajwvf3zo95vx1o7jd7u7xovexe,2026-06-05T00:12:16Z,30062,"$200,000+",U-travel,,Regional (2–6 hrs),2000,,1250,1000,350,500,4,0,4,No,5100
+nuravznaxrze1fa3messnuravz9d9r9q,2026-06-05T00:09:49Z,,"$120,000 - $200,000",U-travel,,Local (under 1 hr),500,,250,400,500,0,5,0,1,No,1650
+ecobyt7arroje4qvf4t1eecobyt7axeq,2026-06-05T15:55:17Z,90806,"$120,000 - $200,000",Elite club,,Regional (2–6 hrs),4000,,2000,,,,6,2,5,,6000
+58ya7l55c0ril8cc58ya246n621rz55f,2026-06-05T16:40:40Z,92129,"$200,000+",Elite club,,Regional (2–6 hrs),2662,0,8000,,338,500,5,6,5,,11500
+idw8mo7h7z8qhm31idw8mo1prrqhuz7j,2026-06-05T16:54:26Z,91741,"$200,000+",Competitive travel,,Regional (2–6 hrs),2100,,0,,,,3,0,3,,2100
+r54j6ih1u6uy0ew3r546znka7eplr4g7,2026-06-05T17:12:52Z,90274,"$200,000+",Elite club,,Regional (2–6 hrs),5000,,6000,,,,3,4,2,,11000
+ccd60cuc6hlf94jpxccd6a58n8tzd389,2026-06-06T16:32:38Z,90000,"$120,000 - $200,000",Elite club,,National,4200,,2000,,,,5,2,9,,6200
+u08r0msrrvtku08sxwy1frgbw20jd09o,2026-06-08T14:40:28Z,92780,"$120,000 - $200,000",U-travel,,Regional (2–6 hrs),1500,,800,,,,3,1,3,,2300
+lb9d35lv1kd0plb9b452ahg4mb09at6v,2026-06-08T22:12:29Z,92780,"$120,000 - $200,000",Academy,,National,3500,,0,,,,6,0,10,,3500
+vXBZ82d,2026-06-09,92373,"$200,000+",Elite club,,Regional (2–6 hrs),4100,,0,,,,,,,,4100
+Dq1ljpb,2026-06-10,92782,"$120,000 - $200,000",Elite club,,Regional (1–2 hrs),3300,,1250,,,,,,,,4550
+bZO5QO7,2026-06-10,90638,"$200,000+",EA (Elite Academy),,Local (under 1 hr),3200,1000,1250,3000,400,0,,,,,8850
+laRdBok,2026-06-11,92780,"$120,000 - $200,000",Academy,,Regional (1–2 hrs),3500,400,0,1500,0,100,,,,,5500
