@@ -829,7 +829,7 @@ function renderAll() {
     { tickFmt: d => d + '%', valFmt: v => v.toFixed(1) + '%', bottom: 28 });
 
   hBars('rosterChart', [
-    { label: 'US high school recruits', v: 2400, c: 'dim',  end: '~40%', tip: '~2,400 spots: the slice club families compete for' },
+    { label: 'US club recruits', v: 2400, c: 'dim',  end: '~40%', tip: '~2,400 spots: HS-age players recruited out of club soccer (ECNL, MLS NEXT) — the slice club families compete for' },
     { label: 'Transfer portal',         v: 1650, c: 'blue', end: '25–30%', tip: '~1,650 spots filled by transfers, many international' },
     { label: 'International players',   v: 1970, c: 'gold', end: '30–35%', tip: '~1,970 spots recruited from abroad' },
   ], { left: 180, barH: 24, tickFmt: d => d.toLocaleString(), valFmt: v => '~' + v.toLocaleString() + ' of 6,020 spots' });
