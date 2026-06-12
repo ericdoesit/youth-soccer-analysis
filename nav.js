@@ -36,7 +36,7 @@
     '<nav class="site-nav">\n' +
     '  <div class="nav-inner">\n' +
     '    <a href="' + prefix + 'index.html" class="nav-brand">Pitfalls on the <span>Pathway</span></a>\n' +
-    '    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle(\'open\')">\n' +
+    '    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.classList.toggle(\'open\');this.nextElementSibling.classList.toggle(\'open\')">\n' +
     '      <span></span><span></span><span></span>\n' +
     '    </button>\n' +
     '    <div class="nav-links">\n      ' + links + '\n    </div>\n' +
