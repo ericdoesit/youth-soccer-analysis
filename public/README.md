@@ -95,7 +95,7 @@ GET https://api.athleteone.com/api/Script/get-conference-standings
 - 15 conferences × 6 age groups (B2008–B2013) = 90 API calls
 - Champions League view + per-conference view to capture all clubs (not just CL qualifiers)
 
-See `scripts/scrape_ecnl_clubs.py` for the full implementation.
+Data was collected via this API in June 2026 (collection scripts have since been retired from the repo; see git history for the implementation).
 
 ## How to Contribute
 

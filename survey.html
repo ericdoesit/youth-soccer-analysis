@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Real Math Behind Club Soccer — Survey</title>
+  <title>Survey · Pitfalls on the Pathway</title>
   <link rel="stylesheet" href="report/site.css">
   <style>
     /* ── Survey-specific styles ─────────────────────────────── */
-    .page-header p { max-width: 720px; }
+    .page-header h1 { font-size: 2.2rem; }
+    .page-header p { max-width: 720px; font-size: 0.82rem; }
 
     .survey-container {
       width: 92%;
@@ -25,7 +26,7 @@
 
     .form-preamble p {
       font-family: 'Lora', Georgia, serif;
-      font-size: 0.92rem;
+      font-size: 0.85rem;
       color: var(--text);
       line-height: 1.7;
       margin: 0;
@@ -39,7 +40,7 @@
     }
 
     .form-info h2 {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.78rem;
       font-weight: 600;
       color: var(--muted);
@@ -51,8 +52,8 @@
     .form-info ul {
       list-style: none;
       color: var(--text);
-      font-family: 'Inter', sans-serif;
-      font-size: 0.88rem;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
       line-height: 1.9;
     }
 
@@ -65,7 +66,7 @@
       content: "✓";
       position: absolute;
       left: 0;
-      color: var(--gold);
+      color: var(--text-strong);
       font-weight: bold;
     }
 
@@ -83,9 +84,9 @@
     }
 
     .results-section h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.45rem;
-      font-weight: 700;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 500;
       color: var(--text-strong);
       margin-bottom: 0.3rem;
       display: flex;
@@ -94,7 +95,7 @@
     }
 
     .response-count {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.68rem;
       font-weight: 600;
       background: var(--surface-2);
@@ -107,8 +108,8 @@
     }
 
     .results-subtitle {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.82rem;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
       color: var(--muted);
       margin-bottom: 1.25rem;
     }
@@ -116,28 +117,30 @@
     .results-stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1px;
+      gap: 2px;
       margin-bottom: 1.5rem;
-      background: var(--border);
-      border: 1px solid var(--border);
     }
 
     .stat-card {
       background: var(--surface-2);
       padding: 1.1rem 1rem;
       text-align: center;
+      border-radius: 8px;
+      box-shadow: none;
     }
 
     .stat-card .sn {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.65rem;
-      font-weight: 700;
-      color: var(--gold);
+      font-family: var(--font-sans);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--text-strong);
       line-height: 1;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
     }
 
     .stat-card .sl {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.65rem;
       color: var(--muted);
       margin-top: 0.3rem;
@@ -154,7 +157,7 @@
       border: 1px solid var(--border);
       border-radius: 2px;
       color: var(--text);
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.85rem;
       margin-bottom: 0.65rem;
       outline: none;
@@ -162,7 +165,7 @@
     }
 
     .search-bar::placeholder { color: var(--muted); }
-    .search-bar:focus { border-color: var(--gold); }
+    .search-bar:focus { border-color: var(--muted); }
 
     .filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
 
@@ -171,7 +174,7 @@
       border: 1px solid var(--border);
       background: transparent;
       color: var(--muted);
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.68rem;
       font-weight: 600;
       letter-spacing: 0.08em;
@@ -181,8 +184,8 @@
       transition: border-color .15s, color .15s, background .15s;
     }
 
-    .chip:hover { border-color: var(--gold); color: var(--text); }
-    .chip.active { background: var(--gold); border-color: var(--gold); color: #0d0d0d; }
+    .chip:hover { border-color: var(--muted); color: var(--text); }
+    .chip.active { background: var(--text-strong); border-color: var(--text-strong); color: var(--bg); }
 
     .results-grid {
       display: grid;
@@ -205,7 +208,7 @@
     }
 
     .level-badge {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.62rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -219,7 +222,7 @@
     .level-comp   { background: var(--ch-blue-fill);  color: var(--ch-blue); border: 1px solid rgba(90,145,217,.5); }
 
     .league-tag {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.62rem;
       font-weight: 600;
       color: var(--muted);
@@ -230,7 +233,7 @@
     }
 
     .result-total {
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: var(--font-display);
       font-size: 1.5rem;
       font-weight: 700;
       color: var(--text-strong);
@@ -239,7 +242,7 @@
     }
 
     .result-total-label {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.65rem;
       color: var(--muted);
       text-transform: uppercase;
@@ -255,7 +258,7 @@
     .result-row {
       display: flex;
       justify-content: space-between;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.78rem;
       padding: 3px 0;
     }
@@ -268,7 +271,7 @@
       color: var(--muted);
       padding: 2.5rem;
       grid-column: 1/-1;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.88rem;
     }
 
@@ -278,7 +281,7 @@
       flex-wrap: wrap;
       gap: 14px;
       margin-bottom: 1rem;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.75rem;
       color: var(--muted);
     }
@@ -292,7 +295,7 @@
       border: 1px solid var(--border);
       border-radius: 3px;
       padding: 8px 12px;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.78rem;
       color: var(--text);
       line-height: 1.5;
@@ -300,6 +303,7 @@
       max-width: 260px;
     }
     #results-chart svg { display: block; width: 100%; height: auto; }
+    #results-chart svg text { font-family: var(--font-sans); }
 
     @media (max-width: 600px) {
       .survey-container, .results-section { padding: 0 1rem 2.5rem; }
@@ -308,43 +312,27 @@
 </head>
 <body>
 
-<nav class="site-nav" style="display:none;">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">Fool's <span>Gold</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"
-            onclick="this.nextElementSibling.classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="report/scope.html">Youth Scope</a>
-      <a href="report/costs.html">Costs</a>
-      <a href="report/fools_gold.html">Fools Gold</a>
-      <a href="report/mls.html">MLS</a>
-      <a href="report/equity.html">Equity</a>
-      <a href="report/methodology.html" class="nav-appendix">Methods</a>
-      <a href="report/data.html" class="nav-appendix">Data</a>
-      <a href="survey.html" class="nav-survey active">Survey</a>
-    </div>
-  </div>
-</nav>
+<script src="nav.js"></script>
 
 <div class="page-header">
   <h1>The Real Math Behind Club Soccer</h1>
-  <p>The scale of youth soccer and the variety of options available for athletes is staggering. Making sense of the information is difficult even for participants. We want to change that.</p>
+  <p>Club soccer's real prices live in scattered invoices and parking-lot conversations.
+     I'm a Southern California soccer parent collecting them in one public place — what
+     families actually pay, by region, league, and level — so the next family can see
+     the whole bill before they sign.</p>
 </div>
 
 <div class="survey-container">
 
   <div class="form-preamble">
-    <p>I'm building a public database of youth soccer program costs — what clubs actually charge by region, level, and age group. The survey and site are both a work in progress.</p>
+    <p>I'm building a public database of youth soccer program costs: what clubs actually charge by region, level, and age group. The survey and site are both a work in progress.</p>
   </div>
 
   <div class="form-info">
     <h2>About This Survey</h2>
     <ul>
+      <li><strong>Anonymous</strong>, no club name will be shared, no names or email required</li>
       <li><strong>Takes 3 minutes</strong></li>
-      <li><strong>Anonymous</strong>, no names or email required</li>
       <li><strong>Results published</strong> publicly when complete</li>
     </ul>
   </div>
@@ -367,7 +355,7 @@
 <!-- Survey Results -->
 <div class="results-section">
   <h2>Results So Far <span class="response-count" id="response-count">10 responses</span></h2>
-  <p class="results-subtitle">Anonymous responses from club soccer families. Team names hidden — leagues shown where identifiable.</p>
+  <p class="results-subtitle">Anonymous responses from club soccer families. Team names hidden; leagues shown where identifiable.</p>
 
   <div class="results-stats" id="results-stats"></div>
 
@@ -384,229 +372,255 @@
 </div>
 
 <footer>
-  The Real Math Behind Club Soccer &nbsp;·&nbsp;
+  Pitfalls on the Pathway &nbsp;·&nbsp;
   <a href="report/methodology.html">Methodology</a> &bull;
   <a href="report/data.html">Data</a>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script>
+  // === SURVEY DATA (generated by scripts/sheet_to_survey.py — do not edit by hand) ===
   const RESPONSES = [
     {
-      id: 'lb9d35lv1kd0plb9b452ahg4mb09at6v',
-      date: '2026-06-08',
-      club_level: 'Academy',
-      league: 'MLS NEXT',
-      travel_scope: 'National',
-      zip: '92780',
-      income: '$120,000 – $200,000',
-      club_fee: 3500,
-      private_coaching: 0,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 6,
-      private_hrs: 0,
-      years: 10,
-      total: 3500,
+      "id": "r3du3tekuna5urp72ldsr3du3tegxbe9",
+      "date": "2026-06-05",
+      "league": "Other / Unspecified",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "95776",
+      "income": "$200,000+",
+      "sessions": null,
+      "club_fee": 1250,
+      "league_fee": null,
+      "tournament": 500,
+      "uniform": 500,
+      "travel": 1500,
+      "private_coaching": 2000,
+      "total": 5750
     },
     {
-      id: 'u08r0msrrvtku08sxwy1frgbw20jd09o',
-      date: '2026-06-08',
-      club_level: 'U-travel',
-      league: 'Other / Unspecified', // legacy free-text answer: "Travel"
-      travel_scope: 'Local',
-      zip: '92780',
-      income: '$120,000 – $200,000',
-      club_fee: 1500,
-      private_coaching: 800,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 3,
-      private_hrs: 1,
-      years: 3,
-      total: 2300,
+      "id": "7u7xolajwvf3zo95vx1o7jd7u7xovexe",
+      "date": "2026-06-05",
+      "league": "Other / Unspecified",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "30062",
+      "income": "$200,000+",
+      "sessions": null,
+      "club_fee": 2000,
+      "league_fee": null,
+      "tournament": 500,
+      "uniform": 350,
+      "travel": 1000,
+      "private_coaching": 1250,
+      "total": 5100
     },
     {
-      id: 'r3du3tekuna5urp72ldsr3du3tegxbe9',
-      date: '2026-06-05',
-      club_level: 'Competitive travel',
-      league: 'Other / Unspecified', // legacy free-text answer: "Competitive Travel"
-      travel_scope: 'Regional',
-      zip: '95776',
-      income: '$200,000+',
-      club_fee: 1250,
-      private_coaching: 2000,
-      travel: 1500,
-      equipment: 500,
-      tournament: 500,
-      training_hrs: 3,
-      private_hrs: 1,
-      years: 4,
-      total: 5750,
+      "id": "nuravznaxrze1fa3messnuravz9d9r9q",
+      "date": "2026-06-05",
+      "league": "Other / Unspecified",
+      "age": null,
+      "travel_scope": "Local (under 1 hr)",
+      "zip": null,
+      "income": "$120,000 - $200,000",
+      "sessions": null,
+      "club_fee": 500,
+      "league_fee": null,
+      "tournament": 0,
+      "uniform": 500,
+      "travel": 400,
+      "private_coaching": 250,
+      "total": 1650
     },
     {
-      id: 'nuravznaxrze1fa3messnuravz9d9r9q',
-      date: '2026-06-05',
-      club_level: 'U-travel',
-      league: 'Other / Unspecified', // legacy free-text answer: "Travel"
-      travel_scope: 'Regional',
-      zip: '30062',
-      income: '$200,000+',
-      club_fee: 2000,
-      private_coaching: 1000,
-      travel: 1000,
-      equipment: 350,
-      tournament: 500,
-      training_hrs: 5,
-      private_hrs: 0,
-      years: 1,
-      total: 4850,
+      "id": "ecobyt7arroje4qvf4t1eecobyt7axeq",
+      "date": "2026-06-05",
+      "league": "ECNL",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "90806",
+      "income": "$120,000 - $200,000",
+      "sessions": null,
+      "club_fee": 4000,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 2000,
+      "total": 6000
     },
     {
-      id: '7u7xolajwvf3zo95vx1o7jd7u7xovexe',
-      date: '2026-06-05',
-      club_level: 'U-travel',
-      league: 'Other / Unspecified', // legacy free-text answer: "Travel"
-      travel_scope: 'Local',
-      zip: '04021',
-      income: '$120,000 – $200,000',
-      club_fee: 500,
-      private_coaching: 300,
-      travel: 400,
-      equipment: 500,
-      tournament: 0,
-      training_hrs: 4,
-      private_hrs: 0,
-      years: 4,
-      total: 1700,
+      "id": "58ya7l55c0ril8cc58ya246n621rz55f",
+      "date": "2026-06-05",
+      "league": "EA (Elite Academy)",
+      "age": "U11",
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "92129",
+      "income": "$200,000+",
+      "sessions": 2,
+      "club_fee": 2662,
+      "league_fee": 0,
+      "tournament": 500,
+      "uniform": 338,
+      "travel": null,
+      "private_coaching": 8000,
+      "total": 11500
     },
     {
-      id: 'ecobyt7arroje4qvf4t1eecobyt7axeq',
-      date: '2026-06-05',
-      club_level: 'Elite club',
-      league: 'ECNL',
-      travel_scope: 'Regional (2-6 hrs)',
-      zip: '90806',
-      income: '$120,000 – $200,000',
-      club_fee: 4000,
-      private_coaching: 2000,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 6,
-      private_hrs: 2,
-      years: 5,
-      total: 6000,
+      "id": "idw8mo7h7z8qhm31idw8mo1prrqhuz7j",
+      "date": "2026-06-05",
+      "league": "Other / Unspecified",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "91741",
+      "income": "$200,000+",
+      "sessions": null,
+      "club_fee": 2100,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 0,
+      "total": 2100
     },
     {
-      id: '58ya7l55c0ril8cc58ya246n621rz55f',
-      date: '2026-06-05',
-      club_level: 'Elite club',
-      league: 'MLS NEXT',
-      travel_scope: 'Regional (2-6 hrs)',
-      zip: '92129',
-      income: '$200,000+',
-      club_fee: 3500,
-      private_coaching: 8000,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 5,
-      private_hrs: 6,
-      years: 5,
-      total: 11500,
+      "id": "r54j6ih1u6uy0ew3r546znka7eplr4g7",
+      "date": "2026-06-05",
+      "league": "ECNL",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "90274",
+      "income": "$200,000+",
+      "sessions": null,
+      "club_fee": 5000,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 6000,
+      "total": 11000
     },
     {
-      id: 'idw8mo7h7z8qhm31idw8mo1prrqhuz7j',
-      date: '2026-06-05',
-      club_level: 'Competitive travel',
-      league: 'Other / Unspecified', // legacy free-text answer: "Competitive Travel"
-      travel_scope: 'Regional (2-6 hrs)',
-      zip: '91741',
-      income: '$200,000+',
-      club_fee: 2100,
-      private_coaching: 0,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 3,
-      private_hrs: 0,
-      years: 3,
-      total: 2100,
+      "id": "ccd60cuc6hlf94jpxccd6a58n8tzd389",
+      "date": "2026-06-06",
+      "league": "ECNL",
+      "age": null,
+      "travel_scope": "National",
+      "zip": "90000",
+      "income": "$120,000 - $200,000",
+      "sessions": null,
+      "club_fee": 4200,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 2000,
+      "total": 6200
     },
     {
-      id: 'r54j6ih1u6uy0ew3r546znka7eplr4g7',
-      date: '2026-06-05',
-      club_level: 'Elite club',
-      league: 'ECNL',
-      travel_scope: 'Regional (2-6 hrs)',
-      zip: '90274',
-      income: '$200,000+',
-      club_fee: 5000,
-      private_coaching: 6000,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 3,
-      private_hrs: 4,
-      years: 2,
-      total: 11000,
+      "id": "u08r0msrrvtku08sxwy1frgbw20jd09o",
+      "date": "2026-06-08",
+      "league": "Other / Unspecified",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "92780",
+      "income": "$120,000 - $200,000",
+      "sessions": null,
+      "club_fee": 1500,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 800,
+      "total": 2300
     },
     {
-      id: 'ccd60cuc6hlf94jpxccd6a58n8tzd389',
-      date: '2026-06-06',
-      club_level: 'Elite club',
-      league: 'ECNL',
-      travel_scope: 'National',
-      zip: '90000',
-      income: '$120,000 – $200,000',
-      club_fee: 4200,
-      private_coaching: 2000,
-      travel: null,
-      equipment: null,
-      tournament: null,
-      training_hrs: 5,
-      private_hrs: 2,
-      years: 9,
-      total: 6200,
+      "id": "lb9d35lv1kd0plb9b452ahg4mb09at6v",
+      "date": "2026-06-08",
+      "league": "MLS NEXT",
+      "age": null,
+      "travel_scope": "National",
+      "zip": "92780",
+      "income": "$120,000 - $200,000",
+      "sessions": null,
+      "club_fee": 3500,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 0,
+      "total": 3500
     },
     {
-      id: 'vXBZ82d',
-      date: '2026-06-09',
-      club_level: 'Elite club',
-      league: 'ECNL',
-      team_name: 'Sporting',
-      travel_scope: 'Regional (2–6 hrs)',
-      zip: '92373',
-      club_fee: 4100,
-      private_coaching: 0,
-      tournament: null,
-      uniform: null,
-      regional_travel: null,
-      training_hrs: 3,
-      multi_club: true,
-      total: 4100,
+      "id": "vXBZ82d",
+      "date": "2026-06-09",
+      "league": "ECNL",
+      "age": null,
+      "travel_scope": "Regional (2–6 hrs)",
+      "zip": "92373",
+      "income": "$200,000+",
+      "sessions": 3,
+      "club_fee": 4100,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 0,
+      "total": 4100
     },
     {
-      id: 'Dq1ljpb',
-      date: '2026-06-10',
-      club_level: 'Competitive travel',
-      league: 'DPL',
-      team_name: 'Rangers FC',
-      travel_scope: 'Regional (1–2 hrs)',
-      zip: '92782',
-      club_fee: 3300,
-      private_coaching: 1000,
-      tournament: null,
-      uniform: null,
-      regional_travel: null,
-      training_hrs: 2,
-      multi_club: false,
-      total: 4300,
+      "id": "Dq1ljpb",
+      "date": "2026-06-10",
+      "league": "DPL",
+      "age": null,
+      "travel_scope": "Regional (1–2 hrs)",
+      "zip": "92782",
+      "income": "$120,000 - $200,000",
+      "sessions": 2,
+      "club_fee": 3300,
+      "league_fee": null,
+      "tournament": null,
+      "uniform": null,
+      "travel": null,
+      "private_coaching": 1250,
+      "total": 4550
     },
+    {
+      "id": "bZO5QO7",
+      "date": "2026-06-10",
+      "league": "EA (Elite Academy)",
+      "age": "U19",
+      "travel_scope": "Local (under 1 hr)",
+      "zip": "90638",
+      "income": "$200,000+",
+      "sessions": 2,
+      "club_fee": 3200,
+      "league_fee": 1000,
+      "tournament": 0,
+      "uniform": 400,
+      "travel": 3000,
+      "private_coaching": 1250,
+      "total": 8850
+    },
+    {
+      "id": "laRdBok",
+      "date": "2026-06-11",
+      "league": "MLS NEXT — Homegrown (HG)",
+      "age": "U19",
+      "travel_scope": "Regional (1–2 hrs)",
+      "zip": "92780",
+      "income": "$120,000 - $200,000",
+      "sessions": 3,
+      "club_fee": 3500,
+      "league_fee": 400,
+      "tournament": 100,
+      "uniform": 0,
+      "travel": 1500,
+      "private_coaching": 0,
+      "total": 5500
+    }
   ];
+  // === END SURVEY DATA ===
 
   function fmt(n) {
     if (n == null) return '—';
@@ -655,13 +669,14 @@
     return i === -1 ? LEAGUE_ORDER.length : i;
   };
 
-  // Mirrors the survey's five cost questions, in order
+  // Mirrors the survey's five cost questions, in order.
+  // Chart colors: yellow / blue / green / red (+ grey for the 5th category)
   const CATEGORIES = [
-    { key: 'club_fee',         label: 'Club fees',        color: '#c9a84c' },
-    { key: 'tournament',       label: 'Tournament fees',  color: '#a07ad9' },
-    { key: 'uniform_all',      label: 'Uniform/kit',      color: '#4fa877' },
-    { key: 'travel_all',       label: 'Travel',           color: '#d95f5f' },
-    { key: 'private_coaching', label: 'Private coaching', color: '#5a91d9' },
+    { key: 'club_fee_all',     label: 'Club + league fees', color: '#f2df22' },
+    { key: 'tournament',       label: 'Tournament fees',  color: '#3fb3ec' },
+    { key: 'uniform_all',      label: 'Uniform/kit',      color: '#2fc063' },
+    { key: 'travel_all',       label: 'Travel',           color: '#ef6750' },
+    { key: 'private_coaching', label: 'Private coaching', color: '#8b867b' },
   ];
 
   function renderLegend() {
@@ -681,10 +696,10 @@
     // normalize each response
     const normalized = data.map(r => ({
       ...r,
-      travel_all: (r.travel ?? 0) + (r.regional_travel ?? 0),
-      uniform_all: (r.uniform ?? 0) + (r.equipment ?? 0), // legacy "equipment" folded into uniform/kit
+      club_fee_all: (r.club_fee ?? 0) + (r.league_fee ?? 0),
+      travel_all: r.travel ?? 0,
+      uniform_all: r.uniform ?? 0,
       tournament: r.tournament ?? 0,
-      club_fee: r.club_fee ?? 0,
       private_coaching: r.private_coaching ?? 0,
     }));
 
@@ -728,6 +743,10 @@
 
     const tooltip = document.getElementById('chart-tooltip');
 
+    // theme colors (adaptive light/dark)
+    const themeStyles = getComputedStyle(document.documentElement);
+    const themeColor = k => themeStyles.getPropertyValue(k).trim();
+
     // grid lines
     svg.append('g')
       .selectAll('line')
@@ -735,7 +754,7 @@
       .join('line')
       .attr('x1', d => x(d)).attr('x2', d => x(d))
       .attr('y1', margin.top).attr('y2', height - margin.bottom)
-      .attr('stroke', 'rgba(255,255,255,0.05)');
+      .attr('stroke', themeColor('--ch-grid'));
 
     // axis labels
     svg.append('g')
@@ -744,7 +763,7 @@
       .join('text')
       .attr('x', d => x(d)).attr('y', height - 8)
       .attr('text-anchor', 'middle')
-      .attr('fill', '#6b6560').attr('font-size', '11px')
+      .attr('fill', themeColor('--muted')).attr('font-size', '11px')
       .text(d => '$' + (d >= 1000 ? (d / 1000) + 'k' : d));
 
     // stacked segments
@@ -783,7 +802,7 @@
       .attr('x', margin.left - 10)
       .attr('y', (d, i) => margin.top + i * (barH + gap) + barH / 2 + 4)
       .attr('text-anchor', 'end')
-      .attr('fill', '#c8c3bb').attr('font-size', '12px')
+      .attr('fill', themeColor('--text')).attr('font-size', '12px')
       .text(d => `${d.league} (${d.n})`);
 
     // average total at end of each bar
@@ -793,7 +812,7 @@
       .join('text')
       .attr('x', d => x(d.total) + 8)
       .attr('y', (d, i) => margin.top + i * (barH + gap) + barH / 2 + 4)
-      .attr('fill', '#f0ece4').attr('font-size', '12px').attr('font-weight', '600')
+      .attr('fill', themeColor('--text-strong')).attr('font-size', '12px').attr('font-weight', '600')
       .text(d => fmt(d.total) + (d.n > 1 ? ' avg' : ''));
   }
 
@@ -839,6 +858,7 @@
   renderChips();
   applyFilters();
   window.addEventListener('resize', () => applyFilters());
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => applyFilters());
 </script>
 
 

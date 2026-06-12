@@ -1,10 +1,30 @@
 /* ============================================================
-   Fool's Gold: Youth Soccer — shared stylesheet
-   Editorial dark theme — whereisfootball.com / NYT / Atlantic
-   Used by: report/costs.html, fools_gold.html, equity.html, methodology.html
+   PITFALLS ON THE PATHWAY — shared stylesheet & component library
+   Newspaper light theme: grey bg / creme cards / charcoal text
+   Chart colors only: yellow #f2df22 · blue #1b9de0 · red #e94f35 · green #1fa84d
+   Fonts: Newsreader (display, max wt 500) · Lora (body) · Libre Franklin (sans)
+   Dark inversion: <html class="theme-dark"> (survey page)
+
+   COMPONENT INDEX
+   ─ Nav .................. injected by /nav.js (.site-nav)
+   ─ Page header .......... .page-header + .eyebrow + h1 em + p (hero-style)
+   ─ Section card ......... section.card-section (creme card on grey)
+   ─ Buttons .............. .btn-dark (primary) / .btn-light (secondary)
+   ─ Stat grid ............ .stat-grid > .stat-card (.num + p) — key findings row
+   ─ Insight box .......... .insight-row > .insight (.i-num + p) — single stat + caption
+   ─ Chart container ...... .chart-wrap (creme, rounded; D3 or canvas inside)
+                            chart types in index.html kit: hBars (+log/range),
+                            vGrouped (+line overlay), lineChart (area), donut
+   ─ Chart legend ......... .chart-legend > .legend-item > .legend-swatch
+   ─ FAQ accordion ........ .faq-item > .faq-q (+ .faq-icon) + .faq-a; JS toggles .open
+   ─ Pyramid .............. .pyramid > .pyr-band.pyr-l0..l5 (solid poster fills)
+   ─ Tables ............... table/thead/tbody (light grey --line separators)
+   ─ Callout .............. .callout (.blue/.yellow) — prefer .insight for key findings
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+:root { --font-sans: 'Libre Franklin', 'Helvetica Neue', sans-serif; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -12,24 +32,49 @@ a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text
 a:hover { text-decoration-color: var(--text); }
 
 :root {
-  --bg:         #0d0d0d;
-  --surface:    #161616;
+  /* light newspaper theme — off-white / charcoal / grey, yellow accent (sparing) */
+  /* neutrals: grey bg, creme boxes, charcoal text; poster primaries for charts */
+  --bg:         #f2f0f1;        /* background grey */
+  --surface:    #fffeff;        /* creme */
+  --surface-2:  #f2f0f1;        /* grey panels on creme cards */
+  --border:     #e4e6e9;        /* light grey */
+  --text:       #2e2e2e;        /* charcoal body */
+  --text-strong:#0f0f0f;        /* charcoal headings */
+  --muted:      #8a8782;        /* grey labels */
+  --gold:       #e3c419;        /* poster lemon yellow — use sparingly */
+  --red:        #e94f35;        /* vermillion */
+  --red-lt:     rgba(233,79,53,.10);
+  --green:      #1fa84d;        /* kelly green (Quellkollektiv poster) */
+  --green-lt:   rgba(31,168,77,.10);
+  --line:       #e4e6e9;        /* light grey — chart/table separators */
+  --blue:       #1b9de0;        /* cyan blue */
+  --blue-lt:    rgba(27,157,224,.10);
+  --navy:       #f2f0f1;
+  --slate:      #fffeff;
+  --card:       #fffeff;
+  --border-tier:#e4e6e9;
+  --font-display: 'Newsreader', Georgia, serif;
+}
+
+/* charcoal theme — applied per-page via <html class="theme-dark"> (survey) */
+html.theme-dark {
+  --bg:         #0f0f0f;
+  --surface:    #171717;
   --surface-2:  #1e1e1e;
-  --border:     #2a2a2a;
-  --text:       #c8c3bb;        /* warm off-white — readable on dark */
-  --text-strong:#f0ece4;        /* near-white for headings */
-  --muted:      #6b6560;        /* dimmed labels */
-  --gold:       #c9a84c;        /* editorial gold */
-  --red:        #d95f5f;
-  --red-lt:     rgba(217,95,95,.12);
-  --green:      #4fa877;
-  --green-lt:   rgba(79,168,119,.12);
-  --blue:       #5a91d9;
-  --blue-lt:    rgba(90,145,217,.12);
-  --navy:       #0d0d0d;
-  --slate:      #161616;
-  --card:       #161616;
-  --border-tier:#2a2a2a;
+  --border:     #2c2c2c;
+  --text:       #cfcecb;
+  --text-strong:#f5f4f2;
+  --muted:      #8a8782;
+  --gold:       #f2df22;
+  --red:        #ef6750;
+  --green:      #2fc063;
+  --blue:       #3fb3ec;
+  --blue-lt:    rgba(63,179,236,.12);
+  --line:       rgba(255,255,255,.09);
+  --navy:       #0f0f0f;
+  --slate:      #171717;
+  --card:       #171717;
+  --border-tier:#2c2c2c;
 }
 
 body {
@@ -41,7 +86,7 @@ body {
 
 /* ── Navigation ─────────────────────────────────────────── */
 .site-nav {
-  background: #090909;
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -58,19 +103,19 @@ body {
   height: 56px;
 }
 .nav-brand {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display);
   color: var(--text-strong);
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.15rem;
   text-decoration: none;
   margin-right: auto;
   white-space: nowrap;
   letter-spacing: 0.01em;
 }
-.nav-brand span { color: var(--gold); font-style: italic; }
+.nav-brand span { color: inherit; font-style: italic; }
 .nav-links { display: flex; gap: 0; }
 .nav-links a {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   color: var(--muted);
   text-decoration: none;
   font-size: 0.72rem;
@@ -85,20 +130,21 @@ body {
   transition: color .15s, border-color .15s;
 }
 .nav-links a:hover { color: var(--text-strong); border-bottom-color: var(--border); }
-.nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-links a.active { color: var(--text-strong); border-bottom-color: var(--text-strong); }
 .nav-links a.nav-appendix { opacity: 0.55; font-size: 0.65rem; }
 .nav-links a.nav-appendix:hover { opacity: 1; }
 .nav-links a.nav-survey {
-  color: var(--gold);
-  border: 1px solid rgba(201,168,76,.4);
-  border-radius: 2px;
+  color: var(--bg);
+  background: var(--text-strong);
+  border: 1px solid var(--text-strong);
+  border-radius: 4px;
   margin-left: 0.6rem;
   padding: 0 0.9rem;
   height: 32px;
-  border-bottom: 1px solid rgba(201,168,76,.4);
+  border-bottom: 1px solid var(--text-strong);
   align-self: center;
 }
-.nav-links a.nav-survey:hover { background: rgba(201,168,76,.1); border-color: var(--gold); }
+.nav-links a.nav-survey:hover { opacity: 0.82; }
 
 /* Hamburger (mobile) */
 .nav-toggle {
@@ -127,7 +173,7 @@ body {
     top: 56px;
     left: 0;
     right: 0;
-    background: #090909;
+    background: var(--bg);
     flex-direction: column;
     padding: 0.5rem 0 1rem;
     border-bottom: 1px solid var(--border);
@@ -136,31 +182,131 @@ body {
   .nav-links a { height: auto; padding: 0.75rem 1.5rem; border-bottom: none; }
 }
 
-/* ── Page header ─────────────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════
+   COMPONENT: Page header (hero-style, matches index hero)
+   Usage: <div class="page-header">
+            <div class="eyebrow">Deep Dive 02 · The Cost</div>
+            <h1>Title with <em>italic accent</em></h1>
+            <p>Lede paragraph.</p>
+          </div>
+   ══════════════════════════════════════════════════════════ */
 .page-header {
-  background: #090909;
+  background: var(--surface);
   color: var(--text-strong);
-  padding: 4.5rem 2rem 5rem;
+  padding: 5rem 2rem 5.5rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
 .page-header h1 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 0.9rem;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 500;   /* headlines max out at medium */
+  margin-bottom: 1.1rem;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
   color: var(--text-strong);
 }
+.page-header h1 em { color: inherit; font-style: italic; }
 .page-header p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', Georgia, serif;
   color: var(--muted);
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-  max-width: 540px;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  max-width: 600px;
   margin: 0 auto;
 }
+
+/* ── COMPONENT: Eyebrow (caps kicker above headlines) ────── */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.4rem;
+}
+
+/* ── COMPONENT: Buttons ──────────────────────────────────────
+   .btn-dark  charcoal fill, creme text (primary action)
+   .btn-light creme/transparent, charcoal border (secondary)  */
+.btn-dark, .btn-light {
+  font-family: var(--font-sans);
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity .15s, transform .15s;
+}
+.btn-dark  { background: var(--text-strong); color: var(--bg); border: 1px solid var(--text-strong); }
+.btn-light { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn-dark:hover  { opacity: 0.85; transform: translateY(-1px); }
+.btn-light:hover { border-color: var(--text); transform: translateY(-1px); }
+
+/* ── COMPONENT: FAQ accordion (expandable question rows) ────
+   Usage: <div class="faq-item">
+            <button class="faq-q">Question text
+              <span class="faq-icon"><span></span><span></span></span>
+            </button>
+            <div class="faq-a"><p>Answer.</p></div>
+          </div>
+   JS: .faq-q click toggles .open on .faq-item                */
+.faq-item { margin-bottom: 10px; }
+.faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  text-align: left;
+  background: var(--surface-2);
+  border: none;
+  border-radius: 14px;
+  padding: 1.1rem 1.4rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-strong);
+  transition: background .15s;
+}
+.faq-q:hover { background: var(--border); }
+.faq-icon {
+  position: relative;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--surface);
+}
+.faq-icon span {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 13px; height: 2px;
+  background: var(--text-strong);
+  transform: translate(-50%, -50%);
+  transition: transform .25s ease;
+}
+.faq-icon span:last-child { transform: translate(-50%, -50%) rotate(90deg); }
+.faq-item.open .faq-icon span:last-child { transform: translate(-50%, -50%) rotate(0deg); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+.faq-a p {
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.7;
+  padding: 0.9rem 1.4rem 0.4rem;
+  margin: 0;
+}
+.faq-item.open .faq-a { max-height: 300px; }
 
 /* ── Layout ──────────────────────────────────────────────── */
 .container { width: 92%; max-width: 1600px; margin: 0 auto; padding: 2.5rem 0; }
@@ -174,9 +320,9 @@ section.card-section {
   margin-bottom: 1.75rem;
 }
 section.card-section h2 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.55rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--text-strong);
   margin-bottom: 1.1rem;
   padding-bottom: 0.85rem;
@@ -184,7 +330,7 @@ section.card-section h2 {
   letter-spacing: -0.01em;
 }
 section.card-section h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--muted);
@@ -206,11 +352,11 @@ section.card-section p:last-child { margin-bottom: 0; }
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.85rem;
 }
 thead th {
-  background: #111111;
+  background: var(--surface-2);
   color: var(--muted);
   padding: 0.8rem 1.25rem;
   text-align: left;
@@ -218,13 +364,13 @@ thead th {
   font-size: 0.82rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
 }
-tbody tr:nth-child(even) { background: #131313; }
-tbody tr:hover { background: #1c1c1c; transition: background .1s; }
+tbody tr:nth-child(even) { background: var(--surface-2); }
+tbody tr:hover { background: var(--line); transition: background .1s; }
 tbody td {
   padding: 0.9rem 1.25rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
   color: var(--text);
   vertical-align: top;
 }
@@ -240,36 +386,38 @@ tbody td {
   font-size: 0.93rem;
 }
 .callout.blue   { background: var(--blue-lt);  border-color: var(--blue); }
-.callout.yellow { background: rgba(201,168,76,.1); border-color: var(--gold); }
-.callout strong { color: var(--gold); }
-.callout.blue   strong { color: var(--blue); }
+.callout.yellow { background: rgba(242,223,34,.12); border-color: var(--gold); }
+.callout strong { color: var(--text-strong); }
+.callout.blue   strong { color: var(--text-strong); }
 .callout.yellow strong { color: var(--gold); }
 
 /* ── Stat grids ──────────────────────────────────────────── */
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1px;
+  gap: 2px;
   margin: 1.25rem 0;
-  background: var(--border);
-  border: 1px solid var(--border);
 }
 .stat-card {
   background: var(--surface-2);
   padding: 1.75rem 1.25rem;
   text-align: center;
+  border-radius: 8px;
+  box-shadow: none;
 }
 .stat-card .num {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--text-strong);
   line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
 }
 .stat-card .num.good { color: var(--gold); }
 .stat-card .num.blue { color: var(--blue); }
 .stat-card p {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.76rem;
   color: var(--muted);
   margin: 0.45rem 0 0;
@@ -278,27 +426,75 @@ tbody td {
 
 /* ── Chart colour tokens — update here for sitewide chart changes ── */
 :root {
-  --ch-gold:      #c9a84c;
-  --ch-gold-fill: rgba(201,168,76,.18);
-  --ch-blue:      #5a91d9;
-  --ch-blue-fill: rgba(90,145,217,.14);
-  --ch-dim:       rgba(160,158,155,.28);
+  /* solid poster fills — no strokes on chart shapes */
+  --ch-gold:      #c4a90e;
+  --ch-gold-fill: #f2df22;
+  --ch-blue:      #1b9de0;
+  --ch-blue-fill: #1b9de0;
+  --ch-red:       #e94f35;
+  --ch-red-fill:  #e94f35;
+  --ch-green:     #1fa84d;
+  --ch-green-fill:#1fa84d;
+  --ch-dim:       #dcdad5;
+  --ch-dim-bd:    #8b867b;
+  --ch-grid:      #e4e6e9;
+}
+html.theme-dark {
+  --ch-gold:      #f2df22;
+  --ch-gold-fill: #f2df22;
+  --ch-blue:      #3fb3ec;
+  --ch-blue-fill: #3fb3ec;
+  --ch-red:       #ef6750;
+  --ch-red-fill:  #ef6750;
+  --ch-green:     #2fc063;
+  --ch-green-fill:#2fc063;
+  --ch-dim:       #3a3a3a;
   --ch-dim-bd:    #7a7875;
-  --ch-grid:      rgba(255,255,255,.05);
+  --ch-grid:      rgba(255,255,255,.06);
 }
 
 /* ── Chart containers ────────────────────────────────────── */
 .chart-wrap {
   position: relative;
   margin: 1.5rem 0;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 2px;
+  background: var(--surface);
+  border: none;
+  border-radius: 8px;
   padding: 1.5rem;
 }
+
+/* ── Key finding boxes (shared, matches home page insights) ── */
+.insight-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 2px;
+}
+.insight {
+  background: var(--surface-2);
+  padding: 1.25rem 1rem;
+  border-radius: 8px;
+}
+.insight .i-num {
+  font-family: var(--font-sans);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-strong);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.insight p {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+  line-height: 1.5;
+}
+@media (max-width: 768px) { .insight-row { grid-template-columns: 1fr; } }
 .chart-wrap canvas { display: block; }
 .chart-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--muted);
@@ -319,7 +515,7 @@ tbody td {
   display: inline-block;
   padding: 0.2rem 0.55rem;
   border-radius: 2px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -334,7 +530,7 @@ tbody td {
 
 /* ── Source attribution ──────────────────────────────────── */
 .sources {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.73rem;
   color: var(--muted);
   background: var(--surface-2);
@@ -358,14 +554,14 @@ tbody td {
 /* ── Big number ──────────────────────────────────────────── */
 .hero-num { text-align: center; padding: 1.5rem; }
 .hero-num .number {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1;
   color: var(--gold);
 }
 .hero-num .label {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.75rem;
   color: var(--muted);
   margin-top: 0.5rem;
@@ -375,7 +571,7 @@ tbody td {
 
 /* ── Monospace block ─────────────────────────────────────── */
 .mono-block {
-  background: #090909;
+  background: var(--surface-2);
   color: var(--muted);
   border: 1px solid var(--border);
   padding: 1.25rem 1.5rem;
@@ -392,7 +588,7 @@ footer {
   text-align: center;
   padding: 3rem 1.5rem;
   color: var(--muted);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.76rem;
   letter-spacing: 0.03em;
   border-top: 1px solid var(--border);
@@ -410,4 +606,148 @@ footer a { color: var(--muted); text-decoration: underline; text-underline-offse
   .page-header { padding: 3rem 1.25rem 3.5rem; }
   .stat-grid { grid-template-columns: 1fr 1fr; }
   .hero-num .number { font-size: 3rem; }
+}
+
+/* link underline tint works on both themes */
+a { text-decoration-color: rgba(139,134,123,.4); }
+
+/* ── The Soccer Pyramid (shared — index + scope) ─────────── */
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1400px;
+}
+.pyr-band {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 150px;
+  padding: 12px 18px 10px;
+  border-radius: 0;
+  font-family: var(--font-sans);
+  transition: opacity 0.15s;
+}
+.pyr-band:first-child { border-radius: 6px 6px 0 0; }
+.pyr-band:last-child  { border-radius: 0 0 6px 6px; }
+.pyr-band:hover { opacity: 0.92; }
+.pyr-lnum {
+  grid-column: 1; grid-row: 1;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text);
+  align-self: start;
+}
+.pyr-leagues {
+  grid-column: 2; grid-row: 1;
+  font-size: 0.68rem;
+  color: var(--text);
+  text-align: right;
+  align-self: start;
+  line-height: 1.5;
+}
+.pyr-logos {
+  grid-column: 1 / -1; grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+.pyr-logo-slot {
+  width: 48px;
+  height: 32px;
+  border-radius: 3px;
+  background: rgba(255,255,255,.5);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+  color: rgba(15,15,15,.55);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pyr-logo-slot img { width: 100%; height: 100%; object-fit: contain; }
+/* slots holding a real logo: transparent, logo sits directly on the band */
+.pyr-logo-slot:has(img) {
+  background: transparent;
+  border: none;
+  width: auto;
+  min-width: 100px;
+  height: 100px;
+  padding: 0;
+  border-radius: 0;
+}
+/* landscape logos: 50% of the standard slot height, width follows aspect */
+.pyr-logo-slot.logo-wide:has(img) {
+  height: 50px;
+  min-width: 0;
+}
+.pyr-logo-slot.logo-wide img { width: auto; }
+.pyr-name {
+  grid-column: 1; grid-row: 3;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-strong);
+  align-self: end;
+  letter-spacing: -0.01em;
+}
+/* band colors — solid poster fills, no borders */
+.pyr-band.pyr-l1 { background: #f2df22; }   /* yellow */
+.pyr-band.pyr-l2 { background: #e94f35; }   /* red */
+.pyr-band.pyr-l3 { background: #1b9de0; }   /* blue */
+.pyr-band.pyr-l4 { background: #1fa84d; }   /* green */
+.pyr-band.pyr-l5 { background: #dcdad5; }   /* grey */
+.pyr-band.pyr-l0 { background: #0f0f0f; }   /* charcoal foundation */
+
+/* text contrast per band */
+.pyr-band.pyr-l1 .pyr-lnum, .pyr-band.pyr-l1 .pyr-leagues { color: rgba(15,15,15,.65); }
+.pyr-band.pyr-l1 .pyr-name { color: #0f0f0f; }
+.pyr-band.pyr-l5 .pyr-lnum, .pyr-band.pyr-l5 .pyr-leagues { color: rgba(15,15,15,.6); }
+.pyr-band.pyr-l5 .pyr-name { color: #0f0f0f; }
+.pyr-band.pyr-l2 .pyr-lnum, .pyr-band.pyr-l2 .pyr-leagues,
+.pyr-band.pyr-l3 .pyr-lnum, .pyr-band.pyr-l3 .pyr-leagues,
+.pyr-band.pyr-l4 .pyr-lnum, .pyr-band.pyr-l4 .pyr-leagues,
+.pyr-band.pyr-l0 .pyr-lnum, .pyr-band.pyr-l0 .pyr-leagues { color: rgba(255,255,255,.82); }
+.pyr-band.pyr-l2 .pyr-name, .pyr-band.pyr-l3 .pyr-name,
+.pyr-band.pyr-l4 .pyr-name, .pyr-band.pyr-l0 .pyr-name { color: #fffeff; }
+
+/* ── D3 chart kit (shared via report/charts.js) ───────────── */
+.d3-chart svg { display: block; width: 100%; height: auto; }
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+
+#chart-tip {
+  display: none;
+  position: fixed;
+  pointer-events: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--text);
+  line-height: 1.5;
+  z-index: 100;
+  max-width: 280px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.25);
 }

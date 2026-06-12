@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Downloads — Fool's Gold: Youth Soccer</title>
+  <title>Data Downloads — Pitfalls on the Pathway</title>
   <link rel="stylesheet" href="site.css" />
   <style>
     .dl-section { margin-bottom: 2.5rem; }
     .dl-section-title {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.72rem;
       font-weight: 600;
       color: var(--muted);
@@ -36,7 +36,7 @@
     .dl-filename {
       font-family: "SFMono-Regular", Menlo, monospace;
       font-size: 0.82rem;
-      color: var(--gold);
+      color: var(--text-strong);
       letter-spacing: 0.02em;
     }
     .dl-desc {
@@ -53,7 +53,7 @@
       margin-top: 0.2rem;
     }
     .dl-pill {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.72rem;
       color: var(--muted);
       background: var(--surface-2);
@@ -73,21 +73,21 @@
       align-items: center;
       gap: 0.4rem;
       margin-top: 0.5rem;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: var(--text-strong);
-      background: #1e1e1e;
-      border: 1px solid var(--border);
+      color: var(--bg);
+      background: var(--text-strong);
+      border: 1px solid var(--text-strong);
       padding: 0.5rem 0.9rem;
       text-decoration: none;
-      border-radius: 2px;
-      transition: background .15s, border-color .15s;
+      border-radius: 4px;
+      transition: opacity .15s;
       align-self: flex-start;
     }
-    .dl-btn:hover { background: #2a2a2a; border-color: var(--gold); color: var(--gold); text-decoration: none; }
+    .dl-btn:hover { opacity: 0.82; text-decoration: none; }
     .dl-btn svg { flex-shrink: 0; }
     .intro-note {
       font-family: 'Lora', Georgia, serif;
@@ -98,7 +98,7 @@
       margin-bottom: 2rem;
     }
     .license-note {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.75rem;
       color: var(--muted);
       background: var(--surface-2);
@@ -112,38 +112,21 @@
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"
-            onclick="this.nextElementSibling.classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="scope.html">Youth Scope</a>
-      <a href="costs.html">Costs</a>
-      <a href="fools_gold.html">Fools Gold</a>
-      <a href="mls.html">MLS</a>
-      <a href="equity.html">Equity</a>
-      <a href="methodology.html" class="nav-appendix">Methods</a>
-      <a href="data.html" class="nav-appendix active">Data</a>
-      <a href="../survey.html" class="nav-survey">Survey</a>
-    </div>
-  </div>
-</nav>
+<script src="../nav.js"></script>
 
 <div class="page-header">
-  <h1>Research Data Downloads</h1>
+  <div class="eyebrow">Appendix · Open Data</div>
+  <h1>Research Data <em>Downloads</em></h1>
   <p>All datasets used in this project, available as CSV files.</p>
 </div>
 
 <div class="container">
 
   <p class="intro-note">
-    These datasets were compiled from publicly available sources including the MLSPA Salary Guide,
-    Transfermarkt, MLS SuperDraft records, club websites, and league directories.
-    All files are in CSV format and can be opened in Excel, Google Sheets, R, Python, or any data tool.
+    I compiled these datasets from publicly available sources — the MLSPA Salary Guide,
+    Transfermarkt, MLS SuperDraft records, club websites, and league directories — because
+    no one publishes this picture in one place. Every number on this site traces back to one
+    of these files. All are CSV and open in Excel, Google Sheets, R, Python, or any data tool.
   </p>
 
   <div class="license-note">
@@ -425,7 +408,7 @@
 </div>
 
 <footer>
-  <p>Fool's Gold: Youth Soccer Research &nbsp;·&nbsp; <a href="methodology.html">Methodology</a> &nbsp;·&nbsp; <a href="../survey.html">Take the Survey</a></p>
+  <p>Pitfalls on the Pathway &nbsp;·&nbsp; <a href="methodology.html">Methodology</a> &nbsp;·&nbsp; <a href="../survey.html">Take the Survey</a></p>
 </footer>
 
 </body>

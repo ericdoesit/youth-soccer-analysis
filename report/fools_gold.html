@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Fool's Gold Problem: ROI of Elite Youth Soccer</title>
+  <title>The ROI Problem — Pitfalls on the Pathway</title>
   <link rel="stylesheet" href="site.css">
   <style>
     .big-stat { text-align: center; padding: 1.5rem; }
-    .big-stat .number { font-family: 'Playfair Display', Georgia, serif; font-size: 3.5rem;
-                        font-weight: 700; line-height: 1; color: var(--gold); }
-    .big-stat .label  { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: var(--muted);
+    .big-stat .number { font-family: var(--font-display); font-size: 3.5rem;
+                        font-weight: 700; line-height: 1; color: var(--text-strong); }
+    .big-stat .label  { font-family: var(--font-sans); font-size: 0.75rem; color: var(--muted);
                         margin-top: 0.35rem; text-transform: uppercase; letter-spacing: 0.1em; }
     .chart-canvas-wrap { background: var(--surface-2); border: 1px solid var(--border);
                          border-radius: 2px; padding: 1rem; margin: 1.25rem 0; }
-    .chart-canvas-wrap .chart-label { font-family: 'Inter', sans-serif; font-size: 0.82rem;
+    .chart-canvas-wrap .chart-label { font-family: var(--font-sans); font-size: 0.82rem;
                                       font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
                                       color: var(--muted); margin-bottom: 0.75rem; }
     .ev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.25rem 0; }
@@ -22,29 +22,11 @@
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"
-            onclick="this.nextElementSibling.classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="scope.html">Youth Scope</a>
-      <a href="costs.html">Costs</a>
-      <a href="fools_gold.html" class="active">Fools Gold</a>
-      <a href="mls.html">MLS</a>
-      <a href="equity.html">Equity</a>
-      <a href="methodology.html" class="nav-appendix">Methods</a>
-      <a href="data.html" class="nav-appendix">Data</a>
-      <a href="../survey.html" class="nav-survey">Survey</a>
-    </div>
-  </div>
-</nav>
+<script src="../nav.js"></script>
 
 <div class="page-header">
-  <h1>The Fool's Gold Problem</h1>
+  <div class="eyebrow">Deep Dive 03 · The Math</div>
+  <h1>The <em>ROI</em> Problem</h1>
   <p>What is the expected financial return on a $55,000–$155,000 investment in elite
      youth soccer? The math is worse than most families realize.</p>
 </div>
@@ -52,13 +34,17 @@
 <div class="container">
 
   <!-- The Core Problem -->
-  <section>
+  <section class="card-section">
     <h2>The Thesis in Numbers</h2>
+    <p>In January 2020, seventy-seven young men heard their names called in the MLS SuperDraft.
+       The best college players in the country — every one of them the kid a club parent
+       pictures when the fees come due. Six years later, eleven of them still have an MLS job.
+       The other sixty-six are what the best-case scenario actually looks like.</p>
     <p>Elite youth soccer is marketed as a pathway to college scholarships and professional
-       careers. The data tells a different story: the vast majority of families who invest
-       five and six figures receive <strong>no financial return</strong> on that investment.
-       The sport is optimized to extract money from middle- and upper-class families by
-       promising an outcome that statistics show is extraordinarily unlikely.</p>
+       careers. The data on this page prices that pathway: the vast majority of families who
+       invest five and six figures receive <strong>no financial return</strong> on that
+       investment — and the outcome being sold sits at the far end of a funnel the seller
+       does not control.</p>
 
     <div class="stat-grid">
       <div class="stat-card">
@@ -81,7 +67,7 @@
   </section>
 
   <!-- Scholarship Funnel -->
-  <section>
+  <section class="card-section">
     <h2>The Scholarship Funnel</h2>
     <p>College soccer scholarships are the most commonly cited justification for elite
        youth soccer spending. The reality is that soccer scholarships — even at the D1 level —
@@ -158,12 +144,12 @@
 
     <div class="chart-canvas-wrap">
       <div class="chart-label">Average scholarship value by division and gender</div>
-      <canvas id="scholarshipChart" height="80"></canvas>
+      <div id="scholarshipChart" class="d3-chart"></div>
     </div>
   </section>
 
   <!-- Transfer Portal -->
-  <section>
+  <section class="card-section">
     <h2>The Transfer Portal Problem</h2>
     <p>Even families whose player earns a college soccer spot face a second compounding risk:
        the NCAA transfer portal has fundamentally changed how college coaches build rosters.
@@ -196,7 +182,7 @@
       The already-narrow 1.1% HS-to-D1 conversion rate effectively drops further.
     </div>
 
-    <h3>Coaching philosophy has shifted against HS recruits</h3>
+    <h3>&ldquo;Players who are ready now&rdquo;</h3>
     <p>The portal's growth reflects a deliberate shift in how D1 coaches recruit. Before unlimited
        transfers (2024), coaches took risks on 17–18-year-old potential because raw HS talent
        was the primary available pool. Now they can wait: underutilized sophomore or junior
@@ -215,16 +201,32 @@
       in their home countries. The investment creates no protected pathway.
     </div>
 
+    <h3>Two more headwinds: coaching churn and the JUCO route</h3>
+    <p><strong>An offer is a coach's promise, not the school's.</strong> Scholarship offers — verbal
+       commitments especially — belong to the coaching staff that made them, and college coaching
+       jobs turn over constantly. When a coach leaves, the incoming staff inherits no obligation to
+       honor recruiting promises, and aid packages get rebuilt around the new coach's own pipeline.
+       One documented case in my dataset: a D1 player on a $14K/yr combined soccer + academic
+       package transferred out after a coaching change — the aid structure that recruited him did
+       not survive the staff that offered it.</p>
+    <p><strong>Junior college is a growing parallel on-ramp.</strong> JUCO and community college
+       programs let players develop for one or two seasons at a fraction of the cost, then transfer
+       up through the same portal D1 coaches now prefer to recruit from. For coaches, a 20-year-old
+       JUCO transfer with proven college minutes is a lower-risk signing than an 18-year-old club
+       player with showcase film. For families, it means one more pool of proven players competing
+       for the spots elite club fees were supposed to secure — and, viewed the other way, a far
+       cheaper route to the same destination.</p>
+
     <p class="sources">Sources: ENY Soccer analysis (Jan 2026); NCAA transfer portal data;
-       research_statistics.csv (ST246–ST251).</p>
+       research_statistics.csv (ST082, ST246–ST251).</p>
   </section>
 
   <!-- Pro Pathway -->
-  <section>
+  <section class="card-section">
     <h2>The Professional Pathway</h2>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Median salary by professional league</div>
-      <canvas id="salaryLeagueChart" height="70"></canvas>
+      <div id="salaryLeagueChart" class="d3-chart"></div>
     </div>
 
     <table>
@@ -283,23 +285,23 @@
   </section>
 
   <!-- MLS Draft Survival Analysis -->
-  <section>
+  <section class="card-section">
     <h2>The MLS Draft Survival Study: Where Are They Now?</h2>
-    <p>We cross-referenced every MLS SuperDraft pick from 2020–2025 (490 total) against
+    <p>I cross-referenced every MLS SuperDraft pick from 2020–2025 (490 total) against
        the complete Capology 2026 active MLS salary database (824 active players). The question:
        of everyone drafted in the last 6 years, who still has a job?</p>
 
     <!-- Big number hero -->
     <div style="text-align:center;margin:2rem 0;padding:2rem;background:var(--surface-2);border-radius:2px;border:1px solid var(--border);">
-      <div style="font-size:4rem;font-weight:900;color:var(--gold);line-height:1;">78.8%</div>
+      <div style="font-size:4rem;font-weight:500;color:var(--text-strong);line-height:1;">78.8%</div>
       <div style="font-size:1.1rem;color:var(--text);margin-top:.5rem;">of all MLS draft picks from 2020–2025 are <strong style="color:var(--text-strong);">NOT on an active MLS roster</strong> in 2026</div>
       <div style="font-size:.9rem;color:var(--muted);margin-top:.5rem;">386 of 490 picks — gone</div>
     </div>
 
     <!-- Dot grid: Class of 2020 -->
     <h3>The Class of 2020: What Happened to 77 Draft Picks?</h3>
-    <p>Each dot represents one player drafted in 2020. <span style="color:var(--gold);font-weight:bold;">Gold = still on an active MLS roster in 2026.</span> Gray = no longer in MLS.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:6px;margin:1.5rem 0;padding:1.5rem;background:#111;border-radius:8px;">
+    <p>Each dot represents one player drafted in 2020. <span style="color:var(--text-strong);font-weight:bold;">Gold = still on an active MLS roster in 2026.</span> Gray = no longer in MLS.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin:1.5rem 0;padding:1.5rem;background:var(--surface-2);border-radius:8px;">
       <!-- 11 active (green), 66 gone (gray) for 2020 class -->
       <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
       <span title="Active" style="width:18px;height:18px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
@@ -394,13 +396,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>2020 (6 yrs ago)</td><td>77</td><td>11</td><td><strong style="color:var(--gold);">14.3%</strong></td><td>23%</td><td>12%</td></tr>
-        <tr><td>2021 (5 yrs ago)</td><td>74</td><td>9</td><td><strong style="color:var(--gold);">12.2%</strong></td><td>15%</td><td>12%</td></tr>
-        <tr><td>2022 (4 yrs ago)</td><td>79</td><td>15</td><td><strong style="color:var(--gold);">19.0%</strong></td><td>32%</td><td>15%</td></tr>
-        <tr><td>2023 (3 yrs ago)</td><td>83</td><td>11</td><td><strong style="color:var(--gold);">13.3%</strong></td><td>31%</td><td>3%</td></tr>
-        <tr><td>2024 (2 yrs ago)</td><td>87</td><td>32</td><td><strong style="color:var(--gold);">36.8%</strong></td><td>52%</td><td>31%</td></tr>
-        <tr><td>2025 (just drafted)</td><td>90</td><td>26</td><td><strong style="color:var(--gold);">28.9%</strong></td><td>60%</td><td>20%</td></tr>
-        <tr style="font-weight:bold;background:var(--surface-2);"><td>TOTAL</td><td>490</td><td>104</td><td><strong style="color:var(--gold);">21.2%</strong></td><td>36%</td><td>16%</td></tr>
+        <tr><td>2020 (6 yrs ago)</td><td>77</td><td>11</td><td><strong style="color:var(--text-strong);">14.3%</strong></td><td>23%</td><td>12%</td></tr>
+        <tr><td>2021 (5 yrs ago)</td><td>74</td><td>9</td><td><strong style="color:var(--text-strong);">12.2%</strong></td><td>15%</td><td>12%</td></tr>
+        <tr><td>2022 (4 yrs ago)</td><td>79</td><td>15</td><td><strong style="color:var(--text-strong);">19.0%</strong></td><td>32%</td><td>15%</td></tr>
+        <tr><td>2023 (3 yrs ago)</td><td>83</td><td>11</td><td><strong style="color:var(--text-strong);">13.3%</strong></td><td>31%</td><td>3%</td></tr>
+        <tr><td>2024 (2 yrs ago)</td><td>87</td><td>32</td><td><strong style="color:var(--text-strong);">36.8%</strong></td><td>52%</td><td>31%</td></tr>
+        <tr><td>2025 (just drafted)</td><td>90</td><td>26</td><td><strong style="color:var(--text-strong);">28.9%</strong></td><td>60%</td><td>20%</td></tr>
+        <tr style="font-weight:bold;background:var(--surface-2);"><td>TOTAL</td><td>490</td><td>104</td><td><strong style="color:var(--text-strong);">21.2%</strong></td><td>36%</td><td>16%</td></tr>
       </tbody>
     </table>
     <p style="font-size:.85rem;color:var(--muted);font-style:italic;">Note: 2024–2025 rates are inflated because players drafted recently are still on initial contracts. The mature survival rate (2020–2023 classes) averages 14.7%.</p>
@@ -411,7 +413,7 @@
       <div style="margin-bottom:1rem;">
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.3rem;">
           <span style="width:80px;text-align:right;font-size:.9rem;">Round 1</span>
-          <div style="flex:1;background:#333;border-radius:4px;height:28px;position:relative;">
+          <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;position:relative;">
             <div style="width:36.1%;background:var(--gold);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
               <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">36.1%</span>
             </div>
@@ -420,7 +422,7 @@
         </div>
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.3rem;">
           <span style="width:80px;text-align:right;font-size:.9rem;">Round 2</span>
-          <div style="flex:1;background:#333;border-radius:4px;height:28px;position:relative;">
+          <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;position:relative;">
             <div style="width:15.6%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
               <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">15.6%</span>
             </div>
@@ -429,7 +431,7 @@
         </div>
         <div style="display:flex;align-items:center;gap:1rem;">
           <span style="width:80px;text-align:right;font-size:.9rem;">Round 3</span>
-          <div style="flex:1;background:#333;border-radius:4px;height:28px;position:relative;">
+          <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;position:relative;">
             <div style="width:12.3%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
               <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">12.3%</span>
             </div>
@@ -475,7 +477,7 @@
     <div style="margin:1.5rem 0;">
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
         <span style="width:160px;text-align:right;font-size:.85rem;">MLS minimum<br><span style="color:var(--muted);">$88K–$113K</span></span>
-        <div style="flex:1;background:#333;border-radius:4px;height:28px;">
+        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
           <div style="width:35%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
             <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">35% · 36 players</span>
           </div>
@@ -483,7 +485,7 @@
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
         <span style="width:160px;text-align:right;font-size:.85rem;">Low<br><span style="color:var(--muted);">$114K–$299K</span></span>
-        <div style="flex:1;background:#333;border-radius:4px;height:28px;">
+        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
           <div style="width:42%;background:var(--ch-dim-bd);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
             <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">42% · 44 players</span>
           </div>
@@ -491,15 +493,15 @@
       </div>
       <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.5rem;">
         <span style="width:160px;text-align:right;font-size:.85rem;">Mid<br><span style="color:var(--muted);">$300K–$599K</span></span>
-        <div style="flex:1;background:#333;border-radius:4px;height:28px;">
-          <div style="width:15%;background:#3498db;height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
+        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
+          <div style="width:15%;background:var(--blue);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
             <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">15% · 16</span>
           </div>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:1rem;">
         <span style="width:160px;text-align:right;font-size:.85rem;">Upper<br><span style="color:var(--muted);">$600K+</span></span>
-        <div style="flex:1;background:#333;border-radius:4px;height:28px;">
+        <div style="flex:1;background:var(--ch-dim);border-radius:4px;height:28px;">
           <div style="width:8%;background:var(--gold);height:100%;border-radius:4px;display:flex;align-items:center;padding-left:.5rem;">
             <span style="font-size:.85rem;font-weight:bold;color:var(--text-strong);">8% · 8</span>
           </div>
@@ -512,12 +514,12 @@
     <h3>The End-to-End Probability</h3>
     <p>Combining the draft survival data with scholarship and draft probability data
        yields a complete picture of the professional pathway odds:</p>
-    <div style="background:#111;border-radius:8px;padding:1.5rem;margin:1.5rem 0;font-family:monospace;font-size:.9rem;line-height:2;">
-      <div>Tier 3 player → earns D1 scholarship:       <strong style="color:var(--gold);">~5–8%</strong></div>
-      <div>D1 player → gets drafted in MLS SuperDraft: <strong style="color:var(--gold);">~5%</strong></div>
-      <div>Draft pick → active MLS roster 3+ years:    <strong style="color:var(--gold);">~14–21%</strong></div>
-      <div style="border-top:1px solid #333;margin-top:.5rem;padding-top:.5rem;">
-        End-to-end probability (Tier 3 → sustained MLS career): <strong style="color:var(--gold);font-size:1.1rem;">~0.04–0.08%</strong>
+    <div style="background:var(--surface-2);border-radius:8px;padding:1.5rem;margin:1.5rem 0;font-family:monospace;font-size:.9rem;line-height:2;">
+      <div>Tier 3 player → earns D1 scholarship:       <strong style="color:var(--text-strong);">~5–8%</strong></div>
+      <div>D1 player → gets drafted in MLS SuperDraft: <strong style="color:var(--text-strong);">~5%</strong></div>
+      <div>Draft pick → active MLS roster 3+ years:    <strong style="color:var(--text-strong);">~14–21%</strong></div>
+      <div style="border-top:1px solid var(--line);margin-top:.5rem;padding-top:.5rem;">
+        End-to-end probability (Tier 3 → sustained MLS career): <strong style="color:var(--text-strong);font-size:1.1rem;">~0.04–0.08%</strong>
       </div>
     </div>
     <div class="callout">
@@ -535,22 +537,22 @@
 
   <!-- Monte Carlo -->
   <!-- Expected Value Analysis -->
-  <section>
+  <section class="card-section">
     <h2>Is There a "Likelihood-Appropriate" Cost?</h2>
     <p>The natural question: if youth soccer has real costs and families are choosing
        how much to spend, is there a level that makes sense given the odds? To answer
-       this, we model the expected financial return at each tier against actual cost —
+       this, I model the expected financial return at each tier against actual cost —
        and separately model the non-financial benefit curve.</p>
 
     <h3>Cost vs. expected financial return (10-year career)</h3>
     <div class="ev-grid">
       <div class="chart-canvas-wrap">
         <div class="chart-label">10-yr cost vs. expected financial return</div>
-        <canvas id="evCostChart" height="120"></canvas>
+        <div id="evCostChart" class="d3-chart"></div>
       </div>
       <div class="chart-canvas-wrap">
         <div class="chart-label">Break-even scholarship rate needed vs. actual</div>
-        <canvas id="evBreakevenChart" height="120"></canvas>
+        <div id="evBreakevenChart" class="d3-chart"></div>
       </div>
     </div>
 
@@ -569,21 +571,21 @@
       <tbody>
         <tr>
           <td>T1 AYSO ($550/yr)</td><td>$5,500</td><td>$301</td>
-          <td style="color:var(--gold);">−$5,199</td><td>10%</td><td>~0.5%</td>
+          <td style="color:var(--text-strong);">−$5,199</td><td>10%</td><td>~0.5%</td>
         </tr>
         <tr>
           <td>T2 SoCal/NPL ($3,100/yr)</td><td>$31,000</td><td>$1,704</td>
-          <td style="color:var(--gold);">−$29,296</td><td>58%</td><td>~3%</td>
+          <td style="color:var(--text-strong);">−$29,296</td><td>58%</td><td>~3%</td>
         </tr>
         <tr>
           <td>T3 ECNL/GA ($7,000/yr)</td><td>$70,000</td><td>$3,675</td>
-          <td style="color:var(--gold);">−$66,325</td>
-          <td style="color:var(--gold);font-weight:bold;">131% — impossible</td><td>~6.5%</td>
+          <td style="color:var(--text-strong);">−$66,325</td>
+          <td style="color:var(--text-strong);font-weight:bold;">131% — impossible</td><td>~6.5%</td>
         </tr>
         <tr>
           <td>T4 Homegrown ($12,000/yr)</td><td>$120,000</td><td>$5,379</td>
-          <td style="color:var(--gold);">−$114,621</td>
-          <td style="color:var(--gold);font-weight:bold;">225% — impossible</td><td>~9.5%</td>
+          <td style="color:var(--text-strong);">−$114,621</td>
+          <td style="color:var(--text-strong);font-weight:bold;">225% — impossible</td><td>~9.5%</td>
         </tr>
       </tbody>
     </table>
@@ -598,7 +600,7 @@
     <h3>The non-financial benefit curve</h3>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Is there a "likelihood-appropriate" cost? Financial return, non-financial benefit, and cost by annual spending</div>
-      <canvas id="frontierChart" height="90"></canvas>
+      <div id="frontierChart" class="d3-chart"></div>
     </div>
 
     <p>This chart adds a third dimension: the estimated non-financial benefit index
@@ -606,8 +608,8 @@
        quickly from $0 to roughly $3,000–$4,000/year, then flattens sharply. The cost
        line (dashed red) eventually overtakes it.</p>
 
-    <p>The implication: if you're spending for non-financial reasons — your child loves
-       the game, values the competition, is developing as a person — the evidence
+    <p>The implication: for families spending on non-financial grounds — a kid who loves
+       the game, values the competition, is growing up inside it — the evidence
        suggests most of that value is captured by Tier 2 travel soccer (~$3,100/year).
        Every dollar above ~$4,000/year buys marginally less return than the dollar
        before it.</p>
@@ -620,29 +622,29 @@
         <tr>
           <td>Child loves soccer; family can afford T2 comfortably; no scholarship expectation</td>
           <td>$3,100/yr</td>
-          <td style="color:var(--gold);">Benefit-appropriate — paying for the experience</td>
+          <td style="color:var(--text-strong);">Benefit-appropriate — paying for the experience</td>
         </tr>
         <tr>
           <td>Child is genuinely exceptional; family has confirmed interest from college coaches</td>
           <td>$7,000/yr (2–3 yrs)</td>
-          <td style="color:var(--gold);">Conditionally rational — if evidence supports it</td>
+          <td style="color:var(--text-strong);">Conditionally rational — if evidence supports it</td>
         </tr>
         <tr>
           <td>Stretching financially; belief that T3 will "open doors"; no specific signal of exceptional ability</td>
           <td>$7,000–$22,000/yr</td>
-          <td style="color:var(--gold);">Poor expected value — cost far exceeds realistic return</td>
+          <td style="color:var(--text-strong);">Poor expected value — cost far exceeds realistic return</td>
         </tr>
         <tr>
           <td>Any family; banking on T4 to produce a professional career</td>
           <td>$12,000+/yr</td>
-          <td style="color:var(--gold);">No tier produces positive financial EV for a typical player</td>
+          <td style="color:var(--text-strong);">No tier produces positive financial EV for a typical player</td>
         </tr>
       </tbody>
     </table>
 
     <div class="callout">
       <strong>The reason AYSO is cheap</strong> is not that soccer costs less to deliver
-      at Tier 1 — it is that AYSO uses volunteer coaches. The moment you pay coaches
+      at Tier 1 — it is that AYSO uses volunteer coaches. The moment a program pays coaches
       $23–$31/hour (as LA City United does), even a basic program costs $1,600+/player/year
       to operate. AYSO's low price is a volunteer subsidy, not evidence that soccer is cheap.
       The same real costs exist at every tier; the question is who absorbs them.
@@ -655,25 +657,25 @@
   </section>
 
   <!-- Monte Carlo -->
-  <section>
+  <section class="card-section">
     <h2>Monte Carlo Simulation: 100,000 Tier 3 Players</h2>
     <p>Assuming realistic probabilities for each outcome — professional career (0.5%),
        D1 full scholarship (8%), partial scholarship (35%), or no return (56.5%) —
        what is the expected net financial outcome for a Tier 3 player?</p>
 
-    <img src="../data/analysis/monte_carlo_tier3.png"
-         alt="Monte Carlo simulation for Tier 3 player" class="chart-img">
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Simulated outcome shares — 100,000 Tier 3 players</div>
+      <div id="monteCarloChart" class="d3-chart"></div>
+    </div>
 
     <div class="callout green">
-      <strong>Reading the chart:</strong> The vast majority of simulated players (the tall bar
-      on the left) lose the full ~$55,000 career investment. The right tail represents
+      <strong>Reading the chart:</strong> The vast majority of simulated players — the top bar — lose the full ~$55,000 career investment. The right tail represents
       the rare scholarship or pro career outcomes. The mean outcome is approximately
       <strong>-$45,000</strong> — a near-total loss for the average family.
     </div>
 
     <h3>Expected Value by Tier</h3>
-    <img src="../data/analysis/roi_by_tier.png" alt="ROI by tier" class="chart-img">
-    <p>The paradox of elite youth soccer ROI: Tier 4 (pro academies) has the best
+        <p>The paradox of elite youth soccer ROI: Tier 4 (pro academies) has the best
        expected value because the clubs bear the cost. Tiers 1–3 are negative expected
        value investments — but Tier 3 families pay 100× more than Tier 1 for the same
        negative outcome.</p>
@@ -706,7 +708,7 @@
   </section>
 
   <!-- International comparison -->
-  <section>
+  <section class="card-section">
     <h2>The American Anomaly</h2>
     <p>The US pay-to-play model is not how elite soccer players are developed anywhere else.
        In every other major soccer nation, the intensive training tier that US families pay
@@ -722,7 +724,7 @@
         <tr><td>England</td><td>£185–275/yr ($235–350)</td><td>Training, matches, kit</td><td>Pro club academies — free if selected</td></tr>
         <tr><td>Spain</td><td>€500–1,000/yr</td><td>Training 2-3x/wk, league play</td><td>La Liga academies (La Masia) — free if selected</td></tr>
         <tr><td>Brazil</td><td>$0 (pro academies)</td><td>Coaching, housing, education</td><td>Categorias de base — club-funded, selective</td></tr>
-        <tr style="background:#fff5f5"><td><strong>United States</strong></td><td><strong>$6,000–$15,000+/yr</strong></td><td>Training, tournaments, showcases</td><td>MLS academies — free if selected; <em>T2/T3 is paid commercial tier</em></td></tr>
+        <tr style="background:var(--red-lt)"><td><strong>United States</strong></td><td><strong>$6,000–$15,000+/yr</strong></td><td>Training, tournaments, showcases</td><td>MLS academies — free if selected; <em>T2/T3 is paid commercial tier</em></td></tr>
       </tbody>
     </table>
 
@@ -743,9 +745,12 @@
   </section>
 
   <!-- Player funnel -->
-  <section>
+  <section class="card-section">
     <h2>The Player Funnel</h2>
-    <img src="../data/analysis/player_funnel.png" alt="Player funnel visualization" class="chart-img">
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Players at each stage (log scale: every gridline is a 10× drop)</div>
+      <div id="playerFunnelChart" class="d3-chart"></div>
+    </div>
     <p>At each level of competition, the pyramid narrows dramatically. The US has
        approximately 3 million recreational youth soccer players. The MLS draft
        selects roughly 50–80 players per year. The funnel compression — roughly
@@ -753,180 +758,89 @@
        highly unlikely outcomes that no financial advisor would recommend as
        an investment thesis.</p>
 
+    <p>Which leads back to the seventy-seven names called in January 2020. They had
+       already beaten the 40,000:1 funnel. Eleven are left. The families now writing
+       five-figure checks are paying for a shot at being one of the sixty-six. A New
+       Jersey parent who bartends nights to cover his kids' fees put it to NJ.com more
+       directly than any expected-value table can: &ldquo;If you're chasing a
+       scholarship, just know that you're crazy.&rdquo;</p>
+
     <p class="sources">
       Sources: Watanabe et al. (2010), Beron et al. (2019), Dure et al. (2018) — peer-reviewed;
-      NCAA 2024 scholarship data; MLSPA Spring 2026 salary data; research_statistics.csv (ST014–ST019).
+      NCAA 2024 scholarship data; MLSPA Spring 2026 salary data; NJ.com, &ldquo;The shocking cost
+      of youth sports in New Jersey&rdquo; (May 2026); research_statistics.csv (ST014–ST019).
     </p>
   </section>
 
 </div>
 
 <footer>
-  <p>Fool's Gold: Youth Soccer ROI Analysis &bull; Data collected 2024–2026
+  <p>Pitfalls on the Pathway &bull; ROI Analysis &bull; Data collected 2024–2026
      &bull; <a href="methodology.html">Methodology</a> &bull;
      <a href="../index.html">Home</a></p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="charts.js"></script>
 <script>
-const C = (function(){
-  const r = getComputedStyle(document.documentElement);
-  const v = k => r.getPropertyValue(k).trim();
-  return {
-    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
-    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
-    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
-    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
-  };
-})();
-Chart.defaults.color = C.muted;
-Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
+function renderAll() {
+  /* scholarship value by division */
+  hBars('scholarshipChart', [
+    { label: 'D1 Men',   v: 34000, c: 'gold', end: '$34K' },
+    { label: 'D1 Women', v: 40000, c: 'gold', end: '$40K' },
+    { label: 'D2 Men',   v: 19000, c: 'blue', end: '$19K' },
+    { label: 'D2 Women', v: 21000, c: 'blue', end: '$21K' },
+    { label: 'D3 Men',   v: 0,     c: 'dim',  end: '$0',  tip: 'D3 awards no athletic scholarship money' },
+    { label: 'D3 Women', v: 0,     c: 'dim',  end: '$0',  tip: 'D3 awards no athletic scholarship money' },
+  ], { left: 100, barH: 22, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() + '/yr avg' });
 
-// ── Scholarship by division ────────────────────────────────
-new Chart(document.getElementById('scholarshipChart'), {
-  type: 'bar',
-  data: {
-    labels: ['D1 Men', 'D1 Women', 'D2 Men', 'D2 Women', 'D3 Men', 'D3 Women'],
-    datasets: [{
-      label: 'Avg annual scholarship value',
-      data: [34000, 40000, 19000, 21000, 0, 0],
-      backgroundColor: [C.goldFill, C.goldFill, C.blueFill, C.blueFill, C.dim, C.dim],
-      borderColor:     [C.gold,     C.gold,     C.blue,     C.blue,     C.dimBd, C.dimBd],
-      borderWidth: 1.5,
-      borderRadius: 4,
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-      tooltip: { callbacks: { label: ctx => ` $${ctx.raw.toLocaleString()}/yr avg` } }
-    },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: C.muted } },
-      y: {
-        grid: { color: C.grid },
-        ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
-      }
-    }
-  }
-});
+  /* pro salary floor vs median by league */
+  vGrouped('salaryLeagueChart',
+    ['MLS\n(2026)', 'MLS\nHomegrown', 'NWSL', 'USL\nChampionship', 'USL\nLeague One'],
+    [
+      { label: 'Minimum', data: [88025, 65000, 35000, 25000, 18000],    c: 'dim'  },
+      { label: 'Median',  data: [352000, 180000, 75000, 50000, 30000], c: 'gold' },
+    ],
+    { h: 240, bottom: 40, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() });
 
-// ── Pro salary by league ───────────────────────────────────
-new Chart(document.getElementById('salaryLeagueChart'), {
-  type: 'bar',
-  data: {
-    labels: ['MLS (2026)', 'MLS Homegrown', 'NWSL', 'USL Championship', 'USL League One'],
-    datasets: [
-      {
-        label: 'Minimum',
-        data: [88025, 65000, 35000, 25000, 18000],
-        backgroundColor: C.dim,
-        borderColor: C.dimBd,
-        borderRadius: 3,
-      },
-      {
-        label: 'Median',
-        data: [352000, 180000, 75000, 50000, 30000],
-        backgroundColor: C.goldFill,
-        borderColor: C.gold,
-        borderRadius: 3,
-      }
-    ]
-  },
-  options: {
-    indexAxis: 'y',
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, color: C.muted } },
-      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
-    },
-    scales: {
-      x: {
-        grid: { color: C.grid },
-        ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
-      },
-      y: { grid: { display: false }, ticks: { color: C.muted } }
-    }
-  }
-});
+  /* EV: cost vs return (same data as index §03) */
+  vGrouped('evCostChart',
+    ['T1 AYSO\n$550/yr', 'T2 SoCal/NPL\n$3,100/yr', 'T3 ECNL/GA\n$7,000/yr', 'T4 HG\n$12,000/yr'],
+    [
+      { label: '10-yr family cost',         data: [5500, 31000, 70000, 120000], c: 'dim'  },
+      { label: 'Expected financial return', data: [301, 1704, 3675, 5379],      c: 'gold' },
+    ],
+    { h: 250, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString(), bottom: 40 });
 
-// ── EV cost chart ──────────────────────────────────────────
-new Chart(document.getElementById('evCostChart'), {
-  type: 'bar',
-  data: {
-    labels: ['T1 AYSO\n$550/yr', 'T2 SoCal/NPL\n$3,100/yr', 'T3 ECNL/GA\n$7,000/yr', 'T4 Homegrown\n$12,000/yr'],
-    datasets: [
-      {
-        label: '10-yr family cost',
-        data: [5500, 31000, 70000, 120000],
-        backgroundColor: C.dim,
-        borderColor: C.dimBd,
-        borderWidth: 1.5, borderRadius: 4,
-      },
-      {
-        label: 'Expected financial return',
-        data: [301, 1704, 3675, 5379],
-        backgroundColor: C.goldFill,
-        borderColor: C.gold,
-        borderWidth: 1.5, borderRadius: 4,
-      }
-    ]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: C.muted } },
-      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
-    },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: C.muted, font: { size: 10 } } },
-      y: { grid: { color: C.grid }, ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000+'K' : v) } }
-    }
-  }
-});
+  vGrouped('evBreakevenChart',
+    ['T1 AYSO', 'T2 SoCal/NPL', 'T3 ECNL/GA', 'T4 HG'],
+    [
+      { label: '% needed to break even',  data: [10.3, 58.1, 131.1, 224.7], c: 'dim' },
+      { label: 'Actual scholarship rate', data: [0.5, 3.0, 6.5, 9.5],       c: 'gold', type: 'line' },
+    ],
+    { h: 250, tickFmt: d => d + '%', valFmt: v => v.toFixed(1) + '%', bottom: 28 });
 
-// ── Break-even chart ───────────────────────────────────────
-new Chart(document.getElementById('evBreakevenChart'), {
-  type: 'bar',
-  data: {
-    labels: ['T1 AYSO', 'T2 SoCal/NPL', 'T3 ECNL/GA', 'T4 Homegrown'],
-    datasets: [
-      {
-        label: '% needed to break even',
-        data: [10.3, 58.1, 131.1, 224.7],
-        backgroundColor: C.dim,
-        borderColor: C.dimBd,
-        borderWidth: 1.5, borderRadius: 4,
-      },
-      {
-        label: 'Actual scholarship rate',
-        data: [0.5, 3.0, 6.5, 9.5],
-        type: 'line',
-        borderColor: C.gold, backgroundColor: C.goldFill,
-        pointBackgroundColor: C.gold, pointRadius: 6,
-        borderWidth: 2, fill: false, tension: 0.1,
-      }
-    ]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: C.muted } },
-      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toFixed(1)}%` } }
-    },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: C.muted } },
-      y: { grid: { color: C.grid }, ticks: { color: C.muted, callback: v => v + '%' } }
-    }
-  }
-});
+  /* monte carlo outcome shares (probabilities from the simulation inputs) */
+  hBars('monteCarloChart', [
+    { label: 'No financial return',  v: 56.5, c: 'red',  end: '56.5%', tip: 'Net outcome: the full ~$55K career investment, lost' },
+    { label: 'Partial scholarship',  v: 35,   c: 'dim',  end: '35%',   tip: 'Typical partial award $10K–$20K/yr — rarely offsets $55K invested' },
+    { label: 'Full D1 scholarship',  v: 8,    c: 'gold', end: '8%',    tip: '$34K/yr × 4 years = $136K — the clean win' },
+    { label: 'Professional career',  v: 0.5,  c: 'blue', end: '0.5%',  tip: 'Median surviving draft pick: $113K/yr, avg career 2.4 years' },
+  ], { left: 170, barH: 24, tickFmt: d => d + '%', valFmt: v => v + '% of simulated players' });
 
-// ── Spending frontier chart ────────────────────────────────
-(function() {
+  /* player funnel (same data as index §01) */
+  hBars('playerFunnelChart', [
+    { label: 'Recreational (AYSO + parks)', v: 1600000, c: 'dim',  end: '1.6M+' },
+    { label: 'Competitive club (L1–L5)',    v: 230000,  c: 'dim',  end: '230K' },
+    { label: 'MLS NEXT Homegrown',          v: 17000,   c: 'gold', end: '17K' },
+    { label: 'Free MLS pro academies',      v: 5000,    c: 'blue', end: '5K' },
+    { label: 'MLS roster spots',            v: 900,     c: 'red',  end: '~900' },
+    { label: 'Incoming/yr: SuperDraft',     v: 82,      c: 'red',  end: '~82', tip: '490 SuperDraft picks 2020–2025 ≈ 82/yr — most never earn an MLS paycheck' },
+  ], { log: true, logMin: 50, left: 200, tickFmt: d => d.toLocaleString(), valFmt: v => v.toLocaleString() + ' players' });
+
+  /* spending frontier */
   const spend = [];
-  for (let s = 0; s <= 13000; s += 100) spend.push(s);
-
+  for (let s = 0; s <= 13000; s += 500) spend.push(s);
   function benefitAt(s) {
     const pts = [[0,0],[550,40],[3100,70],[7000,85],[12000,90]];
     for (let i = 1; i < pts.length; i++) {
@@ -937,69 +851,25 @@ new Chart(document.getElementById('evBreakevenChart'), {
     }
     return 90;
   }
-
-  const evPerYear  = [30.1, 170.4, 367.5, 537.9];
+  const evPerYear = [30.1, 170.4, 367.5, 537.9];
   function evAt(s) {
     if (s <= 550)  return (s/550) * evPerYear[0];
     if (s <= 3100) return evPerYear[0] + (s-550)/(3100-550) * (evPerYear[1]-evPerYear[0]);
     if (s <= 7000) return evPerYear[1] + (s-3100)/(7000-3100) * (evPerYear[2]-evPerYear[1]);
     return evPerYear[2] + (s-7000)/(12000-7000) * (evPerYear[3]-evPerYear[2]);
   }
-
-  new Chart(document.getElementById('frontierChart'), {
-    type: 'line',
-    data: {
-      labels: spend,
-      datasets: [
-        {
-          label: 'Non-financial benefit index (estimated)',
-          data: spend.map(benefitAt),
-          borderColor: C.blue, backgroundColor: C.blueFill,
-          borderWidth: 2.5, fill: true, tension: 0.35, pointRadius: 0,
-        },
-        {
-          label: 'Financial EV (annualized, per $100)',
-          data: spend.map(s => evAt(s) / 100),
-          borderColor: C.gold, backgroundColor: C.goldFill,
-          borderWidth: 2, fill: true, tension: 0.35, pointRadius: 0,
-        },
-        {
-          label: 'Annual cost (scaled: $13K = 100)',
-          data: spend.map(s => s / 130),
-          borderColor: C.dimBd, borderDash: [6, 4],
-          borderWidth: 2, fill: false, tension: 0, pointRadius: 0,
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, color: C.muted } },
-        tooltip: {
-          callbacks: {
-            title: items => '$' + items[0].label.toLocaleString() + '/yr',
-            label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toFixed(1)}`
-          }
-        }
-      },
-      scales: {
-        x: {
-          type: 'linear', min: 0, max: 13000,
-          grid: { color: C.grid },
-          ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v), maxTicksLimit: 8 }
-        },
-        y: {
-          min: 0, max: 100,
-          grid: { color: C.grid },
-          ticks: { color: C.muted, callback: v => v }
-        }
-      }
-    }
+  lineChart('frontierChart', spend, [
+    { label: 'Non-financial benefit index (estimated)', data: spend.map(s => +benefitAt(s).toFixed(1)), c: 'blue' },
+    { label: 'Financial EV (annualized, per $100)',     data: spend.map(s => +(evAt(s)/100).toFixed(1)), c: 'gold' },
+    { label: 'Annual cost (scaled: $13K = 100)',        data: spend.map(s => +(s/130).toFixed(1)), c: 'dim', noArea: true },
+  ], {
+    h: 260, max: 100, dotR: 2.5, xEvery: 4,
+    yFmt: d => d, xFmt: l => '$' + (l >= 1000 ? l/1000 + 'K' : l),
+    tipFmt: (l, sl, v) => `<strong>$${l.toLocaleString()}/yr</strong><br>${sl}: <strong>${v}</strong>`,
   });
-
-  // Tier labels via annotation plugin isn't loaded — add as CSS overlay instead
-})();
+}
+renderAll();
+let rT; window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(renderAll, 150); });
 </script>
 
 </body>

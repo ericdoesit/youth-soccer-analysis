@@ -1,7 +1,9 @@
-# US Youth Soccer Cost-Benefit Analysis
+# Pitfalls on the Pathway — The Real Math Behind Club Soccer
+
+US youth soccer cost-benefit analysis. Live site: https://ericdoesit.github.io/youth-soccer-analysis/
 
 ## Project Goal
-Comprehensive, data-driven analysis of US youth soccer covering:
+Comprehensive, data-driven analysis of US youth soccer (Southern California lens, national context) covering:
 - **Cost stratification** across program tiers (Rec, Travel, Elite)
 - **Academic scholarship pathways** and outcomes
 - **Professional soccer career probabilities** (domestic and global)
@@ -97,40 +99,34 @@ Comprehensive, data-driven analysis of US youth soccer covering:
 
 ## Files
 
-### Scripts (Run these)
+### Scripts (survey pipeline)
+The site itself is fully static (HTML/CSS/JS + D3); Python is only used for the
+ongoing survey pipeline. Setup: `python3 -m venv venv && venv/bin/pip install -r requirements.txt`
 ```bash
-# Simple dashboard (recommended for quick view)
-python3 scripts/dashboard_simple.py
-
-# Detailed equity analysis
-python3 scripts/equity_analysis.py
-
-# Interactive runner
-bash scripts/run_analysis.sh
+python3 scripts/pull_survey_data.py      # pull legacy Typeform responses (needs .env token)
+python3 scripts/typeform_to_sheet.py     # convert legacy rows for the Google Sheet master
+python3 scripts/sheet_to_survey.py       # pull Tally responses from the Google Sheet
+python3 scripts/merge_survey_data.py     # merge responses into data/survey_merged.csv
 ```
+Scrapers and one-off dataset builders were removed June 2026 (data is final); see git history.
 
 ### Data
 ```
 data/
-├── raw/
-│   ├── professional/mlspa_2026.csv (916 MLS players)
-│   ├── scholarships/ (NCAA PDFs, NAIA data)
-│   └── programs/ (club databases)
-└── processed/
-    ├── costs.csv (38 cost records, 1-tier breakdown)
-    ├── programs.csv (37 programs across all tiers)
-    ├── scholarship_outcomes.csv (NCAA D1/D2/D3/NAIA/NJCAA)
-    ├── pro_outcomes.csv (MLS/NWSL/USL career paths)
-    ├── mls_player_salaries_2026.csv (real MLSPA data, 916 rows)
-    └── research_statistics.csv (202 research data points)
+├── *.csv            active datasets used by the report pages and scripts
+│                    (clubs, leagues, fees, MLS salaries/drafts, survey, outcomes)
+├── analysis/        generated charts and summary tables
+├── raw/             raw source data
+│   ├── professional/   MLSPA salary data + extracted salary-guide text (2015-2023)
+│   ├── scholarships/   NCAA PDFs and participation data
+│   └── programs/       club databases
+├── pdf/             source PDFs (MLSPA salary guides, research reports)
+└── archive/         superseded or unused datasets
 ```
 
-### Notebooks (Jupyter)
+### Docs
 ```
-notebooks/
-├── 07_mls_salary_analysis.ipynb (916-player real data analysis)
-├── 08_dashboard_analysis.ipynb (cost-benefit model)
-└── 09_equity_analysis.ipynb (who loses most)
+md/                  project docs (THESIS.md, VOICE.md, case-study notes)
 ```
 
 ## Key Insights

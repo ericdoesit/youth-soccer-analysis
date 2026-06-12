@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Who Loses Most: The Equity Problem in Youth Soccer</title>
+  <title>Who Loses Most — Pitfalls on the Pathway</title>
   <link rel="stylesheet" href="site.css">
   <style>
     .loser-rank { display: inline-block; width: 1.6rem; height: 1.6rem; border-radius: 50%;
-                  background: var(--gold); color: #0d0d0d; font-weight: 800; font-size: 0.8rem;
+                  background: var(--text-strong); color: var(--bg); font-weight: 600; font-size: 0.8rem;
                   text-align: center; line-height: 1.6rem; margin-right: 0.4rem;
-                  font-family: 'Inter', sans-serif; }
-    .loser-rank.green { background: var(--blue); }
-    .stat-card .num.bad  { color: var(--gold); }
-    .stat-card .num.ok   { color: var(--gold); }
-    .ratio-bad  { color: var(--muted); font-weight: 700; }
-    .ratio-ok   { color: var(--gold); font-weight: 700; }
-    .ratio-good { color: var(--blue); font-weight: 700; }
+                  font-family: var(--font-sans); }
+    .loser-rank.green { background: var(--green); color: #fffeff; }
+    .stat-card .num.bad  { color: var(--text-strong); }
+    .stat-card .num.ok   { color: var(--text-strong); }
+    .ratio-bad  { color: var(--red); font-weight: 600; }
+    .ratio-ok   { color: var(--muted); font-weight: 600; }
+    .ratio-good { color: var(--green); font-weight: 600; }
     .income-bar { height: 1.6rem; border-radius: 2px; display: flex; align-items: center;
-                  justify-content: flex-end; padding-right: 0.5rem; color: #0d0d0d;
+                  justify-content: flex-end; padding-right: 0.5rem; color: #0f0f0f;
                   font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem;
-                  font-family: 'Inter', sans-serif; }
-    .chart-canvas-wrap { background: var(--surface-2); border: 1px solid var(--border);
+                  font-family: var(--font-sans); }
+    .chart-canvas-wrap { background: var(--surface); border: none;
                          border-radius: 2px; padding: 1rem; margin: 1.25rem 0; }
-    .chart-canvas-wrap .chart-label { font-family: 'Inter', sans-serif; font-size: 0.82rem;
+    .chart-canvas-wrap .chart-label { font-family: var(--font-sans); font-size: 0.82rem;
                                       font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
                                       color: var(--muted); margin-bottom: 0.75rem; }
     @media (max-width: 600px) {
@@ -32,40 +32,24 @@
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"
-            onclick="this.nextElementSibling.classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="scope.html">Youth Scope</a>
-      <a href="costs.html">Costs</a>
-      <a href="fools_gold.html">Fools Gold</a>
-      <a href="mls.html">MLS</a>
-      <a href="equity.html" class="active">Equity</a>
-      <a href="methodology.html" class="nav-appendix">Methods</a>
-      <a href="data.html" class="nav-appendix">Data</a>
-      <a href="../survey.html" class="nav-survey">Survey</a>
-    </div>
-  </div>
-</nav>
+<script src="../nav.js"></script>
 
 <div class="page-header">
-  <h1>Who Loses Most</h1>
-  <p>Elite youth soccer systematically extracts money from middle-class families while
-     excluding working-class players. These are the groups that pay the highest price.</p>
+  <div class="eyebrow">Deep Dive 05 · Who Loses</div>
+  <h1>Who Loses <em>Most</em></h1>
+  <p>Elite youth soccer's costs fall hardest on middle-class families, and price most
+     working-class players out entirely. The data on who pays — and who is missing.</p>
 </div>
 
 <div class="container">
 
   <!-- Income Stratification -->
-  <section>
+  <section class="card-section">
     <h2>Who Plays Elite Soccer?</h2>
-    <p>Youth soccer at the competitive and elite levels has become a sport of affluent families.
-       The income stratification of club sport participants is stark:</p>
+    <p>When I surveyed Southern California club families about costs, every single respondent —
+       all twelve — reported household income above $120,000. I didn't screen for that. That is
+       simply who club soccer's customers are. The families under $120K aren't underrepresented
+       in the data; they're missing from the sport. The national numbers say the same thing:</p>
 
     <div class="stat-grid">
       <div class="stat-card">
@@ -89,7 +73,7 @@
     <h3>Income distribution in youth soccer vs. general population</h3>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Income distribution: club soccer families vs. US general population</div>
-      <canvas id="incomeChart" height="80"></canvas>
+      <div id="incomeChart" class="d3-chart"></div>
     </div>
 
     <p style="margin-top: 1rem;">Families below $50K — roughly 40% of US households — represent
@@ -130,7 +114,7 @@
   </section>
 
   <!-- Who Loses the Most table -->
-  <section>
+  <section class="card-section">
     <h2>The Cost-Benefit Losers: Ranked</h2>
     <p>Not all participants in the pay-to-play system are treated equally. Some groups
        pay the same high price for a dramatically worse expected outcome.</p>
@@ -199,7 +183,7 @@
   </section>
 
   <!-- Flight 2/3 Subsidy -->
-  <section>
+  <section class="card-section">
     <h2>The Hidden Subsidy: Flight 2 &amp; 3 Players</h2>
     <p>Large elite clubs (Surf, Albion, Legends, SDSC, etc.) typically operate
        multiple "flights" — Flight 1 is the top team, Flights 2 and 3 are lower-level
@@ -234,7 +218,7 @@
   </section>
 
   <!-- Regional Geography Problem -->
-  <section>
+  <section class="card-section">
     <h2>The Geography Problem</h2>
     <p>MLS academies, ECNL scouts, and top college recruiting activity is concentrated
        in a handful of markets: the coasts, Texas, and a few Midwest cities.
@@ -259,7 +243,7 @@
   </section>
 
   <!-- Female Players -->
-  <section>
+  <section class="card-section">
     <h2>Gender Inequity in the Return on Investment</h2>
     <p>Female players in ECNL and Girls Academy pay comparable annual fees to male
        players ($7,000–$9,000/year). The outcomes, however, are materially different:</p>
@@ -298,127 +282,55 @@
     </div>
   </section>
 
-  <!-- LA City United as solution model -->
-  <section>
-    <h2>The Public Subsidy Model: LA City United</h2>
-    <p>LA City United charges families $10/month ($120/year) and competes at the T2
-       competitive travel level (SoCal Soccer League) against clubs charging $2,000–$5,500/year. This is not because soccer is cheap
-       to deliver — it is because LA28 Olympic funding covers approximately
-       <strong>$1,647/player/year</strong> in real operating costs.</p>
+  <!-- LA City United as solution model (full case study lives in costs.html) -->
+  <section class="card-section">
+    <h2>The Public Subsidy Alternative</h2>
+    <p>LA City United charges families $120/year for the same SoCal Soccer League competition
+       that private clubs price at $2,000–$5,500 — LA28 Olympic funding covers the
+       ~$1,647/player/year the fee doesn't. Its existence shows what the income chart above
+       implies: the barrier keeping lower-income families out is the price, not the sport.</p>
 
-    <table>
-      <thead>
-        <tr><th>Program</th><th>Family Cost</th><th>True Cost/Player</th><th>Who Pays the Rest</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>LA City United</strong></td>
-          <td>$120/yr</td>
-          <td>~$1,767/yr</td>
-          <td>LA28 / City of Los Angeles (~93%)</td>
-        </tr>
-        <tr>
-          <td>Typical ECNL/MLS Next club</td>
-          <td>$7,000–$22,000/yr</td>
-          <td>~$3,000–$6,000/yr*</td>
-          <td>Family pays 100% + profit margin</td>
-        </tr>
-      </tbody>
-    </table>
-    <p style="font-size:.85rem;color:var(--muted);">*Private club true operating cost estimates based on comparable coaching hours, field rental, insurance, and tournament costs. Remainder above operating cost is facility markup, marketing, and profit margin.</p>
-
-    <p>Running one team costs roughly $31,800/year in real expenses — coaches earning
-       $23–$31/hour, referees earning $50/game, equipment, tournaments, and insurance.
-       LA City United publishes these pay rates publicly. The $120/year family fee
-       covers $2,160 of that — about 7%. The rest is public investment.</p>
+    <p>Which brings the page back to my survey. Twelve families answered, and all twelve
+       could absorb a four-figure annual fee without blinking. The families who couldn't
+       aren't in the survey. They aren't in the leagues either.</p>
 
     <div class="callout">
       <strong>The equity argument isn't that soccer should be free.</strong>
       It's that when cities invest ~$1,650/player/year in public infrastructure,
-      families from any income level can participate at an elite level. Private clubs
-      charge $7,000–$22,000 because <em>no one else is paying</em> — not because
-      that's what it costs. The gap between $1,767 (true cost) and $22,000 (top
-      private club) is marketing, facilities debt, and profit — not coaching quality.
+      families from any income level can participate at a competitive level.
+      The open policy question: LA28 funding expires after 2028 — without a permanent
+      municipal commitment, these families return to the $7,000+ private market.
     </div>
 
-    <h3>What happens when LA28 funding ends?</h3>
-    <p>LA City United exists because LA28 Olympics provided a temporary funding stream.
-       The program is set to expand aggressively through 2028. The policy question no
-       one is asking loudly: what happens to these players and these programs in 2029
-       when Olympic funding expires? Without a permanent municipal funding commitment,
-       the families who relied on the $120/year option face the same $7,000+ private
-       club market they couldn't afford before.</p>
-
     <p class="sources">
-      Sources: Agans et al. (2018) Wisconsin study (R002); ASLA 2016 national report (R001);
-      LA City United coach pay rates (public job postings, docs.google.com/forms);
-      LA City United referee rates (interest form, rap-lacityunited@lacity.org);
-      equity analysis from notebooks/09_equity_analysis.ipynb.
+      Full case study with operating-cost breakdown and pay rates:
+      <a href="costs.html">The Real Cost of Youth Soccer →</a>.
+      Sources: Agans et al. (2018) Wisconsin study (R002); ASLA 2016 national report (R001).
     </p>
   </section>
 
 </div>
 
 <footer>
-  <p>Fool's Gold: Youth Soccer Equity Analysis &bull; Data collected 2024–2026
+  <p>Pitfalls on the Pathway &bull; Equity Analysis &bull; Data collected 2024–2026
      &bull; <a href="methodology.html">Methodology</a> &bull;
      <a href="../index.html">Home</a></p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="charts.js"></script>
 <script>
-const C = (function(){
-  const r = getComputedStyle(document.documentElement);
-  const v = k => r.getPropertyValue(k).trim();
-  return {
-    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
-    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
-    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
-    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
-  };
-})();
-Chart.defaults.color = C.muted;
-Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
-
-new Chart(document.getElementById('incomeChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Under $50K', '$50K–$75K', '$75K–$100K', 'Over $100K'],
-    datasets: [
-      {
-        label: 'Club soccer families',
-        data: [8, 13, 19, 60],
-        backgroundColor: C.goldFill,
-        borderColor: C.gold,
-        borderWidth: 1.5,
-        borderRadius: 4,
-      },
-      {
-        label: 'US general population',
-        data: [40, 18, 16, 26],
-        backgroundColor: C.dim,
-        borderColor: C.dimBd,
-        borderWidth: 1.5,
-        borderRadius: 4,
-      }
-    ]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 14, color: C.muted } },
-      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw}% of households` } }
-    },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: C.muted } },
-      y: {
-        grid: { color: C.grid },
-        max: 70,
-        ticks: { color: C.muted, callback: v => v + '%' }
-      }
-    }
-  }
-});
+function renderAll() {
+  vGrouped('incomeChart',
+    ['Under $50K', '$50K–$75K', '$75K–$100K', 'Over $100K'],
+    [
+      { label: 'Club soccer families',   data: [8, 13, 19, 60],  c: 'gold' },
+      { label: 'US general population',  data: [40, 18, 16, 26], c: 'dim'  },
+    ],
+    { h: 240, max: 70, tickFmt: d => d + '%', valFmt: v => v + '% of households' });
+}
+renderAll();
+let rT; window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(renderAll, 150); });
 </script>
 
 </body>

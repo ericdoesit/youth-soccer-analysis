@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Real Cost of Youth Soccer | Fool's Gold Research</title>
+  <title>The Real Cost of Youth Soccer — Pitfalls on the Pathway</title>
   <link rel="stylesheet" href="site.css">
   <style>
-    .cost-high { font-weight: 700; color: var(--gold); }
+    .cost-high { font-weight: 700; color: var(--text-strong); }
     .cost-low  { font-weight: 700; color: var(--blue); }
     .cost-mid  { font-weight: 700; color: var(--text-strong); }
     .ratio-bad  { font-weight: 700; color: var(--muted); }
     .ratio-good { font-weight: 700; color: var(--blue); }
     .la-card { background: var(--ch-gold-fill); border: 1px solid var(--ch-gold);
                border-radius: 2px; padding: 1.25rem 1.5rem; margin: 1.25rem 0; }
-    .la-card h3 { color: var(--gold); margin-top: 0; font-family: 'Inter', sans-serif;
+    .la-card h3 { color: var(--text-strong); margin-top: 0; font-family: var(--font-sans);
                   font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
-    .la-card .price { font-family: 'Playfair Display', Georgia, serif; font-size: 2rem;
-                      font-weight: 700; color: var(--gold); }
+    .la-card .price { font-family: var(--font-display); font-size: 2rem;
+                      font-weight: 700; color: var(--text-strong); }
     .la-card p { color: var(--text); margin-bottom: 0; }
-    .chart-canvas-wrap { background: var(--surface-2); border: 1px solid var(--border);
+    .chart-canvas-wrap { background: var(--surface); border: none;
                          border-radius: 2px; padding: 1rem; margin: 1.25rem 0; }
-    .chart-canvas-wrap .chart-label { font-family: 'Inter', sans-serif; font-size: 0.82rem;
+    .chart-canvas-wrap .chart-label { font-family: var(--font-sans); font-size: 0.82rem;
                                       font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
                                       color: var(--muted); margin-bottom: 0.75rem; }
     @media (max-width: 600px) {
@@ -31,29 +31,11 @@
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-brand">Fool's <span>Gold</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu"
-            onclick="this.nextElementSibling.classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="scope.html">Youth Scope</a>
-      <a href="costs.html" class="active">Costs</a>
-      <a href="fools_gold.html">Fools Gold</a>
-      <a href="mls.html">MLS</a>
-      <a href="equity.html">Equity</a>
-      <a href="methodology.html" class="nav-appendix">Methods</a>
-      <a href="data.html" class="nav-appendix">Data</a>
-      <a href="../survey.html" class="nav-survey">Survey</a>
-    </div>
-  </div>
-</nav>
+<script src="../nav.js"></script>
 
 <div class="page-header">
-  <h1>The Real Cost of Youth Soccer</h1>
+  <div class="eyebrow">Deep Dive 02 · The Cost</div>
+  <h1>The Real <em>Cost</em> of Youth Soccer</h1>
   <p>From recreational ($468/yr) to elite ($22,000+/yr) — what families actually spend
      and what they get back.</p>
 </div>
@@ -61,6 +43,11 @@
 <div class="container">
 
   <section class="card-section">
+    <p>The biggest number in my survey doesn't belong to the family you'd guess. A San Diego
+       family with a kid on an MLS NEXT pre-academy team pays $3,500 in club fees — and
+       $8,000 a year in private coaching on top of it, six extra hours a week. The club fee
+       is the smallest line on their bill. That is the pattern this page documents: the
+       advertised fee is where the spending starts, not where it ends.</p>
     <p>Cost figures on this page are organized by competitive tier (T1–T5). For full tier definitions, leagues, and example clubs see <a href="methodology.html">Methodology &amp; Data Sources</a>.</p>
   </section>
 
@@ -68,15 +55,21 @@
   <section class="card-section">
     <h2>Annual Cost by Tier</h2>
     <p>Ranges derived from publicly available data: club websites, Aspen Institute Project Play (2024, n=1,848 families), ussoccerparent.com benchmarks, ECNL/MLS NEXT member pages, and verified real-cost data points (One Ivy FC, Albion SC, Girls Academy, Beach FC).</p>
+    <p>What the fee buys is two things: development and <strong>exposure</strong> — and the two are
+      tiered differently. A higher fee tier does not reliably buy a higher exposure tier: leagues at
+      the same price point differ enormously in how many scouts ever see a player, and the most
+      scouted environments (MLS pro academies, MLS NEXT Homegrown) are among the cheapest or free.
+      The fee-to-exposure mismatch is where families overpay.</p>
     <div class="chart-canvas-wrap">
       <div class="chart-label">Annual all-in cost range by tier — low / mid / high</div>
-      <canvas id="costTierChart" height="80"></canvas>
+      <div id="costTierChart" class="d3-chart"></div>
     </div>
 
-    <div class="callout yellow">
-      <strong>Key finding:</strong> Tier 4 costs ($11K–$25K/yr) are up to 60× higher
-      than Tier 1 ($300–$700/yr), yet Tier 4 players who don't earn a professional contract
-      return the same economic value as Tier 1 players — zero.
+    <div class="insight" style="margin-top:2px;">
+      <div class="i-num">60×</div>
+      <p>Tier 4 costs ($11K–$25K/yr) versus Tier 1 ($300–$700/yr). Yet Tier 4 players who
+         don't earn a professional contract return the same economic value as Tier 1
+         players: zero.</p>
     </div>
 
     <h3>What's included in each tier's cost estimate</h3>
@@ -105,8 +98,8 @@
 
   <!-- Survey Results -->
   <section class="card-section">
-    <h2>What Families in Our Survey Actually Paid</h2>
-    <p>Anonymous survey of youth soccer parents (n=8 respondents, collected June 2026). All respondents earn $120K+ household income. Results are directional — not a representative sample.</p>
+    <h2>What Families in My Survey Actually Paid</h2>
+    <p>Anonymous survey of youth soccer parents (n=12 respondents, collected June 2026). All respondents earn $120K+ household income. Results are directional — not a representative sample. Club names are collected for verification but never published; teams are identified by area and league only.</p>
 
     <div class="stat-grid">
       <div class="stat-card">
@@ -129,7 +122,7 @@
 
     <div class="chart-canvas-wrap" style="margin-top:1.25rem;">
       <div class="chart-label">Individual respondent total annual spend</div>
-      <canvas id="surveyChart" height="70"></canvas>
+      <div id="surveyChart" class="d3-chart"></div>
     </div>
 
     <table style="margin-top:1.25rem;">
@@ -147,17 +140,17 @@
         <tr><td>Competitive travel</td><td>$2,000</td><td>$1,000</td><td>$4,850</td><td>$200K+</td></tr>
         <tr><td>Competitive travel</td><td>$500</td><td>$300</td><td>$1,700</td><td>$120K–$200K</td></tr>
         <tr><td>Competitive travel</td><td>$2,100</td><td>$0</td><td>$2,100</td><td>$200K+</td></tr>
-        <tr><td>Elite club (Slammers)</td><td>$4,000</td><td>$2,000</td><td>$6,000</td><td>$120K–$200K</td></tr>
-        <tr><td>Elite club (SoCal Blues)</td><td>$5,000</td><td>$6,000</td><td>$11,000</td><td>$200K+</td></tr>
-        <tr><td>Elite club (City SC MLS NEXT)</td><td>$3,500</td><td>$8,000</td><td>$11,500</td><td>$200K+</td></tr>
-        <tr><td>Elite club (SoCal ECNL)</td><td>$4,200</td><td>$2,000</td><td>$6,200</td><td>$120K–$200K</td></tr>
+        <tr><td>Elite club — Long Beach</td><td>$4,000</td><td>$2,000</td><td>$6,000</td><td>$120K–$200K</td></tr>
+        <tr><td>Elite club — Palos Verdes</td><td>$5,000</td><td>$6,000</td><td>$11,000</td><td>$200K+</td></tr>
+        <tr><td>Elite club, MLS NEXT pre-academy — San Diego</td><td>$3,500</td><td>$8,000</td><td>$11,500</td><td>$200K+</td></tr>
+        <tr><td>Elite club, ECNL — LA County</td><td>$4,200</td><td>$2,000</td><td>$6,200</td><td>$120K–$200K</td></tr>
       </tbody>
     </table>
 
     <div class="callout blue" style="margin-top:1.25rem;">
-      <strong>Private coaching is the hidden cost.</strong> Elite club families in our survey spent an average of $4,500/yr on private coaching on top of club fees — nearly matching the club fee itself. This add-on cost is almost never disclosed upfront by clubs.
+      <strong>Private coaching is the hidden cost.</strong> Elite club families in my survey spent an average of $4,500/yr on private coaching on top of club fees — nearly matching the club fee itself. No club discloses this number upfront, because no club sends this bill. It arrives one $100 session at a time.
     </div>
-    <p class="sources">Survey collected June 2026 · n=8 · Self-selected, not representative · All respondents $120K+ household income</p>
+    <p class="sources">Survey collected June 2026 · n=12 · Self-selected, not representative · All respondents $120K+ household income · Live results at <a href="../survey.html">the survey page</a></p>
   </section>
 
   <!-- Career Cost Chart -->
@@ -166,7 +159,10 @@
     <p>A player who stays in competitive soccer from age 6 through 18 (13 seasons)
        at the same tier will spend:</p>
 
-    <img src="../data/analysis/career_cost_by_tier.png" alt="Career cost by tier" class="chart-img">
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Career investment by tier — low / mid / high (U6–U18)</div>
+      <div id="careerCostChart" class="d3-chart"></div>
+    </div>
 
     <table>
       <thead>
@@ -259,7 +255,7 @@
         <tr><td>Admin &amp; insurance overhead</td><td>~$2,000</td><td>~$500</td></tr>
         <tr style="font-weight:bold;"><td>Estimated total per team</td><td>~$31,800</td><td>~$8,265</td></tr>
         <tr><td>Family fees collected</td><td>18 × $120 = $2,160</td><td>15 × $120 = $1,800</td></tr>
-        <tr style="font-weight:bold;background:var(--surface-2);"><td>Public subsidy per player</td><td style="color:var(--gold);">~$1,647/yr</td><td style="color:var(--gold);">~$431/yr</td></tr>
+        <tr style="font-weight:bold;background:var(--surface-2);"><td>Public subsidy per player</td><td style="color:var(--text-strong);">~$1,647/yr</td><td style="color:var(--text-strong);">~$431/yr</td></tr>
       </tbody>
     </table>
 
@@ -282,12 +278,15 @@
   <!-- Cost components breakdown -->
   <section class="card-section">
     <h2>What Drives the Cost?</h2>
-    <img src="../data/analysis/cost_components_by_tier.png"
-         alt="Cost components by tier" class="chart-img">
-    <p>Travel costs and tournament fees account for a growing share of total expense as
-       tiers increase — not coaching quality. At Tier 3, families may spend more on
-       travel than on club fees. At Tier 4, national ID camps and private coaching
-       supplement an already high club fee.</p>
+    <div class="chart-canvas-wrap">
+      <div class="chart-label">Average annual cost by component — mid estimates, data/costs.csv (n=42 programs)</div>
+      <div id="componentChart" class="d3-chart"></div>
+    </div>
+    <p>Travel and tournament fees, not coaching, drive the climb through Tier 3. In the cost
+       database, Tier 3 families average <strong>$3,140/yr on travel — more than the $2,910
+       average club fee itself</strong> (39% vs. 36% of total spend). Tier 4 inverts: the club
+       fee dominates at 78% of a ~$23,400 year. Averages of mid estimates across 42 program
+       cost records, <code>data/costs.csv</code>.</p>
 
     <h3>The tournament hotel &amp; travel economy</h3>
     <p>Elite youth soccer tournaments are clustered at soccer-specific facilities that
@@ -314,8 +313,8 @@
         <tr><td>San Francisco Bay Area, CA</td><td>$4,500–$10,000+</td><td class="ratio-bad">1.5–3x above avg</td></tr>
         <tr><td>Los Angeles, CA</td><td>$4,000–$9,000+</td><td class="ratio-bad">1.5–3x above avg</td></tr>
         <tr><td>Boston, MA</td><td>$4,000–$8,500+</td><td class="ratio-bad">1.5–2.5x above avg</td></tr>
-        <tr><td>Chicago, IL</td><td>$3,200–$7,000+</td><td style="color:var(--gold);font-weight:700;">Near national avg</td></tr>
-        <tr><td>Miami, FL</td><td>$3,000–$6,500+</td><td style="color:var(--gold);font-weight:700;">Near national avg</td></tr>
+        <tr><td>Chicago, IL</td><td>$3,200–$7,000+</td><td style="color:var(--muted);font-weight:600;">Near national avg</td></tr>
+        <tr><td>Miami, FL</td><td>$3,000–$6,500+</td><td style="color:var(--muted);font-weight:600;">Near national avg</td></tr>
         <tr style="background:var(--surface-2)"><td><strong>Oklahoma City, OK</strong></td><td>$800–$2,200</td><td class="ratio-good">3–5x below avg</td></tr>
         <tr style="background:var(--surface-2)"><td>Wichita, KS</td><td>$900–$2,400</td><td class="ratio-good">2–4x below avg</td></tr>
         <tr style="background:var(--surface-2)"><td>Boise, ID</td><td>$1,100–$2,700</td><td class="ratio-good">1.5–3x below avg</td></tr>
@@ -328,118 +327,63 @@
        cost-of-living amplify the gap. A family in Boise pays Oklahoma City rates —
        for the same tier of competition, the same coaching credentials, and the same
        outcomes as a coastal market family paying 5x more.</p>
+    <p>The San Diego family at the top of this page lives in one of those coastal markets.
+       Six hours a week of private coaching at Southern California rates, on top of an
+       MLS NEXT pre-academy fee. $11,500 a year, and the academy years haven't started.</p>
     <p style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;">
-      Source: Anytime Soccer Training city cost guide (2026)</p>
+      Source: <a href="https://www.anytime-soccer.com/blog/most-least-expensive-us-cities-for-club-soccer-in-2026-cost-guide" target="_blank" rel="noopener">Anytime Soccer Training city cost guide (2026)</a></p>
   </section>
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="charts.js"></script>
 <script>
-const C = (function(){
-  const r = getComputedStyle(document.documentElement);
-  const v = k => r.getPropertyValue(k).trim();
-  return {
-    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
-    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
-    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
-    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
-  };
-})();
-Chart.defaults.color = C.muted;
-Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
+function renderAll() {
+  /* annual all-in cost by tier — range bars (low–high), mid in tooltip */
+  hBars('costTierChart', [
+    { label: 'T1 Rec',            v: [300, 700],      c: 'dim',  end: '$550 mid',   tip: 'Low $300 · Mid $550 · High $700' },
+    { label: 'T2 SoCal Travel',   v: [1900, 6000],    c: 'dim',  end: '$3.1K mid',  tip: 'Low $1,900 · Mid $3,100 · High $6,000' },
+    { label: 'T2 LA City United', v: [100, 140],      c: 'blue', end: '$120 flat',  tip: '$120/yr flat — publicly subsidized, same league system' },
+    { label: 'T3 N1L',            v: [4000, 7000],    c: 'dim',  end: '$5.5K mid',  tip: 'Low $4,000 · Mid $5,500 · High $7,000' },
+    { label: 'T4 ECNL / EAL',     v: [5000, 14000],   c: 'gold', end: '$8.5K mid',  tip: 'Low $5,000 · Mid $8,500 · High $14,000' },
+    { label: 'T5 MLS NEXT',       v: [5000, 20000],   c: 'gold', end: '$10K mid',   tip: 'Low $5,000 · Mid $10,000 · High $20,000' },
+  ], { left: 150, tickFmt: fmt$, valFmt: fmt$ });
 
-new Chart(document.getElementById('costTierChart'), {
-  type: 'bar',
-  data: {
-    labels: ['T1 Rec', 'T2 SoCal Travel', 'T2 LA City United', 'T3 N1L', 'T4 ECNL/EAL', 'T5 MLS NEXT'],
-    datasets: [
-      {
-        label: 'Low',
-        data: [300, 1900, 120, 4000, 5000, 5000],
-        backgroundColor: C.dim,
-        borderColor: C.dimBd,
-        borderWidth: 1, borderRadius: 2,
-      },
-      {
-        label: 'Mid',
-        data: [550, 3100, 120, 5500, 8500, 10000],
-        backgroundColor: C.blueFill,
-        borderColor: C.blue,
-        borderWidth: 1, borderRadius: 2,
-      },
-      {
-        label: 'High',
-        data: [700, 6000, 120, 7000, 14000, 20000],
-        backgroundColor: C.goldFill,
-        borderColor: C.gold,
-        borderWidth: 1, borderRadius: 2,
-      }
-    ]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 10, padding: 14, color: C.muted } },
-      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}/yr` } }
-    },
-    scales: {
-      x: { grid: { display: false }, ticks: { font: { size: 10 }, color: C.muted } },
-      y: {
-        grid: { color: C.grid },
-        ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? v/1000 + 'K' : v) }
-      }
-    }
-  }
-});
+  /* survey families — stacked spend */
+  hStacked('surveyChart', [
+    { label: 'Comp. travel A', parts: [ { label: 'Club fee', v: 1250, c: 'gold' }, { label: 'Private coaching', v: 2000, c: 'blue' }, { label: 'Other (travel, equip, tournaments)', v: 2500, c: 'dim' } ] },
+    { label: 'Comp. travel B', parts: [ { label: 'Club fee', v: 2000, c: 'gold' }, { label: 'Private coaching', v: 1000, c: 'blue' }, { label: 'Other (travel, equip, tournaments)', v: 1850, c: 'dim' } ] },
+    { label: 'Comp. travel C', parts: [ { label: 'Club fee', v: 500,  c: 'gold' }, { label: 'Private coaching', v: 300,  c: 'blue' }, { label: 'Other (travel, equip, tournaments)', v: 900,  c: 'dim' } ] },
+    { label: 'Comp. travel D', parts: [ { label: 'Club fee', v: 2100, c: 'gold' } ] },
+    { label: 'Elite club A',   parts: [ { label: 'Club fee', v: 4000, c: 'gold' }, { label: 'Private coaching', v: 2000, c: 'blue' } ] },
+    { label: 'Elite club B',   parts: [ { label: 'Club fee', v: 5000, c: 'gold' }, { label: 'Private coaching', v: 6000, c: 'blue' } ] },
+    { label: 'Elite club C',   parts: [ { label: 'Club fee', v: 3500, c: 'gold' }, { label: 'Private coaching', v: 8000, c: 'blue' } ] },
+    { label: 'Elite club D',   parts: [ { label: 'Club fee', v: 4200, c: 'gold' }, { label: 'Private coaching', v: 2000, c: 'blue' } ] },
+  ], { left: 130, barH: 22, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() });
 
-new Chart(document.getElementById('surveyChart'), {
-  type: 'bar',
-  data: {
-    labels: [
-      'Comp. travel', 'Comp. travel', 'Comp. travel', 'Comp. travel',
-      'Elite club\n(Slammers)', 'Elite club\n(SoCal Blues)', 'Elite club\n(City SC NEXT)', 'Elite club\n(SoCal ECNL)'
-    ],
-    datasets: [
-      {
-        label: 'Club fee',
-        data: [1250, 2000, 500, 2100, 4000, 5000, 3500, 4200],
-        backgroundColor: C.goldFill,
-        borderColor: C.gold,
-        borderWidth: 1, borderRadius: 2,
-      },
-      {
-        label: 'Private coaching',
-        data: [2000, 1000, 300, 0, 2000, 6000, 8000, 2000],
-        backgroundColor: C.blueFill,
-        borderColor: C.blue,
-        borderWidth: 1, borderRadius: 2,
-      },
-      {
-        label: 'Other (travel, equip, tournaments)',
-        data: [2500, 1850, 900, 0, 0, 0, 0, 0],
-        backgroundColor: C.dim,
-        borderColor: C.dimBd,
-        borderWidth: 1, borderRadius: 2,
-      }
-    ]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { boxWidth: 10, padding: 14, color: C.muted } },
-      tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
-    },
-    scales: {
-      x: { stacked: true, grid: { display: false }, ticks: { color: C.muted, font: { size: 10 } } },
-      y: { stacked: true, grid: { color: C.grid }, ticks: { color: C.muted, callback: v => '$' + (v/1000).toFixed(0) + 'K' } }
-    }
-  }
-});
+  /* career investment by tier — from data/analysis/career_cost_by_tier.csv */
+  hBars('careerCostChart', [
+    { label: 'T1 Rec (13 yrs)',       v: [5083, 7085],     c: 'dim',  end: '$6.1K mid',  tip: 'Low $5,083 · Mid $6,084 · High $7,085 over 13 seasons' },
+    { label: 'T2 Travel (9 yrs)',     v: [19620, 34155],   c: 'dim',  end: '$25.8K mid', tip: 'Low $19,620 · Mid $25,803 · High $34,155 over 9 seasons' },
+    { label: 'T3 Elite (7 yrs)',      v: [46928, 69055],   c: 'gold', end: '$55.3K mid', tip: 'Low $46,928 · Mid $55,272 · High $69,055 over 7 seasons' },
+    { label: 'T4 Pro-track (7 yrs)',  v: [121051, 194929], c: 'red',  end: '$155K',  tip: 'Low $121,051 · Mid $154,875 · High $194,929 over 7 seasons' },
+  ], { left: 160, tickFmt: fmt$, valFmt: fmt$ });
+
+  /* what drives the cost — component breakdown, mid estimates averaged per tier */
+  hStacked('componentChart', [
+    { label: 'Tier 1 (~$520/yr)',     parts: [ { label: 'Club fee', v: 260,   c: 'gold' }, { label: 'Travel', v: 110,  c: 'red' }, { label: 'Tournaments', v: 70,   c: 'blue' }, { label: 'Equipment', v: 85,  c: 'dim' } ] },
+    { label: 'Tier 2 (~$3,450/yr)',   parts: [ { label: 'Club fee', v: 1850,  c: 'gold' }, { label: 'Travel', v: 810,  c: 'red' }, { label: 'Tournaments', v: 405,  c: 'blue' }, { label: 'Equipment', v: 270, c: 'dim' }, { label: 'Extra coaching & camps', v: 120, c: 'green' } ] },
+    { label: 'Tier 3 (~$8,150/yr)',   parts: [ { label: 'Club fee', v: 2910,  c: 'gold' }, { label: 'Travel', v: 3140, c: 'red' }, { label: 'Tournaments', v: 1005, c: 'blue' }, { label: 'Equipment', v: 360, c: 'dim' }, { label: 'Extra coaching & camps', v: 735, c: 'green' } ] },
+    { label: 'Tier 4 (~$23,400/yr)',  parts: [ { label: 'Club fee', v: 18350, c: 'gold' }, { label: 'Travel', v: 2610, c: 'red' }, { label: 'Tournaments', v: 1050, c: 'blue' }, { label: 'Equipment', v: 560, c: 'dim' }, { label: 'Extra coaching & camps', v: 840, c: 'green' } ] },
+  ], { left: 160, barH: 24, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() });
+}
+renderAll();
+let rT; window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(renderAll, 150); });
 </script>
 
 <footer>
-  <p>Fool's Gold: Youth Soccer Cost Analysis &bull; Data collected 2024–2026
+  <p>Pitfalls on the Pathway &bull; Cost Analysis &bull; Data collected 2024–2026
      &bull; <a href="methodology.html">Methodology</a></p>
 </footer>
 

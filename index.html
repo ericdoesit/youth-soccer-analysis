@@ -3,19 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fool's Gold: The Hidden Cost of Elite Youth Soccer</title>
+  <title>Pitfalls on the Pathway · The Real Math Behind Club Soccer</title>
   <link rel="stylesheet" href="report/site.css">
   <style>
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    /* ── Typography — newspaper: serif display, sans data ───── */
+    .hero h1, h2 { font-family: var(--font-display) !important; }
+    .insight .i-num, .db-item .dn {
+      font-family: var(--font-sans) !important;
+      letter-spacing: -0.02em;
+    }
+    .tick .n {
+      font-family: var(--font-display) !important;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+    /* longer phrase stats: one line, same overall row height as 3.6rem siblings */
+    .tick .n.n-phrase { white-space: nowrap; }
+    .sec-num { font-family: var(--font-sans) !important; }
+    .d3-chart svg text { font-family: var(--font-sans); }
+
     /* ── Hero ───────────────────────────────────────────────── */
     .hero {
-      background: #090909;
+      background: #fff;
       border-bottom: 1px solid var(--border);
-      padding: 6rem 2rem 7rem;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
       text-align: center;
     }
-    .hero-content { position: relative; max-width: 760px; margin: 0 auto; }
+    html.theme-dark .hero { background: var(--surface); }
+    .hero-content { position: relative; max-width: 1400px; margin: 0 auto; }
     .eyebrow {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.7rem;
       font-weight: 600;
       letter-spacing: 0.16em;
@@ -24,86 +49,125 @@
       margin-bottom: 1.4rem;
     }
     .hero h1 {
-      font-family: 'Playfair Display', Georgia, serif;
       font-size: 3.6rem;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.08;
       letter-spacing: -0.02em;
       color: var(--text-strong);
       margin-bottom: 1.25rem;
     }
-    .hero h1 em { color: var(--gold); font-style: italic; }
+    .hero h1 em { color: inherit; font-style: italic; }
     .hero p {
       font-family: 'Lora', Georgia, serif;
       font-size: 1.05rem;
       color: var(--muted);
-      max-width: 580px;
+      max-width: 1000px;
       margin: 0 auto 2.5rem;
       line-height: 1.78;
     }
+    .hero .pull-quote {
+      max-width: 980px;
+      margin: 0 auto 2.75rem;
+    }
     .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
     .btn {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       display: inline-block;
       padding: 0.75rem 1.75rem;
-      border-radius: 2px;
+      border-radius: 6px;
       font-weight: 600;
       font-size: 0.82rem;
       letter-spacing: 0.04em;
       text-decoration: none;
       text-transform: uppercase;
-      transition: opacity .15s;
+      transition: opacity .15s, transform .15s;
     }
-    .btn:hover { opacity: 0.8; }
-    .btn-primary { background: var(--gold); color: #0d0d0d; }
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-primary { background: var(--text-strong); color: var(--bg); }
     .btn-ghost   { background: transparent; color: var(--text); border: 1px solid var(--border); }
     .btn-ghost:hover { border-color: var(--text); opacity: 1; }
 
     /* ── Stat ticker ─────────────────────────────────────────── */
     .ticker {
       background: var(--surface);
-      border-bottom: 1px solid var(--border);
+      width: 92%;
+      max-width: 1600px;
+      margin: 2.5rem auto;
+      border-radius: 8px;
     }
     .ticker-inner {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border-left: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem 2rem;
+      padding: 1.8rem 1.5rem;
     }
-    .tick {
-      text-align: center;
-      padding: 2rem 1rem;
-      border-right: 1px solid var(--border);
-    }
+    .tick { text-align: center; padding: 0; flex: 1 1 240px; min-width: 240px; }
     .tick .n {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: var(--gold);
+      font-size: 3.6rem;
+      font-weight: 500;
+      color: var(--text-strong);
       line-height: 1;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.03em;
     }
     .tick .l {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.72rem;
       color: var(--text);
-      margin-top: 0.4rem;
+      margin-top: 0.5rem;
       letter-spacing: 0.01em;
+      max-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── Sections: anchors + alternating tones ──────────────── */
+    section[id] { scroll-margin-top: 84px; }
+
+    .sec-num {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .sec-link { font-family: var(--font-sans); font-size: 0.78rem; margin-top: 1.25rem; color: var(--muted); }
+
+    /* ── Pull quote ──────────────────────────────────────────── */
+    .pull-quote {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      color: var(--text-strong);
+      text-align: center;
+      max-width: 740px;
+      margin: 3rem auto;
+      padding: 1.75rem 1rem;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .pull-quote em {
+      font-style: italic;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
     }
 
     /* ── Chart panels ────────────────────────────────────────── */
     .chart-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1px;
-      background: var(--border);
+      gap: 2px;
       margin: 1.25rem 0;
-      border: 1px solid var(--border);
     }
-    .chart-panel {
-      background: var(--surface-2);
-      padding: 1.5rem;
-    }
-    .chart-panel .label {
-      font-family: 'Inter', sans-serif;
+    .chart-panel { background: var(--surface); padding: 1.5rem; border-radius: 8px; }
+    .chart-panel .label, .chart-panel-full .label {
+      font-family: var(--font-sans);
       font-size: 0.68rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -112,148 +176,110 @@
       margin-bottom: 1rem;
     }
     .chart-panel-full {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 8px;
       padding: 1.5rem;
-      margin: 1px 0 0;
+      margin: 2px 0 0;
     }
-    .chart-panel-full .label {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.68rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
+    .d3-chart svg { display: block; width: 100%; height: auto; }
+
+    /* survey-style chart legend */
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
       margin-bottom: 1rem;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+    .legend-swatch { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+
+    /* shared tooltip */
+    #chart-tip {
+      display: none;
+      position: fixed;
+      pointer-events: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--text);
+      line-height: 1.5;
+      z-index: 100;
+      max-width: 280px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.25);
     }
 
     /* ── Insight row ─────────────────────────────────────────── */
     .insight-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-top: 1px;
+      gap: 2px;
+      margin-top: 2px;
     }
-    .insight {
-      background: var(--surface-2);
-      border-left: 3px solid var(--gold);
-      padding: 1.25rem 1rem;
-    }
-    .insight.blue  { border-color: var(--blue); }
+    .insight { background: var(--surface-2); padding: 1.25rem 1rem; border-radius: 8px; box-shadow: none; }
+    .insight.blue { background: var(--surface-2); }
     .insight .i-num {
-      font-family: 'Playfair Display', Georgia, serif;
       font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--gold);
+      font-weight: 500;
+      color: var(--text-strong);
       line-height: 1;
+      font-variant-numeric: tabular-nums;
     }
-    .insight.blue  .i-num { color: var(--blue); }
+    .insight.blue .i-num { color: var(--text-strong); }
     .insight p {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.78rem;
       color: var(--muted);
       margin: 0.35rem 0 0;
       line-height: 1.5;
     }
 
-    /* ── Report cards ────────────────────────────────────────── */
-    .section-label {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1rem;
-      padding-bottom: 0.6rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-bottom: 1.75rem;
-    }
-    .rcard {
+    /* ── Open questions ──────────────────────────────────────── */
+    .open-q {
       background: var(--surface);
-      padding: 1.75rem 1.5rem;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      border-top: 2px solid transparent;
-      transition: background .12s;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--muted);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 6px;
     }
-    .rcard:hover { background: var(--surface-2); }
-    .rcard.costs  { border-color: var(--blue); }
-    .rcard.roi    { border-color: var(--gold); }
-    .rcard.equity { border-color: var(--blue); }
-    .rcard.methods{ border-color: var(--muted); }
-    .rcard h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.1rem;
+    .open-q h4 {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
       font-weight: 700;
       color: var(--text-strong);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
     }
-    .rcard p {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.8rem;
-      color: var(--muted);
-      flex: 1;
-      margin: 0;
-      line-height: 1.6;
-    }
-    .rcard-link {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-top: 1.25rem;
-    }
-    .rcard.costs  .rcard-link { color: var(--blue); }
-    .rcard.roi    .rcard-link { color: var(--gold); }
-    .rcard.equity .rcard-link { color: var(--blue); }
-    .rcard.methods .rcard-link { color: var(--muted); }
+    .open-q p { font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin: 0; line-height: 1.6; }
 
     /* ── Database grid ───────────────────────────────────────── */
     .db-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
+      gap: 2px;
       margin-top: 1.25rem;
     }
-    .db-item {
-      background: var(--surface-2);
-      padding: 1.25rem;
-    }
+    .db-item { background: var(--surface-2); padding: 1.25rem; border-radius: 8px; }
     .db-item .dn {
-      font-family: 'Playfair Display', Georgia, serif;
       font-size: 1.8rem;
-      font-weight: 700;
+      font-weight: 500;
       color: var(--text-strong);
       line-height: 1;
+      font-variant-numeric: tabular-nums;
     }
-    .db-item .dl {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.73rem;
-      color: var(--muted);
-      margin-top: 0.3rem;
-      line-height: 1.4;
-    }
+    .db-item .dl { font-family: var(--font-sans); font-size: 0.73rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.4; }
 
     /* ── Survey CTA ──────────────────────────────────────────── */
     .survey-cta {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-left: 3px solid var(--gold);
+      border-left: 3px solid var(--text-strong);
+      border-radius: 8px;
       padding: 1.75rem 2rem;
       margin-bottom: 1.75rem;
       display: flex;
@@ -262,448 +288,636 @@
       flex-wrap: wrap;
     }
     .survey-cta h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.15rem;
+      font-family: var(--font-display);
+      font-size: 1.3rem;
       font-weight: 700;
+      line-height: 1.3;
       color: var(--text-strong);
-      margin-bottom: 0.3rem;
+      margin: 0 0 0.55rem;
     }
     .survey-cta p {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       font-size: 0.82rem;
       color: var(--muted);
       margin: 0;
+      line-height: 1.65;
+      max-width: 56ch;
     }
-    .cta-text { flex: 1; min-width: 240px; }
+    .cta-text { flex: 1; min-width: 240px; padding: 0.25rem 0; }
     .btn-survey {
-      font-family: 'Inter', sans-serif;
-      background: var(--gold);
-      color: #0d0d0d;
+      font-family: var(--font-sans);
+      background: var(--text-strong);
+      color: var(--bg);
       font-weight: 700;
       font-size: 0.78rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       padding: 0.7rem 1.5rem;
-      border-radius: 2px;
+      border-radius: 6px;
       text-decoration: none;
       white-space: nowrap;
-      transition: opacity .15s;
+      transition: opacity .15s, transform .15s;
     }
-    .btn-survey:hover { opacity: 0.85; }
+    .btn-survey:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    /* ── Scroll reveal ───────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .insight-row .insight:nth-child(2) { transition-delay: .1s; }
+    .insight-row .insight:nth-child(3) { transition-delay: .2s; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.4rem; }
-      .ticker-inner { grid-template-columns: 1fr 1fr; }
+      .hero .pull-quote { font-size: 1.6rem; }
+      .tick .n { font-size: 2.4rem; }
+      .tick { width: 160px; flex: 0 0 160px; }
       .chart-grid { grid-template-columns: 1fr; gap: 1px; }
       .insight-row { grid-template-columns: 1fr; }
+      .insight-row .insight { transition-delay: 0s !important; }
     }
     @media (max-width: 480px) {
       .hero h1 { font-size: 1.9rem; }
-      .hero { padding: 4rem 1.25rem 5rem; }
-      .tick .n { font-size: 1.8rem; }
-      .ticker-inner { grid-template-columns: 1fr 1fr; }
+      .hero .pull-quote { font-size: 1.3rem; }
+      .hero { padding: 3rem 1.25rem; }
+      .tick .n { font-size: 1.9rem; }
+      .tick { width: 140px; flex: 0 0 140px; }
     }
   </style>
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">Fool's <span>Gold</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.nextElementSibling.classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="report/scope.html">Youth Scope</a>
-      <a href="report/costs.html">Costs</a>
-      <a href="report/fools_gold.html">Fools Gold</a>
-      <a href="report/mls.html">MLS</a>
-      <a href="report/equity.html">Equity</a>
-      <a href="report/methodology.html" class="nav-appendix">Methods</a>
-      <a href="report/data.html" class="nav-appendix">Data</a>
-      <a href="survey.html" class="nav-survey">Survey</a>
-    </div>
-  </div>
-</nav>
+<script src="nav.js"></script>
 
 <section class="hero">
   <div class="hero-content">
-    <div class="eyebrow">Independent Research &bull; 2024–2026</div>
-    <h1>Elite Youth Soccer<br>Is <em>Fool's Gold</em></h1>
-    <p>American families spend $19–$70K per child chasing college scholarships and pro
-       contracts. The data shows both are extraordinarily unlikely — and the families
-       who can least afford it are being priced out entirely.</p>
+    <div class="eyebrow">Independent Research from Southern California</div>
+    <h1>Pitfalls on the <em>Pathway</em></h1>
+    <p>I'm a Southern California soccer parent. When the club bills started arriving, I went
+       looking for what families actually pay — and what they get back — and the numbers
+       didn't exist. So I built them: 5,600+ clubs, 900+ pro salaries, 490 draft picks,
+       and a survey of families like mine. The math doesn't work.</p>
+    <blockquote class="pull-quote">&ldquo;There is a single, deceitful word separating
+      well-intentioned parents from their money and their time. That word is
+      <em>pathway</em>.&rdquo;</blockquote>
     <div class="hero-cta">
-      <a href="report/fools_gold.html" class="btn btn-primary">See the ROI Data</a>
-      <a href="report/costs.html" class="btn btn-ghost">What Families Actually Pay</a>
+      <a href="#pyramid" class="btn btn-primary">The Pathway</a>
     </div>
   </div>
 </section>
 
 <div class="ticker">
   <div class="ticker-inner">
-    <div class="tick">
-      <div class="n">21%</div>
-      <div class="l">MLS draft picks still active 5 years later</div>
-    </div>
-    <div class="tick">
-      <div class="n">$70K</div>
-      <div class="l">Median elite club career investment (U13–U18)</div>
-    </div>
-    <div class="tick">
-      <div class="n">$120</div>
-      <div class="l">LA City United annual fee (comparable T3 quality)</div>
-    </div>
-    <div class="tick">
-      <div class="n">5,600+</div>
-      <div class="l">Clubs in national database across 21 leagues</div>
-    </div>
+    <div class="tick"><div class="n countup">$70K</div><div class="l">Median elite club career investment (U13–U18)</div></div>
+    <div class="tick"><div class="n countup">8%</div><div class="l">D1 scholarship rate at ECNL — the elite of the elite. Below that level, far lower</div></div>
+    <div class="tick"><div class="n n-phrase">3 in 1,000</div><div class="l">MLS NEXT players (~42,000 in HD + AD) who reach an MLS paycheck in a year</div></div>
+    <div class="tick"><div class="n countup">21%</div><div class="l">MLS draft picks still active after 5 years</div></div>
   </div>
 </div>
 
-<div class="container" style="padding-top:2.5rem;">
+<div class="container" style="padding-top:0;">
 
-  <section class="card-section">
-    <h2>The Thesis</h2>
-    <p>The US youth soccer industry generates an estimated <strong style="color:var(--text-strong)">$19.8 billion per year</strong>
-       by selling families on a pathway — elite club soccer as the route to college scholarships
-       and professional careers. The implicit promise: higher investment → better development →
-       better outcomes.</p>
-    <p>This research challenges that promise with data. We built a national database of 5,600+
-       clubs across 15 competitive leagues, combined survey cost data with academic literature,
-       and ran expected-value analysis at each tier. The findings are consistent:
-       <strong style="color:var(--gold)">elite youth soccer is a negative expected value investment
-       for the vast majority of families</strong> — and the families who can least afford to lose
-       are the ones being shut out entirely.</p>
-    <p>The policy exception: LA City United charges <strong style="color:var(--blue)">$120/year</strong>
-       for Tier 3–4 competitive soccer by absorbing ~$1,647/player/year in public subsidy. Its
-       existence proves that high club fees reflect margin and access, not the inherent cost of
-       the sport.</p>
+  <!-- ── 1. THE PYRAMID ──────────────────────────────────────── -->
+  <section class="card-section reveal" id="pyramid">
+    <div class="sec-num">01 · The Pyramid</div>
+    <h2>A Massive System That Narrows to Almost Nothing</h2>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      Every family in this system started the same way mine did: a kid on a rec field, a coach
+      saying he should try out for club. Millions enter at the bottom. The pathway the industry
+      sells runs through five competitive levels and ends at a few hundred professional roster spots.
+    </p>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      A club sells two different products: <strong>development</strong> (coaching, training,
+      competition) and <strong>exposure</strong> (who actually sees the kid play). Development is
+      broadly comparable across the middle of this pyramid. Exposure is not — MLS NEXT carries the
+      most scout traffic in the system, and leagues at the same level can differ enormously.
+      Fees climb in tiers and exposure climbs in tiers, but they are not the same ladder.
+      The mismatch between what a family pays and who is watching is the gap this report measures.
+    </p>
+
+    <div class="pyramid reveal">
+      <!-- Level 1 — Pro Pipeline, narrowest at top -->
+      <div class="pyr-band pyr-l1" style="width:30%;">
+        <span class="pyr-lnum">Level 1</span>
+        <span class="pyr-leagues">MLS NEXT HD</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot"><img src="report/logos/mls-next.png" alt="MLS NEXT"></div>
+        </div>
+        <span class="pyr-name">Pro Pipeline</span>
+      </div>
+      <!-- Level 2 — National Elite -->
+      <div class="pyr-band pyr-l2" style="width:44%;">
+        <span class="pyr-lnum">Level 2</span>
+        <span class="pyr-leagues">ECNL Boys · USL Academy</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot"><img src="report/logos/ecnl.png" alt="ECNL"></div>
+          <div class="pyr-logo-slot logo-wide"><img src="report/logos/usl-academy.png" alt="USL Academy"></div>
+        </div>
+        <span class="pyr-name">National Elite</span>
+      </div>
+      <!-- Level 3 — National Competitive -->
+      <div class="pyr-band pyr-l3" style="width:58%;">
+        <span class="pyr-lnum">Level 3</span>
+        <span class="pyr-leagues">MLS NEXT AD · ECNL-RL · Elite Academy · NAL · Elite 64 · NL Premier 1</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot"><img src="report/logos/mls-next.png" alt="MLS NEXT Academy Division"></div>
+          <div class="pyr-logo-slot"><img src="report/logos/ecnl-rl.png" alt="ECNL Regional League"></div>
+          <div class="pyr-logo-slot"><img src="report/logos/ea.png" alt="Elite Academy"></div>
+          <div class="pyr-logo-slot"><img src="report/logos/nal.png" alt="National Academy League"></div>
+          <div class="pyr-logo-slot"><img src="report/logos/e64.png" alt="USYS Elite 64"></div>
+        </div>
+        <span class="pyr-name">National Competitive</span>
+      </div>
+      <!-- Level 4 — Regional / National Bridge -->
+      <div class="pyr-band pyr-l4" style="width:72%;">
+        <span class="pyr-lnum">Level 4</span>
+        <span class="pyr-leagues">NL Premier 2 · EA2 · Pre-ECNL</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot"><img src="report/logos/tnl.png" alt="NL Premier 2"></div>
+          <div class="pyr-logo-slot"><img src="report/logos/ea2.png" alt="Elite Academy 2"></div>
+          <div class="pyr-logo-slot logo-wide"><img src="report/logos/pre-ecnl.png" alt="Pre-ECNL"></div>
+        </div>
+        <span class="pyr-name">Regional / National Bridge</span>
+      </div>
+      <!-- Level 5 — Regional Travel -->
+      <div class="pyr-band pyr-l5" style="width:86%;">
+        <span class="pyr-lnum">Level 5</span>
+        <span class="pyr-leagues">SoCal League · Coast Soccer · N1 League · USL Youth · EDP</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot"><img src="report/logos/socal.png" alt="SoCal Soccer League"></div>
+          <div class="pyr-logo-slot logo-wide"><img src="report/logos/csl.svg" alt="Coast Soccer League"></div>
+          <div class="pyr-logo-slot"><img src="report/logos/n1.png" alt="National 1 League"></div>
+          <div class="pyr-logo-slot logo-wide"><img src="report/logos/usl-youth.png" alt="USL Youth"></div>
+          <div class="pyr-logo-slot logo-wide"><img src="report/logos/edp.png" alt="EDP Soccer"></div>
+        </div>
+        <span class="pyr-name">Regional Travel</span>
+      </div>
+      <!-- Foundation — widest at bottom -->
+      <div class="pyr-band pyr-l0" style="width:100%;">
+        <span class="pyr-lnum">Foundation</span>
+        <span class="pyr-leagues">AYSO · City Parks</span>
+        <div class="pyr-logos">
+          <div class="pyr-logo-slot"><img src="report/logos/ayso.png" alt="AYSO"></div>
+          <div class="pyr-logo-slot logo-wide"><img src="report/logos/la-rec-parks.png" alt="LA Rec &amp; Parks"></div>
+        </div>
+        <span class="pyr-name">Recreational</span>
+      </div>
+    </div>
+
+    <div class="chart-panel-full reveal">
+      <div class="label">Players at each stage (log scale: every gridline is a 10x drop)</div>
+      <div id="funnelChart" class="d3-chart"></div>
+    </div>
+
+    <div class="insight-row">
+      <div class="insight reveal"><div class="i-num countup">1.6M+</div><p>Recreational players (AYSO + parks). Costs $100–$700/yr.</p></div>
+      <div class="insight reveal"><div class="i-num countup">~230K</div><p>Competitive club players across 21 tracked leagues, Levels 1–5.</p></div>
+      <div class="insight blue reveal"><div class="i-num countup">~82</div><p>SuperDraft picks per year — the only realistic route into MLS from this pyramid. Most picks never earn an MLS paycheck (see&nbsp;04).</p></div>
+    </div>
+
+    <p class="sec-link">Every league, level by level, with club and player counts:
+      <a href="report/scope.html">Youth Scope →</a></p>
   </section>
 
-  <section class="card-section">
+  <!-- ── 2. THE PRICE ────────────────────────────────────────── -->
+  <section class="card-section reveal" id="price">
+    <div class="sec-num">02 · The Cost</div>
+    <h2>What Families Actually Pay</h2>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      One family in my survey — Elite Academy league, La Mirada, no flights, nothing
+      exotic — added it up: $4,200 in club fees, $1,250 in private coaching, $3,000 in travel,
+      $400 in gear. $8,850 for one year of local soccer. The club's published fee was $4,200.
+      That gap is the rule, not the exception: published fees are the floor, not the price.
+      Tournament fees, uniforms, travel, and separate league fees routinely double the
+      advertised number.
+    </p>
+
+    <div class="chart-panel-full reveal">
+      <div class="label">Annual all-in cost by tier (low–high range)</div>
+      <div id="costChart" class="d3-chart"></div>
+    </div>
+
+    <div class="chart-panel-full reveal">
+      <div class="label">Total career investment by tier (U6–U18, low–high range)</div>
+      <div id="careerChart" class="d3-chart"></div>
+    </div>
+
+    <div class="insight-row">
+      <div class="insight reveal"><div class="i-num countup">$1,700</div><p>Separate MLS Next competition fee billed <em>after</em> club registration. Community-reported 2025–26.</p></div>
+      <div class="insight reveal"><div class="i-num countup">$154,875</div><p>Mid-estimate career spend for a Tier 4 family over seven years. That buys 3.5 years of in-state tuition or a home downpayment.</p></div>
+      <div class="insight blue reveal"><div class="i-num">$3K–$15K</div><p>Annual travel range at the elite level, the largest and least disclosed variable.</p></div>
+    </div>
+
+    <h3 style="font-family:var(--font-sans);font-size:0.82rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin:2rem 0 0.5rem;">The Geography Tax</h3>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:0.75rem;">
+      The same tier of competitive soccer costs 5–6x more in New York than in Oklahoma City.
+      The driver is real estate, not coaching: NYC turf rents for $300–500/hour, Oklahoma's for $50–100.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>City</th><th>Annual Cost Range</th><th>vs. National Avg</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>New York City, NY</strong></td><td>$5,000–$12,000+</td><td style="color:var(--red);font-weight:600;">2–4x above avg</td></tr>
+          <tr><td>Los Angeles, CA</td><td>$4,000–$9,000+</td><td style="color:var(--red);font-weight:600;">1.5–3x above avg</td></tr>
+          <tr><td>Boston, MA</td><td>$4,000–$8,500+</td><td style="color:var(--red);font-weight:600;">1.5–2.5x above avg</td></tr>
+          <tr><td>Chicago, IL</td><td>$3,200–$7,000+</td><td style="color:var(--muted);font-weight:600;">Near national avg</td></tr>
+          <tr><td><strong>Oklahoma City, OK</strong></td><td>$800–$2,200</td><td style="color:var(--green);font-weight:600;">3–5x below avg</td></tr>
+          <tr><td>Boise, ID</td><td>$1,100–$2,700</td><td style="color:var(--green);font-weight:600;">1.5–3x below avg</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-family:var(--font-sans);font-size:0.75rem;color:var(--muted);margin-top:0.25rem;">
+      Source: <a href="https://www.anytime-soccer.com/blog/most-least-expensive-us-cities-for-club-soccer-in-2026-cost-guide" target="_blank" rel="noopener">Anytime Soccer Training city cost guide (2026)</a>
+    </p>
+
+    <p class="sec-link">Full cost components, career totals, and the LA City United case study:
+      <a href="report/costs.html">The Real Costs →</a></p>
+  </section>
+
+  <!-- ── 3. THE MATH ─────────────────────────────────────────── -->
+  <section class="card-section reveal" id="math">
+    <div class="sec-num">03 · The Math</div>
     <h2>The Expected Value Problem</h2>
-    <p style="font-family:'Inter',sans-serif;font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
-      10-year family investment vs. expected financial return — at every spending tier, the math doesn't work.
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      The pitch every club parent eventually hears is that the fees are an investment — that
+      a scholarship waits at the end. So I priced the investment: 10-year family cost against
+      expected financial return, at every spending tier. The return is negative at all of them.
     </p>
 
     <div class="chart-grid">
-      <div class="chart-panel">
+      <div class="chart-panel reveal">
         <div class="label">10-year cost vs. expected return</div>
-        <canvas id="evChart" height="130"></canvas>
+        <div id="evChart" class="d3-chart"></div>
       </div>
-      <div class="chart-panel">
+      <div class="chart-panel reveal">
         <div class="label">Scholarship rate needed to break even vs. actual rate</div>
-        <canvas id="breakevenChart" height="130"></canvas>
+        <div id="breakevenChart" class="d3-chart"></div>
       </div>
     </div>
 
-    <div class="chart-panel-full">
+    <div class="chart-panel-full reveal">
       <div class="label">Who actually fills the 6,020 D1 men's roster spots?</div>
-      <canvas id="rosterSpotsChart" height="50"></canvas>
+      <div id="rosterChart" class="d3-chart"></div>
     </div>
 
     <div class="insight-row">
-      <div class="insight">
-        <div class="i-num">10%</div>
-        <p>Scholarship rate AYSO ($550/yr) needs to break even. Actual rate: 0.5%.</p>
-      </div>
-      <div class="insight">
-        <div class="i-num">131%</div>
-        <p>Scholarship rate Tier 3 ($7K/yr) needs to break even. Mathematically impossible.</p>
-      </div>
-      <div class="insight blue">
-        <div class="i-num">30–35%</div>
-        <p>D1 men's spots filled by international players — who paid €42–€350/yr, not $55K.</p>
-      </div>
+      <div class="insight reveal"><div class="i-num countup">131%</div><p>Scholarship rate Tier 3 ($7K/yr) needs to break even. Mathematically impossible.</p></div>
+      <div class="insight reveal"><div class="i-num countup">30–35%</div><p>Of D1 men's spots filled by international players who paid €42–€350/yr at home, not $55K.</p></div>
+      <div class="insight blue reveal"><div class="i-num countup">$126K</div><p>What the same $54K invested in a 529 plan would be worth at college age.</p></div>
     </div>
 
-    <p style="margin-top:1.25rem;font-family:'Inter',sans-serif;font-size:0.78rem;color:var(--muted);">
-      Expected return = (D1 scholarship probability × avg scholarship value) + (pro probability × 3yr median career value).
-      No tier produces positive expected financial return for a typical player.
-      <a href="report/fools_gold.html">Full analysis →</a>
-    </p>
+    <div class="insight-row" style="margin-top:2px;">
+      <div class="insight reveal"><div class="i-num countup">8%</div><p>Of ECNL players estimated to receive a D1 scholarship. Across all club players the rate is far lower.</p></div>
+      <div class="insight reveal"><div class="i-num countup">15%</div><p>Of D1 men's scholarship recipients get a full ride. The average award is $34,000/yr, about one year of Tier 3 career cost.</p></div>
+      <div class="insight blue reveal"><div class="i-num countup">$0</div><p>Athletic scholarship money at D3, which has more roster spots than D1 and D2 combined.</p></div>
+    </div>
+
+    <p class="sec-link">Scholarship funnel, draft survival study, and Monte Carlo simulation:
+      <a href="report/fools_gold.html">The ROI Problem →</a></p>
   </section>
 
-  <section class="card-section">
-    <h2>MLS Draft Survival: Where Are They Now?</h2>
-    <p style="font-family:'Inter',sans-serif;font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
-      Of 490 MLS SuperDraft picks (2020–2025), only 21.2% are still on active MLS rosters in 2026.
+  <!-- ── 4. THE PIPELINE ─────────────────────────────────────── -->
+  <section class="card-section reveal" id="pipeline">
+    <div class="sec-num">04 · The Pipeline</div>
+    <h2>Where the Pro Pathway Actually Leads</h2>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      MLS, the destination families are paying toward, builds its rosters in the global
+      transfer market, not from the domestic youth pipeline families fund. And for the few
+      kids who make it, the pay rarely covers what their parents spent getting them there.
     </p>
 
     <div class="chart-grid">
-      <div class="chart-panel">
-        <div class="label">Survival rate by draft round</div>
-        <canvas id="survivalChart" height="130"></canvas>
+      <div class="chart-panel reveal">
+        <div class="label">5-year attrition: 11 draft cohorts averaged (2010–2020)</div>
+        <div id="attritionChart" class="d3-chart"></div>
       </div>
-      <div class="chart-panel">
-        <div class="label">2026 MLS salary distribution (824 players)</div>
-        <canvas id="salaryChart" height="130"></canvas>
+      <div class="chart-panel reveal">
+        <div class="label">Transfer spend by nationality: top 100 MLS transfers (Transfermarkt)</div>
+        <div id="transferChart" class="d3-chart"></div>
+      </div>
+    </div>
+
+    <div class="chart-grid" style="margin-top:2px;">
+      <div class="insight reveal">
+        <div class="i-num">$0</div>
+        <p><strong style="color:var(--text-strong);">MLS Pro Academies (30 clubs).</strong>
+           Fully funded by MLS clubs. Top players sign Homegrown contracts and skip the draft
+           entirely. By CBA rule, roster spots 29 and 30 on every MLS team are reserved
+           exclusively for Homegrown players.</p>
+      </div>
+      <div class="insight reveal">
+        <div class="i-num">$5K–$15K/yr</div>
+        <p><strong style="color:var(--text-strong);">Independent MLS NEXT clubs (122 clubs).</strong>
+           Families fund 5 to 7 years ($25K–$105K total) for draft-only access, competing
+           against players whose development was free. The best academy players never enter
+           that draft pool; it has already been skimmed.</p>
+      </div>
+    </div>
+
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin:1.5rem 0 0.25rem;line-height:1.7;">
+      <strong style="color:var(--text-strong);">What is a Designated Player?</strong>
+      Each MLS club may sign up to three Designated Players (the "Beckham Rule," created in 2007)
+      whose salaries sit outside the league's salary cap. In 2026 there are 73 DPs across 30 clubs,
+      median salary roughly $2.6M. These are the stars families picture when they imagine an MLS
+      career, and most arrive by international transfer. The salary chart below excludes them:
+      this is what everyone else in the league earns.
+    </p>
+
+    <div class="chart-grid">
+      <div class="chart-panel reveal">
+        <div class="label">MLS draft survival rate by round (490 picks, 2020–2025)</div>
+        <div id="survivalChart" class="d3-chart"></div>
+      </div>
+      <div class="chart-panel reveal">
+        <div class="label">2026 MLS salary distribution (824 non-DP players)</div>
+        <div id="salaryChart" class="d3-chart"></div>
       </div>
     </div>
 
     <div class="insight-row">
-      <div class="insight">
-        <div class="i-num">78.8%</div>
-        <p>MLS draft picks no longer on an MLS roster within 5 years.</p>
-      </div>
-      <div class="insight">
-        <div class="i-num">35%</div>
-        <p>Active MLS players earning the league minimum ($88,025 in 2026).</p>
-      </div>
-      <div class="insight green">
-        <div class="i-num">$88K</div>
-        <p>MLS minimum is less than the median elite club career investment ($70K).</p>
-      </div>
+      <div class="insight reveal"><div class="i-num countup">59%</div><p>MLS roster spots held by foreign nationals (2026).</p></div>
+      <div class="insight reveal"><div class="i-num countup">92.6%</div><p>Of MLS's top-100 transfer spend that went to non-American players.</p></div>
+      <div class="insight blue reveal"><div class="i-num countup">$88K</div><p>MLS minimum salary is less than the median elite club career investment ($70K).</p></div>
     </div>
 
-    <p style="margin-top:1.25rem;font-family:'Inter',sans-serif;font-size:0.78rem;color:var(--muted);">
-      Data: Capology 2026 MLS salary data (824 players) cross-referenced against 490 draft picks (2020–2025).
-      <a href="report/fools_gold.html">Full analysis →</a>
-    </p>
+    <p class="sec-link">Wage distribution, transfer spend by nationality, and career survival:
+      <a href="report/mls.html">MLS Wages &amp; Pipeline →</a></p>
   </section>
 
-  <div class="section-label">Research Reports</div>
-  <div class="cards">
-    <a href="report/costs.html" class="rcard costs">
-      <h3>The Real Costs</h3>
-      <p>Annual and career-total costs by tier, from $550/yr (recreational) to $22,000+/yr (elite). What each component costs and what drives the premium.</p>
-      <div class="rcard-link">Cost Analysis &rarr;</div>
-    </a>
-    <a href="report/fools_gold.html" class="rcard roi">
-      <h3>The ROI Problem</h3>
-      <p>Scholarship probabilities, MLS draft survival study, expected value analysis, and Monte Carlo simulation for 100,000 Tier 3 players.</p>
-      <div class="rcard-link">ROI Analysis &rarr;</div>
-    </a>
-    <a href="report/equity.html" class="rcard equity">
-      <h3>Who Wins &amp; Loses</h3>
-      <p>Income stratification (60% of club families earn $100K+), gender disparities, and the LA City United public subsidy case study.</p>
-      <div class="rcard-link">Equity Analysis &rarr;</div>
-    </a>
-    <a href="report/methodology.html" class="rcard methods">
-      <h3>Data &amp; Methods</h3>
-      <p>Tier definitions, 15 data sources, 8 academic references, and the full 5,600-club national database summary.</p>
-      <div class="rcard-link">Methodology &rarr;</div>
-    </a>
-  </div>
-
-  <section class="card-section">
-    <h2>National Club Database</h2>
-    <p style="font-family:'Inter',sans-serif;font-size:0.82rem;color:var(--muted);">
-      5,600+ clubs scraped and curated across 15 competitive leagues, deduplicated and tier-tagged.
+  <!-- ── 5. WHO LOSES ────────────────────────────────────────── -->
+  <section class="card-section reveal" id="wholoses">
+    <div class="sec-num">05 · Who Loses</div>
+    <h2>A System Priced for the Top of the Income Ladder</h2>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      Club soccer's families don't look like America's families, and the gap is widening.
     </p>
-    <div class="db-grid">
-      <div class="db-item"><div class="dn">2,537</div><div class="dl">National directory clubs (ussoccerparent.com, all 50 states)</div></div>
-      <div class="db-item"><div class="dn">719</div><div class="dl">NPL clubs (GotSport, 15 regional leagues)</div></div>
-      <div class="db-item"><div class="dn">172</div><div class="dl">SoCal Soccer League clubs (competitive travel, CA)</div></div>
-      <div class="db-item"><div class="dn">152</div><div class="dl">MLS Next Homegrown Division clubs</div></div>
-      <div class="db-item"><div class="dn">242</div><div class="dl">EDP Soccer clubs (Northeast competitive travel)</div></div>
-      <div class="db-item"><div class="dn">96</div><div class="dl">Girls Academy clubs (9 conferences)</div></div>
-      <div class="db-item"><div class="dn">105</div><div class="dl">DPL clubs (all-girls, 10 conferences)</div></div>
-      <div class="db-item"><div class="dn">824</div><div class="dl">MLS players with 2026 salary data (Capology)</div></div>
-      <div class="db-item"><div class="dn">490</div><div class="dl">MLS draft picks cross-referenced (2020–2025)</div></div>
+
+    <div class="chart-panel-full reveal">
+      <div class="label">Household income: club sport families vs. all US households</div>
+      <div id="incomeChart" class="d3-chart"></div>
+    </div>
+
+    <div class="insight-row">
+      <div class="insight reveal"><div class="i-num countup">8%</div><p>Of club sport families earn under $50K, vs. ~40% of US households.</p></div>
+      <div class="insight reveal"><div class="i-num countup">20.2pts</div><p>Income participation gap in youth sports, up from 13.6 points in 2012.</p></div>
+      <div class="insight blue reveal"><div class="i-num">1/9th</div><p>The professional earnings market facing girls who pay the same elite fees as boys.</p></div>
+    </div>
+
+    <p class="sec-link">Income stratification, the geography tax, and gender inequity:
+      <a href="report/equity.html">Who Wins &amp; Loses →</a></p>
+  </section>
+
+  <!-- ── 6. SURVEY + DATA ────────────────────────────────────── -->
+  <section class="card-section reveal" id="data" style="background:transparent;border:none;padding-left:0;padding-right:0;">
+    <div class="sec-num">06 · Contribute &amp; Verify</div>
+    <div class="survey-cta">
+      <div class="cta-text">
+        <h3>Spent money on club soccer? Share what it actually cost.</h3>
+        <p>Anonymous, 3 minutes. Every response is published openly so families can compare
+           real costs by league. Early data so far: 12 responses, growing.</p>
+      </div>
+      <a href="survey.html" class="btn-survey">Take the Survey &rarr;</a>
+    </div>
+
+    <div class="card-section" style="margin:0;">
+      <h2>The Database Behind the Numbers</h2>
+      <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);">
+        Everything above is built on open data I scraped, deduplicated, and published for
+        download. Deepest coverage is Southern California; national leagues are covered at
+        league level.
+      </p>
+      <div class="db-grid">
+        <div class="db-item reveal"><div class="dn countup">5,600+</div><div class="dl">Clubs across 21 leagues, deduplicated and tier-tagged</div></div>
+        <div class="db-item reveal"><div class="dn countup">824</div><div class="dl">MLS players with 2026 salary data (Capology / MLSPA)</div></div>
+        <div class="db-item reveal"><div class="dn countup">490</div><div class="dl">MLS draft picks cross-referenced to 2026 rosters</div></div>
+        <div class="db-item reveal"><div class="dn countup">285+</div><div class="dl">Research statistics with sources</div></div>
+        <div class="db-item reveal"><div class="dn countup">1,015</div><div class="dl">LA City parks soccer sections mapped ($0–$10/player)</div></div>
+        <div class="db-item reveal"><div class="dn countup">12</div><div class="dl">Family cost surveys (self-selected, early signal)</div></div>
+      </div>
+      <p class="sec-link"><a href="report/data.html">Download the datasets →</a> &nbsp;·&nbsp;
+         <a href="report/methodology.html">Methodology &amp; sources →</a></p>
     </div>
   </section>
 
-  <div class="survey-cta">
-    <div class="cta-text">
-      <h3>Spent money on club soccer? Share your experience.</h3>
-      <p>Anonymous survey — takes 4 minutes. Your data improves cost estimates and geographic coverage.</p>
+  <!-- ── OPEN QUESTIONS ──────────────────────────────────────── -->
+  <section class="card-section reveal">
+    <h2>Open Questions</h2>
+    <p style="font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);margin-bottom:1.25rem;">
+      Claims I am not yet making. These hypotheses come up repeatedly in the research but
+      need data I haven't collected. They're listed here as future work, not findings.
+    </p>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">How much does international recruiting crowd out domestic college spots?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>I can show 30–35% of D1 men's spots go to international players, but not yet
+        how that share has changed over time or how it varies by conference. NCAA roster nationality
+        data over a 10-year window would answer it.</p></div>
     </div>
-    <a href="survey.html" class="btn-survey">Take the Survey &rarr;</a>
-  </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">Does the US Soccer / MLS relationship function as a monopoly?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>Market-structure analysis (sanctioning power, barriers to rival leagues,
+        governance overlap between the federation and the league it sanctions) is outside my current
+        dataset. The question matters because monopolies set prices.</p></div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">Why do smaller countries out-produce the US per capita?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>My Germany comparison (€42/yr club fees, non-profit model) is suggestive but
+        one country. A multi-country talent-production comparison (Uruguay, Croatia, Netherlands, Japan)
+        normalized per capita is future work.</p></div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">Do higher fees actually buy better coaching?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>Clubs price 2 to 67x apart for the same leagues, but I have no data linking
+        price to coaching credentials, player development outcomes, or even coach pay. If price and
+        quality are uncorrelated, the market is running on branding alone.</p></div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">What happens to LA City United when Olympic funding ends in 2028?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>The $120/yr program exists on LA28 money. Whether the city converts it to a
+        permanent municipal program, or its families return to the $7,000+ private market, is the single
+        most watchable policy experiment in youth soccer.</p></div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">How many families go into debt for club soccer?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>Anecdotes are everywhere (the NJ.com reporting included second mortgages),
+        but no one has measured the share of club families borrowing to pay fees. My survey may add a
+        financing question to start.</p></div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">What does the girls' pathway ROI look like?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>Girls pay the same elite fees with a professional earnings market roughly
+        1/9th the size. D1 women's scholarship rates are higher, which may partly offset it. A full
+        girls-side EV analysis (ECNL Girls, GA, NWSL salaries) is unbuilt.</p></div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q">Does early specialization help or hurt the player?
+        <span class="faq-icon"><span></span><span></span></span></button>
+      <div class="faq-a"><p>The industry sells year-round single-sport training from U8. The sports-science
+        literature on burnout, injury, and long-term attainment points the other way. I track costs, not
+        player welfare, so I cite this work but don't yet test it.</p></div>
+    </div>
+  </section>
 
 </div>
 
 <footer>
-  <p>Fool's Gold: US Youth Soccer Research &bull; Data collected 2024–2026 &bull;
+  <p>Pitfalls on the Pathway &bull; The real math behind club soccer &bull; Data collected 2024–2026 &bull;
      <a href="report/methodology.html">Methodology</a> &bull;
      <a href="survey.html">Survey</a> &bull;
-     Independent research — no affiliation with any youth soccer organization.</p>
+     Independent research. No affiliation with any youth soccer organization.</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<div id="chart-tip"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="report/charts.js"></script>
 <script>
-const C = (function(){
-  const r = getComputedStyle(document.documentElement);
-  const v = k => r.getPropertyValue(k).trim();
-  return {
-    gold: v('--ch-gold'), goldFill: v('--ch-gold-fill'),
-    blue: v('--ch-blue'), blueFill: v('--ch-blue-fill'),
-    dim:  v('--ch-dim'),  dimBd:    v('--ch-dim-bd'),
-    grid: v('--ch-grid'), text:     v('--text'), muted: v('--muted'),
-  };
-})();
+/* ════════ the charts ════════ */
+function renderAll() {
+  hBars('funnelChart', [
+    { label: 'Recreational (AYSO + parks)', v: 1600000, c: 'dim',  end: '1.6M+' },
+    { label: 'Competitive club (L1–L5)',    v: 230000,  c: 'dim',  end: '230K' },
+    { label: 'MLS NEXT Homegrown',          v: 17000,   c: 'gold', end: '17K' },
+    { label: 'Free MLS pro academies',      v: 5000,    c: 'blue', end: '5K' },
+    { label: 'MLS roster spots',            v: 900,     c: 'red',  end: '~900' },
+    { label: 'Incoming/yr: transfers',      v: 345,     c: 'red',  end: '~345', tip: '345 external arrivals in 2025/26 — players signed from outside MLS (Transfermarkt)' },
+    { label: 'Incoming/yr: SuperDraft',     v: 82,      c: 'red',  end: '~82',  tip: '490 SuperDraft picks 2020–2025 ≈ 82/yr — and most never earn an MLS paycheck (see 04)' },
+  ], { log: true, logMin: 50, left: 200, tickFmt: d => d.toLocaleString(), valFmt: v => v.toLocaleString() + ' players' });
 
-Chart.defaults.font = { family: "'Inter', sans-serif", size: 11 };
-Chart.defaults.color = C.muted;
+  hBars('costChart', [
+    { label: 'T1 Rec / AYSO',         v: [250, 700],     c: 'dim' },
+    { label: 'T2 Competitive travel', v: [2200, 9200],   c: 'dim' },
+    { label: 'T3 ECNL / GA',          v: [6400, 13200],  c: 'gold' },
+    { label: 'T4 MLS NEXT HG',        v: [8450, 25000],  c: 'gold' },
+    { label: 'LA City United',        v: 120,            c: 'blue', end: '$120', tip: '$120/yr flat, publicly subsidized' },
+  ], { left: 180, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() + '/yr' });
 
-// ── EV Chart ───────────────────────────────────────────────
-(function() {
-  const labels = ['T1 AYSO\n$550/yr', 'T2 SoCal/NPL\n$3,100/yr', 'T3 ECNL/GA\n$7,000/yr', 'T4 Homegrown\n$12,000/yr'];
-  new Chart(document.getElementById('evChart'), {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [
-        {
-          label: '10-yr family cost',
-          data: [5500, 31000, 70000, 120000],
-          backgroundColor: C.dim,
-          borderColor: C.dimBd,
-          borderWidth: 1.5,
-          borderRadius: 2,
-        },
-        {
-          label: 'Expected financial return',
-          data: [301, 1704, 3675, 5379],
-          backgroundColor: C.goldFill,
-          borderColor: C.gold,
-          borderWidth: 1.5,
-          borderRadius: 2,
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 10, padding: 14, color: C.muted } },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.raw.toLocaleString()}` } }
-      },
-      scales: {
-        x: { grid: { display: false }, ticks: { font: { size: 10 }, color: C.muted } },
-        y: { grid: { color: C.grid }, ticks: { color: C.muted, callback: v => '$' + (v >= 1000 ? (v/1000)+'K' : v) } }
-      }
-    }
-  });
-})();
+  hBars('careerChart', [
+    { label: 'T1 Rec / AYSO · 13 yrs',         v: [5083, 7085],     c: 'dim'  },
+    { label: 'T2 Competitive travel · 9 yrs',  v: [19620, 34155],   c: 'dim'  },
+    { label: 'T3 ECNL / GA · 7 yrs',           v: [46928, 69055],   c: 'gold' },
+    { label: 'T4 MLS NEXT HG · 7 yrs',         v: [121051, 194929], c: 'gold' },
+  ], { left: 210, tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString() + ' career total' });
 
-// ── Break-even Chart ───────────────────────────────────────
-(function() {
-  const labels = ['T1 AYSO', 'T2 SoCal/NPL', 'T3 ECNL/GA', 'T4 Homegrown'];
-  new Chart(document.getElementById('breakevenChart'), {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [
-        {
-          label: '% needed to break even',
-          data: [10.3, 58.1, 131.1, 224.7],
-          backgroundColor: C.dim,
-          borderColor: C.dimBd,
-          borderWidth: 1.5,
-          borderRadius: 2,
-        },
-        {
-          label: 'Actual scholarship rate',
-          data: [0.5, 3.0, 6.5, 9.5],
-          type: 'line',
-          borderColor: C.gold,
-          backgroundColor: C.goldFill,
-          pointBackgroundColor: C.gold,
-          pointRadius: 5,
-          borderWidth: 2,
-          fill: false,
-          tension: 0.1,
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 10, padding: 14, color: C.muted } },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.raw.toFixed(1)}%` } }
-      },
-      scales: {
-        x: { grid: { display: false }, ticks: { color: C.muted } },
-        y: { grid: { color: C.grid }, ticks: { color: C.muted, callback: v => v + '%' } }
-      }
-    }
-  });
-})();
+  vGrouped('evChart',
+    ['T1 AYSO\n$550/yr', 'T2 SoCal/NPL\n$3,100/yr', 'T3 ECNL/GA\n$7,000/yr', 'T4 HG\n$12,000/yr'],
+    [
+      { label: '10-yr family cost',          data: [5500, 31000, 70000, 120000], c: 'dim'  },
+      { label: 'Expected financial return',  data: [301, 1704, 3675, 5379],      c: 'gold' },
+    ],
+    { tickFmt: fmt$, valFmt: v => '$' + v.toLocaleString(), bottom: 40 });
 
-// ── D1 Roster Spots ────────────────────────────────────────
-(function() {
-  new Chart(document.getElementById('rosterSpotsChart'), {
-    type: 'bar',
-    data: {
-      labels: ["6,020 D1 men's spots"],
-      datasets: [
-        { label: 'US high school recruits (~40% · ~2,400 spots)', data: [2400], backgroundColor: C.dim,     borderColor: C.dimBd, borderWidth: 1 },
-        { label: 'Transfer portal (25–30% · ~1,650 spots)',        data: [1650], backgroundColor: C.blueFill, borderColor: C.blue,  borderWidth: 1 },
-        { label: 'International players (30–35% · ~1,970 spots)',  data: [1970], backgroundColor: C.goldFill, borderColor: C.gold,  borderWidth: 1 }
-      ]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true,
-      plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 10, padding: 14, color: C.muted } },
-        tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label } }
-      },
-      scales: {
-        x: { stacked: true, max: 6020, grid: { color: C.grid }, ticks: { color: C.muted, callback: v => v.toLocaleString() } },
-        y: { stacked: true, grid: { display: false }, ticks: { color: C.muted } }
-      }
-    }
-  });
-})();
+  vGrouped('breakevenChart',
+    ['T1 AYSO', 'T2 SoCal/NPL', 'T3 ECNL/GA', 'T4 HG'],
+    [
+      { label: '% needed to break even',  data: [10.3, 58.1, 131.1, 224.7], c: 'dim' },
+      { label: 'Actual scholarship rate', data: [0.5, 3.0, 6.5, 9.5],       c: 'gold', type: 'line' },
+    ],
+    { tickFmt: d => d + '%', valFmt: v => v.toFixed(1) + '%', bottom: 28 });
 
-// ── Survival by Round ──────────────────────────────────────
-(function() {
-  new Chart(document.getElementById('survivalChart'), {
-    type: 'bar',
-    data: {
-      labels: ['Round 1', 'Round 2', 'Round 3+', 'Overall'],
-      datasets: [{
-        label: 'Still active in MLS (2026)',
-        data: [36.1, 15.6, 12.3, 21.2],
-        backgroundColor: [C.goldFill, C.dim, C.dim, C.dim],
-        borderColor:     [C.gold, C.dimBd, C.dimBd, C.dimBd],
-        borderWidth: 1.5,
-        borderRadius: 2,
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.raw}% survival rate` } }
-      },
-      scales: {
-        x: { grid: { color: C.grid }, max: 50, ticks: { color: C.muted, callback: v => v + '%' } },
-        y: { grid: { display: false }, ticks: { color: C.muted } }
-      }
-    }
-  });
-})();
+  hBars('rosterChart', [
+    { label: 'US high school recruits', v: 2400, c: 'dim',  end: '~40%', tip: '~2,400 spots: the slice club families compete for' },
+    { label: 'Transfer portal',         v: 1650, c: 'blue', end: '25–30%', tip: '~1,650 spots filled by transfers, many international' },
+    { label: 'International players',   v: 1970, c: 'gold', end: '30–35%', tip: '~1,970 spots recruited from abroad' },
+  ], { left: 180, barH: 24, tickFmt: d => d.toLocaleString(), valFmt: v => '~' + v.toLocaleString() + ' of 6,020 spots' });
 
-// ── Salary Distribution ────────────────────────────────────
-(function() {
-  new Chart(document.getElementById('salaryChart'), {
-    type: 'doughnut',
-    data: {
-      labels: ['At minimum ($88K)', 'Low ($88K–$300K)', 'Mid ($300K–$600K)', 'Upper ($600K+)'],
-      datasets: [{
-        data: [35, 42, 15, 8],
-        backgroundColor: [C.dim, C.goldFill, C.blueFill, C.dim],
-        borderColor:     [C.dimBd, C.gold, C.blue, C.dimBd],
-        borderWidth: 1.5,
-        hoverOffset: 6,
-      }]
-    },
-    options: {
-      responsive: true,
-      cutout: '62%',
-      plugins: {
-        legend: { position: 'bottom', labels: { boxWidth: 10, padding: 12, font: { size: 11 }, color: C.muted } },
-        tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw}% of MLS players` } }
-      }
-    }
-  });
-})();
+  lineChart('attritionChart',
+    ['Draft', 'Sep', 'Yr 1', 'Yr 2', 'Yr 3', 'Yr 4', 'Yr 5'],
+    [
+      { label: 'Round 1 picks',   data: [100, 78.5, 67.5, 51.7, 46.8, 38.7, 40.2], c: 'gold' },
+      { label: 'All draft picks', data: [100, 44.1, 33.9, 28.8, 26.5, 22.8, 21.9], c: 'blue' },
+    ], { tipFmt: (l, sl, v) => `<strong>${l}</strong><br>${sl}: <strong>${v}%</strong> still on an MLS roster` });
+
+  hBars('transferChart', [
+    { label: 'Argentina',  v: 208, c: 'blue', end: '€208M', tip: '29 deals · more than Mexico, Brazil & USA combined' },
+    { label: '20+ others', v: 185, c: 'dim',  end: '€185M', tip: '24 deals' },
+    { label: 'Mexico',     v: 85,  c: 'dim',  end: '€85M',  tip: '11 deals' },
+    { label: 'Brazil',     v: 66,  c: 'dim',  end: '€66M',  tip: '7 deals' },
+    { label: 'USA',        v: 58,  c: 'gold', end: '€58M',  tip: '6 deals, 7.4% of top-100 spend' },
+    { label: 'Uruguay',    v: 44,  c: 'dim',  end: '€44M',  tip: '6 deals' },
+  ], { left: 100, barH: 18, tickFmt: d => '€' + d + 'M', valFmt: v => '€' + v + 'M' });
+
+  hBars('survivalChart', [
+    { label: 'Round 1',  v: 36.1, c: 'gold', end: '36.1%' },
+    { label: 'Round 2',  v: 15.6, c: 'dim',  end: '15.6%' },
+    { label: 'Round 3+', v: 12.3, c: 'dim',  end: '12.3%' },
+    { label: 'Overall',  v: 21.2, c: 'dim',  end: '21.2%' },
+  ], { left: 90, barH: 24, tickFmt: d => d + '%', valFmt: v => v + '% still active in 2026' });
+
+  donut('salaryChart', [
+    { label: 'At minimum ($88K)',  v: 35, c: 'red'   },
+    { label: 'Low ($88K–$300K)',   v: 42, c: 'gold'  },
+    { label: 'Mid ($300K–$600K)',  v: 15, c: 'blue'  },
+    { label: 'Upper ($600K+)',     v: 8,  c: 'green' },
+  ], { tipFmt: r => `<strong>${r.label}</strong><br><strong>${r.v}%</strong> of non-DP MLS players` });
+
+  vGrouped('incomeChart',
+    ['Under $50K', '$50K–$100K', 'Over $100K'],
+    [
+      { label: 'Club sport families', data: [8, 32, 60],  c: 'gold' },
+      { label: 'All US households',   data: [40, 30, 30], c: 'dim'  },
+    ],
+    { h: 200, tickFmt: d => d + '%', valFmt: v => v + '%', bottom: 28 });
+}
+
+renderAll();
+let rT; window.addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(renderAll, 150); });
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', renderAll);
+
+/* ════════ scroll reveal ════════ */
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => reduceMotion ? el.classList.add('in') : revealObs.observe(el));
+
+/* ════════ count-up tickers ════════ */
+function animateCount(el) {
+  const original = el.textContent;
+  const m = original.match(/^([^0-9]*)([\d,]+(?:\.\d+)?)([^0-9]*)$/);
+  if (!m) return; // ranges/fractions stay static
+  const prefix = m[1], suffix = m[3];
+  const hasComma = m[2].includes(',');
+  const target = parseFloat(m[2].replace(/,/g, ''));
+  const decimals = (m[2].split('.')[1] || '').length;
+  const dur = 1900, t0 = performance.now();
+  function frame(t) {
+    const p = Math.min(1, (t - t0) / dur);
+    const eased = 1 - Math.pow(1 - p, 5); // quintic ease-out — soft landing
+    let val = (target * eased).toFixed(decimals);
+    if (hasComma || target >= 1000) val = parseFloat(val).toLocaleString(undefined, { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+    el.textContent = prefix + val + suffix;
+    if (p < 1) requestAnimationFrame(frame); else el.textContent = original;
+  }
+  requestAnimationFrame(frame);
+}
+/* ════════ FAQ accordion ════════ */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
+});
+
+const countObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); countObs.unobserve(e.target); } });
+}, { threshold: 0.6 });
+document.querySelectorAll('.countup').forEach(el => { if (!reduceMotion) countObs.observe(el); });
 </script>
 
 </body>
