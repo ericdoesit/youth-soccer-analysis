@@ -100,15 +100,13 @@ Comprehensive, data-driven analysis of US youth soccer (Southern California lens
 ## Files
 
 ### Scripts (survey pipeline)
-The site itself is fully static (HTML/CSS/JS + D3); Python is only used for the
-ongoing survey pipeline. Setup: `python3 -m venv venv && venv/bin/pip install -r requirements.txt`
+The site itself is fully static (HTML/CSS/JS + D3). The one remaining script
+uses only the Python standard library — no venv or pip install needed:
 ```bash
-python3 scripts/pull_survey_data.py      # pull legacy Typeform responses (needs .env token)
-python3 scripts/typeform_to_sheet.py     # convert legacy rows for the Google Sheet master
-python3 scripts/sheet_to_survey.py       # pull Tally responses from the Google Sheet
-python3 scripts/merge_survey_data.py     # merge responses into data/survey_merged.csv
+python3 scripts/sheet_to_survey.py   # sync survey.html + data/survey_merged.csv from the Google Sheet
 ```
-Scrapers and one-off dataset builders were removed June 2026 (data is final); see git history.
+Run it whenever a new survey response lands, then commit and push.
+Scrapers, dataset builders, and the legacy Typeform pipeline were removed June 2026; see git history.
 
 ### Data
 ```
