@@ -606,6 +606,21 @@ footer a { color: var(--muted); text-decoration: underline; text-underline-offse
   .page-header { padding: 3rem 1.25rem 3.5rem; }
   .stat-grid { grid-template-columns: 1fr 1fr; }
   .hero-num .number { font-size: 3rem; }
+  /* wide tables stay in frame and scroll sideways (same pattern as scope) */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .chart-wrap { padding: 0.75rem 0.4rem; }
+}
+
+/* ── Scroll reveal (global — elements are tagged by nav.js) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
 
 /* link underline tint works on both themes */
@@ -707,6 +722,24 @@ a { text-decoration-color: rgba(139,134,123,.4); }
 .pyr-band.pyr-l4 { background: #1fa84d; }   /* green */
 .pyr-band.pyr-l5 { background: #dcdad5; }   /* grey */
 .pyr-band.pyr-l0 { background: #0f0f0f; }   /* charcoal foundation */
+
+/* pyramid on small screens: gentler taper (inline widths overridden),
+   half-size logo slots, tighter bands */
+@media (max-width: 600px) {
+  .pyr-band { min-height: 0; padding: 10px 12px 8px; }
+  .pyr-band.pyr-l1 { width: 64% !important; }
+  .pyr-band.pyr-l2 { width: 71% !important; }
+  .pyr-band.pyr-l3 { width: 78% !important; }
+  .pyr-band.pyr-l4 { width: 85% !important; }
+  .pyr-band.pyr-l5 { width: 92% !important; }
+  .pyr-band.pyr-l0 { width: 100% !important; }
+  .pyr-logos { gap: 6px; padding: 2px 0; }
+  .pyr-logo-slot:has(img) { height: 44px; min-width: 44px; }
+  .pyr-logo-slot.logo-wide:has(img) { height: 24px; }
+  .pyr-leagues { font-size: 0.56rem; line-height: 1.4; }
+  .pyr-lnum { font-size: 0.54rem; }
+  .pyr-name { font-size: 0.7rem; }
+}
 
 /* text contrast per band */
 .pyr-band.pyr-l1 .pyr-lnum, .pyr-band.pyr-l1 .pyr-leagues { color: rgba(15,15,15,.65); }

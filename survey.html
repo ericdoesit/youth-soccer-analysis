@@ -722,10 +722,16 @@
       };
     }).sort((a, b) => leagueRank(a.league) - leagueRank(b.league));
 
-    const margin = { top: 4, right: 80, bottom: 28, left: 200 };
     const width = container.clientWidth || 800;
+    /* narrow screens: league labels sit above the bars so bars get full width */
+    const narrow = width < 520;
+    const margin = narrow
+      ? { top: 4, right: 10, bottom: 28, left: 4 }
+      : { top: 4, right: 80, bottom: 28, left: 200 };
     const barH = 34, gap = 12;
-    const height = margin.top + margin.bottom + rows.length * (barH + gap);
+    const labelH = narrow ? 18 : 0;
+    const rowStep = barH + gap + labelH;
+    const height = margin.top + margin.bottom + rows.length * rowStep;
 
     const svg = d3.select(container).append('svg')
       .attr('width', width)
@@ -776,7 +782,7 @@
       .data(d => d.map(seg => ({ ...seg, key: d.key })))
       .join('rect')
       .attr('x', d => x(d[0]))
-      .attr('y', (d, i) => margin.top + i * (barH + gap))
+      .attr('y', (d, i) => margin.top + i * rowStep + labelH)
       .attr('width', d => Math.max(0, x(d[1]) - x(d[0])))
       .attr('height', barH)
       .on('mousemove', (event, d) => {
@@ -794,26 +800,47 @@
       })
       .on('mouseleave', () => { tooltip.style.display = 'none'; });
 
-    // left labels: league + response count
-    svg.append('g')
-      .selectAll('text')
-      .data(rows)
-      .join('text')
-      .attr('x', margin.left - 10)
-      .attr('y', (d, i) => margin.top + i * (barH + gap) + barH / 2 + 4)
-      .attr('text-anchor', 'end')
-      .attr('fill', themeColor('--text')).attr('font-size', '12px')
-      .text(d => `${d.league} (${d.n})`);
+    if (narrow) {
+      // league + avg total share a label line above each bar
+      svg.append('g')
+        .selectAll('text')
+        .data(rows)
+        .join('text')
+        .attr('x', margin.left)
+        .attr('y', (d, i) => margin.top + i * rowStep + labelH - 6)
+        .attr('fill', themeColor('--text')).attr('font-size', '11px')
+        .text(d => `${d.league} (${d.n})`);
+      svg.append('g')
+        .selectAll('text')
+        .data(rows)
+        .join('text')
+        .attr('x', width - margin.right)
+        .attr('y', (d, i) => margin.top + i * rowStep + labelH - 6)
+        .attr('text-anchor', 'end')
+        .attr('fill', themeColor('--text-strong')).attr('font-size', '11px').attr('font-weight', '600')
+        .text(d => fmt(d.total) + (d.n > 1 ? ' avg' : ''));
+    } else {
+      // left labels: league + response count
+      svg.append('g')
+        .selectAll('text')
+        .data(rows)
+        .join('text')
+        .attr('x', margin.left - 10)
+        .attr('y', (d, i) => margin.top + i * rowStep + barH / 2 + 4)
+        .attr('text-anchor', 'end')
+        .attr('fill', themeColor('--text')).attr('font-size', '12px')
+        .text(d => `${d.league} (${d.n})`);
 
-    // average total at end of each bar
-    svg.append('g')
-      .selectAll('text')
-      .data(rows)
-      .join('text')
-      .attr('x', d => x(d.total) + 8)
-      .attr('y', (d, i) => margin.top + i * (barH + gap) + barH / 2 + 4)
-      .attr('fill', themeColor('--text-strong')).attr('font-size', '12px').attr('font-weight', '600')
-      .text(d => fmt(d.total) + (d.n > 1 ? ' avg' : ''));
+      // average total at end of each bar
+      svg.append('g')
+        .selectAll('text')
+        .data(rows)
+        .join('text')
+        .attr('x', d => x(d.total) + 8)
+        .attr('y', (d, i) => margin.top + i * rowStep + barH / 2 + 4)
+        .attr('fill', themeColor('--text-strong')).attr('font-size', '12px').attr('font-weight', '600')
+        .text(d => fmt(d.total) + (d.n > 1 ? ' avg' : ''));
+    }
   }
 
   let activeFilter = 'all';

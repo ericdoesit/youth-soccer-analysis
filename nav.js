@@ -44,4 +44,36 @@
     '</nav>';
 
   script.insertAdjacentHTML('afterend', html);
+
+  /* ── Scroll reveal — site-wide.
+     Tags every content block with .reveal (styles in report/site.css) and
+     fades it in on first scroll into view. Skips the nav, iframes, and
+     anything marked data-noreveal. ── */
+  function autoReveal() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var sel = [
+      '.page-header > *', '.container > *', 'section.card-section > *',
+      '.stat-grid > *', '.insight-row > *', '.dl-grid > *', '.chart-grid > *',
+      '.finding-grid > *', '.two-col > *', '.pipeline-row > *',
+      '.results-section > *', '.survey-container > *'
+    ].join(',');
+    document.querySelectorAll(sel).forEach(function (el) {
+      var t = el.tagName;
+      if (t === 'SCRIPT' || t === 'STYLE' || t === 'IFRAME') return;
+      if (el.closest('.site-nav') || el.hasAttribute('data-noreveal')) return;
+      if (el.querySelector('iframe')) return;
+      el.classList.add('reveal');
+    });
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal:not(.in)').forEach(function (el) { obs.observe(el); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', autoReveal);
+  } else {
+    autoReveal();
+  }
 })();

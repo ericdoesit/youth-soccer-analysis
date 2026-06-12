@@ -320,14 +320,9 @@
     }
     .btn-survey:hover { opacity: 0.85; transform: translateY(-1px); }
 
-    /* ── Scroll reveal ───────────────────────────────────────── */
-    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .65s ease, transform .65s ease; }
-    .reveal.in { opacity: 1; transform: none; }
-    .insight-row .insight:nth-child(2) { transition-delay: .1s; }
-    .insight-row .insight:nth-child(3) { transition-delay: .2s; }
-    @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; transition: none; }
-    }
+    /* ── Scroll reveal: base rules live in report/site.css (global) ── */
+    .insight-row .insight:nth-child(2) { transition-delay: .12s; }
+    .insight-row .insight:nth-child(3) { transition-delay: .24s; }
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.4rem; }

@@ -56,9 +56,15 @@ function hBars(elId, rows, opts = {}) {
   const el = document.getElementById(elId);
   el.innerHTML = '';
   const W = el.clientWidth || 700;
-  const m = { top: 4, right: 60, bottom: 26, left: opts.left ?? 180 };
+  /* narrow screens: row labels sit above the bars so bars get full width */
+  const narrow = W < 520;
+  const m = narrow
+    ? { top: 4, right: 12, bottom: 26, left: 4 }
+    : { top: 4, right: 60, bottom: 26, left: opts.left ?? 180 };
   const barH = opts.barH ?? 26, gap = 10;
-  const H = m.top + m.bottom + rows.length * (barH + gap);
+  const labelH = narrow ? 17 : 0;
+  const rowStep = barH + gap + labelH;
+  const H = m.top + m.bottom + rows.length * rowStep;
 
   const svg = d3.select(el).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', W).attr('height', H);
 
@@ -79,7 +85,7 @@ function hBars(elId, rows, opts = {}) {
 
   rows.forEach((r, i) => {
     const [fill, stroke] = fillFor(r.c ?? 'dim', P);
-    const y = m.top + i * (barH + gap);
+    const y = m.top + i * rowStep + labelH;
     const lo = Array.isArray(r.v) ? r.v[0] : (opts.log ? (opts.logMin ?? 100) : 0);
     const hi = Array.isArray(r.v) ? r.v[1] : r.v;
     const bw = Math.max(2, x(hi) - x(lo));
@@ -89,12 +95,21 @@ function hBars(elId, rows, opts = {}) {
       .attr('rx', 3).attr('fill', fill)
       .on('mousemove', ev => showTip(ev, `<strong>${r.label}</strong><br>${r.tip ?? (Array.isArray(r.v) ? `${(opts.valFmt??fmtN)(r.v[0])} – ${(opts.valFmt??fmtN)(r.v[1])}` : (opts.valFmt??fmtN)(r.v))}`))
       .on('mouseleave', hideTip);
-    svg.append('text')
-      .attr('x', m.left - 10).attr('y', y + barH/2 + 4).attr('text-anchor', 'end')
-      .attr('fill', P.text).attr('font-size', '12px').text(r.label);
-    if (r.end) svg.append('text')
-      .attr('x', x(lo) + bw + 8).attr('y', y + barH/2 + 4)
-      .attr('fill', P.strong).attr('font-size', '12px').attr('font-weight', 600).text(r.end);
+    if (narrow) {
+      svg.append('text')
+        .attr('x', m.left).attr('y', y - 5)
+        .attr('fill', P.text).attr('font-size', '11px').text(r.label);
+      if (r.end) svg.append('text')
+        .attr('x', W - m.right).attr('y', y - 5).attr('text-anchor', 'end')
+        .attr('fill', P.strong).attr('font-size', '11px').attr('font-weight', 600).text(r.end);
+    } else {
+      svg.append('text')
+        .attr('x', m.left - 10).attr('y', y + barH/2 + 4).attr('text-anchor', 'end')
+        .attr('fill', P.text).attr('font-size', '12px').text(r.label);
+      if (r.end) svg.append('text')
+        .attr('x', x(lo) + bw + 8).attr('y', y + barH/2 + 4)
+        .attr('fill', P.strong).attr('font-size', '12px').attr('font-weight', 600).text(r.end);
+    }
   });
 }
 
@@ -109,9 +124,14 @@ function hStacked(elId, rows, opts = {}) {
   }));
   htmlLegend(el, seen, P);
   const W = el.clientWidth || 700;
-  const m = { top: 4, right: 70, bottom: 26, left: opts.left ?? 180 };
+  const narrow = W < 520;
+  const m = narrow
+    ? { top: 4, right: 12, bottom: 26, left: 4 }
+    : { top: 4, right: 70, bottom: 26, left: opts.left ?? 180 };
   const barH = opts.barH ?? 26, gap = 10;
-  const H = m.top + m.bottom + rows.length * (barH + gap);
+  const labelH = narrow ? 17 : 0;
+  const rowStep = barH + gap + labelH;
+  const H = m.top + m.bottom + rows.length * rowStep;
   const svg = d3.select(el).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', W).attr('height', H);
 
   const maxV = opts.max ?? d3.max(rows, r => d3.sum(r.parts, p => p.v));
@@ -126,7 +146,7 @@ function hStacked(elId, rows, opts = {}) {
     .text(opts.tickFmt ?? (d => d.toLocaleString()));
 
   rows.forEach((r, i) => {
-    const y = m.top + i * (barH + gap);
+    const y = m.top + i * rowStep + labelH;
     let acc = 0;
     const total = d3.sum(r.parts, p => p.v);
     r.parts.forEach(p => {
@@ -140,13 +160,23 @@ function hStacked(elId, rows, opts = {}) {
         .on('mouseleave', hideTip);
       acc += p.v;
     });
-    svg.append('text')
-      .attr('x', m.left - 10).attr('y', y + barH/2 + 4).attr('text-anchor', 'end')
-      .attr('fill', P.text).attr('font-size', '12px').text(r.label);
-    svg.append('text')
-      .attr('x', x(acc) + 8).attr('y', y + barH/2 + 4)
-      .attr('fill', P.strong).attr('font-size', '12px').attr('font-weight', 600)
-      .text(r.end ?? (opts.valFmt ?? fmtN)(total));
+    if (narrow) {
+      svg.append('text')
+        .attr('x', m.left).attr('y', y - 5)
+        .attr('fill', P.text).attr('font-size', '11px').text(r.label);
+      svg.append('text')
+        .attr('x', W - m.right).attr('y', y - 5).attr('text-anchor', 'end')
+        .attr('fill', P.strong).attr('font-size', '11px').attr('font-weight', 600)
+        .text(r.end ?? (opts.valFmt ?? fmtN)(total));
+    } else {
+      svg.append('text')
+        .attr('x', m.left - 10).attr('y', y + barH/2 + 4).attr('text-anchor', 'end')
+        .attr('fill', P.text).attr('font-size', '12px').text(r.label);
+      svg.append('text')
+        .attr('x', x(acc) + 8).attr('y', y + barH/2 + 4)
+        .attr('fill', P.strong).attr('font-size', '12px').attr('font-weight', 600)
+        .text(r.end ?? (opts.valFmt ?? fmtN)(total));
+    }
   });
 }
 
