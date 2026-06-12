@@ -1,7 +1,7 @@
 club_id,club_name,state,conference,tuition_low,tuition_high,total_low_est,total_high_est,fee_page_url,source,last_verified
 87,San Diego Surf,CA,Southwest,2500,4200,6700,14600,https://surfsoccer.com,processed/costs.csv C015-C016,2024
 1726,Sporting Nebraska FC,NE,Heartland,2725,2725,5500,8000,https://sportingnebraskafc.com/ECNLboys,scraped June 2026,2026-06
-16,Beach FC (CA),CA,Southwest,3000,4500,8000,13000,https://beachfc.com,research estimate,2024
+16,Beach FC (CA),CA,Southwest,3000,4500,8000,13000,https://beachfutbolclub.com,research estimate,2024
 101,Solar SC Academy,TX,Texas,2800,3800,7500,12000,https://solarsc.com,research estimate,2024
 37,Dallas Texans Academy,TX,Texas,2800,3800,7000,11000,https://dallastexans.com,research estimate,2024
 47,FC Dallas Red,TX,Texas,3000,4500,8000,13000,https://fcdallas.com,research estimate (MLS affiliate),2024

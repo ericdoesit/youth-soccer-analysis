@@ -3,7 +3,7 @@ club_id,club_name,region,state,conferences,age_groups,website
 10,Albion Hurricanes FC,Central,TX,Texas,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://albionhurricanes.org
 13,Sporting CA USA,West,CA,Southwest,B2008 | B2012 | B2013,https://sportingcausa.com
 14,Atlanta Fire United,East,GA,Southeast,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://atlantafire.com
-16,Beach FC (CA),West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://beachfc.com
+16,Beach FC (CA),West,CA,Southwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://beachfutbolclub.com
 18,Alabama FC,Central,AL,Mid-America,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://alabamafc.org
 22,NCFC Youth Academy,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://ncfcyouth.com
 26,Charlotte SA Academy,East,NC,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://charlottesa.com
@@ -65,7 +65,7 @@ club_id,club_name,region,state,conferences,age_groups,website
 538,Pittsburgh Riverhounds,East,PA,Ohio Valley,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://riverhoundssoccer.com
 592,Arizona Arsenal,Central,AZ,Mountain,B2008 | B2011 | B2012 | B2013,https://arizonaarsenalyouth.com
 603,FC Portland,West,OR,Far West,B2008 | B2009 | B2010 | B2011 | B2012,https://fcportland.com
-628,Beach FC (VA),East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://beachfutbolclub.com
+628,Beach FC (VA),East,VA,Mid-Atlantic,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://beachfc.com
 893,St Croix,East,MN,Midwest,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://stcroixsoccer.org
 1040,San Francisco Elite Academy,West,CA,Northern Cal,B2008 | B2009 | B2010 | B2011 | B2012 | B2013,https://sfeafc.com
 1345,Philadelphia Ukrainian Nationals,East,PA,North Atlantic,B2008 | B2009 | B2010 | B2011 | B2012,https://ukrainiannationals.com
