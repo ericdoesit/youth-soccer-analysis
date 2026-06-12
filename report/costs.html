@@ -11,12 +11,13 @@
     .cost-mid  { font-weight: 700; color: var(--text-strong); }
     .ratio-bad  { font-weight: 700; color: var(--muted); }
     .ratio-good { font-weight: 700; color: var(--blue); }
-    .la-card { background: var(--ch-gold-fill); border: 1px solid var(--ch-gold);
-               border-radius: 2px; padding: 1.25rem 1.5rem; margin: 1.25rem 0; }
-    .la-card h3 { color: var(--text-strong); margin-top: 0; font-family: var(--font-sans);
+    /* neutral grey, same family as .callout in site.css */
+    .la-card { background: var(--surface-2); border-left: 3px solid var(--line);
+               border-radius: 0 2px 2px 0; padding: 1.25rem 1.5rem; margin: 1.25rem 0; }
+    .la-card h3 { color: var(--muted); margin: 0 0 0.4rem; font-family: var(--font-sans);
                   font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
-    .la-card .price { font-family: var(--font-display); font-size: 2rem;
-                      font-weight: 700; color: var(--text-strong); }
+    .la-card .price { font-family: var(--font-display); font-size: 2rem; line-height: 1.1;
+                      font-weight: 700; color: var(--text-strong); margin: 0 0 0.85rem; }
     .la-card p { color: var(--text); margin-bottom: 0; }
     .chart-canvas-wrap { background: var(--surface); border: none;
                          border-radius: 2px; padding: 1rem; margin: 1.25rem 0; }
@@ -213,12 +214,14 @@
     <div class="la-card">
       <h3>LA City United</h3>
       <div class="price">$120 / year <span style="font-size:.6em;font-weight:normal;color:var(--muted);">(all programs, all players)</span></div>
-      <p>LA City United is run by LA City Recreation and Parks, funded by LA28 Olympics.
-         Families pay $10/month regardless of whether they are in the rec/prep program
-         or the competitive club program. The city covers coaches, fields, equipment,
-         insurance, and referees. Three program levels operate across four locations
-         (Obama Sports Complex, Whitsett Soccer Fields, Wilmington Athletic Center,
-         Rio de Los Angeles).</p>
+      <p>One number on this chart is a floor, not a market price. LA City Recreation and
+         Parks runs LA City United on LA28 Olympic funding: $10 a month, whether the player
+         is on a rec/prep roster or the competitive club. That $120 covers coaches, fields,
+         equipment, insurance, and referees — the same five line items behind every other
+         bill on this page — across three program levels and four city facilities. The rec
+         tier elsewhere on this chart runs $300–$700 a year. The competitive tier,
+         $1,900–$6,000. It is one program, not a pathway — but it prices what the base
+         level of youth soccer costs to deliver.</p>
     </div>
 
     <h3>Program structure</h3>
