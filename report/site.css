@@ -377,7 +377,7 @@ body {
 
 /* ── Section card ────────────────────────────────────────── */
 section.card-section {
-  background: var(--surface);
+  background: transparent;
   border: none;
   border-radius: 2px;
   padding: 2.5rem 2.75rem;
