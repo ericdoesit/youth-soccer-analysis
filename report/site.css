@@ -2,7 +2,7 @@
    PITFALLS ON THE PATHWAY — shared stylesheet & component library
    Newspaper light theme: grey bg / creme cards / charcoal text
    Chart colors only: yellow #f2df22 · blue #1b9de0 · red #e94f35 · green #1fa84d
-   Fonts: Newsreader (display, max wt 500) · Lora (body) · Libre Franklin (sans)
+   Fonts: Cormorant Garamond (display) · Lora (body) · Libre Franklin (sans)
    Dark inversion: <html class="theme-dark"> (survey page)
 
    COMPONENT INDEX
@@ -22,7 +22,7 @@
    ─ Callout .............. .callout (neutral grey, single style site-wide)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@400;500;600;700&display=swap');
 
 :root { --font-sans: 'Libre Franklin', 'Helvetica Neue', sans-serif; }
 
@@ -53,7 +53,7 @@ a:hover { text-decoration-color: var(--text); }
   --slate:      #fffeff;
   --card:       #fffeff;
   --border-tier:#e4e6e9;
-  --font-display: 'Newsreader', Georgia, serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
 }
 
 /* charcoal theme — applied per-page via <html class="theme-dark"> (survey) */
@@ -222,14 +222,26 @@ body {
 }
 
 /* ── COMPONENT: Eyebrow (caps kicker above headlines) ────── */
+/* ── EYEBROW: page labels, category tags ───────────────────── */
 .eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 1.4rem;
+}
+
+/* ── CHART LABEL: titles inside chart containers ───────────── */
+.chart-label {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
 }
 
 /* ── COMPONENT: Buttons ──────────────────────────────────────
@@ -242,7 +254,7 @@ body {
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.82rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity .15s, transform .15s;
@@ -340,7 +352,7 @@ section.card-section h3 {
   font-weight: 600;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   margin: 2rem 0 0.6rem;
 }
 section.card-section p {
@@ -367,6 +379,7 @@ thead th {
   text-align: left;
   font-weight: 600;
   font-size: 0.82rem;
+  font-family: var(--font-sans);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border-bottom: 1px solid var(--line);
