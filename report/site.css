@@ -538,10 +538,10 @@ html.theme-dark {
 .insight {
   background: var(--bg);
   border: 1px solid rgba(200,195,187,.3);
-  padding: 1.25rem;
+  padding: 2rem;
   border-radius: 8px;
-  width: 200px;
-  flex: 0 0 200px;
+  flex: 1 1 280px;
+  max-width: 380px;
 }
 .insight .i-num {
   font-family: var(--font-sans);
@@ -558,6 +558,7 @@ html.theme-dark {
   color: #141414;
   margin: 0.35rem 0 0;
   line-height: 1.5;
+  min-height: calc(0.8rem * 1.5 * 2);
 }
 @media (max-width: 768px) { .insight-row { justify-content: flex-start; } }
 .chart-wrap canvas { display: block; }
