@@ -529,15 +529,19 @@ html.theme-dark {
 
 /* ── Key finding boxes (shared, matches home page insights) ── */
 .insight-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
 }
 .insight {
-  background: var(--surface-2);
-  padding: 1.25rem 1rem;
+  background: var(--bg);
+  border: 1px solid rgba(200,195,187,.3);
+  padding: 1.25rem;
   border-radius: 8px;
+  width: 200px;
+  flex: 0 0 200px;
 }
 .insight .i-num {
   font-family: var(--font-sans);
@@ -555,7 +559,7 @@ html.theme-dark {
   margin: 0.35rem 0 0;
   line-height: 1.5;
 }
-@media (max-width: 768px) { .insight-row { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .insight-row { justify-content: flex-start; } }
 .chart-wrap canvas { display: block; }
 .chart-title {
   font-family: var(--font-sans);
