@@ -561,6 +561,39 @@ html.theme-dark {
   min-height: calc(0.8rem * 1.5 * 2);
 }
 @media (max-width: 768px) { .insight-row { justify-content: flex-start; } }
+
+/* ── DB grid (database stat boxes, same style as insight cards) ── */
+.db-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.db-item {
+  background: var(--bg);
+  border: 1px solid rgba(200,195,187,.3);
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 280px;
+  max-width: 380px;
+}
+.db-item .dn {
+  font-family: var(--font-sans);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-strong);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.db-item .dl {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: #141414;
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
 .chart-wrap canvas { display: block; }
 .chart-title {
   font-family: var(--font-sans);
