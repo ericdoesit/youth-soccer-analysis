@@ -476,9 +476,6 @@ tbody td {
   color: var(--text);
   font-size: 0.93rem;
 }
-.callout.red   { border-top: 2px solid var(--red); }
-.callout.green { border-top: 2px solid var(--green); }
-.callout.blue  { border-top: 2px solid var(--blue); }
 .callout strong { color: var(--text-strong); }
 
 /* ── Stat grids ──────────────────────────────────────────── */
