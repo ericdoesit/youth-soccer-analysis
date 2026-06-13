@@ -1,0 +1,13 @@
+age_group,birth_year_start,birth_year_end,game_length_minutes,play_format,roster_size_typical,notes
+U19,2007-08-01,2008-07-31,50,11v11,18-22,Final U-level; transitional to collegiate
+U18,2008-08-01,2009-07-31,50,11v12,18-22,One team plays with 12 players
+U17,2009-08-01,2010-07-31,50,11v11,18-22,Standard full-field format
+U16,2010-08-01,2011-07-31,50,11v11,18-22,Standard full-field format
+U15,2011-08-01,2012-07-31,50,11v11,18-22,Standard full-field format
+U14,2012-08-01,2013-07-31,50,11v11,16-18,Standard full-field format
+U13,2013-08-01,2014-07-31,50,11v11,16-18,Standard full-field format
+U12,2014-08-01,2015-07-31,50,9v9,14-16,Transition to 9v9; smaller field
+U11,2015-08-01,2016-07-31,50,9v9,14-16,9v9 format continues
+U10,2016-08-01,2017-07-31,40,7v7,12-14,Shortened game; small-sided
+U09,2017-08-01,2018-07-31,40,7v7,12-14,Small-sided format
+U08,2018-08-01,2019-07-31,40,7v7,12-14,Introductory competitive level
