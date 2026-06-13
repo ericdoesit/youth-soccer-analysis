@@ -34,7 +34,7 @@ a:hover { text-decoration-color: var(--text); }
 :root {
   /* light newspaper theme — off-white / charcoal / grey, yellow accent (sparing) */
   /* neutrals: grey bg, creme boxes, charcoal text; poster primaries for charts */
-  --bg:         #f2f0f1;        /* background grey */
+  --bg:         #fcfcfc;        /* background grey */
   --surface:    #fffeff;        /* creme */
   --surface-2:  #f2f0f1;        /* grey panels on creme cards */
   --border:     #e4e6e9;        /* light grey */
@@ -242,6 +242,53 @@ body {
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 0.75rem;
+}
+
+/* ── TICKER: stat numbers + labels ───────────────────────────── */
+.ticker {
+  background: var(--surface);
+  width: 92%;
+  max-width: 1600px;
+  margin: 2.5rem auto;
+  border-radius: 8px;
+}
+.ticker-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem 2rem;
+  padding: 2rem 1.5rem;
+}
+.tick {
+  text-align: center;
+  padding: 0;
+  flex: 1 1 240px;
+  min-width: 240px;
+}
+.tick .n {
+  font-family: var(--font-sans);
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: var(--text-strong);
+  line-height: 1;
+  padding-bottom: 0.25em;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+.tick .n.n-phrase {
+  white-space: nowrap;
+}
+.ticker-label {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: #141414;
+  margin-top: 0.65rem;
+  letter-spacing: 0.01em;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
 /* ── COMPONENT: Buttons ──────────────────────────────────────
