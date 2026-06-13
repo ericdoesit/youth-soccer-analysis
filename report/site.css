@@ -40,7 +40,7 @@ a:hover { text-decoration-color: var(--text); }
   --border:     #e4e6e9;        /* light grey */
   --text:       #2e2e2e;        /* charcoal body */
   --text-strong:#0f0f0f;        /* charcoal headings */
-  --muted:      #8a8782;        /* grey labels */
+  --muted:      #292929;        /* muted labels, captions, eyebrows (not paragraphs) */
   --gold:       #e3c419;        /* poster lemon yellow — use sparingly */
   --red:        #e94f35;        /* vermillion */
   --red-lt:     rgba(233,79,53,.10);
