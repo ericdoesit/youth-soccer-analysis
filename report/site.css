@@ -564,8 +564,8 @@ html.theme-dark {
 
 /* ── DB grid (database stat boxes, same style as insight cards) ── */
 .db-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 380px));
   justify-content: center;
   gap: 1rem;
   margin-top: 1.25rem;
@@ -575,9 +575,9 @@ html.theme-dark {
   border: 1px solid rgba(200,195,187,.3);
   padding: 2rem;
   border-radius: 8px;
-  flex: 1 1 280px;
-  max-width: 380px;
 }
+@media (max-width: 768px) { .db-grid { grid-template-columns: repeat(2, minmax(0, 380px)); } }
+@media (max-width: 480px) { .db-grid { grid-template-columns: 1fr; } }
 .db-item .dn {
   font-family: var(--font-sans);
   font-size: 1.8rem;
