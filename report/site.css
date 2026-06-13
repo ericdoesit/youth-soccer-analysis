@@ -214,8 +214,8 @@ body {
 .page-header h1 em { color: inherit; font-style: italic; }
 .page-header p {
   font-family: 'Lora', Georgia, serif;
-  color: var(--muted);
-  font-size: 0.98rem;
+  color: #141414;
+  font-size: 1rem;
   line-height: 1.75;
   max-width: 600px;
   margin: 0 auto;
@@ -318,7 +318,7 @@ body {
 .faq-a p {
   font-family: var(--font-sans);
   font-size: 0.84rem;
-  color: var(--muted);
+  color: #141414;
   line-height: 1.7;
   padding: 0.9rem 1.4rem 0.4rem;
   margin: 0;
@@ -357,8 +357,8 @@ section.card-section h3 {
 }
 section.card-section p {
   font-family: 'Lora', Georgia, serif;
-  color: var(--text);
-  font-size: 0.975rem;
+  color: #141414;
+  font-size: 1rem;
   margin-bottom: 0.9rem;
   line-height: 1.78;
 }
@@ -435,8 +435,8 @@ tbody td {
 .stat-card .num.blue { color: var(--blue); }
 .stat-card p {
   font-family: var(--font-sans);
-  font-size: 0.76rem;
-  color: var(--muted);
+  font-size: 0.8rem;
+  color: #141414;
   margin: 0.45rem 0 0;
   letter-spacing: 0.02em;
 }
@@ -503,8 +503,8 @@ html.theme-dark {
 }
 .insight p {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  color: var(--muted);
+  font-size: 0.8rem;
+  color: #141414;
   margin: 0.35rem 0 0;
   line-height: 1.5;
 }
