@@ -196,7 +196,7 @@ body {
           </div>
    ══════════════════════════════════════════════════════════ */
 .page-header {
-  background: var(--surface);
+  background: transparent;
   color: var(--text-strong);
   padding: 5rem 2rem 5.5rem;
   text-align: center;
@@ -246,7 +246,7 @@ body {
 
 /* ── TICKER: stat numbers + labels ───────────────────────────── */
 .ticker {
-  background: var(--surface);
+  background: transparent;
   width: 92%;
   max-width: 1600px;
   margin: 2.5rem auto;
@@ -521,7 +521,7 @@ html.theme-dark {
 .chart-wrap {
   position: relative;
   margin: 1.5rem 0;
-  background: var(--surface);
+  background: transparent;
   border: none;
   border-radius: 8px;
   padding: 1.5rem;
