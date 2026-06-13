@@ -17,13 +17,6 @@
       font-family: var(--font-sans) !important;
       letter-spacing: -0.02em;
     }
-    .tick .n {
-      font-family: var(--font-display) !important;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-    }
-    /* longer phrase stats: one line, same overall row height as 3.6rem siblings */
-    .tick .n.n-phrase { white-space: nowrap; }
     .sec-num { font-family: var(--font-sans) !important; }
     .d3-chart svg text { font-family: var(--font-sans); }
 
@@ -88,44 +81,6 @@
     .btn-primary { background: var(--text-strong); color: var(--bg); }
     .btn-ghost   { background: transparent; color: var(--text); border: 1px solid var(--border); }
     .btn-ghost:hover { border-color: var(--text); opacity: 1; }
-
-    /* ── Stat ticker ─────────────────────────────────────────── */
-    .ticker {
-      background: var(--surface);
-      width: 92%;
-      max-width: 1600px;
-      margin: 2.5rem auto;
-      border-radius: 8px;
-    }
-    .ticker-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 1rem 2rem;
-      padding: 1.8rem 1.5rem;
-    }
-    .tick { text-align: center; padding: 0; flex: 1 1 240px; min-width: 240px; }
-    .tick .n {
-      font-size: 3.6rem;
-      font-weight: 500;
-      color: var(--text-strong);
-      line-height: 1;
-      /* Cormorant Garamond sits low; add padding below for balance */
-      padding-bottom: 0.25em;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: -0.03em;
-    }
-    .tick .l {
-      font-family: var(--font-sans);
-      font-size: 0.72rem;
-      color: var(--text);
-      margin-top: 0.5rem;
-      letter-spacing: 0.01em;
-      max-width: 240px;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
     /* ── Sections: anchors + alternating tones ──────────────── */
     section[id] { scroll-margin-top: 84px; }
@@ -219,29 +174,6 @@
     }
 
     /* ── Insight row ─────────────────────────────────────────── */
-    .insight-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      margin-top: 2px;
-    }
-    .insight { background: var(--surface-2); padding: 1.25rem 1rem; border-radius: 8px; box-shadow: none; }
-    .insight.blue { background: var(--surface-2); }
-    .insight .i-num {
-      font-size: 1.8rem;
-      font-weight: 500;
-      color: var(--text-strong);
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-    }
-    .insight.blue .i-num { color: var(--text-strong); }
-    .insight p {
-      font-family: var(--font-sans);
-      font-size: 0.78rem;
-      color: var(--muted);
-      margin: 0.35rem 0 0;
-      line-height: 1.5;
-    }
 
     /* ── Open questions ──────────────────────────────────────── */
     .open-q {
@@ -339,18 +271,13 @@
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.4rem; }
       .hero .pull-quote { font-size: 1.6rem; }
-      .tick .n { font-size: 2.4rem; }
-      .tick { width: 160px; flex: 0 0 160px; }
       .chart-grid { grid-template-columns: 1fr; gap: 1px; }
-      .insight-row { grid-template-columns: 1fr; }
       .insight-row .insight { transition-delay: 0s !important; }
     }
     @media (max-width: 480px) {
       .hero h1 { font-size: 1.9rem; }
       .hero .pull-quote { font-size: 1.3rem; }
       .hero { padding: 3rem 1.25rem; }
-      .tick .n { font-size: 2.8rem; }
-      .tick { width: 140px; flex: 0 0 140px; }
     }
   </style>
 </head>
@@ -366,9 +293,6 @@
        looking for what families actually pay — and what they get back — and the numbers
        didn't exist. So I built them: 5,600+ clubs, 900+ pro salaries, 490 draft picks,
        and a survey of families like mine. The math doesn't work.</p>
-    <blockquote class="pull-quote">&ldquo;There is a single, deceitful word separating
-      well-intentioned parents from their money and their time. That word is
-      <em>pathway</em>.&rdquo;</blockquote>
     <div class="hero-cta">
       <a href="#pyramid" class="btn btn-primary">The Pathway</a>
     </div>
@@ -377,12 +301,16 @@
 
 <div class="ticker">
   <div class="ticker-inner">
-    <div class="tick"><div class="n countup">$70K</div><div class="l">Median elite club career investment (U13–U18)</div></div>
-    <div class="tick"><div class="n countup">8%</div><div class="l">D1 scholarship rate at ECNL — the elite of the elite. Below that level, far lower</div></div>
-    <div class="tick"><div class="n n-phrase">3 in 1,000</div><div class="l">MLS NEXT players (~42,000 in HD + AD) who reach an MLS paycheck in a year</div></div>
-    <div class="tick"><div class="n countup">21%</div><div class="l">MLS draft picks still active after 5 years</div></div>
+    <div class="tick"><div class="n countup">$70K</div><div class="ticker-label">Median elite club career investment (U13–U18)</div></div>
+    <div class="tick"><div class="n countup">8%</div><div class="ticker-label">D1 scholarship rate at ECNL — the elite of the elite. Below that level, far lower</div></div>
+    <div class="tick"><div class="n n-phrase">3 in 1,000</div><div class="ticker-label">MLS NEXT players (~42,000 in HD + AD) who reach an MLS paycheck in a year</div></div>
+    <div class="tick"><div class="n countup">21%</div><div class="ticker-label">MLS draft picks still active after 5 years</div></div>
   </div>
 </div>
+
+<blockquote class="pull-quote" style="margin: 2.5rem auto; max-width: 1000px; text-align: center;">&ldquo;There is a single, deceitful word separating
+  well-intentioned parents from their money and their time. That word is
+  <em>pathway</em>.&rdquo;</blockquote>
 
 <div class="container" style="padding-top:0;">
 
@@ -513,9 +441,9 @@
     </div>
 
     <div class="insight-row">
-      <div class="insight reveal"><div class="i-num countup">$1,700</div><p>Separate MLS Next competition fee billed <em>after</em> club registration. Community-reported 2025–26.</p></div>
-      <div class="insight reveal"><div class="i-num countup">$154,875</div><p>Mid-estimate career spend for a Tier 4 family over seven years. That buys 3.5 years of in-state tuition or a home downpayment.</p></div>
-      <div class="insight blue reveal"><div class="i-num">$3K–$15K</div><p>Annual travel range at the elite level, the largest and least disclosed variable.</p></div>
+      <div class="insight reveal"><div class="i-num countup">$1,700</div><p>Separate MLS Next competition fee billed <em>after</em> club registration.</p></div>
+      <div class="insight reveal"><div class="i-num countup">$154,875</div><p>Mid-estimate career spend for a Tier 4 family over seven years.</p></div>
+      <div class="insight blue reveal"><div class="i-num">$3K–$15K</div><p>Annual travel range at the elite level.</p></div>
     </div>
 
     <p class="sec-link">Full cost components, the geography tax, and the LA City United case study:
