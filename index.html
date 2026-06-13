@@ -801,12 +801,12 @@ function renderAll() {
     { label: 'Boys · class of 2026', end: 'n=743', parts: [
       { label: 'MLS NEXT',      v: 51, c: 'gold' },
       { label: 'ECNL Boys',     v: 11, c: 'blue' },
-      { label: 'Other leagues', v: 18, c: 'green' },
+      { label: 'Other leagues', v: 18, c: 'red' },
       { label: 'Club unknown',  v: 20, c: 'dim' } ] },
     { label: 'Girls · 2024–27', end: 'n=3,079', parts: [
       { label: 'ECNL Girls',    v: 66, c: 'gold' },
       { label: 'Girls Academy', v: 17, c: 'blue' },
-      { label: 'Other leagues', v: 6,  c: 'green' },
+      { label: 'Other leagues', v: 6,  c: 'red' },
       { label: 'Unknown',       v: 11, c: 'dim' } ] },
   ], { left: 170, barH: 26, max: 100, tickFmt: d => d + '%', valFmt: v => v + '% of D1 commits' });
 
@@ -837,7 +837,7 @@ function renderAll() {
     { label: 'At minimum ($88K)',  v: 35, c: 'red'   },
     { label: 'Low ($88K–$300K)',   v: 42, c: 'gold'  },
     { label: 'Mid ($300K–$600K)',  v: 15, c: 'blue'  },
-    { label: 'Upper ($600K+)',     v: 8,  c: 'green' },
+    { label: 'Upper ($600K+)',     v: 8,  c: 'red' },
   ], { tipFmt: r => `<strong>${r.label}</strong><br><strong>${r.v}%</strong> of non-DP MLS players` });
 
   vGrouped('incomeChart',
