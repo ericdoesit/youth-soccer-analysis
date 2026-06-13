@@ -194,27 +194,11 @@
     .open-q p { font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin: 0; line-height: 1.6; }
 
     /* ── Database grid ───────────────────────────────────────── */
-    .db-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-      gap: 2px;
-      margin-top: 1.25rem;
-    }
-    .db-item { background: var(--surface-2); padding: 1.25rem; border-radius: 8px; }
-    .db-item .dn {
-      font-size: 1.8rem;
-      font-weight: 500;
-      color: var(--text-strong);
-      line-height: 1;
-      font-variant-numeric: tabular-nums;
-    }
-    .db-item .dl { font-family: var(--font-sans); font-size: 0.73rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.4; }
 
     /* ── Survey CTA ──────────────────────────────────────────── */
     .survey-cta {
       background: var(--surface);
-      border: none;
-      border-left: 3px solid var(--text-strong);
+      border: 1px solid rgba(200,195,187,.3);
       border-radius: 8px;
       padding: 1.75rem 2rem;
       margin-bottom: 1.75rem;
@@ -229,7 +213,7 @@
       font-weight: 700;
       line-height: 1.3;
       color: var(--text-strong);
-      margin: 0 0 0.55rem;
+      margin: 0 0 0.55rem !important;
     }
     .survey-cta p {
       font-family: var(--font-sans);
@@ -239,7 +223,8 @@
       line-height: 1.65;
       max-width: 56ch;
     }
-    .cta-text { flex: 1; min-width: 240px; padding: 0.25rem 0; }
+    .cta-text { flex: 1; min-width: 240px; }
+    .survey-cta h3 { margin-top: 0; }
     .btn-survey {
       font-family: var(--font-sans);
       background: var(--text-strong);
