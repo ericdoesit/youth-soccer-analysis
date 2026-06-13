@@ -460,7 +460,7 @@ tbody td {
 .pull-quote em {
   font-style: italic;
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 2px;
   text-decoration-thickness: 2px;
 }
 
