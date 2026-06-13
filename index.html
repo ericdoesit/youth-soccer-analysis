@@ -119,9 +119,10 @@
 
     /* ── Chart panels ────────────────────────────────────────── */
     .chart-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
       margin: 1.25rem 0;
     }
     .chart-panel { background: var(--surface); padding: 1.5rem; border-radius: 8px; }
