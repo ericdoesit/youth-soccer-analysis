@@ -445,14 +445,17 @@ tbody td {
    cards). Edit here to retheme every page. Color variants
    (.blue etc.) intentionally retired — chart colors stay in charts. */
 .callout {
-  background: var(--surface-2);
-  border-left: 3px solid var(--line);
-  padding: 1rem 1.25rem;
-  border-radius: 0 2px 2px 0;
+  background: var(--bg);
+  border: 1px solid rgba(200,195,187,.3);
+  padding: 1.75rem 2rem;
+  border-radius: 8px;
   margin: 1.25rem 0;
   color: var(--text);
   font-size: 0.93rem;
 }
+.callout.red   { border-top: 2px solid var(--red); }
+.callout.green { border-top: 2px solid var(--green); }
+.callout.blue  { border-top: 2px solid var(--blue); }
 .callout strong { color: var(--text-strong); }
 
 /* ── Stat grids ──────────────────────────────────────────── */
