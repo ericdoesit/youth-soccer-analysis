@@ -20,3 +20,9 @@ public/img/backup/
 
 # Local reference PDFs (not published)
 /pdf/
+
+# Illustration drafts
+/doodle/
+
+# Local docs (not published)
+/md/
