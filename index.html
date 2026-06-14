@@ -24,15 +24,16 @@
     .hero {
       background: transparent;
       border-bottom: 1px solid var(--border);
-      min-height: 100vh;
-      min-height: 100dvh;
+      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 4rem 2rem;
+      justify-content: flex-start;
+      padding: 4rem 2rem 0;
       text-align: center;
       gap: 1rem;
+      overflow: hidden;
     }
     html.theme-dark .hero { background: var(--surface); }
     .hero-content { position: relative; max-width: 1400px; margin: 0 auto; }
@@ -266,7 +267,7 @@
        didn't exist. So I built them: 5,600+ clubs, 900+ pro salaries, 490 draft picks,
        and a survey of families like mine. The math doesn't work.</p>
   </div>
-  <img src="public/img/hero-illustration.png" alt="" aria-hidden="true" style="display:block;width:100%;max-width:1000px;height:auto;aspect-ratio:1/1;object-fit:cover;margin:0 auto;">
+  <img src="public/img/hero-illustration.png" alt="" aria-hidden="true" style="display:block;width:100%;max-width:1000px;flex:1;min-height:0;object-fit:cover;object-position:top;margin:0 auto;">
 </section>
 
 <div class="ticker">
