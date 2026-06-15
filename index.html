@@ -22,8 +22,8 @@
 
     /* ── Hero ───────────────────────────────────────────────── */
     .hero {
-      background: transparent;
-      border-bottom: 1px solid var(--border);
+      background: #171717;
+      border-bottom: 1px solid #2c2c2c;
       min-height: 100vh;
       min-height: 100dvh;
       display: flex;
@@ -33,6 +33,9 @@
       padding: 2rem 4rem 3rem;
       text-align: center;
       gap: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 0;
     }
     html.theme-dark .hero { background: var(--surface); }
     .hero-content { position: relative; max-width: 1400px; margin: 0 auto; }
@@ -42,7 +45,7 @@
       font-weight: 600;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: #8a8782;
       margin-bottom: 1.4rem;
     }
     .hero h1 {
@@ -50,14 +53,14 @@
       font-weight: 500;
       line-height: 1.08;
       letter-spacing: -0.02em;
-      color: var(--text-strong);
+      color: #f5f4f2;
       margin-bottom: 1.25rem;
     }
     .hero h1 em { color: inherit; font-style: italic; }
     .hero p {
       font-family: 'Lora', Georgia, serif;
       font-size: 1rem;
-      color: #141414;
+      color: #cfcecb;
       max-width: 1000px;
       margin: 0 auto 0;
       line-height: 1.78;
@@ -266,6 +269,8 @@
   </div>
   <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;width:min(100%,calc(100dvh - 20rem));height:min(100%,calc(100dvh - 20rem));object-fit:contain;aspect-ratio:1/1;margin:0 auto;">
 </section>
+
+<div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);">
 
 <div class="container" style="padding: 3rem 2.75rem 2rem; display:flex; flex-direction:column; gap:1.25rem;">
   <p>Soccer has a natural on-ramp. Kids run — and when a ball shows up, the game starts itself. No slow innings, no rulebook to absorb first. That ease of entry is part of what makes this industry so effective at capturing families before they understand what they've walked into.</p>
@@ -723,10 +728,26 @@
      Independent research. No affiliation with any youth soccer organization.</p>
 </footer>
 
+</div><!-- /scroll-surface -->
+
 <div id="chart-tip"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="report/charts.js"></script>
+<script>
+(function () {
+  var hero = document.querySelector('.hero');
+  if (!hero) return;
+  var fadeEls = [hero.querySelector('.hero-content'), hero.querySelector('img')];
+  function onScroll() {
+    var heroH = hero.offsetHeight;
+    var progress = Math.min(window.scrollY / (heroH * 0.55), 1);
+    var opacity = 1 - progress;
+    fadeEls.forEach(function (el) { if (el) el.style.opacity = opacity; });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+</script>
 <script>
 /* ════════ the charts ════════ */
 function renderAll() {

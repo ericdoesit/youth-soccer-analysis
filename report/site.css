@@ -134,14 +134,14 @@ body {
 .nav-links a.nav-appendix { opacity: 0.55; font-size: 0.65rem; }
 .nav-links a.nav-appendix:hover { opacity: 1; }
 .nav-links a.nav-survey {
-  color: var(--bg);
-  background: var(--text-strong);
-  border: 1px solid var(--text-strong);
+  color: #f5f4f2;
+  background: #0f0f0f;
+  border: 1px solid #0f0f0f;
   border-radius: 4px;
   margin-left: 0.6rem;
   padding: 0 0.9rem;
   height: 32px;
-  border-bottom: 1px solid var(--text-strong);
+  border-bottom: 1px solid #0f0f0f;
   align-self: center;
 }
 .nav-links a.nav-survey:hover { opacity: 0.82; }
