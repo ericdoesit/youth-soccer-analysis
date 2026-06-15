@@ -67,6 +67,14 @@
       margin: 0 auto 0;
       line-height: 1.78;
     }
+    .hero img {
+      display: block;
+      object-fit: contain;
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      max-height: 55vh;
+      max-width: min(90%, 55vh);
+    }
     .hero .pull-quote {
       max-width: 980px;
       margin: 0 auto 2.75rem;
@@ -270,7 +278,7 @@
     <h1>Pitfalls on the <em>Pathway</em></h1>
     <p>5,600+ clubs. 900+ pro salaries. 490 draft picks. A survey of families navigating the system. The numbers weren't consolidated or publicly available — so I attempted to organize them.</p>
   </div>
-  <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;object-fit:contain;margin:0 auto;">
+  <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true">
 </section>
 
 <div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);margin-top:100vh;margin-top:100svh;">
@@ -749,12 +757,6 @@
     var h = window.innerHeight;
     hero.style.height = h + 'px';
     if (surface) surface.style.marginTop = h + 'px';
-    var img = hero.querySelector('img');
-    if (img) {
-      var side = Math.max(0, h - 320) + 'px';
-      img.style.width = side;
-      img.style.height = side;
-    }
   }
 
   function onScroll() {
