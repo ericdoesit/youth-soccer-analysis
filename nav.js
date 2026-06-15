@@ -8,7 +8,7 @@
 
   var PAGES = [
     ['index.html',              'Home',    ''],
-    ['report/scope.html',       'Scope',   ''],
+    ['report/scope.html',       'Ecosystem',   ''],
     ['report/costs.html',       'Costs',   ''],
     ['report/fools_gold.html',  'ROI',     ''],
     ['report/mls.html',         'MLS',     ''],
