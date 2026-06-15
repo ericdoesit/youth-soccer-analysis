@@ -270,7 +270,7 @@
     <h1>Pitfalls on the <em>Pathway</em></h1>
     <p>5,600+ clubs. 900+ pro salaries. 490 draft picks. A survey of families navigating the system. The numbers weren't consolidated or publicly available — so I attempted to organize them.</p>
   </div>
-  <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;width:100%;object-fit:contain;aspect-ratio:1/1;margin:0 auto;">
+  <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;object-fit:contain;margin:0 auto;">
 </section>
 
 <div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);margin-top:100vh;margin-top:100svh;">
@@ -751,9 +751,9 @@
     if (surface) surface.style.marginTop = h + 'px';
     var img = hero.querySelector('img');
     if (img) {
-      var maxSide = Math.max(0, h - 320) + 'px';
-      img.style.maxHeight = maxSide;
-      img.style.maxWidth = maxSide;
+      var side = Math.max(0, h - 320) + 'px';
+      img.style.width = side;
+      img.style.height = side;
     }
   }
 
