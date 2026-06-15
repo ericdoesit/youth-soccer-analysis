@@ -270,12 +270,12 @@
     <h1>Pitfalls on the <em>Pathway</em></h1>
     <p>5,600+ clubs. 900+ pro salaries. 490 draft picks. A survey of families navigating the system. The numbers weren't consolidated or publicly available — so I attempted to organize them.</p>
   </div>
-  <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;width:min(100%,calc(100svh - 20rem));object-fit:contain;aspect-ratio:1/1;margin:0 auto;">
+  <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;width:100%;object-fit:contain;aspect-ratio:1/1;margin:0 auto;">
 </section>
 
 <div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);margin-top:100vh;margin-top:100svh;">
 
-<div class="container" style="padding: 3rem 2.75rem 2rem; display:flex; flex-direction:column; gap:1.25rem;">
+<div class="container" data-noreveal style="padding: 3rem 2.75rem 2rem; display:flex; flex-direction:column; gap:1.25rem;">
   <p>Soccer has a natural on-ramp. Kids run — and when a ball shows up, the game starts itself. No slow innings, no rulebook to absorb first. That ease of entry is part of what makes this industry so effective at capturing families before they understand what they've walked into.</p>
   <p>What families walk into looks different by region. In markets with open land and abundant fields, options compete on price. In markets where space is scarce and demand is concentrated, scarcity becomes the product. The pitch, though, is the same everywhere: the pathway.</p>
   <p>Not every family wants the same thing. Some want fitness and friendships. Some want a scholarship. A few genuinely believe the professional dream is within reach. This research doesn't rank those goals — it tries to show, as plainly as the numbers allow, what the system actually delivers against what it costs.</p>
@@ -749,6 +749,12 @@
     var h = window.innerHeight;
     hero.style.height = h + 'px';
     if (surface) surface.style.marginTop = h + 'px';
+    var img = hero.querySelector('img');
+    if (img) {
+      var maxSide = Math.max(0, h - 320) + 'px';
+      img.style.maxHeight = maxSide;
+      img.style.maxWidth = maxSide;
+    }
   }
 
   function onScroll() {
