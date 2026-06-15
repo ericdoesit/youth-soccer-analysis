@@ -25,7 +25,7 @@
       background: #171717;
       border-bottom: 1px solid #2c2c2c;
       height: 100vh;
-      height: 100dvh;
+      height: 100svh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -273,7 +273,7 @@
   <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;width:min(100%,calc(100dvh - 20rem));height:min(100%,calc(100dvh - 20rem));object-fit:contain;aspect-ratio:1/1;margin:0 auto;">
 </section>
 
-<div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);margin-top:100vh;margin-top:100dvh;">
+<div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);margin-top:100vh;margin-top:100svh;">
 
 <div class="container" style="padding: 3rem 2.75rem 2rem; display:flex; flex-direction:column; gap:1.25rem;">
   <p>Soccer has a natural on-ramp. Kids run — and when a ball shows up, the game starts itself. No slow innings, no rulebook to absorb first. That ease of entry is part of what makes this industry so effective at capturing families before they understand what they've walked into.</p>
@@ -740,8 +740,17 @@
 <script>
 (function () {
   var hero = document.querySelector('.hero');
+  var surface = document.getElementById('scroll-surface');
   if (!hero) return;
   var fadeEls = [hero.querySelector('.hero-content'), hero.querySelector('img')];
+
+  function syncHeight() {
+    if (getComputedStyle(hero).position !== 'fixed') return;
+    var h = window.innerHeight;
+    hero.style.height = h + 'px';
+    if (surface) surface.style.marginTop = h + 'px';
+  }
+
   function onScroll() {
     if (getComputedStyle(hero).position !== 'fixed') return;
     var heroH = hero.offsetHeight;
@@ -749,6 +758,9 @@
     var opacity = 1 - progress;
     fadeEls.forEach(function (el) { if (el) el.style.opacity = opacity; });
   }
+
+  syncHeight();
+  window.addEventListener('resize', syncHeight, { passive: true });
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
 </script>
