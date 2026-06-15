@@ -743,8 +743,9 @@
   if (!hero) return;
   var fadeEls = [hero.querySelector('.hero-content'), hero.querySelector('img')];
   function onScroll() {
+    if (getComputedStyle(hero).position !== 'fixed') return;
     var heroH = hero.offsetHeight;
-    var progress = Math.min(window.scrollY / (heroH * 0.55), 1);
+    var progress = Math.min(window.scrollY / (heroH * 0.9), 1);
     var opacity = 1 - progress;
     fadeEls.forEach(function (el) { if (el) el.style.opacity = opacity; });
   }
