@@ -24,8 +24,9 @@
     .hero {
       background: #171717;
       border-bottom: 1px solid #2c2c2c;
-      min-height: 100vh;
-      min-height: 100dvh;
+      height: 100vh;
+      height: 100dvh;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,8 +34,9 @@
       padding: 2rem 4rem 3rem;
       text-align: center;
       gap: 2rem;
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
       z-index: 0;
     }
     html.theme-dark .hero { background: var(--surface); }
@@ -244,7 +246,8 @@
     .insight-row .insight:nth-child(3) { transition-delay: .24s; }
 
     @media (max-width: 768px) {
-      .hero { min-height: auto; }
+      .hero { position: relative; height: auto; width: auto; left: auto; }
+      #scroll-surface { margin-top: 0 !important; }
       .hero h1 { font-size: 2.4rem; }
       .hero .pull-quote { font-size: 1.6rem; }
       .chart-grid .insight { flex: 1 1 100%; }
@@ -270,7 +273,7 @@
   <img src="public/img/hero-illustration.jpg" alt="" aria-hidden="true" style="display:block;width:min(100%,calc(100dvh - 20rem));height:min(100%,calc(100dvh - 20rem));object-fit:contain;aspect-ratio:1/1;margin:0 auto;">
 </section>
 
-<div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);">
+<div id="scroll-surface" style="position:relative;z-index:1;background:var(--bg);margin-top:100vh;margin-top:100dvh;">
 
 <div class="container" style="padding: 3rem 2.75rem 2rem; display:flex; flex-direction:column; gap:1.25rem;">
   <p>Soccer has a natural on-ramp. Kids run — and when a ball shows up, the game starts itself. No slow innings, no rulebook to absorb first. That ease of entry is part of what makes this industry so effective at capturing families before they understand what they've walked into.</p>
