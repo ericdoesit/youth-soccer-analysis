@@ -147,6 +147,173 @@
     .cost-sep  { color: var(--border); }
     .cost-high { color: var(--text); font-weight: 600; }
 
+    /* ── Retired rows in scope table ─────────────────────────── */
+    .scope-table tr.retired-row td {
+      color: var(--muted);
+      opacity: 0.5;
+    }
+    .scope-table tr.retired-row td:first-child {
+      text-decoration: line-through;
+      text-decoration-color: rgba(200,195,187,.6);
+    }
+    .scope-table tr.retired-row td:last-child {
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    /* ── Pathway cards ───────────────────────────────────────── */
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .pathway-card {
+      background: var(--bg);
+      border: 1px solid rgba(200,195,187,.3);
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+    }
+
+    .pw-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .pw-logo { height: 28px; width: auto; }
+    .pw-title {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-strong);
+    }
+
+    .pw-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .pw-step {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.55rem 0.75rem;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--text-strong);
+      margin-bottom: 1.6rem;
+    }
+    .pw-step:last-child { margin-bottom: 0; }
+
+    .pw-step.pw-pro { background: rgba(242,223,34,.12); border-left: 3px solid #f2df22; }
+    .pw-step.pw-l1  { background: rgba(242,223,34,.18); border-left: 3px solid #f2df22; }
+    .pw-step.pw-l2  { background: rgba(233,79,53,.10);  border-left: 3px solid #e94f35; }
+    .pw-step.pw-l3  { background: rgba(27,157,224,.10);  border-left: 3px solid #1b9de0; }
+    .pw-step.pw-l4  { background: rgba(31,168,77,.10);   border-left: 3px solid #1fa84d; }
+    .pw-step.pw-l5  { background: rgba(220,218,213,.25); border-left: 3px solid #bbb; }
+
+    .pw-lvl {
+      font-size: 0.58rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .pw-step:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -1.25rem;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 0.8rem;
+      background: var(--border);
+    }
+    .pw-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -1.6rem;
+      transform: translateX(-50%);
+      width: 0; height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid var(--border);
+    }
+
+    /* Merge diagram for N1L card */
+    .pw-merge-sources {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1.6rem;
+      position: relative;
+    }
+    .pw-merge-sources::before {
+      content: '';
+      position: absolute;
+      top: -0.8rem;
+      left: 25%;
+      width: 50%;
+      height: 1px;
+      background: var(--border);
+    }
+    .pw-merge-sources::after {
+      content: '';
+      position: absolute;
+      top: -1.3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 0.5rem;
+      background: var(--border);
+    }
+    .pw-merge-source {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.6rem;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: rgba(200,195,187,.15);
+      border: 1px dashed rgba(200,195,187,.5);
+      color: var(--muted);
+    }
+    .pw-merge-source img {
+      height: 20px;
+      width: auto;
+      opacity: 0.4;
+      filter: grayscale(100%);
+    }
+
+    .pw-note {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-top: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      .pathway-grid { grid-template-columns: 1fr; }
+      .pw-step { font-size: 0.72rem; padding: 0.45rem 0.6rem; }
+      .pw-merge-source { font-size: 0.65rem; }
+    }
+
   </style>
 </head>
 <body>
@@ -195,13 +362,13 @@
       <!-- Level 3 — National Competitive -->
       <div class="pyr-band pyr-l3" style="width:58%;">
         <span class="pyr-lnum">Level 3</span>
-        <span class="pyr-leagues">MLS NEXT AD · ECNL-RL · Elite Academy · NAL · Elite 64 · NL Premier 1</span>
+        <span class="pyr-leagues">MLS NEXT AD · ECNL-RL · N1L · Elite Academy · NAL</span>
         <div class="pyr-logos">
           <div class="pyr-logo-slot"><img src="logos/mls-next.png" alt="MLS NEXT Academy Division"></div>
           <div class="pyr-logo-slot"><img src="logos/ecnl-rl.png" alt="ECNL Regional League"></div>
+          <div class="pyr-logo-slot"><img src="logos/n1.png" alt="National 1 League"></div>
           <div class="pyr-logo-slot"><img src="logos/ea.png" alt="Elite Academy"></div>
           <div class="pyr-logo-slot"><img src="logos/nal.png" alt="National Academy League"></div>
-          <div class="pyr-logo-slot"><img src="logos/e64.png" alt="USYS Elite 64"></div>
         </div>
         <span class="pyr-name">National Competitive</span>
       </div>
@@ -209,9 +376,8 @@
       <!-- Level 4 — Regional / National Bridge -->
       <div class="pyr-band pyr-l4" style="width:72%;">
         <span class="pyr-lnum">Level 4</span>
-        <span class="pyr-leagues">NL Premier 2 · EA2 · Pre-ECNL · ODP</span>
+        <span class="pyr-leagues">EA2 · Pre-ECNL · ODP</span>
         <div class="pyr-logos">
-          <div class="pyr-logo-slot"><img src="logos/tnl.png" alt="NL Premier 2"></div>
           <div class="pyr-logo-slot"><img src="logos/pre-ecnl.png" alt="Pre-ECNL"></div>
           <div class="pyr-logo-slot"><img src="logos/ea2.png" alt="Elite Academy 2"></div>
           <div class="pyr-logo-slot"><img src="logos/odp.png" alt="Olympic Development Program"></div>
@@ -222,11 +388,10 @@
       <!-- Level 5 — Regional Travel -->
       <div class="pyr-band pyr-l5" style="width:86%;">
         <span class="pyr-lnum">Level 5</span>
-        <span class="pyr-leagues">SoCal League · Coast Soccer · N1 League · USL Youth · EDP</span>
+        <span class="pyr-leagues">SoCal League · Coast Soccer · USL Youth · EDP</span>
         <div class="pyr-logos">
           <div class="pyr-logo-slot"><img src="logos/socal.png" alt="SoCal Soccer League"></div>
           <div class="pyr-logo-slot logo-wide"><img src="logos/csl.svg" alt="Coast Soccer League"></div>
-          <div class="pyr-logo-slot"><img src="logos/n1.png" alt="National 1 League"></div>
           <div class="pyr-logo-slot"><img src="logos/usl-youth.png" alt="USL Youth"></div>
           <div class="pyr-logo-slot"><img src="logos/edp.png" alt="EDP Soccer"></div>
         </div>
@@ -242,6 +407,86 @@
           <div class="pyr-logo-slot logo-wide"><img src="logos/la-rec-parks.png" alt="LA Rec &amp; Parks"></div>
         </div>
         <span class="pyr-name">Recreational</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- League Pathways -->
+  <section class="card-section">
+    <h2>League Pathways</h2>
+    <p>The pyramid ranks levels of competition — but inside each league family, there's a ladder. These diagrams show where a player can go within each ecosystem, from entry point to the top.</p>
+
+    <div class="pathway-grid">
+
+      <!-- MLS NEXT -->
+      <div class="pathway-card">
+        <div class="pw-header">
+          <img src="logos/mls-next.png" alt="MLS NEXT" class="pw-logo">
+          <span class="pw-title">MLS NEXT</span>
+        </div>
+        <div class="pw-steps">
+          <div class="pw-step pw-pro">MLS Pro Contract <span class="pw-lvl">Pro</span></div>
+          <div class="pw-step pw-l1">Homegrown Division <span class="pw-lvl">L1</span></div>
+          <div class="pw-step pw-l3">Academy Division <span class="pw-lvl">L3</span></div>
+        </div>
+      </div>
+
+      <!-- ECNL -->
+      <div class="pathway-card">
+        <div class="pw-header">
+          <img src="logos/ecnl.png" alt="ECNL" class="pw-logo">
+          <span class="pw-title">ECNL</span>
+        </div>
+        <div class="pw-steps">
+          <div class="pw-step pw-l2">ECNL Boys <span class="pw-lvl">L2</span></div>
+          <div class="pw-step pw-l3">ECNL Regional League <span class="pw-lvl">L3</span></div>
+          <div class="pw-step pw-l5">Pre-ECNL (U9–U12) <span class="pw-lvl">L5</span></div>
+        </div>
+      </div>
+
+      <!-- USL -->
+      <div class="pathway-card">
+        <div class="pw-header">
+          <img src="logos/usl-academy.png" alt="USL" class="pw-logo">
+          <span class="pw-title">USL</span>
+        </div>
+        <div class="pw-steps">
+          <div class="pw-step pw-pro">USL Pro Contract <span class="pw-lvl">Pro</span></div>
+          <div class="pw-step pw-l2">USL Academy (U15–U20) <span class="pw-lvl">L2</span></div>
+          <div class="pw-step pw-l5">USL Youth (Summer) <span class="pw-lvl">L5</span></div>
+        </div>
+      </div>
+
+      <!-- SoCal League -->
+      <div class="pathway-card">
+        <div class="pw-header">
+          <img src="logos/socal.png" alt="SoCal Soccer League" class="pw-logo">
+          <span class="pw-title">SoCal League</span>
+        </div>
+        <div class="pw-steps">
+          <div class="pw-step pw-l3">N1L (Top Flight) <span class="pw-lvl">L3</span></div>
+          <div class="pw-step pw-l5">Flight 1 <span class="pw-lvl">L5</span></div>
+          <div class="pw-step pw-l5">Flight 2 <span class="pw-lvl">L5</span></div>
+          <div class="pw-step pw-l5">Flight 3 <span class="pw-lvl">L5</span></div>
+          <div class="pw-step pw-l5">Flight 4 / Discovery <span class="pw-lvl">L5</span></div>
+        </div>
+      </div>
+
+      <!-- N1L Merger -->
+      <div class="pathway-card">
+        <div class="pw-header">
+          <img src="logos/n1.png" alt="National 1 League" class="pw-logo">
+          <span class="pw-title">N1L Merger (2026–27)</span>
+        </div>
+        <div class="pw-steps">
+          <div class="pw-step pw-l3">National 1 League <span class="pw-lvl">L3</span></div>
+        </div>
+        <div class="pw-merge-sources">
+          <div class="pw-merge-source"><img src="logos/tnl.png" alt="USYS NL">USYS NL</div>
+          <div class="pw-merge-source"><img src="logos/n1.png" alt="NPL">NPL</div>
+        </div>
+        <div class="pw-note">Elite 64, NL Premier 1 &amp; 2 retired. Absorbed into N1L — 8 conferences, ECNL-operated playoffs, unified player passes. USYS continues: National Championships, Presidents Cup, ODP, State Cups.</div>
       </div>
 
     </div>
@@ -342,30 +587,38 @@
             <td class="muted">Club-vs-club developmental tier directly beneath MLS NEXT; modeled on pro academy standards; heavily scouted, elite college recruitment focus; wider regional/national travel by conference</td>
           </tr>
           <tr>
-            <td>USYS Elite 64</td>
+            <td><strong>National 1 League (N1L)</strong> <span class="footnote-mark">5</span></td>
+            <td class="muted">8 national conferences</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="right muted">—</td>
+            <td class="muted">New for 2026–27; merger of US Club Soccer NPL + USYS National League; ECNL-operated playoffs; unified player pass; top flight of SoCal Soccer League and other regional leagues; high-performing clubs eligible for ECNL-RL promotion</td>
+          </tr>
+          <tr class="retired-row">
+            <td>USYS Elite 64 <span class="footnote-mark">3</span></td>
             <td class="muted">8 groups of 8</td>
             <td class="right">64</td>
             <td class="right muted">—</td>
             <td class="right muted">—</td>
-            <td class="muted">Club-based "Elite Performance Tier" of the USYS National League — top 64 boys clubs in six age groups (13U–18/19U); 10-month season, 14+ league games scheduled to allow HS soccer; two national showcases alongside NL P.R.O.; all teams attend Elite 64 National Finals, winners advance toward the USYS Champions Cup; STATSports GPS + ProScore video make games scoutable by college/pro recruiters; published player fees ~$3,000/yr excl. travel</td>
+            <td class="muted">Retired 2026–27 — absorbed into N1L</td>
           </tr>
-          <tr>
+          <tr class="retired-row">
             <td>NL Premier 1 <span class="footnote-mark">3</span></td>
             <td class="muted">USYS conferences</td>
             <td class="right muted">—</td>
             <td class="right muted">—</td>
             <td class="right muted">—</td>
-            <td class="muted">Team-based; highest tier of the USYS National League conferences (transitioning into N1L); merit placement; direct pathway to National League Playoffs and Cup competitions</td>
+            <td class="muted">Retired 2026–27 — absorbed into N1L</td>
           </tr>
 
           <tr class="level-header"><td colspan="6">Level 4 — Regional / National Bridge</td></tr>
-          <tr>
+          <tr class="retired-row">
             <td>NL Premier 2 <span class="footnote-mark">3</span></td>
             <td class="muted">USYS conferences</td>
             <td class="right muted">—</td>
             <td class="right muted">—</td>
             <td class="right muted">—</td>
-            <td class="muted">Team-based; regionalized stepping stone below Premier 1 — teams earn promotion on merit; travel mostly in-state or adjacent states, cutting costs</td>
+            <td class="muted">Retired 2026–27 — absorbed into N1L</td>
           </tr>
           <tr>
             <td>Elite Academy 2 (EA2) <span class="footnote-mark">3</span></td>
@@ -387,11 +640,11 @@
           </tr>
           <tr>
             <td><strong>SoCal Soccer League</strong></td>
-            <td><span class="flight-chain">N1L → Flt 1 → Flt 2 → Flt 3 → Flt 4 / Discovery</span></td>
+            <td><span class="flight-chain">Flt 1 → Flt 2 → Flt 3 → Flt 4 / Discovery</span></td>
             <td class="right">~170</td>
             <td class="right">~4,700</td>
             <td class="right">~70,000</td>
-            <td class="muted">8 SoCal counties. Top flight is N1L — the new top team-based competition in US Club Soccer / US Youth Soccer (2026–27), formed by the NPL + USYS National League merger; ECNL-integrated, with promotion eligibility into ECNL-RL for high-performing clubs</td>
+            <td class="muted">8 SoCal counties. Top teams qualify for N1L (Level 3). Flights 1–4 are regional travel</td>
           </tr>
           <tr>
             <td><strong>Coast Soccer League (CSL)</strong></td>
@@ -450,8 +703,9 @@
     <div class="sources">
       <sup>1</sup> Club and team counts confirmed directly by Michael Jacoby Jr., Director of Operations — USL Youth (email, June 2026).<br>
       <sup>2</sup> ECNL-RL scraped from theecnl.com standings (June 2026); 780 API calls — conference standings (156) merged with playoff brackets (624) to capture all teams. 399 appeared in conference standings; 382 additional found only in playoffs. Player estimate: 781 teams × 18 roster (all U13+, 11v11; SoCal standard: 7v7=12, 9v9=14, 11v11=18).<br>
-      <sup>3</sup> NL Premier 1/2 and EA2 club/team data not yet confirmed. Listed for completeness per SoCal Pitch league hierarchy.<br>
-      <sup>4</sup> Pre-ECNL age groups typically cover players U9–U12. Scraped from theecnl.com standings (June 2026); 30 API calls across 13 conferences, 2 age groups published (U11–U12, 9v9 format) — younger age groups are not centrally listed. Player estimate: 269 teams × 14 roster. Cost range confirmed: Breakers SC and One Ivy SoCal Soccer fees $3,800–$4,000/yr.
+      <sup>3</sup> USYS Elite 64, NL Premier 1, and NL Premier 2 retired for 2026–27. Their competitive tiers are absorbed into the National 1 League (N1L). EA2 club/team data not yet confirmed.<br>
+      <sup>4</sup> Pre-ECNL age groups typically cover players U9–U12. Scraped from theecnl.com standings (June 2026); 30 API calls across 13 conferences, 2 age groups published (U11–U12, 9v9 format) — younger age groups are not centrally listed. Player estimate: 269 teams × 14 roster. Cost range confirmed: Breakers SC and One Ivy SoCal Soccer fees $3,800–$4,000/yr.<br>
+      <sup>5</sup> N1L launched 2026–27 as a merger of US Club Soccer's NPL and USYS National League. Operates through 8 conferences aligned with U.S. Soccer talent identification models; season culminates in ECNL Conference League Playoffs and Finals. USYS itself continues — National Championships, Presidents Cup, ODP, and State Cups remain.
     </div>
   </section>
 
@@ -527,6 +781,13 @@
             <td class="right">~$12,000</td>
             <td class="muted">Estimated from leagues.csv</td>
           </tr>
+          <tr>
+            <td><strong>National 1 League (N1L)</strong></td>
+            <td class="right"><span class="cost-low">$4,000</span><span class="cost-sep"> – </span><span class="cost-high">$6,000+</span></td>
+            <td class="right">$5,000</td>
+            <td class="right gold">$9,000+</td>
+            <td class="muted">SoCal Pitch 2025; top flight of SoCal Soccer League</td>
+          </tr>
 
           <tr class="level-header"><td colspan="5">Level 5 — Regional Travel</td></tr>
           <tr>
@@ -535,13 +796,6 @@
             <td class="right">$4,500</td>
             <td class="right">$6,000</td>
             <td class="muted">Breakers / One Ivy confirmed; 9v9, boys only</td>
-          </tr>
-          <tr>
-            <td><strong>SoCal Soccer League — N1L</strong></td>
-            <td class="right"><span class="cost-low">$4,000</span><span class="cost-sep"> – </span><span class="cost-high">$6,000+</span></td>
-            <td class="right">$5,000</td>
-            <td class="right gold">$9,000+</td>
-            <td class="muted">SoCal Pitch 2025</td>
           </tr>
           <tr>
             <td>SoCal Soccer League — Flight 1</td>
